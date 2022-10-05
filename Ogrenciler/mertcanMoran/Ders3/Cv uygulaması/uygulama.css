@@ -1,0 +1,49 @@
+body {
+  background-color: #576574;
+}
+.logo {
+  width: 200px;
+  height: 200px;
+}
+img {
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+.borderRadius {
+  border-radius: 50%;
+}
+.header {
+  width: 250px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #48dbfb;
+  margin: 15px auto;
+  text-align: center;
+}
+.logoDiv {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.adsoyad span {
+  font-weight: 700;
+}
+.adsoyad {
+  text-align: center;
+}
+#header2 {
+  text-align: center;
+  color: rgb(194, 221, 102);
+}
+.container {
+  width: 800px;
+  height: auto;
+  border: solid 5px;
+  border-color: aquamarine;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+.font400 {
+  font-weight: 400;
+}
