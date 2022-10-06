@@ -5,15 +5,13 @@ body{
     border-color: black;
     padding: 10px;
 }
-
 .profile{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 0 auto;
     margin-top: 30px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/250px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg')
-    
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/250px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg');
 }
 .kenarlık{
     border-style: solid;
@@ -53,8 +51,7 @@ body{
     margin: auto;
     padding-top: 30px;
     width: 70%;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 
 li{
