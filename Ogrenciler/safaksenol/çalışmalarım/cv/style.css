@@ -1,0 +1,42 @@
+   .myimage {
+       text-align:left;
+   }
+
+   .borderradius {
+       border-radius: 50%;
+   }
+   ul {
+       list-style-type: none;
+       margin: 20;
+       padding: 30;
+       overflow: hidden;
+       background-color: #335;
+   }
+
+   li {
+       float: left;
+   }
+
+   li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 15px 25px;
+       text-decoration: none;
+   }
+
+   li a:hover {
+       background-color: #111;
+   }
+
+   body {
+       background-image: url("resim.jpg");
+   }
+   div{
+    text-align: left;
+    color: rgb(225, 230, 233);
+    text-decoration: underline;
+    font-family:"Sofia",
+        sans-serif
+   }
+
