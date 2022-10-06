@@ -139,3 +139,15 @@ section img {
   height: 600px;
   border-radius: 5px;
 }
+
+/* Design Part */
+.project-img {
+  width: px;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+  text-align: center;
+}
