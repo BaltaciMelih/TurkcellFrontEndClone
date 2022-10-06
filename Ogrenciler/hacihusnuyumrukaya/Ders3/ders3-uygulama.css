@@ -1,9 +1,5 @@
 body{
-    background-color: rgba(110, 85, 123, 0.847);
-    background-image: url('https://www.indyturk.com/sites/default/files/article/main_image/2021/02/04/578531-2026990228.jpg');
-  
-    background-position: center;
-    background-repeat: no-repeat; 
+    background-color:rgba(224, 221, 221, 0.847);
 }
 
 .profile{
