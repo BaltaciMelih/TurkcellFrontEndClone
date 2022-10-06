@@ -4,6 +4,7 @@ body{
     border-width: 1px;
     border-color: black;
     padding: 10px;
+    margin: px;
 }
 .profile{
     width: 200px;
@@ -29,7 +30,7 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: rgb(53, 0, 0);
-    width: 30%;
+    width: 24%;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -37,7 +38,15 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: rgb(53, 0, 0);
-    width: 23%;
+    width: 19%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.baslıkKenarlık3{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(53, 0, 0);
+    width: 15%;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
