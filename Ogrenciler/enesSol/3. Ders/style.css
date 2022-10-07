@@ -1,0 +1,77 @@
+.paragraf {
+  font-size: 30px;
+  font-weight: bold;
+  color: brown;
+}
+div.textColorBlue {
+  color: blue;
+}
+
+.colorParagraf1 {
+  color: #e0823f;
+}
+
+.colorParagraf2 {
+  color: rgb(239, 117, 19, 0.94);
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.colorGreen {
+  background-color: #fff;
+  background-color: #20a748;
+}
+
+.colorPink {
+  background-color: rgb(150, 17, 83);
+}
+
+.width50 {
+  width: 50%;
+}
+
+.marginXAouto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height: 50px;
+  width: 250px;
+  margin: 10px;
+}
+
+.red {
+  background-color: red;
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.blue {
+  background-color: blue;
+  margin-bottom: 15px;
+}
+
+.green {
+  background-color: green;
+  margin-top: 20px;
+}
+
+.bgImage {
+  background-image: url("https://cdn1.ntv.com.tr/gorsel/OzoysmIgckCT9piiN_UQNw.jpg?width=1000&mode=crop&scale=both");
+  height: 200px;
+  width: 300px;
+  background-size: 100%;
+  background-position-y: center;
+}
+
+.borderRadius {
+  border-radius: 50%;
+}

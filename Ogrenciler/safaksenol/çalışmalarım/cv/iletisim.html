@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+
+        function MESAJ() {
+            alert("Talebiniz tarafımıza ulaşmıştır.");
+        }
+    </script>
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="cvwebsitesicalisma.html">ANASAYFA</a></li>
+        <li><a href="hakkimda.html">HAKKIMDA</a></li>
+        <li><a href="deneyimlerim.html">DENEYİMLERİM</a></li>
+        <li><a href="iletisim.html">İLETİŞİM</a></li>
+    </ul>
+    
+    <form>
+        <label>İLETİŞİM</label><br><br>
+        <label for="name">ADINIZ</label><br><br>
+        <input type="text" id="name" placeholder="name" required/><br><br>
+        <label for="surname">SOYADINIZ</label><br><br>
+        <input type="text" id="surname" placeholder="surname" required/><br><br>
+        <label for="email">EMAİL ADRESİNİZ</label><br><br>
+        <input type="text" id="email" placeholder="mail" required/><br><br>
+        <label for="phone">TELEFON NUMARANIZ</label><br><br>
+        <input type="number" id="phone" placeholder="phone" required/><br><br>
+        <label>CİNSİYET</label><br><br>
+        <label for="erkek">ERKEK</label>
+        <input type="radio" id="erkek" name="cinsiyet" />
+        <label for="kadin">KADIN</label>
+        <input type="radio" id="kadin" name="cinsiyet" /><br><br>
+         <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <label for="request"></label><br>
+        <select name="request" id="request">
+            <option value="is basvuru">İŞ TALEBİ</option>
+            <option value="proje talebi">PROJE TALEBİ</option>
+            <option value="tebrik">TEBRİK</option>
+            <option value="sikayet">ŞİKAYET</option>
+        </select>
+        <button class="button"onclick="MESAJ();" value="MESAJ"  style="vertical-align:middle"><span>GÖNDER</span></button>
+    </form>
+</body>
+
+</html>
