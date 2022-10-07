@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #488ad1, #4ed4dc);
+}
+
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  padding-left: 275px;
+}
+ul {
+  list-style: none;
+}
+li {
+  float: left;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 85px;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.footer {
+  height: 70px;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 275px;
+}
+.footer .social {
+  padding-left: 170px;
+  padding-top: 30px;
+}
+
+.icerik {
+  width: 29%;
+  float: left;
+  margin-left: 15px;
+  padding-left: 13px;
+  padding-top: 8px;
+  border: 3px solid rgb(210, 152, 140);
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+.kategori {
+  border: 1px solid tan;
+  border-radius: 12px;
+  background-color: tan;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.kucukResim {
+  border-radius: 50%;
+}
+
+.yazarIsmi {
+  float: right;
+  padding-right: 120px;
+  padding-top: 10px;
+}
+
+.resimYani {
+  float: right;
+}
