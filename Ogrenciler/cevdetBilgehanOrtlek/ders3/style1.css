@@ -1,0 +1,94 @@
+.paragraf {
+    font-size: 30px;
+    font-weight: bolder;
+    color: blue;
+    text-align: center;
+  }
+  
+  div .textColorBlue {
+    color: rgb(6, 50, 23);
+  }
+  
+  .colorParagraf1{
+    color: rgb(9, 9, 9);
+    text-align: center;
+  }
+  .colorParagraf2 {
+    color: rgba(19, 239, 147, 0.94);
+  }
+  .font-15{
+    font-size: 15px;
+    text-align: center;
+  }
+  .font-30{
+    font-size: 30px;
+  }
+  .with100{
+    width: 100%;
+  }
+  .colorMor{
+    background-color: #a889c7;
+  }
+
+.colorGreen{
+  background-color: rgb(111, 161, 180);
+  text-align: center;
+}
+
+  .with50 {
+    width: 50%;
+  }
+  .marginXAuto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box{
+    height: 165px;
+    width: 450px;
+    margin: 10px;
+    margin: auto;
+  }
+  .red{
+    background-color: red;
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  .blue{
+    background-color: blue;
+    margin-bottom: 10px;
+  }
+  .green{
+    background-color: green;
+    margin-top: 20px;
+  }
+  .bgImage{
+    height: 200px;
+    width: 200px;
+    background-image: url("pexels-olena-bohovyk-13813443.jpg");
+    background-size: 100%;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .borderRadius{
+    
+    border-radius: 50%;
+  }
+
+  .box1{
+    height: 350px;
+    width: 250px;
+    margin: 10px;
+    margin: auto;
+  }
+
+  .borderRadius2{
+    
+    border-radius: 30%;
+  }
+  .borderRadius3{
+    
+    border-radius: 40%;
+  }
+
