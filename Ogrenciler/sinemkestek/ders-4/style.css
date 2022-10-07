@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+.header {
+  height: 150px;
+  margin-bottom: 10px;
+  background-color: aquamarine;
+}
+.content {
+  width: 690px;
+  height: 590px;
+  background-color: rgb(218, 179, 129);
+  float: right;
+}
+.sidebar {
+  width: 275px;
+  height: 590px;
+  background-color: beige;
+  float: left;
+}
+.footer {
+  height: 70px;
+  margin-top: 10px;
+  background-color: rgb(174, 151, 196);
+}
+.clear {
+  clear: both;
+}
