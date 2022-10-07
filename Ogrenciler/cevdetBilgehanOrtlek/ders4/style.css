@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrap {
+    width: 980px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: #16a085;
+  }
+  
+  .content {
+    width: 980px;
+    height: 590px;
+    background-color: #16a085;
+    
+    float: right;
+    border: 5px solid white;
+    border-radius: 10px;
+  }
+  
+  .sidebar {
+    width: 275px;
+    height: 590px;
+    background-color: #16a085;
+    float: left;
+  }
+  
+  .footer {
+    height: 70px;
+    margin-top: 10px;
+    background-color: #16a085;
+  }
+  
+  .clear {
+    clear: both;
+  }
