@@ -1,0 +1,60 @@
+.cv{
+border-radius: 50%;
+}
+.kbilgi{
+
+}
+.hakkında{
+
+}
+.phakkında{
+margin-left: 20%;
+margin-right: 20%;
+}
+.egitim{
+
+}
+.pegitim{
+
+}
+.deneyim{
+
+}
+.pdeneyim{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.sertifika{
+
+}
+.yetkinlik{
+
+}
+.bgImage{
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        width: 200px;
+        background-image: url("cv.png");
+        background-size: 100%;
+        background-position-y: center;
+      }
+.text-align{
+    text-align: center;
+}
+.img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 700px;
+    background-image: url("ing.jpg");
+    background-size: 100%;
+    background-position-y: center;
+}
+.baslik{
+    color: red;
+    font-size: large;
+}
+.boxr{
+background-color: antiquewhite;
+}
