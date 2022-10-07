@@ -11,28 +11,32 @@ body {
   .header {
     height: 150px;
     margin-bottom: 10px;
-    background-color: #16a085;
+    background-color: #72a8b1;
   }
   
   .content {
     width: 690px;
     height: 590px;
-    background-color: #16a085;
+    background: #72a8b1;
+    background:linear-gradient(blue,aqua);
     float: right;
-    border: 5px solid brown;
+    border: 5px solid black;
+    border-radius: 5%;
   }
   
   .sidebar {
     width: 275px;
     height: 590px;
-    background-color: #16a085;
+    background-color: #72a8b1;
     float: left;
+    border:2px solid black;
+    border-radius: 10px;
   }
   
   .footer {
     height: 70px;
     margin-top: 10px;
-    background-color: #16a085;
+    background-color: #72a8b1;
   }
   
   .clear {
