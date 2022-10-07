@@ -17,7 +17,8 @@ body {
   .content {
     width: 690px;
     height: 590px;
-    background-color: #72a8b1;
+    background: #72a8b1;
+    background:linear-gradient(blue,aqua);
     float: right;
     border: 5px solid black;
     border-radius: 5%;
