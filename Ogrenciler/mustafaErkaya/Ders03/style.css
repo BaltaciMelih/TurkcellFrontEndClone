@@ -33,4 +33,34 @@
 
 .red {
     background-color: red;
+    margin-left: 50px;
+}
+.blue {
+    background-color: blue;
+    margin-bottom: 30px;
+}
+
+.green {
+    background-color: green;
+    
+}
+
+.bg-image {
+    height: 200px;
+    width: 200px;
+    background: url("img1.jpg") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.border-r {
+    border-radius: 5rem;
+}
+
+h1 { 
+    width: 300px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #48dbfb;
+    margin: 0 auto;
 }

@@ -1,0 +1,153 @@
+/* 
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR:  #d9480f
+GREY COLOR:  #adb5bd
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #495057;
+  border-bottom: 8px solid #d9480f;
+  background-color: #f1f3f5;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  height: 40px;
+  background-color: #dee2e6;
+  margin-bottom: 30px;
+}
+
+.nav__icon {
+  margin-right: 100px;
+}
+
+.nav__item {
+  margin-right: 100px;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-text-box {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.header-title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.header-img {
+  width: 360px;
+  border-radius: 50%;
+}
+
+header,
+section {
+  margin-bottom: 96px;
+}
+
+section .flex-3-cols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+section > h2 {
+  text-align: center;
+}
+/* Feautures */
+
+h2 {
+  margin-bottom: 64px;
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+.features-icon {
+  width: 32px;
+  height: 32px;
+  stroke: #d9480f;
+  margin-bottom: 24px;
+}
+
+.features-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.features-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+section .works-3-cols {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+section img {
+  width: 320px;
+  height: 600px;
+  border-radius: 5px;
+}
+
+/* Design Part */
+.project-img {
+  width: px;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+  text-align: center;
+}
