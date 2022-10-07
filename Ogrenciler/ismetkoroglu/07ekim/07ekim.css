@@ -18,11 +18,9 @@ body {
     width: 690px;
     height: 590px;
     background-color: #16a085;
+    border: 5px solid brown;
+    border-radius: 10px;
     float: right;
-    /* border: 5px;
-    border-style: solid;
-    border-color: red; */
-    border: 5px solid red;
   }
   
   .sidebar {
