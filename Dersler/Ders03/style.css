@@ -30,8 +30,8 @@ div .textColorBlue {
   width: 50%;
 }
 .marginXAuto{
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 .box{
   height: 50px;
@@ -53,6 +53,7 @@ div .textColorBlue {
   margin-top: 20px;
 }
 .bgImage{
+  margin-block-end: auto;
   height: 200px;
   width: 200px;
   background-image: url("pexels-olena-bohovyk-13813443.jpg");

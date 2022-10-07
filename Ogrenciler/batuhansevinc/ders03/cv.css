@@ -2,33 +2,38 @@
 border-radius: 50%;
 }
 .kbilgi{
-
+font-size: 80px;
 }
 .hakkında{
-
+font-size: xx-large;
 }
 .phakkında{
 margin-left: 20%;
 margin-right: 20%;
+font-size: 20px;
 }
 .egitim{
-
+font-size: x-large;
 }
 .pegitim{
-
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 20px;
 }
 .deneyim{
-
+margin-bottom: 0.1cm;
 }
 .pdeneyim{
+
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 2em;
+    font-size: 20px;
 }
 .sertifika{
-
+margin-bottom: 2em;
 }
 .yetkinlik{
-
+margin-top: 2em;
 }
 .bgImage{
         margin-left: auto;
@@ -44,17 +49,33 @@ margin-right: 20%;
 }
 .img{
     margin-left: auto;
+    margin-left: 90px;
     margin-right: auto;
-    height: 500px;
-    width: 700px;
+    height: 200px;
+    width: 200px;
     background-image: url("ing.jpg");
     background-size: 100%;
     background-position-y: center;
 }
-.baslik{
-    color: red;
-    font-size: large;
-}
+
+
 .boxr{
-background-color: antiquewhite;
+background-color: #B2BEBF;
+}
+.kare{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pyetkinlik{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.baslik{
+  color: #BD2A2E;
+  font-size: xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.yazi{
+    font-size: 20px;
 }
