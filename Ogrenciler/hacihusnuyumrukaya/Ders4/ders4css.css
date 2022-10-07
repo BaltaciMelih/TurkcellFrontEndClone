@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background:linear-gradient(#72a8b1,aqua); 
+    background:linear-gradient(#aaadad,rgb(0, 112, 112)); 
   }
   
   .wrap {
@@ -69,6 +69,7 @@ body {
     text-align: right;
    
   }
+
 
   .img3{
     width: 25px;
