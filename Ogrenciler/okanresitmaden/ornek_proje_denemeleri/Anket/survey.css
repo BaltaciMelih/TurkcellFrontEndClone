@@ -1,0 +1,14 @@
+.baslik{
+    text-align: center;
+    font-size: xx-large;
+    color: crimson;
+}
+
+.metin{
+    margin-left: 30%;
+    font-size: medium;
+}
+
+.rmetin{
+    font-size: medium;
+}
