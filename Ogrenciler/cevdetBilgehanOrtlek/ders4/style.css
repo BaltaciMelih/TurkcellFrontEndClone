@@ -15,14 +15,13 @@ body {
   }
   
   .content {
-    width: 690px;
+    width: 980px;
     height: 590px;
     background-color: #16a085;
+    
     float: right;
-    /* border: 5px;
-    border-style: solid;
-    border-color: red; */
-    border: 5px solid red;
+    border: 5px solid white;
+    border-radius: 10px;
   }
   
   .sidebar {
