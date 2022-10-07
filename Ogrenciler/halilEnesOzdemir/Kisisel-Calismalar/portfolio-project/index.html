@@ -20,30 +20,27 @@
         <img class="nav__logo" src="" alt="" />
         <ul class="nav__links">
           <li class="nav__item">
-            <a class="nav__link" href="#section--1">Hakkımda</a>
+            <a class="nav__link" href="#about-me">Hakkımda</a>
           </li>
           <li  class="nav__item">
-            <a class="nav__link" href="">Hizmetlerimiz</a>
+            <a class="nav__link" href="#hizmetlerimiz">Hizmetlerimiz</a>
           </li>
           <li class="nav__item">
             <a class="nav__link">Çalışmalarım</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link">İletişim</a>
+          <li class="nav__item nav__icon">
+            <a href="https://www.linkedin.com/in/halilenesozdemir/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></i>
           </li>
           <li class="nav__item nav__icon">
-            <a href="linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></i>
-          </li>
-          <li class="nav__item nav__icon">
-            <a href="https://medium.com/"><i class="fa-brands fa-medium"></i></a>
+            <a href="https://halil-enes-ozdemir.medium.com/"><i class="fa-brands fa-medium"></i></a>
           </li>
           <li class="nav__item dark_icon">
             <i class="fa-solid fa-moon dark"></i>
           </li>
         </ul>
       </nav>
-      <header>
-        <div class="header-text-box">
+      <header id="about-me">
+        <div class="header-text-box" >
           <h2 class="header-title">Hello,I'm Halil Enes</h2>
           <p class="header-text">
             I have been working as a React Developer for the past three years and have gained a lot of experience in the
@@ -55,8 +52,8 @@
         <img class="header-img" src="images/persona.jpg" alt="Photo" />
       </header>
 
-      <section>
-        <h2>Senin için neler yapabilirim?</h2>
+      <section id="hizmetlerimiz">
+        <h2>Senin için neler yapabiliriz?</h2>
         <div class="flex-3-cols">
           <div>
             <svg
@@ -129,50 +126,75 @@
         </div>
       </section>
 
-      <section>
-        <h2>Çalışmalarım</h2>
-        <div class="works-3-cols">
-          <img src="images/persona.jpg" alt="" />
-          <img src="images/persona.jpg" alt="" />
-          <img src="images/persona.jpg" alt="" />
+      <section class="testimonial-section">
+        <div class="flex-3-cols">
+          <img src="images/reference-img.jpg" alt="business man who take photo">
+          <div class="testimonial-box">
+            <h2>Kendisine gerçekten çok güveniyorum. Çok kısa bir sürede müthiş bir iş çıkardı.</h2>
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat at, nesciunt quia cum minima ipsum
+              culpa totam sapiente recusandae earum debitis doloribus in quasi voluptatibus!
+            </blockquote>
+            <p class="testimonial-author">&mdash; Peter Johansson | CEO of Tesla </p>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>İletişim</h2>
+      <section id="best-works">
+        <h2>En beğenilen çalışmalar</h2>
+        <div class="flex-3-cols">
+          <figure class="project">
+            <img class="project-img" src="images/pick-game.png" alt="A good dice game ">
+            <div class="project-box">
+              <h3>Proje Özellikleri</h3>
+              <ul class="project-details">
+                <li>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Javascript</span>
+                </li>
+              </ul>
+            </div>
+          </figure>
 
+          <figure class="project">
+            <img class="project-img" src="images/medium-project.png" alt="A good dice game ">
+            <div class="project-box">
+              <h3>Proje Özellikleri</h3>
+              <ul class="project-details">
+                <li>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Javascript</span>
+                </li>
+              </ul>
+            </div>
+          </figure>
+
+          <figure class="project">
+            <img class="project-img" src="images/motivation-buttons.png" alt="A good dice game ">
+            <div class="project-box">
+              <h3>Proje Özellikleri</h3>
+              <ul class="project-details">
+                <li>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Javascript</span>
+                </li>
+              </ul>
+            </div>
+          </figure>
+        </div>
       </section>
-      <h2>Skills</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>Javascript</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-          <tr>
-            <td>React</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-          </tr>
-        </tbody>
-      </table>
 
-      <span>Phone :</span>
-      <span>123-456-7890</span>
-      <span>Email</span>
-      <span>info@mysite.com</span>
-      <span
-        >Küçükyalı Plaza, Aydınevler Mahallesi İnönü Caddesi No:20 Küçükyalı Ofispark B Blok - Maltepe / İSTANBUL
-        .</span
-      >
+      <footer>
+         Copyright &copy; Halil Enes Özdemir | 2022 
+      </footer>
     </div>
+
+
+
+
     <script src="index.js"></script>
   </body>
 </html>

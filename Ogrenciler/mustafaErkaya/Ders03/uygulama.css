@@ -86,8 +86,8 @@ list-style: none;
     height: 250px;
     background-color: #a24040;
     align-items: flex-start;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+    border-radius: 3rem;
+    margin: 0 20px;
   }
   .skills .header2 h2 {
     padding-top: 20px;
@@ -115,3 +115,57 @@ list-style: none;
   .skills .list-items .item i {
     color: yellow;
   }
+
+  /* skills end */
+
+  /* footer start */
+
+  .footer {
+    text-align: center;
+    height: 200px;
+    background-color: #000000;
+    margin: 30px;
+    border-radius: 3rem;
+    border: 2px solid #fff;
+  }
+
+  .footer h2{
+    font-size: 30px;
+    padding: 20px;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .footer .share{
+    padding: 10px 0;
+}
+
+  .footer .share a{
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: #fff;
+    font-size: 2rem;
+    border:0.1rem solid rgba(255, 255, 255, 0.4) ; 
+    border-radius: 50%;
+    margin: 0.3rem;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.footer .share a:hover{
+  
+  background-color: #e14f4f;
+}
+
+.footer .credit {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fff;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+
+.footer .credit span{
+  color: #e14f4f;
+}
