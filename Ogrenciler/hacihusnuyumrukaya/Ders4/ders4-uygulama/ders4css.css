@@ -122,7 +122,6 @@ ul {
   border-bottom-right-radius: 30px;
 }
 
-
 li {
   float: left;
 }
@@ -131,15 +130,16 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 70px;
+  padding: 20px 75px;
   text-decoration: none;
 }
 li a:hover {
   background-color:rgb(111, 154, 204);
 }
+
 .button1{
   background: linear-gradient(#4359a3, rgb(114, 145, 145));
   margin-top: 5px;
   margin-left: 5px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
