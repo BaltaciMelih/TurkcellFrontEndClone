@@ -5,7 +5,8 @@
   }
   
   body {
-    background-color: #e14f4f;
+    
+    
   }
   .btn {
     color: rgb(39, 35, 35);
@@ -32,6 +33,7 @@
   }
   .container {
     height: auto;
+    width: auto;
   
     margin: 0 auto;
     
@@ -62,6 +64,7 @@
   }
   .navbar {
     margin: 20px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
