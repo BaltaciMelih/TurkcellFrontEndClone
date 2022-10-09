@@ -3,6 +3,8 @@ const keys = document.querySelector(".calculator-keys");
 
 let displayValue = "0";
 
+updateDisplay();
+
 function updateDisplay() {
     display.value = displayValue;
 }
@@ -32,7 +34,8 @@ keys.addEventListener('click', function(e) {
     }
 
     inputNumber(element.value);
-    //console.log("number", element.value);
+   // console.log("number", element.value);
+   updateDisplay();
 });
 
 function inputNumber (num) {
