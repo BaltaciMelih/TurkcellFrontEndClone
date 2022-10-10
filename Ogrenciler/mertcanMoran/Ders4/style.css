@@ -19,6 +19,8 @@ body {
   height: 590px;
   background-color: #16a085;
   float: right;
+  border: 5px solid brown;
+  border-radius: 10px;
 }
 
 .sidebar {
