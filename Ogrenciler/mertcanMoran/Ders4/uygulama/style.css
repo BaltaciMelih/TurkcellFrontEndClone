@@ -1,56 +1,113 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #488ad1, #4ed4dc);
+html {
+  height: 100%;
 }
-
-.wrap {
-  width: 980px;
-  margin: 0 auto;
+body {
+  background-color: rgb(
+    34,
+    105,
+    150
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    90deg,
+    rgb(0, 225, 255),
+    rgb(36, 122, 226),
+    rgb(34, 105, 150)
+  );
+}
+* {
+  box-sizing: border-box;
 }
 
 .header {
-  width: 100%;
-  height: 50px;
+  padding: 20px;
+  padding-left: 40%;
   margin-bottom: 10px;
   text-align: center;
   align-items: center;
-  padding-left: 275px;
 }
 ul {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 li {
   float: left;
   margin-left: 20px;
   align-items: center;
 }
+a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+.content a {
+  padding: 10px;
+}
 
 .content {
-  width: 100%;
-  height: 500px;
-  margin-bottom: 85px;
-  align-items: center;
-  padding-left: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 300px;
 }
 
 .footer {
   height: 70px;
-  width: 100%;
-  margin-top: 10px;
+  width: 25%;
+  margin-right: 20px;
+  clear: both;
+
   padding-left: 275px;
 }
 .footer .social {
-  padding-left: 170px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 160px;
   padding-top: 30px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+.footer .social button {
+  margin-right: 10px;
 }
 
-.icerik {
-  width: 29%;
+.icerik1 {
+  width: 25%;
+  margin: 10px;
   float: left;
-  margin-left: 15px;
+  background-color: aquamarine;
   padding-left: 13px;
   padding-top: 8px;
+  padding-right: 10px;
+  border: 3px solid rgb(210, 152, 140);
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+.icerik2 {
+  width: 25%;
+  margin: 10px;
+  float: left;
+  background-color: aquamarine;
+  padding-left: 13px;
+  padding-top: 8px;
+  padding-right: 10px;
+  border: 3px solid rgb(210, 152, 140);
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+.icerik3 {
+  width: 25%;
+  margin: 10px;
+  float: left;
+  background-color: aquamarine;
+  padding-left: 13px;
+  padding-top: 8px;
+  padding-right: 10px;
   border: 3px solid rgb(210, 152, 140);
   border-radius: 10px;
   cursor: pointer;
@@ -61,14 +118,18 @@ li {
   border-radius: 12px;
   background-color: tan;
   color: black;
+  clear: left;
 }
-a {
+.wrap .header a {
   text-decoration: none;
-  color: black;
+  color: pink;
+  display: inline-block;
+  text-align: center;
 }
 
 .kucukResim {
   border-radius: 50%;
+  float: left;
 }
 
 .yazarIsmi {
@@ -79,4 +140,8 @@ a {
 
 .resimYani {
   float: right;
+}
+.content img {
+  float: left;
+  margin-bottom: 10px;
 }
