@@ -5,31 +5,55 @@
     text-decoration:none;
     list-style-type: none;  
 }
+html::-webkit-scrollbar {
+    width: 20px;
+    background-color: #fff;
+
+}
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: #000000;
+
+}
+
 .container{
-    width: 1100px;
+    width: 75%;
     margin: 0 auto;
     background-color: aquamarine;
     position: relative;
 
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+   
+}
 
 .header{
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 50px;
+    
     background-color: blueviolet;
    
     
 }
 
-nav{
+.navbar{
     display: flex;
     gap: 30px;
     
-    
-
 }
+.navbar a {
+    color: #000000;
+    font-size: 20px;
+}
+
 
 .class-home{
     text-align: center;
@@ -38,12 +62,17 @@ nav{
 }
 h2{
     font-size: 64px;
-    color:red
+    color:red;
+    margin-top: 50px;
 }
 p{
     font-size: 16px;
     color: grey;
 }
+.Home {
+    margin-top: 30px;
+}
+
 .class-home-2{
     height: 400px;
     background-color: greenyellow;
@@ -107,4 +136,71 @@ p{
 
 .box-2-2 {
     height: 200px;
+}
+
+
+/* featres star */
+.features {
+    padding: 30px 5px ;
+}
+.features .class-home .features-btn {
+    margin: 30px 20px;
+}
+
+#red {
+    background-color: rgb(136, 60, 60);
+}
+
+.features .class-home .features-btn .btn {
+    margin: 0 15px;
+    display: inline-block;
+    padding: 20px 35px;
+    border-radius: 200px;
+    background-color: #000000;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.features .class-home .features-btn .btn:hover {
+    opacity: 0.9;
+}
+
+.features-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.features-items .features-box {
+    background-color: coral;
+    margin: 10px;
+}
+
+.width-150 {
+    width: 350px;
+}
+
+.features-items .features-box .features-box-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+.features-items i {
+    font-size: 25px;
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.features-items .features-box .features-box-left p {
+    margin-left: 30px;
+    
 }
