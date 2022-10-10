@@ -1,0 +1,104 @@
+.paragraf {
+  font-size: 24px;
+}
+
+/* min-width de verilebilir */
+@media only screen and (max-width: 768px) {
+  .paragraf {
+    font-size: 14px;
+  }
+  div {
+    color: antiquewhite;
+  }
+}
+
+/* Pseudo Classes */
+.link {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: darkorange;
+  font-size: 20px;
+  font-weight: blod;
+}
+
+.link:visited {
+  color: aqua;
+}
+
+.link:active {
+  color: fuchsia;
+}
+
+/* li:first-child {
+  color: brown;
+} */
+
+/* li:nth-child(even) {
+  color: brown;
+}
+
+li:nth-child(odd) {
+  color: olivedrab;
+} */
+
+/* li:nth-child(3n) {
+  color: yellowgreen;
+} */
+
+/* li:nth-child(2n + 1) {
+  color: yellowgreen;
+} */
+
+li:nth-child(-n + 5) {
+  color: yellowgreen;
+}
+
+/* Pseudo Element */
+.text1::first-letter {
+  font-size: 30px;
+}
+
+.text1::first-line {
+  color: orangered;
+}
+
+.text1::after {
+  content: "Bu After İçin Deneme Contenti";
+}
+
+.text1::before {
+  content: "Bu Before İçin Deneme Contenti";
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 40%;
+  margin: 0 auto;
+}
+
+tbody tr {
+  text-align: center;
+}
+
+thead tr {
+  background-color: olivedrab;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #dedede;
+}
+
+tbody tr:hover {
+  background-color: #979797;
+  cursor: pointer;
+}
