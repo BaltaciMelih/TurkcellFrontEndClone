@@ -6,19 +6,32 @@ body{
 .navbar{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:right;
     position: fixed;
+    width: 100%;
 }
 
 ul{
     display: flex;
+    overflow: hidden;
 }
 
-li {
+li{
     display: inline;
-    margin: 15px;
+    margin: 5px;
     
 }
+li a{
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+
+a:hover{
+    color:rgb(243, 95, 9);
+  }
+
 a{
     text-decoration: none;
     color: black;
@@ -26,6 +39,11 @@ a{
 
 .logo{
     align-items: center;
+    position: absolute;
+    margin-right: 85%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 1000;
 }
 
 .container{
@@ -88,16 +106,22 @@ a{
     background-color: rgb(243, 95, 9);
 }
 .resim2{
-    margin-top: 100px;
     margin-left: 100px;
     width: 35%;
-    height: 700px;
+    height: 500px;
     border-radius: 10px;
 
 }
+.resim3{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 65px;
+    height: 65px;
+}
 .container2{
     width: 100%;
-    height: 1000px;
+    height: 700px;
     margin: 0 auto;
     background-color: #e7e7e7;;
     display:flex;
@@ -113,9 +137,60 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
-    margin-left: 40px;
     margin-top: 40px;
 }
+.container4{
+    width: 80%;
+    height: 500px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin-left: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.container5{
+    width: 100%;
+    height: 500px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    margin: 0 auto;
+}
+.box{
+    width: 30%;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
+    margin: 10px;
+    height: 250px;
+}
+.container6{
+    width:100%;
+    height: 500px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    margin: 0 auto;
+    flex-wrap:nowrap;
+}
+
+.box2{
+    width: 100%;
+    height: 250px;
+}
+.box3{
+    width: 100%;
+    margin: 10px;
+    height: 250px;
+    border-left: 1px dashed black;
+    padding-left: 30px;
+}
+
+
 .who{
   color: rgb(243, 95, 9);
 }
