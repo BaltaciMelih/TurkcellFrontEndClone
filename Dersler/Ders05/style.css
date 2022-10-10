@@ -1,0 +1,84 @@
+.paragraf{
+  font-size: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .paragraf {
+      font-size: 14px;
+  }
+  div{
+    color: antiquewhite;
+  }
+}
+
+/* Pseudo Class */
+
+.link{
+  font-size: 18px;
+  text-decoration: none;
+  color: brown;
+}
+
+.link:hover{
+  color:darkorange;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.link:visited{
+  color: aqua;
+}
+
+.link:active{
+  color: fuchsia;
+}
+
+/* li:last-child{
+  color: brown;
+} */
+
+/* li:nth-child(even) {
+  color: brown;
+}
+li:nth-child(odd) {
+  color: olivedrab;
+} */
+
+li:nth-child(-n+6) {
+  color: olivedrab;
+}
+
+/* Pseudo Element */
+
+.text1::first-letter{
+  font-size: 30px;
+}
+.text1::first-line {
+  color: orangered;
+}
+.text1::after {
+  content: "Bu After için Deneme Conenti";
+}
+.text1::before {
+  content: "Bu Before için Deneme Conenti";
+}
+table,tr,td,th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table{
+  width: 40%;
+  margin: 0 auto;
+}
+tbody tr{
+  text-align: center;
+}
+thead tr{
+  background-color: olivedrab;
+}
+tbody tr:nth-child(even){
+  background-color: #dedede;
+}
+tbody tr:hover{
+  background-color: #cfcfcf;
+  cursor: pointer;
+}
