@@ -1,29 +1,42 @@
-.body{
+body {
     margin: 0;
     padding: 0;
-}
-.wrap{
+  }
+  
+  .wrap {
     width: 980px;
     margin: 0 auto;
-}
-
-.header{
+  }
+  
+  .header {
     height: 150px;
     margin-bottom: 10px;
-    background-color: aqua;
-}
-
-.contet{
+    background-color: #16a085;
+  }
+  
+  .content {
     width: 690px;
     height: 590px;
-    background-color: aqua;
+    background-color: #16a085;
+    background: linear-gradient(to bottom, blue, aqua);
     float: right;
     border: 5px solid brown;
     border-radius: 10px;
-}
-
-.sidebar{
+  }
+  
+  .sidebar {
     width: 275px;
     height: 590px;
-    background-color: ;
-}
+    background-color: #16a085;
+    float: left;
+  }
+  
+  .footer {
+    height: 70px;
+    margin-top: 10px;
+    background-color: #16a085;
+  }
+  
+  .clear {
+    clear: both;
+  }
