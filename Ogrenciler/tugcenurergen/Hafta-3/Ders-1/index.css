@@ -1,0 +1,115 @@
+.paragraf{
+    font-size: 24px;
+
+}
+
+@media only screen and (max-width: 768px){
+    .paragraf{
+        font-size: 14px;
+    }
+
+    div{
+        color: rgb(235, 0, 0);
+    }
+}
+
+.link{
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.link:hover{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ziyaret edilmiş ise */
+.link:visited{
+    color: aqua;
+}
+
+
+/* tıklama anı */
+.link:active{
+    color: fuchsia;
+}
+
+
+li{
+    font-size: 18px;
+}
+
+li:first-child{
+    color: blue;
+}
+
+li:last-child{
+    color: purple;
+}
+
+li:nth-child(even){
+    color: green;
+}
+
+li:nth-child(odd){
+    color: brown;
+}
+
+li:nth-child(3n){
+    color: pink;
+}
+
+li:nth-child(5){
+    color: black;
+}
+
+/* ilk 6 elemanı seçer */
+li:nth-child(-n+6){
+    color:cadetblue; 
+}
+
+.text1::first-letter{
+    font-size: 24px;
+}
+
+.text1::first-line{
+    color: orange;
+}
+
+.text1::after{
+    content: "Deneme contenti";
+}
+
+.text1::before{
+    content: "Deneme contenti";
+}
+
+
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 40%;
+    margin: 0 auto;
+}
+
+tbody tr{
+    text-align: center;
+}
+
+thead tr{
+    background-color: rgb(158, 0, 158);
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(212, 212, 212);
+}
+
+tbody tr:hover{
+    background-color: gray;
+}
