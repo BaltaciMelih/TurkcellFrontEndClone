@@ -72,7 +72,7 @@ p{
 
 }
 
-.foots{
+.footer{
     margin-top: 60px;
     margin-right: 15%;
 }
@@ -82,9 +82,3 @@ p{
     gap: 70px;
     display: flex;
 }
-footerss {
-    text-align: center;
-    padding: 100px;
-    background-color: DarkSalmon;
-    color: white;
-  }
