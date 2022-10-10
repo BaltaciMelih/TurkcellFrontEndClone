@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 20px;
+}
+p{
+    font-size: 12px;
+}
+.container{
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #adadad;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    width: 100px;
+    border: 1px solid black;
+    background-color: green;
+}
