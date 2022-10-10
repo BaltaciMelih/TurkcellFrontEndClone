@@ -1,0 +1,28 @@
+.foto{
+    height: 200px;
+    width: 200px;
+    background-image: url("cvfoto.jpg");
+    background-size: 100%;
+    background-position-y: center;
+    border-radius: 50%;
+    margin-left: 45%;
+}
+
+.baslik{
+    color:brown;
+    font-size: x-large;
+    text-align: center;
+}
+
+.metin{
+    margin-left: 37%;
+    color: black;
+    font-size: medium;
+}
+
+.ufakmetin{
+    margin-left: 37%;
+    color: black;
+    font-size: small;
+}
+

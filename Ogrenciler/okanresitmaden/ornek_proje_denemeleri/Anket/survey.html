@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="survey.css">
+<body>
+    <form action="">
+        <h1 class="baslik">İşçi Çıkarları Anketi Formu</h1>
+        <div class="metin">
+            <label for="isim">Lütfen Adınızı Giriniz:</label>
+            <input type="text" id="isim" placeholder="İsim"> <br><br>
+
+            <label for="departman">Lütfen Departmanınızı Giriniz:</label>
+            <input type="text" id="departman" placeholder="Deparatmanınız"> <br><br>
+
+            <label for="hakkinda">Lütfen Kendinizden Bahsedin:</label> <br> <br>
+            <textarea placeholder="Hakkinizda.." id="hakkinda" cols="50" rows="10"></textarea>
+
+            <p>Evde Egzersiz Yapıyor Musunuz?</p>
+            <label for="evet">Evet</label>
+            <input type="radio" id="evet" name="hayir"/>
+            <label for="hayir">Hayır</label>
+            <input type="radio" id="hayir" name="hayir" /><br /><br />
+            
+            <p>Favori konularınız ile ilgili okumalar yapmak için hangi yolu tercih edersiniz</p>
+            <input type="checkbox" name="kitap" id="kitap"> Kitaplar
+            <input type="checkbox" name="pc" id="pc"> Bilgisayar
+            <input type="checkbox" name="telefon" id="telefon"> Mobil
+            <input type="checkbox" name="dergi" id="dergi"> Dergi
+
+            <p>Aşağıdaki film türlerden hangisi ilk tercihiniz olurdu?</p>
+            <select name="film" id="film">
+                <option value="scifi">Bilim Kurgu</option>
+                <option value="cm">Komedi</option>
+                <option value="rl">Gerçek Hikaye</option>
+                <option value="gerilim">Gerilim</option>
+                <option value="Aksiyon">Aksiyon</option>
+            </select> <br>
+            <br>
+            <input type="submit" value="Gönder">
+
+
+
+        </div>
+        
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #e14f4f;
+    
+}
+.container{
+    width: 1400px;
+    height: auto;
+    background-color: aqua;
+    margin: 0 auto;
+}
+.head{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.navbar{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    background-color: azure;
+
+    
+}
+
+.navbar a{
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: blue;
+}
+.app{
+    margin: 20px;
+    border: 2px solid wheat;
+    
+
+}
+.about{
+    width: auto;
+    height: 100px;
+   
+}
+.about img{
+   height: 90px;
+}
+
+.image{
+    height: 450px;
+    width: auto;
+    background-image: url(/Ogrenciler/erdemAltun/ders004/uygulama/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.description{
+    width: 50px;
+    background-color: #e14f4f;
+    padding: 5px;
+    text-align: center;
+    margin: 5 10;
+}
+.container-item{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image2{
+    height: 450px;
+    width: auto;
+    background-image: url(/Ogrenciler/erdemAltun/ders004/uygulama/img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.image3{
+    height: 450px;
+    width: auto;
+    background-image: url(/Ogrenciler/erdemAltun/ders004/uygulama/img4.jpg);
+    background-size: cover;
+    background-position: center;
+}

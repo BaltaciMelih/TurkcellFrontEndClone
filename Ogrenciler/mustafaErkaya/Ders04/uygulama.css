@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0,5s;
+    list-style-type: none;
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color:  #e14f4f;
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+.container h1 {
+    width: 200px;
+    margin-top: 5rem;
+    margin-right: 15 ;
+}
