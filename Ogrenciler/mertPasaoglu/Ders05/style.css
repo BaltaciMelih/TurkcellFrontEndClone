@@ -1,0 +1,45 @@
+.paragraf {
+  font-size: 24px;
+}
+
+.link {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: darkorange;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.link:visited {
+  color: rgb(255, 64, 0);
+}
+
+.link:active {
+  color: pink;
+}
+
+li:nth-child(even) {
+  color: violet;
+}
+
+li:nth-child(odd) {
+  color: burlywood;
+}
+
+li:nth-child(-n + 3) {
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .paragraf {
+    font-size: 14px;
+  }
+  span {
+    color: rgb(195, 117, 14);
+  }
+}
+
+/* Pseudo Class */
