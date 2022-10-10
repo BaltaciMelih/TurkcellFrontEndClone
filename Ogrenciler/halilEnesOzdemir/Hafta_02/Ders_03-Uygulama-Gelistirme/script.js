@@ -12,3 +12,8 @@ myAudio.onplaying = function () {
 myAudio.onpause = function () {
   isPlaying = false;
 };
+
+const dark = document.querySelector('.dark');
+dark.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
