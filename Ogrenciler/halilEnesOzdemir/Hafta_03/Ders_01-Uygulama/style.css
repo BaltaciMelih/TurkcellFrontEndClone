@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dedede;
+  padding: 18px;
+  gap: 300px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.nav ul li {
+  display: inline-block;
+
+  /* padding: 10px;
+  margin-right: 10px;
+  margin */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.nav__icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.home {
+  background: url('https://shreethemes.in/upstart/layouts/images/bg/1.jpg');
+  background-color: rgba(22, 28, 45, 1);
+  width: 100%;
+  height: 900px;
+  opacity: 0.85;
+}
+.opacity {
+}
+.home-container {
+  position: relative;
+}
+
+.home-container h1 {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 360px;
+  left: 180px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.home-p {
+  font-weight: 300;
+}
