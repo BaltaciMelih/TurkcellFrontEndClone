@@ -72,9 +72,26 @@ function handleOperator(nextOperator) {
     const value = parseFloat(displayValue);
     if (firstValue === null){
         firstValue = value; // ilk değeri aktarma
+    } else if (operator){
+        const result = calculate(firstValue, value, operator);
+
+        displayValue = String(result);
+        firstValue = result;
     }
 
     waitingForSecondValue = true;
     operator = nextOperator;
     console.log(firstValue, displayValue, waitingForSecondValue, operator);
+}
+
+function calculate(first, second, operator) {
+    if(operator==="+"){
+        return first + second;
+    } else if(operator === "-") {
+        return first - second;
+    } else if (operator === "*") {
+        return first * second;
+    } else if (operator === "/") {
+        return first / second;
+    }
 }
