@@ -1,0 +1,49 @@
+body {
+    background-color: #343f4b;
+    margin-left: 80px;
+}
+
+.nav {
+    display: flex;
+    /* margin: auto auto; */
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.list{
+    text-align: center;
+    color: gray;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+li:hover {
+    color: white;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: white;
+    color: #343f4b;
+    cursor: pointer;
+}
+
+.contant {
+    text-align: center;
+    color: gray;
+}
+
+h1 {
+    color: white;
+    font-size: xx-large;
+}
+
