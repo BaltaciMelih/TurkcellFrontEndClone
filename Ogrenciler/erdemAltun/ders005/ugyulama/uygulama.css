@@ -4,12 +4,13 @@ body {
   
   .navbar {
     list-style-type: none;
-    margin: 20;
+    margin: 0;
     padding: 30;
     overflow: hidden;
     background-color: #335;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    position:fixed; top:0px; 
   }
   
   .navbar li {
@@ -21,7 +22,7 @@ body {
   
     color: rgb(169, 194, 214);
     text-align: center;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
   }
   
