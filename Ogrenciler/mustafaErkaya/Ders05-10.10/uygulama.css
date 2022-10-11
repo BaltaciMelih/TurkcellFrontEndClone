@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style-type: none;  
+    transition: all 0.5s;
+}
+html::-webkit-scrollbar {
+    width: 20px;
+    background-color: #fff;
+
+}
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: #000000;
+
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #393638, #464447, #545356, #626265, #717274, #7d7f81, #8a8c8f, #979a9c, #a4a8aa, #b1b7b8, #bfc5c6, #cdd4d4);
+    
+
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    
+   
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    background-image: linear-gradient(to right, #343639, #444a4d, #555f5f, #6b746e, #86897e);
+   
+    
+}
+
+.navbar{
+    display: flex;
+    gap: 10px;
+    
+}
+.navbar a {
+    color: #fff;
+    font-size: 20px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: #000000;
+    padding: 8px 15px;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: #000000;
+    scale: 1.1;
+}
+
+
+.class-home{
+    text-align: center;
+    
+    
+}
+h2{
+    font-size: 40px;
+    color:red;
+    margin-top: 50px;
+}
+p{
+    font-size: 16px;
+    color: grey;
+}
+
+.class-home p {
+    width: 300px;
+    margin: 15px auto;
+}
+.Home {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #151414c4;
+}
+
+.class-home-2{
+    height: 400px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.box{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.box-1{
+    height: 200px;
+} 
+.box-3{
+    height: 200px;
+
+}
+.box-2{
+    align-self: stretch;
+    margin: 20px 0;
+}
+.h2{
+    margin-bottom: 20px;
+}
+
+/* service start */ 
+
+.service {
+    border-bottom: 2px solid #151414c4;
+}
+
+.service .service-2 {
+    height: 400px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.service .service-2 .service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px;
+}
+.service .service-2 .service-box i {
+    font-size: 25px;
+    color: rgb(216, 71, 39);
+}
+
+.service .service-2 .service-box h3 {
+    font-size: 25px;
+}
+
+.box-2-2 {
+    height: 200px;
+}
+
+
+/* featres star */
+.features {
+    padding: 30px 5px ;
+    border-bottom: 2px solid #151414c4;
+}
+.features .class-home .features-btn {
+    margin: 30px 20px;
+}
+
+#red {
+    background-color: rgb(136, 60, 60);
+}
+
+ .btn {
+    margin: 0 15px;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 200px;
+    background-color: #000000;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.features-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.features-items .features-box {
+    
+    margin: 10px;
+}
+
+.width-150 {
+    width: 350px;
+}
+
+.features-items .features-box .features-box-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+.features-items .features-box .features-box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+    
+
+.features-items i {
+    font-size: 25px;
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.features-items .features-box .features-box-left p {
+    margin-left: 30px;
+    
+}
