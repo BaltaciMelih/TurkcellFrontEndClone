@@ -116,8 +116,6 @@ margin-bottom: 0;
     text-align: center;
 }
 
-
-
 .typewriter h1 {
     font-size: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -314,13 +312,14 @@ h5{
     height: 400px;
     margin-top: 100px;
     margin:400px auto;
+    margin-bottom: 180px;
     background-color: #303841;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 .box-2{
@@ -338,6 +337,27 @@ h5{
     order: 1;
     flex-grow: 1;
 }
+.box9{
+    order: 1;
+    flex-grow: 1;
+}
+
+.people{
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+.paris{
+    border-bottom-left-radius: 5%;
+}
+
+.prefect{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    margin-top: 0;
+}
 .read{
     width: 200px;
     height: 35px;
@@ -347,4 +367,19 @@ h5{
     background: linear-gradient(#2e8da5, #114d64);
     color: #fff;
     cursor: pointer;
+}
+.follow{
+    width: 100px;
+    height: 35px;
+    margin: 0 40px;
+    margin-left: 0px;
+    border: 1px solid #0076a3;
+    background: linear-gradient(#2e8da5, #114d64);
+    color: #fff;
+    cursor: pointer;
+}
+.wrapper-3{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom:0;
 }
