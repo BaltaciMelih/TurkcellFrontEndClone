@@ -1,51 +1,141 @@
-/* .paragraf{
+.paragraf {
     font-size: 24px;
-}
-@media only screen and (max-width : 768px){
-    .paragraf{
-        font-size: 14px;
+  }
+  
+  /* min-width de verilebilir */
+  @media only screen and (max-width: 768px) {
+    .paragraf {
+      font-size: 14px;
     }
-}
-
-.link{
+    div {
+      color: antiquewhite;
+    }
+  }
+  
+  /* Pseudo Classes */
+  .link {
     font-size: 18px;
     text-decoration: none;
-    color: brown;
-}
-
-.link:hover{
+  }
+  
+  .link:hover {
     color: darkorange;
-    font-size: 19px;
-    font-weight: 700;
-}
-.link:visited{
+    font-size: 20px;
+    font-weight: blod;
+  }
+  
+  .link:visited {
     color: aqua;
-}
-.link:active{
+  }
+  
+  .link:active {
     color: fuchsia;
-}
-
-.text1 ::first-line{
-    color: orange;
-
-}
-.text1 ::after{
-    content: "bu after için deneme content";
-}
-
-.text1 ::first-letter{
+  }
+  
+  /* li:first-child {
+    color: brown;
+  } */
+  
+  /* li:nth-child(even) {
+    color: brown;
+  }
+  
+  li:nth-child(odd) {
+    color: olivedrab;
+  } */
+  
+  /* li:nth-child(3n) {
+    color: yellowgreen;
+  } */
+  
+  /* li:nth-child(2n + 1) {
+    color: yellowgreen;
+  } */
+  
+  li:nth-child(-n + 5) {
+    color: yellowgreen;
+  }
+  
+  /* Pseudo Element */
+  .text1::first-letter {
     font-size: 30px;
-} */
-
-
-.buter {
+  }
+  
+  .text1::first-line {
+    color: orangered;
+  }
+  
+  .text1::after {
+    content: "Bu After İçin Deneme Contenti";
+  }
+  
+  .text1::before {
+    content: "Bu Before İçin Deneme Contenti";
+  }
+  
+  table,
+  tr,
+  td,
+  th {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  table {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  tbody tr {
+    text-align: center;
+  }
+  
+  thead tr {
+    background-color: olivedrab;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #dedede;
+  }
+  
+  tbody tr:hover {
+    background-color: #979797;
+    cursor: pointer;
+  }
+  
+  .red {
     width: 200px;
     height: 200px;
-    background-color: olive;
-}
-
-.inner{
+    background-color: red;
+    position: relative;
+    top: 20px;
+    left: 30px;
+  }
+  
+  .blue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+  }
+  
+  .outer {
+    width: 200px;
+    height: 200px;
+    background-color: #73a164;
+    position: relative;
+    top: 20px;
+    left: 30px;
+  }
+  
+  .inner {
     width: 50px;
     height: 50px;
-    background-color: orange;
-}
+    background-color: orangered;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
+  

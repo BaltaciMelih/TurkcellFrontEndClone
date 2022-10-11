@@ -1,68 +1,222 @@
-* {
+/* Font sizes (rem) */
+/* 1 / 1.2 / 1.4 / 1.6 / 1.8 / 2 / 2.4 / 3 / 3.6 / 4.4 / 5.2 / 6.2 / 7.4 / 8.6 / 9.8 */
+
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.logo {
+  position: absolute;
+  height: 2.4rem;
+  margin-right: auto;
+  cursor: pointer;
+  top: 0.5rem;
+  left: 30rem;
 }
 
 header {
-  font-size: 20px;
+  position: relative;
+  width: 100%;
+  height: 80rem;
+  margin-bottom: 9.6rem;
+  background-image: url('https://shreethemes.in/upstart/layouts/images/bg/1.jpg');
+  background-color: rgba(22, 28, 45);
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dedede;
-  padding: 18px;
-  gap: 300px;
+  padding: 3rem 15%;
+  background-color: transparent;
 }
 
-.nav ul {
-  display: flex;
-  gap: 30px;
-}
-
-.nav ul li {
+.nav__links li {
   display: inline-block;
-
-  /* padding: 10px;
-  margin-right: 10px;
-  margin */
+  margin-right: 40px;
+  list-style: none;
 }
 
-.nav ul li a {
+.nav li a {
   text-decoration: none;
-  margin-right: 30px;
+  font-size: 16px;
+  color: white;
 }
 
-.nav__icons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+.nav__icon {
+  color: white;
+  margin-left: 1rem;
 }
 
-.home {
-  background: url('https://shreethemes.in/upstart/layouts/images/bg/1.jpg');
-  background-color: rgba(22, 28, 45, 1);
-  width: 100%;
-  height: 900px;
-  opacity: 0.85;
-}
-.opacity {
-}
-.home-container {
+/* .bg-text {
   position: relative;
 }
-
-.home-container h1 {
-  font-size: 50px;
-  color: white;
+.bg-text::before {
+  margin: 3rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  content: 'Providing Brilliant Ideas \A For Your';
+  white-space: pre;
   position: absolute;
-  top: 360px;
-  left: 180px;
+  color: white;
+  top: 15rem;
+  left: 0;
+  z-index: -1;
 }
 
-.underline {
+.bg-text::after {
+  margin: 3rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  content: '';
+  animation: spin 6s ease infinite;
+  position: absolute;
+  color: white;
+  top: 19.3rem;
+  left: 15rem;
+  z-index: -1;
   text-decoration: underline;
+  text-decoration-color: brown;
 }
 
-.home-p {
-  font-weight: 300;
+@keyframes spin {
+  0% {
+    content: 'Business';
+  }
+  25% {
+    content: 'Startups';
+  }
+  50% {
+    content: 'Digital Agency';
+  }
+  75% {
+    content: 'Marketing';
+  }
+  100% {
+    content: 'Business';
+  }
+}
+
+.bg-p {
+  color: white;
+  margin-top: 30rem;
+  margin-left: 10rem;
+} */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 50rem;
+  background-color: #f8f9fc !important;
+  gap: 2rem;
+  margin-bottom: 9.6rem;
+}
+
+.about img {
+  display: block;
+  width: 45rem;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-right h6 {
+  color: #ff5714;
+}
+
+.about-right p {
+  font-weight: 400;
+  color: #8492a6;
+}
+
+.about-right a button {
+  padding: 0.8rem 2rem;
+  outline: none;
+  letter-spacing: 0.5px;
+  border-radius: 0.6rem;
+  border: 1px solid #ff5714;
+  background-color: #ff5714;
+  color: #fff;
+  box-shadow: 0 3px 5px 0 rgb(255, 87, 20);
+}
+
+.services {
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+.services-title {
+  color: #ff5714;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  margin-left: 29rem;
+}
+
+.services-desc {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-desc h4 {
+  font-size: 2.8rem;
+}
+
+.services-desc p {
+  color: #8492a6;
+  font-size: 1.4rem;
+}
+
+.services-bottom > .cards {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards > .card {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.icon-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 8.5rem;
+  height: 8.5rem;
+  background: rgba(255, 87, 20, 0.1);
+  color: #ff5714;
+}
+
+.card-svg {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
 }
