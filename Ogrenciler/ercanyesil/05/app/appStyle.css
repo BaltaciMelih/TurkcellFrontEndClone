@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dedede;
+  padding: 18px;
+  gap: 300px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.nav ul li {
+  display: inline-block;
+
+  /* padding: 10px;
+  margin-right: 10px;
+  margin */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.nav__icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.home {
+  background: url('https://shreethemes.in/upstart/layouts/images/bg/1.jpg');
+  background-color: rgba(22, 28, 45, 1);
+  width: 100%;
+  height: 900px;
+  opacity: 0.85;
+}
+.opacity {
+}
+.home-container {
+  position: relative;
+}
+
+.home-container h1 {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 360px;
+  left: 180px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.home-p {
+  font-weight: 300;
+}
+
+
+/* Ercan Yesil */
+
+.portfolio-banner{
+  width: 100%;
+  height: 900px;
+  padding: 100px 0;
+  background-color: #f8f9fc ;
+}
+
+.portfolio-container{
+  width: 1140px;
+  height: 624px;
+  margin: auto;
+}
+
+.portfolio-header{
+width: 1116px;
+height: 168px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.portfolio-header-item{
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.portfolio-header-item p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none solid rgb(132, 146, 166);
+  text-align: center;
+  word-spacing: 0px;
+  opacity: 1; 
+}
+
+.portfolio-content{
+  display: flex;
+  width: 1140px;
+  height: 455px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image{
+  width: 261px;
+  height: 195px;
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+.image:hover{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.image-radius{
+  border-radius: 5%;
+}
+
+
+    /* transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+
+    /* box-shadow: 5px 5px 10px black; */

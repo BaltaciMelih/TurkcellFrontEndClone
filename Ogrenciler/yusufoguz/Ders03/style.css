@@ -1,17 +1,60 @@
-.paragraf {
-    font-size: 30px;
-    font-weight: bolder;
-    color: brown;
-  }
-  div.colorBlue{
-    color: blue;
-  }
-  .colorParagraf1{
-    color: #EF7513;
-  }
-  .colorParagraf2{
-    color:rgba(239, 117, 19, 0.94);
-  }
-  .font-20{
-    font-size: 20px;
-  }
+.box {
+  height: 50px;
+  width: 250px;
+  margin: 10px;
+}
+
+.red {
+  background-color: red;
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.blue {
+  background-color: blue;
+  margin-bottom: 15px;
+}
+
+.green {
+  background-color: green;
+  margin-top: 20px;
+}
+
+.bgImage {
+  height: 500px;
+  width: 800px;
+  background-image: url('https://mymodernmet.com/wp/wp-content/uploads/2021/04/Nature-Sounds-For-Well-Being-03.jpg');
+  background-size: 100%;
+  background-position-y: center;
+}
+.borderRadius {
+  border-radius: 50%;
+}
+
+/* .paragraph {
+  font-size: 30px;
+}
+.color-blue {
+  background-color: blue;
+}
+.colorParagraf1 {
+  color: #ef7513;
+}
+
+.colorParagraf2 {
+  color: crimson;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.width50 {
+  width: 50%;
+  background-color: yellow;
+} */
