@@ -1,27 +1,302 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    transition: all 0,5s;
-    list-style-type: none;
     text-decoration: none;
-}
-html{
-    font-size: 10px;
-}
-body{
-    background-color:  #e14f4f;
-}
+  }
+  
+  body {
+    
+    
+  }
+  .btn {
+    color: rgb(39, 35, 35);
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 300px;
+    box-shadow: 5px 5px 15px rgba(42, 37, 37, 0.794);
+    font-size: 17px;
+    cursor: pointer;
+    margin: 10px 25px;
+    transition: all 0.5s;
+    
+  }
 
-.container {
-    width: 1000px;
+  .btn:hover{
+    background-color: #2a2727;
+    color: #ccc;
+  }
+
+  .margin-10 {
+    margin-top: 10px;
+  }
+  .container {
     height: auto;
-    background-color: aqua;
+    width: auto;
+  
     margin: 0 auto;
-}
+    
+    background-image: linear-gradient(
+      to top,
+      #000000,
+      #351f24,
+      #67373f,
+      #9e5158,
+      #d86e6e
+    ); 
+  }
+  h2 {
+    background-color: transparent;
+    text-align: center;
+    border-bottom: 3px solid #cba4a3;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .head {
+    
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .navbar {
+    margin: 20px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px rgba(25, 24, 24, 0.381);
+    border-radius: 60px;
+    background-image: linear-gradient(to bottom, #bcbcbc, #c2c2c6, #c6c9d0, #c9d0da, #cad8e3, #c4d4e2, #bfcfe1, #bbcbe0, #b5b8d2, #b3a5bf, #b093a9, #aa818f);
+  }
+  .navbar .header{
+    padding-left: 30px;
+  }
+  .navbar .header h1{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #2a2727;
+  }
 
-.container h1 {
+  .navbar .header i {
+    font-size: 15px;
+    color: rgb(206, 206, 81);
+    margin: 3px;
+  }
+
+  .navbar .header .stars {
+    text-align: center;
+    
+  }
+  
+  
+  .app {
+    margin: 20px;
+  /*
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    */
+    border-radius: 50px;
+    box-shadow: 10px 10px 14px #bbcbe0a8;
+   /* #b36874  rgba(255, 255, 255, 0.346);*/
+   transition: all 0.4s;
+  }
+
+  .app:hover {
+    background-color: #dddee7;
+    box-shadow: 10px 10px 15px rgba(24, 23, 23, 0.759);
+    scale: 1.075;
+  }
+  .about {
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  .about .name {
+    margin-left: 1rem;
+  }
+  .about img {
+    height: 90px;
+  }
+  
+  .image {
+    height: 450px;
+    width: auto;
+    background-image: url(/Ogrenciler/erdemAltun/ders004/uygulama/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .description {
+    width: 50px;
+    background-color: #fefefe;
+    padding: 5px;
+    text-align: center;
+    margin: 5px 10px;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-image: linear-gradient(
+      to right bottom,
+      #dcc9c9,
+      #d4b6b6,
+      #cba4a3,
+      #c29191,
+      #b97f7f
+    );
+  }
+  .container-item {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  
+  .image2 {
+    height: 450px;
+    width: auto;
+    background-image: url(/Ogrenciler/erdemAltun/ders004/uygulama/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .image3 {
+    height: 450px;
+    width: auto;
+    background-image: url(/Ogrenciler/erdemAltun/ders004/uygulama/img4.jpg);
+  
+    background-position: center;
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  /* footer start */
+  .footer {
+    background-color: black;
+    height: auto;
+    padding-top: 10px;
+  }
+  .footer .row {
+    display: flex;
+    background-color: #351f24;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .footer .row .map {
+    flex: 1 1 550px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .footer .row form {padding: 20px 0;}
+  
+  .footer .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  
+  .footer .row form .btn:hover {
+    color:  #c29191;
+    opacity: 0.8;
+  }
+  
+  .footer .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .footer .row form h3 {
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .footer .row form .inputBox {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      border: 1px solid black;
+     
+  }
+  .footer .row form .inputBox i{
+      color: #fff;
+      margin: 10px 15px;
+      font-size: 25px;
+  }
+  
+  .footer .row form .inputBox input {
+      width: 100%;
+      padding: 20px;
+      font-size: 17px;
+      color: #fff;
+      text-transform: none;
+      background: none;
+  }
+  
+  .footer h1 {
+    color: #ccc;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
     width: 200px;
+<<<<<<< HEAD
     margin-top: 5rem;
-    margin-right:  ;
+    margin-right: 15 ;
 }
+=======
+    margin: 20px auto;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .footer h1:hover {
+    background-color: #67373f;
+    color: black;
+  }
+  
+  .footer .share {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    margin: 30px auto;
+  }
+  
+  .footer .share a {
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.6s;
+  }
+  
+  .footer .share a:hover {
+    background-color:  #67373f;
+    color: rgb(12, 21, 28);
+  }
+  
+  .fa-star {
+    color: rgb(208, 187, 72);
+    font-size: 20px;
+    margin: 0 2px;
+  }
+  
+>>>>>>> parent of 4fdd82c (Merge branch 'main' of https://github.com/waroi/TurkcellFrontEnd)
