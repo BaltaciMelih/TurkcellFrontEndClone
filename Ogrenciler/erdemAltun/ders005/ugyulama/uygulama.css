@@ -412,16 +412,18 @@ body {
   }
   
   .basic {
-    /* margin: 0 auto; */
+    margin-top: 20px;
     width: 275px;
+    height: 500px;
     border: 1px solid black;
     border-radius: 4%;
     overflow: hidden;
   }
   
-  .startup {
+  .pricing-container .startup {
     /* margin: 0 auto; */
     width: 275px;
+    height: 540px;
     border: 1px solid black;
     border-radius: 4%;
     overflow: hidden;
@@ -429,8 +431,9 @@ body {
   }
   
   .enterprise {
-    /* margin: 0 auto; */
+    margin-top: 20px;
     width: 275px;
+    height: 500px;
     border: 1px solid black;
     border-radius: 4%;
     overflow: hidden;
@@ -539,3 +542,60 @@ body {
     color: white;
   }
   
+  .phone-container{
+    width: 500px;
+    height: 550px;
+    margin-top: 10px;
+    margin: 400px auto;
+    margin-bottom: 180px;
+    background-color: #303841;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .animated-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow:visible;
+
+  }
+
+  .line{
+    height: 50px;
+  }
+
+  .line:first-child{
+    animation: anim 12s infinite;
+  }
+
+  @keyframes anim {
+    0%{
+        margin-top: 0;
+    }
+    16%{
+        margin-left: -60px;
+    }
+    33%{
+        margin-left: -120px;
+    }
+    50%{
+        margin-left: -180px;
+    }
+    66%{
+        margin-left: -120px;
+    }
+    82%{
+        margin-left: -60px;
+    }
+    100%{
+        margin-left: 0;
+    }
+
+  }
