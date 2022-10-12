@@ -1,0 +1,93 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.home {
+    background-color: #343F4B;
+}
+.header {
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    background-color: #343F4B;
+   
+}
+.header tr td {
+    margin: auto;
+    font-size: 20px;
+    color: rgb(159, 149, 149);
+
+    
+}
+.header tr td a:-webkit-any-link:visited{
+    color: red ;
+
+}
+.header tr td a:visited{
+    color: red ;
+
+}
+.paragraf {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.paragraf h1 {
+    font-size: 70px;
+    color: whitesmoke;
+}
+.paragraf p {
+    font-size: 35px;
+    color: #ffffff4d;
+}
+
+.image {
+
+}
+.image-lr {
+    width: 261px;
+    height: 495px;
+
+}
+.image-c {
+    width: 356px;
+    height: 771px;
+
+}
+.second {
+    background-color: #303841;
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+}
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 75%;
+    justify-content: space-around;
+}
+.conteiner1 {
+    background-color: aqua;
+    width: 356px;
+    height: 277px;
+    text-align: center;
+}
+.conteiner2 {
+    background-color: aqua;
+    width: 356px;
+    height: 277px;
+    margin: auto;
+    text-align: center;
+
+}
+.conteiner3 {
+    background-color: aqua;
+    width: 356px;
+    height: 277px;
+    text-align: center;
+
+}
