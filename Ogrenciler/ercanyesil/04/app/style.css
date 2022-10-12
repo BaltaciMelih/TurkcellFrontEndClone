@@ -1,0 +1,66 @@
+body {
+    background: #f6fbfa;
+  }
+
+
+.container{
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+main{
+    width: 1800px;
+}
+figure{
+    display: block;
+}
+.baslik1 {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+section {
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    float: left;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.footer2 {
+    height: 70px;
+    margin-top: 10px;
+    background-color: black;
+}
+.image23{
+    height: 250px;
+    width: 400px;
+    border-radius: 2%;
+}
+.bgImage{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    background-position-y: center;
+    background-image: url("https://static.wixstatic.com/media/c837a6_a5f904abc9224779abfc65cb53fa6ba7~mv2.jpg/v1/crop/x_158,y_151,w_1117,h_1117/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/gettyimages-1284121212-2048x2048_edited_.jpg");
+    background-size: 100%;
+}
+.borderRadius{
+    border-radius: 50%;
+}
+.card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+  }
+.card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+  }
+.clear {
+    clear: both;
+  }

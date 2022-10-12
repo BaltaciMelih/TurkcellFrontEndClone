@@ -1,0 +1,74 @@
+.p{
+    font-size: 24px;    
+}
+    .p{font-size: 14px;}
+    div{
+        color: antiquewhite;
+    }
+    .link{
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .link:hover{
+        color: darkorange;
+        font-size: 19px;
+        font-weight: 200px;
+    }
+    .link:visited{
+        color: aqua;
+
+    }
+    .link:active{
+        color: fuchsia;
+    }
+    li:nth-child(even){
+        color: brown;
+    }
+    li:nth-child(-n+6){
+        color: green;
+    }
+    .text-1::first-letter{
+        color: aqua;
+        font-size: 36px;
+    }
+    .text-1::after{
+        content: "Bu after için deneme contenti";
+    }
+    table,tr,td,th{
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+    table{
+        width: 40;
+        margin: 0 auto;
+    }
+    tbody tr{
+        text-align: center;
+    }
+    thead tr{
+        background-color: olivedrab;
+    }
+    tbody tr:nth-child(even){
+        background-color: #dedede;
+    }
+    tbody tr:hover{
+        background-color: #cfcfcf;
+        cursor: pointer;
+    }
+    .outer{
+        width: 200px;
+        height: 200px;
+        background-color: #73a164;
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+    .inner{
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        position: absolute;
+        top: 80px;
+        left: 10px;
+    }
+
