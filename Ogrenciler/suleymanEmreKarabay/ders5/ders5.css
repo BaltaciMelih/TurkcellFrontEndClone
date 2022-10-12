@@ -1,9 +1,0 @@
-.paragraf {
-  font-size: 24px;
-}
-
-@media only screen and (max-width: 760px) {
-  .paragraf {
-    font-size: 14px;
-  }
-}

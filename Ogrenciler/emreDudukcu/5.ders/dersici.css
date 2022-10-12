@@ -44,6 +44,22 @@ li:nth-child(n) {
     font-size: 61px;
 }
 
+.text1::first-letter {
+    font-size: 30px;
+}
+
+.text1::first-line {
+    color: orangered;
+}
+
+.text1::after {
+    content: "Bu After için Deneme Conenti";
+}
+
+.text1::before {
+    content: "Bu Before için Deneme Conenti";
+}
+
 table,
 tr,
 td,

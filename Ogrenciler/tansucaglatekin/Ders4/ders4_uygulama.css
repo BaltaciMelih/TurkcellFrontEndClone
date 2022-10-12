@@ -2,6 +2,7 @@ body {
     margin: 10px;
     padding: 10px;
     background-color: #749F82;
+    margin: 0 auto;
 }
   
 .sidebar{
@@ -13,7 +14,7 @@ body {
 }
 
 .header{
-  margin-top: 10px;
+  margin-top: 20px;
   height: 100%;
   text-align: center;
 }

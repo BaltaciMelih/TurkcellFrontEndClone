@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration:none;
     list-style-type: none;  
+    transition: all 0.5s;
+   
 }
 html::-webkit-scrollbar {
     width: 20px;
@@ -15,15 +17,20 @@ html::-webkit-scrollbar-track{
 }
 html::-webkit-scrollbar-thumb {
     border-radius: 30px;
-    background-color: #000000;
+    background-color: #D84727;
 
+}
+
+body{
+background-image: linear-gradient(white);
+/*background-color: #aaa69d;*/
 }
 
 .container{
     width: 75%;
     margin: 0 auto;
-    background-color: aquamarine;
-    position: relative;
+    border: 1px solid #D84727; 
+    
 
 }
 header {
@@ -38,53 +45,119 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
-    background-color: blueviolet;
+    border-radius: 50px ;
+    background-color: #D84727;
    
     
 }
 
 .navbar{
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
     
 }
 .navbar a {
-    color: #000000;
+    color: #fff;
     font-size: 20px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: #6f6f6f;
+    padding: 8px 15px;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: #000000;
+    scale: 1.1;
+}
+
+.navbar .empty {
+    text-decoration: line-through;
 }
 
 
 .class-home{
     text-align: center;
-    
+        
+}
+
+.fa-mobile-screen-button {
+    font-size: 200px;
+    margin: auto;
+    color: black;
+    position: relative;
     
 }
+.fa-spanA{
+    font-size: 300px;
+    margin: 30px;
+    color: black;
+    position: relative;
+}
+
+.fa-span{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top:50% ;
+    left:25%;
+    transform: translateY(-75%);
+}
+
+.fa-span-2{
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top:50% ;
+    left:25%;
+    transform: translateY(-75%);
+}
+
+.box:hover {
+    scale: 1.15;
+}
+
+.home-box-1{
+    
+    display: flex;
+}
+
 h2{
-    font-size: 64px;
-    color:red;
-    margin-top: 50px;
+    font-size: 40px;
+    color:#D84727;
+    margin-top: 100px;
 }
 p{
     font-size: 16px;
-    color: grey;
-}
-.Home {
-    margin-top: 30px;
+    color: black;
 }
 
-.class-home-2{
+.class-home p {
+    width: 300px;
+    margin: 15px auto;
+    color: #000000;
+}
+.Home {
+    margin-top: -100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+}
+
+.class-home-2 {
     height: 400px;
-    background-color: greenyellow;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .box{
     width: 300px;
     height: auto;
-    background-color: white;
+    
     border-radius: 20px;
 
 }
@@ -92,7 +165,9 @@ p{
     height: 200px;
 } 
 .box-3{
-    height: 200px;
+    
+    display: flex;
+    
 
 }
 .box-2{
@@ -106,16 +181,18 @@ p{
 /* service start */ 
 
 .service {
-    background-color: rgb(166, 166, 102);
+   
+    padding-top: 50px ;
 }
 
 .service .service-2 {
     height: 400px;
-    background-color: rgb(220, 126, 39);
+   
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .service .service-2 .service-box {
     display: flex;
@@ -127,7 +204,7 @@ p{
 }
 .service .service-2 .service-box i {
     font-size: 25px;
-    color: rgb(216, 71, 39);
+    color: #D84727;
 }
 
 .service .service-2 .service-box h3 {
@@ -138,23 +215,22 @@ p{
     height: 200px;
 }
 
-
-/* featres star */
 .features {
-    padding: 30px 5px ;
+    padding-top: 50px;
+   
 }
 .features .class-home .features-btn {
     margin: 30px 20px;
 }
 
 #red {
-    background-color: rgb(136, 60, 60);
+    background-color: #D84727;
 }
 
-.features .class-home .features-btn .btn {
+ .btn {
     margin: 0 15px;
     display: inline-block;
-    padding: 20px 35px;
+    padding: 15px 25px;
     border-radius: 200px;
     background-color: #000000;
     font-size: 17px;
@@ -163,8 +239,8 @@ p{
 }
 
 
-.features .class-home .features-btn .btn:hover {
-    opacity: 0.9;
+.btn:hover {
+    opacity: 0.8;
 }
 
 .features-items {
@@ -176,7 +252,7 @@ p{
 }
 
 .features-items .features-box {
-    background-color: coral;
+    
     margin: 10px;
 }
 
@@ -193,6 +269,18 @@ p{
     padding: 20px;
     
 }
+
+.features-items .features-box .features-box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+    
+
 .features-items i {
     font-size: 25px;
     border: 1px solid #000000;
@@ -204,3 +292,111 @@ p{
     margin-left: 30px;
     
 }
+
+.footer {
+    background-color: #D84727;
+    padding-top: 70px;
+  }
+  .footer .row {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .footer .row .map {
+    flex: 1 1 550px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .footer .row form {padding: 20px 0;}
+  
+  .footer .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  
+  .footer .row form .btn:hover {
+    color:  #D84727;
+    opacity: 0.8;
+  }
+  
+  .footer .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .footer .row form h3 {
+    font-size: 35px;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .footer .row form .inputBox {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      border: 1px solid black;
+     
+  }
+  .footer .row form .inputBox i{
+      color: black;
+      margin: 10px 15px;
+      font-size: 25px;
+  }
+  
+  .footer .row form .inputBox input {
+      width: 100%;
+      padding: 20px;
+      font-size: 17px;
+      color: black;
+      text-transform: none;
+      background: none;
+  }
+  
+  .footer h1 {
+    color: #ccc;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    width: 200px;
+    margin: 15px auto;
+}
+
+  .footer h1:hover {
+    background-color: #67373f;
+    color: black;
+  }
+  
+  .footer .share {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    margin: 30px auto;
+  }
+  
+  .footer .share a {
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.6s;
+  }
+  
+  .footer .share a:hover {
+    background-color:  #D84727;
+    color: rgb(12, 21, 28);
+  }
+  
+ 

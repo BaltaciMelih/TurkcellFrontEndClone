@@ -17,8 +17,7 @@ body {
   .content {
     width: 690px;
     height: 590px;
-    background: #16a085;
-    background: linear-gradient(to bottom, #16a085, #546445); 
+    background-color: #16a085;
     border: 5px solid brown;
     border-radius: 10px;
     float: right;
@@ -40,4 +39,3 @@ body {
   .clear {
     clear: both;
   }
-

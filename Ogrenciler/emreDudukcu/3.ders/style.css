@@ -13,12 +13,16 @@ div.farklırenk {
 }
 
 .paragraf1 {
-    color: ;
+    color: red;
 }
 
-.paragraf2 {}
+.paragraf2 {
+    color: #ff0000;
+}
 
-.paragraf3 {}
+.paragraf3 {
+    color: rgb(255, 0, 0);
+}
 
 .font-61 {
     font-size: 61;

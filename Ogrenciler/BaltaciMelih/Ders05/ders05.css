@@ -1,34 +1,36 @@
-.paragraf{
+.paragraf {
     font-size: 50px;
 }
+
 @media only screen and (max-width: 768px) {
-    .paragraf{
+    .paragraf {
         font-size: 14px;
     }
+
     div {
         color: aqua;
-    } 
+    }
 }
 
 /* Pseudo Class */
 
-.link{
+.link {
     font-size: 18px;
     text-decoration: none;
     color: brown;
 }
 
-.link:hover{
+.link:hover {
     color: darkorange;
     font-size: 19px;
     font-weight: 700;
 }
 
-.link:visited{
+.link:visited {
     color: aqua;
 }
 
-.link:active{
+.link:active {
     color: fuchsia;
 }
 
@@ -39,11 +41,11 @@ li:nth-child(-n+6) {
 
 /* Pseudo Element */
 
-.text1::first-letter{
+.text1::first-letter {
     font-size: 40px;
 }
 
-.text1::first-line{
+.text1::first-line {
     color: orange;
 }
 
@@ -54,30 +56,39 @@ li:nth-child(-n+6) {
 .text1::before {
     content: "DenemeB";
 }
-table,tr,td,th{
+
+table,
+tr,
+td,
+th {
     border: 1px solid black;
     border-collapse: collapse;
 }
-table{
+
+table {
     width: 40%;
     margin: 0 auto;
 }
-tbody tr{
+
+tbody tr {
     text-align: center;
 }
-thead tr{
+
+thead tr {
     text-align: center;
     background-color: olivedrab;
 }
-tbody tr:nth-child(even){
+
+tbody tr:nth-child(even) {
     background-color: blue;
 }
-tbody tr:hover{
+
+tbody tr:hover {
     background-color: yellow;
     cursor: pointer;
 }
 
-.outer{
+.outer {
     width: 200px;
     height: 200px;
     background-color: green;
@@ -86,7 +97,7 @@ tbody tr:hover{
     left: 30px;
 }
 
-.inner{
+.inner {
     width: 50px;
     height: 50px;
     background-color: orange;
