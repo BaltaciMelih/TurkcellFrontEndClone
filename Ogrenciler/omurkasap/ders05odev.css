@@ -45,6 +45,7 @@
 
 .image {
     text-align: center;
+    height: 700px;
 
 }
 .image-lr {
@@ -55,6 +56,7 @@
 .image-c {
     width: 356px;
     height: 771px;
+    position:relative
 
 }
 .second {
@@ -69,8 +71,10 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    width: 100%;
+    gap: 10px;
 
-    justify-content: space-around;
+    justify-content: center;
 }
 .conteiner1 {
     background-color: aqua;
@@ -82,7 +86,6 @@
     background-color: aqua;
     width: 356px;
     height: 277px;
-    margin: auto;
     text-align: center;
 
 }
@@ -94,11 +97,11 @@
 
 }
 .conteiner1:hover{
-    background-color: red;
+    background-color: rgba(0, 95, 145, 0.586);
 }
 .conteiner2:hover{
-    background-color: red;
+    background-color: rgba(0, 95, 145, 0.586);
 }
 .conteiner3:hover{
-    background-color: red;
+    background-color: rgba(0, 95, 145, 0.586);
 }
