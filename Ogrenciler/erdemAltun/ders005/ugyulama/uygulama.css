@@ -4,12 +4,13 @@ body {
   
   .navbar {
     list-style-type: none;
-    margin: 20;
+    margin: 0;
     padding: 30;
     overflow: hidden;
     background-color: #335;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    position:fixed; top:0px; 
   }
   
   .navbar li {
@@ -21,7 +22,7 @@ body {
   
     color: rgb(169, 194, 214);
     text-align: center;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
   }
   
@@ -67,19 +68,19 @@ body {
   }
   
   .phone-1 {
-    width: 250px;
+    width: 280px;
     height: 550px;
     max-width: 100%;
   }
   
   .phone-2 {
-    width: 250px;
+    width: 280px;
     height: 550px;
     max-width: 100%;
   }
   
   .phone-3 {
-    width: 250px;
+    width: 280px;
     height: 550px;
     max-width: 100%;
   }
@@ -412,16 +413,18 @@ body {
   }
   
   .basic {
-    /* margin: 0 auto; */
+    margin-top: 20px;
     width: 275px;
+    height: 500px;
     border: 1px solid black;
     border-radius: 4%;
     overflow: hidden;
   }
   
-  .startup {
+  .pricing-container .startup {
     /* margin: 0 auto; */
     width: 275px;
+    height: 540px;
     border: 1px solid black;
     border-radius: 4%;
     overflow: hidden;
@@ -429,8 +432,9 @@ body {
   }
   
   .enterprise {
-    /* margin: 0 auto; */
+    margin-top: 20px;
     width: 275px;
+    height: 500px;
     border: 1px solid black;
     border-radius: 4%;
     overflow: hidden;
@@ -537,5 +541,57 @@ body {
   .recommended p {
     margin: 0;
     color: white;
+  }
+  
+  .phone-container{
+    width: 500px;
+    height: 250px;
+    margin-top: 10px;
+    margin: 175px auto;   
+    background-color: #303841;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .animated-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow:visible;
+
+  }
+
+  .line:first-child{
+    animation: anim 12s infinite;
+  }
+
+  @keyframes anim {
+    0%{
+        margin-left: 0;
+    }
+    16%{
+        margin-left: 250px;
+    }
+    33%{
+        margin-left: 450px;
+    }
+    50%{
+        margin-left: -650px;
+    }
+    66%{
+        margin-left: -450px;
+    }
+    82%{
+        margin-left: -250px;
+    }
+    100%{
+        margin-left: 0;
+    } 
   }
   
