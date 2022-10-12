@@ -1,0 +1,28 @@
+.container{
+    margin: 0;
+    padding: 0;
+}
+.cvHeader{
+    display: flex;
+    align-items: center;
+}
+.cvImg{
+    border-radius: 50%;
+    width: 20%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+.headerInf{
+    margin-left: 8%;
+    flex-direction: column;
+    margin-right: 8%;
+}
+.headerName{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 38px;
+ font: bold;
+}
+.headerText{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
