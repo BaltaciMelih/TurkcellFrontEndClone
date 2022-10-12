@@ -44,6 +44,7 @@
 }
 
 .image {
+    text-align: center;
 
 }
 .image-lr {
@@ -64,10 +65,11 @@
     text-align: center;
 }
 .conteiner {
+    background-color: #303841;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    width: 75%;
+
     justify-content: space-around;
 }
 .conteiner1 {
@@ -90,4 +92,13 @@
     height: 277px;
     text-align: center;
 
+}
+.conteiner1:hover{
+    background-color: red;
+}
+.conteiner2:hover{
+    background-color: red;
+}
+.conteiner3:hover{
+    background-color: red;
 }
