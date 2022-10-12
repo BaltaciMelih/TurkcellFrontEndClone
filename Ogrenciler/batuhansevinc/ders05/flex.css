@@ -146,9 +146,11 @@ li{
     color: #8492a6; font-size: 15px; width: 488px; height: 144px;
 }
 .wrapper{
+  margin-left: 20%;
+    margin-right: 20%;
     padding: 15px;
-    width: 350px;
-    height: 400px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -159,6 +161,7 @@ li{
         margin: 15px;
         background-color: white;
         border: 1px solid #cb6074;
+        width: 30%;
     }
 .card-img{
     border-radius: 20%;
@@ -191,4 +194,31 @@ color: #ff5714 !important;
     color: #6c757d;
     font-size: 18px;
     padding-bottom: 15px;
+}
+.WP{
+margin-left: 20%;
+margin-right: 20%;
+text-align: center;
+}
+/* TİMELİNE YAPISI */
+.timeline {
+position: relative;
+max-width: 1200px;
+margin: 0 auto;
+}
+.timeline::after{
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.timelineContainer{
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 20%;
 }
