@@ -23,6 +23,7 @@ html::-webkit-scrollbar-thumb {
 
 body{
 background-image: linear-gradient(white);
+/*background-color: #aaa69d;*/
 }
 
 .container{
@@ -53,6 +54,7 @@ header {
 .navbar{
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
     
 }
 .navbar a {
@@ -70,6 +72,10 @@ header {
     scale: 1.1;
 }
 
+.navbar .empty {
+    text-decoration: line-through;
+}
+
 
 .class-home{
     text-align: center;
@@ -81,6 +87,7 @@ header {
     margin: auto;
     color: black;
     position: relative;
+    
 }
 .fa-spanA{
     font-size: 300px;
@@ -107,6 +114,10 @@ header {
     transform: translateY(-75%);
 }
 
+.box:hover {
+    scale: 1.15;
+}
+
 .home-box-1{
     
     display: flex;
@@ -131,7 +142,7 @@ p{
     margin-top: -100px;
     padding-top: 50px;
     padding-bottom: 30px;
-    border-bottom: 2px solid #151414c4;
+    
 }
 
 .class-home-2 {
@@ -141,6 +152,7 @@ p{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .box{
     width: 300px;
@@ -153,7 +165,9 @@ p{
     height: 200px;
 } 
 .box-3{
-    height: 200px;
+    
+    display: flex;
+    
 
 }
 .box-2{
@@ -167,7 +181,8 @@ p{
 /* service start */ 
 
 .service {
-    border-bottom: 2px solid #151414c4;
+   
+    padding-top: 50px ;
 }
 
 .service .service-2 {
@@ -177,6 +192,7 @@ p{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .service .service-2 .service-box {
     display: flex;
@@ -200,8 +216,8 @@ p{
 }
 
 .features {
-    padding: 30px 5px ;
-    border-bottom: 2px solid #151414c4;
+    padding-top: 50px;
+   
 }
 .features .class-home .features-btn {
     margin: 30px 20px;
@@ -279,7 +295,7 @@ p{
 
 .footer {
     background-color: #D84727;
-    padding-top: 10px;
+    padding-top: 70px;
   }
   .footer .row {
     display: flex;
@@ -350,8 +366,7 @@ p{
     border-top-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
     width: 200px;
-    margin-top: 5rem;
-    margin-right: 15 ;
+    margin: 15px auto;
 }
 
   .footer h1:hover {
@@ -384,8 +399,4 @@ p{
     color: rgb(12, 21, 28);
   }
   
-  .fa-star {
-    color: rgb(208, 187, 72);
-    font-size: 20px;
-    margin: 0 2px;
-  }
+ 
