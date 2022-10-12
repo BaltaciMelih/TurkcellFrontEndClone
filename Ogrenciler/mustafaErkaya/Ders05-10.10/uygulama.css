@@ -17,18 +17,19 @@ html::-webkit-scrollbar-track{
 }
 html::-webkit-scrollbar-thumb {
     border-radius: 30px;
-    background-color: #000000;
+    background-color: #D84727;
 
 }
 
 body{
-background-image: linear-gradient(to right top, #3c3f32, #4a543c, #556a47, #5d8155, #629966, #4ea07a, #33a790, #00aca8, #009cb7, #478ab5, #6b76a3, #7c6587);
+background-image: linear-gradient(white);
+/*background-color: #aaa69d;*/
 }
 
 .container{
     width: 75%;
     margin: 0 auto;
-    border: 1px solid black; 
+    border: 1px solid #D84727; 
     
 
 }
@@ -45,8 +46,7 @@ header {
     align-items: center;
     justify-content: space-around;
     border-radius: 50px ;
-    
-    background-image: linear-gradient(to right top, #371605, #411f10, #4c2917, #57331f, #623d26);
+    background-color: #D84727;
    
     
 }
@@ -54,6 +54,7 @@ header {
 .navbar{
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
     
 }
 .navbar a {
@@ -61,7 +62,7 @@ header {
     font-size: 20px;
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
-    background-color: #000000;
+    background-color: #6f6f6f;
     padding: 8px 15px;
 }
 
@@ -69,6 +70,10 @@ header {
     background-color: #fff;
     color: #000000;
     scale: 1.1;
+}
+
+.navbar .empty {
+    text-decoration: line-through;
 }
 
 
@@ -80,7 +85,14 @@ header {
 .fa-mobile-screen-button {
     font-size: 200px;
     margin: auto;
-    color: grey;
+    color: black;
+    position: relative;
+    
+}
+.fa-spanA{
+    font-size: 300px;
+    margin: 30px;
+    color: black;
     position: relative;
 }
 
@@ -89,12 +101,23 @@ header {
     color: black;
     position: absolute;
     top:50% ;
-    left:50%;
-    transform: translateX(-50%);
-    transform: translateY(-80%);
-
-    
+    left:25%;
+    transform: translateY(-75%);
 }
+
+.fa-span-2{
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top:50% ;
+    left:25%;
+    transform: translateY(-75%);
+}
+
+.box:hover {
+    scale: 1.15;
+}
+
 .home-box-1{
     
     display: flex;
@@ -102,37 +125,39 @@ header {
 
 h2{
     font-size: 40px;
-    color:red;
-    margin-top: 50px;
+    color:#D84727;
+    margin-top: 100px;
 }
 p{
     font-size: 16px;
-    color: grey;
+    color: black;
 }
 
 .class-home p {
     width: 300px;
     margin: 15px auto;
+    color: #000000;
 }
 .Home {
     margin-top: -100px;
     padding-top: 50px;
     padding-bottom: 30px;
-    border-bottom: 2px solid #151414c4;
+    
 }
 
-.class-home-2{
+.class-home-2 {
     height: 400px;
     
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .box{
     width: 300px;
     height: auto;
-    background-color: white;
+    
     border-radius: 20px;
 
 }
@@ -140,7 +165,9 @@ p{
     height: 200px;
 } 
 .box-3{
-    height: 200px;
+    
+    display: flex;
+    
 
 }
 .box-2{
@@ -154,7 +181,8 @@ p{
 /* service start */ 
 
 .service {
-    border-bottom: 2px solid #151414c4;
+   
+    padding-top: 50px ;
 }
 
 .service .service-2 {
@@ -164,6 +192,7 @@ p{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .service .service-2 .service-box {
     display: flex;
@@ -175,7 +204,7 @@ p{
 }
 .service .service-2 .service-box i {
     font-size: 25px;
-    color: rgb(216, 71, 39);
+    color: #D84727;
 }
 
 .service .service-2 .service-box h3 {
@@ -186,18 +215,16 @@ p{
     height: 200px;
 }
 
-
-/* featres star */
 .features {
-    padding: 30px 5px ;
-    border-bottom: 2px solid #151414c4;
+    padding-top: 50px;
+   
 }
 .features .class-home .features-btn {
     margin: 30px 20px;
 }
 
 #red {
-    background-color: rgb(136, 60, 60);
+    background-color: #D84727;
 }
 
  .btn {
@@ -265,3 +292,111 @@ p{
     margin-left: 30px;
     
 }
+
+.footer {
+    background-color: #D84727;
+    padding-top: 70px;
+  }
+  .footer .row {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .footer .row .map {
+    flex: 1 1 550px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .footer .row form {padding: 20px 0;}
+  
+  .footer .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  
+  .footer .row form .btn:hover {
+    color:  #D84727;
+    opacity: 0.8;
+  }
+  
+  .footer .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .footer .row form h3 {
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .footer .row form .inputBox {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      border: 1px solid black;
+     
+  }
+  .footer .row form .inputBox i{
+      color: #fff;
+      margin: 10px 15px;
+      font-size: 25px;
+  }
+  
+  .footer .row form .inputBox input {
+      width: 100%;
+      padding: 20px;
+      font-size: 17px;
+      color: #fff;
+      text-transform: none;
+      background: none;
+  }
+  
+  .footer h1 {
+    color: #ccc;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    width: 200px;
+    margin: 15px auto;
+}
+
+  .footer h1:hover {
+    background-color: #67373f;
+    color: black;
+  }
+  
+  .footer .share {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    margin: 30px auto;
+  }
+  
+  .footer .share a {
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.6s;
+  }
+  
+  .footer .share a:hover {
+    background-color:  #D84727;
+    color: rgb(12, 21, 28);
+  }
+  
+ 
