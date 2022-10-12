@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-div{
+    background-image: url(https://shreethemes.in/upstart/layouts/images/bg/1.jpg);
+    height: 100vh;
+    
+}
+.first-list{
+    font-weight: 900;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0 200px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.708);   
+    margin-left: 40px; 
+}
+a:hover{
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.first-row{
+    margin-top: 15%;
+    margin-left: 300px;
+}
+.text{
+    color: white;
+}
+.button{
+    background-color: #ff5714;
+    border:1px solid #ff5714;
+    margin-left: 300px;
+    margin-top: 35px;
+    padding: 12px 20px;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border-radius: 6px;
+}
+li{
+    margin-top: 7px;
+}
+.text-font-50{
+    font-size: 50px;
+}
+.icon-list{
+    display: flex;
+    float: right;
+    list-style: none;
+    
+    
+}
+.fa {
+    padding: 8px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: white;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+.fa-instagram {
+    background: white;
+    color: white;
+    -webkit-text-stroke: 1px black;
+  }
+  .fa-linkedin {
+    background: white;
+    color: white;
+    -webkit-text-stroke: 1px black;
+  }
+  .video-photo{
+    width:376px;
+    height:438px;
+    border-radius: 10px;
+  }
+  .button-2{
+    padding: 8px 20px;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border-radius: 6px;
+    background-color: #ff5714 !important;
+    border: 1px solid #ff5714 !important;
+    color: white;
+  }
+  section{
+    padding: 100px 0px;
+    background-color: #f8f9fc;
+  }
+  .container2{
+    display: flex;
+    margin: 0px 20%;
+    gap: 50px;
+    align-items: center;
+
+  }
