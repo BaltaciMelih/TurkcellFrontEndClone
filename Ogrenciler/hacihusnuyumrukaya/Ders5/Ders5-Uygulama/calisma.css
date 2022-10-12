@@ -9,6 +9,7 @@ body{
     justify-content:right;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 ul{
@@ -63,12 +64,14 @@ a{
 .header{
     font-size: 46px ;
     color: white;
+    z-index: 3;
 }
 
 .title{
     font-weight: bold;
-    color: rgb(80, 80, 80);
+    color: rgb(37, 36, 36);
     font-size: 32px ;
+    z-index: 3;
 }
 
 .main{
@@ -80,6 +83,7 @@ a{
     color: black;
     position: absolute;
     top: 0;
+    z-index: 3;
 }
 
 .button{
@@ -121,27 +125,30 @@ a{
 }
 .container2{
     width: 100%;
-    height: 700px;
+    height: auto;
     margin: 0 auto;
     background-color: #e7e7e7;;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 .container3{
     width: 100%;
-    height: 150px;
+    height:auto;
     margin: 0 auto;
     display:flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
     justify-content:space-around;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 .container4{
     width: 80%;
-    height: 500px;
+    height: auto;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -166,16 +173,18 @@ a{
     border-radius: 10px;
     margin: 10px;
     height: 250px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding-left: 10px;
 }
 .container6{
     width:80%;
-    height: 750px;
+    height: auto;
     display:flex;
     flex-direction:row;
     align-items: center;
     justify-content:center;
     margin: 0 auto;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     margin-top: 50px;
 }
 
@@ -222,7 +231,7 @@ a{
 }
 .container8{
     width: 100%;
-    height: 500px;
+    height: auto;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -252,6 +261,10 @@ a{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    z-index: 3;
+}
+.container9 .button{
+    margin: 0 auto ;
 }
 .box5{
     width: 30%;
@@ -262,11 +275,25 @@ a{
     border: 1px solid rgb(240, 240, 240);
     padding-left: 10px;
 }
+.box5:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.box5 .yazi{
+    text-align: left;
+}
+.button3:hover
+{
+    background-color: rgb(243, 95, 9);
+    color: white;
+}
+.button:hover , .button2:hover{
+    background-color: rgb(197, 72, 0);
+}
 .button3{
     display: flex;
     align-items: center ;
     justify-content: center;
-    width: 250px;
+    width: 90%;
     height: 40px;
     border-radius: 5px;
     font-size: 20px;
@@ -274,31 +301,214 @@ a{
     color: rgb(243, 95, 9);
     background-color: rgb(238, 214, 200);
 }
+
 .who{
   color: rgb(243, 95, 9);
 }
 .metin
 {
+    width: 50%;
     margin-left: 70px;
 }
 .yazi
 {
     color:#363535;
+    text-align: center;
 }
 .yazi2{
     color:#222222;
+}
+.yazi3{
+    margin-left: 10px;
 }
 .clear {
     clear: both;
   }
 h2{
     font-size: 30px;
+    margin-bottom: 0px;
 }
 h5{
     font-size: 16px;
+    margin-bottom: 0px;
+}
+.menu-bar {
+    display: flex;
+    align-items: center;
+    margin: auto 2rem;
+    padding: 20px;
+    display: none;
+  }
+  .menu-bar button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .fa-solid {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: rgb(13, 13, 39);
+  }
+  .container11{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    background-color: #eeeeee;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+  .box6{
+    width: 20%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+
+}
+.box7{
+    width: 20%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    height: 70px;
+    margin: 10px;
+    text-align: center;
+
+}
+.box8{
+    width: 13%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    height: 70px;
+    margin: 10px;
+    text-align: center;
+
+}
+.resim5{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.container12{
+    width: 100%;
+    height: 300px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    margin: 0 auto;
+}
+.container13{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.box9{
+    width: 25%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+    text-align: left;
+}
+.box9 img{
+    width: 100%;
+    background-color: #eeeeee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+}
+.container14{
+    width: 100%;
+    height: 300px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    margin: 0 auto; 
+    background-color: #eeeeee;
+} 
+.formdiv{
+    width: 70%;
+    height: auto;
+    margin: 0 auto; 
+    background-color: #eeeeee;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputdiv{
+    width: 100%;
 }
 @media only screen and (max-width: 768px){
     .navbar{
         background-color: white;
     }
+    .menu{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .container2{
+        height: auto;
+    }
+    .resim2{
+        width: 70%;
+        margin:0 auto;
+    }
+    .metin{
+        margin: 0 auto;
+        width: 70%;
+    }
+    .container3{
+        justify-content: start;
+        margin-left: 15%;
+    }
+    .box{
+        width: 100%;
+    }
+    .resimsag{
+        width: 50%;
+        float: right;
+    }
+   .box4{
+    width: 75%;
+    height: 400px;
+   }
+   .resim4{
+    height: 100%;
+   }
+   .box5{
+    width: 90%;
+   }
+   .box6{
+    width: 70%;
+    height: 500px;
+   }
+   .box7{
+    width: 35%;
+   }
+   .box8{
+    width: 35%;
+   }
+   .box9{
+    width: 75%;
+    height: 600px;
+   }
+   .box9 img{
+    height: 400px;
+   }
+  
 }
