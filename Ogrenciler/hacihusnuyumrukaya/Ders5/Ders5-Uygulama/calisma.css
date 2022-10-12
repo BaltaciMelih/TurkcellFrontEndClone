@@ -420,7 +420,16 @@ h5{
     text-align: center;
     text-align: left;
 }
-.box9 img{
+.box10{
+    width: 25%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    height: 380px;
+    margin: 10px;
+    text-align: center;
+    text-align: left;
+}
+.box9 img , .box10 img{
     width: 100%;
     background-color: #eeeeee;
     border-top-left-radius: 10px;
@@ -503,11 +512,11 @@ form{
    .box8{
     width: 35%;
    }
-   .box9{
+   .box9,.box10{
     width: 75%;
     height: 600px;
    }
-   .box9 img{
+   .box9 img,.box10 img{
     height: 400px;
    }
   
