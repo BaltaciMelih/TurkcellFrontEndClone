@@ -132,10 +132,13 @@ li{
     display: flex;
     margin: 5% 20%;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
-  }
+ }
   .pWWD{
-    margin: 2%;
+    /* margin: 2%; */
     width: 40%;
     color: #8492a6;
   }
