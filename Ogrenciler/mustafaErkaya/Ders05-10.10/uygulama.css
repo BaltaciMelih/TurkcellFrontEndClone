@@ -333,7 +333,7 @@ p{
   }
   .footer .row form h3 {
     font-size: 35px;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
   }
   
@@ -345,7 +345,7 @@ p{
      
   }
   .footer .row form .inputBox i{
-      color: #fff;
+      color: black;
       margin: 10px 15px;
       font-size: 25px;
   }
@@ -354,7 +354,7 @@ p{
       width: 100%;
       padding: 20px;
       font-size: 17px;
-      color: #fff;
+      color: black;
       text-transform: none;
       background: none;
   }
