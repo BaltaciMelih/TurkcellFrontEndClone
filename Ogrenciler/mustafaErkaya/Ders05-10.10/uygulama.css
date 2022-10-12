@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +6,8 @@
     text-decoration:none;
     list-style-type: none;  
     transition: all 0.5s;
+    font-family: sans-serif;
+    
    
 }
 html::-webkit-scrollbar {
@@ -27,7 +30,7 @@ background-image: linear-gradient(white);
 }
 
 .container{
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     border: 1px solid #D84727; 
     
@@ -37,6 +40,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 500;
+    width: 75%;
+    margin: auto;
    
 }
 
@@ -59,7 +64,7 @@ header {
 }
 .navbar a {
     color: #fff;
-    font-size: 20px;
+    font-size: 1,5rem;
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
     background-color: #6f6f6f;
@@ -146,8 +151,7 @@ p{
 }
 
 .class-home-2 {
-    height: 400px;
-    
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,7 +337,7 @@ p{
   }
   .footer .row form h3 {
     font-size: 35px;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
   }
   
@@ -345,7 +349,7 @@ p{
      
   }
   .footer .row form .inputBox i{
-      color: #fff;
+      color: black;
       margin: 10px 15px;
       font-size: 25px;
   }
@@ -354,7 +358,7 @@ p{
       width: 100%;
       padding: 20px;
       font-size: 17px;
-      color: #fff;
+      color: black;
       text-transform: none;
       background: none;
   }
@@ -378,7 +382,7 @@ p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 800px;
+    width: auto;
     margin: 30px auto;
   }
   
@@ -397,6 +401,21 @@ p{
   .footer .share a:hover {
     background-color:  #D84727;
     color: rgb(12, 21, 28);
+  }
+  @media screen and (max-width: 780px)
+  {
+    .navbar a {
+        color: #fff;
+        font-size: 0.5rem;
+        border-top-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        background-color: #6f6f6f;
+        padding: 6px 10px;
+    }
+    .navbar {
+        display: block;
+        float: right;
+    }
   }
   
  

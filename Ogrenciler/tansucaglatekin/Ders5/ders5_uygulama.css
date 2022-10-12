@@ -1,11 +1,10 @@
 body {
     background-color: #343f4b;
-    margin-left: 80px;
+    margin: 0;
 }
 
 .nav {
     display: flex;
-    /* margin: auto auto; */
     cursor: pointer;
     margin-bottom: 50px;
 }
@@ -19,17 +18,17 @@ body {
     color: gray;
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 80px;
 }
 
 li:hover {
     color: white;
 }
 
-button {
+.button1 {
     width: 100px;
     height: 30px;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-top: 10px;
     border-radius: 10px;
     border-color: white;
@@ -37,13 +36,146 @@ button {
     cursor: pointer;
 }
 
-.contant {
+.section1 {
     text-align: center;
     color: gray;
+}
+
+p{
+    color: gray;
+}
+
+h3{
+    color: rgb(12, 12, 102);
 }
 
 h1 {
     color: white;
     font-size: xx-large;
 }
+
+h2 {
+    color: white;
+}
+
+.container1{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.tel{
+    width: 200px;
+}
+
+.section2{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #14181d;
+    padding-bottom: 100px;
+}
+
+.container2{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #14181d;
+}
+
+.services-box{
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.services-box:hover{
+    background-color: #32465c;
+}
+
+.title2 {
+    padding-top: 60px;
+}
+
+.container3{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.features-box{
+    width: 300px;
+    height: 400px;
+}
+
+.tel2 {
+    width: 300px;
+}
+
+.section3 {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.button2 button{
+    padding: 15px;
+    margin: 30px;
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 5%;
+    border-color: white;
+    background-color: #343f4b;
+    color: white;
+    cursor: pointer;
+}
+
+.button2 button:hover {
+    background-color: rgb(12, 12, 102);
+}
+
+.features-box1 {
+    text-align: right;
+}
+
+.features-box3 {
+    text-align: left;
+}
+
+.section4{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #14181d;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.container4{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #14181d;
+}
+
+.contact-box1 {
+    text-align: left;
+    height: 400px;
+}
+
+footer {
+    text-align: center;
+}
+
+
 

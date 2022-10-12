@@ -6,6 +6,9 @@ ul{
     font-size: xx-large;
     color: gray;
 }
+a{
+    color: grey;
+}
 
 body{
     background-color:#183b56;
@@ -28,10 +31,7 @@ body{
 .ortalama{
     text-align: center;
 }
-li:hover{
-    color: white;
-    cursor: pointer;
-}
+
 
 header{
     text-align: center;
@@ -60,6 +60,31 @@ header{
     gap: 10px;
     margin-top: 80px;
   }
+  .container3{
+    width: 70%;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 80px;
+  }
+
+  .container4{
+    width: 70%;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 100px;
+    margin-top: 20px;
+  }
 
   .container2{
     width: 70%;
@@ -71,7 +96,7 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 80px;
+    margin-top: 20px;
   }
 
 
@@ -80,6 +105,12 @@ header{
     width: 300px;
     border: 1px solid black;
     background-color: #87c066;
+    margin-top: 100px;
+}
+img{
+    width: 200px;
+    margin-left: 30%;
+    margin: 0;
 }
 
 
@@ -118,11 +149,51 @@ header{
   .fbutton button{
     width: 150px;
     border-radius: 5%;
+    cursor: pointer;
+  }
+  .buttoncolor:hover{
+    background-color: blue;
   }
 
- footer:hover{
-    background-color: coral;
-    width: 100%;
-    height: 800px;
+ 
+
+ a:hover{
+    color: white;
  }
 
+ aside{
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 10%;
+    height:10px;
+    margin-left: 2%;
+    margin-top: 15%;
+ }
+ 
+ .logo{
+    margin-left: 50%;
+ }
+ .color{
+    color: white;
+ }
+
+ .buttoncolor{
+    background-color: gray;
+ }
+ .buttoncolor:hover{
+    color: blue;
+ }
+
+footer{
+    margin-top: 400px;
+}
+
+nav{
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+}
