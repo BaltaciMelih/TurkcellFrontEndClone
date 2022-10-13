@@ -8,13 +8,18 @@
 
 body{
     position: relative;
+    overflow-x: hidden;
 }
 html{
     font-size: 10px;
 }
 
+p{
+    font-size: 1.8rem;
+}
+
 header{
-    height: 2000px;
+    
 }
 
 header .img{
@@ -100,3 +105,43 @@ nav .social-media a{
 nav .social-media a :hover{
     scale: 1.5;
 }
+
+/* story start */
+
+.story .story-items {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10rem;
+   padding: 1rem 8rem;
+   margin-top: 5rem;
+}
+.story-items-left {
+   
+}
+.story-items-left img {
+    
+    height: auto;
+    width: 400px;
+    margin-left: 8rem;
+    
+}
+
+.story-items-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+    
+}
+
+.story-items-right h6 {
+    font-size: 2rem;
+    color:#FF5714
+}
+
+.story-items-right h4 {
+    font-size: 3rem;
+    
+}
+
