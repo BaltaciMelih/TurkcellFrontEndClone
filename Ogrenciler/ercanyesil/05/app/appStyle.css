@@ -69,6 +69,18 @@ header {
 
 /* Ercan Yesil */
 
+/* Tablet */
+@media (max-width: 768px) {
+  
+}
+/* Mobil */
+@media (max-width: 500px) {
+  
+}
+
+
+/* portfolio */
+
 .portfolio-banner{
   width: 100%;
   height: 900px;
@@ -107,16 +119,19 @@ margin-bottom: 20px;
 
 .portfolio-content{
   display: flex;
-  width: 1140px;
-  height: 455px;
+  width: 100%;
+  height: 500px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  column-gap: 12px;
 }
 
 .portfolio-content-card{
   background: radial-gradient(#111 50%,#000 100%);
   overflow: hidden;
   position: relative;
+  border-radius: 3%;
 }
 .portfolio-content-card .portfolio-image{
   transform: scale(1.3);
@@ -126,17 +141,16 @@ margin-bottom: 20px;
 .portfolio-image{
   width: 261px;
   height: 195px;
-  margin: 10px;
   max-width: 100%;
   display: block;
 }
 
 .portfolio-image-radius{
-  border-radius: 5%;
+  border-radius: 3%;
 }
 
 .portfolio-content-card:hover .portfolio-image{
-     transform: scale(1.1); /*translateY(-20px); */
+    transform: scale(1.1); /*translateY(-20px); */
     opacity: 0.3;
     transition-property: all;
     transition-duration: 0.5s;
@@ -195,22 +209,98 @@ background: rgb(177, 73, 3);
 
 
 
-
-
-
+/* invitation */
 
 .invitation-banner{
   background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center;
   width: 100%;
-  height: 380px; 
-  background-position-x: center;
-  background-position-y: center;
-  background-size: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial;
+  height: 300px;
+  box-shadow: inset 0 0 0 200rem rgba(0, 0, 0, 0.5);
 }
+
+.invitation-container{
+  display: flex;
+  /* width: 1116px; */
+  height: 300px; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 200rem rgba(0, 0, 0, 0.5);
+}
+
+.invitation-container-item{
+  padding-bottom: 10px;
+}
+
+.invitation-container-item h3 {
+  font-size: 36px;
+  color: white;
+}
+
+.invitation-container-item p {
+  color: #8492a6;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+}
+
+.invitation-container-item a {
+  padding: 8px 25px;
+  border-radius: 6px;
+  background-color: #ff5714;
+  border: 1px solid #ff5714;
+  color: #fff;
+  text-decoration: none;
+  display: block; 
+} 
+
+
+
+
+/* plans */
+
+.plans-banner{
+  width: 100%;
+  height: 828px;
+  padding: 100px 0;
+}
+
+.plans-container{
+  width: 1140px;
+  height: 627px;
+  margin: auto;
+}
+
+.plans-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans-content{
+  display: flex;
+  width: 1140px;
+  height: 459px;
+}
+
+.plans-content-card{
+  width: 380px;
+  height: 435px;
+  padding: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /* transition-property: all;

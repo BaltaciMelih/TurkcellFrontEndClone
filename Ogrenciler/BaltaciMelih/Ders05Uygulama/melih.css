@@ -63,16 +63,22 @@ h6,
 }
 
 .teamCards {
+  height: 261px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 60px;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .profileCard {
   border-radius: 5px;
   width: 261px;
-  height: 261px;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 13px rgb(36 39 44 / 20%)
 }
 
 .profileCardP {
@@ -81,9 +87,9 @@ h6,
   max-width: 100%;
   border-radius: 5px;
   opacity: 1;
-  overflow: hidden;
   transition: all 0.3s ease-out;
   position: absolute;
+  
 }
 
 .infoCard {
@@ -96,36 +102,49 @@ h6,
 }
 .nameCard{
   width: 90%;
+  padding: 18px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
   position: relative;
-  top: 80%;
+  top: 77%;
   left: 50%;
   text-align: center;
   border-radius: 5px;
+}
+.teamH4{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+.teamH4:hover{
+  color: #ff5714;
 }
 .nameIcon {
   width: fit-content;
   height: fit-content;
   position: relative;
   text-align: center;
-  top: 5%;
-  left: 85%;
+  top: -8%;
+  left: 88%;
 }
 .cardList{
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
-.fa-brands{
+.cardList .fa-brands{
+  height: 30px;
+  width: 30px;
   background-color: #ff5714;
-  padding: 5px;
+  padding: 7px;
   border-radius: 50%;
   color: white;
+}
+.cardList .fa-brands:hover{
+  background-color: #DE4C12;
 }
 
 .profileCard:hover .profileCardP{
@@ -242,6 +261,7 @@ a {
   height: 360px;
   width: 736px;
   border-radius: 5px;
+  box-shadow: 0 0 3px rgb(36 39 44 / 15%)
 }
 
 .form {
