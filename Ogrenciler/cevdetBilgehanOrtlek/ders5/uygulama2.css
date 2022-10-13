@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+html{
+    font-size: 10px;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+header{
+    
+}
+
+header .img{
+    
+    background: url(./img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    justify-content: center;
+    padding-left: 10rem;
+    gap: 2.5rem;
+
+}
+header .img h1{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+
+}
+header .img p{
+    font-size: 1.8rem;
+    color: black;
+}
+
+.btn{
+    width: 150px;
+    background-color: #FF5714;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    border-radius: 30rem;
+    border-color: transparent;
+}
+a{
+    color: black;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.logo i{
+    font-size: 3rem;
+    color: #FF5714;
+}
+.logo h2{
+    font-size: 3rem;
+}
+
+nav .menu a{
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+
+nav .social-media a{
+    margin: 0 1rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    
+}
+nav .social-media a :hover{
+    scale: 1.5;
+}
+
+/* story start */
+
+.story .story-items {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10rem;
+   padding: 1rem 8rem;
+   margin-top: 5rem;
+}
+.story-items-left {
+   
+}
+.story-items-left img {
+    
+    height: auto;
+    width: 400px;
+    margin-left: 8rem;
+    
+}
+
+.story-items-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+    
+}
+
+.story-items-right h6 {
+    font-size: 2rem;
+    color:#FF5714
+}
+
+.story-items-right h4 {
+    font-size: 3rem;
+    
+}
