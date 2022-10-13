@@ -211,7 +211,7 @@ a{
 
 .container7{
     width: 100%;
-    height: 500px;
+    height: 300px;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -417,10 +417,18 @@ h5{
     border-radius: 10px;
     height: 400px;
     margin: 10px;
-    text-align: center;
     text-align: left;
 }
-.box9 img{
+.box10{
+    width: 25%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    height: 380px;
+    margin: 10px;
+    margin-top: -10px;
+    text-align: left;
+}
+.box9 img , .box10 img{
     width: 100%;
     background-color: #eeeeee;
     border-top-left-radius: 10px;
@@ -438,20 +446,156 @@ h5{
     background-color: #eeeeee;
 } 
 .formdiv{
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 0 auto; 
     background-color: #eeeeee;
+    margin-top: -25px;
+    display:flex;  
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
 }
 form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    background-color:white;
+    height: auto;
+    margin-left: 5%;
+    padding: 10px;
+}
+.name{
+    height: 30px;
+    width: 45%;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: rgb(167, 155, 141);
+}
+.email
+{ 
+    height: 30px;
+    width: 45%;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: rgb(167, 155, 141);
+}
+.subject
+{ 
+    height: 30px;
+    width: 94%;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: rgb(167, 155, 141);
+}
+.comments
+{ 
+    height: 100px;
+    width: 94%;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: rgb(167, 155, 141);
+}
+.send
+{
+    border-color: rgb(167, 155, 141);
+    font-size: 16px;
 }
 .inputdiv{
+    width: 65%;
+
+}   
+.box11{
+    width: 25%;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+    margin-left: 3%;
+}
+.footer
+{
     width: 100%;
+    background-color: rgba(25,41,56,0.94);
+    color: #adb5bd;
+    height: 100px;
+    margin-top: -20px;
+    display:flex;
+}
+.logo2
+{
+    margin-left: 70%;
+    margin-top: 20px;
+}
+.copyright
+{
+margin-left: 40%;
+text-align: center;
+padding-top: 30px;
+}
+.imgfooterdiv
+{
+margin-left: 20%;
+padding-top:40px;
+   
+}
+.imgfooter
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+    float: right;
+    background-color: rgba(25,41,56,0.94);
+    margin-left: 5px;
+}
+.imgfooter:hover
+{
+    background-color:rgb(243, 95, 9); ;
+}
+.fa {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    background-color: rgb(209, 206, 191);
+    padding: 0.7rem;
+    border-radius: 50%;
+    margin: auto 0;
+    margin-left: -20px;
+  }
+  .social-icons {
+    display: flex;
+    align-items: center;
+   
+  }
+  .social-icons li {
+    display:inline;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+  }
+  .social-icons li .fa:hover {
+    background-color: rgb(224, 164, 52);
+  }
+ 
+.buttonfooter
+{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    margin-left: 4%;
+    margin-top:30px;
+    background-color: rgb(243, 95, 9);
+
+} 
+.buttonfooter:hover
+{
+    background-color:rgb(197, 72, 0) ;
 }
 @media only screen and (max-width: 768px){
+    .social-icons
+    {
+        display: none;
+    }
     .navbar{
         background-color: white;
     }
@@ -503,12 +647,35 @@ form{
    .box8{
     width: 35%;
    }
-   .box9{
+   .box9,.box10{
     width: 75%;
     height: 600px;
    }
-   .box9 img{
+   .box10
+   {
+    margin-top: 10px;
+   }
+   .box9 img,.box10 img{
     height: 400px;
    }
-  
+   .logo img
+   {
+    margin-left: 40%;
+   }
+   .inputdiv
+   {
+    width: 85%;
+   }
+   .name
+   {
+    width: 94%;
+   }
+   .email
+   {
+    width: 94%;
+   }
+ .box11{
+    width: 78%;
+ }
+
 }
