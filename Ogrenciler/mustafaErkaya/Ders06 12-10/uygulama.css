@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+    background-color: rgb(220, 217, 217);
+}
+html{
+    font-size: 10px;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+section{
+    padding: 1rem 5%;
+}
+h6 {
+    font-size: 2rem;
+    color:#FF5714
+}
+
+ h4 {
+    font-size: 3rem;
+    
+}
+h3 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+h3:hover{
+    color:#FF5714
+}
+
+
+
+
+header .img{
+    
+    background: url(./img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    justify-content: center;
+    padding-left: 10rem;
+    gap: 2.5rem;
+
+}
+header .img h1{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+
+}
+header .img p{
+    font-size: 1.8rem;
+    color: black;
+}
+
+.btn{
+    width: 150px;
+    background-color: #FF5714;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    border-radius: 30rem;
+    border-color: transparent;
+}
+a{
+    color: black;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.logo i{
+    font-size: 3rem;
+    color: #FF5714;
+}
+.logo h2{
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
+
+nav .menu a{
+    margin: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0.8rem 1rem;
+}
+nav .menu a:hover {
+    background-color: black;
+    
+    border-radius: 30rem;
+    
+}
+
+nav .social-media a{
+    margin: 0 1rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    
+}
+nav .social-media a :hover{
+    scale: 1.5;
+}
+
+/* story start */
+.story{
+    background-color: rgb(177, 175, 175);
+    padding: 5rem 0;
+}
+.story .story-items {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10rem;
+   padding: 1rem 8rem;
+   margin-top: 5rem;
+   
+}
+.story-items-left {
+   flex: 1 1 45rem;
+}
+.story-items-left img {
+    
+    height: auto;
+    width: 400px;
+    margin-left: 8rem;
+    border-radius: 2rem;
+    
+}
+
+.story-items-right{
+    flex: 1 1 45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+    
+}
+
+/* service */
+
+.service-item-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 30rem;
+    padding: 0 10rem;
+}
+.service-item-top-left {
+    width: 50%;
+    
+}
+.service-item-top-left h6 {
+    padding-bottom: 1.5rem;
+}
+
+.service-item-top-right {
+    width: 50%;
+}
+
+.service-item-bottom {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    padding-left: 12rem;
+    
+    
+}
+
+.service-item-bottom-items {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.service-item-bottom-items i{
+    font-size: 3rem;
+    border-radius: 1rem;
+    background-color: #ff57142b;
+    margin-bottom: 1.5rem;
+    padding: 4rem 4rem;
+    width: 11rem;
+    
+}
+
+.service-item-bottom-items i:hover{
+    background-color: black;
+    color: #fff;
+    scale: 0.7;
+}
+
+.service-item-bottom-items a {
+    font-size: 1.8rem;
+    border-radius: 20rem;
+    background-color: transparent;
+    text-align: center;
+    padding: 1rem 0;
+    width: 14rem;
+}
+
+.service-item-bottom-items a:hover{
+    
+    background-color: #FF5714;
+}
+
+.service-items .under-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.under {
+   
+}
+
+.under-container {
+    display: flex;
+    padding-top: 8rem;
+    position: relative;
+
+}
+.under-container .icon {
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px dashed #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    background-color: #fff;
+    color: #FF5714;
+}
+.under-container .icon2{
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px dashed #ccc;
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translateX(-50%)
+    translateY(-50%);
+    font-size: 2rem;
+    background-color: #fff;
+    color: #FF5714;
+}
+
+.under-container .icon3{
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px dashed #ccc;
+    position: absolute;
+    left: 50%;
+    top: 88%;
+    transform: translateX(-50%)
+    translateY(-50%);
+    font-size: 2rem;
+    background-color: #fff;
+    color: #FF5714;
+}
+.under-left {
+    width: 50%;
+    border-right: 2px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10rem;
+}
+
+.under-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19rem;
+    padding-left: 4rem;
+
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+    padding-right: 3rem;
+    
+
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    
+
+}
+
+.under-container img {
+    width: 50%;
+    padding: 0 2rem;
+}
+
+/* portfoli */
+.portfolio {
+    background-color: rgb(177, 175, 175);
+    padding-top: 2rem;
+}
+.portfolio-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.portfolio-bottom {
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50% 
+    
+}
+
+.portfolio-bottom img {
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+    box-shadow: 8px 8px 14px rgba(255, 255, 255, 0.846);
+}
+.portfolio-bottom img:hover {
+    scale: 1.15;
+    box-shadow: 10px 10px 15px #000000ad
+}
+
+.portfolio-bottom div{
+    padding: 2rem;
+}
+
+.img5 {
+   height: 100%!important;
+}
+
+
+
+
