@@ -211,7 +211,7 @@ a{
 
 .container7{
     width: 100%;
-    height: 500px;
+    height: 300px;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -451,17 +451,15 @@ h5{
     margin: 0 auto; 
     background-color: #eeeeee;
     margin-top: -25px;
-    display:flex;
-    align-items: center;
+    display:flex;  
     justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
 }
 form{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
     background-color:white;
-    height: 300px;
-    margin-left: 10%;
+    height: auto;
+    margin-left: 5%;
     padding: 10px;
 }
 .name{
@@ -501,13 +499,54 @@ form{
     font-size: 16px;
 }
 .inputdiv{
-    width: 100%;
+    width: 65%;
+
 }   
 .box11{
     width: 25%;
     height: auto;
     margin: 10px;
     text-align: left;
+    margin-left: 3%;
+}
+.footer
+{
+    width: 100%;
+    background-color: rgba(25,41,56,0.94);
+    color: #adb5bd;
+    height: 100px;
+    margin-top: -20px;
+    display:flex;
+}
+.logo2
+{
+    margin-left: 70%;
+    margin-top: 20px;
+}
+.copyright
+{
+margin-left: 40%;
+text-align: center;
+padding-top: 30px;
+}
+.imgfooterdiv
+{
+margin-left: 30%;
+padding-top:40px;
+   
+}
+.imgfooter
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+    float: right;
+    background-color: rgba(25,41,56,0.94);
+    margin-left: 5px;
+}
+.imgfooter:hover
+{
+    background-color:rgb(243, 95, 9); ;
 }
 @media only screen and (max-width: 768px){
     .navbar{
@@ -576,5 +615,20 @@ form{
    {
     margin-left: 40%;
    }
-  
+   .inputdiv
+   {
+    width: 85%;
+   }
+   .name
+   {
+    width: 94%;
+   }
+   .email
+   {
+    width: 94%;
+   }
+ .box11{
+    width: 78%;
+ }
+
 }
