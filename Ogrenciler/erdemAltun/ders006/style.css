@@ -1,0 +1,50 @@
+.container-erdem {
+  display: flex;
+  justify-content: center;
+}
+.container-erdem1 {
+  float: left;
+}
+.container-erdem2 {
+  float: right;
+  margin-left: 50px;
+}
+.img-1-erdem {
+  width: 250px;
+  height: 250px;
+}
+.img-2-erdem {
+  width: 250px;
+  height: 250px;
+}
+.img-3-erdem {
+  width: 250px;
+  height: 250px;
+}
+.container-1-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.write-erdem {
+  inline-size: 350px;
+  overflow-wrap: break-word;
+}
+.container-2-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-3-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-erdem2-border {
+  border-left: 3px dotted #e67e22;
+  height: auto;
+  display: block;
+  margin-left: 50px;
+  
+}
