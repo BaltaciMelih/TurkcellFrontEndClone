@@ -1,3 +1,10 @@
+.vr {
+    border-left: 5px dotted #e67e22;
+    height: auto;
+    position: relative;
+    top: 0;
+    
+} 
 .img-1 {
     width: 250px;
     height: 250px;
@@ -12,11 +19,20 @@
 }
 .container-1{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.write{
+    inline-size: 350px;
+    overflow-wrap: break-word;
 }
 .container-2{
     display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 .container-3{
     display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
