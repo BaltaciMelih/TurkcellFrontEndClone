@@ -83,48 +83,53 @@ header {
 
 .portfolio-banner{
   width: 100%;
-  height: 900px;
   padding: 100px 0;
   background-color: #f8f9fc ;
 }
 
 .portfolio-container{
-  width: 1140px;
-  height: 624px;
+  width: 100%;
   margin: auto;
 }
 
 .portfolio-header{
-width: 1116px;
+display: flex;
 height: 168px;
 text-align: center;
 margin-bottom: 20px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .portfolio-header-item{
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  
+  padding-bottom: 10px; 
+}
+
+.portfolio-header-item h3{
+  color: #ff5714;
+  font-weight: 600;
+  text-transform: uppercase; 
 }
 
 .portfolio-header-item p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 15px;
   line-height: 24px;
   text-decoration: none solid rgb(132, 146, 166);
   text-align: center;
-  word-spacing: 0px;
-  opacity: 1; 
+  max-width: 600px;
+  color: #8492a6;
+  margin: auto;
 }
 
 .portfolio-content{
   display: flex;
-  width: 100%;
-  height: 500px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   column-gap: 12px;
+  row-gap: 12px;
 }
 
 .portfolio-content-card{
@@ -214,14 +219,14 @@ background: rgb(177, 73, 3);
 .invitation-banner{
   background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center;
   width: 100%;
-  height: 300px;
+  height: 380px;
   box-shadow: inset 0 0 0 200rem rgba(0, 0, 0, 0.5);
 }
 
 .invitation-container{
   display: flex;
   /* width: 1116px; */
-  height: 300px; 
+  height: 380px; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -266,37 +271,95 @@ background: rgb(177, 73, 3);
 }
 
 .plans-container{
-  width: 1140px;
-  height: 627px;
-  margin: auto;
+  width: 100%;
 }
 
 .plans-header{
-  display: flex;
-  flex-direction: column;
+  display: flex;  
+  height: 168px;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.plans-header-item{
+  padding-bottom: 10px; 
+}
+
+.plans-header-item h3{
+  color: #ff5714;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
+.plans-header-item p{
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none solid rgb(132, 146, 166);
+  text-align: center;
+  max-width: 600px;
+  color: #8492a6;
+  margin: auto;
 }
 
 .plans-content{
   display: flex;
-  width: 1140px;
-  height: 459px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .plans-content-card{
+  display: flex;
   width: 380px;
   height: 435px;
-  padding: 24px;
+  padding: 48px 24px 48px 24px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.plans-content-card-item{
+  display: flex;
+}
 
+.plans-content-card-list{
+  list-style: none;
+}
 
+.uil{
+    font-family: unicons-line;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
 
+.plans-content-card:hover{
+  box-shadow: 0 0 3px rgb(36 39 44 / 15%);
+  transition: all 0.2s ease-out;
+    /* box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2); */
+    top: -4px;
+    /* border: 1px solid #cccccc; */
+    background-color: white;
+    z-index: 0;
+}
 
+/* @media (min-width: 992px)
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
 
-
-
-
+@media (min-width: 768px)
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%; */
 
 
 
@@ -309,3 +372,5 @@ background: rgb(177, 73, 3);
     transition-delay: 0s; */
 
     /* box-shadow: 5px 5px 10px black; */
+
+    /* box-shadow: 0 0 3px rgb(36 39 44 / 15%) */
