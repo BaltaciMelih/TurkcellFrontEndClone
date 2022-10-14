@@ -125,11 +125,13 @@
   
   .portfolio-content{
     display: flex;
+    width: 75%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     column-gap: 12px;
     row-gap: 12px;
+    margin: auto;
   }
   
   .portfolio-content-card{
@@ -332,7 +334,6 @@
       font-family: unicons-line;
       font-style: normal;
       font-weight: 400;
-      speak: none;
       display: inline-block;
       text-decoration: inherit;
       font-variant: normal;
@@ -362,7 +363,8 @@
       width: 50%; */
   
   
-  
+      
+    
   
   
   
