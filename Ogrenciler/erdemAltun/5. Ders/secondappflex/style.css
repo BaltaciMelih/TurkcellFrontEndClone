@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.who-text {
+  width: 25%;
+  display: table;
+}
+
+.who-wrapper {
+  background-color: #f8f9fc;
+  display: flex;
+  justify-content: center;
+  gap: 125px;
+  padding: 150px 0;
+  flex-wrap: wrap;
+  /* height: 526px; */
+}
+
+.btn-orange {
+  background-color: orangered;
+  border: 1px solid orangered;
+  color: white;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.btn-orange:hover {
+  background-color: rgb(199, 53, 0);
+  border: 1px solid rgb(199, 53, 0);
+}
+
+.text-orange {
+  color: orangered;
+}
+
+.text-gray {
+  color: #8492a6;
+}
+
+.text-dark {
+  color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.p-bottom {
+  padding-bottom: px;
+}
+
+.section {
+  background: url(ready.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  display: block;
+  box-shadow: inset 0 0 0 2000px rgba(7, 1, 61, 0.555);
+  width: 100%;
+}
+
+.ready-image {
+  padding: auto auto;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* .blog-wrapper {
+  width: 100%;
+  height: 100%;
+} */
+
+.blogs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-wrapper {
+  padding: 5%;
+}
+
+.blog {
+  width: 250px;
+  height: 350px;
+  border: 2px solid rgba(128, 128, 128, 0.151);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.blog-titles {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
+.pricing-content {
+  text-align: center;
+}
+
+.pricing-buttons {
+  background-color: rgba(255, 87, 20, 0.1);
+  border: 1px solid rgba(255, 87, 20, 0.1);
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: orangered;
+}
+
+.pricing-buttons:hover {
+  background-color: orangered;
+  color: white;
+}
+
+.no-list-style {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-box {
+  width: 200px;
+  border: 2px solid gray;
+  border-radius: 5%;
+  padding: 1%;
+}
+
+.dollars {
+  font-size: 50px;
+}
+
+.dollars:before {
+  content: "$";
+  font-size: 14px;
+  vertical-align: 30%;
+  margin-right: 1%;
+}
+
+.dollars:after {
+  content: "/mo";
+  font-size: 14px;
+  vertical-align: 2%;
+}
+
+.gray-icon {
+  color: #8492a6;
+}
+
+.material-symbols-outlined {
+  vertical-align: bottom;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  background-color: #202942;
+  padding: 2% 0;
+}
+
+.portfolio-wrapper {
+  padding: 50px;
+}
+
+.portfolio-content {
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.portfolio-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1%;
+  overflow: hidden;
+}
+
+.port-img {
+  width: 250px;
+  height: 183px;
+  border-radius: 3%;
+  transition: transform 0.7s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.port-img:hover {
+  transform: scale(115%) rotate(5deg);
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.team-titles {
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+
+.member {
+  width: 300px;
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  gap: 11%;
+}
+
+.hover-orange:hover {
+  color: orangered;
+}
+
+.content-div {
+  padding: 10px;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.fs-15 {
+  font-size: 15px !important;
+}
+
+.section-title {
+  font-size: 28px !important;
+}
+
+.break-word {
+  max-width: 50%;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.max-width {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+ion-icon {
+  color: white;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+ion-icon:hover {
+  color: orangered;
+  font-size: 26px;
+}

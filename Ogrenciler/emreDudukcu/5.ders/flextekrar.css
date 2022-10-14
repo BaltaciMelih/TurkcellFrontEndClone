@@ -54,6 +54,7 @@
     display: flex;
     margin-top: 25px;
     justify-content: space-between;
+    position: fixed;
 }
 
 .nav-bar span a {
