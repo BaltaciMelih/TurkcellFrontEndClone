@@ -618,7 +618,10 @@ padding-top:40px;
 }
 
 @media only screen and (max-width: 768px){
-    
+    .social-icons2{
+        display: flex;
+        flex-direction: row;
+    }
     .social-icons
     {
         display: none;
@@ -631,9 +634,7 @@ padding-top:40px;
     }
     .menu2
     {  
-      
         visibility: hidden;
-        flex-direction: column;
         height: auto;
         width: 100vw;
         height: 100vh;
@@ -651,7 +652,7 @@ padding-top:40px;
     .menu-bar{
         display: block;
     }
-    .menu-bar:hover .menu2 ul{
+    .menu-bar:hover .menu2 .menu-list{
         flex-direction: column;
         display: flex;
     }
