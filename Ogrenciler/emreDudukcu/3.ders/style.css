@@ -1,0 +1,67 @@
+.paragraf {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#divID {
+    color: blue;
+}
+
+div.farklırenk {
+    color: blueviolet;
+}
+
+.paragraf1 {
+    color: red;
+}
+
+.paragraf2 {
+    color: #ff0000;
+}
+
+.paragraf3 {
+    color: rgb(255, 0, 0);
+}
+
+.font-61 {
+    font-size: 61;
+}
+
+.renkblue {
+    color: blue;
+}
+
+.bosluk-gorme {
+    background-color: green;
+}
+
+.width50 {
+    background-color: red;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    height: 50px;
+    width: 250px;
+    margin: 10px;
+}
+
+.red {
+    background-color: red;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.blue {
+    background-color: blue;
+    margin-bottom: 10px;
+}
+
+.green {
+    background-color: green;
+    margin-top: 20px;
+}

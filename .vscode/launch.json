@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open deneme.html",
-            "file": "/Users/apple/Documents/GitHub/TurkcellFrontEnd/Ogrenciler/yusufoguz/deneme.html"
+            "name": "Uygulama",
+            "file": "C:\\Users\\ASUS\\OneDrive\\Belgeler\\GitHub\\TurkcellFrontEnd\\Ogrenciler\\EgehanDemir\\Ders04\\index.html"
         }
     ]
 }
