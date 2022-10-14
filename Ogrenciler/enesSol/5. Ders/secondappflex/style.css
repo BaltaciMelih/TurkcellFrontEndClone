@@ -382,19 +382,24 @@ ion-icon:hover {
 }
 
 .nav-div {
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 10px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  margin: auto;
 }
 
 .navbar {
   font-size: 12px;
   list-style-type: none;
-  margin: 0 250;
-  /* margin-left: 450px; */
-  overflow: hidden;
-  position: fixed;
-  z-index: 1;
+  /* margin: 0 250;
+  margin-left: 450px; */
+  /* overflow: hidden; */
+  /* position: fixed; */
+  /* z-index: 1; */
   /* top: 0px; */
 }
 
@@ -488,10 +493,16 @@ h2 {
   margin-left: 10%;
 }
 
+.what-we-do {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
 .do {
   width: 450px;
-  margin-bottom: 1rem !important;
-  margin-top: 20px;
+  /* margin-bottom: 1rem !important; */
+  /* margin-top: 20px; */
   color: black;
   line-height: 1.5;
   font-weight: 600 !important;
@@ -501,10 +512,10 @@ h2 {
   font-style: bold;
 }
 .launch {
-  margin-top: 5px !important;
+  /* margin-top: 5px !important; */
   color: #8492a6 !important;
   inline-size: 600px;
-  margin-left: 50%;
+  /* margin-left: 50%; */
   font-size: 15px;
   letter-spacing: 0.5px;
 }
