@@ -144,3 +144,39 @@ nav .social-media a :hover{
     font-size: 3rem;
     
 }
+
+.services .service1{
+   display: flex;
+   justify-content: center;
+   text-align: left;
+   gap: 25rem;
+   margin-top: 5rem;
+   padding: 1rem 8rem;
+
+}
+
+.service1-left h6 {
+    font-size: 2rem;
+    color:#FF5714
+}
+
+.service1-left h1 {
+    font-size: 3rem;
+    color:#000000
+}
+
+.service1-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 8rem;
+    margin-top: 10rem;
+   
+}
+
+.service1-right{
+    margin-right: 12rem;
+    margin-top: 15rem;
+    color: grey;
+
+}

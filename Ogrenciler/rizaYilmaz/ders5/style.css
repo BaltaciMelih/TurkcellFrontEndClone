@@ -16,12 +16,12 @@
   
   
 }
-a{
+.header-menu-link{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.708);   
   margin-left: 40px; 
 }
-a:hover{
+.header-menu-link:hover{
   color: white;
 }
 
@@ -374,4 +374,65 @@ transform: rotate(5deg);
 .plans-button:hover{
   background-color:#ff5714 !important; 
   color: white !important;
+}
+.ourteam-card-group{
+margin-left: 20%;
+margin-right: 20%;
+display: flex;
+justify-content: space-evenly;
+gap: 20px;
+
+}
+.ourteam-image{
+  width: 100%;
+  border-radius: 5%;
+  justify-content: center;
+}
+.ourteam-image:hover{
+  box-shadow: 0 0 30px rgba(33,33,33,.2);
+}
+.plans-numbers{
+  display: flex;
+  row-gap: 20px;
+}
+.ourteam-card-project-title{
+  
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.ourteam-card-project-description{
+  text-align: center;
+  color: #8492a6 !important;
+  font-size: 15px;
+}
+.ourteam-company-icons-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% 20%;
+}
+.ourteam-company-icons-image{
+  width: 80px;
+  height: 40px;
+}
+.blogs-card-group{
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.blogs-card-image{
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+  justify-content: center;
+}
+.blogs-card{
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 0 rgba(48, 17, 5, 0.1)
+}
+.blogs-card-title{
+  margin-top: 20px;
 }

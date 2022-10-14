@@ -1,4 +1,4 @@
-ul{
+/* ul{
     justify-content: center;
     display: flex;
     gap: 20px;
@@ -164,7 +164,6 @@ img{
  aside{
     flex-direction: column;
     display: flex;
-    flex-direction: column;
     gap: 100px;
     width: 10%;
     height:10px;
@@ -196,4 +195,276 @@ nav{
         position: fixed;
         top: 0;
         width: 100%;
+} */
+
+body {
+    background-color: #343f4b;
+    margin: 0;
 }
+
+.nav {
+    display: flex;
+    cursor: pointer;
+    
+    overflow: hidden;
+    position: fixed;
+    background-color: #14181d;
+    width: 100%;
+}
+
+.konum {
+    margin-top: 5%;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.white {
+    color: white;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.list{
+    text-align: center;
+    color: gray;
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+li:hover {
+    color: white;
+}
+
+.button1 {
+    width: 100px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: white;
+    color: #343f4b;
+    cursor: pointer;
+}
+
+.section1 {
+    text-align: center;
+    color: gray;
+}
+
+p{
+    color: gray;
+}
+
+h3{
+    color: rgb(228, 142, 13);
+}
+
+h1 {
+    color: white;
+    font-size: xx-large;
+}
+
+h2 {
+    color: white;
+}
+
+.container1{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.tel{
+    width: 200px;
+}
+
+.section2{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #14181d;
+    padding-bottom: 100px;
+}
+
+.container2{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #14181d;
+}
+
+.services-box{
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.services-box:hover{
+    background-color: #32465c;
+}
+
+.title2 {
+    padding-top: 60px;
+}
+
+.container3{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.features-box{
+    width: 300px;
+    height: 400px;
+}
+
+.home-box2{
+    flex-grow: 2;
+}
+
+.tel2 {
+    width: 300px;
+}
+
+.section3 {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.button2 button{
+    padding: 15px;
+    margin: 30px;
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 5%;
+    border-color: white;
+    background-color: #343f4b;
+    color: white;
+    cursor: pointer;
+}
+
+.button2 button:hover {
+    background-color: rgb(12, 12, 102);
+}
+
+.features-box1 {
+    text-align: right;
+}
+
+.features-box3 {
+    text-align: left;
+}
+
+.section4{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #14181d;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.container4{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #14181d;
+}
+
+.contact-box1 {
+    text-align: left;
+    height: 400px;
+}
+
+footer {
+    text-align: center;
+}
+
+.card{
+    height: 370px;
+    width: 200px;
+    background-color: black;
+    border-radius: 5%;
+}
+
+.card2{
+    height: 400px;
+}
+
+.icerik {
+    width: 150px;
+    height: 320px;
+    background-color: white;
+    margin-top: 8%;
+    margin-left: 10%;
+    padding-top: 1%;
+    border: 15px;
+    border-color: antiquewhite;
+}
+
+.icerik2 {
+    width: 150px;
+    height: 350px;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 12%;
+    padding-top: 1%;
+}
+
+.tus {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 45%;
+}
+
+.tus2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 45%;
+}
+
+@media screen and (max-width:768px) {
+    .container1 {
+        flex-direction: column;
+        background-color: red;
+    }
+
+}
+
+.media {
+    width: 10%;
+    height:100px;
+    margin-top: 20%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10%;
+}
+    
