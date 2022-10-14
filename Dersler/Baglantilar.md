@@ -9,3 +9,4 @@ https://fatihhayrioglu.com/css-dersleri/ - Türkçe Css Dökümanı
 https://htmlcolorcodes.com/ - HEX ve RBG Renk Paletleri
 https://color.adobe.com - HEX ve RBG Renk Paletleri ve Renk Şemaları
 https://flexboxfroggy.com/#tr - Flex Oyunu
+..
