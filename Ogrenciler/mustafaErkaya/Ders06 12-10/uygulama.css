@@ -268,7 +268,7 @@ nav .social-media a :hover{
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
-    background-color: #fff;
+    background-color: rgb(220, 217, 217);;
     color: #FF5714;
 }
 .under-container .icon2{
@@ -281,7 +281,7 @@ nav .social-media a :hover{
     transform: translateX(-50%)
     translateY(-50%);
     font-size: 2rem;
-    background-color: #fff;
+    background-color: rgb(220, 217, 217);;
     color: #FF5714;
 }
 
@@ -295,7 +295,7 @@ nav .social-media a :hover{
     transform: translateX(-50%)
     translateY(-50%);
     font-size: 2rem;
-    background-color: #fff;
+    background-color: rgb(220, 217, 217);;
     color: #FF5714;
 }
 .under-left {
