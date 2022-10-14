@@ -1,0 +1,164 @@
+* {
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: blue;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: rgb(118, 117, 117);
+}
+
+.home {
+    background-color: #343f4b;
+}
+
+.header {
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    background-color: #343f4b;
+    z-index: 1;
+}
+
+.header tr td {
+    margin: auto;
+    font-size: 20px;
+    color: rgb(159, 149, 149);
+}
+
+.header tr td a:-webkit-any-link:visited {
+    color: red;
+}
+
+.header tr td a:visited {
+    color: white;
+}
+
+.paragraf {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.paragraf h1 {
+    font-size: 70px;
+    color: whitesmoke;
+}
+
+.paragraf p {
+    font-size: 35px;
+    color: #ffffff4d;
+}
+
+.image {
+    text-align: center;
+    height: 700px;
+}
+
+.image-lr {
+    width: 261px;
+    height: 495px;
+}
+
+.image-c {
+    width: 356px;
+    height: 771px;
+    position: relative;
+    top: 100px;
+}
+
+.second {
+    background-color: #303841;
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.conteiner {
+    background-color: #303841;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.conteiner1 {
+    background-color: #303841;
+    width: 356px;
+    height: 277px;
+    text-align: center;
+    border: 2px solid #293038;
+    border-radius: 10px;
+}
+
+.conteiner2 {
+    background-color: #303841;
+    width: 356px;
+    height: 277px;
+    text-align: center;
+    border: 2px solid #293038;
+    border-radius: 15px;
+}
+
+.conteiner3 {
+    background-color: #303841;
+    width: 356px;
+    height: 277px;
+    text-align: center;
+    border: 2px solid #293038;
+    border-radius: 15px;
+}
+
+.conteiner1:hover {
+    background-color: rgba(0, 95, 145, 0.586);
+}
+
+.conteiner2:hover {
+    background-color: rgba(0, 95, 145, 0.586);
+}
+
+.conteiner3:hover {
+    background-color: rgba(0, 95, 145, 0.586);
+}
+
+.third {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.third-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    width: 319px;
+}
+
+.third-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 319px;
+}
+
+.third-image {
+    width: 296px;
+    height: 641px;
+}
