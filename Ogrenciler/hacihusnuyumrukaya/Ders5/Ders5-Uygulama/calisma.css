@@ -621,6 +621,8 @@ padding-top:40px;
     .social-icons2{
         display: flex;
         flex-direction: row;
+        width: 25%;
+        margin-left: 5%;
     }
     .social-icons
     {
