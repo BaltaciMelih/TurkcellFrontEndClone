@@ -9,33 +9,33 @@
   float: right;
   margin-left: 50px;
 }
-.img-1 {
+.img-1-erdem {
   width: 250px;
   height: 250px;
 }
-.img-2 {
+.img-2-erdem {
   width: 250px;
   height: 250px;
 }
-.img-3 {
+.img-3-erdem {
   width: 250px;
   height: 250px;
 }
-.container-1 {
+.container-1-erdem {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.write {
+.write-erdem {
   inline-size: 350px;
   overflow-wrap: break-word;
 }
-.container-2 {
+.container-2-erdem {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.container-3 {
+.container-3-erdem {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
