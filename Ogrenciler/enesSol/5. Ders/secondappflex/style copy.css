@@ -370,9 +370,9 @@ ion-icon:hover {
   width: 100%;
   margin: 0 auto;
 }
-.icons-şafak {
+.icons {
   display: flex;
-  /* float: right; */
+  float: right;
   list-style: none;
 }
 
@@ -380,22 +380,15 @@ ion-icon:hover {
   background-image: url(arkaplan.jpg);
   height: 100vh;
 }
-
-.nav-div {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 .navbar {
   font-size: 12px;
   list-style-type: none;
   margin: 0 250;
-  /* margin-left: 450px; */
+  margin-left: 450px;
   overflow: hidden;
   position: fixed;
   z-index: 1;
-  /* top: 0px; */
+  top: 0px;
 }
 
 .navbar li {
@@ -406,7 +399,7 @@ ion-icon:hover {
   display: block;
   color: rgb(169, 194, 214);
   text-align: center;
-  padding: 0 15px;
+  padding: 30px 15px;
   text-decoration: none;
 }
 
