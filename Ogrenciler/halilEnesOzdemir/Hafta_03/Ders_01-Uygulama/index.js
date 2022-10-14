@@ -12,3 +12,14 @@ window.addEventListener('scroll', function () {
     logo.src = 'https://shreethemes.in/upstart/layouts/images/logo-light.png';
   }
 });
+
+// Navbar
+
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle('active');
+  nav.classList.toggle('active');
+}
