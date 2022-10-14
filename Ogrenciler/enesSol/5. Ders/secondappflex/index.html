@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flex Clone</title>
+    <link rel="shortcut icon" href="icon.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -16,21 +17,29 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <!-- WHO WE ARE? -->
     <div class="who-wrapper">
-      <div class="video-div">
+      <div class="video-div inline-block">
         <video
           width="480px"
           src="Gençlere Yatırım, Geleceğe Yazılım’ın Yeni Dönemi Başladı!.mp4"
           controls
         ></video>
       </div>
-      <div class="who-text">
-        <h2 class="text-orange">Who We Are</h2>
-        <p class="text-black fw-bold">Our Company Story</p>
-        <p class="text-gray">
+      <div class="who-text inline-block">
+        <h2 class="text-orange fw-semibold fs-15">WHO WE ARE?</h2>
+        <p class="text-black fw-bold section-title">Our Company Story</p>
+        <p class="text-gray fs-15">
           Start working with Upstart that can provide everything you need to
           generate awareness, drive traffic, connect. Dummy text is text that is
           used in the publishing industry or by web designers to occupy the
@@ -45,9 +54,9 @@
     <!-- PORTFOLIO -->
     <div class="portfolio-wrapper">
       <div class="portfolio-content">
-        <h2 class="text-orange">PORTFOLIO</h2>
-        <h3 class="text-dark">Our Works & Projects</h3>
-        <p class="text-gray">
+        <h2 class="text-orange fw-semibold fs-15">PORTFOLIO</h2>
+        <h3 class="text-dark section-title">Our Works & Projects</h3>
+        <p class="text-gray break-word">
           Launch your campaign and benefit from our expertise on designing and
           managing conversion centered bootstrap v5 html page.
         </p>
@@ -68,111 +77,141 @@
     </div>
 
     <!-- READY -->
-    <div class="ready-wrapper flex-container">
-      <div class="ready-image">
-        <p class="text-white">Ready to start your next web project now?</p>
-        <p class="text-gray">
-          Launch your campaign and benefit from our expertise on designing and
-          managing conversion centered bootstrap v5 html page.
-        </p>
-        <button class="btn-orange">Get Started!</button>
+    <!-- <div class="ready-wrapper">
+      <p class="text-white">Ready to start your next web project now?</p>
+      <p class="text-gray">
+        Launch your campaign and benefit from our expertise on designing and
+        managing conversion centered bootstrap v5 html page.
+      </p>
+      <button class="btn-orange">Get Started!</button>
+      <div class="bg-overlay"></div>
+    </div> -->
+    <div class="section">
+      <!-- <div class="bg-overlay"></div> -->
+      <div class="container">
+        <div class="wrap justify-content-center">
+          <div class="col">
+            <div class="section-title text-center">
+              <h4 class="p-bottom title text-white">
+                Ready to start your next web project now?
+              </h4>
+              <p class="text-white fs-15 max-width">
+                Launch your campaign and benefit from our expertise on designing
+                and managing conversion centered bootstrap v5 html page.
+              </p>
+            </div>
+            <div class="button-div">
+              <button class="btn-orange">Get Started!</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- PRICING PLANS -->
-    <div class="pricing-container">
-      <!-- BASIC -->
-      <div class="pricing-box">
-        <p class="text-dark fw-bold">BASIC</p>
-        <p class="dollars fw-bold">9</p>
-        <ul class="no-list-style">
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Full Access
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Source Files
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Free Appointments
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Enhanced Security
-          </li>
-        </ul>
-        <button class="pricing-buttons">Get Started</button>
+    <div class="pricing-wrapper">
+      <div class="pricing-content">
+        <h2 class="text-orange fw-semibold fs-15">PLANS</h2>
+        <h3 class="section-title text-dark">Pricing Plans</h3>
+        <p class="text-gray fs-15 max-width">
+          Launch your campaign and benefit from our expertise on designing and
+          managing conversion centered bootstrap v5 html page.
+        </p>
       </div>
-      <!-- STANDARD -->
-      <div class="pricing-box">
-        <p class="text-dark fw-bold">STANDARD</p>
-        <p class="dollars fw-bold">9</p>
-        <ul class="no-list-style">
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Full Access
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Source Files
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Free Appointments
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Enhanced Security
-          </li>
-        </ul>
-        <button class="pricing-buttons">Get Started</button>
-      </div>
-      <!-- PROFESSIONAL -->
-      <div class="pricing-box">
-        <p class="text-dark fw-bold">PROFESSIONAL</p>
-        <p class="dollars fw-bold">9</p>
-        <ul class="no-list-style">
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Full Access
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Source Files
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Free Appointments
-          </li>
-          <li class="text-gray">
-            <span class="material-symbols-outlined icons gray-icon">
-              check_circle </span
-            >Enhanced Security
-          </li>
-        </ul>
-        <button class="pricing-buttons">Get Started</button>
+      <div class="pricing-container">
+        <!-- BASIC -->
+        <div class="pricing-box">
+          <p class="text-dark fw-bold">BASIC</p>
+          <p class="dollars fw-bold">9</p>
+          <ul class="no-list-style">
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Full Access
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Source Files
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Free Appointments
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Enhanced Security
+            </li>
+          </ul>
+          <button class="pricing-buttons">Get Started</button>
+        </div>
+        <!-- STANDARD -->
+        <div class="pricing-box">
+          <p class="text-dark fw-bold">STANDARD</p>
+          <p class="dollars fw-bold">39</p>
+          <ul class="no-list-style">
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Full Access
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Source Files
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Free Appointments
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Enhanced Security
+            </li>
+          </ul>
+          <button class="pricing-buttons">Get Started</button>
+        </div>
+        <!-- PROFESSIONAL -->
+        <div class="pricing-box">
+          <p class="text-dark fw-bold">PROFESSIONAL</p>
+          <p class="dollars fw-bold">99</p>
+          <ul class="no-list-style">
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Full Access
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Source Files
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Free Appointments
+            </li>
+            <li class="text-gray">
+              <span class="material-symbols-outlined icons gray-icon">
+                check_circle </span
+              >Enhanced Security
+            </li>
+          </ul>
+          <button class="pricing-buttons">Get Started</button>
+        </div>
       </div>
     </div>
 
     <!-- OUR TEAM -->
     <div class="team-container">
       <div class="team-titles">
-        <h2 class="text-orange">OUR TEAM</h2>
-        <h3 class="text-dark">CREATIVE MINDS</h3>
-        <p class="text-gray">
+        <h2 class="text-orange fw-semibold fs-15">OUR TEAM</h2>
+        <h3 class="text-dark section-title">Creative Minds</h3>
+        <p class="text-gray max-width">
           Launch your campaign and benefit from our expertise on designing and
           managing conversion centered bootstrap v5 html page.
         </p>
@@ -196,9 +235,9 @@
     <!-- BLOG WRAPPER -->
     <div class="blog-wrapper">
       <div class="blog-titles">
-        <h2 class="text-orange">BLOGS</h2>
-        <p class="text-dark">Latest News</p>
-        <p class="text-gray">
+        <h2 class="text-orange fw-semibold fs-15">BLOGS</h2>
+        <p class="text-dark section-title">Latest News</p>
+        <p class="text-gray max-width">
           Launch your campaign and benefit from our expertise on designing and
           managing conversion centered bootstrap v5 html page.
         </p>
@@ -208,40 +247,40 @@
         <div class="blog">
           <div class="image-div"><img src="blog-1.jpg" alt="" /></div>
           <div class="content-div">
-            <a href="" class="text-dark hover-orange"
+            <a href="" class="text-dark hover-orange fw-semibold"
               >Building Your Corporate Identity From Upstart</a
             >
             <p class="text-gray">
               The most well-known dummy text is the 'Lorem Ipsum', in the 16th
               century.
             </p>
-            <a href="" class="text-dark hover-orange">Read More ></a>
+            <a href="" class="text-dark hover-orange">Read More →</a>
           </div>
         </div>
         <div class="blog">
           <div class="image-div"><img src="blog-2.jpg" alt="" /></div>
           <div class="content-div">
-            <a href="" class="text-dark hover-orange"
+            <a href="" class="text-dark hover-orange fw-semibold"
               >The Dark Side of Overnight Success</a
             >
             <p class="text-gray">
               The most well-known dummy text is the 'Lorem Ipsum', in the 16th
               century.
             </p>
-            <a href="" class="text-dark hover-orange">Read More ></a>
+            <a href="" class="text-dark hover-orange">Read More →</a>
           </div>
         </div>
         <div class="blog">
           <div class="image-div"><img src="blog-3.jpg" alt="" /></div>
           <div class="content-div">
-            <a href="" class="text-dark hover-orange"
+            <a href="" class="text-dark hover-orange fw-semibold"
               >The Right Hand of Business IT World</a
             >
             <p class="text-gray">
               The most well-known dummy text is the 'Lorem Ipsum', in the 16th
               century.
             </p>
-            <a href="" class="text-dark hover-orange">Read More ></a>
+            <a href="" class="text-dark hover-orange">Read More →</a>
           </div>
         </div>
       </div>
@@ -249,11 +288,16 @@
 
     <!-- FOOTER -->
     <footer class="flex-container">
-      <div class="logo">Upstart</div>
+      <div class="logo"><img src="upstartlogo.png" alt="" /></div>
       <div class="mid text-gray">
         © 2022 Upstart. Design with by Shreethemes.
       </div>
-      <div class="icons"></div>
+      <div class="icons">
+        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+      </div>
     </footer>
   </body>
 </html>
