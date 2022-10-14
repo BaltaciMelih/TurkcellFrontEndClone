@@ -381,13 +381,13 @@ li:hover {
 
     
   }
-  .pricingTexts{
+.pricingTexts{
     width: 550px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
   }
-  .pricingTexts h3{
+.pricingTexts h3{
     color: #0076a3;
 }
 .pricingTexts h2{
@@ -580,4 +580,46 @@ li:hover {
     cursor: pointer;
     font-size: 13px;
     margin-left: 50px;
+}
+
+.application{
+    width: 100%;
+    height: 1000px;
+    background-color:#303841;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.applicationTexts{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+.applicationTexts h3{
+    color: #0076a3;
+}
+.applicationTexts h2{
+    color: white;
+    font-size: 40px;
+}
+.applicationTexts p{
+    color: gray;
+    font-size: 20;
+    margin-bottom: 60px;
+}
+.applicationItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.applicationItems img{
+    width: 18%;
+    border-radius: 20px;
+    
 }
