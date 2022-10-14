@@ -303,6 +303,11 @@ a {
   color: #fff;
   outline: none;
   border: none;
+  box-shadow: 0 3px 5px 0 rgb(255 87 20 / 10%);
+}
+.submit:hover{
+  background-color: #DE4C12;
+  cursor: pointer;
 }
 
 .Contact {
