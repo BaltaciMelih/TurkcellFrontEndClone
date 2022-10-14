@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    cursor: pointer;
+    height: 50px;
+    color: gray;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-left: 200px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.home {
+    color: orangered;
+}
+
+.section1 {
+    background-image: url(https://ak.picdn.net/offset/photos/5f2437dca75ca0db3709beae/large_w/offset_979828.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+.container1 {
+    /* position: absolute; */
+    padding: 150px;
+    margin-left: 30px;
+}
+
+h1 {
+    color: white;
+    font-size: xx-large;
+}
+
+p {
+    color: gray;
+}
+
+button {
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    background-color: orangered;
+    border-color: orangered;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(168, 45, 0) ;
+}
+
+.section2 {
+    background-color: rgb(231, 243, 239);
+}
+
+.container2 {
+    display: flex;
+    margin-left: 150px;
+    gap: 100px;
+    align-items: center;
+    height: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.story-box {
+    width: 600px;
+}
+
+h4 {
+    color: orangered;
+}
+
+.services-box {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 100px;
+    padding: 50px;
+}
+
+.services-box2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    gap: 30px;
+}
+
+.box {
+    width: 350px;
+}
+
+.box span {
+    margin-left: 100px;
+    margin-top: 30px;
+    color: orangered;
+}
+
+.box h5:hover {
+    color: orangered;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.services-box3 {
+    text-align: center;
+    margin: 100px;
+    margin-top: 150px;
+}
+
+.services-box4 {
+    display: flex;
+    width: 1000px;
+    margin-left: 180px;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.box2 {
+    text-align: right;
+}
+
+.box3 {
+    width: 1px;
+    height: 600px;
+    border-style: dashed;
+    border-color: rgb(201, 200, 200);
+    border-width: 1px;
+}
+
+.box4 {
+    text-align: left;
+}
+
+.section4 {
+    background-color: rgb(231, 243, 239);
+    height: 700px;
+}
+
+.contact-box {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact-box2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+form {
+    padding: 10px;
+    width: 500px;
+    margin: 10px;
+    margin-left: 40px;
+    padding-right: 0;
+}
+
+form input {
+    width: 220px;
+    height: 20px;
+}
+
+.input452px {
+    width: 452px;
+}
+
+.form {
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* .top {
+    border-radius: 100%;
+    background-color: orangered;
+    width: 40px;
+    height: 40px;
+    color: white;
+} */
+
+footer {
+    text-align: center;
+    background-color: #212325;
+    height: 50px;
+    padding-top: 5px;
+}
