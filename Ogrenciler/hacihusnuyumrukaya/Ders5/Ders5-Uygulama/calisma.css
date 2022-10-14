@@ -12,6 +12,7 @@ body{
     z-index: 5;
     background-color: white;
     align-items:baseline;
+    border-bottom: 1px solid gray;
 }
 
  ul{
