@@ -298,3 +298,63 @@ ion-icon:hover {
   color: orangered;
   font-size: 26px;
 }
+
+.contact-texts {
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form-div {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid rgba(128, 128, 128, 0.151);
+  width: 700px;
+  height: px;
+  margin-bottom: 100px;
+}
+
+.subject {
+  width: 654px;
+  height: 30px;
+  margin: 25px auto;
+  border: 2px solid rgba(128, 128, 128, 0.151);
+  border-radius: 5px;
+}
+
+.message {
+  width: 654px;
+  margin-bottom: 25px;
+  border: 2px solid rgba(128, 128, 128, 0.151);
+  border-radius: 5px;
+}
+
+.form-edit {
+  height: 30px;
+  width: 310px;
+  border: 2px solid rgba(128, 128, 128, 0.151);
+  border-radius: 5px;
+}
+
+.name-margin {
+  margin-right: 20px;
+}
+
+.email-margin {
+  margin-right: 0;
+}
+
+.contact-icon {
+  width: 25px;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.contact-div {
+  padding-top: 45px;
+}
