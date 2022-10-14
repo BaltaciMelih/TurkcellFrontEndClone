@@ -141,6 +141,7 @@ p {
     margin: 0px;
     box-sizing: border-box;
     justify-content: center;
+    background-color: #343f4b;
 }
 
 .third-left {
@@ -149,6 +150,10 @@ p {
     align-items: flex-end;
     text-align: right;
     width: 319px;
+
+}
+.third h2 {
+    color: white;
 }
 
 .third-right {
@@ -157,6 +162,7 @@ p {
     align-items: flex-start;
     width: 319px;
 }
+
 
 .third-image {
     width: 296px;
