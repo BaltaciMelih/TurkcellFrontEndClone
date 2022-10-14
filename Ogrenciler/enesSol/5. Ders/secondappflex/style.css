@@ -16,6 +16,7 @@ a {
 
 .who-text {
   width: 25%;
+  display: table;
 }
 
 .who-wrapper {
@@ -23,7 +24,9 @@ a {
   display: flex;
   justify-content: center;
   gap: 125px;
-  padding: 50px 0;
+  padding: 150px 0;
+  flex-wrap: wrap;
+  /* height: 526px; */
 }
 
 .btn-orange {
@@ -31,7 +34,7 @@ a {
   border: 1px solid orangered;
   color: white;
   font-size: 16px;
-  padding: 5px;
+  padding: 8px 20px;
   border-radius: 5px;
 }
 
@@ -56,10 +59,32 @@ a {
   color: white;
 }
 
-.ready-wrapper {
-  height: 450px;
-  background-image: url(ready.jpg);
-  background-size: 100% 100%;
+.p-bottom {
+  padding-bottom: px;
+}
+
+.section {
+  background: url(ready.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  display: block;
+  box-shadow: inset 0 0 0 2000px rgba(7, 1, 61, 0.555);
+  width: 100%;
+}
+
+.ready-image {
+  padding: auto auto;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 /* .blog-wrapper {
@@ -81,7 +106,7 @@ a {
 .blog {
   width: 250px;
   height: 350px;
-  border: 2px solid rgba(128, 128, 128, 0.699);
+  border: 2px solid rgba(128, 128, 128, 0.151);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -103,6 +128,10 @@ a {
   flex-wrap: wrap;
 }
 
+.pricing-content {
+  text-align: center;
+}
+
 .pricing-buttons {
   background-color: rgba(255, 87, 20, 0.1);
   border: 1px solid rgba(255, 87, 20, 0.1);
@@ -110,6 +139,8 @@ a {
   margin: 0 10%;
   margin-bottom: 5%;
   border-radius: 5px;
+  padding: 10px 25px;
+  color: orangered;
 }
 
 .pricing-buttons:hover {
@@ -170,19 +201,23 @@ footer {
 
 .portfolio-content {
   text-align: center;
+  margin: 0 auto 50px;
 }
 
 .portfolio-boxes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1%;
   overflow: hidden;
 }
 
 .port-img {
-  width: 15%;
+  width: 250px;
+  height: 183px;
   border-radius: 3%;
   transition: transform 0.7s ease-in-out;
+  margin-bottom: 10px;
 }
 
 .port-img:hover {
@@ -207,6 +242,7 @@ footer {
 .member {
   width: 300px;
   border-radius: 5%;
+  margin-bottom: 10px;
 }
 
 .numbers {
@@ -221,4 +257,44 @@ footer {
 
 .content-div {
   padding: 10px;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.fs-15 {
+  font-size: 15px !important;
+}
+
+.section-title {
+  font-size: 28px !important;
+}
+
+.break-word {
+  max-width: 50%;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.max-width {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+ion-icon {
+  color: white;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+ion-icon:hover {
+  color: orangered;
+  font-size: 26px;
 }
