@@ -930,5 +930,14 @@ form
     {
        width: 78%;
     }
-
+     
+    .copyright
+    {
+        margin-left: 30%;
+        width: 30%;
+    }
+    .imgfooterdiv
+    {
+        margin-left: 10%;
+    }
 }
