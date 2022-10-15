@@ -96,13 +96,14 @@ h4 {
     margin-left: 50px;
     gap: 200px;
     padding: 50px;
+    padding-top: 100px;
 }
 
 .services-box2 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 100px;
+    justify-content: center;
     gap: 50px;
     margin-top: 50px;
 }
@@ -122,7 +123,15 @@ h4 {
 }
 
 .box {
-    width: 350px;
+    width: 300px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 6px 4px rgb(214, 214, 214);
+    -moz-box-shadow: 0 0 6px 4px rgb(214, 214, 214);
+    box-shadow: 0 0 6px 4px rgb(214, 214, 214);
 }
 
 .box span {
@@ -169,12 +178,12 @@ h4 {
 
 .section4 {
     background-color: #f8f9fc;
-    height: 700px;
+    height: 800px;
 }
 
 .contact-box {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .contact-box2 {
@@ -186,19 +195,38 @@ h4 {
 
 form {
     padding: 10px;
-    width: 500px;
+    width: 700px;
     margin: 10px;
     margin-left: 40px;
     padding-right: 0;
 }
 
-form input {
-    width: 220px;
-    height: 20px;
+.form {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(36 39 44 / 15%);
 }
 
-.input452px {
-    width: 452px;
+form input {
+    width: 306px;
+    height: 26px;
+    border-color: rgb(36 39 44 / 15%);
+    border-width: 1px;
+    color: gray;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+textarea {
+    border-color: rgb(36 39 44 / 15%);
+    color: gray;
+    border-radius: 4px;
+    width: 650px;
+    margin-left: 10px;
+}
+
+.input662px {
+    width: 650px;
 }
 
 .form {
@@ -215,10 +243,16 @@ form input {
 } */
 
 footer {
-    text-align: center;
-    background-color: #212325;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #2f333a;
+    height: 80px;
     padding-top: 5px;
+    padding-left: 50px;
+}
+
+footer p {
+    padding-left: 300px;
 }
 
 .portfolio-box {
@@ -236,6 +270,7 @@ footer {
 
 .portfolio-box2 img {
     border-radius: 10px;
+    height: 200px;
 }
 
 .section5 {
@@ -253,16 +288,168 @@ footer {
 }
 
 .portfolio-box2 img:hover {
-    transform: translate(10px);
+    transform: scale(1.2);
     cursor: pointer;
 }
 
 .pricing-box {
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .pricing-box2 {
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 20px;
+}
+
+.box5 {
+    width: 300px;
+    height: 350px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    padding: 30px;
+}
+
+.box5:hover {
+    -webkit-box-shadow: 0 0 6px 4px rgb(214, 214, 214);
+    -moz-box-shadow: 0 0 6px 4px rgb(214, 214, 214);
+    box-shadow: 0 0 6px 4px rgb(214, 214, 214);
+    transform: translate(0,-10px);
+}
+
+.box5 button {
+    width: 300px;
+    border-radius: 5px;
+    color: rgb(248, 73, 9);
+    background-color: rgba(255,87,20,0.1);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 87, 20, 0.11);
+}
+
+.box5 button:hover {
+    color: white;
+    background-color: orangered;
+}
+
+.int-big {
+    font-size: 40px;
+}
+
+.container6 {
+    height: 800px;
+}
+
+.team-box {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.team-box2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+.team-box2 img {
+    border-radius: 10px;
+    height: 261px;
+}
+
+.team-box2 img:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.section7 {
+    background-color: #f8f9fc;
+    height: 850px;
+}
+
+.team-box3 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.team-box4 img {
+    width: 75px;
+    height: 25px;
+}
+
+.team-box4 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.container8 {
+    height: 800px;
+}
+
+.blogs-box {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.blogs-box2 img {
+    width: 350px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.blogs-box2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.box6 {
+    width: 350px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    border-width: 1px;
+}
+
+.box7 {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.box7 h5:hover {
+    color: orangered;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.box7 h3:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+.top {
+    background-color: orangered;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    position: fixed;
+}
+
+.top span {
+    color: white;
+    padding: 8px;
+}
+
+.box8 {
+    padding-top: 20px;
 }
