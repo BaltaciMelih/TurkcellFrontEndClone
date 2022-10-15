@@ -4,6 +4,7 @@ body {
 
 nav {
     display: flex;
+    justify-content: center;
     cursor: pointer;
     height: 50px;
     color: gray;
@@ -30,15 +31,11 @@ a:hover {
     color: orangered;
 }
 
-.home {
-    color: orangered;
-}
-
 .section1 {
-    background-image: url(https://ak.picdn.net/offset/photos/5f2437dca75ca0db3709beae/large_w/offset_979828.jpg);
+    background-image: url(https://shreethemes.in/upstart/layouts/images/bg/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 800px;
 }
 
 .container1 {
@@ -61,7 +58,7 @@ button {
     color: white;
     font-size: large;
     background-color: orangered;
-    border-color: orangered;
+    border: 0px;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 10px;
@@ -74,21 +71,19 @@ button:hover {
 }
 
 .section2 {
-    background-color: rgb(231, 243, 239);
+    background-color: #f8f9fc;
 }
 
 .container2 {
     display: flex;
-    margin-left: 150px;
     gap: 100px;
     align-items: center;
-    height: 600px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 800px;
+    justify-content: center;
 }
 
 .story-box {
-    width: 600px;
+    width: 500px;
 }
 
 h4 {
@@ -98,9 +93,8 @@ h4 {
 .services-box {
     display: flex;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    gap: 100px;
+    margin-left: 50px;
+    gap: 200px;
     padding: 50px;
 }
 
@@ -108,8 +102,23 @@ h4 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 150px;
-    gap: 30px;
+    margin-left: 100px;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.services-box2 h3:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.logo-back {
+    width: 85px;
+    height: 85px;
+    background-color: rgba(255,87,20,0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .box {
@@ -117,7 +126,6 @@ h4 {
 }
 
 .box span {
-    margin-left: 100px;
     margin-top: 30px;
     color: orangered;
 }
@@ -131,35 +139,36 @@ h4 {
 .services-box3 {
     text-align: center;
     margin: 100px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .services-box4 {
     display: flex;
-    width: 1000px;
-    margin-left: 180px;
     gap: 50px;
-    margin-bottom: 50px;
+    height: 900px;
+    justify-content: center;
 }
 
 .box2 {
     text-align: right;
+    width: 500px;
 }
 
 .box3 {
-    width: 1px;
-    height: 600px;
+    width: 0,1px;
+    height: 800px;
     border-style: dashed;
-    border-color: rgb(201, 200, 200);
+    border-color: #aaaaaa;
     border-width: 1px;
 }
 
 .box4 {
     text-align: left;
+    width: 500px;
 }
 
 .section4 {
-    background-color: rgb(231, 243, 239);
+    background-color: #f8f9fc;
     height: 700px;
 }
 
@@ -210,4 +219,50 @@ footer {
     background-color: #212325;
     height: 50px;
     padding-top: 5px;
+}
+
+.portfolio-box {
+    text-align: center;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+.portfolio-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.portfolio-box2 img {
+    border-radius: 10px;
+}
+
+.section5 {
+    background-color: #f8f9fc;
+    height: 1273x;
+}
+
+.portfolio-box3 {
+    background-image: url(https://shreethemes.in/upstart/layouts/images/bg/cta.png);
+    height: 250px;
+    background-position: center;
+    margin-top: 100px;
+    text-align: center;
+    padding: 70px;
+}
+
+.portfolio-box2 img:hover {
+    transform: translate(10px);
+    cursor: pointer;
+}
+
+.pricing-box {
+    text-align: center;
+}
+
+.pricing-box2 {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
 }
