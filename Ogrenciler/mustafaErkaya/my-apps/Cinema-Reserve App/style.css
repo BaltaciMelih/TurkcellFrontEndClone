@@ -9,6 +9,7 @@
 body {
     background-color: #292929;
     display: flex;
+    flex-direction: column;
     align-items: center;justify-content: center;
     height: 100vh;
 }
@@ -47,4 +48,22 @@ background-color: rgb(230, 234, 38);
     width: 100%;
     margin: 25px 0;
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
+}
+
+.movie-list {
+    margin: 20px 0;
+}
+
+.info {
+    background-color: rgba(0, 0, 0, 0.282);
+    padding: 5px 10px;
+    color: #777;
+    display: flex;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
 }
