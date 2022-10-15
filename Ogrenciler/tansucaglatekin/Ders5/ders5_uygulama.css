@@ -6,7 +6,6 @@ body {
 .nav {
     display: flex;
     cursor: pointer;
-    
     overflow: hidden;
     position: fixed;
     background-color: #14181d;
