@@ -138,7 +138,11 @@ h2{
     font-size: 15px;
     letter-spacing: 0.5px;
 }
+<<<<<<< HEAD
+.container{
+=======
 .container-safak{
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     margin-top: 100px;
     width: 75%;
     height: 400px;
@@ -158,13 +162,21 @@ h2{
     border-radius: 5%;
     
 }
+<<<<<<< HEAD
+.readmore{
+=======
 .readmore-safak{
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
    margin-top: 20px;
    font-size: 20px;
    color: #24272c;
    position: relative;
 }
+<<<<<<< HEAD
+.saga-hizala{
+=======
 .saga-hizala-safak{
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     color: #8492a6 !important;
 }
 

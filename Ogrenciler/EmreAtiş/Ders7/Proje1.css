@@ -123,6 +123,8 @@ margin-right: 8px;
 }
 .container{
     display: flex;
+<<<<<<< HEAD
+=======
     margin: 2%;
     justify-content: space-around;
 }
@@ -161,4 +163,5 @@ margin-right: 8px;
     height: 90%;
     width: 70%;
     margin-left: 15%;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }

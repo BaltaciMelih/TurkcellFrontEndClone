@@ -13,12 +13,20 @@
   justify-content: space-evenly;
   margin: 0 200px;
 }
+<<<<<<< HEAD
+a {
+=======
 .header-menu-link {
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   text-decoration: none;
   color: rgba(255, 255, 255, 0.708);
   margin-left: 40px;
 }
+<<<<<<< HEAD
+a:hover {
+=======
 .header-menu-link:hover {
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   color: white;
 }
 
@@ -375,6 +383,12 @@ h2 {
   margin-left: 20%;
   margin-right: 20%;
   display: flex;
+<<<<<<< HEAD
+}
+.ourteam-image {
+  width: 70%;
+  border-radius: 5%;
+=======
   justify-content: space-evenly;
   gap: 20px;
 }
@@ -382,6 +396,7 @@ h2 {
   width: 100%;
   border-radius: 5%;
   justify-content: center;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .ourteam-image:hover {
   box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
@@ -390,6 +405,8 @@ h2 {
   display: flex;
   row-gap: 20px;
 }
+<<<<<<< HEAD
+=======
 .ourteam-card-project-title {
   text-align: center;
   margin-top: 30px;
@@ -535,3 +552,4 @@ footer p {
   display: flex;
   justify-content: flex-end;
 }
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626

@@ -54,7 +54,11 @@ header .img{
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+<<<<<<< HEAD
+    margin-top: -100px;
+=======
     margin-top: -10rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     display: flex;
     flex-direction: column;
     text-align: flex-start;
@@ -74,7 +78,11 @@ header .img p{
 }
 
 .btn{
+<<<<<<< HEAD
+    width: 150px;
+=======
     width: 15rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background-color: #FF5714;
     font-size: 1.7rem;
     color: #fff;
@@ -114,7 +122,11 @@ nav .container {
     font-size: 3rem;
     color: #fff;
     padding-bottom: 0.5rem;
+<<<<<<< HEAD
+    border-bottom: 2px solid black;
+=======
     border-bottom: 0.2rem solid black;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 
@@ -145,8 +157,12 @@ nav .social-media a :hover{
 }
 
 /* story start */
+<<<<<<< HEAD
+.story{
+=======
 
 .story {
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background-color: rgb(177, 175, 175);
     padding: 5rem 0;
 }
@@ -165,7 +181,11 @@ nav .social-media a :hover{
 .story-items-left img {
     
     height: auto;
+<<<<<<< HEAD
+    width: 400px;
+=======
     width: 40rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     margin-left: 8rem;
     border-radius: 2rem;
     
@@ -269,7 +289,11 @@ nav .social-media a :hover{
 .under-container .icon {
     padding: 1rem;
     border-radius: 50%;
+<<<<<<< HEAD
+    border: 2px dashed #ccc;
+=======
     border: 0.2rem dashed #ccc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -280,7 +304,11 @@ nav .social-media a :hover{
 .under-container .icon2{
     padding: 1rem;
     border-radius: 50%;
+<<<<<<< HEAD
+    border: 2px dashed #ccc;
+=======
     border: 0.2rem dashed #ccc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     position: absolute;
     left: 50%;
     top: 53%;
@@ -294,7 +322,11 @@ nav .social-media a :hover{
 .under-container .icon3{
     padding: 1rem;
     border-radius: 50%;
+<<<<<<< HEAD
+    border: 2px dashed #ccc;
+=======
     border: 0.2rem dashed #ccc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     position: absolute;
     left: 50%;
     top: 88%;
@@ -306,7 +338,11 @@ nav .social-media a :hover{
 }
 .under-left {
     width: 50%;
+<<<<<<< HEAD
+    border-right: 2px dashed #ccc;
+=======
     border-right: 0.2rem dashed #ccc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -364,7 +400,10 @@ nav .social-media a :hover{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50% 
+<<<<<<< HEAD
+=======
 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     
 }
 
@@ -372,11 +411,19 @@ nav .social-media a :hover{
     width: 100%;
     height: auto;
     border-radius: 3rem;
+<<<<<<< HEAD
+    box-shadow: 8px 8px 14px rgba(255, 255, 255, 0.846);
+}
+.portfolio-bottom img:hover {
+    scale: 1.15;
+    box-shadow: 10px 10px 15px #000000ad
+=======
     box-shadow: 0.8rem 0.8rem 1.4rem rgba(255, 255, 255, 0.846);
 }
 .portfolio-bottom img:hover {
     scale: 1.15;
     box-shadow: 1rem 1rem 1rem #000000ad
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .portfolio-bottom div{
@@ -394,9 +441,15 @@ nav .social-media a :hover{
     background: url(./img-1.jpg);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+    width: auto;
+    height: 40rem;
+    margin-top: 100px;
+=======
     width: 111.5%;
     height: 40rem;
     margin-top: 10rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -405,6 +458,13 @@ nav .social-media a :hover{
     margin-bottom: 5rem;
     gap: 2.5rem;
     color: rgba(67, 65, 65, 0.825);
+<<<<<<< HEAD
+
+}
+
+.button-portfolio{
+    width: 150px;
+=======
     margin-left: -6%;
 
 }
@@ -414,6 +474,7 @@ padding: 0!important;
 }
 .button-portfolio{
     width: 15rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background-color: #FF5714;
     font-size: 1.7rem;
     color: #fff;
@@ -459,8 +520,13 @@ padding: 0!important;
     gap: 2rem;
     width: 33%;
     height: 100%;
+<<<<<<< HEAD
+    border-radius: 20px;
+    margin: 10px;    
+=======
     border-radius: 2rem;
     margin: 1rem;    
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     border-style: solid;
     padding: 1rem;
     
@@ -475,8 +541,13 @@ padding: 0!important;
     gap: 2rem;
     width: 33%;
     height: 100%;
+<<<<<<< HEAD
+    border-radius: 20px;
+    margin: 10px;
+=======
     border-radius: 2rem;
     margin: 1rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     border-style: solid;
     padding: 1rem;
 
@@ -492,8 +563,13 @@ padding: 0!important;
     gap: 2rem;
     width: 33%;
     height: 100%;
+<<<<<<< HEAD
+    margin: 10px;
+    border-radius: 20px;
+=======
     margin: 1rem;
     border-radius: 2rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     border-style: solid;
     padding: 1rem;
 
@@ -501,7 +577,11 @@ padding: 0!important;
 }
 
 .button-card{
+<<<<<<< HEAD
+    width: 150px;
+=======
     width: 15rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background-color: #ff57146b;
     font-size: 1.7rem;
     color: #fff;
@@ -518,21 +598,36 @@ padding: 0!important;
 
 .pricing-bottom .card1:hover {
     scale: 1.05;
+<<<<<<< HEAD
+    box-shadow: 10px 10px 15px #000000ad
+=======
     box-shadow: 1rem 1rem 1.5rem #000000ad
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .pricing-bottom .card2:hover {
     scale: 1.05;
+<<<<<<< HEAD
+    box-shadow: 10px 10px 15px #000000ad
+}
+.pricing-bottom .card3:hover {
+    scale: 1.05;
+    box-shadow: 10px 10px 15px #000000ad
+=======
     box-shadow: 1rem 1rem 1.5rem #000000ad
 }
 .pricing-bottom .card3:hover {
     scale: 1.05;
     box-shadow: 1rem 1rem 1.5rem #000000ad
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .button-card:hover{
 
     background-color: #FF5714;
 
+<<<<<<< HEAD
+}
+=======
 }
 
 /* team */
@@ -855,3 +950,4 @@ margin-top: 5rem;
         
     }
   }
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626

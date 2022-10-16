@@ -9,6 +9,10 @@
 body {
   color: #444;
   font-family: sans-serif;
+<<<<<<< HEAD
+
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   border-top: 10px solid #1098ad;
   position: relative;
 }
@@ -35,6 +39,13 @@ nav {
   /* text-align: center; */
 }
 
+<<<<<<< HEAD
+article {
+  /* margin-bottom: 60px; */
+}
+
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 .post-header {
   margin-bottom: 40px;
   /* position: relative; */
@@ -131,6 +142,13 @@ li:last-child {
   margin-left: 0;
 }
 
+<<<<<<< HEAD
+body {
+  /* background-color: orangered; */
+}
+
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 /* .first-li {
   font-weight: bold;
 } */
@@ -143,6 +161,13 @@ li:last-child {
   font-style: italic;
 }
 
+<<<<<<< HEAD
+li:nth-child(even) {
+  /* color: red; */
+}
+
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 /* Misconception: this won't work! */
 article p:first-child {
   color: red;
@@ -208,6 +233,13 @@ h1::first-letter {
   margin-right: 5px;
 }
 
+<<<<<<< HEAD
+h3 + p::first-line {
+  /* color: red; */
+}
+
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 h2 {
   /* background-color: orange; */
   position: relative;
@@ -300,6 +332,8 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
 
 .author-box {
   display: flex;
@@ -354,3 +388,4 @@ article {
 aside {
   flex: 0 0 300px;
 }
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
