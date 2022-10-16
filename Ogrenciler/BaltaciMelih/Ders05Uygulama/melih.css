@@ -14,6 +14,10 @@ body {
 
 .Eight {
   background-color: #f8f9fc;
+<<<<<<< HEAD
+=======
+  flex-wrap: wrap;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .container {
@@ -63,7 +67,10 @@ h6,
 }
 
 .teamCards {
+<<<<<<< HEAD
   height: 261px;
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   width: 100%;
   display: flex;
   justify-content: center;
@@ -74,6 +81,10 @@ h6,
 
 .profileCard {
   border-radius: 5px;
+<<<<<<< HEAD
+=======
+  height: 261px;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   width: 261px;
   max-width: 100%;
   position: relative;
@@ -163,7 +174,10 @@ h6,
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
+<<<<<<< HEAD
   width: 1119px;
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   margin-top: 60px;
 }
 
@@ -190,6 +204,10 @@ h6,
   display: flex;
   justify-content: space-around;
   width: 1140px;
+<<<<<<< HEAD
+=======
+  flex-wrap: wrap;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .partnerLogo {
@@ -201,6 +219,10 @@ h6,
   justify-content: center;
   margin-top: 50px;
   gap: 25px;
+<<<<<<< HEAD
+=======
+  flex-wrap: wrap;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .newsCard {
@@ -253,6 +275,10 @@ a {
   display: flex;
   justify-content: center;
   gap: 50px;
+<<<<<<< HEAD
+=======
+  flex-wrap: wrap;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .formArea {
@@ -345,6 +371,10 @@ a {
   justify-content: center;
   align-items: center;
   gap: 250px;
+<<<<<<< HEAD
+=======
+  flex-wrap: wrap;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .footerColumn {

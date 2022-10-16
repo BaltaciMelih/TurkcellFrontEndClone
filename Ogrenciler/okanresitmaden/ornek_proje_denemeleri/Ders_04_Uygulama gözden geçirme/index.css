@@ -1,0 +1,100 @@
+h1{
+    text-align: center;
+    color:black;
+    margin: 1%;
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+body{
+    background:linear-gradient(to left,blue,aqua)
+}
+
+nav ul{
+    gap: 70px;
+    font-size: x-large;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.card{
+
+    float: left;
+    width: 25%;
+    height: 650px;
+    border-radius: 30px;
+    margin-left: 6%;
+}
+
+.bodrum{
+    background-color: yellow;
+}
+
+.izlanda{
+    background-color: blue;
+}
+
+.italya{
+    background-color: green;
+}
+
+.resim{
+    display: block;
+    width: 100%;
+    height: 325px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    margin-right: 5%;
+    float: right;
+    width: 20%;
+}
+
+button{
+    background-color: orange;
+    border-radius: 15%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.button2{
+    background-color:white;
+}
+
+
+
+
+p{
+    margin-left: 5%;
+    font-size: larger;
+}
+.blue{
+    color:blue;
+}
+.white{
+    color: white;
+}
+.yellow{
+    color: yellow;
+}
+.button3{
+    background-color: red;
+}
+footer {
+    background-color: #777;
+    margin-top: 40%;
+    color: white;
+  }
+
+.bosluk{
+    margin-left: 5%;
+}
+
+.price{
+    background-color: bisque;
+}

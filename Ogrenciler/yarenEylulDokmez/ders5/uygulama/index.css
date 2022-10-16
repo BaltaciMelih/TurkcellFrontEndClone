@@ -9,6 +9,10 @@ body {
     background-color: #343f4b;
     position: fixed;
     height: 90px;
+<<<<<<< HEAD
+=======
+    z-index: 1;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .nav {
     display: flex;
@@ -215,7 +219,11 @@ li:hover {
     cursor: pointer;
     font-size: 16px;
 }
+<<<<<<< HEAD
 .buttons button:focus{
+=======
+.buttons button:first-child{
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background: linear-gradient(#2e8da5 0%, #114d64 100%);
     border: 1px solid #0076a3;
 }
@@ -292,7 +300,11 @@ li:hover {
     text-align: start;
     flex-direction: column;
     width: 30%;
+<<<<<<< HEAD
     margin-left: 5%;
+=======
+    margin-left: 8%;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .featuresLastL h3{
     color: white; 
@@ -323,8 +335,617 @@ li:hover {
     margin-bottom: 120px;
     width: 50%;
     margin-right: 5%;
+<<<<<<< HEAD
     background-color: aqua;
 }
 .featuresLastR img{
     border-radius: 20px;
+=======
+    text-align: start;
+}
+.featuresLastR img{
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+}
+.featuresLastR .featuresLastRInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+.featuresLastRInfo .writer{
+    display: flex;
+    flex-direction: row;
+}
+
+.writer .featuresLastRInfoWho p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.featuresLastR h5{
+    color: white; 
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 23px;
+}
+.featuresLastR p{
+    color: gray; 
+    line-height: 24px;
+}
+.featuresLastR button{
+    background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+.pricingTexts{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+.pricingTexts h3{
+    color: #0076a3;
+    margin-bottom: 4px;
+}
+.pricingTexts h2{
+    color: white;
+    font-size: 40px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.pricingTexts p{
+    color: gray;
+    font-size: 20;
+    margin-bottom: 60px;
+}
+
+.pricingPlans{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 76px;
+    margin-right: 76px;
+}
+.pricingBasic{
+    border: 1px solid #3b4753;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+}
+
+.pricingBasicText{
+    padding: 20px;
+    background-color: #183b56;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pricingBasicText div{
+    background-color: #0076a3;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+.pricingBasicText h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.pricingBasicText p{
+    color: gray;
+    font-size: 15px;
+    font-weight: bold
+}
+.whiteBorder{
+    background-color: white;
+    width: 100%;
+    height: 8px;
+}
+
+.pricingFeatures{
+    margin-top: 40px;
+}
+
+
+.pricingFeatureItem{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.pricingFeatureItem img{
+    margin-right: 20px;
+}
+
+.pricingFeatureItem p{
+    color: white;
+    font-size: 16px;
+}
+
+.pricingBasic button{
+    background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 125px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 50px;
+}
+
+.pricingStartup{
+    border: 1px solid #3b4753;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pricingStartupText{
+    padding: 20px;
+    background-color: #183b56;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pricingStartupText div{
+    background-color: #0076a3;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+.pricingStartupText h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.pricingStartupText p{
+    color: gray;
+    font-size: 15px;
+    font-weight: bold
+}
+
+.pricingStartup button{
+    background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 125px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 50px;
+}
+
+.pricingEnterprice{
+    border: 1px solid #3b4753;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+.pricingEnterpriceText{
+    padding: 20px;
+    background-color: #183b56;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pricingEnterpriceText div{
+    background-color: #0076a3;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+.pricingEnterpriceText h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.pricingEnterpriceText p{
+    color: gray;
+    font-size: 15px;
+    font-weight: bold
+}
+
+
+.pricingEnterprice button{
+    background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 125px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 50px;
+}
+
+.application{
+    width: 100%;
+    height: 760px;
+    background-color:#303841;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.applicationTexts{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+.applicationTexts h3{
+    color: #0076a3;
+    margin-bottom: 4px;
+}
+.applicationTexts h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.applicationTexts p{
+    color: gray;
+    font-size: 20;
+    margin-bottom: 60px;
+}
+.applicationItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.applicationItems img{
+    width: 14%;
+    border-radius: 20px;  
+}
+.teamMembers{
+    width: 100%;
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.teamMembersTexts{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 54px;
+  }
+.teamMembersTexts h3{
+    color: #0076a3;
+    margin-bottom: 4px;
+}
+.teamMembersTexts h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.teamMembersTexts p{
+    color: gray;
+    font-size: 20;
+    margin-bottom: 60px;
+}
+.members{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.memberBox{
+  width: 183px;
+  height: 180px;
+  border-radius: 5%;
+  flex-direction: row;
+  display: flex;
+}
+.memberBox p{
+  transform: rotate(-90deg);
+  color: white;
+  font-size: 15px;
+  margin-top: 75px;
+  position:absolute;
+}
+.box4{
+    order: 1;
+    flex-grow: 1;
+  }
+  .box5{
+    order: 1;
+    flex-grow: 1;
+  }
+  .box6{
+    order: 1;
+    flex-grow: 1;
+  }
+  .box7{
+    order: 1;
+    flex-grow: 1;
+  }
+.memberBox img{
+    margin-left: 85px;
+    border-radius: 5%;
+}
+.workspace{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    background: linear-gradient(80deg, #377d8f 0%, #0a4157 100%);
+}
+.workspaceText{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+    text-align: left;
+    margin-left: 8%;
+}
+.workspaceText h2{
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.workspaceText p{
+    font-size: 18px;
+    color: rgba(255,255,255,.3);
+    line-height: 25px;
+}
+.googleplay{
+    margin-left: 17px;
+}
+.contact{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color: #303841;
+}
+.contactTexts{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 124px;
+  }
+.contactTexts h3{
+    color: #0076a3;
+    margin-bottom: 4px;
+}
+.contactTexts h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.contactTexts p{
+    color: gray;
+    font-size: 20;
+    margin-bottom: 60px;
+}
+.formMap{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 20px;
+}
+.formDiv h3{
+    color: white;
+    font-size: 27px;
+    margin-bottom: 1px;
+}
+.formDiv p{
+    color: gray;
+}
+.formDiv input{
+    width: 44%;
+    height: 47px;
+    text-align:start;
+    margin-bottom: 18px;
+    border-radius: 0.3rem;
+    border: 1px black;
+    margin-right: 20px;
+    text-indent: 20px;
+}
+.formDiv .inputL{
+    width: 94%;
+}
+.formDiv textarea{
+    width: 94%;
+    height: 80px;
+    text-align:start;
+    margin-bottom: 18px;
+    border-radius: 0.3rem;
+    border: 1px black;
+    margin-right: 20px;
+    text-indent: 20px;
+}
+.formDiv button{
+    width: 94%;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    background-color: #0076a3;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.mapDiv{
+    width: 50%;
+    margin-left: 0;
+}
+.multi{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.adress{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    text-align: start;
+}
+.adress img{
+    margin-top: 30px;
+}
+.adress h5{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+.adress p{
+    color: gray;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+footer .column1{
+    width: 30%;
+    margin-left: 7%;
+    margin-top: 3%;
+    margin-right: 1%;
+}
+footer .column1 p{
+    color: gray;
+}
+footer .column2{
+    width: 8%;
+    margin-left: 2%;
+    text-align: start;
+    margin-top: 0.75%;
+    display: flex;
+    flex-direction: column;
+}
+footer .column3{
+    width: 12%;
+    margin-left: 4%;
+    text-align: start;
+    margin-top: 0.75%;
+    display: flex;
+    flex-direction: column;
+}
+footer .column2 h5{
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+footer .column2 p{
+    color: gray;
+    font-size: 17px;
+    margin-bottom: 1px;
+}
+footer .column3 h5{
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+footer .column3 p{
+    color: gray;
+    font-size: 17px;
+    margin-bottom: 1px;
+}
+footer .sub{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 4%;
+    text-align: start;
+    margin-top: 0.75%;
+    margin-right: 8%;
+}
+footer .sub h5{
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+footer .sub input{
+    margin-top: 20px;
+    height: 48px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+footer .sub p{
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+.last{
+    height: 70px;
+    text-align: center;
+    background-color: #303841;
+}
+.last p{
+    color: white;
+    
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
