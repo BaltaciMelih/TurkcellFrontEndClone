@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;justify-content: center;
     height: 100vh;
+    color: #fff;
 }
 
 .seat {
@@ -28,6 +29,11 @@ background-color: rgb(230, 234, 38);
 
 .seat.reserved {
     background-color: #ccc;
+}
+
+.seat:not(.reserved):hover {  /* reserved clasındaki elemanlara uygulamadık. */
+    cursor: pointer;
+    transform: scale(1.3);
 }
 
 .seat:nth-of-type(2) { /*dikeyde 2. seat elemandan kesip kodlarımızı uygularız !! */
@@ -66,4 +72,11 @@ background-color: rgb(230, 234, 38);
     align-items: center;
     justify-content: center;
     margin: 0 10px;
+}
+p.text {
+    margin-top: 20px;
+}
+
+p.text span{
+    color:rgb(230, 234, 38); ;
 }
