@@ -25,26 +25,35 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/e0b4c013fd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- NAVBAR -->
-    <div class="wrap">
+    <div class="wrap-safak">
       <div class="header">
-        <div class="nav-div">
-          <div class="div-logo"><img src="upstartlogo.png" alt="" /></div>
-          <div class="div-titles">
-            <ul class="navbar">
-              <li><a href="#Home">HOME</a></li>
-              <li><a href="#Services">STORY</a></li>
-              <li><a href="#Features">SERVICES</a></li>
-              <li><a href="#PORTFOLİO">PORTFOLIO</a></li>
-              <li><a href="#Pricing">PRICING</a></li>
-              <li><a href="#Team">TEAM</a></li>
-              <li><a href="#Blogs">BLOGS</a></li>
-              <li><a href="blog.html">CONTACT US</a></li>
-            </ul>
-          </div>
-          <div class="nav-icons">
+        <nav>
+          <input type="checkbox" id="check" />
+          <label class="labels" for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label>
+          <img src="upstartlogo.png" alt="" />
+
+          <ul class="navbar">
+            <li><a href="#Home">HOME</a></li>
+            <li><a href="#Services">STORY</a></li>
+            <li><a href="#Features">SERVICES</a></li>
+            <li><a href="#PORTFOLİO">PORTFOLIO</a></li>
+            <li><a href="#Pricing">PRICING</a></li>
+            <li><a href="#Team">TEAM</a></li>
+            <li><a href="#Blogs">BLOGS</a></li>
+            <li><a href="blog.html">CONTACT US</a></li>
+          </ul>
+
+          <!-- <div class="nav-icons">
             <ul class="icons-şafak">
               <li>
                 <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
@@ -56,8 +65,8 @@
                 <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
               </li>
             </ul>
-          </div>
-        </div>
+          </div> -->
+        </nav>
 
         <!-- MAIN TITLE  -->
         <div class="main-title" id="Home">
@@ -74,10 +83,34 @@
         </div>
       </div>
     </div>
+
+    <!-- WHO WE ARE? -->
+    <div class="who-wrapper">
+      <div class="video-div inline-block">
+        <video
+          width="480px"
+          src="Gençlere Yatırım, Geleceğe Yazılım’ın Yeni Dönemi Başladı!.mp4"
+          controls
+        ></video>
+      </div>
+      <div class="who-text inline-block">
+        <h2 class="text-orange fw-semibold fs-15">WHO WE ARE?</h2>
+        <p class="text-black fw-bold section-title">Our Company Story</p>
+        <p class="text-gray fs-15">
+          Start working with Upstart that can provide everything you need to
+          generate awareness, drive traffic, connect. Dummy text is text that is
+          used in the publishing industry or by web designers to occupy the
+          space which will later be filled with 'real' content. This is required
+          when, for example, the final text is not yet available. Dummy texts
+          have been in use by typesetters since the 16th century.
+        </p>
+        <button class="btn-orange">Buy Now ></button>
+      </div>
+    </div>
     <!-- WHAT WE DO -->
     <div class="what-we-do">
       <div class="left-part">
-        <h2>WHAT WE DO ?</h2>
+        <h2 class="text-orange fs-15">WHAT WE DO ?</h2>
         <p class="do">Perfect Solution For Your<br />Business</p>
       </div>
       <div class="right-part">
@@ -191,31 +224,17 @@
         </p>
       </div>
     </div>
+    <div class="work-content">
+      <h2 class="text-orange fw-semibold fs-15">WORK PROCESS</h2>
+      <h3 class="text-dark section-title">Digital System For Our Business</h3>
+      <p class="text-gray break-word-more">
+        Launch your campaign and benefit from our expertise on designing and
+        managing conversion centered bootstrap v5 html page.
+      </p>
+    </div>
 
     <!-- ENES STARTS HERE -->
-    <!-- WHO WE ARE? -->
-    <div class="who-wrapper">
-      <div class="video-div inline-block">
-        <video
-          width="480px"
-          src="Gençlere Yatırım, Geleceğe Yazılım’ın Yeni Dönemi Başladı!.mp4"
-          controls
-        ></video>
-      </div>
-      <div class="who-text inline-block">
-        <h2 class="text-orange fw-semibold fs-15">WHO WE ARE?</h2>
-        <p class="text-black fw-bold section-title">Our Company Story</p>
-        <p class="text-gray fs-15">
-          Start working with Upstart that can provide everything you need to
-          generate awareness, drive traffic, connect. Dummy text is text that is
-          used in the publishing industry or by web designers to occupy the
-          space which will later be filled with 'real' content. This is required
-          when, for example, the final text is not yet available. Dummy texts
-          have been in use by typesetters since the 16th century.
-        </p>
-        <button class="btn-orange">Buy Now ></button>
-      </div>
-    </div>
+
     <!-- ERDEM -->
     <div class="container-erdem">
       <div class="container-erdem1">
