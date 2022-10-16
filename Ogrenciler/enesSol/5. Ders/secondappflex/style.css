@@ -382,19 +382,24 @@ ion-icon:hover {
 }
 
 .nav-div {
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 10px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  margin: auto;
 }
 
 .navbar {
   font-size: 12px;
   list-style-type: none;
-  margin: 0 250;
-  /* margin-left: 450px; */
-  overflow: hidden;
-  position: fixed;
-  z-index: 1;
+  /* margin: 0 250;
+  margin-left: 450px; */
+  /* overflow: hidden; */
+  /* position: fixed; */
+  /* z-index: 1; */
   /* top: 0px; */
 }
 
@@ -416,7 +421,7 @@ ion-icon:hover {
 .navbar li a:hover {
   background-color: transparent;
 }
-.title {
+.title-safak {
   margin-top: 1.5rem !important;
   color: rgba(255, 255, 255, 0.61);
   inline-size: 600px;
@@ -480,18 +485,24 @@ ion-icon:hover {
   cursor: pointer;
 }
 
-h2 {
+.h2-safak {
   width: 450px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   color: #ff5714 !important;
   font-size: 15px;
   margin-left: 10%;
 }
 
+.what-we-do {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
 .do {
   width: 450px;
-  margin-bottom: 1rem !important;
-  margin-top: 20px;
+  /* margin-bottom: 1rem !important; */
+  /* margin-top: 20px; */
   color: black;
   line-height: 1.5;
   font-weight: 600 !important;
@@ -501,14 +512,14 @@ h2 {
   font-style: bold;
 }
 .launch {
-  margin-top: 5px !important;
+  /* margin-top: 5px !important; */
   color: #8492a6 !important;
   inline-size: 600px;
-  margin-left: 50%;
+  /* margin-left: 50%; */
   font-size: 15px;
   letter-spacing: 0.5px;
 }
-.container {
+.container1 {
   margin-top: 100px;
   width: 75%;
   height: 400px;
@@ -537,7 +548,100 @@ h2 {
   color: #8492a6 !important;
 }
 
-h4 {
+.h4-safak {
+  margin-bottom: 15px;
+  color: #24272c !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 1.5;
+  font-family: "Roboto Slab", serif;
+}
+a:hover {
+  color: #ff5714;
+}
+
+/* ERDEM */
+.container-erdem {
+  display: flex;
+  justify-content: center;
+}
+.container-erdem1 {
+  float: left;
+}
+.container-erdem2 {
+  float: right;
+  margin-left: 50px;
+}
+.img-1-erdem {
+  width: 250px;
+  height: 250px;
+}
+.img-2-erdem {
+  width: 250px;
+  height: 250px;
+}
+.img-3-erdem {
+  width: 250px;
+  height: 250px;
+}
+.container-1-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.write-erdem {
+  inline-size: 350px;
+  overflow-wrap: break-word;
+}
+.container-2-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-3-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-erdem2-border {
+  border-left: 3px dotted #e67e22;
+  height: auto;
+  display: block;
+  margin-left: 50px;
+}
+
+/* SAFAK PART TWO */
+.container-safak {
+  margin-top: 100px;
+  width: 75%;
+  height: 750pxpx;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.box {
+  width: 25%;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5%;
+}
+.readmore-safak {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #24272c;
+  position: relative;
+}
+.saga-hizala-safak {
+  color: #8492a6 !important;
+}
+
+.h4-safak2 {
   margin-bottom: 15px;
   color: #24272c !important;
   font-size: 20px !important;
