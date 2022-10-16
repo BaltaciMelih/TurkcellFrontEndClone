@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
@@ -125,6 +127,12 @@ a {
   padding-bottom: 25px;
 }
 
+.pricing-wrapper {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
 .pricing-container {
   display: flex;
   justify-content: center;
@@ -141,8 +149,9 @@ a {
   background-color: rgba(255, 87, 20, 0.1);
   border: 1px solid rgba(255, 87, 20, 0.1);
   width: 80%;
-  margin: 0 10%;
-  margin-bottom: 5%;
+  margin-top: 25px;
+  margin-left: 20px;
+  /* margin-bottom: 5%; */
   border-radius: 5px;
   padding: 10px 25px;
   color: orangered;
@@ -162,7 +171,10 @@ a {
   width: 200px;
   border: 2px solid gray;
   border-radius: 5%;
-  padding: 1%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .dollars {
@@ -201,10 +213,16 @@ footer {
 }
 
 .portfolio-wrapper {
+  background-color: #f8f9fc;
   padding: 50px;
 }
 
 .portfolio-content {
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.work-content {
   text-align: center;
   margin: 0 auto 50px;
 }
@@ -235,6 +253,12 @@ footer {
 
 .team-titles {
   text-align: center;
+}
+
+.team-container {
+  background-color: #f8f9fc;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .team-members {
@@ -282,6 +306,12 @@ footer {
   margin: 0 auto;
 }
 
+.break-word-more {
+  max-width: 30%;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -302,6 +332,12 @@ ion-icon {
 ion-icon:hover {
   color: orangered;
   font-size: 26px;
+}
+
+.contact-container {
+  background-color: #f8f9fc;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .contact-texts {
@@ -379,44 +415,146 @@ ion-icon:hover {
 .header {
   background-image: url(arkaplan.jpg);
   height: 100vh;
+  width: 100%;
 }
 
-.nav-div {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+/* .nav-div { */
+/* background: #2c3e50; */
+/* height: 80px; */
+/* width: 100%; */
+/* display: flex; */
+/* justify-content: center; */
+/* gap: 10px; */
+/* overflow: hidden;
+  position: fixed;
+  z-index: 1; */
+/* margin: auto; */
+/* } */
 
-.navbar {
-  font-size: 12px;
-  list-style-type: none;
-  margin: 0 250;
-  /* margin-left: 450px; */
-  overflow: hidden;
+nav {
+  height: 80px;
+  background: #2c3e50;
+  width: 100%;
   position: fixed;
   z-index: 1;
-  /* top: 0px; */
+  padding-right: 150px;
 }
 
-.navbar li {
-  float: left;
+nav img {
+  width: 150px;
+  position: absolute;
+  top: 17px;
+  left: 5%;
+  margin-right: 50%;
 }
 
-.navbar li a {
-  display: block;
-  color: rgb(169, 194, 214);
-  text-align: center;
-  padding: 0 15px;
-  text-decoration: none;
-}
-
-.navbar li:last-child {
+nav ul {
   float: right;
+  margin-right: 25px;
 }
-.navbar li a:hover {
-  background-color: transparent;
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
 }
-.title {
+
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+
+nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1118px) {
+  nav ul li {
+    margin-right: 3px;
+  }
+  nav img {
+    left: 5%;
+  }
+}
+
+@media (max-width: 944px) {
+  nav img {
+    left: 5%;
+    top: 20px;
+    width: 130px;
+  }
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 860px) {
+  label #btn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #34495e;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+}
+
+.title-safak {
   margin-top: 1.5rem !important;
   color: rgba(255, 255, 255, 0.61);
   inline-size: 600px;
@@ -480,35 +618,44 @@ ion-icon:hover {
   cursor: pointer;
 }
 
-h2 {
+.h2-safak {
   width: 450px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   color: #ff5714 !important;
   font-size: 15px;
   margin-left: 10%;
 }
 
+.what-we-do {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
 .do {
   width: 450px;
-  margin-bottom: 1rem !important;
-  margin-top: 20px;
+  /* margin-bottom: 1rem !important; */
+  /* margin-top: 20px; */
   color: black;
   line-height: 1.5;
   font-weight: 600 !important;
   letter-spacing: 0.5px;
   font-size: 25px !important;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   font-style: bold;
 }
 .launch {
-  margin-top: 5px !important;
+  /* margin-top: 5px !important; */
   color: #8492a6 !important;
   inline-size: 600px;
-  margin-left: 50%;
+  /* margin-left: 50%; */
   font-size: 15px;
   letter-spacing: 0.5px;
 }
-.container {
+.container1 {
   margin-top: 100px;
   width: 75%;
   height: 400px;
@@ -537,7 +684,101 @@ h2 {
   color: #8492a6 !important;
 }
 
-h4 {
+.h4-safak {
+  margin-bottom: 15px;
+  color: #24272c !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 1.5;
+  font-family: "Roboto Slab", serif;
+}
+a:hover {
+  color: #ff5714;
+}
+
+/* ERDEM */
+.container-erdem {
+  display: flex;
+  justify-content: center;
+}
+.container-erdem1 {
+  float: left;
+}
+.container-erdem2 {
+  float: right;
+  margin-left: 50px;
+}
+.img-1-erdem {
+  width: 250px;
+  height: 250px;
+}
+.img-2-erdem {
+  width: 250px;
+  height: 250px;
+}
+.img-3-erdem {
+  width: 250px;
+  height: 250px;
+}
+.container-1-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.write-erdem {
+  inline-size: 350px;
+  overflow-wrap: break-word;
+}
+.container-2-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-3-erdem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-erdem2-border {
+  border-left: 3px dotted #e67e22;
+  height: auto;
+  display: block;
+  margin-left: 50px;
+}
+
+/* SAFAK PART TWO */
+.container-safak {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+.box {
+  width: 400px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5%;
+}
+.readmore-safak {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #24272c;
+  position: relative;
+}
+.saga-hizala-safak {
+  color: #8492a6 !important;
+}
+
+.h4-safak2 {
   margin-bottom: 15px;
   color: #24272c !important;
   font-size: 20px !important;
