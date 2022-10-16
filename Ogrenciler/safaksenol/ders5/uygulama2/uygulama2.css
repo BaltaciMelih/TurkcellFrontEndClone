@@ -138,7 +138,7 @@ h2{
     font-size: 15px;
     letter-spacing: 0.5px;
 }
-.container{
+.container-safak{
     margin-top: 100px;
     width: 75%;
     height: 400px;
@@ -158,13 +158,13 @@ h2{
     border-radius: 5%;
     
 }
-.readmore{
+.readmore-safak{
    margin-top: 20px;
    font-size: 20px;
    color: #24272c;
    position: relative;
 }
-.saga-hizala{
+.saga-hizala-safak{
     color: #8492a6 !important;
 }
 
