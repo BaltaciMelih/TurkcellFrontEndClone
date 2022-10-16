@@ -397,8 +397,8 @@ h3
 
  .resim6
 {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 250px;
     height: 350px;
 }
@@ -651,13 +651,36 @@ h3
     background-color: #303841 ;
     padding-bottom: 100px;
     padding-top: 100px;
-    padding-top: 50px;
+    padding-left: 30px;
 }
 
 .resim9
 {
-    border-radius: 10px;
+    border-radius: 20px;
     margin-right: 50px;
     width: 180px;
     height: 350px;
+}
+
+.resim10
+{
+    border-radius: 20px;
+    margin-right: 50px;
+    width: 180px;
+    height: 350px;
+}
+
+.container12
+{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #343f4b ;
+    padding-bottom: 80px;
+    padding-top: 80px;
 }
