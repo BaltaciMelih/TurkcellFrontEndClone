@@ -421,7 +421,7 @@ ion-icon:hover {
 .navbar li a:hover {
   background-color: transparent;
 }
-.title {
+.title-safak {
   margin-top: 1.5rem !important;
   color: rgba(255, 255, 255, 0.61);
   inline-size: 600px;
@@ -485,7 +485,7 @@ ion-icon:hover {
   cursor: pointer;
 }
 
-h2 {
+.h2-safak {
   width: 450px;
   /* margin-top: 100px; */
   color: #ff5714 !important;
@@ -519,7 +519,7 @@ h2 {
   font-size: 15px;
   letter-spacing: 0.5px;
 }
-.container {
+.container1 {
   margin-top: 100px;
   width: 75%;
   height: 400px;
@@ -548,7 +548,7 @@ h2 {
   color: #8492a6 !important;
 }
 
-h4 {
+.h4-safak {
   margin-bottom: 15px;
   color: #24272c !important;
   font-size: 20px !important;
@@ -609,4 +609,46 @@ a:hover {
   height: auto;
   display: block;
   margin-left: 50px;
+}
+
+/* SAFAK PART TWO */
+.container-safak {
+  margin-top: 100px;
+  width: 75%;
+  height: 750pxpx;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.box {
+  width: 25%;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5%;
+}
+.readmore-safak {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #24272c;
+  position: relative;
+}
+.saga-hizala-safak {
+  color: #8492a6 !important;
+}
+
+.h4-safak2 {
+  margin-bottom: 15px;
+  color: #24272c !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 1.5;
+  font-family: "Roboto Slab", serif;
+}
+a:hover {
+  color: #ff5714;
 }
