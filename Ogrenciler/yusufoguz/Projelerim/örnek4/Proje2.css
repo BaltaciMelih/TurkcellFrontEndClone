@@ -741,19 +741,13 @@ section{
     }
   }
 
-  /* .phone-article{
-    width: 100%;
-    height: 100%;
-    background-color: #110c67;
-    margin-bottom: 40%;
-  } */
   .phone-text{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 75%;
-    /* background-image: url("paper.gif"); */
-    background: linear-gradient(#fff,hsl(192, 70%, 51%));
+    height: 83%;
+    background-image: url(images/5.jpg);
+    background-size: 87%;
     position: relative;
     border-radius: 8%;
   }
@@ -768,7 +762,7 @@ section{
     height: 20%; 
     width: 20%;
     margin-top: 10%;
-    padding-left: 15%;
+    padding-left: 25%;
     padding-bottom: 15%;
  }
 .team .slide{
