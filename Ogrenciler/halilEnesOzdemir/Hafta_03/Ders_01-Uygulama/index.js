@@ -1,42 +1,8 @@
-<<<<<<< HEAD
-// Sticky navigation
-const nav = document.querySelector('.nav');
-const logo = document.querySelector('.logo');
-const initialCoords = nav.getBoundingClientRect();
-console.log(initialCoords);
-window.addEventListener('scroll', function () {
-  if (this.window.scrollY > initialCoords.top) {
-    nav.classList.add('sticky');
-    logo.src = 'https://shreethemes.in/upstart/layouts/images/logo-dark.png';
-  } else {
-    nav.classList.remove('sticky');
-    logo.src = 'https://shreethemes.in/upstart/layouts/images/logo-light.png';
-  }
-});
-=======
-// // Sticky navigation
-// const nav = document.querySelector('.nav');
-// const logo = document.querySelector('.logo');
-// const initialCoords = nav.getBoundingClientRect();
-// console.log(initialCoords);
-// window.addEventListener('scroll', function () {
-//   if (this.window.scrollY > initialCoords.top) {
-//     nav.classList.add('sticky');
-//     logo.src = 'https://shreethemes.in/upstart/layouts/images/logo-dark.png';
-//   } else {
-//     nav.classList.remove('sticky');
-//     logo.src = 'https://shreethemes.in/upstart/layouts/images/logo-light.png';
-//   }
-// });
+window.onload = function () {
+  const toggleButton = document.getElementsByClassName('toggle-button')[0];
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
-// Navbar
-
-// const hamburger = document.querySelector('.hamburger');
-
-// hamburger.addEventListener('click', mobileMenu);
-
-// function mobileMenu() {
-//   hamburger.classList.toggle('active');
-//   nav.classList.toggle('active');
-// }
->>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
+  toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+  });
+};
