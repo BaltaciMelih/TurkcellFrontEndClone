@@ -35,7 +35,7 @@ p {
 }
 
 .header tr td a:-webkit-any-link:visited {
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 .header tr td a:visited {
@@ -167,4 +167,8 @@ p {
 .third-image {
     width: 296px;
     height: 641px;
+}
+
+.fourth {
+    background-color: #303841;
 }

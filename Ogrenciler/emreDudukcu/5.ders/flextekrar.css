@@ -54,7 +54,10 @@
     display: flex;
     margin-top: 25px;
     justify-content: space-between;
+<<<<<<< HEAD
+=======
     position: fixed;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .nav-bar span a {

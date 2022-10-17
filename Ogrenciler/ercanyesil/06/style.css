@@ -4,67 +4,7 @@
     box-sizing: border-box;
   }
   
-  header {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #dedede;
-    padding: 18px;
-    gap: 300px;
-  }
-  
-  .nav ul {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .nav ul li {
-    display: inline-block;
-  
-    /* padding: 10px;
-    margin-right: 10px;
-    margin */
-  }
-  
-  .nav ul li a {
-    text-decoration: none;
-    margin-right: 30px;
-  }
-  
-  .nav__icons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-  }
-  
-  .home {
-    background: url('https://shreethemes.in/upstart/layouts/images/bg/1.jpg');
-    background-color: rgba(22, 28, 45, 1);
-    width: 100%;
-    height: 900px;
-    opacity: 0.85;
-  }
-  
-  .home-container {
-    position: relative;
-  }
-  
-  .home-container h1 {
-    font-size: 50px;
-    color: white;
-    position: absolute;
-    top: 360px;
-    left: 180px;
-  }
-  
-  .underline {
-    text-decoration: underline;
-  }
-  
-  .home-p {
-    font-weight: 300;
-  }
+
   
   
   /* Ercan Yesil */
@@ -270,6 +210,7 @@
     width: 100%;
     height: 828px;
     padding: 100px 0;
+    font-family: Roboto,sans-serif;
   }
   
   .plans-container{
@@ -311,6 +252,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    column-gap: 24px;
   }
   
   .plans-content-card{
@@ -320,60 +262,72 @@
     padding: 48px 24px 48px 24px;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid #faecec;
+    border-radius: 5px;
   }
-  
+
+  .plans-content-card:hover{
+    box-shadow: 0 0 20px rgb(36 39 44 / 15%);
+    transition: all 0.5s ease-out;
+    margin-top: -4px;
+  }
+
+  .plans-content-card h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
   .plans-content-card-item{
     display: flex;
+  }
+  .plans-content-card-item span{
+    font-size: 42px;
+    font-family: 'Roboto Slab', serif;
+    color: #24272C;
+    font-weight: 600;
+  }
+  .plans-content-card-item span sup,sub{
+    font-size: 18px;
   }
   
   .plans-content-card-list{
     list-style: none;
   }
-  
-  .uil{
-      font-family: unicons-line;
-      font-style: normal;
-      font-weight: 400;
-      display: inline-block;
-      text-decoration: inherit;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
+
+  .plans-content-card-list span{
+    vertical-align: middle;
+    color: #8492a6;
   }
-  
-  .plans-content-card:hover{
-    box-shadow: 0 0 3px rgb(36 39 44 / 15%);
-    transition: all 0.2s ease-out;
-      /* box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2); */
-      top: -4px;
-      /* border: 1px solid #cccccc; */
-      background-color: white;
-      z-index: 0;
+
+  .plans-content-card-list li{
+    color: #8492a6;
+    margin-bottom: 8px;
   }
-  
-  /* @media (min-width: 992px)
-  .col-lg-4 {
-      flex: 0 0 auto;
-      width: 33.33333333%;
+
+  .plans-content-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ff5714;
+    background-color: rgba(255,87,20,0.1) ;
+    border: 1px solid rgba(255,87,20,0.1) ;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
   }
-  
-  @media (min-width: 768px)
-  .col-md-6 {
-      flex: 0 0 auto;
-      width: 50%; */
-  
-  
-      
+
+  .plans-content-card a:hover{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #ff5714;
     
-  
-  
-  
-      /* transition-property: all;
-      transition-duration: 0.5s;
-      transition-timing-function: ease;
-      transition-delay: 0s; */
-  
-      /* box-shadow: 5px 5px 10px black; */
-  
-      /* box-shadow: 0 0 3px rgb(36 39 44 / 15%) */
-  
+  }
+
+  .svg-size{
+    width: 18px;
+    height: 18px;
+  }
