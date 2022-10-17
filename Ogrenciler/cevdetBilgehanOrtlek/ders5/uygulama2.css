@@ -54,7 +54,11 @@ header .img{
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+<<<<<<< HEAD
     margin-top: -100px;
+=======
+    margin-top: -10rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     display: flex;
     flex-direction: column;
     text-align: flex-start;
@@ -74,7 +78,11 @@ header .img p{
 }
 
 .btn{
+<<<<<<< HEAD
     width: 150px;
+=======
+    width: 15rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background-color: #FF5714;
     font-size: 1.7rem;
     color: #fff;
@@ -114,7 +122,11 @@ nav .container {
     font-size: 3rem;
     color: #fff;
     padding-bottom: 0.5rem;
+<<<<<<< HEAD
     border-bottom: 2px solid black;
+=======
+    border-bottom: 0.2rem solid black;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 
@@ -145,8 +157,12 @@ nav .social-media a :hover{
 }
 
 /* story start */
+<<<<<<< HEAD
+.story{
+=======
 
 .story {
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background-color: rgb(177, 175, 175);
     padding: 5rem 0;
 }
@@ -165,7 +181,11 @@ nav .social-media a :hover{
 .story-items-left img {
     
     height: auto;
+<<<<<<< HEAD
     width: 400px;
+=======
+    width: 40rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     margin-left: 8rem;
     border-radius: 2rem;
     
@@ -269,7 +289,11 @@ nav .social-media a :hover{
 .under-container .icon {
     padding: 1rem;
     border-radius: 50%;
+<<<<<<< HEAD
     border: 2px dashed #ccc;
+=======
+    border: 0.2rem dashed #ccc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -280,7 +304,11 @@ nav .social-media a :hover{
 .under-container .icon2{
     padding: 1rem;
     border-radius: 50%;
+<<<<<<< HEAD
     border: 2px dashed #ccc;
+=======
+    border: 0.2rem dashed #ccc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     position: absolute;
     left: 50%;
     top: 53%;
@@ -294,7 +322,11 @@ nav .social-media a :hover{
 .under-container .icon3{
     padding: 1rem;
     border-radius: 50%;
+<<<<<<< HEAD
     border: 2px dashed #ccc;
+=======
+    border: 0.2rem dashed #ccc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     position: absolute;
     left: 50%;
     top: 88%;
@@ -306,7 +338,11 @@ nav .social-media a :hover{
 }
 .under-left {
     width: 50%;
+<<<<<<< HEAD
     border-right: 2px dashed #ccc;
+=======
+    border-right: 0.2rem dashed #ccc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -364,7 +400,10 @@ nav .social-media a :hover{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50% 
+<<<<<<< HEAD
+=======
 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     
 }
 
@@ -372,11 +411,19 @@ nav .social-media a :hover{
     width: 100%;
     height: auto;
     border-radius: 3rem;
+<<<<<<< HEAD
     box-shadow: 8px 8px 14px rgba(255, 255, 255, 0.846);
 }
 .portfolio-bottom img:hover {
     scale: 1.15;
     box-shadow: 10px 10px 15px #000000ad
+=======
+    box-shadow: 0.8rem 0.8rem 1.4rem rgba(255, 255, 255, 0.846);
+}
+.portfolio-bottom img:hover {
+    scale: 1.15;
+    box-shadow: 1rem 1rem 1rem #000000ad
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .portfolio-bottom div{
@@ -394,9 +441,15 @@ nav .social-media a :hover{
     background: url(./img-1.jpg);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
     width: auto;
     height: 40rem;
     margin-top: 100px;
+=======
+    width: 111.5%;
+    height: 40rem;
+    margin-top: 10rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -405,11 +458,23 @@ nav .social-media a :hover{
     margin-bottom: 5rem;
     gap: 2.5rem;
     color: rgba(67, 65, 65, 0.825);
+<<<<<<< HEAD
 
 }
 
 .button-portfolio{
     width: 150px;
+=======
+    margin-left: -6%;
+
+}
+
+#portfolio-under{
+padding: 0!important;
+}
+.button-portfolio{
+    width: 15rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background-color: #FF5714;
     font-size: 1.7rem;
     color: #fff;
@@ -455,8 +520,13 @@ nav .social-media a :hover{
     gap: 2rem;
     width: 33%;
     height: 100%;
+<<<<<<< HEAD
     border-radius: 20px;
     margin: 10px;    
+=======
+    border-radius: 2rem;
+    margin: 1rem;    
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     border-style: solid;
     padding: 1rem;
     
@@ -471,8 +541,13 @@ nav .social-media a :hover{
     gap: 2rem;
     width: 33%;
     height: 100%;
+<<<<<<< HEAD
     border-radius: 20px;
     margin: 10px;
+=======
+    border-radius: 2rem;
+    margin: 1rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     border-style: solid;
     padding: 1rem;
 
@@ -488,8 +563,13 @@ nav .social-media a :hover{
     gap: 2rem;
     width: 33%;
     height: 100%;
+<<<<<<< HEAD
     margin: 10px;
     border-radius: 20px;
+=======
+    margin: 1rem;
+    border-radius: 2rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     border-style: solid;
     padding: 1rem;
 
@@ -497,7 +577,11 @@ nav .social-media a :hover{
 }
 
 .button-card{
+<<<<<<< HEAD
     width: 150px;
+=======
+    width: 15rem;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background-color: #ff57146b;
     font-size: 1.7rem;
     color: #fff;
@@ -514,21 +598,36 @@ nav .social-media a :hover{
 
 .pricing-bottom .card1:hover {
     scale: 1.05;
+<<<<<<< HEAD
     box-shadow: 10px 10px 15px #000000ad
+=======
+    box-shadow: 1rem 1rem 1.5rem #000000ad
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .pricing-bottom .card2:hover {
     scale: 1.05;
+<<<<<<< HEAD
     box-shadow: 10px 10px 15px #000000ad
 }
 .pricing-bottom .card3:hover {
     scale: 1.05;
     box-shadow: 10px 10px 15px #000000ad
+=======
+    box-shadow: 1rem 1rem 1.5rem #000000ad
+}
+.pricing-bottom .card3:hover {
+    scale: 1.05;
+    box-shadow: 1rem 1rem 1.5rem #000000ad
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .button-card:hover{
 
     background-color: #FF5714;
 
+<<<<<<< HEAD
+}
+=======
 }
 
 /* team */
@@ -561,7 +660,7 @@ margin-top: 5rem;
     width: 75%;
     height: 75%;
     border-radius: 3rem;
-    box-shadow: 8px 8px 14px rgba(255, 255, 255, 0.846);
+    box-shadow: 0.8rem 0.8rem 1.4rem rgba(255, 255, 255, 0.846);
     margin-left: 5rem;
 
 
@@ -571,7 +670,7 @@ margin-top: 5rem;
     width: 75%;
     height: 75%;
     border-radius: 3rem;
-    box-shadow: 8px 8px 14px rgba(255, 255, 255, 0.846);
+    box-shadow: 0.8rem 0.8rem 1.4rem rgba(255, 255, 255, 0.846);
     margin-left: 2rem;
 }
 
@@ -579,7 +678,7 @@ margin-top: 5rem;
     width: 75%;
     height: 75%;
     border-radius: 3rem;
-    box-shadow: 8px 8px 14px rgba(255, 255, 255, 0.846);
+    box-shadow: 0.8rem 0.8rem 1.4rem rgba(255, 255, 255, 0.846);
     margin-left: 2rem;
 }
 
@@ -587,28 +686,28 @@ margin-top: 5rem;
     width: 75%;
     height: 75%;
     border-radius: 3rem;
-    box-shadow: 8px 8px 14px rgba(255, 255, 255, 0.846);
+    box-shadow: 0.8rem 0.8rem 1.4rem rgba(255, 255, 255, 0.846);
     margin-left: 2rem;
 }
 
 .team-img1:hover{
     scale: 1.05;
-    box-shadow: 10px 10px 15px #000000ad
+    box-shadow: 1rem 1rem 1.5rem #000000ad
 
 }
 .team-img2:hover{
     scale: 1.05;
-    box-shadow: 10px 10px 15px #000000ad
+    box-shadow: 1rem 1rem 1.5rem #000000ad
 
 }
 .team-img3:hover{
     scale: 1.05;
-    box-shadow: 10px 10px 15px #000000ad
+    box-shadow: 1rem 1rem 1.5rem #000000ad
 
 }
 .team-img4:hover{
     scale: 1.05;
-    box-shadow: 10px 10px 15px #000000ad
+    box-shadow: 1rem 1rem 1.5rem #000000ad
 
 }
 
@@ -693,3 +792,162 @@ margin-top: 5rem;
     margin-top: 10rem;
     text-align: center;
 }
+
+.blogs-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 8rem;
+
+
+}
+.blogs-bottom img{
+    width: 100%;
+    height: 30rem;
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 1.5rem #000000ad;
+    margin-bottom: 5rem;
+
+
+}
+.blogs-bottom img:hover{
+    border-radius: 4rem;
+    scale: 1.1;
+    opacity: 0.9;
+}
+
+.bottom1 p, .bottom2 p, .bottom3 p{
+    font-size: 1.5rem;
+
+
+}
+
+
+.blogs-bottom a:hover{
+    font-size: 1.5rem;
+    scale: 1.2;
+
+
+
+}
+
+
+.bottom1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.bottom2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+
+    
+}
+
+.bottom3{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+
+    
+}
+/* contact */
+.footer{
+    background-color: rgb(177, 175, 175);
+}
+
+.contact-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 10rem;
+    text-align: center;
+
+}
+
+.footer .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .footer .row .map {
+    flex: 1 1 5.5rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .footer .row form {padding: 2rem 0;}
+  
+  .footer .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: 0.1rem solid rgba(255, 255, 255, 0.4);
+  }
+
+.footer .row form .btn:hover {
+    color:  #D84727;
+    opacity: 0.8;
+  }
+  
+  .footer .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .footer .row form h3 {
+    font-size: 3.5rem;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .footer .row form .inputBox {
+      display: flex;
+      align-items: center;
+      margin: 2rem 0;
+      border: 0.1rem solid black;
+     
+  }
+  .footer .row form .inputBox i{
+      color: black;
+      margin: 1rem 1.5rem;
+      font-size: 2.5rem;
+  }
+
+  @media screen and(max-width:1200px) {
+    html{
+        font-size: 9px;
+        
+    }
+  }
+
+  @media screen and(max-width:900px) {
+    html{
+        font-size: 8px;
+        
+    }
+  }
+
+  @media screen and(max-width:768px) {
+    html{
+        font-size: 7px;
+        
+    }
+  }
+
+  @media screen and(max-width:425px) {
+    html{
+        font-size: 6px;
+        
+    }
+  }
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
