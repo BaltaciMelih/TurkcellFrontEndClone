@@ -158,6 +158,7 @@ a {
 }
 
 .pricing-buttons:hover {
+  cursor: pointer;
   background-color: orangered;
   color: white;
 }
