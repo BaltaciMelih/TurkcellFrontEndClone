@@ -4,7 +4,7 @@
     background-color: rgb(224, 224,224);
     gap: 5px;
     grid-template-areas: "header header header"
-                          "sidebar conten conten"   
+                          "sidebar content content"   
                           "sidebar . ."
                           "box1 box1 box1" 
                           "footer footer footer"                  
@@ -18,7 +18,7 @@
 
 .content{
     background-color: blue;
-    grid-area: conten;
+    grid-area: content;
 }
 
 .sidebar {
