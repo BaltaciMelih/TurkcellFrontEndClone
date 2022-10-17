@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(224, 224, 224);
+    gap: 5px;
+    grid-template-areas: "header header header" "sidebar content content" "sidebar box3 ." "box1 box1 box1" "footer footer footer";
+}
+
+.header {
+    background-color: red;
+    grid-area: header;
+}
+
+.content {
+    background-color: blue;
+    grid-area: content;
+}
+
+.sidebar {
+    background-color: yellow;
+    grid-area: sidebar;
+}
+
+.box-1 {
+    background-color: violet;
+    grid-area: box1;
+}
+
+.box-3 {
+    background-color: rgb(4, 48, 6);
+    grid-area: box3;
+}
+
+.footer {
+    background-color: turquoise;
+    grid-area: footer;
+}
