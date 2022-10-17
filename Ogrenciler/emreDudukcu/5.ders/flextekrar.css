@@ -54,10 +54,7 @@
     display: flex;
     margin-top: 25px;
     justify-content: space-between;
-<<<<<<< HEAD
-=======
     position: fixed;
->>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .nav-bar span a {
@@ -170,4 +167,14 @@
 
 .services-down p {
     color: darkgrey;
+}
+
+.sixth {
+    background-color: #343f4b;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: auto;
+    text-align: center;
 }
