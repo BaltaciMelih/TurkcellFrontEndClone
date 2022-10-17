@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3.Hafta 1.Ders</title>
+    <title>3.Hafta</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/5e36563075.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,6 +16,7 @@
     <link rel="shortcut icon" type="image/png" href="https://shreethemes.in/upstart/layouts/images/favicon.ico" />
   </head>
   <body>
+
     <header>
       <nav class="nav">
         <img class="logo" src="https://shreethemes.in/upstart/layouts/images/logo-dark.png" alt="" />
@@ -28,7 +29,7 @@
         <!--  -->
         <div class="navbar-links">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#story">Story</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -405,8 +406,10 @@
       </div>
     </section>
 
-    <!-- ERCAN PART
-    <section class="portfolio-banner">
+
+
+
+    <section class="portfolio-banner" id="portfolio">
       <div class="portfolio-container">
         <div class="portfolio-header">
           <div class="portfolio-header-item"><h3>Portfolio</h3></div>
@@ -414,13 +417,13 @@
           <div class="portfolio-header-item">
             <p>
               <span
-                >Launch your campaign and benefit from our expertise on designing and managing conversion centered
-                bootstrap v5 html page.</span
+                >Launch your campaign and benefit from our expertise on
+                designing and managing conversion centered bootstrap v5 html
+                page.</span
               >
             </p>
           </div>
         </div>
-
 
         <div class="portfolio-content">
           <div class="portfolio-content-card">
@@ -515,60 +518,129 @@
       </div>
     </section>
 
-    <section class="invitation-banner">
+    <section class="invitation-banner mySlides">
       <div class="invitation-container">
         <div class="invitation-container-item">
           <h3>Ready to start your next web project now?</h3>
         </div>
         <div class="invitation-container-item">
           <p>
-            Launch your campaign and benefit from our expertise on designing and <br />
+            Launch your campaign and benefit from our expertise on designing and
+            <br />
             managing conversion centered bootstrap v5 html page.
           </p>
         </div>
         <div class="invitation-container-item">
           <a href="">Get Started</a>
         </div>
+        <div class="invitation-container-slider">
+          <button class="btn-a" onclick="plusDivs(-1)">&#10094; Prev</button>
+          <button class="btn-b" onclick="plusDivs(1)">Next &#10095;</button>
+        </div>
       </div>
     </section>
 
-    <section class="plans-banner">
+    <section class="plans-banner" id="price">
+
       <div class="plans-container">
+
         <div class="plans-header">
           <div class="plans-header-item"><h3>PLANS</h3></div>
           <div class="plans-header-item"><h1>Pricing Plans</h1></div>
           <div class="plans-header-item">
             <p>
               <span
-                >Launch your campaign and benefit from our expertise on designing and managing conversion centered
-                bootstrap v5 html page.</span
+                >Launch your campaign and benefit from our expertise on
+                designing and managing conversion centered bootstrap v5 html
+                page.</span
               >
             </p>
           </div>
         </div>
 
         <div class="plans-content">
+
           <div class="plans-content-card">
-            <h1>BASIC</h1>
+            <h3>BASIC</h3>
 
             <div class="plans-content-card-item">
-              <span>$</span>
+              <span><sup>$</sup></span>
               <span>9</span>
-              <span>/mo</span>
+              <span><sub>/mo</sub></span>
             </div>
 
             <ul class="plans-content-card-list">
               <li>
-                <span><i class="uil"></i></span>Full Accss
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Full Access
               </li>
               <li>
-                <span><i class="uil"></i></span>Source Files
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Source Files
               </li>
               <li>
-                <span><i class="uil"></i></span>Free Appointments
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Free Appointments
               </li>
               <li>
-                <span><i class="uil"></i></span>Enhanced Security
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Enhanced Security
               </li>
             </ul>
 
@@ -576,26 +648,86 @@
           </div>
 
           <div class="plans-content-card">
-            <h3>BASIC</h3>
+            <h3>standard</h3>
 
             <div class="plans-content-card-item">
-              <span>$</span>
-              <span>9</span>
-              <span>/mo</span>
+              <span><sup>$</sup></span>
+              <span>39</span>
+              <span><sub>/mo</sub></span>
             </div>
 
-            <ul>
+            <ul class="plans-content-card-list">
               <li>
-                <span><i></i></span>"Full Accss"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Full Access
               </li>
               <li>
-                <span><i></i></span>"Source Files"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Source Files
               </li>
               <li>
-                <span><i></i></span>"Free Appointments"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Free Appointments
               </li>
               <li>
-                <span><i></i></span>"Enhanced Security"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Enhanced Security
               </li>
             </ul>
 
@@ -603,38 +735,138 @@
           </div>
 
           <div class="plans-content-card">
-            <h3>BASIC</h3>
+            <h3>professional</h3>
 
             <div class="plans-content-card-item">
-              <span>$</span>
-              <span>9</span>
-              <span>/mo</span>
+              <span><sup>$</sup></span>
+              <span>99</span>
+              <span><sub>/mo</sub></span>
             </div>
 
-            <ul>
+            <ul class="plans-content-card-list">
               <li>
-                <span><i></i></span>"Full Accss"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Full Access
               </li>
               <li>
-                <span><i></i></span>"Source Files"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Source Files
               </li>
               <li>
-                <span><i></i></span>"Free Appointments"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Free Appointments
               </li>
               <li>
-                <span><i></i></span>"Enhanced Security"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 svg-size"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg> </span
+                >Enhanced Security
               </li>
             </ul>
 
             <a href="#">Get Started</a>
           </div>
+ 
         </div>
       </div>
     </section>
 
-    <!-- Melih -->
-    <!-- <section class="section Eight" id="Team">
-      <div class="container Team">
+
+
+
+    
+    
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+      }
+      </script>
+
+
+
+
+
+
+
+
+ <section class="section Eight" id="team">
         <div class="sectionHeader">
           <h6 class="header1">OUR TEAM</h6>
           <h4 class="header2">Creative Minds</h4>
@@ -719,8 +951,7 @@
               </ul>
             </div>
           </div>
-        </div>
-      </div>
+        </div>     
       <div class="container Numbers">
         <div class="column">
           <h3><span class="columnSpan">40+</span><br /></h3>
@@ -776,51 +1007,82 @@
           />
         </div>
       </div>
-    </section> -->
-    <!-- <section class="section Nine" id="Blogs">
+    </section>
+    <section class="section Nine" id="blogs">
       <div class="container Blogs">
         <div class="sectionHeader">
           <h6 class="header1">BLOGS</h6>
           <h4 class="header2">Latest News</h4>
           <p class="launchPrg">
-            Launch your campaign and benefit from our expertise on designing and managing <br />
+            Launch your campaign and benefit from our expertise on designing and
+            managing <br />
             conversion centered bootstrap v5 html page.
           </p>
         </div>
         <div class="blogCards">
           <div class="newsCard">
-            <img class="cardHeader" src="https://shreethemes.in/upstart/layouts/images/blog/1.jpg" alt="" />
+            <img
+              class="cardHeader"
+              src="https://shreethemes.in/upstart/layouts/images/blog/1.jpg"
+              alt=""
+            />
             <div class="cardBody">
-              <a class="font18" href="#">Building Your Corporate Identity from Upstart</a>
-              <p class="columnSpan2">The most well-known dummy text is the "Lorem Ipsum", in the 16th century</p>
-              <a class="readMore" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <a class="font18" href="#"
+                >Building Your Corporate Identity from Upstart</a
+              >
+              <p class="columnSpan2">
+                The most well-known dummy text is the "Lorem Ipsum", in the 16th
+                century
+              </p>
+              <a class="readMore" href="#"
+                >Read More <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </div>
           <div class="newsCard">
-            <img class="cardHeader" src="https://shreethemes.in/upstart/layouts/images/blog/2.jpg" alt="" />
+            <img
+              class="cardHeader"
+              src="https://shreethemes.in/upstart/layouts/images/blog/2.jpg"
+              alt=""
+            />
             <div class="cardBody">
               <a class="font18" href="#">The Dark Side of Overnight Success</a>
-              <p class="columnSpan2">The most well-known dummy text is the "Lorem Ipsum", in the 16th century</p>
-              <a class="readMore" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <p class="columnSpan2">
+                The most well-known dummy text is the "Lorem Ipsum", in the 16th
+                century
+              </p>
+              <a class="readMore" href="#"
+                >Read More <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </div>
           <div class="newsCard">
-            <img class="cardHeader" src="https://shreethemes.in/upstart/layouts/images/blog/3.jpg" alt="" />
+            <img
+              class="cardHeader"
+              src="https://shreethemes.in/upstart/layouts/images/blog/3.jpg"
+              alt=""
+            />
             <div class="cardBody">
               <a class="font18" href="#">The Right hand of Business IT World</a>
-              <p class="columnSpan2">The most well-known dummy text is the "Lorem Ipsum", in the 16th century</p>
-              <a class="readMore" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <p class="columnSpan2">
+                The most well-known dummy text is the "Lorem Ipsum", in the 16th
+                century
+              </p>
+              <a class="readMore" href="#"
+                >Read More <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section Ten" id="Contact Us">
+    <section class="section Ten" id="contact">
       <div class="sectionHeader">
         <h6 class="header1">CONTACT US</h6>
         <h4 class="header2">Get In Touch !</h4>
         <p class="launchPrg">
-          Launch your campaign and benefit from our expertise on designing and managing <br />
+          Launch your campaign and benefit from our expertise on designing and
+          managing <br />
           conversion centered bootstrap v5 html page.
         </p>
       </div>
@@ -828,14 +1090,31 @@
         <div class="formArea">
           <form class="form">
             <div class="formBetween">
-              <input class="fiftyPercent formInput" type="text" placeholder="Name:" />
-              <input class="fiftyPercent formInput" type="text" placeholder="Email:" />
+              <input
+                class="fiftyPercent formInput"
+                type="text"
+                placeholder="Name:"
+              />
+              <input
+                class="fiftyPercent formInput"
+                type="text"
+                placeholder="Email:"
+              />
             </div>
             <div>
-              <input class="width100 formInput" type="text" placeholder="Subject:" />
+              <input
+                class="width100 formInput"
+                type="text"
+                placeholder="Subject:"
+              />
             </div>
             <div>
-              <textarea placeholder="Message:" class="width100 formInput" rows="7"> </textarea>
+              <textarea
+                placeholder="Message:"
+                class="width100 formInput"
+                rows="7"
+              >
+              </textarea>
             </div>
             <div class="submitButton">
               <button class="submit" type="submit">Send Message</button>
@@ -850,7 +1129,9 @@
             <div class="contactColumn">
               <h5 class="contactMember">Phone</h5>
               <br />
-              <a class="dscrptn" href="tel: +152 534-468-854">+152 534-468-854</a>
+              <a class="dscrptn" href="tel: +152 534-468-854"
+                >+152 534-468-854</a
+              >
             </div>
           </div>
           <div class="contactOptions">
@@ -860,7 +1141,9 @@
             <div class="contactColumn">
               <h5 class="contactMember">Email</h5>
               <br />
-              <a class="dscrptn" href="mailto:contact@example.com">contact@example.com</a>
+              <a class="dscrptn" href="mailto:contact@example.com"
+                >contact@example.com</a
+              >
             </div>
           </div>
           <div class="contactOptions">
@@ -882,14 +1165,20 @@
     <footer class="footer">
       <div class="footerBar">
         <div class="footerColumn">
-          <a href="#"><img src="https://shreethemes.in/upstart/layouts/images/logo-light.png" alt="Logo" /></a>
+          <a href="#"
+            ><img
+              src="https://shreethemes.in/upstart/layouts/images/logo-light.png"
+              alt="Logo"
+          /></a>
         </div>
         <div class="footerColumn">
           <p>
             © 2022 Upstart. Design with
             <i style="color: red" class="fa-solid fa-heart"></i>
             by
-            <a style="color: #adb5bd" href="https://shreethemes.in/">Shreethemes</a>.
+            <a style="color: #adb5bd" href="https://shreethemes.in/"
+              >Shreethemes</a
+            >.
           </p>
         </div>
         <div class="footerColumn">
@@ -917,7 +1206,7 @@
           </ul>
         </div>
       </div>
-    </footer>  -->
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
