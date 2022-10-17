@@ -976,8 +976,13 @@ body {
   }
   .w3-badge {height:13px;width:13px;padding:0}
 
+  .invitation-container-slider{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   .invitation-container-slider .btn-a{
-
+    
   }
   .invitation-container-slider .btn-b{
 
