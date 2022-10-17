@@ -375,7 +375,11 @@ h2 {
 
 .section4{
     text-align: center;
+<<<<<<< HEAD
+    
+=======
     background-color: #14181d;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     padding-bottom: 100px;
     padding-top: 100px;
 }
@@ -389,7 +393,10 @@ h2 {
     margin-left: 50px;
     margin-right: 50px;
     
+<<<<<<< HEAD
+=======
     
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .contact-box1 {
@@ -531,6 +538,8 @@ footer {
 }
 .title3{
     margin: 0;
+<<<<<<< HEAD
+=======
 }
 
 .container6{
@@ -654,4 +663,5 @@ container10{
     width: 10px;
     height: 20px;
     background-color: white;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }

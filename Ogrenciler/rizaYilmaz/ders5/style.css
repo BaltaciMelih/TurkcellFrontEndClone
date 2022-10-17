@@ -434,6 +434,10 @@ gap: 20px;
   box-shadow: 0 3px 5px 0 rgba(48, 17, 5, 0.1)
 }
 .blogs-card-title{
+<<<<<<< HEAD
+  margin-top: 20px;
+}
+=======
   font-size: 18px;
   text-decoration: none;
   color: black;
@@ -544,3 +548,4 @@ footer p {
   justify-content: flex-end;
 }
 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626

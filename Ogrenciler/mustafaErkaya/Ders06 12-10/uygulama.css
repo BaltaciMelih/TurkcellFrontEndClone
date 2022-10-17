@@ -268,7 +268,11 @@ nav .social-media a :hover{
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
+<<<<<<< HEAD
+    background-color: #fff;
+=======
     background-color: rgb(220, 217, 217);;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     color: #FF5714;
 }
 .under-container .icon2{
@@ -281,7 +285,11 @@ nav .social-media a :hover{
     transform: translateX(-50%)
     translateY(-50%);
     font-size: 2rem;
+<<<<<<< HEAD
+    background-color: #fff;
+=======
     background-color: rgb(220, 217, 217);;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     color: #FF5714;
 }
 
@@ -295,7 +303,11 @@ nav .social-media a :hover{
     transform: translateX(-50%)
     translateY(-50%);
     font-size: 2rem;
+<<<<<<< HEAD
+    background-color: #fff;
+=======
     background-color: rgb(220, 217, 217);;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     color: #FF5714;
 }
 .under-left {

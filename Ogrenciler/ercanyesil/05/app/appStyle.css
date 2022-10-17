@@ -83,16 +83,41 @@ header {
 
 .portfolio-banner{
   width: 100%;
+<<<<<<< HEAD
+  height: 900px;
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   padding: 100px 0;
   background-color: #f8f9fc ;
 }
 
 .portfolio-container{
+<<<<<<< HEAD
+  width: 1140px;
+  height: 624px;
+=======
   width: 100%;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   margin: auto;
 }
 
 .portfolio-header{
+<<<<<<< HEAD
+width: 1116px;
+height: 168px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.portfolio-header-item{
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.portfolio-header-item p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+=======
 display: flex;
 height: 168px;
 text-align: center;
@@ -114,22 +139,36 @@ flex-direction: column;
 
 .portfolio-header-item p{
   font-family: 'Roboto Slab', serif;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   font-size: 15px;
   line-height: 24px;
   text-decoration: none solid rgb(132, 146, 166);
   text-align: center;
+<<<<<<< HEAD
+  word-spacing: 0px;
+  opacity: 1; 
+=======
   max-width: 600px;
   color: #8492a6;
   margin: auto;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .portfolio-content{
   display: flex;
+<<<<<<< HEAD
+  width: 100%;
+  height: 500px;
+=======
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   column-gap: 12px;
+<<<<<<< HEAD
+=======
   row-gap: 12px;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .portfolio-content-card{
@@ -219,14 +258,22 @@ background: rgb(177, 73, 3);
 .invitation-banner{
   background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center;
   width: 100%;
+<<<<<<< HEAD
+  height: 300px;
+=======
   height: 380px;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   box-shadow: inset 0 0 0 200rem rgba(0, 0, 0, 0.5);
 }
 
 .invitation-container{
   display: flex;
   /* width: 1116px; */
+<<<<<<< HEAD
+  height: 300px; 
+=======
   height: 380px; 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -271,6 +318,17 @@ background: rgb(177, 73, 3);
 }
 
 .plans-container{
+<<<<<<< HEAD
+  width: 1140px;
+  height: 627px;
+  margin: auto;
+}
+
+.plans-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+=======
   width: 100%;
 }
 
@@ -303,10 +361,31 @@ background: rgb(177, 73, 3);
   max-width: 600px;
   color: #8492a6;
   margin: auto;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .plans-content{
   display: flex;
+<<<<<<< HEAD
+  width: 1140px;
+  height: 459px;
+}
+
+.plans-content-card{
+  width: 380px;
+  height: 435px;
+  padding: 24px;
+}
+
+
+
+
+
+
+
+
+
+=======
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -360,6 +439,7 @@ background: rgb(177, 73, 3);
 .col-md-6 {
     flex: 0 0 auto;
     width: 50%; */
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 
 
 
@@ -372,5 +452,8 @@ background: rgb(177, 73, 3);
     transition-delay: 0s; */
 
     /* box-shadow: 5px 5px 10px black; */
+<<<<<<< HEAD
+=======
 
     /* box-shadow: 0 0 3px rgb(36 39 44 / 15%) */
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
