@@ -377,6 +377,7 @@ h2 {
     text-align: center;
     padding-bottom: 100px;
     padding-top: 100px;
+    background-color: #14181d;
 }
 
 .container4{
@@ -387,6 +388,7 @@ h2 {
     margin-top: 100px;
     margin-left: 50px;
     margin-right: 50px;
+    background-color: #14181d;
     
 }
 
@@ -669,6 +671,8 @@ footer {
     width: 176px;
     height: 156px;
     border-radius: 10px;
+    position: relative;
+    padding-left: 30px;
     
 }
 
@@ -732,6 +736,9 @@ p.vertical{
     width: 30px;
     height: 150px;
     background-color: #14181d;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .asagi{
