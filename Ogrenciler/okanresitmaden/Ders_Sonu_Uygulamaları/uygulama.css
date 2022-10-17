@@ -453,10 +453,68 @@ footer {
 @media screen and (max-width:768px) {
     .container1 {
         flex-direction: column;
-        background-color: red;
     }
 
 }
+
+@media screen and (max-width:768px) {
+    .container2 {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container3 {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container4 {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container5 {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container6 {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container7 {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container8 {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container9 {
+        flex-direction: column;
+    }
+
+}
+
+
+
 
 .media {
     width: 10%;
@@ -508,14 +566,14 @@ footer {
 }
 
 .pricecard2{
-    height: 250px;
+    height: 270px;
     width: 400px;
     border-radius: 5%;
     margin-top: 20%;
     background-color: rgb(52, 63, 75);
 }
 .pricecard3{
-    height: 350px;
+    height: 400px;
 }
 
 .buybutton{
@@ -524,7 +582,8 @@ footer {
     height: 50px;
     border-radius: 10px;
     margin-top: 22%;
-    background-color: #0076a3
+    background-color: #0076a3;
+    cursor: pointer;
 }
 .button3{
     margin-top: 45%;
@@ -599,21 +658,27 @@ footer {
     width: 100%;
     height: 600px;
     background-color: #343f4b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
 
 }
 
 .teambox{
-    width: 156px;
+    background-color: #14181d;
+    width: 176px;
     height: 156px;
     border-radius: 10px;
-    background-color: white;
+    
 }
 
 .teamboxmodify{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    
     margin-top: 5%;
 }
 
@@ -650,8 +715,56 @@ container10{
     align-content: flex-start;
 }
 
-.namebox{
-    width: 10px;
-    height: 20px;
-    background-color: white;
+
+p.vertical{
+    
+    writing-mode: vertical-rl; 
+    color: white;
+      
 }
+
+.yazi{
+    writing-mode: vertical-rl;
+    color: white;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.metinbo{
+    width: 30px;
+    height: 150px;
+    background-color: #14181d;
+}
+
+.asagi{
+    text-align: center;
+    color: white;
+}
+
+.baslikk{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+.wbox1{
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.wbox2{
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.yaziayarlama{
+    text-align: center;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
