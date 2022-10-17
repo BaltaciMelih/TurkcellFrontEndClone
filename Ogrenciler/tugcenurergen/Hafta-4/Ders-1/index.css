@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    background-color: rgn(190,190,190);
+    padding: 20px;
+    /* grid-template-columns: 150px 250px 300px 100px; */
+    /* grid-template-columns: 150px auto 300px auto; */
+    /* grid-template-columns: repeat(4, 200); */
+    /* grid-template-columns: repeat(4, auto); */
+    /* grid-template-columns: 1fr 4fr 1fr 1fr; (fragment) */
+/* 
+    grid-template-rows: 1fr 2fr;
+    grid-auto-rows: 3fr; */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+
+}
+
+.item{
+    background-color: rgb(39, 61, 94);
+    padding: 20px;
+    /* margin: 20px;  */
+    color: white;
+}
+
+.item:first-child{
+    /* grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-area: 1/2/span 2/span 3; /*span 2 demek birden başla 2 tane alan kapla demek oluyo*/
+}
