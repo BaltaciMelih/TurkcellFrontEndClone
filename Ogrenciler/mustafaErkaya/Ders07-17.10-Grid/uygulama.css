@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 0.4s;
+    text-transform: capitalize;
+
+}
+html {
+    font-size: 10px;
+}
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+p {
+    font-size: 1.8rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "header header header"
+                         "home home home"
+                         ". news ."
+    
+    ;
+}
+
+
+
+.header .logo img {
+    width: 100px;
+    height: auto;
+}
+
+.header {
+    display: grid ;
+    grid-template-columns: 1fr 6fr 1fr;
+    align-items: center;
+    padding: 1rem 7rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    grid-area: header;
+    
+}
+.header .icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    font-size: 2.5rem;
+}
+.header .navbar  {
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+
+
+/* home */
+.home {
+    background-image: url(img-home.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 10rem;
+    grid-area: home;
+}
+
+
+
+
+
+
+
+/* news */
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    grid-area: news;
+    padding: 3rem 1rem;
+   
+}
+
+.news img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.news-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #ccc;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.news-box h3 {
+    font-size: 2rem;
+    color: rgb(198, 149, 60);
+}
+
