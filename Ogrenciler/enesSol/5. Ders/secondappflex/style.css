@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@
   list-style-type: none;
 }
 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 body {
   margin: 0;
   padding: 0;
@@ -127,12 +130,15 @@ a {
   padding-bottom: 25px;
 }
 
+<<<<<<< HEAD
+=======
 .pricing-wrapper {
   background-color: white;
   padding-top: 100px;
   padding-bottom: 50px;
 }
 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 .pricing-container {
   display: flex;
   justify-content: center;
@@ -149,9 +155,14 @@ a {
   background-color: rgba(255, 87, 20, 0.1);
   border: 1px solid rgba(255, 87, 20, 0.1);
   width: 80%;
+<<<<<<< HEAD
+  margin: 0 10%;
+  margin-bottom: 5%;
+=======
   margin-top: 25px;
   margin-left: 20px;
   /* margin-bottom: 5%; */
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   border-radius: 5px;
   padding: 10px 25px;
   color: orangered;
@@ -172,10 +183,14 @@ a {
   width: 200px;
   border: 2px solid gray;
   border-radius: 5%;
+<<<<<<< HEAD
+  padding: 1%;
+=======
   padding-top: 35px;
   padding-bottom: 35px;
   padding-right: 25px;
   padding-left: 25px;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 
 .dollars {
@@ -214,7 +229,10 @@ footer {
 }
 
 .portfolio-wrapper {
+<<<<<<< HEAD
+=======
   background-color: #f8f9fc;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
   padding: 50px;
 }
 
@@ -223,11 +241,14 @@ footer {
   margin: 0 auto 50px;
 }
 
+<<<<<<< HEAD
+=======
 .work-content {
   text-align: center;
   margin: 0 auto 50px;
 }
 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 .portfolio-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -256,12 +277,15 @@ footer {
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
 .team-container {
   background-color: #f8f9fc;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 .team-members {
   display: flex;
   justify-content: center;
@@ -307,12 +331,15 @@ footer {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
 .break-word-more {
   max-width: 30%;
   word-wrap: break-word;
   margin: 0 auto;
 }
 
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 .flex-center {
   display: flex;
   justify-content: center;
@@ -334,6 +361,8 @@ ion-icon:hover {
   color: orangered;
   font-size: 26px;
 }
+<<<<<<< HEAD
+=======
 
 .contact-container {
   background-color: #f8f9fc;
@@ -798,3 +827,4 @@ a:hover {
     height: 100%;
   }
 }
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626

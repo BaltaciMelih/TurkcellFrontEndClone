@@ -9,7 +9,10 @@ body {
     background-color: #343f4b;
     position: fixed;
     height: 90px;
+<<<<<<< HEAD
+=======
     z-index: 1;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .nav {
     display: flex;
@@ -216,7 +219,11 @@ li:hover {
     cursor: pointer;
     font-size: 16px;
 }
+<<<<<<< HEAD
+.buttons button:focus{
+=======
 .buttons button:first-child{
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background: linear-gradient(#2e8da5 0%, #114d64 100%);
     border: 1px solid #0076a3;
 }
@@ -293,7 +300,11 @@ li:hover {
     text-align: start;
     flex-direction: column;
     width: 30%;
+<<<<<<< HEAD
+    margin-left: 5%;
+=======
     margin-left: 8%;
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .featuresLastL h3{
     color: white; 
@@ -324,6 +335,12 @@ li:hover {
     margin-bottom: 120px;
     width: 50%;
     margin-right: 5%;
+<<<<<<< HEAD
+    background-color: aqua;
+}
+.featuresLastR img{
+    border-radius: 20px;
+=======
     text-align: start;
 }
 .featuresLastR img{
@@ -930,4 +947,5 @@ footer .sub p{
 .last p{
     color: white;
     
+>>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }

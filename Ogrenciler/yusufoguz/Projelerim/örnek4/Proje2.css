@@ -659,12 +659,118 @@ section{
     color: rgb(0, 0, 0);
 }
 
+.container2{
+    width: 100%;
+    height: 75%;
+    
+
+}
+.container3{
+    display: flex;
+    background: linear-gradient(#fff,hsl(192, 70%, 51%));
+    /* border-radius: 15px; */
+    width: 100%;
+    
+    flex-direction: column-reverse;
+    
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three columns of equal width */
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header */
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Change the width of the three columns to 100%
+  (to stack horizontally on small screens) */
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+
+  .phone-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 83%;
+    background-image: url(images/5.jpg);
+    background-size: 87%;
+    position: relative;
+    border-radius: 8%;
+  }
+ .wrap-line{
+    padding-top: 8%;
+    padding-left: 8%;
+    width: 35%;
+ }
+ .img2{
+    display: contents;
+    float: right; 
+    height: 20%; 
+    width: 20%;
+    margin-top: 10%;
+    padding-left: 25%;
+    padding-bottom: 15%;
+ }
 .team .slide{
     text-align: center;
 }
 
 .team .slide:hover .image .share{
-    bottom: 0;
+    bottom: 10;
 }
 
 .team .slide .image{
@@ -681,14 +787,14 @@ section{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -10rem;
+    bottom: -15rem;
     padding: 2rem;
     background: rgba(0,0,0,0.8);
 }
 
 .team .slide .image .share a{
     font-size: 3rem;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
     color: #fff;
 }
 

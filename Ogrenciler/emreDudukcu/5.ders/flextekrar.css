@@ -168,3 +168,136 @@
 .services-down p {
     color: darkgrey;
 }
+
+.sixth-top {
+    background-color: #303841;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    color: blue;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: rgb(118, 117, 117);
+}
+
+.sixth-bottom {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #303841;
+}
+
+.sixth-bottom img {
+    box-sizing: border-box;
+    margin: 0px;
+    width: 147px;
+    height: 273px;
+    border-radius: 20px;
+}
+
+.seventh-top {
+    background-color: #343f4b;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.seventh-middle {
+    background-color: #343f4b;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.seventh-middle div {
+    display: flex;
+}
+
+.seventh-middle div img {
+    box-sizing: border-box;
+    margin: 0px;
+    width: 156px;
+    height: 156px;
+    border-radius: 20px;
+}
+
+.seventh-bottom {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seventh-bottom-l {
+    margin-top: 180px;
+    width: 456px;
+    height: 446px;
+}
+
+.seventh-bottom-img {
+    width: 468px;
+    height: 659px;
+}
+
+.eighth-top {
+    background-color: #303841;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.eighth-bottom {
+    background-color: #303841;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.eighth-bottom-l {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+.ninth {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #343f4b;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ninth-l {
+    width: 296px;
+}
+
+.footer {
+    background-color: #303841;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
