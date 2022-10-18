@@ -1,0 +1,288 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+   
+    background-color: white;
+    gap: 10px;
+    grid-template-areas: "header"
+                         "content"
+                         "footer";
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows:350px 350px ;
+    background-color: white;
+    padding: 10px;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+  }
+
+  .grid-container2{
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows:350px;
+    background-color: rgb(93, 91, 91);
+    padding: 10px;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .grid-item2{
+    background-color: rgb(93, 91, 91);
+  }
+
+
+
+.header{
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+  }
+  
+  .content{
+    background-color: white;
+    grid-area: content;
+  }
+  
+  .footer{
+    background-color: rgb(93,91,91);
+    grid-area: footer;
+  }
+
+  .navbar{
+    /* display: flex;
+    flex-direction: row; */
+    cursor: pointer;
+    margin-left: 2%;
+    padding: 5px;
+    gap: 10px;
+
+  }
+
+  a:link{
+    text-decoration: none;
+  }
+
+  .navbar__button{
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 7px;
+  }
+
+  .navbar__button:hover{
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav__display{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .media{
+    font-size: 25px;
+    margin-left: 65%;
+    
+
+}
+ .img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+ }
+
+ .ul1{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+ }
+
+ .ul2{
+    margin-top: 45%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+ }
+
+ .header__icerik{
+    background-image: url(https://i0.wp.com/sporoptik.com/wp-content/uploads/2021/01/Yelken.jpg?fit=1280%2C853&ssl=1);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .headericerik__button{
+    margin-top: 1%;
+    margin-left: 5%;
+    border-radius: 20px;
+    background-color: rgb(75, 213, 232);
+    color: white;
+    border: none;
+ }
+
+ .header__baslik{
+    margin-left: 5%;
+    color: white;
+    font-size: 28px;
+ }
+
+ .header__yazi{
+    margin-left: 5%;
+    color: white;
+ }
+ .headericerik__button2{
+    border-radius: 0;
+    background-color: orangered;
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 5%;
+ }
+
+ .headericerik__button2:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+ }
+
+ .content__baslik{
+    font-size: 30px;
+    text-decoration: double;
+    margin-left: 19%;
+ }
+
+ .content__image{
+    width: 400px;
+    height: 175px;
+ }
+
+ .content__button{
+    border-radius: 20px;
+    background-color: rgb(21, 170, 140);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 2%;
+ }
+
+ .box__baslik{
+    font-size: 20px;
+    color: gray;
+    margin-left: 7%;
+ }
+
+ .box__yazi{
+    color: black;
+    font-size: 18px;
+    margin-left: 2%;
+ }
+
+ .contentbutton_healt{
+    background-color: rgb(225, 102, 21);
+ }
+
+ .footer__img{
+    width: 150px;
+    height: 150px;
+    margin-left: 30%;
+ }
+
+ .footercontent__baslik{
+    margin-left: 5%;
+    font-size: 28px;
+    color: white;
+ }
+ 
+ .footer__button{
+    background-color: orangered;
+    width: 250px;
+    border: none;
+    color: white;
+    font-size: 18px;
+ }
+
+ .footer__button:hover{
+    cursor: pointer;
+ }
+
+ .footer__display{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .footermedia__display{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+ }
+
+ 
+
+
+ @media only screen and (max-width: 786px) {
+    .ul1{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+    }
+    .ul2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .headericerik__button{
+        margin-left: 5%;
+    }
+    
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+   .content__baslik{
+    margin-left: 5%;
+   }
+   .header__baslik{
+    align-items: flex-start;
+   }
+   .content__button{
+        display: flex;
+        flex-direction: column;
+   }
+   .grid-container2{
+    display: flex;
+    flex-direction: column;
+    
+   }
+   .navbar2{
+    display: flex;
+    flex-direction: row;
+   }
+   .media{
+        width: 0;
+        height: 0;
+   }
+   
+ }
+   
+
