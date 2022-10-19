@@ -9,10 +9,7 @@ body {
     background-color: #343f4b;
     position: fixed;
     height: 90px;
-<<<<<<< HEAD
-=======
     z-index: 1;
->>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .nav {
     display: flex;
@@ -152,6 +149,9 @@ li:hover {
     border-radius: 5%;
     cursor: pointer;
   }
+  .box h3{
+    margin-top: 1px;
+  }
   .box:hover{
     background-color:rgba(95, 100, 107, 0.637);
     border: 1px;
@@ -171,7 +171,7 @@ li:hover {
     flex-grow: 1;
   }
   .bomb {
-    margin-left: 110px;
+    margin-left: 10px;
     margin-top: 10px;
   }
   .black-text {
@@ -219,11 +219,7 @@ li:hover {
     cursor: pointer;
     font-size: 16px;
 }
-<<<<<<< HEAD
-.buttons button:focus{
-=======
 .buttons button:first-child{
->>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
     background: linear-gradient(#2e8da5 0%, #114d64 100%);
     border: 1px solid #0076a3;
 }
@@ -252,6 +248,7 @@ li:hover {
     font-size: 21px;
     color: white;
     margin-bottom: 5px;
+    margin-top: 1px;
 }
 .featuresTextL p{
     font-size: 15px;
@@ -282,6 +279,7 @@ li:hover {
     font-size: 21px;
     color: white;
     margin-bottom: 5px;
+    margin-top: 1px;
 }
 .featuresTextR p{
     font-size: 15px;
@@ -300,11 +298,7 @@ li:hover {
     text-align: start;
     flex-direction: column;
     width: 30%;
-<<<<<<< HEAD
-    margin-left: 5%;
-=======
     margin-left: 8%;
->>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
 }
 .featuresLastL h3{
     color: white; 
@@ -335,12 +329,6 @@ li:hover {
     margin-bottom: 120px;
     width: 50%;
     margin-right: 5%;
-<<<<<<< HEAD
-    background-color: aqua;
-}
-.featuresLastR img{
-    border-radius: 20px;
-=======
     text-align: start;
 }
 .featuresLastR img{
@@ -358,6 +346,9 @@ li:hover {
     flex-direction: row;
 }
 
+.featuresLastRInfo .writer img{
+    border-radius: 50%;
+}
 .writer .featuresLastRInfoWho p {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -942,10 +933,12 @@ footer .sub p{
 .last{
     height: 70px;
     text-align: center;
+    justify-content: center;
     background-color: #303841;
+    display: flex;
+    flex-direction: column;
 }
 .last p{
     color: white;
-    
->>>>>>> a4b54d6bf966d7f5b93cab7fa5399cdcbe9b1626
+    text-align: center
 }

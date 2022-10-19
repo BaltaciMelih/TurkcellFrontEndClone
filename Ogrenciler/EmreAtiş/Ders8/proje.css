@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 0.3s;
+    text-transform: capitalize;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                        "left content right"
+                        "under under under"
+                        "footer footer footer" ;
+}
+.header{
+    grid-area: header;
+    background-color: rgb(128, 128, 128);
+}
+.log{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    padding: 20px 15rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15rem;
+}
+.nav{
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    font-size: 20px;
+}
+.ikons{
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+}
+.left-item{
+
+}
+.right-item{
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-area: left;
+    padding-top: 30px;
+    padding-left: 15rem;
+}
+.right{
+    grid-area: right;
+    padding-top: 30px;
+    padding-right: 15rem;
+}
+.content{
+    grid-area: content;
+    padding: 30px;
+}
+.left img, .right img, .content img{
+    background-size: cover;
+    width: 100%;
+}
+.content-bottom{
+    display: flex;
+    gap: 8px;
+}
+.content-bottom img{
+    height: 500px;
+}
+aside p{
+    font-size: 1.5rem;
+}
+.latest{
+    grid-area: under;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-right: 20%;
+    padding-left:20%;
+    
+}
+.content-under{
+    display: flex;
+    margin-top: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.content-under img{
+    background-size: cover;
+    width: 40%;
+    padding-right: 20px;
+}
+.gap h3{
+    padding-bottom: 10px
+}
