@@ -239,5 +239,11 @@ a{
       align-items: center;
       display: inline;    
     }
+    .home-erdem .text{
+        font-size: 20px;
+        inline-size: 350px;
+        overflow-wrap: break-word;
+    }
   }
 
+ 
