@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.project-container{
+  display: grid;
+  height: 100vh;
+  /* grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 80px 1fr 80px; */
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-areas: 
+  "header header header"
+  "nav nav nav"                                              
+  "main main aside"
+  "main main aside"
+  "footer footer footer"
+}
+
+header, footer, main, aside, nav{
+  /* background-color: brown; */
+  color: black;
+  padding: 15px;
+  border: 1px sandybrown solid;
+}
+
+header{
+  grid-area: header;
+}
+
+nav{
+  grid-area: nav;
+}
+
+.main{
+    grid-area: main;
+}
+
+aside{
+  grid-area: aside;
+}
+
+footer{
+  grid-area: footer;
+}
+
+.news-container{
+    display: grid;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    text-align: center; 
+    font-family: Arial;
+    grid-template-columns: repeat(3,260px);
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.section-card1{
+  width: auto;
+}
+
+.article-container {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+}
+
+.figure-img {
+  display: inline-block;
+  height: 230px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.figure-img img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -35px 0px 0px -70px;
+}
+
+.inner-skew {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0px;
+  transform: skew(0deg, 13deg);
+  font-size: 0px;
+  margin: 30px 0px 0px 0px;
+  background: #c8c2c2;
+  height: 250px;
+  width: 200px;
+}
+
+.figure-text {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.figure-text h3 {
+  margin: 20px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
+}
+
+@media (max-width: 768px){
+  .project-container{
+    grid-template-areas: 
+    "header"
+    "nav"                                              
+    "main"
+    "aside"
+    "footer"
+  }
+} 
+
+@media (max-width:817px){
+  .news-container{
+      grid-template-columns: repeat(2,1fr);
+      margin: auto;
+      grid-auto-columns: auto;
+  }
+} 
+@media (max-width:692px){
+  .news-container{
+      grid-template-columns: repeat(1,1fr);
+      margin: auto;
+      grid-auto-columns: auto;
+  }
+} 
