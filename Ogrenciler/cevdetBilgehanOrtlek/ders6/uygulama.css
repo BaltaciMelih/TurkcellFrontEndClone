@@ -43,3 +43,14 @@
     background-image: linear-gradient(to bottom right,rgb(141, 70, 12),rgb(225, 173, 49));
     cursor: pointer;
   }
+
+  @media only  screen and (max-width:768px) {
+    .latest-bottom {
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        grid-template-rows:repeat(6, auto) ; 
+        
+    }
+  }
