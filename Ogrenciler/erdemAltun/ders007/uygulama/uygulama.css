@@ -230,20 +230,41 @@ a{
     .main {
         width: 100%;
     }
+    .row1{
+       
+        grid-template-columns: repeat(1, 260px);
+        justify-content: center;
+        align-items: center;
+}
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+    }
+    .col3{
+        width: 100%;
+    }
+    .col4{
+        width: 100%;
+    }
+    .header-erdem{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+      }
+      .home-erdem .text{
+          font-size: 20px;
+          inline-size: 350px;
+          overflow-wrap: break-word;
+      }
+      .header-erdem .icons-erdem{
+        display: none;
+      }
+      .footer .row2{
+        margin-top: 35px;
+      }
 }
 
-@media only screen and (max-width: 768px) {
-    .header-erdem {
-      grid-template-columns: 1fr;
-      justify-content: center;
-      align-items: center;
-      display: inline;    
-    }
-    .home-erdem .text{
-        font-size: 20px;
-        inline-size: 350px;
-        overflow-wrap: break-word;
-    }
-  }
-
- 
