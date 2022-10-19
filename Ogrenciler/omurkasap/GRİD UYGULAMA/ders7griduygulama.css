@@ -1,0 +1,64 @@
+.home {
+    display: grid;
+    background-image: url(rowing.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 850px;
+}
+.home-conteiner{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    background: none;
+    border: 2px solid #94a0ac;
+    font-size: 16px;
+    font-family: "Tahoma", sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    align-items: left;
+    transition: color 0.7s linear;
+}
+
+.btn:hover {
+    color: white;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #486e4d9e;
+    z-index: -1;
+    transition: transfrom 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn1::before {
+    transform: scaleX(0);
+}
+.btn1:hover::before {
+    transform: scaleX(1);
+}
+.btn2::before {
+    transform: scaleY(0);
+}
+.btn2:hover::before {
+    transform: scaleY(1);
+}
+
+.home-conteiner span {
+    background-color: white;
+    border-radius: 25%;
+}

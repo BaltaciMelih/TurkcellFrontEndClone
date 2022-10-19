@@ -946,17 +946,17 @@ body {
   /* invitation */
   
   .invitation-banner{
-    /* background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center; */
-    width: 100%;
+    background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center; */
+     width: 100%;
     height: 380px;
-    box-shadow: inset 0 0 0 200rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 0 200rem rgba(0, 0, 0, 0.5); */
   }
   .mySlides {
-    background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center;
-    background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center;
-    background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center;
-    width: 100%;
-    height: 380px;
+    /* background: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png") center;
+    background: url("https://i.imgur.com/2DhmtJ4.jpg") center;
+    background: url("https://i.imgur.com/oYiTqum.jpg") center; */
+    /* width: 100%;
+    height: 380px; */
   }
   
   .invitation-container{
@@ -971,10 +971,6 @@ body {
   .mySlides {
     display:none
   }
-  .w3-left, .w3-right, .w3-badge {
-  cursor:pointer
-  }
-  .w3-badge {height:13px;width:13px;padding:0}
 
   .invitation-container-slider{
     display: flex;
