@@ -23,7 +23,6 @@
   z-index: 1;
   width: 100%;
   grid-area: header;
-  opacity: 0.7;
   background-color: white;
 }
 
@@ -40,17 +39,19 @@
 }
 
 .header-erdem .click-erdem .home-button {
-  background-color: rgb(248, 144, 107);
-  border-radius: 30%;
+  background-color: rgb(252, 94, 37);
+  color: white;
+  border-radius: 10px;
 }
 .header-erdem .click-erdem a {
   padding: 20px 4px;
 }
 
 .header-erdem .click-erdem a:hover {
-  background-color: rgb(219, 87, 39);
+  background-color: rgb(201, 92, 52);
   border-bottom: 1px solid rgb(219, 87, 39);
-  border-radius: 30%;
+  border-radius: 10px;
+  color: white;
 }
 .header-erdem .icons-erdem {
   display: flex;
@@ -63,11 +64,13 @@
 .home-erdem {
   background-image: url(https://gunceloku.com/uploads/kurek-sporu-nedir-617bd9114c9cb.jpg);
   background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(146, 146, 146);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   grid-area: home;
-  opacity: 0.9;
+  opacity: 0.7;
   height: 80vh;
   justify-content: center;
   gap: 30px;
@@ -75,20 +78,23 @@
 }
 
 .home-erdem .button1 {
-  background-color: rgb(20, 108, 8);
+  background-color: rgb(98, 219, 169);
   width: 65px;
   height: 40px;
   color: white;
-  border-radius: 30%;
+  border: none;
+  border-radius: 30px;
   font-size: 15px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgb(146, 146, 146);
 }
 
 .home-erdem .button2 {
-  background-color: rgb(219, 87, 39);
+  background-color: rgb(255, 72, 0);
   width: 150px;
   height: 75px;
   color: white;
-  border-radius: 10%;
+  border: none;
   font-size: 20px;
 }
 
@@ -99,7 +105,8 @@
 
 .home-erdem .text {
   font-weight: bolder;
-  font-size: 20px;
+  color: white;
+  font-size: 24px;
   inline-size: 600px;
   overflow-wrap: break-word;
 }
@@ -107,35 +114,42 @@ a {
   color: rgb(80, 80, 80);
 }
 
-.main{
-    display: grid;
-    justify-content: center;
-    align-items: center; 
-} 
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.news {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .container {
   display: grid;
-  grid-template-columns: 260px 260px 260px;
+  width: 100%;
+  grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-items: center;
-  background-color: white;
-  gap: 20px;
+  gap: 50px;
 }
 
 .item {
-  width: 260px;
+  width: 100%;
   background-color: white;
   margin: 0;
-  padding: 0;
+  padding-bottom: 12px;
   box-sizing: border-box;
 }
 
 .item img {
-  width: 260px;
-  height: 200px;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
 }
+
 
 .item h4 {
   padding-left: 10px;
+  margin-bottom: 10px;
   color: rgb(51, 50, 50);
 }
 
@@ -143,9 +157,10 @@ a {
   width: max-content;
   padding: 5px;
   margin-left: 5px;
+  margin-bottom: 10px;
   border-radius: 10px;
   color: whitesmoke;
-  background-color: black;
+  background-color: rgb(98, 219, 169);
 }
 
 .container-tugce {
@@ -175,20 +190,34 @@ a {
 
 .col1 {
   display: grid;
-  height: 300px;
+  height: 350px;
   grid-template-rows: 50% 50%;
+    font-size: 24px;
+
 }
 
 .col2 {
   display: grid;
-  grid-template-rows: 15% 30% 10% 10%;
+  grid-template-rows: 20% 45% 10% 10%;
   gap: 10px;
+  font-size: 24px;
+
 }
 
 .col3 {
   display: grid;
   grid-template-rows: repeat(5, auto);
   gap: 15px;
+}
+
+.col3 a{
+    color: white;
+    font-size: 24px;
+}
+
+.col4 a{
+    color: white;
+    font-size: 30px;
 }
 
 .footer {
@@ -221,28 +250,56 @@ a {
 
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: repeat(1, 260px);
+    grid-template-columns: repeat(1, 80%);
   }
   .main {
     width: 100%;
   }
+  .item{
+    width: 100%;
+    height: 400px;
+  }
   .row1 {
-    grid-template-columns: repeat(1, 260px);
+    grid-template-columns: repeat(1, auto);
+    height: auto;
     justify-content: center;
     align-items: center;
   }
+
+ 
+  .row2{
+    height: auto;
+  }
   .col1 {
     width: 100%;
+    height: 300px;
   }
   .col2 {
     width: 100%;
+    height: 200px;
+    grid-template-rows: 20% 40% 20% 15%;
   }
   .col3 {
     width: 100%;
+    height: 300px;
   }
   .col4 {
     width: 100%;
+    height: 120px;
   }
+
+  .col4 a {
+    font-size: 34px;
+  }
+.home-erdem{
+  margin-top: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
   .header-erdem {
     display: flex;
     justify-content: center;
