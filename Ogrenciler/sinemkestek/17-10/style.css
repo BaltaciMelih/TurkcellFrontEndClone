@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+/* .container {
+  display: grid;
+  background-color: rgb(228, 255, 129);
+  padding: 29px;
+  gap: 35px;
+  grid-template-columns: 100px auto 240px 240px;
+  /* grid-template-columns: repeat (4,auto)
+  1fr 3fr 
+  grid-template-rows:3fr */
+
+/* .item {
+  background-color: rgb(143, 255, 221);
+  padding: 20px;
+  margin: 20px;
+}
+.item:first-child {
+  grid-area: 1 / span 4;
+  /* grid-column-start:1
+    grid-column-end:4; */
+/* grid-area: 1/2/span;
+    span ile kaplayacağı alan hacmini belirleyebilirsin. */
+
+/* repeat (auto-fill:yer açma
+auto-fit:yayılma odaklı,1fr )*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(168, 168, 235);
+  gap: 5px;
+  grid-template-areas:
+    "header header header"
+    "sidebar cont cont"
+    "sidebar . ."
+    "box1 box1 box1"
+    "footer footer footer";
+}
+.header {
+  background-color: rgb(236, 236, 145);
+  grid-area: header;
+}
+.content {
+  background-color: orange;
+  grid-area: cont;
+}
+.sidebar {
+  background-color: bisque;
+  grid-area: sidebar;
+}
+.box-1 {
+  grid-area: box1;
+  background-color: azure;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(42, 49, 49);
+}
