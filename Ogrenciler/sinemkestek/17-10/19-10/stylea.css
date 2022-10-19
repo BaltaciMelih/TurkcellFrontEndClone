@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(163, 236, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.box {
+  background-color: orange;
+  width: 150px;
+  height: 150px;
+  transition: all 1s ease-in;
+}
+.box:hover {
+  background-color: rgb(5, 202, 136);
+  border-radius: 50%;
+}
