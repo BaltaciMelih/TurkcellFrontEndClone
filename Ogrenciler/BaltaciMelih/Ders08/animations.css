@@ -54,6 +54,9 @@ body{
     height: 150px;
     /* box-shadow: 5px 15px 30px 20px red; */
     /* box-shadow: 10px 20px rgb(0 0 0 / 0.2); */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     box-shadow: 0 0 10px rgb(0 0 0 / 1);
+}
+h2{
+    text-shadow: 2px 2px rgb(0 0 0 / 1);
 }
