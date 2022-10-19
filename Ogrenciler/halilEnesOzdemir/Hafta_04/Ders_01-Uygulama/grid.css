@@ -253,8 +253,8 @@ body {
 .footer-top-item .input-part::after {
   content: '🎈';
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 2px;
+  top: 6px;
   color: White;
 }
 
