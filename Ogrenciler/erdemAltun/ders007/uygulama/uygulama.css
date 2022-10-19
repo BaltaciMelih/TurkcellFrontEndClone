@@ -23,7 +23,7 @@
   z-index: 1;
   width: 100%;
   grid-area: header;
-  opacity: 0.8;
+  opacity: 0.7;
   background-color: white;
 }
 
@@ -39,9 +39,6 @@
   font-weight: bold;
 }
 
-.header-erdem .click-erdem .about-button .blog-button .contatc-button {
-  color: black;
-}
 .header-erdem .click-erdem .home-button {
   background-color: rgb(248, 144, 107);
   border-radius: 30%;
@@ -110,12 +107,137 @@ a {
   color: rgb(80, 80, 80);
 }
 
-@media only screen and (max-width: 768px) {
-  .header-erdem {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    
-  }
+
+.news{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+.container {
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+}
+
+.item {
+    width: 260px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item img {
+    width: 260px;
+    height: 200px;
+}
+
+.item h4 {
+    padding-left: 10px;
+    color: rgb(51, 50, 50);
+}
+
+.item h5 {
+    width: max-content;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+
+.container-tugce{
+    display: grid;
+    grid-template-areas: "footer footer footer";
+    margin-top: 35px;
+}
+
+.row1{
+    grid-area: row;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    gap: 2%;
+}
+
+.row2{
+    grid-area: row;
+    width: 85%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(61, 61, 61);
+}
+
+.col1{
+    display: grid;
+    height: 300px;
+    grid-template-rows: 50% 50%;
+}
+
+.col2{
+    display: grid;
+    grid-template-rows: 15% 30% 10% 10%;
+    gap: 10px;
+}
+
+.col3{
+    display: grid;
+    grid-template-rows: repeat(5,auto);
+    gap: 15px;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    color: white;
+    background-color: rgb(139, 145, 140);
+    flex-wrap: wrap;
+
+}
+
+.logo{
+    height: 100%;
+}
+
+i{
+    color: white;
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    border-bottom: 1px solid rgb(105, 105, 105);
+}
+
+.btn{
+    background-color: rgb(255, 102, 0);
+    border: none;color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(1, 260px);
+    }
+    .main {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-erdem {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      display: inline;    
+    }
+  }
+
