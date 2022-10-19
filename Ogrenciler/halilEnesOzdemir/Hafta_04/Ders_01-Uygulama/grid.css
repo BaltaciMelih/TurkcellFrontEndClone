@@ -15,15 +15,159 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Yaren Eylül CSS */
+
 .header {
-  grid-area: header;
+  display: grid;
+  grid-template-columns: 14% auto 17%;
+  background-color: white;
+  grid-template-areas: 'logo list icons';
+  align-items: center;
 }
-.hero {
-  grid-area: hero;
+
+.header-logo {
+  width: 50px;
+  margin: 0 auto 0 auto;
 }
-.news {
-  grid-area: news;
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 70px) 50px 60px;
+  align-content: center;
+  font-size: 24px;
+  gap: 15px;
+  justify-content: flex-start;
 }
+.list a {
+  text-decoration: none;
+  color: gray;
+  list-style: none;
+}
+.list a:first-child {
+  background-color: orangered;
+  color: white;
+  padding: 3px 3px 3px 3px;
+  border-radius: 5px;
+}
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 26px);
+  align-content: center;
+}
+.icons li {
+  list-style: none;
+}
+.banner {
+  background-image: url('https://www.oxygenmag.com/wp-content/uploads/2021/08/women-eight-rowing-olympics.jpg');
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  padding: 80px 49% 40px 40px;
+  grid-template-rows: 30px 0.5fr 1fr 1fr;
+  box-shadow: inset 0 0 0 500rem rgba(75, 76, 80, 0.75);
+}
+.banner .category {
+  background-color: rgb(51, 206, 159);
+  width: 60px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 22px;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 30px;
+  margin: 2px 0 2px 0;
+  color: white;
+}
+.banner p {
+  margin: 4px 0 12px 0;
+  color: white;
+  font-size: 16px;
+}
+.banner button {
+  color: white;
+  background-color: orangered;
+  width: 120px;
+  height: 40px;
+  border: 1px white;
+}
+@media (max-width: 780px) {
+  .header {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-areas:
+      'logo'
+      'list';
+  }
+  .list {
+    justify-content: center;
+    margin: 12px 0 12px 0;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .icons {
+    display: none;
+  }
+  .banner {
+    padding: 9% 10% 0 6%;
+  }
+}
+/* Yaren CSS Finish */
+
+/* Bilgehan CSS Start */
+.latest-bottom {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.latest-bottom img {
+  width: 100%;
+
+  border-radius: 3rem;
+  box-shadow: 0.8rem 0.8rem 1.4rem rgba(255, 255, 255, 0.846);
+}
+.latest-bottom div:hover {
+  scale: 1.02;
+  box-shadow: 1rem 1rem 1rem #000000ad;
+}
+
+.latest-bottom div {
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+.back1 {
+  color: white;
+  width: 10%;
+  text-align: center;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  background-image: linear-gradient(to bottom right, rgb(22, 92, 54), rgb(9, 180, 83));
+  cursor: pointer;
+}
+.back2 {
+  color: white;
+  width: 10%;
+  text-align: center;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  background-image: linear-gradient(to bottom right, rgb(141, 70, 12), rgb(225, 173, 49));
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .latest-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-template-rows: repeat(6, auto);
+  }
+}
+/* Bilgehan Finish */
 
 .grid-container {
   display: grid;
@@ -74,10 +218,32 @@ body {
   font-weight: 300;
 }
 
-.footer-top-item input {
+.footer-top-item .input-part {
+  position: relative;
   width: 90%;
   font-size: 1.8rem;
   height: 3rem;
+}
+
+.footer-top-item .input-part::after {
+  content: '🎈';
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: White;
+}
+
+.footer-top-item input {
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer-top-item > button {
+  display: block;
+  width: 90%;
+  color: white;
+  background-color: rgb(255, 102, 0);
+  padding: 1rem;
 }
 
 .footer-top-item ul {
@@ -98,13 +264,20 @@ body {
   text-decoration: none;
 }
 
-.icons {
+.footer-icons {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
-.icons a {
+.footer-icons a {
   color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
 }
 
 .footer-bottom {
@@ -114,12 +287,10 @@ body {
   text-align: center;
 }
 
-/* @media (max-width: 1200px) {
-  .footer-top-item {
-    width: 40%;
-    gap: 4rem;
-  }
-} */
+.footer-bottom:hover {
+  background-color: #444;
+  color: whitesmoke;
+}
 
 @media (max-width: 768px) {
   .footer-top-item {
