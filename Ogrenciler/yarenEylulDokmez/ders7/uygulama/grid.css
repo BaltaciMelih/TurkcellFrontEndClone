@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: grid;
+    grid-template-columns: 14% auto 17%;
+    background-color:white;
+    grid-template-areas: "logo list icons";
+    height: 75px;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    margin: 0 auto 0 auto;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(4,8%);
+    align-content: center;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.list a{
+    text-decoration: none;
+    color: gray;
+    list-style: none;
+}
+.list a:hover{
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4,12%);
+    align-content: center;
+}
+.icons li{
+    list-style: none;
+}
+.banner{
+    height: 350px;
+    background-image: url("https://www.oxygenmag.com/wp-content/uploads/2021/08/women-eight-rowing-olympics.jpg");
+    background-position: center;
+    background-size: 100%;
+    display: grid;
+    padding: 80px 53% 0 40px;
+    grid-template-rows: 30px 30px 70px 30px;
+}
+.banner .category{
+    background-color: rgb(51, 206, 159);
+    width: 45px;
+    height: 23px;
+    border-radius: 27px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.banner h1{
+    font-size: 30px;
+    margin: 2px 0 2px 0;
+    color: white;
+}
+.banner p{
+    margin: 4px 0 4px 0;
+    color: white;
+    font-size: 16px;
+}
+.banner button{
+ color: white;
+ background-color: orangered;  
+ width: 120px; 
+ border: 1px white;
+}
