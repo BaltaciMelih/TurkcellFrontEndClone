@@ -48,7 +48,7 @@ body{
     grid-area: footer;
     display: flex;
     color: white;
-    background-color: rgb(139, 145, 140);
+    background-color: rgb(142, 153, 158);
     flex-wrap: wrap;
 
 }
