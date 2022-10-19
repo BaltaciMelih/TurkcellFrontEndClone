@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #fefefe;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  grid-area: header;
+}
+.hero {
+  grid-area: hero;
+}
+.news {
+  grid-area: news;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'hero hero hero'
+    'news news news'
+    'footer footer footer';
+  gap: 10px;
+  /* background-color: aqua; */
+}
+
+.footer {
+  grid-area: footer;
+  padding: 4rem 6rem;
+  background-color: rgb(104, 102, 102);
+  color: #fff;
+}
+
+.footer-top {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin: 0 auto; */
+}
+
+.footer-top-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 23%;
+  min-width: 17rem;
+}
+
+.footer-logo {
+  width: 15rem;
+}
+
+.footer-top-item > h2 {
+  padding: 0 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.footer-top-item p {
+  font-weight: 300;
+}
+
+.footer-top-item input {
+  width: 90%;
+  font-size: 1.8rem;
+  height: 3rem;
+}
+
+.footer-top-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.footer-top-item ul li {
+  padding: 0.5rem;
+  border-bottom: 1px dashed gray;
+  list-style: none;
+}
+
+.footer-top-item ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icons a {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  background-color: #333;
+  text-align: center;
+}
+
+/* @media (max-width: 1200px) {
+  .footer-top-item {
+    width: 40%;
+    gap: 4rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  .footer-top-item {
+    width: 100%;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-logo {
+    align-self: center;
+  }
+  .footer-top-item h2 {
+    font-weight: 400;
+    color: rgb(171, 169, 169);
+    font-size: 2.2rem;
+    text-decoration: underline;
+  }
+  .footer-links {
+    align-items: center;
+    font-size: 1.6rem;
+  }
+}
