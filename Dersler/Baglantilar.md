@@ -13,3 +13,4 @@ https://css-tricks.com/snippets/css/complete-guide-grid/ - Css Grid
 https://animate.style/ - animate.css
 https://getcssscan.com/css-box-shadow-examples - Hazır shadow kütüphanesi
 https://www.cssmatic.com - border, shadow gibi özellikler için
+https://nodejs.org/en/ - nodejs
