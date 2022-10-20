@@ -49,6 +49,7 @@ p {
     border: transparent; 
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 
@@ -101,6 +102,7 @@ p {
 .header .navbar a {
     padding: 0.5rem 1.2rem;
     border-bottom: 1px solid #000000;
+    
 }
 
 .header .navbar a:hover {
@@ -152,9 +154,11 @@ p {
 .home h1 {
     border: 1px solid transparent;
     color: rgb(26, 25, 25);
+    
 }
 .home h1:hover {
     border-bottom: 1px solid black;
+    
 }
 
 
@@ -206,6 +210,10 @@ p {
 }
 .news .orange {
     background-color: #d35400;
+}
+
+.box-shadow {
+   box-shadow: 10px 10px 15px rgb(164, 196, 246);
 }
 
 
