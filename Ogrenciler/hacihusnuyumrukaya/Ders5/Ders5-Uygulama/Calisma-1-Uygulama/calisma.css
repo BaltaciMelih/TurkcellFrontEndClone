@@ -72,6 +72,8 @@ a{
     z-index: 3;
     margin-bottom: 20px;
     padding-top: 70px;
+    animation:bounceInDown;
+    animation-duration: 2s;
 }
 
 .metin .yazi
@@ -285,7 +287,10 @@ a{
     height: 200px;
     border-radius: 10px;
 }
-
+.resim4:hover ,.resim5:hover ,.resim6:hover
+ {
+    transform: scale(1.4);
+ }
 .box4
 {
     width: 20%;
@@ -293,7 +298,9 @@ a{
     border-radius: 10px;
     height: 200px;
     margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+
 
 .container9
 {
