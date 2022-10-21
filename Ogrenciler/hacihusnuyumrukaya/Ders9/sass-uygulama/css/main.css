@@ -1,0 +1,11 @@
+h2 {
+  color: red; }
+
+.container {
+  display: flex; }
+
+.box1, .box2, .box3 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 10px; }
