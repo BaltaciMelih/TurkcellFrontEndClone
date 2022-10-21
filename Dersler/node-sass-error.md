@@ -2,18 +2,18 @@ npm ERR! code 1
 npm ERR! path C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-sass
 npm ERR! command failed
 npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c node scripts/build.js
-npm ERR! Building: C:\Program Files\nodejs\node.exe C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\bin\node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags= 
+npm ERR! Building: C:\Program Files\nodejs\node.exe C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\bin\node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags=
 --libsass_ldflags= --libsass_library=
 npm ERR! gyp info it worked if it ends with ok
 npm ERR! gyp verb cli [
-npm ERR! gyp verb cli   'C:\\Program Files\\nodejs\\node.exe',
-npm ERR! gyp verb cli   'C:\\turkcell\\TurkcellFrontEnd\\Ogrenciler\\batuhansevinc\\ders08\\sass\\node_modules\\node-gyp\\bin\\node-gyp.js',
-npm ERR! gyp verb cli   'rebuild',
-npm ERR! gyp verb cli   '--verbose',
-npm ERR! gyp verb cli   '--libsass_ext=',
-npm ERR! gyp verb cli   '--libsass_cflags=',
-npm ERR! gyp verb cli   '--libsass_ldflags=',
-npm ERR! gyp verb cli   '--libsass_library='
+npm ERR! gyp verb cli 'C:\\Program Files\\nodejs\\node.exe',
+npm ERR! gyp verb cli 'C:\\turkcell\\TurkcellFrontEnd\\Ogrenciler\\batuhansevinc\\ders08\\sass\\node_modules\\node-gyp\\bin\\node-gyp.js',
+npm ERR! gyp verb cli 'rebuild',
+npm ERR! gyp verb cli '--verbose',
+npm ERR! gyp verb cli '--libsass_ext=',
+npm ERR! gyp verb cli '--libsass_cflags=',
+npm ERR! gyp verb cli '--libsass_ldflags=',
+npm ERR! gyp verb cli '--libsass_library='
 npm ERR! gyp verb cli ]
 npm ERR! gyp info using node-gyp@8.4.1
 npm ERR! gyp info using node@18.10.0 | win32 | x64
@@ -58,25 +58,25 @@ npm ERR! gyp ERR! find VS looking for Visual Studio 2015
 npm ERR! gyp ERR! find VS - not found
 npm ERR! gyp ERR! find VS not looking for VS2013 as it is only supported up to Node.js 8
 npm ERR! gyp ERR! find VS
-npm ERR! gyp ERR! find VS **************************************************************
+npm ERR! gyp ERR! find VS ******************************\*\*******************************
 npm ERR! gyp ERR! find VS You need to install the latest version of Visual Studio
 npm ERR! gyp ERR! find VS including the "Desktop development with C++" workload.
 npm ERR! gyp ERR! find VS For more information consult the documentation at:
 npm ERR! gyp ERR! find VS https://github.com/nodejs/node-gyp#on-windows
-npm ERR! gyp ERR! find VS **************************************************************
+npm ERR! gyp ERR! find VS ******************************\*\*******************************
 npm ERR! gyp ERR! find VS
 npm ERR! gyp ERR! configure error
 npm ERR! gyp ERR! stack Error: Could not find any Visual Studio installation to use
-npm ERR! gyp ERR! stack     at VisualStudioFinder.fail (C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:122:47)
-npm ERR! gyp ERR! stack     at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:75:16
-npm ERR! gyp ERR! stack     at VisualStudioFinder.findVisualStudio2013 (C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:363:14)
-npm ERR! gyp ERR! stack     at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:71:14
-npm ERR! gyp ERR! stack     at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:384:16
-npm ERR! gyp ERR! stack     at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\util.js:54:7
-npm ERR! gyp ERR! stack     at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\util.js:33:16
-npm ERR! gyp ERR! stack     at ChildProcess.exithandler (node:child_process:420:5)
-npm ERR! gyp ERR! stack     at ChildProcess.emit (node:events:513:28)
-npm ERR! gyp ERR! stack     at maybeClose (node:internal/child_process:1091:16)
+npm ERR! gyp ERR! stack at VisualStudioFinder.fail (C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:122:47)
+npm ERR! gyp ERR! stack at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:75:16
+npm ERR! gyp ERR! stack at VisualStudioFinder.findVisualStudio2013 (C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:363:14)
+npm ERR! gyp ERR! stack at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:71:14
+npm ERR! gyp ERR! stack at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\find-visualstudio.js:384:16
+npm ERR! gyp ERR! stack at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\util.js:54:7
+npm ERR! gyp ERR! stack at C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-gyp\lib\util.js:33:16
+npm ERR! gyp ERR! stack at ChildProcess.exithandler (node:child_process:420:5)
+npm ERR! gyp ERR! stack at ChildProcess.emit (node:events:513:28)
+npm ERR! gyp ERR! stack at maybeClose (node:internal/child_process:1091:16)
 npm ERR! gyp ERR! System Windows_NT 10.0.19044
 npm ERR! gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\turkcell\\TurkcellFrontEnd\\Ogrenciler\\batuhansevinc\\ders08\\sass\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild" "--verbose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
 npm ERR! gyp ERR! cwd C:\turkcell\TurkcellFrontEnd\Ogrenciler\batuhansevinc\ders08\sass\node_modules\node-sass
@@ -86,4 +86,4 @@ npm ERR! gyp ERR! not ok
 npm ERR! Build failed with error code: 1
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     C:\Users\Gbc\AppData\Local\npm-cache\_logs\2022-10-21T15_59_08_928Z-debug-0.log
+npm ERR! C:\Users\Gbc\AppData\Local\npm-cache_logs\2022-10-21T15_59_08_928Z-debug-0.log
