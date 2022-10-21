@@ -1,9 +1,28 @@
-$color: #ff3467;
-$color2: #3eff34;
+$bgColor: red;
 
-h2 {
-  color: $color;
+.container {
+  display: flex;
+  .box1{
+    padding: 30px;
+  }
 }
-h3:first-child {
-  color: $color2; 
+
+@mixin deneme($ali) {
+  background-color: $ali;
+  margin: 10px;
 }
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  @include deneme(green);
+}
+.box2 {
+  @extend .box1;
+  width: 200px;
+  background-color: $bgColor;
+}
+.box3 {
+  @extend .box1;
+}
+
