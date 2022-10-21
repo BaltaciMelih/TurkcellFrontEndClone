@@ -15,23 +15,25 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-/* Yaren Eylül CSS */
-
 .header {
   display: grid;
-  grid-template-columns: 14% auto 17%;
+  grid-template-columns: 14% auto 12%;
   background-color: white;
   grid-template-areas: 'logo list icons';
   align-items: center;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: 1;
 }
 
-.header-logo {
+.header .logo {
   width: 50px;
   margin: 0 auto 0 auto;
 }
 .list {
   display: grid;
-  grid-template-columns: repeat(2, 70px) 50px 60px;
+  grid-template-columns: repeat(2, 70px) 53px 82px;
   align-content: center;
   font-size: 24px;
   gap: 15px;
@@ -42,6 +44,12 @@ body {
   color: gray;
   list-style: none;
 }
+.list a:hover {
+  background-color: orangered;
+  color: white;
+  padding: 3px 3px 3px 3px;
+  border-radius: 5px;
+}
 .list a:first-child {
   background-color: orangered;
   color: white;
@@ -50,18 +58,22 @@ body {
 }
 .icons {
   display: grid;
-  grid-template-columns: repeat(4, 26px);
+  grid-template-columns: repeat(4, 30px);
   align-content: center;
 }
 .icons li {
   list-style: none;
+}
+
+.icons :hover {
+  scale: 1.2;
 }
 .banner {
   background-image: url('https://www.oxygenmag.com/wp-content/uploads/2021/08/women-eight-rowing-olympics.jpg');
   background-position: center;
   background-size: cover;
   display: grid;
-  padding: 80px 49% 40px 40px;
+  padding: 100px 49% 60px 40px;
   grid-template-rows: 30px 0.5fr 1fr 1fr;
   box-shadow: inset 0 0 0 500rem rgba(75, 76, 80, 0.75);
 }
@@ -75,15 +87,18 @@ body {
   font-size: 17px;
   text-align: center;
 }
+.category:hover {
+  background-color: orangered;
+}
 .banner h1 {
   font-size: 30px;
-  margin: 2px 0 2px 0;
+  margin: 12px 0 10px 0;
   color: white;
 }
 .banner p {
-  margin: 4px 0 12px 0;
+  margin: 4px 0 19px 0;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 .banner button {
   color: white;
@@ -98,6 +113,8 @@ body {
     grid-template-areas:
       'logo'
       'list';
+    height: 110px;
+    padding-top: 10px;
   }
   .list {
     justify-content: center;
@@ -113,23 +130,31 @@ body {
     padding: 9% 10% 0 6%;
   }
 }
-/* Yaren CSS Finish */
-
 /* Bilgehan CSS Start */
+
+.news {
+  margin-top: 4rem;
+  padding: 4rem 6rem;
+}
+
 .latest-bottom {
   display: grid;
   grid-template-columns: auto auto auto;
+  margin-top: 2rem;
+  gap: 2rem;
 }
 
 .latest-bottom img {
   width: 100%;
-
+  height: 60%;
   border-radius: 3rem;
   box-shadow: 0.8rem 0.8rem 1.4rem rgba(255, 255, 255, 0.846);
 }
 .latest-bottom div:hover {
-  scale: 1.02;
   box-shadow: 1rem 1rem 1rem #000000ad;
+  border-radius: 3rem;
+  transition: 2s;
+  transform: scale(1.05) rotate(5deg);
 }
 
 .latest-bottom div {
@@ -138,24 +163,24 @@ body {
 }
 .back1 {
   color: white;
-  width: 10%;
+  width: 10rem;
   text-align: center;
-  border-radius: 30px;
-  margin-left: 5px;
-  margin-top: 5px;
-  padding: 5px;
-  background-image: linear-gradient(to bottom right, rgb(22, 92, 54), rgb(9, 180, 83));
+  border-radius: 3rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgb(51, 206, 159);
   cursor: pointer;
 }
 .back2 {
   color: white;
-  width: 10%;
+  width: 10rem;
   text-align: center;
-  border-radius: 30px;
-  margin-left: 5px;
-  margin-top: 5px;
-  padding: 5px;
-  background-image: linear-gradient(to bottom right, rgb(141, 70, 12), rgb(225, 173, 49));
+  border-radius: 3rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: orangered;
   cursor: pointer;
 }
 
@@ -228,8 +253,8 @@ body {
 .footer-top-item .input-part::after {
   content: '🎈';
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 2px;
+  top: 6px;
   color: White;
 }
 

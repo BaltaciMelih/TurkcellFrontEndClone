@@ -101,11 +101,12 @@
 .home-erdem .baslık {
   font-weight: bold;
   font-size: 40px;
+  color: black;
 }
 
 .home-erdem .text {
   font-weight: bolder;
-  color: white;
+  color: black;
   font-size: 24px;
   inline-size: 600px;
   overflow-wrap: break-word;
@@ -117,12 +118,11 @@ a {
 .main {
   width: 80%;
   margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
-.news {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 .container {
   display: grid;
   width: 100%;
