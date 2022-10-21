@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+.box {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.boxx {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    transition: background-color, border-radius 1s ease-in-out;
+    /* background-color, border-radius yerine all yazsak olurdu.*/
+}
+
+.boxxx {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+}
+
+.boxxxx {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+}
+
+.box:hover {
+    background-color: white;
+}
+
+.boxx:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.boxxx:hover {
+    /* transform: scale(2); */
+    /* transform: skew(-28deg); */
+    /* transform: translateX(-61px); */
+    /* transform: translateY(-61px); */
+    /* transform: translate(-100px, -100px); */
+    transform: rotate(180deg);
+}
