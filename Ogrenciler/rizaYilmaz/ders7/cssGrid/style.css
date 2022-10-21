@@ -91,6 +91,7 @@ footer .box-5{
 @media only screen and (max-width: 768px) {
     .footer{
         display: grid;
+        
         grid-template-columns: 1fr;
         grid-template-areas:"box-1"
                             "box-2"
@@ -98,11 +99,12 @@ footer .box-5{
                             "box-4"
                             "box-5";
     }
-    footer .box-1{
+    
+    footer .box-1 p{
         padding-left: 0px;
-        
     }
     footer .box-4{
         padding-left: 0px;
     }
+    
 }
