@@ -88,9 +88,6 @@ footer .box-5{
     text-align: center;
     grid-area: box-5;
 }
-.line{
-    display: none;
-}
 @media only screen and (max-width: 768px) {
     .footer{
         display: grid;
@@ -104,9 +101,7 @@ footer .box-5{
     }
     
     footer .box-1 p{
-        
         padding-left: 0px;
-        
     }
     footer .box-4{
         padding-left: 0px;
