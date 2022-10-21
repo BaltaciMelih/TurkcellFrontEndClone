@@ -22,12 +22,42 @@ body {
     height: 150px;
     transition: background-color, border-radius 1s ease-in-out;
     /* background-color, border-radius yerine all yazsak olurdu.*/
+    /* animation-name: aa;
+  animation-duration: 1s;
+  animation-fill-mode:backwards; */
+    /* animation-iteration-count: 2; */
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 2s; */
+    /* animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out; */
+    /* animation: aa 4s forwards 0s ease-in-out; */
+}
+
+@keyframes aa {
+    25% {
+        width: 200px;
+    }
+    50% {
+        width: 100px;
+    }
+    75% {
+        width: 150px;
+    }
+    100% {
+        width: 400px;
+    }
 }
 
 .boxxx {
     background-color: green;
     width: 150px;
     height: 150px;
+    /* box-shadow: 5px 15px 30px 20px red; */
+    /* box-shadow: 0 0 10px 20px rgb(0 0 0 /0.2); */
+    /* border-radius: 50%;
+  box-shadow: 0 0 10px rgb(0 0 0 /0.2); */
+    /* box-shadow: 5px 10px 5px 7px red inset; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .boxxxx {
@@ -51,5 +81,11 @@ body {
     /* transform: translateX(-61px); */
     /* transform: translateY(-61px); */
     /* transform: translate(-100px, -100px); */
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
+    animation: rotateIn;
+    animation-duration: 2s;
+}
+
+h2 {
+    text-shadow: 2px 2px rgb(0 0 0 /0.2);
 }
