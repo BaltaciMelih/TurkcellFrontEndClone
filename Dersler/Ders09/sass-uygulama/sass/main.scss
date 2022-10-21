@@ -1,0 +1,9 @@
+$color: #ff3467;
+$color2: #3eff34;
+
+h2 {
+  color: $color;
+}
+h3:first-child {
+  color: $color2; 
+}

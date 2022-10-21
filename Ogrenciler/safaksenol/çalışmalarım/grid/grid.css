@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    text-align: center;
+    padding: 20px;
+    border:1px solid #000;
+}
+.box1{
+    background: #2ecc71;
+}
+.box2{
+    background: #3498db;
+}
+.box3{
+    background: #9b59b6;
+}
+.box4{
+    background: #e67e22;
+}
+.box5{
+    background: #e74c3c;
+}
+.box6{
+    background: #16a085;
+}
+.container{
+    display: grid;
+
+    /* grid-template-rows: 150px 250px;
+    grid-template-columns: 100px 200px 300px; */
+
+    /* yukarıdaki iki kodun toplamı */
+    /* grid-template: 150px 250px/100px 200px 300px;  */
+    /* grid-template: 150px 250px/ 100px auto 300px; */
+
+    /* fr yapısı kullanılması 2.sütun 3.sütunun 3 katı olsun  */
+    /* grid-template: 150px 250px/200px 3fr 1fr; */
+
+    /* repeat fonksiyonu ile 3 tane 200pxlik sütün yapalım */
+    /* grid-template: 150px 250px/repeat(3,200px); */
+
+    /* repeat fonsksiyonunda illaki px vermemize gerek yok istersek fr yapısınıda kullanabiliriz */
+       /* grid-template: 150px 250px/repeat(3, 1fr); */
+    
+    /*repeat fonksiyonunda minmax özelliğinin kullanımı*/
+    /* grid-template: 150px 250px/repeat(6,minmax(100px,300px));*/
+
+    grid-template: 150px 250px/200px 3fr 1fr;
+
+    /*satırlar arasında 10px sütunlar arasında 20px boşluk oluşturalım*/
+    /*grid-row-gap: 10px;
+    grid-column-gap: 20px;*/
+
+    /*yukarıdaki 2 kodu tek bir kod haline getirirsek*/
+    grid-gap: 10px 20px;
+
+    /*grid area yapısında düzenleme*/
+    grid-template-areas: "menu menu sidebar"
+                         "D E sidebar"
+                         "B footer footer";
+}
+/*BOXLARIN GRİD AREA YAPISINA ATANMASI*/
+
+.box1{
+    grid-area: menu;
+}
+.box2 {
+    grid-area: B;
+}
+.box3 {
+    grid-area: sidebar;
+}
+.box4 {
+    grid-area: D;
+}
+.box5 {
+    grid-area: E;
+}
+.box6 {
+    grid-area: footer;
+}
+
+    /* box1 i 2 ile 3.satır çizgisinin,2 ile 3.sütun çizgilerinin arasına yerleştirdik */
+    /*grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start:2;
+      grid-column-end:3;*/
+
+    /* box6 yı  1 ile 2.satır çizgisinin,1 ile 2.sütun çizgilerinin arasına yerleştirdik */
+    /* grid-row-start:1; */
+    /* grid-row-end:2; */
+    /* grid-column-start:1; */
+    /* grid-column-end:2; */
+
+    /* yukarıdaki kodları tek satırlar haline getirmek istersek */
+    /* grid-row: 1/2; */
+    /* grid-column: 1/2; */
+
+     /*Box 1, 1 ile 2 satır çizgileri ve 1 ile 3. sütun çizgilerinin arasını kaplasın*/
+       /* grid-row:1/2;
+        grid-column: 1/3;*/
+    
+    /*Box 2, 1 ile 3.satır çizgilerinin arasına 3 ile 4.sütun çizgileri arasını kaplasın*/
+    /*grid-row: 1/3;*/
+    /*grid-column: 3/4;*/
+    
+    /*yukarıdaki kodun aynı işlevini yapar 2 boşluk anlamına gelir*/
+   /* grid-row: 1/ span 2;*/ 
+    
+   /*Box2 yi Box 1 in yerine taşıyacağız*/
+
+    /* grid-row: 1/2; */
+    /* grid-column: 1/2; */
+
+    /*yukarıdaki kodları grid-area yapısında yazmak istersek*/
+    /* grid-area:satır başlangıcı/sütun başlangıcı/satır bitişi/sütun bitişi;*/
+    /* grid-area: 1/1/2/2; */
