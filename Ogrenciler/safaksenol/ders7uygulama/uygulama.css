@@ -84,8 +84,13 @@ p {
     width: 100px;
     height: auto;
 }
+.logo:hover{                          /*yeni kod eklenicek*/
+    transform: translateX(-350px);
+}
 
-
+.logo2:hover {                        /*yeni kod eklenicek*/
+    transform: translateX(-350px);
+}
 
 .header .navbar  {
     font-size: 2rem;
@@ -161,6 +166,81 @@ p {
 
 
 /* news */
+
+/*safak animasyon 1*/
+.g-container {
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(105, 94, 94);
+    font-size: 4em;
+    filter: contrast(10);
+}
+
+.word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: switch 10s infinite ease-in-out;
+    min-width: 100%;
+    margin-top: 27rem;
+    margin-left:7rem;
+}
+
+.word:nth-child(1) {
+    animation-delay: -7s;
+}
+
+.word:nth-child(2) {
+    animation-delay: -6s;
+}
+
+.word:nth-child(3) {
+    animation-delay: -5s;
+}
+
+@keyframes switch {
+
+    0%,
+    5%,
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    50%,
+    80% {
+        filter: blur(180px);
+        opacity: 0;
+    }
+}
+       /*bitiş*/
+
+/*safak animasyon 2*/
+
+.animation {
+    position: relative;
+    animation: animation 10s ease-out;
+}
+
+#slide-in {
+    text-align: center;
+    color:black;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+        left: -500px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+      /*bitiş*/
+
 .news {
     grid-area: news;
 }
