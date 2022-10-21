@@ -1,0 +1,492 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+.nav-checkbox {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 2px 0px;
+}
+
+.logo {
+  text-decoration: none;
+  padding-left: 10px;
+  width: 70px;
+  height: 50px;
+}
+
+.tab-nav {
+  outline: none;
+  display: none;
+}
+
+.label {
+  display: none;
+  color: orangered;
+}
+
+.burger {
+  width: 35px;
+  height: 5px;
+  background-color: orangered;
+  margin-top: 5px;
+}
+
+.content-nav {
+  grid-column: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.nav-icons {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+ion-icon {
+  color: #646464;
+  font-size: 24px;
+}
+
+ion-icon:hover {
+  color: orangered;
+}
+
+.content-nav li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.content-nav li a {
+  text-decoration: none;
+  color: #646464;
+  position: relative;
+}
+
+.content-nav li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #646464;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform-origin: left;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 0.5s;
+}
+
+.content-nav li a:hover::after {
+  transform: scale(1, 1);
+}
+
+.content-nav li:first-child {
+  padding: 10px;
+  border: 1px solid orangered;
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+.content-nav li:first-child a {
+  color: white !important;
+}
+
+.content-nav li a .fw-bold {
+  font-weight: bold;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    display: grid;
+    cursor: pointer;
+    grid-column: 3;
+    padding-right: 10px;
+  }
+
+  .content-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/4;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.6s;
+  }
+
+  .nav-checkbox input:checked ~ .content-nav {
+    max-height: 500px;
+  }
+
+  .content-nav li {
+    padding: 15px 0px;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+}
+
+
+/*   */
+
+
+.invitation-banner{
+  background: url("https://www.britishrowing.org/wp-content/uploads/2018/05/Website-Mens-8-WRC1.jpg") center; */
+   width: 100%;
+  height: 480px;
+  box-shadow: inset 0 0 0 200rem rgba(0, 0, 0, 0.5); */
+}
+
+.invitation-container{
+  display: flex;
+  height: 480px; 
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: inset 0 0 0 200rem rgba(0, 0, 0, 0.5);
+}
+
+.invitation-container-item{
+  padding-bottom: 10px;
+}
+
+.invitation-container-item h3 {
+  font-size: 36px;
+  color: white;
+}
+
+.invitation-container-item p {
+  color: #8492a6;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.invitation-container-item a {
+  padding: 8px 25px;
+  border-radius: 6px;
+  background-color: #ff5714;
+  border: 1px solid #ff5714;
+  color: #fff;
+  text-decoration: none;
+  display: block; 
+} 
+
+/* ERCAN YEŞİL */
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.project-container{
+  display: grid;
+  height: 100vh;
+  /* grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 80px 1fr 80px; */
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-areas: 
+  "header header header"
+  "nav nav nav"                                              
+  "main main aside"
+  "main main aside"
+  "footer footer footer"
+}
+
+/* header, footer, aside, nav{
+  background-color: brown; 
+  color: black;
+  padding: 15px;
+  border: 1px sandybrown solid;
+} */
+
+header{
+  grid-area: header;
+}
+
+nav{
+  grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+  grid-area: aside;
+}
+
+footer{
+  grid-area: footer;
+}
+
+.main-header{
+  padding-left: auto;
+  text-align: center;
+}
+
+.news-container{
+    display: grid;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: auto;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    background: white;
+    text-align: center; 
+    font-family: Arial;
+    grid-template-columns: repeat(3,260px);
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.section-card1{
+  width: auto;
+}
+
+.article-container {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+}
+
+.figure-img {
+  display: inline-block;
+  height: 230px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.figure-img img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -35px 0px 0px -70px;
+}
+
+.inner-skew {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0px;
+  transform: skew(0deg, 13deg);
+  font-size: 0px;
+  margin: 30px 0px 0px 0px;
+  background: #c8c2c2;
+  height: 250px;
+  width: 200px;
+}
+
+.figure-text {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.figure-text h3 {
+  margin: 20px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
+}
+
+.aside-header{
+    display: flex;  
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 140px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aside-header-item{
+  padding-bottom: 10px; 
+}
+
+.aside-header-item h3{
+  color: #ff5714;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
+.aside-header-item p{
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none solid rgb(132, 146, 166);
+  text-align: center;
+  max-width: 600px;
+  color: #8492a6;
+  margin: auto;
+}
+
+.aside-content{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px){
+  .project-container{
+    grid-template-areas: 
+    "header"
+    "nav"                                              
+    "main"
+    "aside"
+    "footer"
+  }
+} 
+
+@media (max-width:817px){
+  .news-container{
+      grid-template-columns: repeat(2,1fr);
+      margin: auto;
+      grid-auto-columns: auto;
+  }
+} 
+@media (max-width:692px){
+  .news-container{
+      grid-template-columns: repeat(1,1fr);
+      margin: auto;
+      grid-auto-columns: auto;
+  }
+} 
+
+
+
+/* RIZA */
+
+.footer{
+  background-color:rgb(139, 137, 137);
+  padding: 1% 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:"box-1 box-2 box-3 box-4"
+                      "box-5 box-5 box-5 box-5";
+}
+.text-color{
+  color: white;
+}
+footer .box-1 img{
+  height: 150px;
+  width: 200px;
+}
+footer .box-1 p{
+  padding-left: 25px;
+}
+footer .box-2 h3{
+  padding-left: 5px;
+}
+footer .box-2 input{
+  width: 80%;
+  line-height: 25px;
+}
+footer .box-2 button{
+  margin-top: 10px;
+  line-height: 25px;
+  background-color: #f37022;
+  border: 0px;
+  width: 83%;
+  cursor: pointer;
+}
+footer .box-3 ul{
+  list-style: none;
+  padding-left: 0px;
+}
+footer .box-3 li:hover{
+  color: #f37022 ;
+}
+footer .box-3 h3{
+  padding-left: 5px;
+}
+footer .box-3 a{
+  color: inherit;
+  text-decoration: none;
+}
+footer .box-4 h3{
+  padding-left: 15px;
+}
+footer .box-4 ul{
+  list-style: none;
+  padding-left: 5px;
+}
+footer .box-4 li{
+  display: inline-block;
+}
+footer .box-4 li:hover{
+  border-radius: 5px;
+  color:#f37022 ;
+}
+footer .box-4 a{
+  color: inherit;
+}
+footer hr{
+  border: 0;
+  border-bottom: 1px dotted black;
+}
+
+footer .box-1{
+  grid-area: box-1;
+}
+footer .box-2{
+  grid-area: box-2;
+}
+footer .box-3{
+  grid-area: box-3;
+}
+footer .box-4{
+  grid-area: box-4;
+  padding-left: 30px;
+}
+footer .box-5{
+  background-color: rgba(0, 0, 0, 0.349);
+  text-align: center;
+  grid-area: box-5;
+}
+@media only screen and (max-width: 768px) {
+  .footer{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:"box-1"
+                          "box-2"
+                          "box-3"
+                          "box-4"
+                          "box-5";
+  }
+  footer .box-1{
+      padding-left: 0px;
+      
+  }
+  footer .box-4{
+      padding-left: 0px;
+  }
+}
+

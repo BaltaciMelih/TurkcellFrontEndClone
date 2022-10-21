@@ -4,11 +4,10 @@
     background-color: rgb(224, 224, 224);
     gap: 5px;
     grid-template-areas: "header header header"
-        "sidebar content content"
-        "sidebar . ."
-        "box1 box1 box1"
-        "footer footer footer"
-    ;
+                         "sidebar content content"
+                         "sidebar . ."
+                         "box1 box1 box1"
+                         "footer footer footer" ;
 }
 
 .header {
