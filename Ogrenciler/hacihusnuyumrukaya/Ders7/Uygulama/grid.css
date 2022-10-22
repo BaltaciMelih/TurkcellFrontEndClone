@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+  /*npm run sass*/
   
   .navigation {
     display: flex;
