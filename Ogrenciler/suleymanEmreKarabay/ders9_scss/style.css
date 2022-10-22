@@ -1,0 +1,19 @@
+body{
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    transition: all 1s ease-in-out;
+}
+
+.box:hover{
+    background-color: aqua;
+    border-radius: 50%;
+}
