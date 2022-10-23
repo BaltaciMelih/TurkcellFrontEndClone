@@ -136,4 +136,71 @@ body {
   }
 }
 
+// Accordion Part
+
+.accordion {
+  width: 100%;
+  // height: 100vh;
+  margin: 10rem auto;
+
+  &-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &-card {
+    width: 100%;
+    padding: 2rem 15rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 2.4rem;
+    background-color: #fefefe;
+    // border: 1px solid red;
+    box-shadow: 1px 1px 5px 5px rgb(228, 227, 227);
+  }
+
+  &-bottom {
+    grid-column: 2;
+
+    .hidden-box {
+      display: none;
+    }
+  }
+
+  &-icons {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  &-order {
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+}
+
+.open {
+  color: teal;
+}
+
+.open .hidden-box {
+  display: block;
+  color: black;
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Story Part */
