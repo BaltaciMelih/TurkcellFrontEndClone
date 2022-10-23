@@ -50,8 +50,9 @@
 .header-erdem .click-erdem a:hover {
   background-color: rgb(201, 92, 52);
   border-bottom: 1px solid rgb(219, 87, 39);
-  border-radius: 10px;
+  border-radius: 25%;
   color: white;
+  transition-duration: 1s;
 }
 .header-erdem .icons-erdem {
   display: flex;
@@ -96,6 +97,14 @@
   color: white;
   border: none;
   font-size: 20px;
+  animation-timing-function: ease-in-out;
+  transition-duration: 1s;
+}
+
+.home-erdem .button2:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px 4px rgb(39, 39, 39);
 }
 
 .home-erdem .baslık {
@@ -130,6 +139,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-top: 20px;
 }
 
 .item {
@@ -140,12 +150,20 @@ a {
   box-sizing: border-box;
 }
 
+.item:hover {
+  box-shadow: 5px 5px 5px 5px rgb(39, 39, 39);
+  transform: scale(1.1);
+}
+
 .item img {
   width: 100%;
   height: 250px;
   margin-bottom: 10px;
 }
 
+.item img:hover {
+  opacity: 0.7;
+}
 
 .item h4 {
   padding-left: 10px;
@@ -192,8 +210,7 @@ a {
   display: grid;
   height: 350px;
   grid-template-rows: 50% 50%;
-    font-size: 24px;
-
+  font-size: 24px;
 }
 
 .col2 {
@@ -201,7 +218,6 @@ a {
   grid-template-rows: 20% 45% 10% 10%;
   gap: 10px;
   font-size: 24px;
-
 }
 
 .col3 {
@@ -210,14 +226,14 @@ a {
   gap: 15px;
 }
 
-.col3 a{
-    color: white;
-    font-size: 24px;
+.col3 a {
+  color: white;
+  font-size: 24px;
 }
 
-.col4 a{
-    color: white;
-    font-size: 30px;
+.col4 a {
+  color: white;
+  font-size: 30px;
 }
 
 .footer {
@@ -242,6 +258,11 @@ a {
   border-bottom: 1px solid rgb(105, 105, 105);
 }
 
+a:hover {
+  color: rgb(255, 102, 0);
+  transition-duration: 1s;
+  transform: scale(1.15);
+}
 .btn {
   background-color: rgb(255, 102, 0);
   border: none;
@@ -255,7 +276,7 @@ a {
   .main {
     width: 100%;
   }
-  .item{
+  .item {
     width: 100%;
     height: 400px;
   }
@@ -266,8 +287,7 @@ a {
     align-items: center;
   }
 
- 
-  .row2{
+  .row2 {
     height: auto;
   }
   .col1 {
@@ -291,14 +311,14 @@ a {
   .col4 a {
     font-size: 34px;
   }
-.home-erdem{
-  margin-top: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: auto;
-  background-size: cover;
-  background-position: center;
-}
+  .home-erdem {
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
 
   .header-erdem {
     display: flex;
@@ -308,7 +328,7 @@ a {
   }
   .home-erdem .text {
     font-size: 20px;
-    inline-size: 350px;
+    inline-size: 50%;
     overflow-wrap: break-word;
   }
   .header-erdem .icons-erdem {

@@ -1,0 +1,15 @@
+{
+  "name": "ders_01-uygulama-gelistirme",
+  "version": "1.0.0",
+  "description": "[Mime-Types](http://www.phpservisi.com/mime-type-tur-nedir/)\r [text/css](https://stackoverflow.com/questions/5409114/is-type-text-css-necessary-in-a-link-tag#:~:text=It's%20not%20required%2C%20no.)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "keywords": [],
+  "author": "Halil Enes",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
