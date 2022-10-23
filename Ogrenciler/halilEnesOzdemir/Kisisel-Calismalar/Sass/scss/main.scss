@@ -33,8 +33,21 @@ header {
   }
 
   &-b {
-    background-color: $bg-dark;
-    color: $text-light;
+    // background-color: $bg-dark;
+    // color: $text-light;
+    @include bg-dark;
+  }
+
+  &-c {
+    h1 {
+      color: $text-dark;
+    }
+    p {
+      color: red;
+    }
+    a:visited {
+      color: blue;
+    }
   }
 }
 
@@ -50,20 +63,20 @@ header {
   border: 1px solid #fff;
 }
 
-%btn-shared {
-  display: inline-block;
-  width: 200px;
-  text-align: center;
-  margin: 20px;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 1px solid #fff;
-}
+// %btn-shared {
+//   display: inline-block;
+//   width: 200px;
+//   text-align: center;
+//   margin: 20px;
+//   color: #fff;
+//   text-decoration: none;
+//   padding: 10px 20px;
+//   border: 1px solid #fff;
+// }
 
 .btn {
   &-light {
-    @extend %btn-shared;
+    @extend .btn;
     position: relative;
     background-color: #000;
     color: #fff;
@@ -79,7 +92,7 @@ header {
     animation-duration: 2s;
   }
   &-dark {
-    @extend %btn-shared;
+    @extend .btn;
     background-color: $bg-dark;
     color: $text-light;
   }
