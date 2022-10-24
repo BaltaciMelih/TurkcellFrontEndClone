@@ -1,0 +1,128 @@
+$bg-color:#7a7c9d;
+$container-color: #ccc;
+$btn-color: #FF6F0F;
+$font-color:#fff;
+
+@mixin d-flex($just, $align ) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    
+}
+
+@mixin btn {
+    padding: 1rem 2rem;
+    border: 1px solid $btn-color;
+    border-radius: 1rem;
+    background-color: $btn-color;
+    color: $font-color;
+    &:hover{
+        background-color: transparent;
+        color: $btn-color;
+    }
+}
+
+@mixin btn-2 {
+    padding: 1rem 2rem;
+    border: 1px solid $btn-color;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: $btn-color;
+    &:hover{
+        background-color: $btn-color;
+        color: $font-color;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.4s;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 10px;
+}
+
+i{
+    font-size: 2.5rem;
+}
+a{
+    color: $font-color;
+}
+
+span{
+    font-size: 1.8rem;
+}
+
+.header {
+    background-color: $bg-color;
+    .container{
+        margin: 0 7%;
+        background-color: $container-color;
+        .header-top{
+           @include d-flex(space-between, center ) ;
+
+           .h-t-left{
+            @include d-flex(flex-start, center ) ;
+            gap: 2rem;
+           }
+
+           .h-t-right{
+            @include d-flex(flex-end, center ) ;
+            gap: 1rem;
+
+            .icons{
+                display: flex;
+                gap: 1rem;
+            }
+           }
+        }
+
+        .header-bottom{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas: "logo navbar btn";
+            align-items: center;
+
+
+            .logo{
+                grid-area: logo;
+                h2{
+                    font-size: 3rem;
+                    color: $font-color;
+                }
+               
+
+                .h2{
+                    color: $btn-color;
+                    font-size: 3rem;
+                }
+            }
+
+            .navbar{
+                grid-area: navbar;
+                ul{
+                @include d-flex(flex-end, center )
+            }
+            }
+
+            .btn{
+                grid-area: btn;
+                @include btn-2();
+                text-align: center;
+
+                i{
+                    font-size: 1.8rem;
+                    align-items: center;
+                }
+
+                
+            }
+        }
+    }
+}

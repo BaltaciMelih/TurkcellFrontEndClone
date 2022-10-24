@@ -1,0 +1,51 @@
+* {
+  list-style: none;
+  text-decoration: none; }
+
+button {
+  background-color: #ff844b;
+  width: 120px;
+  border: none;
+  border-radius: 4px; }
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: aqua; }
+  .container .img-container {
+    height: 800px;
+    background-size: cover;
+    background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat; }
+    .container .img-container .top-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 75px;
+      background-color: #fff;
+      opacity: 0.7;
+      padding-right: 40px;
+      padding-left: 40px; }
+      .container .img-container .top-bar .adress {
+        display: flex;
+        gap: 12px;
+        align-items: center; }
+      .container .img-container .top-bar .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 7px; }
+  .container .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px; }
+    .container .navbar .navbar-items {
+      display: flex;
+      gap: 8px; }
+      .container .navbar .navbar-items ul {
+        gap: 8px;
+        display: flex; }
+        .container .navbar .navbar-items ul li a {
+          color: #fff; }
