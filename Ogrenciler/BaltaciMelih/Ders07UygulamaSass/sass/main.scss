@@ -3,6 +3,8 @@ $bgcolorO: #e76f51;
 $bgcolorG: #2a9d8f;
 $bgcolorA: #6c757d;
 $bgcolorBody: rgb(226, 226, 226);
+$bgShadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 @mixin gridM() {
     display: grid;
@@ -49,7 +51,7 @@ body {
 }
 .navList {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     @extend .align-self;
     font-weight: bold;
 }
@@ -69,14 +71,20 @@ body {
     padding: 7px;
     border-radius: 5px;
     color: $bgcolorW;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        box-shadow: $bgShadow
+    }
+    
 }
 .navLink2{
+    transition: all 0.5s ease-in-out;
+    padding: 7px;
+    border-radius: 5px;
     &:hover {
             background-color: $bgcolorG;
             color: $bgcolorW;
-            padding: 7px;
-            border-radius: 5px;
+            box-shadow: $bgShadow
         }
 }
 .fa-brands {
