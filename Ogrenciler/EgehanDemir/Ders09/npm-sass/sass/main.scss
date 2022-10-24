@@ -1,4 +1,4 @@
-$bgColor: yellow;
+$bgColor: red;
 
 .container {
   display: flex;
@@ -10,7 +10,6 @@ $bgColor: yellow;
 @mixin deneme($ali) {
   background-color: $ali;
   margin: 10px;
-
 }
 
 .box1 {
@@ -25,6 +24,5 @@ $bgColor: yellow;
 }
 .box3 {
   @extend .box1;
-  
 }
 
