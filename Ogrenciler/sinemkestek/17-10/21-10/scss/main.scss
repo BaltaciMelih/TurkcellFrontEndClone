@@ -1,0 +1,13 @@
+$color: rgb(160, 0, 27);
+$font-size: 80px;
+
+h2 {
+  background-color: $color;
+  font-size: $font-size;
+}
+
+h3 {
+  background-color: $color;
+  color: bisque;
+  font-weight: 900;
+}
