@@ -35,7 +35,18 @@ $container-margin: 0 7% ;
     background-color: $btn-color;
     color: $font-color;
   }
+
+  i {
+    // dönülecek !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    border-radius: 50%;
+    padding: 1rem;
+    
+  }
+
+  
 }
+
+
 
 * {
   margin: 0;
@@ -62,22 +73,41 @@ a {
 span {
   font-size: 1.8rem;
 }
+
+.s-h2{
+    font-size: 4rem;
+    margin-bottom: 4.8rem;
+}
+h4{
+    font-size: 1.6rem;
+    color: $btn-color;
+    padding: 0.4rem 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
 body {
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas: "header header header"
   "home home home"
+  "about about about"
   ;
 
   .header {
-    background-color: $bg-color;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+
+    background-color: rgba(0, 29, 35, .8);
     grid-area: header;
     .container {
-      margin: 0 7%;
-      background-color: $container-color;
+      
       .header-top {
         @include d-flex(space-between, center);
+        padding: 1rem 7%;
+        border-bottom: 2px solid #3f3f3f;
 
         .h-t-left {
           @include d-flex(flex-start, center);
@@ -100,7 +130,7 @@ body {
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-areas: "logo navbar btn";
         align-items: center;
-        padding: 2rem 0;
+        padding: 2rem 7%;
 
         .logo {
           grid-area: logo;
@@ -132,15 +162,139 @@ body {
           grid-area: btn;
           @include btn-2();
           text-align: center;
+          font-size: 1.6rem;
           width: 75%;
-            margin: 0 auto;
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 0 0 0 auto;
 
           i {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             align-items: center;
           }
         }
       }
     }
   }
+
+  .home{
+    background-image: url(../image/carousel-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    grid-area: home;
+    margin-bottom: 3rem;
+    .homebg{
+        background-color: #001D23 !important;
+        height: 100vh;
+        opacity: 0.75;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: ". c-home .";
+
+        .container-home{
+           grid-area: c-home;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           gap: 2rem;
+
+            .h1{
+                color: $font-color;
+                font-size: 5.6rem;
+                
+                
+            }
+            .p{
+                color: #ccc;
+                font-size: 2rem;
+                
+            }
+            .btn{
+                @include btn();
+                font-size: 1.8rem;
+                opacity: 1;
+
+                i {
+                    font-size: 1.8rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+  }
+
+  .about{
+    grid-area: about;
+    margin: 3rem 0;
+
+    .container-about{
+        @include d-flex(center, center );
+        gap: 2rem;
+        padding: 0 7%;
+        .about-left {
+            width: 50%;
+             position: relative;
+            padding: 5rem 2.4rem;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .img-top{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: 1rem solid #fff;
+                left: 75%;
+                top: 0;
+            }
+        }
+
+        .about-right {
+            width: 50%;
+            padding: 0 2.4rem;
+
+            .p-24{
+                padding: 2.4rem;
+                font-size: 1.6rem;
+
+                p{
+                    margin-bottom: 0.8rem;
+                    
+                }
+                span {
+                    color: $btn-color;
+                }
+
+            }
+
+            .a-buttons{
+                display: flex;
+                gap: 2rem;
+                .btn{
+                    @include btn();
+                    font-size: 1.6rem;
+
+                    i{
+                        font-size: 1.6rem;
+                        margin-left: 1rem;
+                    }
+                }
+
+                .btn-2{
+                    @include btn-2();
+                    font-size: 1.6rem;
+                    i{
+                        font-size: 1.6rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
 }
