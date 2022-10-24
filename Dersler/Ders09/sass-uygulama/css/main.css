@@ -2,13 +2,24 @@
   display: flex; }
   .container .box1, .container .box2, .container .box3 {
     padding: 30px; }
+  .container .deneme {
+    padding: 70px; }
+
+div.deneme {
+  margin: 25px; }
 
 .box1, .box2, .box3 {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  margin: 10px; }
+  background-color: red;
+  margin: 10px;
+  width: 150px;
+  height: 100px; }
 
-.box2 {
+.box2, .box3 {
   width: 200px;
   background-color: red; }
+
+.box4 {
+  background-color: blue;
+  margin: 10px;
+  width: 200px;
+  height: 150px; }
