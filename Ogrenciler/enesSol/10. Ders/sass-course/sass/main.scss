@@ -1,0 +1,34 @@
+$bgColor: red;
+$px100: 100px;
+
+.container {
+  display: flex;
+  .box1 {
+    padding: 30px;
+  }
+}
+
+@mixin deneme($ali, $w, $h) {
+  background-color: $ali;
+  margin: 10px;
+  width: $w;
+  height: $h;
+}
+
+.box1 {
+  @include deneme(green, 154px, 167px);
+}
+
+.box2 {
+  @extend .box1;
+  width: $px100 * 2;
+  background-color: $bgColor;
+}
+
+.box3 {
+  @extend .box1;
+}
+
+.box4 {
+  @include deneme(blue, 48px, 90px);
+}
