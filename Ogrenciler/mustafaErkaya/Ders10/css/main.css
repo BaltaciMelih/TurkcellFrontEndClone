@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.4s;
+  list-style: none;
+  text-transform: capitalize; }
+
+html {
+  font-size: 10px; }
+
+i {
+  font-size: 2.5rem; }
+
+a {
+  color: #fff; }
+
+span {
+  font-size: 1.8rem; }
+
+.header {
+  background-color: #7a7c9d; }
+  .header .container {
+    margin: 0 7%;
+    background-color: #ccc; }
+    .header .container .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .header .container .header-top .h-t-left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem; }
+      .header .container .header-top .h-t-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem; }
+        .header .container .header-top .h-t-right .icons {
+          display: flex;
+          gap: 1rem; }
+    .header .container .header-bottom {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas: "logo navbar btn";
+      align-items: center; }
+      .header .container .header-bottom .logo {
+        grid-area: logo; }
+        .header .container .header-bottom .logo h2 {
+          font-size: 3rem;
+          color: #fff; }
+        .header .container .header-bottom .logo .h2 {
+          color: #FF6F0F;
+          font-size: 3rem; }
+      .header .container .header-bottom .navbar {
+        grid-area: navbar; }
+        .header .container .header-bottom .navbar ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+      .header .container .header-bottom .btn {
+        grid-area: btn;
+        padding: 1rem 2rem;
+        border: 1px solid #FF6F0F;
+        border-radius: 1rem;
+        background-color: transparent;
+        color: #FF6F0F;
+        text-align: center; }
+        .header .container .header-bottom .btn:hover {
+          background-color: #FF6F0F;
+          color: #fff; }
+        .header .container .header-bottom .btn i {
+          font-size: 1.8rem;
+          align-items: center; }
