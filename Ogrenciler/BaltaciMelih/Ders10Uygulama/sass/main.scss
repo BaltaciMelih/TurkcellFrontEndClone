@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin FlexBox {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+@mixin GridBox {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.navBar{
+    @include GridBox();
+    grid-template-rows: repeat(2,1fr);
+    justify-content: unset;
+}
+.topBar{
+    @include GridBox();
+    grid-template-columns: repeat(2,1fr);
+}
+.columnLeft{
+    @include GridBox();
+    grid-template-columns: repeat(2,1fr)
+}

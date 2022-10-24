@@ -1,13 +1,61 @@
 $width: 100%;
-
-@mixin fonksiyon1($flex, $width, $height, $backgroundColor) {
+*{
+    margin: 0;
+    padding: 0;
+}
+@mixin fonksiyon1($flex, $width, $height, $backgroundColor, $color) {
     display: $flex;
     width: $width;
     height: $height;
     background-color: $backgroundColor;
+    color: $color;
   }
-
-  .navbar{
-    @include(fonksiyon1(flex, 100%, 100%, none));
+  .section{
     background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
   }
+  
+  .navbar{
+    @include fonksiyon1(flex, 100%, 100%, none, white);
+    justify-content: space-between;
+    align-items: center;
+    p {
+        padding-left: 50px; 
+        
+    }
+    .ul-navbar{
+
+        @include fonksiyon1(flex, none, none, none, white);
+        list-style: none;
+        gap: 20px;
+        padding-right: 50px;
+        &button{
+            background-color: red;
+            color: aqua;
+        }
+    } 
+  }
+  
+  .article{
+    @include fonksiyon1(flex, 100%, 100%, none, white);
+    // padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &-h1{
+        padding-top: 300px;
+        width: 550px;
+        text-align: center;
+    }
+    &-p{  
+       @extend .article-h1; 
+       padding-top: 25px;
+       padding-bottom: 25px;
+    }
+    &-button{
+        background-color: red;
+        color: aqua;   
+    }
+  }
+
+
+ 
