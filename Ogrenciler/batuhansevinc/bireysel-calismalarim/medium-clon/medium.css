@@ -15,8 +15,14 @@ padding-right: 100px !important;
 .p-t-b-100{
     padding: 100px !important;
 }
+.font-size-12{
+    font-size: 12px;
+}
+.font-size-14{
+    font-size: 14px;
+}
 .font-size-16{
-    font-size: 16px;
+    font-size: 16px !important;
 }
 .font-size-24{
     font-size: 24px;
@@ -58,4 +64,17 @@ width: 550px;
     font-weight: 700;
     color: gray;
     opacity: 0.2;
+}
+.display-flex{
+    display: flex;
+}
+.weight400{
+    font-weight: 700 !important;
+}
+.button-w-h{
+    width: auto;
+    height: auto;
+}
+.text-align-center{
+    text-align: center;
 }
