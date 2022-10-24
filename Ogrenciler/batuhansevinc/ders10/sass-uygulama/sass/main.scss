@@ -1,0 +1,33 @@
+$width: 100%;
+
+@mixin fonksiyon1($flex, $width, $height, $backgroundColor, $color) {
+    display: $flex;
+    width: $width;
+    height: $height;
+    background-color: $backgroundColor;
+    color: $color;
+  }
+
+  .navbar{
+    @include fonksiyon1(flex, 100%, 100%, none, white);
+    background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+    justify-content: space-between;
+    align-items: center;
+    p {
+        padding-left: 50px; 
+        color: $color;
+    }
+    .ul-navbar{
+
+        @include fonksiyon1(flex, none, none, none, white);
+        list-style: none;
+        gap: 20px;
+        color: $color;
+        padding-right: 50px;
+        & .ul-navbar-button{
+            background-color: red;
+            color: aqua;
+        }
+    } 
+  }
+ 
