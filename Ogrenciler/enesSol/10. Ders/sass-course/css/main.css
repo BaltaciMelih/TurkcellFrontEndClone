@@ -1,20 +1,54 @@
-.container {
-  display: flex; }
-  .container .box1, .container .box2, .container .box3 {
-    padding: 30px; }
+* {
+  margin: 0;
+  padding: 0; }
 
-.box1, .box2, .box3 {
-  background-color: green;
-  margin: 10px;
-  width: 154px;
-  height: 167px; }
+.list-none {
+  list-style: none;
+  gap: 10px;
+  font-size: 24px; }
 
-.box2 {
-  width: 200px;
-  background-color: red; }
+a {
+  text-decoration: none;
+  color: white; }
 
-.box4 {
-  background-color: blue;
-  margin: 10px;
-  width: 48px;
-  height: 90px; }
+a:hover {
+  color: orangered; }
+
+.container-1 {
+  box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8);
+  background-color: gray;
+  background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+  height: 1080px;
+  justify-content: space-between; }
+  .container-1 button {
+    width: 225px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    color: orangered;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 24px;
+    border: 2px orangered solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .container-1 button ion-icon {
+      font-size: 38px;
+      color: white; }
+  .container-1 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-items: center; }
+  .container-1 .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 1000px;
+    position: fixed;
+    z-index: 1; }

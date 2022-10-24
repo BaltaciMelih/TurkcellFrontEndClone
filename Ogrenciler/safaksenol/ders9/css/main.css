@@ -1,12 +1,10 @@
 .container {
-  display: flex;
+  display: flex; 
 }
 
-.box1,
-.box2,
-.box3 {
+.box1, .box2, .box3 {
   width: 100px;
   height: 100px;
   background-color: green;
-  margin: 10px;
+  margin: 10px; 
 }

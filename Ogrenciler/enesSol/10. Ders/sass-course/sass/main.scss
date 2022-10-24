@@ -1,34 +1,121 @@
-$bgColor: red;
-$px100: 100px;
+// $bgColor: red;
+// $px100: 100px;
 
-.container {
+// .container {
+//   display: flex;
+//   .box1 {
+//     padding: 30px;
+//   }
+// }
+
+// @mixin deneme($ali, $w, $h) {
+//   background-color: $ali;
+//   margin: 10px;
+//   width: $w;
+//   height: $h;
+// }
+
+// .box1 {
+//   @include deneme(green, 154px, 167px);
+// }
+
+// .box2 {
+//   @extend .box1;
+//   width: $px100 * 2;
+//   background-color: $bgColor;
+// }
+
+// .box3 {
+//   @extend .box1;
+// }
+
+// .box4 {
+//   @include deneme(blue, 48px, 90px);
+// }
+
+// UYGULAMA
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// body {
+//   margin: 0;
+//   padding: 0;
+// }
+
+@mixin bg($bc) {
+  background-color: $bc;
+}
+
+@mixin display-flex($fd, $jc, $ai) {
   display: flex;
-  .box1 {
-    padding: 30px;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+  // gap: $gap;
+}
+
+@mixin buttons($buttonColor, $buttonBgColor, $gap, $border) {
+  // height: 40px;
+  width: 225px;
+  padding: 12px;
+  background-color: $buttonBgColor;
+  color: $buttonColor;
+  border-radius: 10px;
+  gap: $gap;
+  font-size: 24px;
+  border: $border;
+}
+
+.list-none {
+  list-style: none;
+  gap: 10px;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: orangered;
+}
+
+// .nav-li {
+//   font-size: 24px;
+// }
+
+.container-1 {
+  box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8);
+  @include bg(gray);
+  background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+  height: 1080px;
+  justify-content: space-between;
+  & button {
+    @include buttons(
+      orangered,
+      rgba(255, 255, 255, 0),
+      10px,
+      2px orangered solid
+    );
+    @include display-flex(row, center, center);
+    ion-icon {
+      font-size: 38px;
+      color: white;
+    }
   }
-}
-
-@mixin deneme($ali, $w, $h) {
-  background-color: $ali;
-  margin: 10px;
-  width: $w;
-  height: $h;
-}
-
-.box1 {
-  @include deneme(green, 154px, 167px);
-}
-
-.box2 {
-  @extend .box1;
-  width: $px100 * 2;
-  background-color: $bgColor;
-}
-
-.box3 {
-  @extend .box1;
-}
-
-.box4 {
-  @include deneme(blue, 48px, 90px);
+  & ul {
+    @include display-flex(row, center, center);
+    color: white;
+    align-items: center;
+  }
+  & .nav {
+    @include display-flex(row, center, center);
+    padding: 30px;
+    gap: 1000px;
+    position: fixed;
+    z-index: 1;
+  }
 }
