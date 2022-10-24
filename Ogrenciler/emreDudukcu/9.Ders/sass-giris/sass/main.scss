@@ -1,0 +1,28 @@
+$bgColor: rgb(27, 204, 204);
+.container {
+    display: flex;
+    .box1 {
+        padding: 30px;
+    }
+}
+
+@mixin deneme($ali) {
+    background-color: $ali;
+    margin: 10px;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    @include deneme(rgb(110, 10, 102));
+}
+
+.box2 {
+    @extend .box1;
+    width: 200px;
+    background-color: $bgColor;
+}
+
+.box3 {
+    @extend .box1;
+}

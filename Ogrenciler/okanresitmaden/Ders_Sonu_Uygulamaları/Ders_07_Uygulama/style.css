@@ -279,8 +279,7 @@ body{
     flex-direction: row;
    }
    .media{
-        width: 0;
-        height: 0;
+        display: none;
    }
    
  }
