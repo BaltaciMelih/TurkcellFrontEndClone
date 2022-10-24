@@ -4,9 +4,10 @@
 
 button {
   background-color: #ff844b;
-  width: 120px;
+  width: 6rem;
   border: none;
-  border-radius: 4px; }
+  height: 3rem;
+  border-radius: 8%; }
 
 .container {
   width: 100%;
@@ -46,6 +47,15 @@ button {
       gap: 8px; }
       .container .navbar .navbar-items ul {
         gap: 8px;
-        display: flex; }
-        .container .navbar .navbar-items ul li a {
-          color: #fff; }
+        display: flex;
+        align-items: center; }
+        .container .navbar .navbar-items ul li {
+          border-radius: 5%;
+          padding: 6px;
+          height: 2rem;
+          padding-right: 18px;
+          padding-left: 18px; }
+          .container .navbar .navbar-items ul li:hover {
+            background-color: #ff7b00; }
+            .container .navbar .navbar-items ul li:hover a {
+              color: #ffe2e2; }
