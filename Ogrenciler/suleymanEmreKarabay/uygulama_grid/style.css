@@ -183,7 +183,7 @@ ul{
         justify-content: space-evenly;
     }
     .socialMedia ul{
-        visibility: hidden;
+        display: none;
     }
     .headerText{
         padding-left: 30px;  
@@ -193,6 +193,7 @@ ul{
         display: grid;
         grid-template-rows: repeat(2,auto); 
         background-color: aliceblue;
+        padding: 0 0;
     }
     
     .news {
@@ -208,22 +209,26 @@ ul{
     .newsBlok{
         padding: 10px;
         background-color: white;
-        width: 350px;
+        width: 200px;
+
     } 
+    .newsBlok img{
+        width: 200px;
+    }
     .footer{
         background-color: grey;
         color: white;
         display: grid;
         grid-template-rows: repeat(2,auto);
         padding-left: 150px;
-        padding-right: 280px;
+        padding-right: 250px;
         padding-top: 15px;
         text-align: center;
     }
     .footerTop{
         display: grid;
         grid-template-columns: repeat(1,auto);
-        justify-content: space-between;
+        justify-content: center;
         
     }
 }

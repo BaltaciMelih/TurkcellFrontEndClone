@@ -1,0 +1,40 @@
+$color :red;
+
+h2
+{
+  color:$color;
+}
+
+
+.container
+{
+  display:flex;
+}
+
+@mixin deneme($color)
+{
+  background-color:$color;
+  margin: 10px;
+}
+@mixin deneme2($font)
+{
+  font-size:$font;
+  margin: 10px;
+}
+
+.box1
+{
+  width:100px;
+  height:100px;
+  @include deneme(green);
+  @include deneme2(24px);
+}
+.box2
+{
+  @extend .box1;
+  font-size: 20px;
+}
+.box3
+{
+   @extend .box1
+}

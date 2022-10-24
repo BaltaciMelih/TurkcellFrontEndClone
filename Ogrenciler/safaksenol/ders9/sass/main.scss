@@ -1,0 +1,24 @@
+$bgColor: red;
+
+.container {
+    display: flex;
+}
+
+@mixin box($color) {
+    background-color: $color;
+    margin: 10px;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    @include box(green);
+}
+
+.box2 {
+    @extend.box1;
+}
+
+.box3 {
+    @extend.box1;
+} 
