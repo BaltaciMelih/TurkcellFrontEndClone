@@ -77,6 +77,9 @@ body{
 .newsCtgry{
     background-color:#2a9d8f;
 }
+.newsHdr {
+    font-size: 25px;
+}
 .align-self{
     align-self: center;
 }
@@ -119,9 +122,6 @@ body{
         "news-box4 news-box5 news-box6"
     ;
     margin: 2% 20%;
-}
-.newsHdr{
-    font-size: 25px;
 }
 .paddingBox{
     margin-bottom: 10px;

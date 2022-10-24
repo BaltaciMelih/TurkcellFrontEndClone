@@ -1,4 +1,120 @@
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #6c757d; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e2e2e2; }
+
+.align-self, .navLogo, .navList, .socialIcon {
+  align-self: center; }
+
+.nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+
+.containerNav {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 0.8fr 3fr 2fr;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  max-width: 65%; }
+
+.navLogo {
+  width: 65px;
+  justify-self: center; }
+
+.navList {
+  display: flex;
+  gap: 20px;
+  font-weight: bold; }
+
+.socialIcon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-self: flex-end; }
+
+.listElement {
+  list-style: none; }
+
+.navLink {
+  background-color: #e76f51;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+
+.navLink2:hover {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 7px;
+  border-radius: 5px; }
+
+.fa-brands {
+  font-size: 30px; }
+  .fa-brands:hover {
+    transform: scale(1.3);
+    color: #e76f51; }
+
+.header {
+  background: url(https://media.istockphoto.com/photos/bitcoin-cryptocurrency-trends-graphs-and-charts-picture-id1300681886?b=1&k=20&m=1300681886&s=170667a&w=0&h=gR80JmbszY0l8576pQGp7oJZklSvgdVoi3F-HtsgEfc=);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 500rem rgba(66, 68, 73, 0.75); }
+
+.containerHeader {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr 1fr;
+  max-width: 65%; }
+
+.containerHeaderNews {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 2fr 1fr;
+  padding: 20px;
+  color: white; }
+
+.newsCtgry {
+  background-color: #2a9d8f; }
+
+.newsHdr {
+  font-size: 25px; }
+
+.newsPrg {
+  line-height: 25px; }
+
+.fit-content {
+  width: fit-content;
+  height: fit-content;
+  padding: 7px;
+  border-radius: 10px; }
+
+.readBttn {
+  background-color: #e76f51;
+  border-radius: 0; }
+  .readBttn a {
+    color: white; }
+
+@media (max-width: 780px) {
+  .socialIcon {
+    display: none; }
+  .containerHeader {
+    grid-template-columns: 1fr; }
+  .containerNav {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 0.8fr); }
+  .navList {
+    justify-self: center; } }
