@@ -1,28 +1,41 @@
 $bgColor: red;
+$px150: 150px;
+$px100: 100px;
 
 .container {
   display: flex;
   .box1{
     padding: 30px;
   }
+  .deneme{
+    padding: 70px;
+  }
 }
 
-@mixin deneme($ali) {
-  background-color: $ali;
+div{
+  &.deneme{
+    margin: 25px;
+  }
+}
+
+@mixin deneme($color, $w, $h) {
+  background-color: $color;
   margin: 10px;
+  width: $w;
+  height: $h;
 }
 
 .box1 {
-  width: 100px;
-  height: 100px;
-  @include deneme(green);
+  @include deneme(red,$px150,$px100);
 }
 .box2 {
   @extend .box1;
-  width: 200px;
-  background-color: $bgColor;
+  width: $px100*2;
+  background-color: $bgColor; 
 }
 .box3 {
-  @extend .box1;
+  @extend .box2;
 }
-
+.box4{
+  @include deneme(blue,$px100*2,$px150);
+}
