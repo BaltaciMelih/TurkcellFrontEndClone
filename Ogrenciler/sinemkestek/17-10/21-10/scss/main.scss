@@ -1,13 +1,9 @@
-$color: rgb(160, 0, 27);
+$color: rgb(183, 250, 211);
 $font-size: 80px;
 
-h2 {
-  background-color: $color;
-  font-size: $font-size;
-}
-
+h2,
 h3 {
   background-color: $color;
-  color: bisque;
-  font-weight: 900;
+  color: rgb(59, 0, 221);
+  font-weight: 940;
 }

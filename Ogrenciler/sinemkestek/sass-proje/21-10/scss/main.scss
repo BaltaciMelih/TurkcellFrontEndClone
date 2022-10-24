@@ -1,0 +1,9 @@
+$color: rgb(2, 2, 0);
+$font-size: 80px;
+
+.box {
+  height: 200px;
+  width: 300px;
+  background-color: $color;
+  font-size: $font-size;
+}

@@ -1,8 +1,5 @@
-h2 {
-  background-color: #a0001b;
-  font-size: 80px; }
-
+h2,
 h3 {
-  background-color: #a0001b;
-  color: bisque;
-  font-weight: 900; }
+  background-color: #b7fad3;
+  color: #3b00dd;
+  font-weight: 940; }
