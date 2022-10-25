@@ -9,3 +9,8 @@
   background-color: $bg-light;
   color: $text-dark;
 }
+
+@mixin bg-dark {
+  background-color: $bg-dark;
+  color: $text-light;
+}

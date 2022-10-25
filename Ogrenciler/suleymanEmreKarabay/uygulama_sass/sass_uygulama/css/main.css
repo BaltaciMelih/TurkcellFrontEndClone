@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+button {
+  width: auto;
+  height: auto;
+  padding: 2% 2%;
+  border-radius: 6px;
+  cursor: pointer; }
+
+.header {
+  background: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1% 2%; }
+  .header .topHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 1% 2%;
+    font-size: 100;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5); }
+    .header .topHeader .leftTopHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px; }
+    .header .topHeader .rigthTopHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px; }
+      .header .topHeader .rigthTopHeader .socialMediaIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px; }
+        .header .topHeader .rigthTopHeader .socialMediaIcons a {
+          font-size: 100;
+          font-weight: bold;
+          color: rgba(255, 255, 255, 0.5); }
+  .header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 1% 2%;
+    border-top: 0.05px solid gray; }
+    .header .navbar .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0; }
+      .header .navbar .logo .logoLeft {
+        font-size: 3em;
+        font-weight: bold;
+        color: #FF6F0F; }
+      .header .navbar .logo .logoRight {
+        font-size: 3em;
+        font-weight: bold;
+        color: white; }
+    .header .navbar .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px; }
+      .header .navbar .menu .menuList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px; }
+        .header .navbar .menu .menuList li {
+          font-size: 1.35em;
+          font-weight: bold;
+          color: white; }
+          .header .navbar .menu .menuList li:first-child {
+            font-size: 1.35em;
+            font-weight: bold;
+            color: #FF6F0F; }
+      .header .navbar .menu .donateButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        background-color: #001D23;
+        border-color: #FF6F0F;
+        border: 10px;
+        color: #FF6F0F; }
+        .header .navbar .menu .donateButton .donateButtonIcon {
+          color: #F8F8F9; }
+  .header .headerText {
+    padding: 10% 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center; }
+    .header .headerText .headerTextHeader {
+      font-size: 4.5em;
+      font-weight: bold;
+      color: white; }
+    .header .headerText .headerTextParagraf {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.5); }
+    .header .headerText .learnMoreButton {
+      margin-top: 5%;
+      background-color: #FF6F0F;
+      border-color: none;
+      border: 0;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      font-size: 1em;
+      font-weight: 100;
+      color: white; }
+
+.aboutUs {
+  background-color: white;
+  padding: 1% 2%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px; }
+  .aboutUs .aboutUsLeft {
+    padding: 1% 2%; }
+    .aboutUs .aboutUsLeft .img1 {
+      position: relative;
+      padding-top: 15%; }
+    .aboutUs .aboutUsLeft .img2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-left: 10px solid white;
+      border-bottom: 10px solid white; }
+  .aboutUs .aboutUsRight {
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; }
+    .aboutUs .aboutUsRight .aboutUsRightTop {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px; }
+      .aboutUs .aboutUsRight .aboutUsRightTop .aboutUsRightTopParagaraf {
+        padding: 1% 1%;
+        width: 13%;
+        background-color: #FFF0E6;
+        border-color: none;
+        border: 0;
+        color: #FF6F0F;
+        text-align: center;
+        border-radius: 50rem; }
+      .aboutUs .aboutUsRight .aboutUsRightTop .aboutUsRightTopHeader {
+        font-size: 4em;
+        font-weight: bold;
+        color: black; }
+    .aboutUs .aboutUsRight .aboutUsRightMiddle {
+      padding: 2% 2%;
+      background-color: #F8F8F9;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+      border-bottom: 7px solid #FF6F0F;
+      border-radius: 8px; }
+      .aboutUs .aboutUsRight .aboutUsRightMiddle .aboutUsRightMiddleParagaraf {
+        font-size: 1.25em;
+        font-weight: 300;
+        color: black; }
+      .aboutUs .aboutUsRight .aboutUsRightMiddle .aboutUsRightMiddleAuthor {
+        font-size: 1.25em;
+        font-weight: 300;
+        color: #FF6F0F; }
+    .aboutUs .aboutUsRight .aboutUsRightBottom {
+      font-size: 1.25em;
+      font-weight: 300;
+      color: black; }
+    .aboutUs .aboutUsRight .aboutUsRightButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px; }
+      .aboutUs .aboutUsRight .aboutUsRightButtons .aboutUsRightButtonsLeft {
+        background-color: #FF6F0F;
+        border-color: none;
+        border: 0;
+        color: #FF6F0F;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px; }
+      .aboutUs .aboutUsRight .aboutUsRightButtons .aboutUsRightButtonsRight {
+        background-color: white;
+        border-color: #FF6F0F;
+        border: 10px;
+        color: #FF6F0F;
+        font-size: 1em;
+        font-weight: 100;
+        color: #FF6F0F;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px; }
