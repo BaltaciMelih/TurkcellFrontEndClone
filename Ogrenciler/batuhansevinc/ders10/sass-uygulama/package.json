@@ -1,7 +1,6 @@
 {
   "name": "sass-uygulama",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w sass -o css"
@@ -11,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^7.0.3"
-  }
+  },
+  "description": ""
 }

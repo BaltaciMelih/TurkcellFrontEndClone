@@ -211,4 +211,36 @@ $section-bg-color: #F8F8F9;
     padding-top: 20px;
     width: 600px;
   }
+  &-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    gap: $gap20;
+    &-card{
+    width: 300px;
+    border-top: 7px $maincolor solid;
+    border-radius: 7px;
+    &-cardtitle{
+      width: 100px;
+      border: 1px $maincolor solid;
+      border-radius: 7px;
+      display: flex;
+      margin: auto auto ;
+      padding: $padding5;
+      background-color: $maincolor;
+      color: $secondbordercolor;
+      margin-top: 0;
+      & h3{
+        font-size: $textfont20;
+        margin: auto auto;
+      }
+      }
+    }
+    &-card-amount{
+      display: flex;
+      justify-content: space-evenly;
+    };
+  }
+
+
 }

@@ -144,3 +144,27 @@
     text-align: center;
     padding-top: 20px;
     width: 600px; }
+  .section2-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px; }
+    .section2-cards-card {
+      width: 300px;
+      border-top: 7px #FF6F0F solid;
+      border-radius: 7px; }
+      .section2-cards-card-cardtitle {
+        width: 100px;
+        border: 1px #FF6F0F solid;
+        border-radius: 7px;
+        display: flex;
+        margin: auto auto;
+        padding: 5px;
+        background-color: #FF6F0F;
+        color: #FFF0E6;
+        margin-top: 0; }
+        .section2-cards-card-cardtitle h3 {
+          font-size: 20px;
+          margin: auto auto; }
+    .section2-cards-card-amount {
+      display: flex;
+      justify-content: space-evenly; }
