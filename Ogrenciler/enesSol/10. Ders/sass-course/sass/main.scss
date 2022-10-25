@@ -59,19 +59,20 @@
 @mixin buttons($buttonColor, $buttonBgColor, $gap, $border) {
   // height: 40px;
   width: 225px;
-  padding: 12px;
+  padding: 8px 16px;
   background-color: $buttonBgColor;
   color: $buttonColor;
   border-radius: 10px;
   gap: $gap;
-  font-size: 24px;
+  font-size: 18px;
   border: $border;
 }
 
 .list-none {
   list-style: none;
   gap: 10px;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 a {
@@ -93,6 +94,7 @@ a:hover {
   background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
   height: 1080px;
   justify-content: space-between;
+  overflow: auto;
   & button {
     @include buttons(
       orangered,
@@ -117,5 +119,26 @@ a:hover {
     gap: 1000px;
     position: fixed;
     z-index: 1;
+  }
+  .content {
+    color: white;
+    // @include display-flex(row, center, center);
+    text-align: center;
+    margin-top: 25%;
+    font-size: 42px;
+    p {
+      font-size: 20px;
+    }
+    button {
+      @include display-flex(row, center, center);
+      margin: 25px auto;
+    }
+  }
+}
+
+.container-2 {
+  @include display-flex(row, center, center);
+  h2 {
+    font-size: 40px;
   }
 }

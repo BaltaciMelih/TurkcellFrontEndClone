@@ -5,7 +5,8 @@
 .list-none {
   list-style: none;
   gap: 10px;
-  font-size: 24px; }
+  font-size: 18px;
+  font-weight: bold; }
 
 a {
   text-decoration: none;
@@ -19,15 +20,16 @@ a:hover {
   background-color: gray;
   background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
   height: 1080px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  overflow: auto; }
   .container-1 button {
     width: 225px;
-    padding: 12px;
+    padding: 8px 16px;
     background-color: rgba(255, 255, 255, 0);
     color: orangered;
     border-radius: 10px;
     gap: 10px;
-    font-size: 24px;
+    font-size: 18px;
     border: 2px orangered solid;
     display: flex;
     flex-direction: row;
@@ -52,3 +54,24 @@ a:hover {
     gap: 1000px;
     position: fixed;
     z-index: 1; }
+  .container-1 .content {
+    color: white;
+    text-align: center;
+    margin-top: 25%;
+    font-size: 42px; }
+    .container-1 .content p {
+      font-size: 20px; }
+    .container-1 .content button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 25px auto; }
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .container-2 h2 {
+    font-size: 40px; }
