@@ -1,10 +1,10 @@
 {
-  "name": "sass",
+  "name": "project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w sass -o css"
+    "sass": "node-sass -w project-sass -o project-css"
   },
   "keywords": [],
   "author": "",
