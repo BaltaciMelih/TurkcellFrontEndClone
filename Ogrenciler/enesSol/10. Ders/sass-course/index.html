@@ -18,6 +18,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container-1">
@@ -46,7 +54,10 @@
         </div>
       </div>
       <div class="content animate__animated animate__fadeInDownBig">
-        <h2>Let's Save More Lives With Our Helping Hand</h2>
+        <h2>
+          Let's Save More Lives With <br />
+          Our Helping Hand
+        </h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quis
           provident magnam dolor tempora illum.
@@ -59,23 +70,94 @@
         </button>
       </div>
     </div>
+
     <!-- DONATE PART -->
     <div class="container-2">
       <div class="left-part">
-        <button>Donate Now</button>
+        <button class="donate-btn">Donate Now</button>
         <h2>Thanks For The Results Achieved With You</h2>
-        <p>
+        <p class="text-semi-white">
           Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
           diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
           lorem sit clita duo justo magna dolore erat amet
         </p>
       </div>
       <div class="right-part">
-        <form action="">
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email" />
+        <form action="" class="donate-part">
+          <input type="text" placeholder="Your Name" class="inputs" />
+          <input type="text" placeholder="Your Email" class="inputs" />
         </form>
+        <div class="selection">
+          <div class="dollars-box"><p>$10</p></div>
+          <div class="dollars-box"><p>$20</p></div>
+          <div class="dollars-box"><p>$30</p></div>
+        </div>
+        <button>
+          <div class="donate-div">Donate Now</div>
+          <div class="arrow">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </div>
+        </button>
       </div>
     </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-3">
+        <div class="footer-1">
+          <h2 style="color: orange">
+            Chari <span style="color: white">Team</span>
+          </h2>
+          <p class="text-semi-white">
+            Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+            ipsum et lorem et sit, sed stet lorem sit clita
+          </p>
+          <div class="icon-holder">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </div>
+        </div>
+        <div class="footer-2">
+          <p>Address</p>
+          <p class="text-semi-white space">
+            <ion-icon name="location-outline"></ion-icon>123 Street, New York,
+            USA
+          </p>
+          <p class="text-semi-white space">
+            <ion-icon name="call-outline"></ion-icon>+012 345 67890
+          </p>
+          <p class="text-semi-white space">
+            <ion-icon name="mail-outline"></ion-icon>info@example.com
+          </p>
+        </div>
+        <div class="footer-3">
+          <p>Quick Links</p>
+          <ul class="text-semi-white">
+            <a href=""> <li>About Us</li></a
+            ><a href=""><li>Contact Us</li></a
+            ><a href=""><li>Our Services</li></a
+            ><a href=""><li>Terms & Condition</li></a
+            ><a href=""><li>Support</li></a>
+          </ul>
+        </div>
+        <div class="footer-4">
+          <p>Newsletter</p>
+          <p style="max-width: 300px" class="text-semi-white">
+            Dolor amet sit justo amet elitr clita ipsum elitr est.
+          </p>
+          <input type="text" placeholder="Your email" />
+        </div>
+      </div>
+      <div class="bottom">
+        <p class="bottom-white">
+          © Your Site Name,
+          <span class="text-semi-white">All Right Reserved.</span>
+        </p>
+        <p class="bottom-white">
+          <span class="text-semi-white">Designed By</span> HTML Codex
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -259,14 +259,52 @@ $padding100: 100px;
     &-image{
       padding-top: $padding30;
       width: 300px;
-    }
 
+    }
     }
     &-card-amount{
       display: flex;
       justify-content: space-between;
     };
   }
-
-
+}
+.container-image{
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+.section2-cards-card-image{
+  display: block;
+  width: 300px;
+  height: auto;
+}
+.overlay{
+  position: absolute;
+  margin-top: $padding30;
+  top: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 300px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding-top: 62%;
+  padding-bottom: 60%;
+  text-align: center;
+  &-button{
+    display: flex;
+    text-align: center;
+    margin: auto auto;
+    align-items: center;
+    background-color: $maincolor;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+  }
+}
+.container-image:hover .overlay {
+  opacity: 1;
 }

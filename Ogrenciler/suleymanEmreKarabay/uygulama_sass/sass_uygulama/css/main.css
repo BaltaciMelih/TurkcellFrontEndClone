@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+button {
+  width: auto;
+  height: auto;
+  padding: 2% 2%;
+  border-radius: 6px;
+  cursor: pointer; }
+
+.header {
+  background: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1% 2%; }
+  .header .topHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 1% 2%;
+    font-size: 100;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5); }
+    .header .topHeader .leftTopHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px; }
+    .header .topHeader .rigthTopHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px; }
+      .header .topHeader .rigthTopHeader .socialMediaIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px; }
+        .header .topHeader .rigthTopHeader .socialMediaIcons a {
+          font-size: 100;
+          font-weight: bold;
+          color: rgba(255, 255, 255, 0.5); }
+  .header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 1% 2%;
+    border-top: 0.05px solid gray; }
+    .header .navbar .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0; }
+      .header .navbar .logo .logoLeft {
+        font-size: 3em;
+        font-weight: bold;
+        color: #ff6f0f; }
+      .header .navbar .logo .logoRight {
+        font-size: 3em;
+        font-weight: bold;
+        color: white; }
+    .header .navbar .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px; }
+      .header .navbar .menu .menuList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px; }
+        .header .navbar .menu .menuList li {
+          font-size: 1.35em;
+          font-weight: bold;
+          color: white; }
+          .header .navbar .menu .menuList li:first-child {
+            font-size: 1.35em;
+            font-weight: bold;
+            color: #ff6f0f; }
+      .header .navbar .menu .donateButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        background-color: #001d23;
+        border-style: solid;
+        border-color: #ff6f0f;
+        border-width: 0px;
+        color: #ff6f0f; }
+        .header .navbar .menu .donateButton .donateButtonIcon {
+          color: #f8f8f9; }
+  .header .headerText {
+    padding: 10% 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center; }
+    .header .headerText .headerTextHeader {
+      font-size: 4.5em;
+      font-weight: bold;
+      color: white; }
+    .header .headerText .headerTextParagraf {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.5); }
+    .header .headerText .learnMoreButton {
+      margin-top: 5%;
+      background-color: #ff6f0f;
+      border-style: solid;
+      border-color: none;
+      border-width: 0;
+      color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      font-size: 1em;
+      font-weight: 100;
+      color: white; }
+
+.aboutUs {
+  background-color: white;
+  padding: 5% 6%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px; }
+  .aboutUs .aboutUsLeft {
+    padding: 1% 2%; }
+    .aboutUs .aboutUsLeft .img1 {
+      position: relative;
+      padding-top: 15%; }
+    .aboutUs .aboutUsLeft .img2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-left: 10px solid white;
+      border-bottom: 10px solid white; }
+  .aboutUs .aboutUsRight {
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; }
+    .aboutUs .aboutUsRight .aboutUsRightTop {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px; }
+      .aboutUs .aboutUsRight .aboutUsRightTop .aboutUsRightTopParagaraf {
+        padding: 1% 1%;
+        width: 13%;
+        background-color: #fff0e6;
+        border-style: solid;
+        border-color: none;
+        border-width: 0;
+        color: #ff6f0f;
+        text-align: center;
+        border-radius: 50rem; }
+      .aboutUs .aboutUsRight .aboutUsRightTop .aboutUsRightTopHeader {
+        font-size: 4em;
+        font-weight: bold;
+        color: black; }
+    .aboutUs .aboutUsRight .aboutUsRightMiddle {
+      padding: 2% 2%;
+      background-color: #f8f8f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+      border-bottom: 7px solid #ff6f0f;
+      border-radius: 8px; }
+      .aboutUs .aboutUsRight .aboutUsRightMiddle .aboutUsRightMiddleParagaraf {
+        font-size: 1.25em;
+        font-weight: 300;
+        color: black; }
+      .aboutUs .aboutUsRight .aboutUsRightMiddle .aboutUsRightMiddleAuthor {
+        font-size: 1.25em;
+        font-weight: 300;
+        color: #ff6f0f; }
+    .aboutUs .aboutUsRight .aboutUsRightBottom {
+      font-size: 1.25em;
+      font-weight: 300;
+      color: black; }
+    .aboutUs .aboutUsRight .aboutUsRightButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px; }
+      .aboutUs .aboutUsRight .aboutUsRightButtons .aboutUsRightButtonsLeft {
+        background-color: #ff6f0f;
+        border-style: solid;
+        border-color: none;
+        border-width: 0;
+        color: #ff6f0f;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px; }
+      .aboutUs .aboutUsRight .aboutUsRightButtons .aboutUsRightButtonsRight {
+        background-color: white;
+        border-style: solid;
+        border-color: #ff6f0f;
+        border-width: 1px;
+        color: #ff6f0f;
+        font-size: 1em;
+        font-weight: 100;
+        color: #ff6f0f;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px; }
+
+.causes {
+  padding: 5% 6%;
+  height: 800px;
+  background-color: #f8f8f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  .causes .causesTop .causesTopText {
+    padding: 1% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .causes .causesTop .causesTopText .causesTopParagraf {
+      padding: 1% 1%;
+      width: 18%;
+      background-color: #fff0e6;
+      border-style: solid;
+      border-color: none;
+      border-width: 0;
+      color: #ff6f0f;
+      text-align: center;
+      border-radius: 50rem; }
+    .causes .causesTop .causesTopText .causesTopHeader {
+      font-size: 3em;
+      font-weight: bold;
+      color: black;
+      text-align: center; }
+  .causes .causesBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .causes .causesBottom .causesBlok {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      border-top: 7px solid #ff6f0f;
+      border-radius: 8px;
+      background-color: white; }
+      .causes .causesBottom .causesBlok .causesBlokText {
+        padding: 3% 1%;
+        text-align: center;
+        background-color: #ff6f0f;
+        border-style: solid;
+        border-color: none;
+        border-width: 0;
+        color: white;
+        width: 25%;
+        border-radius: 8px;
+        position: static; }
+      .causes .causesBottom .causesBlok .causesBlokParagraf {
+        text-align: center;
+        padding: 1% 10%;
+        font-size: 1.25em;
+        font-weight: 100;
+        color: gray; }
+      .causes .causesBottom .causesBlok .causesBlokRange {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        background-color: #f8f8f9;
+        padding: 2% 4%; }
+        .causes .causesBottom .causesBlok .causesBlokRange .causesBlokRangeHeader {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 150px; }
+          .causes .causesBottom .causesBlok .causesBlokRange .causesBlokRangeHeader .causesBlokRangeHeaderLeft {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px; }
+            .causes .causesBottom .causesBlok .causesBlokRange .causesBlokRangeHeader .causesBlokRangeHeaderLeft p {
+              font-size: 1em;
+              font-weight: 100;
+              color: gray; }
+          .causes .causesBottom .causesBlok .causesBlokRange .causesBlokRangeHeader .causesBlokRangeHeaderRight {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px; }
+            .causes .causesBottom .causesBlok .causesBlokRange .causesBlokRangeHeader .causesBlokRangeHeaderRight p {
+              font-size: 1em;
+              font-weight: 100;
+              color: gray; }

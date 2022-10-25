@@ -71,7 +71,7 @@ h2{
     border-top:5px solid  $colortext;
     border-top-left-radius: $px10;
     border-top-right-radius:$px3;  
-    @include boxlar();       
+    @include boxlar();    
 }   
 .text-haci{
     color: #787878;  
@@ -179,7 +179,7 @@ h2{
     color: rgb(255, 251, 251);
     line-height: 20px;   
     position: absolute;  
-    text-align: end;
+    text-align: end; 
     padding-right: 5px;
     background-color: $colortext;
   } 
@@ -308,8 +308,8 @@ h2{
 .button3-haci:hover{
     background-color: $colorwhite;
     color:$colortext; 
-}     
-
+}   
+ 
 @media screen and (max-width: 768px) {
     .box-haci{
         width: 85%;   
