@@ -88,7 +88,7 @@
   background-color: white;
   color: #FF6F0F; }
 
-.section, .section1, .section2 {
+.section, .section1 {
   padding: 150px 300px; }
 
 .section1 {
@@ -132,15 +132,59 @@
 
 .section2 {
   background-color: #F8F8F9;
-  margin: 0px 300px; }
+  margin: 0px 300px;
+  padding-top: 100px;
+  padding-bottom: 100px; }
   .section2-featureCauses {
     display: flex;
     justify-content: center;
     text-align: center;
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    margin: 0 auto; }
   .section2-h1 {
+    margin: 0 auto;
     font-size: 44px;
     text-align: center;
     padding-top: 20px;
     width: 600px; }
+  .section2-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    gap: 20px; }
+    .section2-cards-card {
+      width: 300px;
+      border-top: 7px #FF6F0F solid;
+      border-radius: 7px;
+      padding-bottom: 0 !important; }
+      .section2-cards-card-cardtitle {
+        width: 100px;
+        border: 1px #FF6F0F solid;
+        border-radius: 7px;
+        display: flex;
+        margin: auto auto;
+        padding: 5px;
+        background-color: #FF6F0F;
+        color: #FFF0E6;
+        padding-top: 0 !important; }
+        .section2-cards-card-cardtitle h3 {
+          font-size: 20px;
+          margin: auto auto; }
+        .section2-cards-card-cardtitle-secondertitle {
+          font-size: 30px;
+          padding-top: 20px;
+          padding-bottom: 20px; }
+      .section2-cards-card p {
+        padding-top: 20px;
+        font-size: 20px;
+        color: #787878; }
+        .section2-cards-card p span {
+          color: black; }
+      .section2-cards-card-image {
+        padding-top: 30px;
+        width: 300px; }
+    .section2-cards-card-amount {
+      display: flex;
+      justify-content: space-between; }

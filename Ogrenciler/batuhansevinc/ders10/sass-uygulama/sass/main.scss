@@ -24,6 +24,8 @@ $padding30: 30px;
 $textcolor2: #787878;
 $textfont16: 16px;
 $section-bg-color: #F8F8F9;
+$textfont30: 30px;
+$padding100: 100px;
 .flex{
   display: flex;
 }
@@ -195,20 +197,76 @@ $section-bg-color: #F8F8F9;
 }
 }
 .section2{
- @extend .section;
  background-color: $section-bg-color;
  margin: 0px 300px;
+ padding-top: $padding100;
+ padding-bottom: $padding100;
   &-featureCauses{
       display: flex;
       justify-content: center;
       @extend .section1-right-aboutUs;
       text-align: center;
       padding-left: 10px; padding-right: 10px;
+      margin: 0 auto;
   }
   &-h1{
+    margin: 0 auto;
     font-size: $h1size;
     text-align: center;
-    padding-top: 20px;
+    padding-top: $padding20;
     width: 600px;
   }
+  &-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding-top: $padding100;
+    
+    gap: $gap20;
+    &-card{
+    width: 300px;
+    border-top: 7px $maincolor solid;
+    border-radius: 7px;
+    padding-bottom: 0 !important;
+    &-cardtitle{
+      width: 100px;
+      border: 1px $maincolor solid;
+      border-radius: 7px;
+      display: flex;
+      margin: auto auto ;
+      padding: $padding5;
+      background-color: $maincolor;
+      color: $secondbordercolor;
+      padding-top: 0 !important;
+      & h3{
+        font-size: $textfont20;
+        margin: auto auto;
+      }
+      &-secondertitle{
+        font-size: $textfont30;
+        padding-top: $padding20 ;
+        padding-bottom: $padding20;
+      }
+      }
+    & p{
+      padding-top:$padding20;
+      font-size: $textfont20;
+      color: $textcolor2;
+      & span{
+        color: black ;
+      }
+    }
+    &-image{
+      padding-top: $padding30;
+      width: 300px;
+    }
+
+    }
+    &-card-amount{
+      display: flex;
+      justify-content: space-between;
+    };
+  }
+
+
 }
