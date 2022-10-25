@@ -70,7 +70,52 @@ $margin: 5%;
         color: aqua;   
     }
   }
-
+  .section2{
+    @include fonksiyon1(flex, 100%, 500px, none, none);
+    @extend .flex;
+    @extend .grid;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    .container{
+      @extend .flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p{
+        color: #FF6F0F;
+        border-radius: 6px;
+        background-color: #FFF0E6;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1,5;
+        margin-bottom: 1rem;
+      }
+      h1{
+        color: black;
+        width: 100%;
+        height: 25px;
+        border: none;
+        padding: 0px 20%;
+        max-width:200ch;
+        word-wrap:break-word;
+        margin-bottom: 6rem;
+        margin-left: 100px;
+      }
+      .img1{
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .img2{
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .img3{
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+    }
+  }
   .footer-container{
     @extend .grid;
     @extend .flex;
@@ -83,7 +128,7 @@ $margin: 5%;
       .box1{
         @include widthHeight(25%, 25%);
         padding-left: $margin;
-        padding-top: 1%;
+        padding-top: 5%;
         .box1-head{
           @extend .flex;
           .Chari{
@@ -99,8 +144,8 @@ $margin: 5%;
       }
       .box2{
         @include widthHeight(25%, 25%);
-        padding-top: 2%;
-        padding-left: $margin;
+        padding-top: 6%;
+        padding-left: 7%;
         .box2-head{
           @extend .flex;
           .Adress{
@@ -113,8 +158,8 @@ $margin: 5%;
       }
       .box3{
         @include widthHeight(25%, 25%);
-        padding-top: 2%;
-        
+        padding-top: 6%;
+        padding-left: $margin;
         &-head{
           @extend .flex;
           .Head{
@@ -125,10 +170,51 @@ $margin: 5%;
           color: grey;
         }
       }
+      .box4{
+        @include widthHeight(25%, 25%);
+        padding-top: 6%;
+        &-head{
+          @extend .flex;
+          .newsletter{
+            color: white;
+          }
+        }
+        &-text{
+          color: grey;
+        }
+      }
 
     }
   }
-
+  .form-mail{
+    input[type=text]{
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background-color: #001D23;
+      width: 95%;
+      padding: 12px 20px;
+    }
+    input[type=text]:focus{
+      border: 3px solid #555;
+    }
+    input[type=submit]{
+      margin-top: $margin;
+      border-radius: 8px;
+      margin-left: 75px;
+      width: 50%;
+      color: white;
+      background-color: #FF6F0F;
+    }
+    input[type=submit]:hover{
+      color: #FF6F0F;
+      background-color: #001D23;
+      transition: all;
+      transition-duration: 1s;
+    }
+    }  
+    
+  
   .footer-ul{
     list-style: none;
     &-a{
@@ -158,6 +244,14 @@ $margin: 5%;
   .footer-ul-a:active{
     text-decoration: none;
   }
-
+ hr.solid{
+  border-top: 1px solid #bbb;
+  margin-left: $margin;
+  margin-right: $margin;
+ }
+ .end-line{
+  color: white;
+  padding-left: $margin;
+ }
 
  
