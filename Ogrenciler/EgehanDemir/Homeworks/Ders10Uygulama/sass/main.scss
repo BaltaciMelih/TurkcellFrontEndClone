@@ -3,12 +3,26 @@ $width: 100%;
     margin: 0;
     padding: 0;
 }
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+$margin: 5%;
 @mixin fonksiyon1($flex, $width, $height, $backgroundColor, $color) {
     display: $flex;
     width: $width;
     height: $height;
     background-color: $backgroundColor;
     color: $color;
+  }
+  @mixin backgroundcolor($backgroundColor) {
+    background-color: $backgroundColor;
+  }
+  @mixin widthHeight($width, $height) {
+    width: $width;
+    height: $height;
   }
   .section{
     background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
@@ -55,6 +69,94 @@ $width: 100%;
         background-color: red;
         color: aqua;   
     }
+  }
+
+  .footer-container{
+    @extend .grid;
+    @extend .flex;
+    @include widthHeight(100%, 100%);
+    @include backgroundcolor(#001D23);
+    margin-top: $margin;
+    &-boxes{ 
+      @extend .flex;
+      flex-direction: row;
+      .box1{
+        @include widthHeight(25%, 25%);
+        padding-left: $margin;
+        padding-top: 1%;
+        .box1-head{
+          @extend .flex;
+          .Chari{
+            color: #FF6F0F;
+          }
+          .Team{
+            color: white;
+          }
+        }
+        .box1-text{
+          color: grey;
+        }
+      }
+      .box2{
+        @include widthHeight(25%, 25%);
+        padding-top: 2%;
+        padding-left: $margin;
+        .box2-head{
+          @extend .flex;
+          .Adress{
+            color: white;
+          }
+        }
+        .box2-text{
+          color: grey;
+        }
+      }
+      .box3{
+        @include widthHeight(25%, 25%);
+        padding-top: 2%;
+        
+        &-head{
+          @extend .flex;
+          .Head{
+            color: white;
+          }
+        }
+        &-text{
+          color: grey;
+        }
+      }
+
+    }
+  }
+
+  .footer-ul{
+    list-style: none;
+    &-a{
+      color: grey;
+      animation-timing-function: ease-in-out;
+      @keyframes aa {
+        50%{
+          width: 3%;
+        }
+        50%{
+          width: 3%;
+        }
+      }
+    }
+  }
+  .footer-ul-a:link{
+    text-decoration: none;
+  }
+  .footer-ul-a:visited{
+    text-decoration: none;
+  }
+  
+  .footer-ul-a:hover{
+    color: orange;
+    text-decoration: none;
+  }
+  .footer-ul-a:active{
+    text-decoration: none;
   }
 
 
