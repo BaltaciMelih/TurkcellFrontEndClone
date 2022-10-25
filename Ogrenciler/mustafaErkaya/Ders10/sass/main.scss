@@ -2,10 +2,10 @@
 
 /* variables */
 $bg-color: #7a7c9d;
-$container-color: #ccc;
+
 $btn-color: #ff6f0f;
 $font-color: #fff;
-$container-margin: 0 7% ;
+$container-padding: 0 7% ;
 
 @mixin d-flex($just, $align) {
   display: flex;
@@ -85,6 +85,15 @@ h4{
     margin-bottom: 1.6rem;
 }
 
+h5{   // causes h5
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
 body {
   font-family: "Inter", sans-serif;
   display: grid;
@@ -92,6 +101,7 @@ body {
   grid-template-areas: "header header header"
   "home home home"
   "about about about"
+  "causes causes causes"
   ;
 
   .header {
@@ -261,9 +271,12 @@ body {
             .p-24{
                 padding: 2.4rem;
                 font-size: 1.6rem;
+                border-bottom: 0.5rem solid $btn-color;
+                border-radius: 0.6rem;
+                margin-bottom: 2.4rem;
 
                 p{
-                    margin-bottom: 0.8rem;
+                    margin-bottom: 0.8rem; 
                     
                 }
                 span {
@@ -294,7 +307,62 @@ body {
                     }
                 }
             }
+
+            .p-1{
+              font-size: 1.6rem;
+              color: rgb(117, 113, 113);
+              margin-bottom: 4.8rem;
+            }
         }
     }
-}
+
+    
+  }
+
+  .causes {
+    grid-area: causes;
+
+    .container-causes{
+      padding: $container-padding;
+
+        .causes-header{
+          text-align: center;
+        }
+
+        .causes-content{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+
+          .causes-item {
+            
+            .causes-top{
+              @include d-flex(flex-start, center );
+              flex-direction:column;
+
+              .causes-tag {
+                border-bottom-left-radius: 0.6rem;
+                border-bottom-right-radius: 0.6rem;
+                background-color: $btn-color;
+                color: $font-color;
+                font-size: 1.8rem;
+                padding: 0 1.6rem 0.4rem 1.6rem;
+                margin-bottom: 2.4rem ;
+              }
+              // @extend
+              .causes-tag2{
+                @extend .causes-tag;
+              }
+              .causes-tag3{
+                @extend .causes-tag;
+              }
+
+              .causes-top-amount{
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+    }
+  }
 }
