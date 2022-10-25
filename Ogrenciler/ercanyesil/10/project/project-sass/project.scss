@@ -1,0 +1,80 @@
+$color:#FF6F0F;
+$textColor:#787878;
+$h1:"Saira",sans-serif;
+$p:"Inter",sans-serif;
+$animation:fadeInUp;
+
+@mixin btn-hover($hbColor, $hColor){
+background-color: $hbColor;
+color: $hColor;
+}
+
+@mixin start-animation(){
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeInUp;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.project-container{
+    display: grid;
+    height: 100vh;
+    /* grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 80px; */
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"                                              
+    "main main main"
+    "footer footer footer"
+  }
+
+header, footer, main, nav{
+  background-color: brown; 
+  color: black;
+  padding: 15px;
+  border: 1px sandybrown solid;
+} 
+
+header{
+    grid-area: header;
+  }
+  
+  nav{
+    grid-area: nav;
+  }
+  
+  main{
+      grid-area: main;
+  }
+  
+  footer{
+    grid-area: footer;
+  }
+
+
+
+
+
+
+
+
+
+  @media (max-width: 768px){
+    .project-container{
+      grid-template-areas: 
+      "header"
+      "nav"                                              
+      "main"
+      "aside"
+      "footer"
+    }
+  }
+  
