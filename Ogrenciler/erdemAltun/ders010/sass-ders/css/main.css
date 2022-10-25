@@ -4,9 +4,11 @@
   margin: 0; }
 
 .navbar-1 {
+  color: grey;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 0;
+  padding: 20px;
   margin-left: 45px;
   margin-right: 45px;
   font-size: 24px; }
@@ -16,6 +18,8 @@
   .navbar-1 .part-2 {
     display: flex;
     gap: 25px; }
+    .navbar-1 .part-2 a {
+      color: grey; }
 
 .navbar-2 {
   display: flex;
@@ -26,22 +30,63 @@
   font-size: 24px;
   align-items: baseline; }
   .navbar-2 .click-1 .orange {
-    color: orange; }
+    color: orangered; }
   .navbar-2 .click-1 .white {
-    color: wheat; }
+    color: white; }
   .navbar-2 .click-2 {
     display: flex;
     gap: 25px; }
+    .navbar-2 .click-2 .home-button {
+      text-align: center;
+      color: orangered; }
     .navbar-2 .click-2 .donate {
       background-color: transparent;
-      border-color: orange;
+      border-color: orangered;
       width: 175px;
       height: 50px;
       display: flex;
       gap: 30px;
       justify-content: center;
       align-items: center;
-      margin-top: -13px; }
+      margin-top: -13px;
+      color: orangered;
+      border-radius: 7px; }
+    .navbar-2 .click-2 .donate:hover {
+      background-color: orangered;
+      color: white; }
+    .navbar-2 .click-2 a:hover {
+      color: orangered; }
 
-image {
-  background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg); }
+.home {
+  background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8); }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+.paragraf {
+  text-align: center;
+  margin-top: 250px; }
+  .paragraf .text-1 {
+    color: white;
+    font-size: 50px; }
+  .paragraf .text-2 {
+    color: grey;
+    font-size: 20px; }
+  .paragraf .Lern {
+    background-color: orangered;
+    width: 175px;
+    height: 50px;
+    gap: 30px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: orangered; }
+  .paragraf .Lern:hover {
+    background-color: transparent;
+    color: orangered;
+    border: 2px solid orangered; }

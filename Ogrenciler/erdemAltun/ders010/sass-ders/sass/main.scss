@@ -1,61 +1,112 @@
-*{
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-  
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-1 {
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 20px;
+  margin-left: 45px;
+  margin-right: 45px;
+  font-size: 24px;
+  .part-1 {
+    display: flex;
+    gap: 50px;
   }
-  
-  .navbar-1{
+  .part-2 {
+    display: flex;
+    gap: 25px;
+    a {
+      color: grey;
+    }
+  }
+}
+.navbar-2 {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-left: 45px;
     margin-right: 45px;
     font-size: 24px;
-    .part-1{
-        display: flex; 
-        gap: 50px   ;
+    align-items: baseline;
+  .click-1 {
+    .orange {
+      color: orangered;
     }
-    .part-2{
-        display: flex; 
-        gap: 25px   ;
+    .white {
+      color: white;
     }
-    
   }
-  .navbar-2{
+  .click-2 {
     display: flex;
-    justify-content: space-between;
+    gap: 25px;
+    .home-button {
+      text-align: center;
+      color: orangered;
+    }
+    .donate {
+      background-color: transparent;
+      border-color: orangered;
+      width: 175px;
+      height: 50px;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      margin-top: -13px;
+      color: orangered;
+      border-radius: 7px;
+    }
+    .donate:hover {
+      background-color: orangered;
+      color: white;
+    }
+    a:hover {
+      color: orangered;
+    }
+  }
+}
+.home {
+  background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.paragraf {
+  text-align: center;
+  margin-top: 250px;
+  .text-1 {
+    color: white;
+    font-size: 50px;
+  }
+  .text-2 {
+    color: grey;
+    font-size: 20px;
+  }
+  .Lern {
+    background-color: orangered;
+    width: 175px;
+    height: 50px;
+    gap: 30px;
+    color: white;
     margin-top: 20px;
-    margin-left: 45px;
-    margin-right: 45px;
-    font-size: 24px;
-    align-items:baseline;
-    .click-1 {
-        .orange{
-            color: orange;
-        }
-        .white{
-            color: wheat;
-        }
-    }
-    .click-2{
-        display: flex;
-        gap: 25px;
-        .donate{
-            // padding: 20px;
-            background-color: transparent;
-            border-color: orange;
-            width: 175px;
-            height: 50px;
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            align-items: center;
-            margin-top: -13px;
-        }
-    }
+    border-radius: 5px;
+    border: orangered;
   }
-  image{
-    background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
+  .Lern:hover {
+    background-color: transparent;
+    color: orangered;
+    border: 2px solid orangered;
   }
-  
+}
+

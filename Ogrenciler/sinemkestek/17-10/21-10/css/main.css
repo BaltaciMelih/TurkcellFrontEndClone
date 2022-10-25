@@ -1,20 +1,31 @@
 * {
+  box-sizing: border-box;
   list-style: none;
-  text-decoration: none; }
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif; }
+
+h3 {
+  font-size: 2.4rem; }
 
 button {
-  background-color: #ff844b;
-  width: 6rem;
-  border: none;
+  background-color: rgba(243, 255, 140, 0.13);
+  border: solid 2px #ff7b00;
+  color: #ff7b00;
   height: 3rem;
-  border-radius: 8%; }
+  border-radius: 8%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 9px; }
 
 .container {
-  width: 100%;
-  height: auto;
-  background-color: aqua; }
+  max-width: 1100px;
+  background-color: black; }
   .container .img-container {
-    height: 800px;
+    width: 100vw;
+    height: 85vh;
     background-size: cover;
     background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
     background-position: center;
@@ -24,27 +35,45 @@ button {
       flex-direction: row;
       justify-content: space-between;
       height: 75px;
-      background-color: #fff;
+      font-size: smaller;
+      padding-top: 1rem;
+      background-color: black;
       opacity: 0.7;
-      padding-right: 40px;
-      padding-left: 40px; }
+      color: rgba(255, 255, 255, 0.322);
+      padding-right: 3rem;
+      padding-left: 3rem; }
       .container .img-container .top-bar .adress {
         display: flex;
-        gap: 12px;
+        gap: 1.4rem;
         align-items: center; }
       .container .img-container .top-bar .social-icons {
         display: flex;
         align-items: center;
-        gap: 7px; }
+        gap: 1.4rem; }
+    .container .img-container .header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 25%; }
+      .container .img-container .header .header-container {
+        color: #fff; }
+        .container .img-container .header .header-container .header-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
   .container .navbar {
     display: flex;
+    background-color: transparent;
     justify-content: space-between;
     align-items: center;
-    padding-right: 40px;
-    padding-left: 40px; }
+    padding-right: 2rem;
+    padding-left: 2rem; }
+    .container .navbar span {
+      color: #ff7b00; }
     .container .navbar .navbar-items {
-      display: flex;
-      gap: 8px; }
+      display: flex; }
       .container .navbar .navbar-items ul {
         gap: 8px;
         display: flex;
@@ -55,7 +84,11 @@ button {
           height: 2rem;
           padding-right: 18px;
           padding-left: 18px; }
-          .container .navbar .navbar-items ul li:hover {
-            background-color: #ff7b00; }
-            .container .navbar .navbar-items ul li:hover a {
-              color: #ffe2e2; }
+          .container .navbar .navbar-items ul li a:hover {
+            background-color: #ff7b00;
+            color: #fff; }
+      .container .navbar .navbar-items button .fa-solid {
+        background-color: #f1e8e3;
+        color: #ff7b00;
+        padding: 0.7rem;
+        border-radius: 50%; }

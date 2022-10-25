@@ -33,8 +33,9 @@ body
     padding: 0;
     box-sizing: border-box;  
 }  
-.container-1haci{
-    @include containerden();
+.container-1haci{  
+    @include containerden();  
+    padding-top: 80px;
 }
 .feature
 {
@@ -49,12 +50,14 @@ body
 } 
 h2
 {
-    font-size: 36px;
-    text-align: center;
-}
+    font-size: 38px;
+    text-align: center;  
+    font-weight: bolder;  
+}  
 .container-2haci{
     @include containerden();
     flex-direction: row;
+    padding-bottom: 80px;
 }
 .box-haci{
     width: 27%;
@@ -84,53 +87,110 @@ h2
 }  
 .box2-haci{
     width: 90%;
-    background-color:#8c8c9b ;
+    height: auto;
+    background-color:#F8F8F9;
+    flex-direction: row;
     @include padding1();
-    @include boxlar();
-}      
-.textleft
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}  
+.box2-haci-ic
 {
-   float: left;
+    display: flex;
+    justify-content: space-around;
 } 
-.textright
-{
-    float: right;
-}
-.imgbutton
+ 
+.imgbutton   
 {
     position: relative;   
     height: 270px;  
     width: 100%;  
-} 
+}   
+.img1-haci   
+{       
+    width: 100%;   
+    height: 270px;           
+    position: relative;    
+}
+.textleft ,.textright
+{
+    width: 50%;
+}
 
-.img1-haci:hover 
-{
-   .button-haci
-   {
-    display:flex;
-   }
-   animation:backInDown;
-   background-color: rgba(0, 0, 0, .5);   
-   animation-duration: 2s;   
-}
-.img1-haci
-{   
-    width: 100%;
-    height: 270px;     
-    position: relative;  
-}
-.button-haci 
-{
+.button-haci    
+{      
     position: absolute;
     height: 50px;
     width: 40%;
-    margin-top: -150px;
-    margin-left: 30%;
     background-color:rgba(0, 0, 0, .5);
     border: 2px solid $colortext;
     color: $colortext;
     justify-content: center;  
     align-items: center;
     border-radius: 10px;   
-    display: none;
-}           
+    display: none;   
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}  
+.button-haci:hover
+{
+    background-color: $colortext;
+    color: white;   
+} 
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);   
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+ 
+  }
+.imgbutton:hover
+{
+    .button-haci    
+    {
+     display:flex;  
+     z-index: 2;
+    }   
+}
+ .imgbutton:hover .overlay {     
+    bottom: 0;    
+    height: 100%;
+  
+  }
+  .myProgress{
+    width: 90%;
+    height: 12px;
+    background-color:$colortext;    
+    text-align: center;
+    line-height: 12px;    
+    color: white;
+  }   
+
+  .container-3haci{
+    @include containerden();  
+    padding-top: 80px;
+    background-color: #fff; 
+}
+.container-4haci{
+    @include containerden();
+    flex-direction: row;
+    padding-bottom: 80px;
+    background-color: #fff;
+}
+
+.box3-haci{
+    width: 27%;
+    background-color:$colorwhite;
+    border-radius: $px10;
+    @include boxlar();      
+} 
