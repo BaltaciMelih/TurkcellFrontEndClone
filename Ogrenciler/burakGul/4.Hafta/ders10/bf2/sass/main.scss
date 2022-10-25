@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap");
+$bg-color: #7a7c9d;
+$container-color: #ccc;
+$btn-color: #ff6f0f;
+$font-color: #fff;
+$container-margin: 0 10% ;
+
+@mixin d-flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;    
+}
+
+@mixin btn {
+  padding: 1rem 2rem;
+  border: 1px solid $btn-color;
+  border-radius: 1rem;
+  background-color: $btn-color;
+  color: $font-color;
+  &:hover { 
+    background-color: transparent;
+    color: $btn-color;
+  }
+}
+
+@mixin btn-2 {
+  padding: 1rem 2rem;
+  border: 1px solid $btn-color;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: $btn-color;
+  &:hover {
+    background-color: $btn-color;
+    color: $font-color;
+  }
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.6s; 
+    list-style: none;
+    text-transform: capitalize;
+    font-family: inter;
+  }
+
+html {
+  font-size: 10px;
+}
+
+i {
+  font-size: 2.5rem;
+}
+a {
+  color: $font-color;
+}
+
+span {
+  font-size: 1.8rem;
+  color:$bg-color;
+
+}
+
+.s-h2{
+    font-size: 4rem;
+    margin-bottom: 4.8rem;
+}
+h4{
+    font-size: 1.6rem;
+    color: $btn-color;
+    padding: 0.4rem 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:  "header header header"
+                        "home home home"
+                        "about about about";
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+
+    background-color: transparent;
+    grid-area: header;
+    .container {
+      
+      .topheader {
+        @include d-flex(space-between, center);
+        padding: 1rem 7%;
+        border-bottom: 2px solid #01151a; 
+
+        .topheader-l {
+          @include d-flex(flex-start, center);
+          gap: 2rem;
+        }
+
+        .topheader-r {
+          @include d-flex(flex-end, center);
+          gap: 1rem;
+
+          .icons {
+            display: flex;
+            gap: 1rem;
+          }
+        }
+      }
+
+      .header-bottom {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: "logo navbar btn";
+        align-items: center;
+        padding: 2rem 10%;
+
+        .logo {
+          grid-area: logo;
+          h2 {
+            font-size: 3rem;
+            color: $font-color;
+            cursor: pointer;
+          }
+
+          .h2 {
+            color: $btn-color;
+            font-size: 3rem;
+          }
+        } 
+
+        .navbar {
+          grid-area: navbar;
+          padding-right: 3rem;
+          ul {
+            @include d-flex(flex-end, center);
+            gap: 2rem;
+            li {
+              font-size: 1.8rem;
+            }
+          }
+        }
+
+        .btn {
+          grid-area: btn;
+          @include btn-2();
+          text-align: center;
+          font-size: 1.6rem;
+          width: 75%;
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 0 0 0 auto;
+
+          i {
+            font-size: 1.6rem;
+            align-items: center;
+          }
+        }
+      }
+    }
+  } 
+   
+
+  .home{
+    background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg); 
+    background-size: cover;
+    height: 100vh;
+    grid-area: home;
+    margin-bottom: 3rem;
+    .homebg{
+        background-color: #001D23 !important;
+        height: 100vh;
+        opacity: 0.75;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: ". c-home .";
+
+        .container-home{
+           grid-area: c-home;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           gap: 2rem;
+
+            .h1{
+                color: $font-color;
+                font-size: 5.6rem;
+                
+                
+            }
+            .p{
+                color: #ccc;
+                font-size: 2rem;
+                
+            }
+            .btn{
+                @include btn();
+                font-size: 1.8rem;
+                opacity: 1;
+
+                i {
+                    font-size: 1.8rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+  }
+}
