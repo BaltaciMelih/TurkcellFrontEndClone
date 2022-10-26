@@ -14,3 +14,4 @@ https://animate.style/ - animate.css
 https://getcssscan.com/css-box-shadow-examples - Hazır shadow kütüphanesi
 https://www.cssmatic.com - border, shadow gibi özellikler için
 https://nodejs.org/en/ - nodejs
+https://getbootstrap.com/docs/5.2 - Bootstrap Dökümantasyon
