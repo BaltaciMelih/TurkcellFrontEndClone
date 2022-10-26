@@ -91,8 +91,8 @@ body {
   background-color: #0c1e22; }
 
 .img-container img {
-  height: 600px;
   width: 100%;
+  height: 600px;
   position: absolute;
   opacity: .30; }
 
@@ -124,3 +124,34 @@ body {
   background-color: transparent;
   border: 2px solid #FF6F0F;
   color: #FF6F0F; }
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 60px auto;
+  gap: 25px; }
+
+.container2 img {
+  width: 45%; }
+
+.title {
+  background-color: #ffe4cd;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  color: #FF6F0F; }
+
+.container2 .header-text {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0 auto; }
+
+.container2 h3 {
+  color: #FF6F0F; }
+
+.text-box {
+  background-color: #F8F8F9;
+  border-bottom: 5px solid #FF6F0F;
+  border-radius: 10px; }
