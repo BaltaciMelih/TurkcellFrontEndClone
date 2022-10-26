@@ -1,8 +1,79 @@
-.container {
-  display: flex; }
+.cont {
+  display: flex;
+  flex-wrap: wrap; }
+  .cont .container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff !important;
+    visibility: visible;
+    min-height: 400px;
+    width: 612px !important;
+    height: 518.4px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-bottom: 10px;
+    flex-wrap: wrap; }
+    .cont .container .img1 {
+      object-fit: cover;
+      padding-right: 3rem !important;
+      padding-top: 3rem !important;
+      width: 612px !important;
+      height: 518.4px !important;
+      position: absolute !important; }
+    .cont .container .img2 {
+      width: 200px !important;
+      height: 200px !important;
+      right: 0;
+      top: 0;
+      position: absolute !important;
+      margin-left: 5px;
+      margin-bottom: 5px;
+      border: 10px solid #fff; }
 
-.box1, .box2, .box3 {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  margin: 10px; }
+.data-aboutUs {
+  visibility: visible;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  flex: 0 0 auto;
+  width: 50%;
+  max-width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 3rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  .data-aboutUs .h-1 {
+    margin-left: 30px; }
+  .data-aboutUs .aboutus {
+    border-radius: 50rem !important;
+    background-color: #fff0e6 !important;
+    color: #ff6f0f !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    margin-bottom: 1rem !important;
+    display: inline-block !important; }
+  .data-aboutUs h1 {
+    margin-bottom: 3rem !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2; }
+
+.bg-light {
+  background-color: #f8f8f9 !important;
+  border-radius: 6px !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  border-width: 5px !important;
+  margin-left: 30px;
+  border-bottom: 1px solid #ff6f0f !important; }
+  .bg-light p {
+    font-size: 1rem; }
+  .bg-light .tempor {
+    margin-left: 50% !important; }
+  .bg-light span {
+    color: #ff6f0f !important; }

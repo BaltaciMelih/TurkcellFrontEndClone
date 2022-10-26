@@ -24,6 +24,9 @@ a:hover {
 .text-semi-white {
   color: rgba(255, 255, 255, 0.5) !important; }
 
+.animate__animated.animate__slideInDown {
+  --animate-duration: 2s; }
+
 .container-1 {
   box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8);
   background-color: gray;
@@ -65,19 +68,33 @@ a:hover {
     position: fixed;
     z-index: 1;
     width: 100%; }
+    .container-1 .nav button:hover {
+      transition: all 0.5s ease-in-out;
+      background-color: rgba(255, 255, 255, 0);
+      color: white;
+      background-color: orangered; }
   .container-1 .content {
     color: white;
     text-align: center;
     margin-top: 25%;
     font-size: 42px; }
     .container-1 .content p {
-      font-size: 20px; }
+      font-size: 20px;
+      margin-top: 15px; }
     .container-1 .content button {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: 25px auto; }
+      margin: 25px auto;
+      color: white;
+      background-color: orangered; }
+    .container-1 .content button:hover {
+      transition: all 0.5s ease-in-out;
+      background-color: rgba(255, 255, 255, 0);
+      color: orangered;
+      border: 1px solid orangered;
+      background-color: rgba(255, 255, 255, 0); }
 
 .container-2 {
   padding: 75px 0;
@@ -130,7 +147,12 @@ a:hover {
       border-radius: 10px;
       gap: 10px;
       font-size: 18px;
-      border: 2px orangered solid; }
+      border: 2px orangered solid;
+      transition: all 0.5s ease-in-out;
+      background-color: rgba(255, 255, 255, 0);
+      color: orangered;
+      border: 1px solid orangered;
+      background-color: rgba(255, 255, 255, 0); }
       .container-2 .right-part button:hover ion-icon {
         color: orangered; }
   .container-2 .donate-btn {
@@ -216,6 +238,9 @@ footer {
   .container-3 .footer-3 ul {
     list-style: none;
     line-height: 30px; }
+    .container-3 .footer-3 ul li:hover {
+      animation: animate__pulse;
+      animation-duration: 1ms; }
   .container-3 .footer-3 ul li:before {
     border-right: 2px solid rgba(255, 255, 255, 0.5);
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
