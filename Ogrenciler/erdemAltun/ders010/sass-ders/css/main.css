@@ -557,7 +557,6 @@ h1 {
   font-size: 40px; }
 
 .causes {
-  margin-top: 4rem;
   padding: 10% 10%;
   background-color: #e0e0e0; }
 
@@ -616,7 +615,6 @@ h1 {
     border-radius: 3px; }
 
 .causes-bottom {
-  grid-area: causes;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -667,13 +665,7 @@ h1 {
     margin-left: 10px; }
 
 @media only screen and (max-width: 768px) {
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto); } }
-
-@media only screen and (max-width: 768px) {
-  .cards1 {
+  .cards, .cards1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto); } }
