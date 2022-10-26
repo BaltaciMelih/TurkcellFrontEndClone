@@ -12,7 +12,7 @@ body{
     /* transition-property: background-color;
     transition-duration: 2s;
     transition-timing-function: ease-in-out; */
-    /* transition: background-color 1s, border-radius 1s ease-in-out; */
+    transition: background-color 1s, border-radius 1s ease-in-out;
     /* transition: all 1s ease-in; */
     /* animation-name: aa;
     animation-duration: 1s;

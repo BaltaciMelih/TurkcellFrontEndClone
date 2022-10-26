@@ -29,6 +29,7 @@ $bgPinkColor: #FFF0E6;
 .box {
   max-width: 500px;
   @include margin(0, 0, 20px, 20px);
+  animation: fadeInUp  1s forwards 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   .members-head {
     background-color: $bgPinkColor;
     color: $orangeColor;
@@ -71,10 +72,12 @@ $bgPinkColor: #FFF0E6;
   background-color: $bgGrayColor;
   text-align: center;
   max-height: 375px;
+  animation: fadeInUp  1s forwards 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   & img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
+    transition: all 0.5s ease-in-out;
+  } 
   & i {
     color: $orangeColor;
   }
@@ -93,10 +96,10 @@ $bgPinkColor: #FFF0E6;
       background-color: $bgGrayColor;
       transform: translate(0, -50%);
     }
+    & img {
+      transform: translate3d(0, -5%, 0);
+    }
   }
-  // visibility: visible;
-  // animation-delay: 10s;
-  // animation-name: fadeInUp;
 }
 .members-text {
   @include margin(0, 0, 10px, 10px);
@@ -104,7 +107,7 @@ $bgPinkColor: #FFF0E6;
 }
 .container6 {
   max-width: 600px;
-  @include margin(auto, auto, 50px, 50px);
+  @include margin(auto, auto, 80px, 80px);
   &:hover {
     .arrow-icon {
       opacity: 1;
@@ -116,13 +119,15 @@ $bgPinkColor: #FFF0E6;
 }
 .box3 {
   @extend .box;
+  animation: fadeInUp  1s forwards 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .testimonial-head {
   @extend .members-head;
-}
+} 
 .box4 {
   max-width: 550px;
   @include margin(auto, auto, 20px, 20px);
+  animation: fadeInUp  1s forwards 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .testimonial-img {
   @include center(flex, center, center, 50px);
@@ -172,8 +177,8 @@ $bgPinkColor: #FFF0E6;
   }
 }
 footer {
+  animation: fadeInUp  1s forwards 0s cubic-bezier(0.19, 1, 0.22, 1);
   background-color: $bgColor;
-  height: 100%;
   & h3 {
     color: $whiteColor;
     font-size: 20px;
@@ -193,104 +198,107 @@ footer {
   gap: 30px;
   padding: 50px;
   line-height: 2;
-  @include margin(auto, auto, 48px, 48px);
-}
-.o-color {
+  @include margin(auto, auto, 48px, 10px);
+  .o-color {
   color: $orangeColor;
-}
-.w-color {
-  color: $whiteColor;
-}
-.footer-icon{
-  & span {
-    font-size: 16px;
   }
-}
-.social-icon {
-  @include center(flex, left, center, 10px);
-  &:hover {
-    cursor: pointer;
-    border-color: $whiteColor;
+  .w-color {
+    color: $whiteColor;
   }
-  .icon {
-    @include center(flex, center, center, 0);
-    @include margin(0, 0, 20px, 0);
-    width: 38px;
-    height: 38px;
-    border: 1px solid $grayColor;
-    border-radius: 10px;
-    color: $grayColor;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-      color: $whiteColor;
+  .footer-icon{
+    & span {
+      font-size: 16px;
     }
   }
-}
-.footer-list {
-  ul {
-    list-style: none;
-    li {
-      position: relative;
-      text-transform: capitalize;
-      transition: all 0.3sn ease;
+  .social-icon {
+    @include center(flex, left, center, 10px);
+    &:hover {
+      cursor: pointer;
+      border-color: $whiteColor;
+    }
+    .icon {
+      @include center(flex, center, center, 0);
+      @include margin(0, 0, 20px, 0);
+      width: 38px;
+      height: 38px;
+      border: 1px solid $grayColor;
+      border-radius: 10px;
+      color: $grayColor;
+      transition: all 0.5s ease-in-out;
       &:hover {
-        cursor: pointer;
-        font-size: 18px;
+        color: $whiteColor;
       }
     }
-    li:before {
-      content: ">";
-      position: absolute;
-      left: -20px;
+  }
+  .footer-list {
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        text-transform: capitalize;
+        transition: all 0.3sn ease;
+        &:hover {
+          cursor: pointer;
+          font-size: 18px;
+        }
+      }
+      li:before {
+        content: ">";
+        position: absolute;
+        left: -20px;
+      }
+    }
+  }
+  .footer-input {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    @include center(flex, center, center, 5px);
+    padding: 10px;
+    & input {
+      background-color: transparent;
+      border: none;
+      padding: 10px;
+    }
+    & button {
+      background-color: $orangeColor;
+      color: $whiteColor;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid $orangeColor;
+        color: $orangeColor;
+      }
     }
   }
 }
 .footer-box2 {
   @include center(flex, space-between, center, 0);
-  @include margin(90px, 90px, 0, 0);
+  @include margin(70px, 70px, 0, 0);
   border-top: 0.1px solid white;
-  padding-top: 20px;
+  padding: 20px;
+  .w-color {
+    color: $whiteColor;
+  }
   .w-color:hover {
     cursor: pointer;
     color: $orangeColor;
   }
 }
-.footer-input {
-  border: 1px solid white;
-  border-radius: 10px;
-  margin-top: 20px;
-  @include center(flex, center, center, 5px);
-  padding: 10px;
-  & input {
-    background-color: transparent;
-    border: none;
-    padding: 10px;
+@keyframes fadeInUp {
+  10% {
+    opacity: 0;
+    transform: translate3d(0,100%,0);
   }
-  & button {
-    background-color: $orangeColor;
-    color: $whiteColor;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      cursor: pointer;
-      background-color: transparent;
-      border: 1px solid $orangeColor;
-      color: $orangeColor;
-    }
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
-// @keyframes fadeInUp {
-//   0% {
-//     opacity: 0;
-//     transform: translate3d(0,100%,0);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: none;
-//   }
-// }
 @media only screen and (max-width: 780px) {
   .members-box2 {
     display: flex;
@@ -299,5 +307,35 @@ footer {
   .footer-box1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .container6 {
+    @include margin(20px, 20px, 50px, 50px);
+  }
+}
+.top {
+  background-color: $orangeColor;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 25px;
+  right: 50px;
+  position: fixed;
+  transition: all 0.4s ease-in-out;
+  & span {
+    @include margin(12px, 0, 12px, 0);
+    color: $whiteColor;
+  }
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $orangeColor;
+    & span {
+      color: $orangeColor;
+    }
   }
 }
