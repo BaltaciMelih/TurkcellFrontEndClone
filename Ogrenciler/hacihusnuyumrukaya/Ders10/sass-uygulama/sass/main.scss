@@ -43,8 +43,261 @@ body{
 .container-1haci{  
     @include containerden();  
     padding-top: 80px;
+}  
+.container-2haci{
+    @include containerden();
+    flex-direction: row;
+    padding-bottom: 80px;
+
+    .box-haci{
+        width: 27%;
+        background-color:$colorwhite;  
+        border-top:5px solid  $colortext;
+        border-top-left-radius: $px10;
+        border-top-right-radius:$px3;  
+        @include boxlar();    
+        &-education{    
+            background-color: $colortext;
+            width: 35%;
+            margin-left: 32.5%;   
+            padding-top: 0px !important;
+            border-bottom-left-radius: $px5;
+            border-bottom-right-radius: $px5;
+            color:$colorwhite;
+            font-size: $font20;
+            padding-bottom: $px5;   
+        } 
+    } 
+
+    .box2-haci{
+        width: 90%;
+        height: auto;
+        background-color:$colorbackground1;
+        flex-direction: row;
+        @include padding1();  
+        margin-left: 2.5%;   
+        margin-bottom: 30px;
+        flex-wrap: wrap; 
+        padding-bottom: 10px;
+        &-ic{
+            display: flex;
+            justify-content: space-around;
+            &-text{
+                    width: 50%;  
+                }  
+        } 
+    } 
+
+    .imgbutton  
+    {
+    position: relative;   
+    height: 270px;  
+    width: 100%;  
+        &-img1-haci   
+        {       
+            width: 100%;   
+            height: 270px;           
+            position: relative;    
+        }
+        .overlay {
+            position: absolute;
+            bottom: 100%;  
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .5);   
+            overflow: hidden;
+            width: 100%;
+            height:0;
+            transition: .5s ease;
+            .button-haci {      
+                position: absolute; 
+                height: 50px;
+                width: 40%;
+                background-color:rgba(0, 0, 0, .5);
+                @include flex-eleman();
+                border: 2px solid $colortext;
+                color: $colortext;
+                border-radius: 10px;   
+                display: none;   
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                &:hover{
+                    background-color: $colortext;
+                    color: white;   
+                }  
+            }   
+            &:hover{
+            .button-haci    
+                {
+                display:flex;  
+                z-index: 2;
+                }   
+            }  
+         
+          }
+    } 
+
+    .imgbutton:hover .overlay {     
+        bottom: 0;    
+        height: 100%;
+       
+    }  
+    .animated-progress {
+        width: 95%;
+        height: 20px; 
+        border-radius: 5px;
+        border: 1px solid rgb(189, 113, 113);
+        overflow: hidden;
+        position: relative;
+      }   
+} 
+.text-haci{
+    color: #787878;  
+    @include padding1();
+}  
+.animated-progress span {
+    font-size: 12px; 
+    height: 100%;
+    display: block;
+    width:  90%;
+    color: rgb(255, 251, 251);  
+    line-height: 20px;   
+    position: absolute;  
+    text-align: end;       
+    padding-right: 5px;
+    background-color: $colortext;
+  } 
+.container-3haci{
+    @include containerden();  
+    padding-top: 80px;
+    background-color: $colorbackground2;
 }
-.feature
+   
+.container-4haci{
+    @include containerden();
+    flex-direction: row;
+    padding-bottom: 80px;   
+    background-color:$colorbackground2;    
+    .box3-haci
+    {
+        width: 23%;
+        background-color:$colorwhite;
+        border-radius: $px10;
+        @include boxlar();    
+        padding: 30px;    
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        
+        &-button2-haci   
+        { 
+            height: 40px;
+            width: 45%;        
+            margin-left:27.5%;
+            background-color:white;
+            border: 2px solid $colortext;
+            color: $colortext;  
+            @include flex-eleman();
+            border-radius: 10px;     
+            margin-top: 20px;
+            margin-bottom: 20px;  
+             
+            &:hover{
+                background-color: $colortext;
+                color: white;   
+            }  
+        }   
+    }  
+}
+     
+   
+.container-5haci{
+    position: relative;     
+    height: auto;    
+    @include containerden();                
+    flex-direction: row;
+    padding-top: 70px; 
+    padding-bottom: 70px;   
+    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)) , url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+   
+  } 
+  .box4-haci{
+    width: 40%;
+    @include boxlar();    
+    z-index: 1;
+    text-align: left;
+    .feature{width: 20%; }
+    &h2{     
+        color: $colorwhite;
+        text-align: left;}
+} 
+.box5-haci{
+    width: 40%;
+    @include boxlar();      
+    background-color: $colorwhite; 
+    padding: 20px;
+    padding-top: 40px;  
+    padding-bottom: 40px;  
+    z-index: 1;
+
+    &-form-text-mail{
+        width: 95%;
+        height: 50px;
+        background-color: $colorbackground1;
+        margin-bottom: 10px;
+        border: 0px;
+        padding-left: 5px;
+    }
+    .radiobuttons {
+        position: relative;
+        display: inline-flex;  
+        width: 95%;
+        background-color:$colorbackground1;
+        height: 50px;   
+        &-secili-button:checked+label {
+            color: $colortext;
+            border-color:$colortext;
+        }
+        &-secili-button {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: none;
+        } 
+        &-radiobutton {
+            display: inline-block;
+            font-weight: 400;
+            color: #787878;  
+            @include flex-eleman();    
+            cursor: pointer;
+            border: 1px solid transparent;  
+            border-radius: 6px;
+            position: relative;
+            flex: 1 1 auto;  
+        }
+    }    
+     
+    .button3-haci   { 
+        height: 50px;  
+        width: 35%;          
+        margin-left:3%;   
+        background-color:$colortext; 
+        border: 2px solid $colortext; 
+        color: $colorwhite;
+        @include flex-eleman();
+        border-radius: 10px;    
+        margin-top: 20px;
+        margin-bottom: 20px;   
+        &:hover{
+            background-color: $colorwhite;
+            color:$colortext; 
+        }  
+    }  
+}
+  .feature
 {
     color: $colortext;
     background-color: #ebd9cd;
@@ -59,279 +312,35 @@ h2{
     font-size: 38px;
     text-align: center;  
     font-weight: bolder;  
-}  
-.container-2haci{
-    @include containerden();
-    flex-direction: row;
-    padding-bottom: 80px;
-}
-.box-haci{
-    width: 27%;
-    background-color:$colorwhite;  
-    border-top:5px solid  $colortext;
-    border-top-left-radius: $px10;
-    border-top-right-radius:$px3;  
-    @include boxlar();    
-}   
-.text-haci{
-    color: #787878;  
-    @include padding1();
-}  
-.education{    
-    background-color: $colortext;
-    width: 35%;
-    margin-left: 32.5%;   
-    padding-top: 0px !important;
-    border-bottom-left-radius: $px5;
-    border-bottom-right-radius: $px5;
-    color:$colorwhite;
-    font-size: $font20;
-    padding-bottom: $px5;   
-}  
-.box2-haci{
-    width: 90%;
-    height: auto;
-    background-color:$colorbackground1;
-    flex-direction: row;
-    @include padding1();  
-    margin-left: 2.5%;   
-    margin-bottom: 30px;
-    flex-wrap: wrap; 
-    padding-bottom: 10px;
-}  
-.box2-haci-ic{
-    display: flex;
-    justify-content: space-around;
-} 
- 
-.imgbutton   {
-    position: relative;   
-    height: 270px;  
-    width: 100%;  
-}   
-.img1-haci   {       
-    width: 100%;   
-    height: 270px;           
-    position: relative;    
-}
-.textleft ,.textright{
-    width: 50%;
-}
+}      
 
-.button-haci    {      
-    position: absolute;
-    height: 50px;
-    width: 40%;
-    background-color:rgba(0, 0, 0, .5);
-    @include flex-eleman();
-    border: 2px solid $colortext;
-    color: $colortext;
-    border-radius: 10px;   
-    display: none;   
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}  
-.button-haci:hover{
-    background-color: $colortext;
-    color: white;   
-} 
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, .5);   
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-  }
-.imgbutton:hover{
-    .button-haci    
-    {
-     display:flex;  
-     z-index: 2;
-    }   
-}
-.imgbutton:hover .overlay {     
-    bottom: 0;    
-    height: 100%;
-  
-}
-.animated-progress {
-    width: 95%;
-    height: 20px; 
-    border-radius: 5px;
-    border: 1px solid rgb(189, 113, 113);
-    overflow: hidden;
-    position: relative;
- 
-  }   
-
-  .animated-progress span {
-    font-size: 12px; 
-    height: 100%;
-    display: block;
-    width:  90%;
-    color: rgb(255, 251, 251);  
-    line-height: 20px;   
-    position: absolute;  
-    text-align: end;       
-    padding-right: 5px;
-    background-color: $colortext;
-  } 
-  .container-3haci{
-    @include containerden();  
-    padding-top: 80px;
-    background-color: $colorbackground2;
-}
-.container-4haci{
-    @include containerden();
-    flex-direction: row;
-    padding-bottom: 80px;   
-    background-color:$colorbackground2;    
-}
-.box3-haci{
-    width: 23%;
-    background-color:$colorwhite;
-    border-radius: $px10;
-    @include boxlar();    
-    padding: 30px;    
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}       
-.button2-haci   {
-    height: 40px;
-    width: 45%;        
-    margin-left:27.5%;
-    background-color:white;
-    border: 2px solid $colortext;
-    color: $colortext;  
-    @include flex-eleman();
-    border-radius: 10px;     
-    margin-top: 20px;
-    margin-bottom: 20px;   
-}  
-.button2-haci:hover{
-    background-color: $colortext;
-    color: white;   
-}     
-.container-5haci{
-    position: relative;     
-    height: auto;    
-    @include containerden();                
-    flex-direction: row;
-    padding-top: 70px; 
-    padding-bottom: 70px;   
-    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)) , url(https://technext.github.io/chariteam/img/carousel-2.jpg);
-    background-position: 100%;
-    background-repeat: no-repeat; 
-  }      
-.img2-haci{          
-    width: 100%;
-    height: 480px;
-    filter: grayscale(60%);
-    position: absolute;
-    top: 0; 
-    z-index: 0;
-}  
-.box4-haci{
-    width: 40%;
-    @include boxlar();    
-    z-index: 1;
-    text-align: left;
-    .feature{width: 20%; }
-    h2{     
-        color: $colorwhite;
-        text-align: left;}
-}
-.box5-haci{
-    width: 40%;
-    @include boxlar();      
-    background-color: $colorwhite; 
-    padding: 20px;
-    padding-top: 40px;  
-    padding-bottom: 40px;  
-    z-index: 1;
-}
-.form-text-mail{
-    width: 95%;
-    height: 50px;
-    background-color: $colorbackground1;
-    margin-bottom: 10px;
-    border: 0px;
-    padding-left: 5px;
-}
-.radiobuttons {
-    position: relative;
-    display: inline-flex;  
-    width: 95%;
-    background-color:$colorbackground1;
-    height: 50px;   
-}    
- .secili-button:checked+label {
-    color: $colortext;
-    border-color:$colortext;
-}
-.secili-button {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-    pointer-events: none;
-} 
-.radiobutton {
-    display: inline-block;
-    font-weight: 400;
-    color: #787878;  
-    @include flex-eleman();    
-    cursor: pointer;
-    border: 1px solid transparent;  
-    border-radius: 6px;
-    position: relative;
-    flex: 1 1 auto;  
-}
-.button3-haci   { 
-    height: 50px;  
-    width: 35%;          
-    margin-left:3%;   
-    background-color:$colortext; 
-    border: 2px solid $colortext; 
-    color: $colorwhite;
-    @include flex-eleman();
-    border-radius: 10px;    
-    margin-top: 20px;
-    margin-bottom: 20px;   
-}  
-.button3-haci:hover{
-    background-color: $colorwhite;
-    color:$colortext; 
-}   
- 
 @media screen and (max-width: 768px) {
-    .box-haci{
-        width: 85%;   
+    .container-2haci .box-haci{
+        width: 85%;    
         margin-bottom: 40px;
     }
     .img1-haci,.imgbutton {
         height: 300px; 
     }
-    .box3-haci {
+    .container-4haci .box3-haci {
         width: 70%;
     }  
-    .box4-haci  {
+    .box4-haci  { 
         width: 85%;
     }
-    .box5-haci {  
-        width: 80%;  
-    }
-    .container-5haci{
+     .box5-haci {  
+        width: 80%;    
+    } 
+    .container-5haci{ 
         padding: 0px;
         padding-top: 40px;
-        padding-bottom: 60px;
+        padding-bottom: 60px; 
+        .feature
+        {
+            width: 25%;
+        }
     }
-    .img2-haci{
-        height: 750px;   
+    .img2-haci{ 
+        height: 750px;     
     }
-}
+}  
