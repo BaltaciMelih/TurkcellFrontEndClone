@@ -26,7 +26,7 @@ body {
   .navbar .logo {
     text-decoration: none; }
   .navbar h1 {
-    color: #FF6F0F; }
+    color: #ff6f0f; }
 
 .navbar-header {
   width: 95%;
@@ -45,7 +45,7 @@ body {
     text-decoration: none;
     color: white; }
   .list a:hover {
-    color: #FF6F0F; }
+    color: #ff6f0f; }
 
 .dropdown {
   position: relative;
@@ -69,22 +69,22 @@ body {
     padding: 5px;
     color: black; }
   .dropdown-content a:hover {
-    background-color: #E9ECEF; }
+    background-color: #e9ecef; }
 
 .dropdown:hover .dropdown-container {
   display: block; }
 
 .btn-donate {
   background-color: transparent;
-  border: 2px solid #FF6F0F;
-  color: #FF6F0F;
+  border: 2px solid #ff6f0f;
+  color: #ff6f0f;
   padding: 15px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 1rem; }
 
 .btn-donate:hover {
-  background-color: #FF6F0F;
+  background-color: #ff6f0f;
   color: white; }
 
 .img-container {
@@ -94,7 +94,7 @@ body {
   width: 100%;
   height: 600px;
   position: absolute;
-  opacity: .30; }
+  opacity: 0.3; }
 
 .text {
   height: 600px;
@@ -111,19 +111,19 @@ body {
     color: gray;
     margin-bottom: 40px; }
 
-.btn {
+.btn, .learn-more, .contact-us {
   border: none;
   border-radius: 4px;
-  background-color: #FF6F0F;
+  background-color: #ff6f0f;
   padding: 15px;
   color: white;
   font-weight: 500;
   font-size: 1rem; }
 
-.btn:hover {
+.btn:hover, .learn-more:hover, .contact-us:hover {
   background-color: transparent;
-  border: 2px solid #FF6F0F;
-  color: #FF6F0F; }
+  border: 2px solid #ff6f0f;
+  color: #ff6f0f; }
 
 .container2 {
   display: flex;
@@ -132,26 +132,107 @@ body {
   margin: 60px auto;
   gap: 25px; }
 
-.container2 img {
-  width: 45%; }
+.img-container2 {
+  background-image: url("https://technext.github.io/chariteam/img/about-1.jpg");
+  background-color: red;
+  width: 100%;
+  position: relative; }
 
-.title {
+.inside-img {
+  position: absolute;
+  background-color: red;
+  z-index: 10;
+  width: 10%; }
+
+.title-about-us, .title-feature-causes {
   background-color: #ffe4cd;
   width: 80px;
   text-align: center;
   padding: 10px;
   border-radius: 20px;
-  color: #FF6F0F; }
+  color: #ff6f0f; }
 
-.container2 .header-text {
+.header-text, .container3 p {
   font-size: 42px;
   font-weight: bold;
   margin: 0 auto; }
 
 .container2 h3 {
-  color: #FF6F0F; }
+  color: #ff6f0f; }
 
 .text-box {
-  background-color: #F8F8F9;
-  border-bottom: 5px solid #FF6F0F;
-  border-radius: 10px; }
+  background-color: #f8f8f9;
+  border-bottom: 5px solid #ff6f0f;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  display: block; }
+
+.contact-us {
+  background-color: transparent;
+  color: #ff6f0f;
+  border: 2px solid #ff6f0f; }
+
+.contact-us:hover {
+  background-color: #ff6f0f;
+  color: white; }
+
+.title-feature-causes {
+  width: 100px; }
+
+.container3 {
+  padding: 70px;
+  background-color: #f1f1f1; }
+
+.container3-header {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center; }
+
+.container3 p {
+  margin-top: 20px; }
+
+.card {
+  background-color: white;
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 0;
+  border-top: 8px solid #ff6f0f;
+  border-radius: 5px; }
+
+.card img {
+  width: 100%; }
+
+.card-title {
+  background-color: #ff6f0f;
+  width: 35%;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px; }
+
+.card h3 {
+  font-size: 1.4rem; }
+
+.card p {
+  font-size: 1.1rem;
+  font-weight: normal; }
+
+.goal {
+  background-color: #f7f7f7;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px; }
