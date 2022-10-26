@@ -36,9 +36,17 @@
 @mixin boxshadow{
     box-shadow: 10px 0px 50px grey;
 }
+@mixin animation($name,$duration,$speed,$delay,$cycle){
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $speed;
+    animation-delay: $delay;
+    animation-direction: $cycle;
+}
 
 
 .container4{
+    @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor(rgb(255, 255, 255));
     @include display-flex(column,center,20px);
     & button{
@@ -50,10 +58,12 @@
 }
 
 .container5{
+    @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor(rgb(255, 255, 255));
     @include display-flex(row,center,20px);
-    @include size(100%,1000px);
+    @include size(100%,500px);
     .box{
+        @include animation(myfirst,1s ,ease ,1s ,alternate );
         @include size(432px,420px);
         @include bgcolor(rgb(255, 255, 255));
         @include display-flex(column,center ,20px);
@@ -106,14 +116,152 @@
     
 }
 
+
+.container6{
+    @include animation(myfirst,2s ,ease ,1s ,alternate );
+    @include bgcolor(rgb(255, 255, 255));
+    @include display-flex(row,center,20px);
+    @include size(100%,600px);
+    align-items: center;
+    .box{
+        position: relative;
+        @include size(300px,450px);
+        @include bgcolor(#F8F8F9);
+        @include display-flex(column,center ,20px);
+        transition: height 4s;
+        .boxyazi{
+            text-align: center;
+            @include bgcolor(#F8F8F9);
+        }
+            p{
+                line-height: 30px;
+            }
+        ul{
+            position: absolute;
+        }
+        .visib{
+            position: absolute;
+            visibility: hidden;
+            @include display-flex(row,start ,2px );
+            margin-left: 23%;
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 24px;
+        }
+    :hover{
+        @include size(300px,150px);
+        .visib{
+            visibility: visible;
+        }
+        animation: second 1s linear 1s  alternate;
+    }
+
+    }
+}
+.container7{
+    @include animation(myfirst,2s ,ease ,2s ,alternate );
+    @include bgcolor(rgb(255, 255, 255));
+    @include display-flex(column,center,20px);
+    & button{
+        @include contentbuton(160px,15px,10px,none,5%);
+        @include bgcolor(#FFF0E6);
+        @include textcolor(#FF6F0F);
+        @include fontsize(1.2rem);
+    }
+    
+}
+.container8{
+    @include animation(myfirst,2s ,ease ,1s ,alternate );
+    @include bgcolor(rgb(255, 255, 255));
+    @include display-flex(row,center,20px);
+    @include size(100%,600px);
+    .vision1{
+        visibility: hidden;
+    }
+    .vision2{
+        visibility: visible;
+    }
+    .vision3{
+        visibility: hidden;
+    }
+    .box{
+        @include size(635px,311px);
+        @include bgcolor(#ffffff);
+        @include display-flex(column,start,20px);
+        .littleimage{
+            @include display-flex(row,center ,0px);
+            img{
+                border-radius: 50%;
+                border: 7px solid rgb(227, 117, 15);
+            }
+        }
+        .boxarrow{
+            @include display-flex(row,center ,10px );
+        }
+        .content__yazi{
+            @include display-flex(column,center ,10px );
+            text-align: center;
+            margin: 0;
+            @include fontsize(18px);
+            @include textcolor(white);
+            @include bgcolor(#ff6f0f);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+          }
+        a:hover{
+            background-color: rgb(219, 102, 102);
+            color: black;
+        }
+        .previous:active{
+            .vision1{
+                visibility: visible;
+            }
+            .vision2{
+                visibility: hidden;
+            }
+            .vision3{
+                visibility: hidden;
+            }
+        }
+    }
+
+}
+.previous {
+    background-color: #ff6f0f;
+    color: rgb(255, 255, 255);
+  }
+  .round {
+    border-radius: 50%;
+  }
+  .next {
+    background-color: #ff6f0f;
+    color: white;
+  }
+
 @media only screen and (max-width: 768px) {
     .container4{
         @include display-flex(column,center ,60px );
+        
     }
     .container5{
         
         @include display-flex(column,center ,10px );
-        
+        height: 1000px;
+        margin-left: 5%;
+    }
+    .container6{
+        @include display-flex(column,center ,10px );
+        height: 1800px;
+        margin-left: 15%;
+        .content__baslik{
+            display: flex;
+            justify-content: center;
+        }
     }
     .content__yazi{
         @include display-flex(column,start ,10px );
@@ -122,7 +270,53 @@
     .content__baslik{
         margin-left: 50%;
     }
+    .container8{
+        .box{
+            margin-left: 20%;
+        }
+    }
+    
   }
+  @keyframes myfirst {
+    0% {
+        -webkit-transform: translateY(-1200px) scale(.7);
+        transform: translateY(-1200px) scale(.7);
+        opacity: .7
+      }
+    
+      80% {
+        -webkit-transform: translateY(0) scale(.7);
+        transform: translateY(0) scale(.7);
+        opacity: .7
+      }
+    
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+      }
+  }
+  .delay1{
+    animation-delay: 1s;
+  }
+
+  @keyframes second {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+      }
+    
+      to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+      }
+    }
+    
+    
+  
+  
 
 
 

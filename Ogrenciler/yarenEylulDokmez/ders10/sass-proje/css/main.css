@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.teamMembers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5%;
+  font-family: "Inter", sans-serif; }
+  .teamMembers .memberTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .teamMembers .memberTop button {
+      font-size: 16px;
+      padding: 5px 18px;
+      color: #FF6F0F;
+      background-color: #ffe9db;
+      border-radius: 50rem;
+      border: none; }
+    .teamMembers .memberTop h2 {
+      margin: 2% 8%;
+      font-size: 2.5rem;
+      align-items: center;
+      width: 30%;
+      font-weight: bold 900; }
+  .teamMembers .memberCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .teamMembers .memberCard .mCard {
+      position: relative;
+      overflow: hidden;
+      margin: 1%;
+      border-radius: 7px; }
+      .teamMembers .memberCard .mCard .mImg {
+        background-color: white;
+        transition: 0.5s; }
+        .teamMembers .memberCard .mCard .mImg img {
+          width: 16rem;
+          height: 18rem; }
+      .teamMembers .memberCard .mCard .mText {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 1rem;
+        transition: all 0.5s;
+        height: 110px;
+        background-color: #F8F8F9; }
+        .teamMembers .memberCard .mCard .mText .mName {
+          font-size: 20px;
+          font-family: "Saira", sans-serif;
+          font-weight: 600; }
+        .teamMembers .memberCard .mCard .mText .mWork {
+          font-size: 18px;
+          font-family: "Saira", sans-serif;
+          color: #FF6F0F; }
+        .teamMembers .memberCard .mCard .mText .mIcons {
+          display: flex;
+          flex-direction: row;
+          gap: 0.2rem;
+          opacity: 0; }
+          .teamMembers .memberCard .mCard .mText .mIcons a {
+            border: 1px solid white;
+            background-color: white;
+            color: #FF6F0F;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            border-radius: 50%; }
+            .teamMembers .memberCard .mCard .mText .mIcons a:hover {
+              background-color: #FF6F0F;
+              color: white;
+              border: 1px solid #FF6F0F; }
+      .teamMembers .memberCard .mCard:hover .mIcons {
+        opacity: 1; }
+      .teamMembers .memberCard .mCard:hover .mImg {
+        margin-top: -32px; }
+      .teamMembers .memberCard .mCard:hover .mText {
+        height: 170px;
+        margin-top: -32px; }
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 8%;
+  font-family: "Inter", sans-serif; }
+  .testimonialTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .testimonialTop button {
+      font-size: 16px;
+      padding: 5px 18px;
+      color: #FF6F0F;
+      background-color: #ffe9db;
+      border-radius: 50rem;
+      border: none; }
+    .testimonialTop h2 {
+      margin: 2% 8%;
+      font-size: 2.5rem;
+      align-items: center;
+      width: 40%;
+      font-weight: bold 900; }
+  .testimonialProfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .testimonialProfilArrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 40%; }
+      .testimonialProfilArrow .testimonialArrow {
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #FF6F0F;
+        transition: all 0.5s  ease-out;
+        font-size: 28px;
+        opacity: 0;
+        cursor: pointer; }
+        .testimonialProfilArrow .testimonialArrow:hover {
+          color: #787878; }
+      .testimonialProfilArrow .testimonialProfilPhoto {
+        background-color: #FF6F0F;
+        border-radius: 50%;
+        width: 102px;
+        height: 102px;
+        min-width: 98px; }
+        .testimonialProfilArrow .testimonialProfilPhoto img {
+          margin: 9% 9%;
+          border-radius: 50%;
+          width: 84px;
+          height: 84px; }
+    .testimonialProfilText {
+      height: 12rem;
+      width: 34rem;
+      background-color: #FF6F0F;
+      border-radius: 7px;
+      margin-top: 1%;
+      padding: 2% 2%;
+      text-align: center;
+      font-family: "Inter", sans-serif;
+      color: white; }
+      .testimonialProfilText p {
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.5; }
+      .testimonialProfilText h5 {
+        font-size: 1.2rem;
+        margin-top: 3%;
+        margin-bottom: 2%; }
+      .testimonialProfilText span {
+        font-style: italic;
+        font-size: 1rem; }
+  .testimonial:hover .testimonialArrow {
+    opacity: 1; }
+
+footer {
+  width: 100%;
+  padding: 1% 4% 3% 4%;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  background-color: #001D23;
+  font-family: "Inter", sans-serif; }
+  footer .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    color: #787878;
+    padding-bottom: 4%;
+    margin-bottom: 3%;
+    border-bottom: 0.2px solid #787878;
+    flex-wrap: wrap; }
+    footer .footer-top .footer-column-1 {
+      margin-top: 4%;
+      order: 1;
+      flex-grow: 1; }
+      footer .footer-top .footer-column-1 a, footer .footer-top .footer-column-1 i, footer .footer-top .footer-column-1 li {
+        color: #787878;
+        text-decoration: none;
+        list-style: none; }
+      footer .footer-top .footer-column-1 h1 {
+        color: #FF6F0F;
+        font-size: 2.2rem;
+        font-weight: 700px;
+        margin-bottom: 10%; }
+        footer .footer-top .footer-column-1 h1 span {
+          color: white; }
+      footer .footer-top .footer-column-1 p {
+        font-size: 1.1rem;
+        font-weight: 300;
+        width: 17rem; }
+      footer .footer-top .footer-column-1 ul {
+        margin-top: 7%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.2rem; }
+        footer .footer-top .footer-column-1 ul a {
+          border: 1px solid #787878;
+          padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+          border-radius: 0.5rem; }
+          footer .footer-top .footer-column-1 ul a:hover {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white; }
+            footer .footer-top .footer-column-1 ul a:hover i {
+              color: white; }
+    footer .footer-top .footer-column-2, footer .footer-top .footer-column-3, footer .footer-top .footer-column-4 {
+      margin-top: 4%;
+      order: 1;
+      flex-grow: 1;
+      font-size: 1.05rem;
+      font-weight: bold; }
+      footer .footer-top .footer-column-2 a, footer .footer-top .footer-column-3 a, footer .footer-top .footer-column-4 a, footer .footer-top .footer-column-2 i, footer .footer-top .footer-column-3 i, footer .footer-top .footer-column-4 i, footer .footer-top .footer-column-2 li, footer .footer-top .footer-column-3 li, footer .footer-top .footer-column-4 li {
+        color: #787878;
+        text-decoration: none;
+        list-style: none; }
+      footer .footer-top .footer-column-2 h5, footer .footer-top .footer-column-3 h5, footer .footer-top .footer-column-4 h5 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 1.5rem; }
+      footer .footer-top .footer-column-2 li, footer .footer-top .footer-column-3 li, footer .footer-top .footer-column-4 li {
+        margin-bottom: 7%; }
+      footer .footer-top .footer-column-2 span, footer .footer-top .footer-column-3 span, footer .footer-top .footer-column-4 span {
+        margin-left: 5%; }
+    footer .footer-top .footer-column-3 {
+      width: 20%; }
+      footer .footer-top .footer-column-3 li {
+        margin-bottom: 4%; }
+        footer .footer-top .footer-column-3 li:hover {
+          color: white;
+          font-size: 1.1rem;
+          transition: 0.3s; }
+    footer .footer-top .footer-column-4 p {
+      width: 15rem; }
+    footer .footer-top .footer-column-4 .footer-button {
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      background-color: transparent;
+      margin-top: 1rem;
+      width: 15rem; }
+      footer .footer-top .footer-column-4 .footer-button input {
+        background-color: transparent;
+        color: #787878;
+        padding-left: 1rem;
+        height: 4rem;
+        border: 0px;
+        font-size: 1rem;
+        width: 59%; }
+      footer .footer-top .footer-column-4 .footer-button button {
+        cursor: pointer;
+        color: white;
+        height: 3.6rem;
+        width: 35%;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        background-color: #FF6F0F; }
+        footer .footer-top .footer-column-4 .footer-button button:hover {
+          background-color: transparent;
+          color: #FF6F0F;
+          border: 1px solid #FF6F0F; }
+  footer .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4rem 0 4rem;
+    color: #787878; }
+    footer .footer-bottom a, footer .footer-bottom i, footer .footer-bottom li {
+      color: white;
+      text-decoration: none;
+      list-style: none; }
+
+@media only screen and (max-width: 768px) {
+  .testimonialProfilPhoto {
+    width: 98px;
+    height: 90px; }
+    .testimonialProfilPhoto img {
+      width: 74px;
+      height: 74px; }
+  .testimonialProfilText {
+    height: 9rem;
+    width: 29rem; }
+    .testimonialProfilText p {
+      font-size: 0.85rem; }
+    .testimonialProfilText h5 {
+      font-size: 1rem; }
+    .testimonialProfilText span {
+      font-size: 0.85rem; } }

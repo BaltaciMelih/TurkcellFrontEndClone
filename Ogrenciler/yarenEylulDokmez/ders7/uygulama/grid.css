@@ -212,7 +212,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.6rem;
+  gap: 1rem;
   width: 23%;
   min-width: 17rem;
 }
@@ -231,10 +231,32 @@
   font-weight: 300;
 }
 
-.footer-top-item input {
+.footer-top-item .input-part {
+  position: relative;
   width: 90%;
   font-size: 1.8rem;
   height: 3rem;
+}
+
+.footer-top-item .input-part::after {
+  content: '🎈';
+  position: absolute;
+  right: 2px;
+  top: 6px;
+  color: White;
+}
+
+.footer-top-item input {
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer-top-item > button {
+  display: block;
+  width: 90%;
+  color: white;
+  background-color: rgb(255, 102, 0);
+  padding: 1rem;
 }
 
 .footer-top-item ul {
@@ -257,11 +279,18 @@
 
 .footer-icons {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .footer-icons a {
   color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
 }
 
 .footer-bottom {
@@ -271,17 +300,15 @@
   text-align: center;
 }
 
-/* @media (max-width: 1200px) {
-    .footer-top-item {
-      width: 40%;
-      gap: 4rem;
-    }
-  } */
+.footer-bottom:hover {
+  background-color: #444;
+  color: whitesmoke;
+}
 
 @media (max-width: 768px) {
   .footer-top-item {
     width: 100%;
-    gap: 2.5rem;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
   }
