@@ -202,6 +202,7 @@ $padding100: 100px;
  padding-top: $padding100;
  padding-bottom: $padding100;
   &-featureCauses{
+    width: 170px;
       display: flex;
       justify-content: center;
       @extend .section1-right-aboutUs;
@@ -308,12 +309,7 @@ $padding100: 100px;
 .container-image:hover .overlay {
   opacity: 1;
 }
-/*batu*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Emre Düdükçü*/
 
 @mixin genel-yapi( $width, $height, $bgcolor, $margin, $padding, $color, $fsize) {
   width: $width;
@@ -383,10 +379,11 @@ $padding100: 100px;
 }
 
 .donate-now {
-  @include genel-yapi(none, none, #001d23cc, 48px 0px, 48px 12px, none, none);
+  @include genel-yapi(none, none, #001d23cc, none, 48px 12px, none, none);
   @include flex-yapi(flex, center, center, row);
   &-first {
       @include genel-yapi( 582px, 229.03px, none, 48px 0px 0px, 0px 24px, #787878, none);
+      
       h2 {
           @include flex-yapi(flex, center, center, row);
           @include genel-yapi( 125.28px, 32px, #fff0e6, 0px 0px 16px, 4px 16px, #ff6f0f, 16px);
@@ -448,17 +445,15 @@ $padding100: 100px;
       }
   }
 }
-/*emre*/
-$width: 100%;
-*{
-    margin: 0;
-    padding: 0;
-}
+/* Ege */
 .flex{
   display: flex;
 }
 .grid{
   display: grid;
+}
+.block{
+  display: block;
 }
 $margin: 5%;
 @mixin fonksiyon1($flex, $width, $height, $backgroundColor, $color) {
@@ -475,11 +470,11 @@ $margin: 5%;
     width: $width;
     height: $height;
   }
-  .section{
+  .ege-section{
     background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
   }
   
-  .navbar{
+  .ege-navbar{
     @include fonksiyon1(flex, 100%, 100%, none, white);
     justify-content: space-between;
     align-items: center;
@@ -487,7 +482,7 @@ $margin: 5%;
         padding-left: 50px; 
         
     }
-    .ul-navbar{
+    .ege-ul-navbar{
 
         @include fonksiyon1(flex, none, none, none, white);
         list-style: none;
@@ -500,34 +495,12 @@ $margin: 5%;
     } 
   }
   
-  .article{
-    @include fonksiyon1(flex, 100%, 100%, none, white);
-    // padding-bottom: 100px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    &-h1{
-        padding-top: 300px;
-        width: 550px;
-        text-align: center;
-    }
-    &-p{  
-       @extend .article-h1; 
-       padding-top: 25px;
-       padding-bottom: 25px;
-    }
-    &-button{
-        background-color: red;
-        color: aqua;   
-    }
-  }
-  .section2{
-    @include fonksiyon1(flex, 100%, 500px, none, none);
-    @extend .flex;
+  .ege-section2{
+    @include fonksiyon1(flex, 100%, none, none, none);
     @extend .grid;
-    margin-top: $margin;
+    padding-top: $margin;
     margin-bottom: $margin;
-    .container{
+    .ege-container{
       @extend .flex;
       justify-content: center;
       align-items: center;
@@ -547,67 +520,87 @@ $margin: 5%;
         width: 100%;
         height: 25px;
         border: none;
-        padding: 0px 20%;
+        padding: 0px 25%;
         max-width:200ch;
         word-wrap:break-word;
         margin-bottom: 6rem;
         margin-left: 100px;
       }
-      .img1{
-        padding-left: 100px;
-        padding-right: 100px;
+      .ege-img1{
+      @extend .flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+       &-content{
+      @include widthHeight(40%, 100%);
+      @include backgroundcolor(#FF6F0F);
+      @extend .flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      padding: 3%;
+      margin-top: 2%;
+       img{
+        border: 5px solid #555;
       }
-      .img2{
-        padding-left: 100px;
-        padding-right: 100px;
+       .ege-img1-p{
+        @include backgroundcolor(#FF6F0F);
+        color: white;   
+       }
+       .ege-img1-h5{
+        color: white;
+       }
+       .italic{
+        @include backgroundcolor(#FF6F0F);
+        color: white;
+        font-style: italic; 
+       }
       }
-      .img3{
-        padding-left: 100px;
-        padding-right: 100px;
-      }
+      }  
     }
   }
-  .footer-container{
+  .ege-footer-container{
     @extend .grid;
     @extend .flex;
     @include widthHeight(100%, 100%);
     @include backgroundcolor(#001D23);
-    margin-top: $margin;
+    // margin-top: $margin;
     &-boxes{ 
       @extend .flex;
       flex-direction: row;
-      .box1{
+      .ege-box1{
         @include widthHeight(25%, 25%);
         padding-left: $margin;
         padding-top: 5%;
-        .box1-head{
+        .ege-box1-head{
           @extend .flex;
           .Chari{
-            color: #FF6F0F;
+            color: #e4132f;
           }
-          .Team{
+          .ege-Team{
             color: white;
           }
         }
-        .box1-text{
+        .ege-box1-text{
           color: grey;
         }
       }
-      .box2{
+      .ege-box2{
         @include widthHeight(25%, 25%);
         padding-top: 6%;
         padding-left: 7%;
-        .box2-head{
+        .ege-box2-head{
           @extend .flex;
-          .Adress{
+          .ege-Adress{
             color: white;
           }
         }
-        .box2-text{
+        .ege-box2-text{
           color: grey;
         }
       }
-      .box3{
+      .ege-box3{
         @include widthHeight(25%, 25%);
         padding-top: 6%;
         padding-left: $margin;
@@ -621,7 +614,7 @@ $margin: 5%;
           color: grey;
         }
       }
-      .box4{
+      .ege-box4{
         @include widthHeight(25%, 25%);
         padding-top: 6%;
         &-head{
@@ -637,7 +630,7 @@ $margin: 5%;
 
     }
   }
-  .form-mail{
+  .ege-form-mail{
     input[type=text]{
       border: 1px solid #ced4da;
       border-radius: 10px;
@@ -666,7 +659,7 @@ $margin: 5%;
     }  
     
   
-  .footer-ul{
+  .ege-footer-ul{
     list-style: none;
     &-a{
       color: grey;
@@ -681,28 +674,26 @@ $margin: 5%;
       }
     }
   }
-  .footer-ul-a:link{
+  .ege-footer-ul-a:link{
     text-decoration: none;
   }
-  .footer-ul-a:visited{
+  .ege-footer-ul-a:visited{
     text-decoration: none;
   }
   
-  .footer-ul-a:hover{
+  .ege-footer-ul-a:hover{
     color: orange;
     text-decoration: none;
   }
-  .footer-ul-a:active{
+  .ege-footer-ul-a:active{
     text-decoration: none;
   }
- hr.solid{
+ hr.ege-solid{
   border-top: 1px solid #bbb;
   margin-left: $margin;
   margin-right: $margin;
  }
- .end-line{
+ .ege-end-line{
   color: white;
   padding-left: $margin;
  }
-
- 
