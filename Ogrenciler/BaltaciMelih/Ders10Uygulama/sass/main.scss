@@ -133,6 +133,8 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6{
 .innerItem{
     background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 110vh;
     box-shadow: inset 0 0 0 500rem rgba($color: #001D23, $alpha: 0.8);
     @include FlexBox();
@@ -157,4 +159,22 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6{
             color: white;
         }
     }
+}
+.aboutUs{
+    margin-top: 4rem;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.aboutContainer{
+    @include FlexBox();
+}
+.positionRelative{
+    position: relative;
+}
+.imageRight{
+    position: absolute;
+}
+.imageLeft{
+    position: absolute;
 }

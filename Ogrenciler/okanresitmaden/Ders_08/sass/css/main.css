@@ -25,7 +25,7 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
-  height: 1000px; }
+  height: 500px; }
   .container5 .box {
     width: 432px;
     height: 420px;
@@ -89,6 +89,136 @@
   width: 600px;
   margin-left: 35%; }
 
+.container6 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 600px;
+  align-items: center; }
+  .container6 .box {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background-color: #F8F8F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: height 4s; }
+    .container6 .box .boxyazi {
+      text-align: center;
+      background-color: #F8F8F9; }
+    .container6 .box p {
+      line-height: 30px; }
+    .container6 .box .visib {
+      position: absolute;
+      visibility: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 2px;
+      margin-left: 23%;
+      text-decoration: none;
+      list-style-type: none;
+      font-size: 24px; }
+    .container6 .box :hover {
+      width: 300px;
+      height: 150px; }
+      .container6 .box :hover .visib {
+        visibility: visible; }
+
+.container7 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px; }
+  .container7 button {
+    width: 160px;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    margin-top: 5%;
+    border-color: #FF6F0F;
+    background-color: #FFF0E6;
+    color: #FF6F0F;
+    font-size: 1.2rem; }
+
+.container8 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 600px; }
+  .container8 .vision1 {
+    visibility: hidden; }
+  .container8 .vision2 {
+    visibility: visible; }
+  .container8 .vision3 {
+    visibility: hidden; }
+  .container8 .box {
+    width: 635px;
+    height: 311px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px; }
+    .container8 .box .littleimage {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0px; }
+      .container8 .box .littleimage img {
+        border-radius: 50%;
+        border: 7px solid #e3750f; }
+    .container8 .box .boxarrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px; }
+    .container8 .box .content__yazi {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+      margin: 0;
+      font-size: 18px;
+      color: white;
+      background-color: #ff6f0f;
+      border-radius: 10px;
+      padding: 20px; }
+    .container8 .box a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px; }
+    .container8 .box a:hover {
+      background-color: #db6666;
+      color: black; }
+    .container8 .box .previous:active .vision1 {
+      visibility: visible; }
+    .container8 .box .previous:active .vision2 {
+      visibility: hidden; }
+    .container8 .box .previous:active .vision3 {
+      visibility: hidden; }
+
+.previous {
+  background-color: #ff6f0f;
+  color: white; }
+
+.round {
+  border-radius: 50%; }
+
+.next {
+  background-color: #ff6f0f;
+  color: white; }
+
 @media only screen and (max-width: 768px) {
   .container4 {
     display: flex;
@@ -99,7 +229,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px; }
+    gap: 10px;
+    height: 1000px;
+    margin-left: 5%; }
+  .container6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 1800px;
+    margin-left: 15%; }
+    .container6 .content__baslik {
+      display: flex;
+      justify-content: center; }
   .content__yazi {
     display: flex;
     flex-direction: column;
@@ -107,4 +249,6 @@
     gap: 10px;
     width: 300px; }
   .content__baslik {
-    margin-left: 50%; } }
+    margin-left: 50%; }
+  .container8 .box {
+    margin-left: 20%; } }
