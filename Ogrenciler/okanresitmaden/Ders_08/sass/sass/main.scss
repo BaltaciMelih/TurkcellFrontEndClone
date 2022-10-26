@@ -36,9 +36,17 @@
 @mixin boxshadow{
     box-shadow: 10px 0px 50px grey;
 }
+@mixin animation($name,$duration,$speed,$delay,$cycle){
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $speed;
+    animation-delay: $delay;
+    animation-direction: $cycle;
+}
 
 
 .container4{
+    @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor(rgb(255, 255, 255));
     @include display-flex(column,center,20px);
     & button{
@@ -50,10 +58,12 @@
 }
 
 .container5{
+    @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor(rgb(255, 255, 255));
     @include display-flex(row,center,20px);
     @include size(100%,500px);
     .box{
+        @include animation(myfirst,1s ,ease ,1s ,alternate );
         @include size(432px,420px);
         @include bgcolor(rgb(255, 255, 255));
         @include display-flex(column,center ,20px);
@@ -108,6 +118,7 @@
 
 
 .container6{
+    @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor(rgb(255, 255, 255));
     @include display-flex(row,center,20px);
     @include size(100%,600px);
@@ -125,9 +136,9 @@
             p{
                 line-height: 30px;
             }
-        // ul{
-        //     position: absolute;
-        // }
+        ul{
+            position: absolute;
+        }
         .visib{
             position: absolute;
             visibility: hidden;
@@ -142,11 +153,13 @@
         .visib{
             visibility: visible;
         }
+        animation: second 1s linear 1s  alternate;
     }
 
     }
 }
 .container7{
+    @include animation(myfirst,2s ,ease ,2s ,alternate );
     @include bgcolor(rgb(255, 255, 255));
     @include display-flex(column,center,20px);
     & button{
@@ -158,7 +171,7 @@
     
 }
 .container8{
-    
+    @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor(rgb(255, 255, 255));
     @include display-flex(row,center,20px);
     @include size(100%,600px);
@@ -264,7 +277,45 @@
     }
     
   }
+  @keyframes myfirst {
+    0% {
+        -webkit-transform: translateY(-1200px) scale(.7);
+        transform: translateY(-1200px) scale(.7);
+        opacity: .7
+      }
+    
+      80% {
+        -webkit-transform: translateY(0) scale(.7);
+        transform: translateY(0) scale(.7);
+        opacity: .7
+      }
+    
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+      }
+  }
+  .delay1{
+    animation-delay: 1s;
+  }
 
+  @keyframes second {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+      }
+    
+      to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+      }
+    }
+    
+    
+  
   
 
 
