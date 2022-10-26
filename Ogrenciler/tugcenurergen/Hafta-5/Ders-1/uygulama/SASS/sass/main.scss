@@ -178,8 +178,6 @@ body {
   width: 10%;
 }
 
-
-
 .title-about-us {
   background-color: rgb(255, 228, 205);
   width: 80px;
@@ -229,17 +227,17 @@ body {
   width: 100px;
 }
 
-.container3{
-    padding: 70px;
-    background-color:rgb(241, 241, 241);
+.container3 {
+  padding: 70px;
+  background-color: rgb(241, 241, 241);
 }
-.container3-header{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
+.container3-header {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
 }
 
 .container3 p {
@@ -247,53 +245,58 @@ body {
   margin-top: 20px;
 }
 
-.card{
-    background-color:rgb(255, 255, 255);
-    width: 25%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    padding-top:0;
-    border-top: 8px solid $orange;
-    border-radius: 5px;
+.card-div {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
-.card img{
-    width: 100%;
-
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 29%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 0;
+  border-top: 8px solid $orange;
+  border-radius: 5px;
 }
 
-.card-title{
-    background-color: $orange;
-    width: 35%;
-    padding: 8px;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 4px;
-    
+.card img {
+  width: 100%;
 }
 
-.card h3{
-    font-size: 1.4rem;
+.card-title {
+  background-color: $orange;
+  width: 35%;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
-.card p{
-    font-size: 1.1rem;
-    font-weight: normal;
+.card h3 {
+  font-size: 1.4rem;
 }
 
-.goal{
-    background-color: rgb(247, 247, 247);
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    margin: 15px;
+.card p {
+  font-size: 1.1rem;
+  font-weight: normal;
 }
 
-
+.goal {
+  background-color: rgb(247, 247, 247);
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
