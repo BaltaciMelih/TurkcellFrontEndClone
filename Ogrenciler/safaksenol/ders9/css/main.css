@@ -1,10 +1,13 @@
 .container {
-  display: flex; 
+  display: flex;
 }
 
-.box1, .box2, .box3 {
-  width: 100px;
-  height: 100px;
+.box1, .box2 {
+  width: 50px;
+  height: 150px;
   background-color: green;
-  margin: 10px; 
+  margin: 65px;
+  padding: 70px;
 }
+
+/*# sourceMappingURL=main.css.map */
