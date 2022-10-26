@@ -90,6 +90,8 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
   gap: 2rem; }
   .menuList a {
     color: white; }
+    .menuList a:hover {
+      color: #FF6F0F; }
 
 .dropDown {
   overflow: hidden; }
@@ -97,14 +99,15 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     display: block; }
 
 .dropdownContent {
+  border-radius: 5px;
   display: none;
   position: absolute;
   z-index: 1;
-  width: 160px;
+  width: 9rem;
   background-color: #F8F8F9; }
   .dropdownContent a {
     color: black;
-    padding: 1rem;
+    padding: 0.5rem;
     display: block;
     text-align: left; }
 
@@ -186,7 +189,7 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
   align-items: unset; }
 
 .imageDiv {
-  height: 100%;
+  height: 500px;
   width: 100%; }
 
 .positionRelative {
@@ -207,8 +210,8 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
   left: 0;
   top: 0;
   object-fit: cover;
-  height: 500px;
-  width: 600px;
+  height: 60vh;
+  width: 65vh;
   padding-top: 3rem;
   padding-right: 3rem; }
 
@@ -283,3 +286,12 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     background-color: #FF6F0F; }
     .contactButton:hover p {
       color: white; }
+
+@media (max-width: 990px) {
+  .topBar {
+    display: none; }
+  .navBar {
+    grid-template-rows: repeat(1, 1fr); }
+  .aboutContainer {
+    flex-wrap: wrap;
+    flex-direction: column; } }
