@@ -119,8 +119,8 @@ body{
 }
 
 .img-container img {
-    height: 600px;
     width: 100%;
+    height: 600px;
     position: absolute;
     opacity: .30;
     
@@ -157,3 +157,42 @@ body{
     border: 2px  solid $orange;
     color: $orange;
 }
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+   width: 70%;
+   margin: 60px auto;
+   gap:25px;
+}
+
+.container2 img{
+    width: 45%;
+}
+
+.title{
+    background-color: rgb(255, 228, 205);
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    color: $orange;
+}
+
+.container2 .header-text{
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 auto
+}
+
+.container2 h3{
+    color: $orange;
+}
+
+.text-box{
+    background-color: #F8F8F9 ;
+    border-bottom: 5px solid $orange;
+    border-radius: 10px;
+}
+
+
