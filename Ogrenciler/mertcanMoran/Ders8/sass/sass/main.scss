@@ -1,0 +1,112 @@
+$bg-white: #fff !important;
+$bg-light: #f8f8f9 !important;
+$visibility: visible;
+$display: flex;
+$height: 100% !important;
+$img1-w: 612px !important;
+$img1-h: 518.4px !important;
+$img2-w: 200px !important;
+$img2-h: 200px !important;
+$f-size: 1rem;
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont {
+  display: $display;
+  flex-wrap: wrap;
+
+  .container {
+    display: $display;
+    @include reset-list;
+    background-color: $bg-white;
+    visibility: $visibility;
+    min-height: 400px;
+    width: $img1-w;
+    height: $img1-h;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+    .img1 {
+      object-fit: cover;
+      padding-right: 3rem !important;
+      padding-top: 3rem !important;
+      width: $img1-w;
+      height: $img1-h;
+      position: absolute !important;
+    }
+
+    .img2 {
+      width: $img2-w;
+      height: $img2-h;
+      right: 0;
+      top: 0;
+      position: absolute !important;
+      margin-left: 5px;
+      margin-bottom: 5px;
+      border: 10px solid #fff;
+    }
+  }
+}
+
+.data-aboutUs {
+  visibility: $visibility;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  flex: 0 0 auto;
+  width: 50%;
+  max-width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 3rem;
+
+  @include reset-list;
+
+  .h-1 {
+    margin-left: 30px;
+  }
+
+  .aboutus {
+    border-radius: 50rem !important;
+    background-color: #fff0e6 !important;
+    color: #ff6f0f !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    margin-bottom: 1rem !important;
+    display: inline-block !important;
+  }
+
+  & h1 {
+    margin-bottom: 3rem !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+
+.bg-light {
+  background-color: $bg-light;
+  border-radius: 6px !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  border-width: 5px !important;
+  margin-left: 30px;
+  border-bottom: 1px solid #ff6f0f !important;
+
+  p {
+    font-size: $f-size;
+  }
+  .tempor {
+    margin-left: 50% !important;
+  }
+  span {
+    color: #ff6f0f !important;
+  }
+}

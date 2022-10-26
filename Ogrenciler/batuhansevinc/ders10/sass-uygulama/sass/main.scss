@@ -202,6 +202,7 @@ $padding100: 100px;
  padding-top: $padding100;
  padding-bottom: $padding100;
   &-featureCauses{
+    width: 170px;
       display: flex;
       justify-content: center;
       @extend .section1-right-aboutUs;
@@ -259,14 +260,439 @@ $padding100: 100px;
     &-image{
       padding-top: $padding30;
       width: 300px;
-    }
 
+    }
     }
     &-card-amount{
       display: flex;
       justify-content: space-between;
     };
   }
-
-
 }
+.container-image{
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+.section2-cards-card-image{
+  display: block;
+  width: 300px;
+  height: auto;
+}
+.overlay{
+  position: absolute;
+  margin-top: $padding30;
+  top: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 300px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding-top: 62%;
+  padding-bottom: 60%;
+  text-align: center;
+  &-button{
+    display: flex;
+    text-align: center;
+    margin: auto auto;
+    align-items: center;
+    background-color: $maincolor;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+  }
+}
+.container-image:hover .overlay {
+  opacity: 1;
+}
+/* Emre Düdükçü*/
+
+@mixin genel-yapi( $width, $height, $bgcolor, $margin, $padding, $color, $fsize) {
+  width: $width;
+  height: $height;
+  background-color: $bgcolor;
+  margin: $margin;
+  padding: $padding;
+  color: $color;
+  font-size: $fsize;
+}
+
+@mixin flex-yapi($display, $jcontenet, $aitems, $fdirection) {
+  display: $display;
+  justify-content: $jcontenet;
+  align-items: $aitems;
+  flex-direction: $fdirection;
+}
+
+.what-we-do {
+  @include flex-yapi(flex, center, center, column);
+  @include genel-yapi(none, none, none, none, 48px 12px, none, none);
+  &-first {
+      h2 {
+          @include genel-yapi( 125px, 32px, #fff0e6, 0px 0px 16px, 4px 16px, #ff6f0f, 16px);
+          border-radius: 50rem;
+          @include flex-yapi(flex, center, center, none);
+      }
+      h1 {
+          @include genel-yapi(500px, 85px, none, none, none, #001d23, 36px);
+          text-align: center;
+      }
+      @include flex-yapi(flex, center, center, column);
+      @include genel-yapi( 500px, 133px, none, 0px 98px 48px, 0px, inherit, inherit);
+  }
+  &-second {
+      @include flex-yapi(flex, center, center, row);
+      gap: 10px;
+      &-card {
+          @include flex-yapi(flex, center, center, column);
+          @include genel-yapi( 336px, 347.7px, none, 24px 0px 0px, 24px, #787878, 16px);
+          img {
+              margin-bottom: 24px;
+          }
+          h1 {
+              @include genel-yapi( 288px, 27.7px, none, 0px 0px 16px, 0px, #001d23, calc(1.275rem + 0.3vw));
+              text-align: center;
+          }
+          p {
+              @include genel-yapi( 288px, 72px, none, 0px 0px 24px, none, #787878, 18px);
+              line-height: 1.5;
+              text-align: center;
+          }
+          input {
+              @include genel-yapi( 164.95px, 46px, white, none, 6px 16px, #ff6f0f, 18px);
+              text-align: center;
+              border-radius: 5px;
+              border: 1px solid #ff6f0f;
+              &:hover {
+                  background-color: #ff6f0f;
+                  color: white;
+                  transition-duration: 0.5s;
+                  animation-timing-function: ease-in-out;
+              }
+          }
+      }
+  }
+}
+
+.donate-now {
+  @include genel-yapi(none, none, #001d23cc, none, 48px 12px, none, none);
+  @include flex-yapi(flex, center, center, row);
+  &-first {
+      @include genel-yapi( 582px, 229.03px, none, 48px 0px 0px, 0px 24px, #787878, none);
+      
+      h2 {
+          @include flex-yapi(flex, center, center, row);
+          @include genel-yapi( 125.28px, 32px, #fff0e6, 0px 0px 16px, 4px 16px, #ff6f0f, 16px);
+          border-radius: 15px;
+      }
+      h1 {
+          @include genel-yapi( 444px, 90.06px, none, 0px 0px 48px, none, #ffffff, 37.525px);
+      }
+      p {
+          @include genel-yapi(444px, 96px, none, none, none, #ffffff80, 16px);
+      }
+  }
+  &-second {
+      @include genel-yapi(534px, 378px, #ffffff, none, 48px, #787878, none);
+      &-input {
+          @include genel-yapi( 454px, 58px, #f8f8f9, 16px 0px 0px, 0px 8px, #787878, 16px);
+          border: 0px;
+          border-radius: 5px;
+          &:hover {
+              border: 1px solid #dc3545;
+          }
+      }
+      &-value {
+          display: flex;
+          @include genel-yapi( 454px, 58px, #f8f8f9, 16px 0px 0px, 0px 8px, #787878, 16px);
+          input {
+              @include genel-yapi( 145.34px, 58px, #f9f9fa, 0px 0px 0px -1px, 16px 12px, #000000, 16px);
+              border: 0;
+              transition-duration: 0.5s;
+              animation-timing-function: ease-in-out;
+              &:hover {
+                  color: #ff6f0f;
+                  border: 1px solid #ff6f0f;
+              }
+          }
+          &-1 {
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
+          }
+          &-3 {
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+          }
+      }
+      &-button {
+          @include genel-yapi( 454px, 58px, #f8f8f9, 16px 0px 0px, 0px 8px, #787878, 16px);
+          &-yapi {
+              @include genel-yapi( 236.11px, 60px, #ff6f0f, none, 6px 48px, #ffffff, 16px);
+              border-radius: 5px;
+              border: 0;
+              transition-duration: 0.5s;
+              animation-timing-function: ease-in-out;
+              &:hover {
+                  background-color: white;
+                  color: #ff6f0f;
+                  border: #ff6f0f 1px solid;
+              }
+          }
+      }
+  }
+}
+/* Ege */
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+$margin: 5%;
+@mixin fonksiyon1($flex, $width, $height, $backgroundColor, $color) {
+    display: $flex;
+    width: $width;
+    height: $height;
+    background-color: $backgroundColor;
+    color: $color;
+  }
+  @mixin backgroundcolor($backgroundColor) {
+    background-color: $backgroundColor;
+  }
+  @mixin widthHeight($width, $height) {
+    width: $width;
+    height: $height;
+  }
+  .ege-section{
+    background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+  }
+  
+  .ege-navbar{
+    @include fonksiyon1(flex, 100%, 100%, none, white);
+    justify-content: space-between;
+    align-items: center;
+    p {
+        padding-left: 50px; 
+        
+    }
+    .ege-ul-navbar{
+
+        @include fonksiyon1(flex, none, none, none, white);
+        list-style: none;
+        gap: 20px;
+        padding-right: 50px;
+        &button{
+            background-color: red;
+            color: aqua;
+        }
+    } 
+  }
+  
+  .ege-article{
+    @include fonksiyon1(flex, 100%, 100%, none, white);
+    // padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &-h1{
+        padding-top: 300px;
+        width: 550px;
+        text-align: center;
+    }
+    &-p{  
+       @extend .ege-article; 
+       padding-top: 25px;
+       padding-bottom: 25px;
+    }
+    &-button{
+        background-color: red;
+        color: aqua;   
+    }
+  }
+  .ege-section2{
+    @include fonksiyon1(flex, 100%, none, none, none);
+    @extend .flex;
+    @extend .grid;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    .ege-container{
+      @extend .flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p{
+        color: #FF6F0F;
+        border-radius: 6px;
+        background-color: #FFF0E6;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1,5;
+        margin-bottom: 1rem;
+      }
+      h1{
+        color: black;
+        width: 100%;
+        height: 25px;
+        border: none;
+        padding: 0px 20%;
+        max-width:200ch;
+        word-wrap:break-word;
+        margin-bottom: 6rem;
+        margin-left: 100px;
+      }
+      .ege-img1{
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .ege-img2{
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .ege-img3{
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+    }
+  }
+  .ege-footer-container{
+    @extend .grid;
+    @extend .flex;
+    @include widthHeight(100%, 100%);
+    @include backgroundcolor(#001D23);
+    // margin-top: $margin;
+    &-boxes{ 
+      @extend .flex;
+      flex-direction: row;
+      .ege-box1{
+        @include widthHeight(25%, 25%);
+        padding-left: $margin;
+        padding-top: 5%;
+        .ege-box1-head{
+          @extend .flex;
+          .Chari{
+            color: #e4132f;
+          }
+          .ege-Team{
+            color: white;
+          }
+        }
+        .ege-box1-text{
+          color: grey;
+        }
+      }
+      .ege-box2{
+        @include widthHeight(25%, 25%);
+        padding-top: 6%;
+        padding-left: 7%;
+        .ege-box2-head{
+          @extend .flex;
+          .ege-Adress{
+            color: white;
+          }
+        }
+        .ege-box2-text{
+          color: grey;
+        }
+      }
+      .ege-box3{
+        @include widthHeight(25%, 25%);
+        padding-top: 6%;
+        padding-left: $margin;
+        &-head{
+          @extend .flex;
+          .Head{
+            color: white;
+          }
+        }
+        &-text{
+          color: grey;
+        }
+      }
+      .ege-box4{
+        @include widthHeight(25%, 25%);
+        padding-top: 6%;
+        &-head{
+          @extend .flex;
+          .newsletter{
+            color: white;
+          }
+        }
+        &-text{
+          color: grey;
+        }
+      }
+
+    }
+  }
+  .ege-form-mail{
+    input[type=text]{
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background-color: #001D23;
+      width: 95%;
+      padding: 12px 20px;
+    }
+    input[type=text]:focus{
+      border: 3px solid #555;
+    }
+    input[type=submit]{
+      margin-top: $margin;
+      border-radius: 8px;
+      margin-left: 75px;
+      width: 50%;
+      color: white;
+      background-color: #FF6F0F;
+    }
+    input[type=submit]:hover{
+      color: #FF6F0F;
+      background-color: #001D23;
+      transition: all;
+      transition-duration: 1s;
+    }
+    }  
+    
+  
+  .ege-footer-ul{
+    list-style: none;
+    &-a{
+      color: grey;
+      animation-timing-function: ease-in-out;
+      @keyframes aa {
+        50%{
+          width: 3%;
+        }
+        50%{
+          width: 3%;
+        }
+      }
+    }
+  }
+  .ege-footer-ul-a:link{
+    text-decoration: none;
+  }
+  .ege-footer-ul-a:visited{
+    text-decoration: none;
+  }
+  
+  .ege-footer-ul-a:hover{
+    color: orange;
+    text-decoration: none;
+  }
+  .ege-footer-ul-a:active{
+    text-decoration: none;
+  }
+ hr.ege-solid{
+  border-top: 1px solid #bbb;
+  margin-left: $margin;
+  margin-right: $margin;
+ }
+ .ege-end-line{
+  color: white;
+  padding-left: $margin;
+ }
