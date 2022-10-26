@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "sass": "node-sass -w sass -o css"
+    "sass": "sass -w sass:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^7.0.3"
+    "sass": "^1.55.0"
   }
 }
