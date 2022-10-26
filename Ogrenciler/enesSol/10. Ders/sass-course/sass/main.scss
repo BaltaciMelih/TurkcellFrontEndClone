@@ -85,6 +85,15 @@ body {
   font-weight: $fw;
 }
 
+@mixin fadeEffect {
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0);
+  // animation-duration: 1ms;
+  color: orangered;
+  border: 1px solid orangered;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 .list-none {
   list-style: none;
   gap: 10px;
@@ -103,6 +112,10 @@ a:hover {
 
 .text-semi-white {
   color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.animate__animated.animate__slideInDown {
+  --animate-duration: 2s;
 }
 
 // .nav-li {
@@ -143,6 +156,14 @@ a:hover {
     position: fixed;
     z-index: 1;
     width: 100%;
+    button:hover {
+      transition: all 0.5s ease-in-out;
+      background-color: rgba(255, 255, 255, 0);
+      // animation-duration: 1ms;
+      color: white;
+      // border: 1px solid orangered;
+      background-color: orangered;
+    }
   }
   .content {
     color: white;
@@ -152,10 +173,16 @@ a:hover {
     font-size: 42px;
     p {
       font-size: 20px;
+      margin-top: 15px;
     }
     button {
       @include display-flex(row, center, center);
       margin: 25px auto;
+      color: white;
+      background-color: orangered;
+    }
+    button:hover {
+      @include fadeEffect();
     }
   }
 }
@@ -198,6 +225,7 @@ a:hover {
     }
     button:hover {
       @include buttons(orangered, white, 10px, 2px orangered solid);
+      @include fadeEffect();
       ion-icon {
         color: orangered;
       }
@@ -295,6 +323,10 @@ footer {
     ul {
       list-style: none;
       line-height: 30px;
+      li:hover {
+        animation: animate__pulse;
+        animation-duration: 1ms;
+      }
     }
     ul li:before {
       border-right: 2px solid rgba(255, 255, 255, 0.5);

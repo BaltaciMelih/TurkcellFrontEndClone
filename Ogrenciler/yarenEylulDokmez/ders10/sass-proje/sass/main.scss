@@ -28,8 +28,6 @@ color: $hColor;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
-    
   }
 .teamMembers{
     @include flex(column);
@@ -177,11 +175,13 @@ color: $hColor;
             border-radius: 50%;
             width: 102px;
             height: 102px;
+            min-width: 98px;
             img{
                 margin: 9% 9%;
                 border-radius: 50%;
                 width: 84px;
                 height: 84px;
+                
             }
         }}
         &Text{
@@ -351,7 +351,28 @@ footer{
     }
 }
 @media only screen and (max-width: 768px) {
-    footer-top{
-        flex-wrap: wrap;
+    .testimonial{
+        &ProfilPhoto{
+                width: 98px;
+                height: 90px;
+            img{
+                width: 74px;
+                height: 74px;
+            }
+            
+        }
+        &ProfilText{
+            height: 9rem;
+            width: 29rem;
+            p{
+                font-size: 0.85rem;
+            }
+            h5{
+                font-size: 1rem;
+            }
+            span{
+                font-size: 0.85rem;
+            }
+        }
     }
   }
