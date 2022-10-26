@@ -1,16 +1,254 @@
-h2 {
-  color: red; }
+* {
+  margin: 0; }
 
-.container {
-  display: flex; }
+.container4 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px; }
+  .container4 button {
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    margin-top: 5%;
+    border-color: #FF6F0F;
+    background-color: #FFF0E6;
+    color: #FF6F0F;
+    font-size: 1.2rem; }
 
-.box1, .box2, .box3 {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  margin: 10px; }
+.container5 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 500px; }
+  .container5 .box {
+    width: 432px;
+    height: 420px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 10px 0px 50px grey;
+    border: 1px solid #f3eded; }
+    .container5 .box .imgbox {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0px;
+      display: flex;
+      margin-top: 10%;
+      align-items: center; }
+    .container5 .box .boxyazi {
+      margin-left: 20%;
+      width: 280px;
+      color: gray;
+      font-size: 19px;
+      text-align: center; }
+    .container5 .box .boxbaslik {
+      display: flex;
+      justify-content: center;
+      padding: 5px; }
+    .container5 .box button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      width: 200px;
+      border-radius: 8px;
+      padding: 8px;
+      border: 1px solid orangered;
+      margin-top: 5%;
+      border-color: #FF6F0F;
+      background-color: white;
+      color: orangered;
+      margin-left: 25%; }
+    .container5 .box button:hover {
+      background-color: #FF6F0F;
+      color: white;
+      cursor: pointer; }
 
-.box2 {
-  width: 200px;
-  background-color: blue;
-  margin: 10px; }
+.content__baslik {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px; }
+
+.content__yazi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  font-size: 35px;
+  text-align: center;
+  width: 600px;
+  margin-left: 35%; }
+
+.container6 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 600px;
+  align-items: center; }
+  .container6 .box {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background-color: #F8F8F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: height 4s; }
+    .container6 .box .boxyazi {
+      text-align: center;
+      background-color: #F8F8F9; }
+    .container6 .box p {
+      line-height: 30px; }
+    .container6 .box .visib {
+      position: absolute;
+      visibility: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 2px;
+      margin-left: 23%;
+      text-decoration: none;
+      list-style-type: none;
+      font-size: 24px; }
+    .container6 .box :hover {
+      width: 300px;
+      height: 150px; }
+      .container6 .box :hover .visib {
+        visibility: visible; }
+
+.container7 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px; }
+  .container7 button {
+    width: 160px;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    margin-top: 5%;
+    border-color: #FF6F0F;
+    background-color: #FFF0E6;
+    color: #FF6F0F;
+    font-size: 1.2rem; }
+
+.container8 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 600px; }
+  .container8 .vision1 {
+    visibility: hidden; }
+  .container8 .vision2 {
+    visibility: visible; }
+  .container8 .vision3 {
+    visibility: hidden; }
+  .container8 .box {
+    width: 635px;
+    height: 311px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px; }
+    .container8 .box .littleimage {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0px; }
+      .container8 .box .littleimage img {
+        border-radius: 50%;
+        border: 7px solid #e3750f; }
+    .container8 .box .boxarrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px; }
+    .container8 .box .content__yazi {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+      margin: 0;
+      font-size: 18px;
+      color: white;
+      background-color: #ff6f0f;
+      border-radius: 10px;
+      padding: 20px; }
+    .container8 .box a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px; }
+    .container8 .box a:hover {
+      background-color: #db6666;
+      color: black; }
+    .container8 .box .previous:active .vision1 {
+      visibility: visible; }
+    .container8 .box .previous:active .vision2 {
+      visibility: hidden; }
+    .container8 .box .previous:active .vision3 {
+      visibility: hidden; }
+
+.previous {
+  background-color: #ff6f0f;
+  color: white; }
+
+.round {
+  border-radius: 50%; }
+
+.next {
+  background-color: #ff6f0f;
+  color: white; }
+
+@media only screen and (max-width: 768px) {
+  .container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px; }
+  .container5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 1000px;
+    margin-left: 5%; }
+  .container6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 1800px;
+    margin-left: 15%; }
+    .container6 .content__baslik {
+      display: flex;
+      justify-content: center; }
+  .content__yazi {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    width: 300px; }
+  .content__baslik {
+    margin-left: 50%; }
+  .container8 .box {
+    margin-left: 20%; } }

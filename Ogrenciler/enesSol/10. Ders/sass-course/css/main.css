@@ -1,6 +1,12 @@
 * {
+  padding: 0%;
+  margin: 0%; }
+
+body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; }
 
 .list-none {
   list-style: none;
@@ -14,6 +20,9 @@ a {
 
 a:hover {
   color: orangered; }
+
+.text-semi-white {
+  color: rgba(255, 255, 255, 0.5) !important; }
 
 .container-1 {
   box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8);
@@ -46,14 +55,16 @@ a:hover {
     color: white;
     align-items: center; }
   .container-1 .nav {
+    background-color: #001d23;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     gap: 1000px;
     position: fixed;
-    z-index: 1; }
+    z-index: 1;
+    width: 100%; }
   .container-1 .content {
     color: white;
     text-align: center;
@@ -69,9 +80,166 @@ a:hover {
       margin: 25px auto; }
 
 .container-2 {
+  padding: 75px 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8);
+  background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+  height: 350px; }
   .container-2 h2 {
     font-size: 40px; }
+  .container-2 .left-part p {
+    word-break: break-word;
+    max-width: 500px; }
+  .container-2 .left-part h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    max-width: 800px;
+    margin-bottom: 25px;
+    margin-top: 25px; }
+  .container-2 .right-part {
+    background-color: white;
+    padding: 25px;
+    border-radius: 3px;
+    border: 1px solid rgba(230, 230, 230, 0.103); }
+    .container-2 .right-part button {
+      width: 225px;
+      padding: 8px 16px;
+      background-color: orangered;
+      color: white;
+      border-radius: 10px;
+      gap: 10px;
+      font-size: 18px;
+      border: 2px orangered solid;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px; }
+      .container-2 .right-part button ion-icon {
+        font-size: 38px;
+        color: white; }
+    .container-2 .right-part button:hover {
+      width: 225px;
+      padding: 8px 16px;
+      background-color: white;
+      color: orangered;
+      border-radius: 10px;
+      gap: 10px;
+      font-size: 18px;
+      border: 2px orangered solid; }
+      .container-2 .right-part button:hover ion-icon {
+        color: orangered; }
+  .container-2 .donate-btn {
+    font-size: 18px;
+    color: orangered;
+    background-color: #fff0e6;
+    border-radius: 20px;
+    padding: 8px 10px; }
+  .container-2 .donate-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .container-2 .inputs {
+    width: 450px;
+    height: 50px;
+    color: gray;
+    background-color: rgba(230, 230, 230, 0.39);
+    border: 1px solid rgba(230, 230, 230, 0.233);
+    border-radius: 5px; }
+  .container-2 .inputs:last-child {
+    margin-bottom: 25px; }
+  .container-2 .dollars-box {
+    display: inline-block;
+    background-color: red;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    background-color: rgba(230, 230, 230, 0.39);
+    border: 1px solid rgba(230, 230, 230, 0.233);
+    border-radius: 5px; }
+  .container-2 .dollars-box:hover {
+    border: 1px solid orangered; }
+    .container-2 .dollars-box:hover p {
+      color: orangered; }
+
+footer {
+  background-color: #001d23; }
+  footer .bottom {
+    border-top: 1px solid rgba(128, 128, 128, 0.356);
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: normal; }
+    footer .bottom .bottom-white {
+      color: white;
+      font-size: 16px;
+      font-weight: regular; }
+
+.container-3 {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: normal; }
+  .container-3 .footer-1 h2 {
+    margin-bottom: 20px; }
+  .container-3 .footer-1 p {
+    max-width: 280px; }
+  .container-3 .footer-1 ion-icon {
+    color: gray;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 4px;
+    margin-top: 20px; }
+  .container-3 .footer-2 p:first-child {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .container-3 .footer-2 .space {
+    line-height: 30px; }
+  .container-3 .footer-3 p:first-child {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .container-3 .footer-3 ul {
+    list-style: none;
+    line-height: 30px; }
+  .container-3 .footer-3 ul li:before {
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    content: "";
+    display: inline-block;
+    margin-right: 10px; }
+  .container-3 .footer-3 a {
+    color: rgba(255, 255, 255, 0.5) !important; }
+  .container-3 .footer-3 a:hover {
+    color: white !important; }
+  .container-3 .footer-4 p:first-child {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .container-3 .footer-4 input {
+    padding: 8px 10px;
+    margin: 10px 0;
+    width: 250px;
+    height: 30px;
+    color: gray;
+    background-color: #001d23;
+    border: 1px solid white;
+    border-radius: 5px; }
