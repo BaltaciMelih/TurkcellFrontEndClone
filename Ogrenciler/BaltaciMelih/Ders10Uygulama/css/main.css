@@ -79,6 +79,7 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     color: white; }
 
 .menuRight {
+  flex-wrap: wrap;
   gap: 2rem; }
 
 .menuList {
@@ -87,6 +88,7 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
   justify-content: center;
   align-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem; }
   .menuList a {
     color: white; }
@@ -294,4 +296,10 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     grid-template-rows: repeat(1, 1fr); }
   .aboutContainer {
     flex-wrap: wrap;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .menuBar {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center; } }
