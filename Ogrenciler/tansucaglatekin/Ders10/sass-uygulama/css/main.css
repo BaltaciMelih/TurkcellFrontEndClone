@@ -14,7 +14,8 @@
   margin-left: 0;
   margin-right: 0;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  animation: fadeInUp 1s forwards 0s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .box .members-head, .box3 .members-head, .box .testimonial-head, .box3 .testimonial-head {
     background-color: #FFF0E6;
     color: #FF6F0F;
@@ -65,10 +66,12 @@
   border-radius: 10px;
   background-color: #F8F8F9;
   text-align: center;
-  max-height: 375px; }
+  max-height: 375px;
+  animation: fadeInUp 1s forwards 0s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .box2 img {
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px; }
+    border-top-right-radius: 10px;
+    transition: all 0.5s ease-in-out; }
   .box2 i {
     color: #FF6F0F; }
   .box2 h4 {
@@ -81,6 +84,8 @@
   .box2:hover .box-bottom {
     background-color: #F8F8F9;
     transform: translate(0, -50%); }
+  .box2:hover img {
+    transform: translate3d(0, -5%, 0); }
 
 .members-text {
   margin-left: 0;
@@ -149,8 +154,7 @@
     font-style: italic; }
 
 footer {
-  background-color: #001D23;
-  height: 100%; }
+  background-color: #001D23; }
   footer h3 {
     color: white;
     font-size: 20px; }
@@ -170,7 +174,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
-  margin-bottom: 48px; }
+  margin-bottom: 10px; }
 
 .o-color {
   color: #FF6F0F; }
@@ -226,12 +230,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 0;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 70px;
+  margin-right: 70px;
   margin-top: 0;
   margin-bottom: 0;
   border-top: 0.1px solid white;
-  padding-top: 20px; }
+  padding: 20px; }
   .footer-box2 .w-color:hover {
     cursor: pointer;
     color: #FF6F0F; }
@@ -262,10 +266,27 @@ footer {
       border: 1px solid #FF6F0F;
       color: #FF6F0F; }
 
+@keyframes fadeInUp {
+  10% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
 @media only screen and (max-width: 780px) {
   .members-box2 {
     display: flex;
     flex-wrap: wrap; }
   .footer-box1 {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  .footer-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; }
+  .container6 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px; } }
