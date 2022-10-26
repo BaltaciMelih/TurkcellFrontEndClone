@@ -10,7 +10,6 @@ h1{
 }
 
 .causes {
-  margin-top: 4rem;
   padding: 10% 10%;
   background-color: $bgColor4;
 
@@ -172,7 +171,7 @@ h1{
 }
 
 @media only  screen and (max-width:768px) {
-  .cards {
+  .cards, .cards1{
   
       display: grid;
       grid-template-columns: 1fr;
@@ -180,14 +179,3 @@ h1{
       
   }
 }
-
-@media only  screen and (max-width:768px) {
-  .cards1{
-  
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows:repeat(3, auto) ; 
-      
-  }
-}
-
