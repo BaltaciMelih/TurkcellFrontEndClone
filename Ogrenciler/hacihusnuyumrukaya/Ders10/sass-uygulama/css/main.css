@@ -192,10 +192,6 @@ h2 {
   padding-bottom: 80px;
   background-color: #fff; }
 
-.container-4haci:visited {
-  animation: bounceInUp;
-  animation-duration: 1s; }
-
 .box3-haci {
   width: 23%;
   background-color: white;
@@ -240,12 +236,15 @@ h2 {
   flex-wrap: wrap;
   flex-direction: row;
   padding-top: 70px;
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  background: linear-gradient(rgba(0, 29, 35, 0.8), rgba(0, 29, 35, 0.8)), url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat; }
 
 .img2-haci {
   width: 100%;
   height: 480px;
-  filter: grayscale(88%);
+  filter: grayscale(60%);
   position: absolute;
   top: 0;
   z-index: 0; }
@@ -345,6 +344,7 @@ h2 {
     width: 80%; }
   .container-5haci {
     padding: 0px;
-    padding-top: 40px; }
+    padding-top: 40px;
+    padding-bottom: 60px; }
   .img2-haci {
     height: 750px; } }

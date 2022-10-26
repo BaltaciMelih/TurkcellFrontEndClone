@@ -263,3 +263,93 @@ button {
         }
     }
 }
+
+.footer{
+  background-color: $dark;
+  padding: 5% 6%;
+  .footerTop{
+    @include display(flex, row, space-between, flex-start, 25px);
+    .footerTopLeft{
+      width: 25%;
+      @include display(flex, column, flex-start, flex-start, 25px);
+      .footerTopLeftHeader{
+        @include display(flex, row, flex-start, center, 0px);
+        .footerTopLeftHeaderOne{
+          @include font(2em, bold, $primary);
+
+        }
+        .footerTopLeftHeaderTwo{
+          @include font(2em, bold, white);
+        }
+      }
+      .footerTopLeftParagraf{
+        @include font(1.25em, 200, gray);
+
+      }
+      .footerTopLeftSocialMedia{
+        @include display(flex, row, flex-start, flex-start, 5px);
+        .footerTopLeftSocialMediaItem{
+          @include button($dark, solid, none, 1px, gray);
+          
+          border-radius: 5px;
+          padding: 8% 8%;
+          a{
+            color: gray;
+          }
+        }
+      }
+    }
+    .footerTopMiddle{
+      @include display(flex, column, flex-start, flex-start, 10px);
+      .footerTopMiddleHeader{
+        @include font(2em, bold, white);
+
+      }
+      .footerTopMiddleItem{
+        @include font(1.25em, 300, gray);
+
+      }
+      .inputBox{
+        @include display(flex, row, flex-start, center, 10px);
+        @include button($dark, solid, none, 1px, white);
+        padding: 2% 2%;
+        border-radius: 8px;
+        .input{
+          
+          input{
+            background-color: $dark;
+            border: none;
+            padding: 1% 1%;
+            @include font(1.25em, 300, gray);
+            text-indent: 10px;
+          }
+  
+        }
+        .inputBoxButton{
+          
+          button{
+            padding: 2% 3%;
+            @include button($primary, solid, none, 0, #ffffff);
+            @include display(flex, row, space-between, center, 10px);
+            @include font(1.1em, 100, white);
+          }
+        }
+      }
+    }
+  }
+  .footerBottom{
+    padding: 3% 3%;
+    @include display(flex, row, space-between, center, 10px);
+    border-top: 0.5px solid gray;
+    .footerBottomItem{
+      @include display(flex, row, space-between, center, 3px);
+      .footerBottomItemGrey{
+        @include font(1.1em, 100, grey);
+      }
+      .footerBottomItemWhite{
+        @include font(1.1em, 100, white);
+
+      }
+    }
+  }
+}
