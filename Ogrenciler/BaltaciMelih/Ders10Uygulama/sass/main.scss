@@ -86,13 +86,18 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6{
 }
 .menuRight{
     @extend .columnRight;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 .menuList{
     @include FlexBox();
+    flex-wrap: wrap;
     gap: 2rem;
     & a {
         color: white;
+        &:hover{
+            color: $bgcolorprimary;
+        }
     }
 }
 .dropDown{
@@ -104,14 +109,15 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6{
     }
 }
 .dropdownContent{
+    border-radius: 5px;
     display: none;
     position: absolute;
     z-index: 1;
-    width: 160px;
+    width: 9rem;
     background-color: $bgcolorlight;
     & a{
         color: black;
-        padding: 1rem;
+        padding: 0.5rem;
         display: block;
         text-align: left;
     }
@@ -186,7 +192,7 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6{
     align-items: unset;
 }
 .imageDiv{
-    height: 100%;
+    height: 500px;
     width: 100%
 }
 .positionRelative{
@@ -207,8 +213,8 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6{
     left: 0;
     top: 0;
     object-fit: cover;
-    height: 500px;
-    width: 600px;
+    height: 60vh;
+    width: 65vh;
     padding-top: 3rem;
     padding-right: 3rem;
 }
@@ -284,5 +290,24 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6{
         & p{
             color: white;
         }
+    }
+}
+@media (max-width:990px){
+    .topBar{
+        display: none;
+    }
+    .navBar{
+        grid-template-rows: repeat(1,1fr);
+    }
+    .aboutContainer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .menuBar{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
