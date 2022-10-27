@@ -71,7 +71,6 @@
         border: 1px solid rgb(243, 237, 237);
         .imgbox{
             @include display-flex(row,center ,0px);
-            display: flex;
             margin-top: 10%;  
             align-items: center;
         }
@@ -96,8 +95,8 @@
                 margin-left: 25%;
             }
             button:hover{
-                background-color: #FF6F0F;
-                color: white;
+                @include bgcolor(#FF6F0F);
+                @include textcolor(white);
                 cursor: pointer;
             }
     }
@@ -128,7 +127,7 @@
         @include size(300px,450px);
         @include bgcolor(#F8F8F9);
         @include display-flex(column,center ,20px);
-        transition: height 4s;
+        // transition: height 4s;
         .boxyazi{
             text-align: center;
             @include bgcolor(#F8F8F9);
@@ -148,13 +147,13 @@
             list-style-type: none;
             font-size: 24px;
         }
-    :hover{
-        @include size(300px,150px);
-        .visib{
-            visibility: visible;
+        :hover{
+            @include size(300px,150px);
+            .visib{
+                visibility: visible;
+            }
+            animation: second 1s linear 1s  alternate;
         }
-        animation: second 1s linear 1s  alternate;
-    }
 
     }
 }
@@ -171,7 +170,7 @@
     
 }
 .container8{
-    @include animation(myfirst,2s ,ease ,1s ,alternate );
+    @include animation(myfirst,2s ,ease ,2s ,alternate );
     @include bgcolor(rgb(255, 255, 255));
     @include display-flex(row,center,20px);
     @include size(100%,600px);
@@ -257,7 +256,7 @@
     .container6{
         @include display-flex(column,center ,10px );
         height: 1800px;
-        margin-left: 15%;
+        margin-left: 0%;
         .content__baslik{
             display: flex;
             justify-content: center;
@@ -266,13 +265,14 @@
     .content__yazi{
         @include display-flex(column,start ,10px );
         width:300px;
+        margin-left: 20%;
     }
     .content__baslik{
-        margin-left: 50%;
+        margin-left: 10%;
     }
     .container8{
         .box{
-            margin-left: 20%;
+            margin-left: 14%;
         }
     }
     
@@ -313,10 +313,3 @@
         transform: translateZ(0)
       }
     }
-    
-    
-  
-  
-
-
-
