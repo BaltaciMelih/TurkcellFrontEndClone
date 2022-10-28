@@ -124,35 +124,60 @@
     align-items: center;
     .box{
         position: relative;
+        overflow: hidden;
         @include size(300px,450px);
         @include bgcolor(#F8F8F9);
         @include display-flex(column,center ,20px);
         // transition: height 4s;
         .boxyazi{
+            bottom: 0;
+            width: 100%;
+            height: 100px;
             text-align: center;
+            box-sizing: border-box;
+            padding-top: 19px;
             @include bgcolor(#F8F8F9);
+            transition: height .5s;
         }
             p{
                 line-height: 30px;
             }
         ul{
-            position: absolute;
+            // position: absolute;
         }
         .visib{
-            position: absolute;
-            visibility: hidden;
+            // position: absolute;
+            // visibility: hidden;
             @include display-flex(row,start ,2px );
+            margin-top: 20px;
             margin-left: 23%;
             text-decoration: none;
             list-style-type: none;
             font-size: 24px;
         }
-        :hover{
-            @include size(300px,150px);
-            .visib{
-                visibility: visible;
+        img{
+            transition: transform .5s;
+        }
+        &:hover{
+            // @include size(300px,150px); 
+            // .visib{
+            //     visibility: visible;
+            // }
+            .boxyazi{
+                height: 200px;
             }
-            animation: second 1s linear 1s  alternate;
+            // animation: second 1s linear 1s  alternate; 
+            img{
+                transform: translateY(-25px);
+
+            }
+        }
+        .boximg{
+            position: relative;
+            overflow: hidden;
+            img{
+                position: relative;
+            }
         }
 
     }
