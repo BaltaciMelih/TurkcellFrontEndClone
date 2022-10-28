@@ -88,12 +88,12 @@ body {
   color: white; }
 
 .img-container {
-  
-  background-color: #0c1e22; }
+  background-color: #0c1e22;
+  width: 100%;
+  height: auto; }
 
 .img-container img {
-  
-  height: 600px;
+  height: auto;
   width: 100%;
   position: absolute;
   opacity: .30; }
@@ -127,61 +127,37 @@ body {
   border: 2px solid #FF6F0F;
   color: #FF6F0F; }
 
-
-
-
-.container {
-  margin: auto;
-  float: left;
-  width: 50%;
-  align-items:center;
-}
-
-.container .img1{
-  display: block;
-  margin-left: auto;
+.about-container {
+  width: 100%;
+  padding-right: var(0.75rem);
+  padding-left: var(0.75rem);
   margin-right: auto;
-  width: 550px;
-  margin-top: 50px;
-  position: absolute;
-}
+  margin-left: auto; }
+  .about-container .a1 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important; }
 
-.container .img2{
-  
+.foto img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  padding-top: 5px;
+  padding-right: 5px; }
+
+#ac-5 {
+  z-index: 0;
   width: 200px;
   height: 200px;
-  position:relative;
-  float:right;
-  margin-top: -20px;
-  padding-top: 20px ;
+  position: absolute;
   background-color: white;
-  border: 9px white solid;
-  color: white;
-}
+  padding-left: 2px;
+  padding-bottom: 2px; }
 
-.about{
-  position: relative;
-  right: -20px;
-  border-radius: 5px;
-  background-color: rgb(255, 240, 230) !important;
-  font-family: Inter;
-  font-size: 16px;
-  display: inline-block;
+.aboutus text {
+  background-color: #d28fdb6b;
   color: #FF6F0F;
-}
-
-.about-h1{
-font-size: 35.83px;
-font-family: Saira;
-font-weight: 700;
-}
-.paragrph{
-  font-size: 16px;
-  line-height: 24px;
-
-}
-
-.paragraph-2
-{
-  color:rgb(120, 120, 120) ;
-}
+  font-size: 50px;
+  z-index: 2;
+  text-align: center;
+  align-items: center; }

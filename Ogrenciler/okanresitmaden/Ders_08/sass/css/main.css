@@ -119,6 +119,7 @@
   align-items: center; }
   .container6 .box {
     position: relative;
+    overflow: hidden;
     width: 300px;
     height: 450px;
     background-color: #F8F8F9;
@@ -127,29 +128,37 @@
     justify-content: center;
     gap: 20px; }
     .container6 .box .boxyazi {
+      bottom: 0;
+      width: 100%;
+      height: 100px;
       text-align: center;
-      background-color: #F8F8F9; }
+      box-sizing: border-box;
+      padding-top: 19px;
+      background-color: #F8F8F9;
+      transition: height .5s; }
     .container6 .box p {
       line-height: 30px; }
-    .container6 .box ul {
-      position: absolute; }
     .container6 .box .visib {
-      position: absolute;
-      visibility: hidden;
       display: flex;
       flex-direction: row;
       justify-content: start;
       gap: 2px;
+      margin-top: 20px;
       margin-left: 23%;
       text-decoration: none;
       list-style-type: none;
       font-size: 24px; }
-    .container6 .box :hover {
-      width: 300px;
-      height: 150px;
-      animation: second 1s linear 1s  alternate; }
-      .container6 .box :hover .visib {
-        visibility: visible; }
+    .container6 .box img {
+      transition: transform .5s; }
+    .container6 .box:hover .boxyazi {
+      height: 200px; }
+    .container6 .box:hover img {
+      transform: translateY(-25px); }
+    .container6 .box .boximg {
+      position: relative;
+      overflow: hidden; }
+      .container6 .box .boximg img {
+        position: relative; }
 
 .container7 {
   animation-name: myfirst;

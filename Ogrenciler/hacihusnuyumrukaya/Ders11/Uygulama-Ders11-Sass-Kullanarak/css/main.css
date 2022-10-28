@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navbar {
+  background-color: #757b83;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  padding-left: 30px;
+  color: white;
+  border-bottom: 5px solid;
+  border-color: #76a0ee;
+  position: fixed;
+  z-index: 2; }
+  .navbar-logo {
+    font-size: 30px; }
+  .navbar-menu {
+    margin-right: 30px; }
+    .navbar-menu ul {
+      display: flex;
+      overflow: hidden; }
+    .navbar-menu li {
+      display: inline;
+      margin: 5px; }
+    .navbar-menu li a {
+      color: white;
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none; }
+    .navbar-menu a:hover {
+      color: black; }
+    .navbar-menu a {
+      text-decoration: none; }
+  .navbar .menu-bar {
+    display: none; }
+  .navbar .menu2 {
+    display: none; }
+  .navbar .drop-down {
+    display: none; }
+
+.container1 {
+  position: relative;
+  height: auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-image: url(https://picsum.photos/id/135/1600);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  align-items: baseline; }
+  .container1-metin {
+    width: 60%;
+    color: white;
+    text-align: center; }
+    .container1-metin h1 {
+      font-size: 48px;
+      margin-bottom: 20px; }
+    .container1-metin li {
+      margin-bottom: 20px;
+      list-style: none; }
+    .container1-metin span {
+      margin-left: 20px; }
+  .container1-form {
+    width: 30%;
+    color: white; }
+    .container1-form .form-control {
+      width: 80%;
+      background-color: #76a0ee;
+      border-radius: 5px;
+      padding: 15px;
+      text-align: center; }
+      .container1-form .form-control h4 {
+        font-size: 24px;
+        margin: 10px; }
+      .container1-form .form-control p {
+        margin-bottom: 20px; }
+      .container1-form .form-control-in {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: 0px;
+        padding-left: 5%;
+        margin-bottom: 10px; }
+      .container1-form .form-control .button {
+        background-color: #76a0ee;
+        border-color: white;
+        border: 1px solid;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; }
+        .container1-form .form-control .button:hover {
+          color: black;
+          background-color: white; }
+
+.container2, .container4, .footer {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #757b83;
+  color: white;
+  padding: 40px;
+  text-align: center; }
+  .container2 span, .container4 span, .footer span {
+    margin-bottom: 10px; }
+  .container2 p, .container4 p, .footer p {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .container2 .button, .container4 .button, .footer .button {
+    border: 1px solid;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px; }
+    .container2 .button:hover, .container4 .button:hover, .footer .button:hover {
+      background-color: white;
+      color: black; }
+
+.container3 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 30px; }
+  .container3-left {
+    width: 45;
+    padding-right: 10px; }
+    .container3-left img {
+      border-radius: 50%; }
+  .container3-right {
+    width: 45%;
+    text-align: left;
+    flex-direction: column;
+    color: #757b83; }
+    .container3-right h2 {
+      font-size: 36px;
+      margin-bottom: 20px; }
+    .container3-right p {
+      margin-bottom: 20px; }
+    .container3-right li {
+      list-style: none;
+      margin-bottom: 20px; }
+    .container3-right span {
+      margin-left: 15px; }
+
+.container4 {
+  background-color: #76a0ee; }
+
+.container5 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 30px;
+  padding-left: 7%; }
+  .container5-right {
+    width: 45%; }
+    .container5-right img {
+      border-radius: 50%;
+      margin-left: 5%; }
+  .container5-left {
+    width: 45%;
+    text-align: left;
+    flex-direction: column;
+    color: #757b83; }
+    .container5-left h2 {
+      font-size: 36px;
+      margin-bottom: 20px; }
+    .container5-left p {
+      margin-bottom: 20px; }
+    .container5-left li {
+      list-style: none;
+      margin-bottom: 20px; }
+    .container5-left span {
+      margin-left: 15px; }
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  margin: auto 2rem;
+  padding: 20px;
+  display: none; }
+
+.menu-bar button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer; }
+
+.fa-solid {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #0d0d27; }
+
+@media screen and (max-width: 768px) {
+  .drop-down {
+    display: block !important; }
+  .navbar-menu {
+    display: none; }
+  .menu-bar {
+    display: block !important; }
+    .menu-bar .menu2 {
+      height: auto; }
+      .menu-bar .menu2 .list-item {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        font-size: 24px; }
+      .menu-bar .menu2 li {
+        display: block;
+        margin: 5px; }
+      .menu-bar .menu2 li a {
+        color: white;
+        padding: 10px 10px;
+        text-decoration: none; }
+    .menu-bar:hover .menu2 {
+      display: block;
+      height: 200px; }
+  .container1-metin, .container1-form {
+    width: 100%; }
+  .form-control {
+    width: 100%;
+    margin-left: 10%; }
+  .container3-left {
+    width: 100%; }
+    .container3-left img {
+      margin-left: 10%; }
+  .container3-right {
+    width: 100%; }
+  .container5-left {
+    width: 100%; }
+  .container5-right {
+    margin-left: 3%;
+    width: 100%; } }
