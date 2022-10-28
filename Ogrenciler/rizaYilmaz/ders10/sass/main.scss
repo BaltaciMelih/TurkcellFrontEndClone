@@ -208,7 +208,7 @@ body {
         }
 
         .btn {
-          grid-area: btn;
+          
           @include btn-2();
           text-align: center;
           font-size: 1.6rem;
