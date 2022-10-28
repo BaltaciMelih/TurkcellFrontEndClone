@@ -55,6 +55,9 @@ $container-padding: 0 7%;
     padding: 0 2.4rem 0.6rem 2.4rem;
     margin-bottom: 2.4rem;
 }
+.animate__animated.animate__slideInDown {
+    --animate-duration: 2s;
+}
 
 * {
     margin: 0;
