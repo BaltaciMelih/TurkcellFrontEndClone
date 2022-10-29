@@ -1,28 +1,22 @@
 // Ahmet Melih Baltacı Start
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
-}
-
+} 
 body {
     font-family: "Inter", sans-serif;
 }
-
 $bgcolorprimary: #FF6F0F;
 $bgcolorsecondary: #FFF0E6;
 $bgcolorlight: #F8F8F9;
 $bgcolordark: #001D23;
-
 h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     font-family: "Saira", sans-serif;
 }
-
 @mixin FlexBox {
     display: flex;
     text-align: center;
@@ -30,7 +24,6 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     align-content: center;
     align-items: center;
 }
-
 @mixin GridBox {
     display: grid;
     text-align: center;
@@ -38,12 +31,10 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     align-content: center;
     align-items: center;
 }
-
 @mixin fitContent {
     height: fit-content;
     width: fit-content;
 }
-
 .navBar {
     @include GridBox();
     grid-template-rows: repeat(2, 1fr);
@@ -51,7 +42,6 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     color: $bgcolorsecondary;
     background-color: $bgcolordark;
 }
-
 .topBar {
     @include GridBox();
     grid-template-columns: repeat(2, 1fr);
@@ -63,14 +53,12 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         padding-right: 3rem;
     }
 }
-
 .columnLeft {
     @include FlexBox();
     justify-content: flex-start;
     gap: 2rem;
     color: rgba(255, 255, 255, 0.5)
 }
-
 .columnRight {
     @include FlexBox();
     justify-content: flex-end;
@@ -88,7 +76,6 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     padding-left: 3rem;
     padding-right: 3rem;
 }
-
 .logoChari {
     text-align: start;
     padding: 0.5rem 0;
@@ -103,13 +90,11 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         color: white;
     }
 }
-
 .menuRight {
     @extend .columnRight;
     flex-wrap: wrap;
     gap: 2rem;
 }
-
 .menuList {
     @include FlexBox();
     flex-wrap: wrap;
@@ -117,13 +102,11 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
 
     & a {
         color: white;
-
         &:hover {
             color: $bgcolorprimary;
         }
     }
 }
-
 .dropDown {
     overflow: hidden;
 
@@ -133,7 +116,6 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         }
     }
 }
-
 .dropdownContent {
     border-radius: 5px;
     display: none;
@@ -149,7 +131,6 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         text-align: left;
     }
 }
-
 .menuButton {
     transition: all 0.5s ease-in-out;
     border: 1px solid $bgcolorprimary;
@@ -170,13 +151,11 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         }
     }
 }
-
 .fa-arrow-right {
     background-color: $bgcolorsecondary;
     padding: 0.5rem;
     border-radius: 50%;
 }
-
 .innerItem {
     background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
     background-position: center;
@@ -186,31 +165,25 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     box-shadow: inset 0 0 0 500rem rgba($color: #001D23, $alpha: 0.8);
     @include FlexBox();
 }
-
 .innerContent {
     @include FlexBox();
     flex-direction: column;
     gap: 1rem;
     width: 50%;
-
     & h1 {
         font-size: 3.5rem;
         color: white;
     }
-
     & p {
         font-size: 1.25rem;
         color: rgba(255, 255, 255, 0.5)
     }
-
     & .menuButton {
         background-color: $bgcolorprimary;
         margin-top: 2rem;
-
         & p {
             color: white;
         }
-
         &:hover {
             background-color: unset;
 
@@ -220,30 +193,25 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         }
     }
 }
-
 .aboutUs {
     margin-top: 4rem;
     max-width: 1320px;
     margin-right: auto;
     margin-left: auto;
 }
-
 .aboutContainer {
     @include FlexBox();
     max-width: 1320px;
     text-align: unset;
     align-items: unset;
 }
-
 .imageDiv {
     height: 500px;
     width: 100%
 }
-
 .positionRelative {
     position: relative;
 }
-
 .imageRight {
     position: absolute;
     width: 200px;
@@ -254,7 +222,6 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
 }
-
 .imageLeft {
     position: absolute;
     left: 0;
@@ -265,11 +232,9 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     padding-top: 3rem;
     padding-right: 3rem;
 }
-
 .contentDiv {
     height: 100%;
     width: 100%;
-
     & h2 {
         margin-bottom: 3rem;
         font-size: 2.5rem;
@@ -277,7 +242,6 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         line-height: 1.2;
     }
 }
-
 .sectionTag {
     border-radius: 50rem;
     background-color: $bgcolorsecondary;
@@ -286,14 +250,12 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
     @include fitContent();
     margin-bottom: 1rem;
 }
-
 .aboutCard {
     border-radius: 6px;
     background-color: $bgcolorlight;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-bottom: 5px solid $bgcolorprimary;
-
     & .cardFirst {
         color: $bgcolordark;
         margin-bottom: 0.5rem;
@@ -303,17 +265,14 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         color: $bgcolorprimary;
     }
 }
-
 .aboutPrg {
     margin-bottom: 3rem;
 }
-
 .aboutButtons {
     @include FlexBox();
     justify-content: unset;
     gap: 2rem;
 }
-
 .LearnButton {
     @extend .menuButton;
     background-color: $bgcolorprimary;
@@ -330,33 +289,27 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         }
     }
 }
-
 .contactButton {
     transition: all 0.5s ease-in-out;
     border: 1px solid $bgcolorprimary;
     padding: 0.6rem 1.1rem;
     border-radius: 0.5rem;
-
     & a {
         @include FlexBox();
         gap: 1rem;
         color: $bgcolorprimary;
-
         & .fa-arrow-right {
             color: white;
             background-color: $bgcolorprimary;
         }
     }
-
     &:hover {
         background-color: $bgcolorprimary;
-
         & p {
             color: white;
         }
     }
 }
-
 @media (max-width:990px) {
     .topBar {
         display: none;
@@ -382,402 +335,359 @@ h1 .h1 h2 .h2 h3 .h3 h4 .h4 h5 .h5 h6 .h6 {
         width: 100%;
     }
 }
-
 // Ahmet Melih Baltacı Finish
-
 // Hacı Hüsnü Yumrukaya Start
-
-$colortext: #FF6F0F;
-$px3: 3px;
-$px10: 10px;
-$px5: 5px;
-$colorwhite: white;
-$colorbackground1: #F8F8F9;
-$colorbackground2: #fff;
-$font20: 20px;
+$colortext:#FF6F0F;
+$px3:3px;
+$px10:10px;
+$px5:5px;
+$colorwhite:white;
+$colorbackground1:#F8F8F9;
+$colorbackground2:#fff;
+$font20:20px;
 
 @mixin containerden {
     width: 100%;
     height: auto;
     margin: 0 auto;
     font-size: 18px;
-    background-color: $colorbackground1;
-    display: flex;
+    background-color:$colorbackground1;
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-@mixin boxlar {
+}   
+@mixin boxs {
     margin: 10px;
-    height: auto;
-    text-align: center;
+    height:auto;
+    text-align: center; 
 }
-
 @mixin padding1 {
     padding-left: $px10;
-    padding-right: $px10;
-
+    padding-right: $px10;  
+    
 }
-
-@mixin flex-eleman {
+@mixin flex-eleman{   
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;      
+    justify-content: center;   
     text-align: center;
 }
-
-body {
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-.container-1haci {
-    @include containerden();
+    box-sizing: border-box;  
+}  
+.container-1haci{  
+    @include containerden();  
     padding-top: 80px;
-}
+}  
+.container-2haci{
+    @include containerden();
+    flex-direction: row;
+    padding-bottom: 80px;
 
-.feature {
+    .box-haci{
+        width: 27%;
+        background-color:$colorwhite;  
+        border-top:5px solid  $colortext;
+        border-top-left-radius: $px10;
+        border-top-right-radius:$px3;  
+        @include boxs();    
+        &-education{    
+            background-color: $colortext;
+            width: 35%;
+            margin-left: 32.5%;   
+            padding-top: 0px !important;
+            border-bottom-left-radius: $px5;
+            border-bottom-right-radius: $px5;
+            color:$colorwhite;
+            font-size: $font20;
+            padding-bottom: $px5;   
+        } 
+    } 
+
+    .box2-haci{
+        width: 90%;
+        height: auto;
+        background-color:$colorbackground1;
+        flex-direction: row;
+        @include padding1();  
+        margin-left: 2.5%;   
+        margin-bottom: 30px;
+        flex-wrap: wrap; 
+        padding-bottom: 10px;
+        &-ic{
+            display: flex;
+            justify-content: space-around;
+            &-text{
+                    width: 50%;  
+                }  
+        } 
+    } 
+
+    .imgbutton  
+    {
+    position: relative;   
+    height: 270px;  
+    width: 100%;  
+        &-img1-haci   
+        {       
+            width: 100%;   
+            height: 270px;           
+            position: relative;    
+        }
+        .overlay {
+            position: absolute;
+            bottom: 100%;  
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .5);   
+            overflow: hidden;
+            width: 100%;
+            height:0;
+            transition: .5s ease;
+            .button-haci {      
+                position: absolute; 
+                height: 50px;
+                width: 40%;
+                background-color:rgba(0, 0, 0, .5);
+                @include flex-eleman();
+                border: 2px solid $colortext;
+                color: $colortext;
+                border-radius: 10px;   
+                display: none;   
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                &:hover{
+                    background-color: $colortext;
+                    color: white;   
+                }  
+            }   
+            &:hover{
+            .button-haci    
+                {
+                display:flex;  
+                z-index: 2;
+                }   
+            }  
+         
+          }
+    } 
+
+    .imgbutton:hover .overlay {     
+        bottom: 0;    
+        height: 100%;
+       
+    }  
+    .animated-progress {
+        width: 95%;
+        height: 20px; 
+        border-radius: 5px;
+        border: 1px solid rgb(189, 113, 113);
+        overflow: hidden;
+        position: relative;
+      }   
+} 
+.text-haci{
+    color: #787878;  
+    @include padding1();
+}  
+.animated-progress span {
+    font-size: 12px; 
+    height: 100%;
+    display: block;
+    width:  90%;
+    color: rgb(255, 251, 251);  
+    line-height: 20px;   
+    position: absolute;  
+    text-align: end;       
+    padding-right: 5px;
+    background-color: $colortext;
+  } 
+.container-3haci{
+    @include containerden();  
+    padding-top: 80px;
+    background-color: $colorbackground2;
+}
+   
+.container-4haci{
+    @include containerden();
+    flex-direction: row;
+    padding-bottom: 80px;   
+    background-color:$colorbackground2;    
+    .box3-haci
+    {
+        width: 23%;
+        background-color:$colorwhite;
+        border-radius: $px10;
+        @include boxs();    
+        padding: 30px;    
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        
+        &-button2-haci   
+        { 
+            height: 40px;
+            width: 45%;        
+            margin-left:27.5%;
+            background-color:white;
+            border: 2px solid $colortext;
+            color: $colortext;  
+            @include flex-eleman();
+            border-radius: 10px;     
+            margin-top: 20px;
+            margin-bottom: 20px;  
+             
+            &:hover{
+                background-color: $colortext;
+                color: white;   
+            }  
+        }   
+    }  
+}
+     
+   
+.container-5haci{
+    position: relative;     
+    height: auto;    
+    @include containerden();                
+    flex-direction: row;
+    padding-top: 70px; 
+    padding-bottom: 70px;   
+    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)) , url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+   
+  } 
+  .box4-haci{
+    width: 40%;
+    @include boxs();    
+    z-index: 1;
+    text-align: left;
+    .feature{width: 20%; }
+    &h2{     
+        color: $colorwhite;
+        text-align: left;}
+} 
+.box5-haci{
+    width: 40%;
+    @include boxs();      
+    background-color: $colorwhite; 
+    padding: 20px;
+    padding-top: 40px;  
+    padding-bottom: 40px;  
+    z-index: 1;
+
+    &-form-text-mail{
+        width: 95%;
+        height: 50px;
+        background-color: $colorbackground1;
+        margin-bottom: 10px;
+        border: 0px;
+        padding-left: 5px;
+    }
+    .radiobuttons {
+        position: relative;
+        display: inline-flex;  
+        width: 95%;
+        background-color:$colorbackground1;
+        height: 50px;   
+        &-secili-button:checked+label {
+            color: $colortext;
+            border-color:$colortext;
+        }
+        &-secili-button {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: none;
+        } 
+        &-radiobutton {
+            display: inline-block;
+            font-weight: 400;
+            color: #787878;  
+            @include flex-eleman();    
+            cursor: pointer;
+            border: 1px solid transparent;  
+            border-radius: 6px;
+            position: relative;
+            flex: 1 1 auto;  
+        }
+    }    
+     
+    .button3-haci   { 
+        height: 50px;  
+        width: 35%;          
+        margin-left:3%;   
+        background-color:$colortext; 
+        border: 2px solid $colortext; 
+        color: $colorwhite;
+        @include flex-eleman();
+        border-radius: 10px;    
+        margin-top: 20px;
+        margin-bottom: 20px;   
+        &:hover{
+            background-color: $colorwhite;
+            color:$colortext; 
+        }  
+    }  
+}
+  .feature
+{
     color: $colortext;
     background-color: #ebd9cd;
     font-size: $font20;
     padding-left: $px10;
-    padding-right: $px10;
+    padding-right: $px10;  
     padding-top: $px3;
     padding-bottom: $px3;
-    border-radius: 15px;
+    border-radius: 15px;      
 }
-
-h2 {
+h2{
     font-size: 38px;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.container-2haci {
-    @include containerden();
-    flex-direction: row;
-    padding-bottom: 80px;
-}
-
-.box-haci {
-    width: 27%;
-    background-color: $colorwhite;
-    border-top: 5px solid $colortext;
-    border-top-left-radius: $px10;
-    border-top-right-radius: $px3;
-    @include boxlar();
-}
-
-.text-haci {
-    color: #787878;
-    @include padding1();
-}
-
-.education {
-    background-color: $colortext;
-    width: 35%;
-    margin-left: 32.5%;
-    padding-top: 0px !important;
-    border-bottom-left-radius: $px5;
-    border-bottom-right-radius: $px5;
-    color: $colorwhite;
-    font-size: $font20;
-    padding-bottom: $px5;
-}
-
-.box2-haci {
-    width: 90%;
-    height: auto;
-    background-color: $colorbackground1;
-    flex-direction: row;
-    @include padding1();
-    margin-left: 2.5%;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-}
-
-.box2-haci-ic {
-    display: flex;
-    justify-content: space-around;
-}
-
-.imgbutton {
-    position: relative;
-    height: 270px;
-    width: 100%;
-}
-
-.img1-haci {
-    width: 100%;
-    height: 270px;
-    position: relative;
-}
-
-.textleft,
-.textright {
-    width: 50%;
-}
-
-.button-haci {
-    position: absolute;
-    height: 50px;
-    width: 40%;
-    background-color: rgba(0, 0, 0, .5);
-    @include flex-eleman();
-    border: 2px solid $colortext;
-    color: $colortext;
-    border-radius: 10px;
-    display: none;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.button-haci:hover {
-    background-color: $colortext;
-    color: white;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, .5);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-}
-
-.imgbutton:hover {
-    .button-haci {
-        display: flex;
-        z-index: 2;
-    }
-}
-
-.imgbutton:hover .overlay {
-    bottom: 0;
-    height: 100%;
-
-}
-
-.animated-progress {
-    width: 95%;
-    height: 20px;
-    border-radius: 5px;
-    border: 1px solid rgb(189, 113, 113);
-    overflow: hidden;
-    position: relative;
-
-}
-
-.animated-progress span {
-    font-size: 12px;
-    height: 100%;
-    display: block;
-    width: 90%;
-    color: rgb(255, 251, 251);
-    line-height: 20px;
-    position: absolute;
-    text-align: end;
-    padding-right: 5px;
-    background-color: $colortext;
-}
-
-.container-3haci {
-    @include containerden();
-    padding-top: 80px;
-    background-color: $colorbackground2;
-}
-
-.container-4haci {
-    @include containerden();
-    flex-direction: row;
-    padding-bottom: 80px;
-    background-color: $colorbackground2;
-}
-
-.box3-haci {
-    width: 23%;
-    background-color: $colorwhite;
-    border-radius: $px10;
-    @include boxlar();
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.button2-haci {
-    height: 40px;
-    width: 45%;
-    margin-left: 27.5%;
-    background-color: white;
-    border: 2px solid $colortext;
-    color: $colortext;
-    @include flex-eleman();
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.button2-haci:hover {
-    background-color: $colortext;
-    color: white;
-}
-
-.container-5haci {
-    position: relative;
-    height: auto;
-    @include containerden();
-    flex-direction: row;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(https://technext.github.io/chariteam/img/carousel-2.jpg);
-    background-position: 100%;
-    background-repeat: no-repeat;
-}
-
-.img2-haci {
-    width: 100%;
-    height: 480px;
-    filter: grayscale(60%);
-    position: absolute;
-    top: 0;
-    z-index: 0;
-}
-
-.box4-haci {
-    width: 40%;
-    @include boxlar();
-    z-index: 1;
-    text-align: left;
-
-    .feature {
-        width: 20%;
-    }
-
-    h2 {
-        color: $colorwhite;
-        text-align: left;
-    }
-}
-
-.box5-haci {
-    width: 40%;
-    @include boxlar();
-    background-color: $colorwhite;
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    z-index: 1;
-}
-
-.form-text-mail {
-    width: 95%;
-    height: 50px;
-    background-color: $colorbackground1;
-    margin-bottom: 10px;
-    border: 0px;
-    padding-left: 5px;
-}
-
-.radiobuttons {
-    position: relative;
-    display: inline-flex;
-    width: 95%;
-    background-color: $colorbackground1;
-    height: 50px;
-}
-
-.secili-button:checked+label {
-    color: $colortext;
-    border-color: $colortext;
-}
-
-.secili-button {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-    pointer-events: none;
-}
-
-.radiobutton {
-    display: inline-block;
-    font-weight: 400;
-    color: #787878;
-    @include flex-eleman();
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    position: relative;
-    flex: 1 1 auto;
-}
-
-.button3-haci {
-    height: 50px;
-    width: 35%;
-    margin-left: 3%;
-    background-color: $colortext;
-    border: 2px solid $colortext;
-    color: $colorwhite;
-    @include flex-eleman();
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.button3-haci:hover {
-    background-color: $colorwhite;
-    color: $colortext;
-}
+    text-align: center;  
+    font-weight: bolder;  
+}      
 
 @media screen and (max-width: 768px) {
-    .box-haci {
-        width: 85%;
+    .container-2haci .box-haci{
+        width: 85%;    
         margin-bottom: 40px;
     }
-
-    .img1-haci,
-    .imgbutton {
-        height: 300px;
+    .img1-haci,.imgbutton {
+        height: 300px; 
     }
-
-    .box3-haci {
+    .container-4haci .box3-haci {
         width: 70%;
-    }
-
-    .box4-haci {
+    }  
+    .box4-haci  { 
         width: 85%;
     }
-
-    .box5-haci {
-        width: 80%;
-    }
-
-    .container-5haci {
+     .box5-haci {  
+        width: 80%;    
+    } 
+    .container-5haci{ 
         padding: 0px;
         padding-top: 40px;
-        padding-bottom: 60px;
+        padding-bottom: 60px; 
+        .feature
+        {
+            width: 25%;
+        }
     }
-
-    .img2-haci {
-        height: 750px;
+    .img2-haci{ 
+        height: 750px;     
     }
-}
-
+}  
 // Hacı Hüsnü Yumrukaya Finish
 
 // Halil Enes Özdemir Start
 
 $btn-color: #ff6f0f;
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
 * {
@@ -785,11 +695,9 @@ $btn-color: #ff6f0f;
   margin: 0;
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
   font-size: 1.6rem;
   font-family: 'Saira', sans-serif;
@@ -805,7 +713,6 @@ body {
   margin: 0 auto;
   // background-color: green;
 }
-
 .team-top {
   display: flex;
   flex-direction: column;
@@ -826,26 +733,21 @@ body {
     font-weight: 700;
   }
 }
-
 .team-cards {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
-
   .card {
     position: relative;
     // Research
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     transition: all 0.6s ease;
     overflow: hidden;
-
     &-img {
       background-color: #fff;
-
       transition: 0.5s;
-
       img {
         width: 30rem;
         height: 33rem;
@@ -874,7 +776,6 @@ body {
       justify-content: center;
       align-items: center;
     }
-
     &:hover {
       background-color: white;
       box-shadow: rgba(255, 172, 28, 0.199) -10px 10px, rgba(255, 172, 28, 0.19) -20px 20px;
@@ -895,21 +796,18 @@ body {
 }
 
 /* Testimonial CSS */
-
 .testimonial {
   padding: 9.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   &-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
   }
-
   &-btn {
     @extend .team-top-btn;
   }
@@ -930,7 +828,6 @@ body {
     align-items: center;
     margin-bottom: 10rem;
   }
-
   img {
     display: block;
     width: 300px;
@@ -939,7 +836,6 @@ body {
     border-radius: 50%;
     border: 10px solid #ff6f0f;
   }
-
   label {
     display: block;
     cursor: pointer;
@@ -960,7 +856,6 @@ input[type='radio'] {
 
 .testimonial-slider {
   position: relative;
-
   &-img-area {
     display: grid;
     justify-content: center;
@@ -1112,14 +1007,12 @@ input[type='radio'] {
   align-content: end;
   width: 100%;
 }
-
 .footer {
   position: relative;
   width: 100%;
   height: auto;
   padding: 6rem 4.8rem 2.5rem 0;
   background: #001d23;
-
   &-container {
     width: 70%;
     display: grid;
@@ -1128,7 +1021,6 @@ input[type='radio'] {
     align-items: center;
     margin: 0 auto;
   }
-
   &-first {
     p {
       font-family: 'Inter', sans-serif;
@@ -1137,7 +1029,6 @@ input[type='radio'] {
       font-weight: 400;
       font-size: 1.6rem;
     }
-
     h1 {
       color: #ff6f0f;
       font-size: 4rem;
@@ -1147,18 +1038,15 @@ input[type='radio'] {
       }
     }
   }
-
   &-icons {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 3.8rem);
     align-items: center;
     grid-gap: 0.5rem;
-
     li {
       list-style: none;
     }
-
     a {
       display: inline-block;
       width: 38px;
@@ -1170,49 +1058,40 @@ input[type='radio'] {
       text-decoration: none;
       border-radius: 4px;
       border: 1px solid rgba(255, 255, 255, 0.5);
-
       &:hover {
         color: #fff0e6;
         border-color: #f8f8f9;
       }
-
       .fa {
         color: rgba(255, 255, 255, 0.5);
         font-size: 16px;
       }
     }
   }
-
   &-address {
     h5 {
       color: #f8f8f9;
       font-size: 2rem;
       margin: 0 0 24px;
     }
-
     &-info {
       position: relative;
-
       li {
         display: grid;
         grid-template-columns: 30px 1fr;
         margin-bottom: 1.6rem;
-
         span {
           color: rgba(255, 255, 255, 0.5);
         }
       }
-
       a {
         color: rgba(255, 255, 255, 0.5);
         text-decoration: none;
       }
     }
   }
-
   &-quicklinks {
     position: relative;
-
     h5 {
       color: #f8f8f9;
       font-size: 2rem;
@@ -1223,17 +1102,14 @@ input[type='radio'] {
       display: grid;
       grid-template-columns: 30px 1fr;
       list-style: none;
-
       span {
         font-weight: 900;
         color: rgba(255, 255, 255, 0.5);
         margin-right: 0.6rem;
-
         .fa-solid {
           font-size: 1.2rem;
         }
       }
-
       a {
         display: inline-block;
         margin-bottom: 5px;
@@ -1243,7 +1119,6 @@ input[type='radio'] {
         transition: 0.3s;
         text-decoration: none;
       }
-
       a:hover {
         color: #f8f8f9;
         letter-spacing: 1px;
@@ -1274,7 +1149,6 @@ input[type='radio'] {
       margin: 2rem auto;
       // gap: 3rem;
       width: 100%;
-
       input {
         width: 100%;
         background-color: rgba(0, 0, 0, 0);
@@ -1296,7 +1170,6 @@ input[type='radio'] {
         background-color: #ff6f0f;
         border-color: #ff6f0f;
         color: #fff;
-
         font-weight: 400;
         line-height: 1.5;
         border: 1px solid transparent;
@@ -1367,5 +1240,4 @@ input[type='radio'] {
     display: none;
   }
 }
-
 // Halil Enes Özdemir Finish
