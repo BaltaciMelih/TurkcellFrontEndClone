@@ -70,10 +70,28 @@
         a:hover { @include textcolorblack();}
         a { text-decoration: none;}
     }
-
-    .menu-bar{display:none;}
-    .menu2{display: none;}
-    .drop-down{display: none;}
+    .menu-bar 
+    {
+        display: flex;
+        align-items: center;
+        margin: auto 2rem;
+        padding: 20px;
+        display: none;   
+        button 
+        {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .fa-solid 
+        {
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: rgb(13, 13, 39);
+        } 
+        .menu2{display: none;}
+        .drop-down{display: none;}
+    }
  } 
  .container1{
     position: relative;     
@@ -213,36 +231,14 @@
 .footer
 {
     @extend .container2;
-}
-.menu-bar 
-{
-    display: flex;
-    align-items: center;
-    margin: auto 2rem;
-    padding: 20px;
-    display: none;   
-}
-
-  .menu-bar button 
-{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.fa-solid 
-{
-    font-weight: 800;
-    font-size: 1.8rem;
-    color: rgb(13, 13, 39);
-}     
+}    
 @media screen and (max-width: 768px) {
     .drop-down{display: block !important;}
-    .navbar-menu{display: none;}      
+    .navbar-menu{display: none;}     
     .menu-bar{  
-        display:block !important; 
+        display:block !important;    
         .menu2 
-        {  
+        {    
             height: auto; 
             .list-item
             {
@@ -250,21 +246,29 @@
                 left: 0;   
                 top:70px;     
                 font-size:24px;
+                @include background1();
+                width: 100%;
+                border-bottom: 5px solid;
+                @include bordercolor1();
+                li{ 
+                    display:block;
+                    margin: 5px;
+                    a{
+                        @include textcolorwhite(); 
+                        padding: 10px 10px;
+                        text-decoration: none;
+                        &:hover   
+                        {
+                               @include textcolorblack();    
+                        }  
+                     }
+                }
             } 
-            li{ 
-                display:block;
-                margin: 5px;
-            }
-             li a{
-                @include textcolorwhite(); 
-                padding: 10px 10px;
-                text-decoration: none;
-             }
+ 
         }
         &:hover .menu2
         {
-            display: block; 
-            height: 200px; 
+            display: block;      
         }
     }   
     .container1-metin ,.container1-form
