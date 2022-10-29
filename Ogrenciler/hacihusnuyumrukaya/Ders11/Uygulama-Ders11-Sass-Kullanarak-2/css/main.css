@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navbar {
+  background-color: #597ba7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  padding-left: 30px;
+  color: white;
+  position: fixed;
+  z-index: 2; }
+  .navbar-logo {
+    font-size: 30px; }
+  .navbar-menu {
+    margin-right: 30px; }
+    .navbar-menu ul {
+      display: flex;
+      overflow: hidden; }
+    .navbar-menu li {
+      display: inline;
+      margin: 5px; }
+    .navbar-menu li a {
+      color: white;
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none; }
+    .navbar-menu a:hover {
+      color: black; }
+    .navbar-menu a {
+      text-decoration: none; }
+  .navbar .menu-bar {
+    align-items: center;
+    margin: auto 2rem;
+    padding: 20px;
+    display: none; }
+    .navbar .menu-bar button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer; }
+    .navbar .menu-bar .fa-solid {
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: #0d0d27; }
+    .navbar .menu-bar .menu2 {
+      display: none; }
+    .navbar .menu-bar .drop-down {
+      display: none; }
+  .navbar .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+    .navbar .social-icons li {
+      display: inline;
+      align-items: center;
+      justify-content: center; }
+    .navbar .social-icons .fa {
+      color: white;
+      font-size: larger;
+      padding: 0.4rem;
+      border-radius: 50%;
+      margin: auto 0; }
+      .navbar .social-icons .fa:hover {
+        color: black; }
+  .navbar .social-icons2 {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.container1 {
+  position: relative;
+  height: auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  background-image: url(https://picsum.photos/id/154/1600);
+  background-position: 100%;
+  background-repeat: no-repeat; }
+  .container1-box {
+    width: 60%;
+    padding-left: 3%;
+    color: white;
+    margin-top: 20px; }
+    .container1-box h1 {
+      font-size: 48px; }
+    .container1-box .button {
+      background-color: #3b5fad;
+      border-color: white;
+      border: 1px solid;
+      height: 40px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 20%;
+      margin-top: 20px; }
+      .container1-box .button:hover {
+        color: black;
+        background-color: white; }
+
+.container2, .container4 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #597ba7;
+  color: white;
+  padding: 40px;
+  text-align: center; }
+  .container2 span, .container4 span {
+    margin-bottom: 10px; }
+  .container2 p, .container4 p {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .container2 .button, .container4 .button {
+    border: 1px solid;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3b5fad;
+    padding: 10px; }
+    .container2 .button:hover, .container4 .button:hover {
+      background-color: white;
+      color: black; }
+
+.container3, .container5 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+  padding-bottom: 70px; }
+  .container3-box {
+    width: 25%;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 25px;
+    box-shadow: #26394d 20px 20px 30px 10px;
+    background-color: #597ba7; }
+    .container3-box img {
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+  .container3-text {
+    color: white;
+    margin: 10px; }
+    .container3-text .button {
+      border: 1px solid;
+      height: 40px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #3b5fad;
+      padding: 10px;
+      width: 40%;
+      margin-top: 20px; }
+      .container3-text .button:hover {
+        background-color: white;
+        color: black; }
+
+.container4 {
+  background-color: #3b5fad; }
+  .container4 .button {
+    background-color: #597ba7; }
+
+.container5-box {
+  width: 28%;
+  margin: 25px;
+  position: relative; }
+  .container5-box p {
+    display: none; }
+  .container5-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
+    .container5-box:hover img {
+      transform: scale(0.85); }
+    .container5-box:hover p {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      color: #597ba7; }
+
+@media screen and (max-width: 768px) {
+  .drop-down {
+    display: block !important; }
+  .navbar-menu {
+    display: none; }
+  .social-icons {
+    display: none !important; }
+  .navbar {
+    padding: 10px; }
+  .menu-bar {
+    display: block !important; }
+    .menu-bar .menu2 {
+      height: auto; }
+      .menu-bar .menu2 .list-item {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        font-size: 24px;
+        background-color: #597ba7;
+        width: 100%; }
+        .menu-bar .menu2 .list-item li {
+          display: block;
+          margin: 5px; }
+          .menu-bar .menu2 .list-item li a {
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none; }
+            .menu-bar .menu2 .list-item li a:hover {
+              color: black; }
+    .menu-bar:hover .menu2 {
+      display: block; }
+  .container1-box {
+    width: 100%; }
+  .container3-box {
+    width: 90%; }
+    .container3-box img {
+      height: 275px; }
+  .container5-box {
+    width: 90%; }
+    .container5-box img {
+      width: 100%; } }

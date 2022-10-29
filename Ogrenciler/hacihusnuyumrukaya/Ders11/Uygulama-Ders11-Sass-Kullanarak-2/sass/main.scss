@@ -1,0 +1,283 @@
+@mixin background1{background-color: rgb(89, 123, 167);}
+@mixin background2{background-color: rgb(59, 95, 173);}
+@mixin textcolorwhite{color: white;}
+@mixin textcolorblack {color: black;}
+@mixin  textcolor1 {color: rgb(89, 123, 167);}
+@mixin backgroundwhite{background-color: white;}
+@mixin bordercolorwhite{border-color: white;}
+@mixin containerden {   
+    width: 100%;    
+    height: auto;
+    margin: 0 auto;
+    font-size: 18px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}  
+@mixin flex-item {
+    display: flex;
+    align-items: center;      
+    justify-content: center;   
+    text-align: center;
+}
+@mixin  button-item {
+    border: 1px solid;
+    height: 40px;
+    border-radius: 30px;
+}  
+@mixin button-item2
+{
+    @include button-item();
+    @include flex-item();
+    @include background2();
+    padding: 10px; 
+    &:hover 
+    {
+        @include backgroundwhite();
+        @include textcolorblack();
+    }    
+}
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .navbar
+ {
+    @include background1();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    align-items: center;  
+    width: 100%; 
+    padding: 15px;      
+    padding-left: 30px; 
+    @include textcolorwhite();   
+    position:fixed;
+    z-index: 2;
+    &-logo{     
+            font-size: 30px;    
+    }
+    &-menu{
+        margin-right: 30px;
+        ul{
+            display: flex;
+            overflow: hidden;
+        }
+        li{
+            display: inline;
+            margin: 5px;
+        }
+         li a{
+            @include textcolorwhite(); 
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+         }
+        a:hover { @include textcolorblack();}
+        a { text-decoration: none;}
+    }
+    .menu-bar 
+    {
+        align-items: center;
+        margin: auto 2rem;
+        padding: 20px;
+        display: none;   
+        button 
+        {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .fa-solid  
+        {
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: rgb(13, 13, 39);
+        } 
+        .menu2{display: none;}
+        .drop-down{display: none;} 
+    }
+    .social-icons{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        li {
+            display:inline;
+            align-items: center;
+            justify-content: center;
+          }
+          .fa {
+            @include textcolorwhite(); 
+            font-size: larger;
+            padding: 0.4rem;
+            border-radius: 50%;
+            margin: auto 0; 
+            &:hover
+            {
+                 @include textcolorblack();
+            }   
+          }
+     }
+     .social-icons2{padding-top: 10px; padding-bottom: 10px;}
+ }  
+ .container1{
+    position: relative;     
+    height: auto;    
+    @include containerden();   
+    align-items: flex-start;           
+    padding-top: 80px;
+    padding-bottom: 70px;    
+    background-image:url(https://picsum.photos/id/154/1600);
+    background-position: 100%;
+    background-repeat: no-repeat; 
+    &-box {
+        width: 60%;
+        padding-left: 3%; 
+        @include textcolorwhite();
+        margin-top: 20px ;
+        h1{       
+            font-size: 48px;  
+        }
+        .button{     
+            @include background2(); 
+            @include bordercolorwhite();
+            @include button-item();
+            @include flex-item();
+            width: 20%;
+            margin-top: 20px;
+            &:hover{
+               @include textcolorblack();
+               @include backgroundwhite();
+            } 
+        }  
+    }
+ }
+.container2
+{
+    @include containerden();
+    @include background1(); 
+    @include textcolorwhite(); 
+    padding: 40px;
+    text-align: center; 
+    span{margin-bottom: 10px;}
+    p{font-size: 20px; margin-bottom: 10px;}
+    .button{     
+        @include button-item2();
+     }  
+  
+}
+
+.container3
+{ 
+  @include containerden();
+  flex-direction: row;  
+  padding: 20px;
+  padding-bottom: 70px; 
+  &-box
+  {
+    width: 25%;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 25px;
+    box-shadow: rgb(38, 57, 77) 20px 20px 30px 10px; 
+    @include background1();      
+    img
+    {
+        width: 100%;  
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;  
+    }
+  }
+  &-text    
+  {
+    @include textcolorwhite();
+    margin: 10px;  
+    .button{     
+        @include button-item2();
+        width: 40%;
+        margin-top: 20px;
+     }  
+  }   
+} 
+.container4
+{
+    @extend .container2;
+    @include background2();
+    .button {@include background1();}
+}
+.container5
+{
+    @extend .container3;
+    &-box
+    {
+        width: 28%; 
+        margin: 25px; 
+        position: relative;
+        p{display: none;  }
+        &:hover   
+        {  
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            img{transform: scale(0.85);}
+            p{
+                display:block; 
+                position: absolute;  
+                bottom:0; @include 
+                textcolor1();}     
+        } 
+    }
+}
+
+ @media screen and (max-width: 768px) {
+    .drop-down{display: block !important;}
+    .navbar-menu{display: none;}     
+    .social-icons{display: none !important;}
+    .navbar{padding: 10px;}
+    .menu-bar{  
+        display:block !important;    
+        .menu2 
+        {    
+            height: auto; 
+            .list-item
+            {
+                position: absolute;  
+                left: 0;   
+                top:70px;     
+                font-size:24px;
+                @include background1();
+                width: 100%;
+                li{ 
+                    display:block;
+                    margin: 5px;
+                    a{
+                        @include textcolorwhite(); 
+                        padding: 10px 10px;
+                        text-decoration: none;
+                        &:hover   
+                        {
+                               @include textcolorblack();    
+                        }  
+                     }
+                }
+            } 
+ 
+        }
+        &:hover .menu2
+        {
+            display: block;      
+        }
+    } 
+    .container1-box{width: 100%;}
+    .container3-box{
+        width: 90%;
+        img {height: 275px;} 
+    }
+    .container5-box{
+        width: 90%;
+        img{width: 100%;}
+    }
+ }       

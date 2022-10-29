@@ -37,11 +37,23 @@
     .navbar-menu a {
       text-decoration: none; }
   .navbar .menu-bar {
+    display: flex;
+    align-items: center;
+    margin: auto 2rem;
+    padding: 20px;
     display: none; }
-  .navbar .menu2 {
-    display: none; }
-  .navbar .drop-down {
-    display: none; }
+    .navbar .menu-bar button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer; }
+    .navbar .menu-bar .fa-solid {
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: #0d0d27; }
+    .navbar .menu-bar .menu2 {
+      display: none; }
+    .navbar .menu-bar .drop-down {
+      display: none; }
 
 .container1 {
   position: relative;
@@ -211,23 +223,6 @@
     .container5-left span {
       margin-left: 15px; }
 
-.menu-bar {
-  display: flex;
-  align-items: center;
-  margin: auto 2rem;
-  padding: 20px;
-  display: none; }
-
-.menu-bar button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer; }
-
-.fa-solid {
-  font-weight: 800;
-  font-size: 1.8rem;
-  color: #0d0d27; }
-
 @media screen and (max-width: 768px) {
   .drop-down {
     display: block !important; }
@@ -241,17 +236,22 @@
         position: absolute;
         left: 0;
         top: 70px;
-        font-size: 24px; }
-      .menu-bar .menu2 li {
-        display: block;
-        margin: 5px; }
-      .menu-bar .menu2 li a {
-        color: white;
-        padding: 10px 10px;
-        text-decoration: none; }
+        font-size: 24px;
+        background-color: #757b83;
+        width: 100%;
+        border-bottom: 5px solid;
+        border-color: #76a0ee; }
+        .menu-bar .menu2 .list-item li {
+          display: block;
+          margin: 5px; }
+          .menu-bar .menu2 .list-item li a {
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none; }
+            .menu-bar .menu2 .list-item li a:hover {
+              color: black; }
     .menu-bar:hover .menu2 {
-      display: block;
-      height: 200px; }
+      display: block; }
   .container1-metin, .container1-form {
     width: 100%; }
   .form-control {
