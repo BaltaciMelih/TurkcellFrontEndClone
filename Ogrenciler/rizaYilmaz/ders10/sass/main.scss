@@ -12,7 +12,9 @@ $container-padding: 0 7%;
   justify-content: $just;
   align-items: $align;
 }
-
+.animate__animated.animate__slideInDown {
+  --animate-duration: 2s;
+}
 @mixin btn {
   padding: 1rem 2rem;
   border: 1px solid $btn-color;
@@ -26,7 +28,7 @@ $container-padding: 0 7%;
 }
 
 @mixin btn-2 {
-  padding: 1rem 2rem;
+  padding: 0.6rem 1rem;
   border: 1px solid $btn-color;
   border-radius: 1rem;
   background-color: transparent;
@@ -39,7 +41,7 @@ $container-padding: 0 7%;
   i {
     // dönülecek !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     border-radius: 50%;
-    padding: 1rem;
+    padding: .5rem;
   }
 }
 
@@ -51,8 +53,10 @@ $container-padding: 0 7%;
           font-size: 2.1rem;
           display: inline-block;
           padding: 0 2.4rem 0.6rem 2.4rem;
-          margin-bottom: 2.4rem;
+          margin-bottom: 2.4rem; 
 }
+
+
 
 * {
   margin: 0;
@@ -67,6 +71,22 @@ $container-padding: 0 7%;
 
 html {
   font-size: 10px;
+  overflow-x: hidden; /* yatay scroll kapatma */
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1.2rem;
+  background-color: #fff;
+
+}
+html::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: black;
+
 }
 
 i {
@@ -102,6 +122,7 @@ p {
 }
 
 body {
+  
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -121,14 +142,16 @@ body {
     top: 0;
     z-index: 2;
     width: 100%;
+    
 
-    background-color: rgba(0, 29, 35, 0.8);
+   background-color: rgba(0, 29, 35, 0.8);
     grid-area: header;
     .container {
       .header-top {
         @include d-flex(space-between, center);
         padding: 1rem 7%;
         border-bottom: 2px solid #3f3f3f;
+        
 
         .h-t-left {
           @include d-flex(flex-start, center);
@@ -157,20 +180,20 @@ body {
               font-size: 1.8rem;
               &:hover{
                 color: #ff6f0f;
-                scale: 1.2;
+                scale: 1.2; 
               }
-            }
+            } 
           }
         }
-      }
+      } 
 
       .header-bottom {
+        
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-areas: "logo navbar btn";
+        grid-template-columns: 1fr 3fr 1fr 0.1fr;
+        grid-template-areas: "logo navbar btn bars ";
         align-items: center;
-        padding: 2rem 7%;
-
+        padding: 1rem 7%;
         .logo {
           grid-area: logo;
           h2 {
@@ -184,40 +207,84 @@ body {
             font-size: 3rem;
           }
         }
-
-        .navbar {
-          grid-area: navbar;
-          padding-right: 3rem;
-          ul {
+          // .active{
+          //   .list-group{
+          //     @include d-flex(center,center );
+          //     flex-direction: column;
+          //   }
+          // }
+          
+         .navbar {
+          margin-left: 2rem;
+           grid-area: navbar;
+           padding-right: 3rem;
+           ul {
             @include d-flex(flex-end, center);
-            gap: 2rem;
-            li {
-              font-size: 1.6rem;
-              &:first-child a {
-                color: #ff6f0f;
+             gap: 2rem;
+             .dropdown-element{
+              position: relative;
+              i{
+                color: white;
+                font-size: 16px;
               }
-              a{
-
-                &:hover{
-                  color: #ff6f0f;
+              .dropdown{
+                display: none;
+                position: absolute;
+                top: 2rem;
+                width: 11rem;
+                background-color: #f9f9f9;
+                border: 1px;
+                border-radius: 0.5rem;
+                padding: 12px 16px;
+                a{
+                  color: #001D23 !important;
+                  &:hover{
+                    color: #ff6f0f !important;
+                  }
                 }
               }
-            }
-            
-          }
-        }
+              
+              &:hover .dropdown{
+                display: block;
+              }
+             }
+             li {
+               font-size: 1.6rem;
+               &:first-child a {
+                 color: #ff6f0f;
+               }
+               a{
 
+                 &:hover{
+                   color: #ff6f0f;
+                 }
+               }
+             } 
+            
+           }
+         }
+         .fa-bars{
+          
+         color: transparent;
+        grid-area: bars;
+        
+          
+         }
+        
+      
         .btn {
           
           @include btn-2();
           text-align: center;
           font-size: 1.6rem;
-          width: 75%;
+          width: 50%;
+          min-width: 16rem;
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 1rem;
+          gap: .5rem;
           margin: 0 0 0 auto;
+          grid-area: btn;
 
           i {
             font-size: 1.6rem;
@@ -234,6 +301,9 @@ body {
     height: 100vh;
     grid-area: home;
     margin-bottom: 3rem;
+    
+
+   
     .homebg {
       background-color: #001d23 !important;
       height: 100vh;
@@ -241,7 +311,34 @@ body {
       display: grid;
       grid-template-columns: 1fr 3fr 1fr;
       grid-template-areas: ". c-home .";
+      position: relative;
+      
+      .btn-2{
+        z-index: 4;
+        @include btn();
+        width: 5rem; height: 5rem;
+        position: absolute;
+        top: 90%; right: 3rem;
+        font-size: 3rem;
+        padding: .5rem 1rem;
+        position: fixed; 
+        
 
+        // padding: .5rem 0.8rem;
+        // background-color: $btn-color;
+        // color: $font-color;
+        // position: absolute;
+        // top: 90%;
+        // right: 5%;
+        // font-size: 3rem;
+        // text-align: center;
+        // cursor: pointer;
+        
+
+        
+        
+      }
+      
       .container-home {
         grid-area: c-home;
         display: flex;
@@ -283,8 +380,8 @@ body {
       padding: 0 7%;
       flex-wrap: wrap;
       .about-left {
-        width: 40%;
-        min-width: 30rem;
+        width: 45%;
+        min-width: 45rem;
         position: relative;
         padding: 5rem 2.4rem;
         img {
@@ -302,9 +399,9 @@ body {
       }
 
       .about-right {
-        width: 40%;
+        width: 45%;
         padding: 0 2.4rem;
-        min-width: 30rem;
+        min-width: 45rem;
 
         .p-24 {
           padding: 2.4rem;
@@ -353,62 +450,14 @@ body {
     }
   }
 
-  // .causes {
-  //   grid-area: causes;
-
-  //   .container-causes{
-  //     padding: $container-padding;
-
-  //       .causes-header{
-  //         text-align: center;
-  //       }
-
-  //       .causes-content{
-  //         display: grid;
-  //         grid-template-columns: 1fr 1fr 1fr;
-
-  //         .causes-item {
-
-  //           .causes-top{
-  //             @include d-flex(flex-start, center );
-  //             flex-direction:column;
-
-  //             .causes-tag {
-  //               border-bottom-left-radius: 0.6rem;
-  //               border-bottom-right-radius: 0.6rem;
-  //               background-color: $btn-color;
-  //               color: $font-color;
-  //               font-size: 1.8rem;
-  //               padding: 0 1.6rem 0.4rem 1.6rem;
-  //               margin-bottom: 2.4rem ;
-  //             }
-  //             // @extend
-  //             .causes-tag2{
-  //               @extend .causes-tag;
-  //             }
-  //             .causes-tag3{
-  //               @extend .causes-tag;
-  //             }
-
-  //             .causes-top-amount{
-  //               display: flex;
-  //               justify-content: space-between;
-  //             }
-  //           }
-  //         }
-  //       }
-  //   }
-  // }
+  
   .feature {
     grid-area: feature;
     margin: 3rem 0;
     
-    .feature-start {
-      
+    .feature-start {      
       width: 100%;
-      text-align: center;
-      
-
+      text-align: center;      
       h4 {
         font-size: 1.6rem;
         color: $btn-color;
@@ -431,7 +480,82 @@ body {
       gap: 2rem;
       padding: 0 7%;
       flex-wrap: wrap;
-      
+      .progress {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 95%;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid rgb(189, 113, 113);
+        overflow: hidden;
+        position: relative;
+     }
+     .progress span {
+        font-size: 15px;
+         height: 100%;
+         display: block;
+         width: 90%;
+         color: #fff;
+         line-height: 20px;
+         position: absolute;
+         text-align: end;
+         padding-right: 5px;
+         background-color: $btn-color;
+     }
+      .imagebutton {
+        position: relative;
+        height: 270px;
+        width: 100%;
+         &feature-img {
+             width: 100%;
+             height: 270px;
+             position: relative;
+                 }
+              .covering {
+                 position: absolute;
+                 bottom: 100%;
+                 left: 0;
+                 right: 0;
+                 background-color: rgba(0, 0, 0, .5);
+                 overflow: hidden;
+                 width: 100%;
+                 height: 0;
+                 transition: .5s ease;
+               .btn-saf {
+                 position: absolute;
+                 font-size: 1.5rem;
+                 height: 50px;
+                 width: 40%;
+                 background-color: rgba(0, 0, 0, .5);
+                 @include d-flex(center, center);
+                 text-align: center;
+                 border: 2px solid $btn-color;
+                 color: $btn-color;
+                 border-radius: 10px;
+                 display: none;
+                 top: 50%;
+                 left: 50%;
+                 -webkit-transform: translate(-50%, -50%);
+                 -ms-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+                     &:hover {
+                         background-color:$btn-color;
+                         color: white;
+                         }
+                 }
+         
+                     &:hover {
+                     .btn-saf {
+                     display: flex;
+                     z-index: 2;
+                     }
+                 }
+                  }
+                 }
+                   .imagebutton:hover .covering {
+                     bottom: 0;
+                     height: 100%;
+                   }
       .progress-text {  
         @include d-flex(space-between, center );
         gap: 10rem;
@@ -453,7 +577,7 @@ body {
         }
         span{
           font-size: 1.4rem;
-          color: #787878;
+          
         }
         .s-h2 {
           font-size: 2rem;
@@ -691,30 +815,49 @@ body {
 .donatenow {
   background-image: url(../image/carousel-2.jpg);
   background-size: cover;
-  height: 100vh;
+//  height: 100vh;
+  height: 75rem;
+  
   grid-area: donatenow;
   margin-bottom: 3rem;
   
   .donatebg {
     background-color: #001d23 !important;
-    height: 100vh;
+    // height: 100vh;
+    height: 75rem;
+    
+    
     opacity: 0.75;
+    padding: 0 7%;
+    
   }
   .container-donatenow {
-    @include d-flex(center, center);
-    gap: 2rem;
+    @include d-flex(center, center );
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
     
-    padding: 0 7%;
+    gap: 5rem;
+    
+
+    
+    
     .donatenow-left {
-      margin-top: 15rem;
+      // margin-top: 4rem;
+      width: 45%;
+      min-width: 45rem;
+      
+      // margin-top: 15rem;
       h4 {
-        width: 18%;
+        width: 25%;
+        min-width: 15rem;
         background-color: #ccc;
         border-radius: 10rem;
         font-size: 1.6rem;
         color: $btn-color;
-        padding: 0.7rem 1.6rem;
+        padding: 0.7rem 0;
         margin-bottom: 1rem;
+        text-align: center;
       }
 
       .s-h2 {
@@ -729,12 +872,14 @@ body {
       }
     }
     .donatenow-right {
-      margin-top: 15rem;
+      // margin-top: 15rem;
+      min-width: 45rem;
+      width: 45%;
       .form-grant {
         .subscribe {
           border: 1px solid #fff;
           height: 6rem;
-          width: 54rem;
+          width: 100%;
           border-radius: 7px;
           margin-bottom: 1.5rem;
           &:hover {
@@ -744,16 +889,7 @@ body {
           }
         }
 
-        .subject {
-          height: 6rem;
-          width: 54rem;
-          border-radius: 7px;
-          &:hover {
-            cursor: pointer;
-            color: $btn-color;
-            border: 1px solid $btn-color;
-          }
-        }
+        
 
         .btn3 {
           background-color: #ccc;
@@ -770,6 +906,11 @@ body {
         }
         .btn {
           @include btn();
+          font-size: 1.6rem;
+          i{
+            padding-left: 1.5rem;
+            font-size: 1.6rem;
+          }
         }
       }
     }
@@ -796,15 +937,11 @@ body {
         // @include d-flex(space-evenly,center);
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        gap: 0.5rem;
-        .card-1{
+        .card{
             background-color: rgb(220, 213, 213);
             border:  0px;
-            text-align: center ;
+            text-align: center;
             border-radius: 0.5rem;
-            position: relative;
-            
-            .cards-animation{
             h3{
                 margin: 2.4rem 0rem 0.8rem 0rem;
                 font-size: 2rem;
@@ -818,120 +955,69 @@ body {
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
             }
-            ul{
-              display: none;
-              justify-content: center;
-              gap: 1rem;
-              // margin-bottom: 1rem;
-            }
-            &:hover{
-              
-              transform: translateY(-50px);
-            
-            ul{
-              display: flex;
-              li a i:hover{
-                color: #ff6f0f;
-                
-              }
-            }
-            
-          }
-            }
-            
-        }
-        .card-2{
-          @extend .card-1;
-        }
-        .card-3{
-          @extend .card-1;
-        }
-        .card-4{
-          @extend .card-1;
-          
         }
     }
   }
   .testimonial{
     grid-area: testimonial;
-    padding: 1rem 7%;
-    margin-top: 7.2rem;
-    .title{
-        
-        text-align: center;
-        h4{
-            font-size: 1.6rem;
-        }
-        h2{
-            font-size: 4rem;
-            margin-bottom:4.8rem; 
-        }
-    }
-    .card-group{
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-areas: "card-1 card-2 card-3";
-        gap: 2rem;
-        
-        .card-1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            grid-area: card-1;
-            gap: 2rem;
+    padding: 2rem 7%;
+    margin: 2rem 0;
+    margin-bottom: 8rem;
+    carousel {
+      width: 100%;
+      margin-bottom: 25rem;
+      text-align: center;
+      font-family: Trebuchet MS;
+      display: block;
+      font-size: 2rem;
 
-            img{
-                border: 7px solid #ff6f0f;
-                border-radius: 50%;
-                align-items: center;
-            }
-            .card-description{
-                p{
-                    margin-bottom: 1.6rem;
-                }
-                background-color: #ff6f0f;
-                border-radius: 1rem;
-                padding: 1rem;
-                text-align: center;
-            }
-        }
-        .card-2{
-            grid-area: card-2;
-            @extend .card-1;
-            justify-content: flex-start;
-            img{
-                border: 7px solid #ff6f0f;
-                border-radius: 50%;
-            }
-            .card-description{
-                p{
-                    margin-bottom: 1.6rem;
-                }
-                background-color: #ff6f0f;
-                border-radius: 1rem;
-                padding: 1rem;
-                text-align: center;
-            }
-        }
-        .card-3{
-            grid-area: card-3;
-            @extend .card-1;
-            img{
-                border: 7px solid #ff6f0f;
-                border-radius: 50%;
-            }
-            .card-description{
-                p{
-                    margin-bottom: 1.6rem;
-                }
-                background-color: #ff6f0f;
-                border-radius: 1rem;
-                padding: 1rem;
-                text-align: center;
-            }
-        }
-    }
+      page {
+          position: absolute;
+          top: 2em;
+          left: 0;
+          width: 100%;
+          transition: transform 0.5s;
+          transform: scale(0);
+         img{
+          border: 7px solid $btn-color;
+          border-radius: 50%;
+         }
+          .card-description{
+              display: flex;
+              
+              width: 50%;
+              flex-direction: column;
+              justify-content:center;
+              text-align: center;
+              border: 2px solid $btn-color;
+              border-radius: 10%;
+              background-color: $btn-color;
+              color: #fff;
+              font-size: 1.5rem;
+              margin: 3rem auto;
+          }
+
+          div {
+              padding: 0, 5rem;
+          }
+
+          label {
+              cursor: pointer;
+              background: orangered;
+              color: white;
+              padding: 1em 2em;
+              
+          }
+      }
+
+      @for $i from 1 through 3 {
+          #page#{$i}cb:checked~ {
+              #page#{$i} {
+                  transform: scale(1);
+              }
+          }
+      }
+  }
   }
   footer {
     grid-area: footer;
@@ -941,11 +1027,12 @@ body {
     
     .footer-top{
         margin-top: 7.2rem;
-        display: flex;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
         margin-bottom: 4.8rem;
         .box-1{
-        width: 25%;
+          
             h2{
                 margin-bottom: 2.4rem;
                 font-size: 4rem;
@@ -970,7 +1057,7 @@ body {
             }
         }
         .box-2{
-            width: 25%;
+            
             h3{
                 font-size: 2rem;
                 color: #fff;
@@ -988,7 +1075,7 @@ body {
             }
         }
         .box-3{
-            width: 25%;
+            
             h3{
                 font-size: 2rem;
                 color: #fff;
@@ -1004,7 +1091,7 @@ body {
             
         }
         .box-4{
-            width: 25%;
+            
             h3{
                 font-size: 2rem;
                 color: #fff;
@@ -1016,7 +1103,7 @@ body {
                 color: #ccc;
             }
             .footer-button{
-                
+                @include d-flex(space-between, center );
                 border: 1px solid #ccc;
                 border-radius: 0.5rem;
                 background-color: transparent;
@@ -1030,6 +1117,7 @@ body {
                 }
                 button{
                     height: 4rem;
+                    border: none;
                     border-radius: 0.5rem;
                     color: #fff;
                     background-color: #ff6f0f;
@@ -1049,10 +1137,70 @@ body {
             }
     }
   }
+
+  @media only screen and(max-width: 992px){
+    
+    
+
+
+    .team-members-section{
+      .card-group{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        
+      }
+    }
+
+    .footer {
+      .footer-top{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+      }
+    }
+  }
+ 
+
   @media only screen and(max-width: 768px) {
-    .container-feature{
+
+    .header-top {
+     position: absolute;
+     bottom: 100%;
       
-      .feature-right{
+    }
+
+    .header-bottom {
+      grid-template-columns: 1fr;
+      
+      .logo{
+        grid-area: logo;
+      }
+      .btn{
+        grid-area: btn;
+      }
+      .navbar{
+        
+          display: none;
+           .list-group {
+             @include d-flex(center, center );
+             flex-direction: column;
+           }
+        
+        
+      
+      }
+      .fa-bars{
+        grid-area: bars;
+        display: inline-block;
+        margin-left: 2rem;
+        color: $font-color !important;
+       }
+    }
+
+
+  .container-feature{
+      
+    .feature-right{
         width: 100%;
         min-width: 50%;
         
@@ -1074,26 +1222,39 @@ body {
       }
       .whatwedo-center{
         width: 100%;
-      }
+      } 
     }
     
     .team-members-section{
       .card-group{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1, 1fr);
         column-gap: 2rem;
-        row-gap: 1rem;
+        
       }
     }
     .testimonial{
       .card-group{
         grid-template-areas: "card-1"
         "card-2"
-        "card-3";
+        "card-3"; 
         grid-template-columns: 1fr;
         
         row-gap: 1rem;
       }
     }
-  }
- 
 
+    .footer {
+      .footer-top{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+      }
+    }
+}
+
+
+
+
+
+  
+
+ 
