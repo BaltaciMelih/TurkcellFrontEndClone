@@ -796,11 +796,15 @@ body {
         // @include d-flex(space-evenly,center);
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        .card{
+        gap: 0.5rem;
+        .card-1{
             background-color: rgb(220, 213, 213);
             border:  0px;
-            text-align: center;
+            text-align: center ;
             border-radius: 0.5rem;
+            position: relative;
+            
+            .cards-animation{
             h3{
                 margin: 2.4rem 0rem 0.8rem 0rem;
                 font-size: 2rem;
@@ -814,6 +818,37 @@ body {
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
             }
+            ul{
+              display: none;
+              justify-content: center;
+              gap: 1rem;
+              // margin-bottom: 1rem;
+            }
+            &:hover{
+              
+              transform: translateY(-50px);
+            
+            ul{
+              display: flex;
+              li a i:hover{
+                color: #ff6f0f;
+                
+              }
+            }
+            
+          }
+            }
+            
+        }
+        .card-2{
+          @extend .card-1;
+        }
+        .card-3{
+          @extend .card-1;
+        }
+        .card-4{
+          @extend .card-1;
+          
         }
     }
   }
@@ -837,6 +872,7 @@ body {
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-areas: "card-1 card-2 card-3";
         gap: 2rem;
+        
         .card-1{
             display: flex;
             justify-content: center;
