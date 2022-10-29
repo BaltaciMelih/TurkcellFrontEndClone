@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap");
 /* variables */
+.animate__animated.animate__slideInDown {
+  --animate-duration: 2s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -346,6 +350,81 @@ body .feature .container-feature .progress-text {
   align-items: center;
   gap: 10rem;
 }
+body .feature .container-feature .progress {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 95%;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(189, 113, 113);
+  overflow: hidden;
+  position: relative;
+}
+body .feature .container-feature .progress span {
+  font-size: 15px;
+  height: 100%;
+  display: block;
+  width: 90%;
+  color: #fff;
+  line-height: 20px;
+  position: absolute;
+  text-align: end;
+  padding-right: 5px;
+  background-color: #ff6f0f;
+}
+body .feature .container-feature .imagebutton {
+  position: relative;
+  height: 270px;
+  width: 100%;
+}
+body .feature .container-feature .imagebuttonfeature-img {
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+body .feature .container-feature .imagebutton .covering {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+body .feature .container-feature .imagebutton .covering .btn-saf {
+  position: absolute;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #ff6f0f;
+  color: #ff6f0f;
+  border-radius: 10px;
+  display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+body .feature .container-feature .imagebutton .covering .btn-saf:hover {
+  background-color: #ff6f0f;
+  color: white;
+}
+body .feature .container-feature .imagebutton .covering:hover .btn-saf {
+  display: flex;
+  z-index: 2;
+}
+body .feature .container-feature .imagebutton:hover .covering {
+  bottom: 0;
+  height: 100%;
+}
 body .feature .container-feature .feature-left {
   display: flex;
   justify-content: center;
@@ -369,7 +448,6 @@ body .feature .container-feature .feature-left .causes-tag {
 }
 body .feature .container-feature .feature-left span {
   font-size: 1.4rem;
-  color: #787878;
 }
 body .feature .container-feature .feature-left .s-h2 {
   font-size: 2rem;
@@ -781,76 +859,57 @@ body .feature .feature-right .feature-img {
   padding: 1rem 7%;
   margin-top: 7.2rem;
 }
-.testimonial .title {
+.testimonial carousel {
+  width: 100%;
+  margin-bottom: 25rem;
   text-align: center;
+  font-family: Trebuchet MS;
+  display: block;
+  font-size: 2rem;
 }
-.testimonial .title h4 {
-  font-size: 1.6rem;
+.testimonial carousel page {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  transform: scale(0);
 }
-.testimonial .title h2 {
-  font-size: 4rem;
-  margin-bottom: 4.8rem;
+.testimonial carousel page img {
+  border: 7px solid #ff6f0f;
+  border-radius: 50%;
 }
-.testimonial .card-group {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: "card-1 card-2 card-3";
-  gap: 2rem;
-}
-.testimonial .card-group .card-1, .testimonial .card-group .card-3, .testimonial .card-group .card-2 {
+.testimonial carousel page .card-description {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 38rem;
+  width: 50%;
   flex-direction: column;
-  grid-area: card-1;
-  gap: 2rem;
-}
-.testimonial .card-group .card-1 img, .testimonial .card-group .card-3 img, .testimonial .card-group .card-2 img {
-  border: 7px solid #ff6f0f;
-  border-radius: 50%;
-  align-items: center;
-}
-.testimonial .card-group .card-1 .card-description, .testimonial .card-group .card-3 .card-description, .testimonial .card-group .card-2 .card-description {
-  background-color: #ff6f0f;
-  border-radius: 1rem;
-  padding: 1rem;
+  justify-content: center;
   text-align: center;
-}
-.testimonial .card-group .card-1 .card-description p, .testimonial .card-group .card-3 .card-description p, .testimonial .card-group .card-2 .card-description p {
-  margin-bottom: 1.6rem;
-}
-.testimonial .card-group .card-2 {
-  grid-area: card-2;
-  justify-content: flex-start;
-}
-.testimonial .card-group .card-2 img {
-  border: 7px solid #ff6f0f;
-  border-radius: 50%;
-}
-.testimonial .card-group .card-2 .card-description {
+  border: 2px solid #ff6f0f;
+  border-radius: 10%;
   background-color: #ff6f0f;
-  border-radius: 1rem;
-  padding: 1rem;
-  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
-.testimonial .card-group .card-2 .card-description p {
-  margin-bottom: 1.6rem;
+.testimonial carousel page div {
+  padding: 0, 5rem;
 }
-.testimonial .card-group .card-3 {
-  grid-area: card-3;
+.testimonial carousel page label {
+  cursor: pointer;
+  background: orangered;
+  color: white;
+  padding: 1em 2em;
 }
-.testimonial .card-group .card-3 img {
-  border: 7px solid #ff6f0f;
-  border-radius: 50%;
+.testimonial carousel #page1cb:checked ~ #page1 {
+  transform: scale(1);
 }
-.testimonial .card-group .card-3 .card-description {
-  background-color: #ff6f0f;
-  border-radius: 1rem;
-  padding: 1rem;
-  text-align: center;
+.testimonial carousel #page2cb:checked ~ #page2 {
+  transform: scale(1);
 }
-.testimonial .card-group .card-3 .card-description p {
-  margin-bottom: 1.6rem;
+.testimonial carousel #page3cb:checked ~ #page3 {
+  transform: scale(1);
 }
 
 footer {

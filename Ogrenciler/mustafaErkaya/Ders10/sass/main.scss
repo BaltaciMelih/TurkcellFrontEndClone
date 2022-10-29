@@ -26,7 +26,7 @@ $container-padding: 0 7%;
 }
 
 @mixin btn-2 {
-  padding: 1rem 2rem;
+  padding: 0.6rem 1rem;
   border: 1px solid $btn-color;
   border-radius: 1rem;
   background-color: transparent;
@@ -39,7 +39,7 @@ $container-padding: 0 7%;
   i {
     // dönülecek !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     border-radius: 50%;
-    padding: 1rem;
+    padding: .5rem;
   }
 }
 
@@ -51,8 +51,10 @@ $container-padding: 0 7%;
           font-size: 2.1rem;
           display: inline-block;
           padding: 0 2.4rem 0.6rem 2.4rem;
-          margin-bottom: 2.4rem;
+          margin-bottom: 2.4rem; 
 }
+
+
 
 * {
   margin: 0;
@@ -67,6 +69,22 @@ $container-padding: 0 7%;
 
 html {
   font-size: 10px;
+  overflow-x: hidden; /* yatay scroll kapatma */
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1.2rem;
+  background-color: #fff;
+
+}
+html::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: black;
+
 }
 
 i {
@@ -102,6 +120,7 @@ p {
 }
 
 body {
+  
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -121,14 +140,16 @@ body {
     top: 0;
     z-index: 2;
     width: 100%;
+    
 
-    background-color: rgba(0, 29, 35, 0.8);
+   background-color: rgba(0, 29, 35, 0.8);
     grid-area: header;
     .container {
       .header-top {
         @include d-flex(space-between, center);
         padding: 1rem 7%;
         border-bottom: 2px solid #3f3f3f;
+        
 
         .h-t-left {
           @include d-flex(flex-start, center);
@@ -157,20 +178,20 @@ body {
               font-size: 1.8rem;
               &:hover{
                 color: #ff6f0f;
-                scale: 1.2;
+                scale: 1.2; 
               }
-            }
+            } 
           }
         }
-      }
+      } 
 
       .header-bottom {
+        
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-areas: "logo navbar btn";
+        grid-template-columns: 1fr 3fr 1fr 0.1fr;
+        grid-template-areas: "logo navbar btn bars ";
         align-items: center;
-        padding: 2rem 7%;
-
+        padding: 1rem 7%;
         .logo {
           grid-area: logo;
           h2 {
@@ -184,40 +205,56 @@ body {
             font-size: 3rem;
           }
         }
-
-        .navbar {
-          grid-area: navbar;
-          padding-right: 3rem;
-          ul {
+          // .active{
+          //   .list-group{
+          //     @include d-flex(center,center );
+          //     flex-direction: column;
+          //   }
+          // }
+         .navbar {
+          margin-left: 2rem;
+           grid-area: navbar;
+           padding-right: 3rem;
+           ul {
             @include d-flex(flex-end, center);
-            gap: 2rem;
-            li {
-              font-size: 1.6rem;
-              &:first-child a {
-                color: #ff6f0f;
-              }
-              a{
+             gap: 2rem;
+             li {
+               font-size: 1.6rem;
+               &:first-child a {
+                 color: #ff6f0f;
+               }
+               a{
 
-                &:hover{
-                  color: #ff6f0f;
-                }
-              }
-            }
+                 &:hover{
+                   color: #ff6f0f;
+                 }
+               }
+             } 
             
-          }
-        }
-
+           }
+         }
+         .fa-bars{
+          
+         color: transparent;
+        grid-area: bars;
+        
+          
+         }
+        
+      
         .btn {
           
           @include btn-2();
           text-align: center;
           font-size: 1.6rem;
-          width: 75%;
+          width: 50%;
+          min-width: 16rem;
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 1rem;
+          gap: .5rem;
           margin: 0 0 0 auto;
+          grid-area: btn;
 
           i {
             font-size: 1.6rem;
@@ -234,6 +271,9 @@ body {
     height: 100vh;
     grid-area: home;
     margin-bottom: 3rem;
+    
+
+   
     .homebg {
       background-color: #001d23 !important;
       height: 100vh;
@@ -241,7 +281,34 @@ body {
       display: grid;
       grid-template-columns: 1fr 3fr 1fr;
       grid-template-areas: ". c-home .";
+      position: relative;
+      
+      .btn-2{
+        z-index: 4;
+        @include btn();
+        width: 5rem; height: 5rem;
+        position: absolute;
+        top: 90%; right: 3rem;
+        font-size: 3rem;
+        padding: .5rem 1rem;
+        position: fixed; 
+        
 
+        // padding: .5rem 0.8rem;
+        // background-color: $btn-color;
+        // color: $font-color;
+        // position: absolute;
+        // top: 90%;
+        // right: 5%;
+        // font-size: 3rem;
+        // text-align: center;
+        // cursor: pointer;
+        
+
+        
+        
+      }
+      
       .container-home {
         grid-area: c-home;
         display: flex;
@@ -950,7 +1017,7 @@ body {
                 color: #ccc;
             }
             .footer-button{
-                
+                @include d-flex(space-between, center );
                 border: 1px solid #ccc;
                 border-radius: 0.5rem;
                 background-color: transparent;
@@ -964,6 +1031,7 @@ body {
                 }
                 button{
                     height: 4rem;
+                    border: none;
                     border-radius: 0.5rem;
                     color: #fff;
                     background-color: #ff6f0f;
@@ -1008,9 +1076,45 @@ body {
  
 
   @media only screen and(max-width: 768px) {
-    .container-feature{
+
+    .header-top {
+     position: absolute;
+     bottom: 100%;
       
-      .feature-right{
+    }
+
+    .header-bottom {
+      grid-template-columns: 1fr;
+      
+      .logo{
+        grid-area: logo;
+      }
+      .btn{
+        grid-area: btn;
+      }
+      .navbar{
+        
+          display: none;
+           .list-group {
+             @include d-flex(center, center );
+             flex-direction: column;
+           }
+        
+        
+      
+      }
+      .fa-bars{
+        grid-area: bars;
+        display: inline-block;
+        margin-left: 2rem;
+        color: $font-color !important;
+       }
+    }
+
+
+  .container-feature{
+      
+    .feature-right{
         width: 100%;
         min-width: 50%;
         
@@ -1032,7 +1136,7 @@ body {
       }
       .whatwedo-center{
         width: 100%;
-      }
+      } 
     }
     
     .team-members-section{
@@ -1052,7 +1156,18 @@ body {
         row-gap: 1rem;
       }
     }
-  }
+
+    .footer {
+      .footer-top{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+      }
+    }
+}
+
+
+
+
 
   
 
