@@ -89,7 +89,7 @@ body {
       grid-template-columns: 1fr 3fr 1fr;
       grid-template-areas: "logo navbar btn";
       align-items: center;
-      padding: 2rem 7%; }
+      padding: 1rem 7%; }
       body .header .container .header-bottom .logo {
         grid-area: logo; }
         body .header .container .header-bottom .logo h2 {
@@ -99,70 +99,20 @@ body {
         body .header .container .header-bottom .logo .h2 {
           color: #ff6f0f;
           font-size: 3rem; }
-      body .header .container .header-bottom .top-nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #00BAF0;
-        background: transparent;
-        color: #FFF;
-        height: 50px;
-        padding: 1rem; }
-      body .header .container .header-bottom .menu {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0; }
-        body .header .container .header-bottom .menu > li {
-          margin: 0 1rem;
-          overflow: hidden; }
-      body .header .container .header-bottom .menu-button-container {
-        display: flex;
-        height: 100%;
-        width: 30px;
-        cursor: pointer;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-      body .header .container .header-bottom #menu-toggle {
-        display: none; }
-        body .header .container .header-bottom #menu-toggle:checked + .menu-button-container .menu-button {
-          background: rgba(255, 255, 255, 0); }
-          body .header .container .header-bottom #menu-toggle:checked + .menu-button-container .menu-button::before {
-            margin-top: 0px;
-            transform: rotate(405deg); }
-          body .header .container .header-bottom #menu-toggle:checked + .menu-button-container .menu-button::after {
-            margin-top: 0px;
-            transform: rotate(-405deg); }
-      body .header .container .header-bottom .menu-button {
-        display: block;
-        background-color: #fff;
-        position: absolute;
-        height: 4px;
-        width: 30px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 2px; }
-        body .header .container .header-bottom .menu-button::before {
-          display: block;
-          background-color: #fff;
-          position: absolute;
-          height: 4px;
-          width: 30px;
-          transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-          border-radius: 2px;
-          content: '';
-          margin-top: -8px; }
-        body .header .container .header-bottom .menu-button::after {
-          display: block;
-          background-color: #fff;
-          position: absolute;
-          height: 4px;
-          width: 30px;
-          transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-          border-radius: 2px;
-          content: '';
-          margin-top: 8px; }
+      body .header .container .header-bottom .navbar {
+        grid-area: navbar;
+        padding-right: 3rem; }
+        body .header .container .header-bottom .navbar ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 2rem; }
+          body .header .container .header-bottom .navbar ul li {
+            font-size: 1.6rem; }
+            body .header .container .header-bottom .navbar ul li:first-child a {
+              color: #ff6f0f; }
+            body .header .container .header-bottom .navbar ul li a:hover {
+              color: #ff6f0f; }
       body .header .container .header-bottom .btn {
         padding: 1rem 2rem;
         border: 1px solid #ff6f0f;
@@ -867,40 +817,3 @@ footer {
   .footer .footer-top {
     grid-template-columns: 1fr;
     gap: 5rem; } }
-
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: flex; }
-  .menu {
-    position: absolute;
-    top: 110px;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center; }
-    .menu > li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: #222; }
-      .menu > li:not(:last-child) {
-        border-bottom: 1px solid #444; }
-  #menu-toggle {
-    display: flex; }
-    #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
-    #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); } }
