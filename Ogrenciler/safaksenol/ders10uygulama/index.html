@@ -303,35 +303,14 @@
         </div>
     </section>
     <section class="testimonial animate__animated animate__fadeInUp">
-        <div class="title">
-            <h4>Testimonial</h4>
-            <h2>Trusted By Thousands Of People And Nonprofits</h2>
-        </div>
-        <div class="card-group">
-            <div class="card-1">
-
-                <img src="./image/testimonial-3.jpg" alt="">
-                <div class="card-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis ex est
-                        blanditiis voluptates veniam laboriosam accusamus beatae facilis sint provident, praesentium
-                        aspernatur facere. Consequatur inventore culpa vel voluptates laudantium!</p>
-                    <h5>Doner Name</h5>
-                    <p>Profession</p>
-                </div>
-            </div>
-            <div class="card-2">
-
-                <img src="./image/testimonial-2.jpg" alt="">
-                <div class="card-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis ex est
-                        blanditiis voluptates veniam laboriosam accusamus beatae facilis sint provident, praesentium
-                        aspernatur facere. Consequatur inventore culpa vel voluptates laudantium!</p>
-                    <h5>Doner Name</h5>
-                    <p>Profession</p>
-                </div>
-            </div>
+        <!-- yeni gelen kodlar başlangıç -->
+    <carousel>
+        <input type="radio" id="page1cb" checked name="pages" />
+        <input type="radio" id="page2cb" name="pages" />
+        <input type="radio" id="page3cb" name="pages" />
+        <!-- page 1 -->
+        <page id="page1">
             <div class="card-3">
-
                 <img src="./image/testimonial-1.jpg" alt="">
                 <div class="card-description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis ex est
@@ -341,7 +320,38 @@
                     <p>Profession</p>
                 </div>
             </div>
-        </div>
+            <label for="page2cb" title="Start"><b>NEXT→</b></label>
+        </page>
+        <!-- page 2 -->
+        <page id="page2">
+            <div class="card-2">
+                <img src="./image/testimonial-2.jpg" alt="">
+                <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis ex est
+                        blanditiis voluptates veniam laboriosam accusamus beatae facilis sint provident, praesentium
+                        aspernatur facere. Consequatur inventore culpa vel voluptates laudantium!</p>
+                    <h5>Doner Name</h5>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <label for="page3cb" title="Next"><b>NEXT→</b></label>
+        </page>
+        <!-- page 3 -->
+        <page id="page3">
+            <div class="card-3">
+                <img src="./image/testimonial-3.jpg" alt="">
+                <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis ex est
+                        blanditiis voluptates veniam laboriosam accusamus beatae facilis sint provident, praesentium
+                        aspernatur facere. Consequatur inventore culpa vel voluptates laudantium!</p>
+                    <h5>Doner Name</h5>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <label for="page1cb" title="Next"><b>NEXT→</b></label>
+        </page>
+    </carousel>
+    <!-- yeni gelen kodlar bitiş -->
     </section>
     <footer>
         <div class="footer-top animate__animated animate__fadeInUp">

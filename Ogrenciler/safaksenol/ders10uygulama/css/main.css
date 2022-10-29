@@ -859,76 +859,57 @@ body .feature .feature-right .feature-img {
   padding: 1rem 7%;
   margin-top: 7.2rem;
 }
-.testimonial .title {
+.testimonial carousel {
+  width: 100%;
+  margin-bottom: 25rem;
   text-align: center;
+  font-family: Trebuchet MS;
+  display: block;
+  font-size: 2rem;
 }
-.testimonial .title h4 {
-  font-size: 1.6rem;
+.testimonial carousel page {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  transform: scale(0);
 }
-.testimonial .title h2 {
-  font-size: 4rem;
-  margin-bottom: 4.8rem;
+.testimonial carousel page img {
+  border: 7px solid #ff6f0f;
+  border-radius: 50%;
 }
-.testimonial .card-group {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: "card-1 card-2 card-3";
-  gap: 2rem;
-}
-.testimonial .card-group .card-1, .testimonial .card-group .card-3, .testimonial .card-group .card-2 {
+.testimonial carousel page .card-description {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 38rem;
+  width: 50%;
   flex-direction: column;
-  grid-area: card-1;
-  gap: 2rem;
-}
-.testimonial .card-group .card-1 img, .testimonial .card-group .card-3 img, .testimonial .card-group .card-2 img {
-  border: 7px solid #ff6f0f;
-  border-radius: 50%;
-  align-items: center;
-}
-.testimonial .card-group .card-1 .card-description, .testimonial .card-group .card-3 .card-description, .testimonial .card-group .card-2 .card-description {
-  background-color: #ff6f0f;
-  border-radius: 1rem;
-  padding: 1rem;
+  justify-content: center;
   text-align: center;
-}
-.testimonial .card-group .card-1 .card-description p, .testimonial .card-group .card-3 .card-description p, .testimonial .card-group .card-2 .card-description p {
-  margin-bottom: 1.6rem;
-}
-.testimonial .card-group .card-2 {
-  grid-area: card-2;
-  justify-content: flex-start;
-}
-.testimonial .card-group .card-2 img {
-  border: 7px solid #ff6f0f;
-  border-radius: 50%;
-}
-.testimonial .card-group .card-2 .card-description {
+  border: 2px solid #ff6f0f;
+  border-radius: 10%;
   background-color: #ff6f0f;
-  border-radius: 1rem;
-  padding: 1rem;
-  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
-.testimonial .card-group .card-2 .card-description p {
-  margin-bottom: 1.6rem;
+.testimonial carousel page div {
+  padding: 0, 5rem;
 }
-.testimonial .card-group .card-3 {
-  grid-area: card-3;
+.testimonial carousel page label {
+  cursor: pointer;
+  background: orangered;
+  color: white;
+  padding: 1em 2em;
 }
-.testimonial .card-group .card-3 img {
-  border: 7px solid #ff6f0f;
-  border-radius: 50%;
+.testimonial carousel #page1cb:checked ~ #page1 {
+  transform: scale(1);
 }
-.testimonial .card-group .card-3 .card-description {
-  background-color: #ff6f0f;
-  border-radius: 1rem;
-  padding: 1rem;
-  text-align: center;
+.testimonial carousel #page2cb:checked ~ #page2 {
+  transform: scale(1);
 }
-.testimonial .card-group .card-3 .card-description p {
-  margin-bottom: 1.6rem;
+.testimonial carousel #page3cb:checked ~ #page3 {
+  transform: scale(1);
 }
 
 footer {
