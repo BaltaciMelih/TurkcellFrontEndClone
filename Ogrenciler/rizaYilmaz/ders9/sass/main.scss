@@ -1,0 +1,10 @@
+$color: red;
+@mixin deneme($align) {
+    display: flex;
+    text-align: $align;
+    
+}
+h2{
+    color: $color ; 
+    @include deneme(center)
+}
