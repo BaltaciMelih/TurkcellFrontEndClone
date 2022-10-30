@@ -37,12 +37,12 @@ header {
     font-size: 4rem;
     font-weight: 200; }
 
-.exploreNew {
+.exploreNew, .findNew {
   background-color: white;
   color: #7e8996; }
-  .exploreNew h2 {
+  .exploreNew h2, .findNew h2 {
     font-weight: 400; }
-  .exploreNew img {
+  .exploreNew img, .findNew img {
     height: 500px;
     border-radius: 50%; }
 

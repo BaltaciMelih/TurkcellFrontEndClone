@@ -71,3 +71,6 @@ header{
     @extend .discover;
     background-color: $bgcolorsecondary;
 }
+.findNew{
+    @extend .exploreNew;
+}
