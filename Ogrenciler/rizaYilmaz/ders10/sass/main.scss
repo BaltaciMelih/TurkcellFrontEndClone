@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap");
-
 /* variables */
 $bg-color: #7a7c9d;
-
 $btn-color: #ff6f0f;
 $font-color: #fff;
 $container-padding: 0 7%;
-
 @mixin d-flex($just, $align) {
   display: flex;
   justify-content: $just;
@@ -24,9 +21,7 @@ $container-padding: 0 7%;
   &:hover {
     background-color: transparent;
     color: $btn-color;
-  }
-}
-
+  } }
 @mixin btn-2 {
   padding: 0.6rem 1rem;
   border: 1px solid $btn-color;
@@ -37,14 +32,10 @@ $container-padding: 0 7%;
     background-color: $btn-color;
     color: $font-color;
   }
-
   i {
-    // dönülecek !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     border-radius: 50%;
     padding: .5rem;
-  }
-}
-
+  } }
 @mixin causes-head {
   border-bottom-left-radius: 0.6rem;
           border-bottom-right-radius: 0.6rem;
@@ -55,9 +46,6 @@ $container-padding: 0 7%;
           padding: 0 2.4rem 0.6rem 2.4rem;
           margin-bottom: 2.4rem; 
 }
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +56,6 @@ $container-padding: 0 7%;
   text-transform: capitalize;
   font-family: inter;
 }
-
 html {
   font-size: 10px;
   overflow-x: hidden; /* yatay scroll kapatma */
@@ -78,7 +65,6 @@ html {
 html::-webkit-scrollbar {
   width: 1.2rem;
   background-color: #fff;
-
 }
 html::-webkit-scrollbar-track{
   background-color: transparent;
@@ -86,20 +72,16 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb {
   border-radius: 3rem;
   background-color: black;
-
 }
-
 i {
   font-size: 2.5rem;
 }
 a {
   color: $font-color;
 }
-
 span {
   font-size: 1.8rem;
 }
-
 .s-h2 {
   font-size: 4rem;
   margin-bottom: 4.8rem;
@@ -110,19 +92,14 @@ h4 {
   padding: 0.4rem 1.6rem;
   margin-bottom: 1.6rem;
 }
-
 h5 {
-  // causes h5
   font-size: 2rem;
   margin-bottom: 1.6rem;
 }
-
 p {
   font-size: 1.6rem;
 }
-
 body {
-  
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -136,23 +113,18 @@ body {
     "teammembers teammembers teammembers"
     "testimonial testimonial testimonial"
     "footer footer footer";
-
   .header {
     position: fixed;
     top: 0;
     z-index: 2;
     width: 100%;
-    
-
-   background-color: rgba(0, 29, 35, 0.8);
+    background-color: rgba(0, 29, 35, 0.8);
     grid-area: header;
     .container {
       .header-top {
         @include d-flex(space-between, center);
         padding: 1rem 7%;
         border-bottom: 2px solid #3f3f3f;
-        
-
         .h-t-left {
           @include d-flex(flex-start, center);
           gap: 2rem;
@@ -162,9 +134,7 @@ body {
           }
           i{
             font-size: 1.4rem;
-          }
-        }
-
+          }}
         .h-t-right {
           @include d-flex(flex-end, center);
           gap: 1rem;
@@ -181,14 +151,8 @@ body {
               &:hover{
                 color: #ff6f0f;
                 scale: 1.2; 
-              }
-            } 
-          }
-        }
-      } 
-
-      .header-bottom {
-        
+              }}}}} 
+      .header-bottom { 
         display: grid;
         grid-template-columns: 1fr 3fr 1fr 0.1fr;
         grid-template-areas: "logo navbar btn bars ";
@@ -201,19 +165,10 @@ body {
             color: $font-color;
             cursor: pointer;
           }
-
           .h2 {
             color: $btn-color;
             font-size: 3rem;
-          }
-        }
-          // .active{
-          //   .list-group{
-          //     @include d-flex(center,center );
-          //     flex-direction: column;
-          //   }
-          // }
-          
+          }}
          .navbar {
           margin-left: 2rem;
            grid-area: navbar;
@@ -240,40 +195,24 @@ body {
                   color: #001D23 !important;
                   &:hover{
                     color: #ff6f0f !important;
-                  }
-                }
-              }
-              
+                  }}} 
               &:hover .dropdown{
                 display: block;
-              }
-             }
+              }}
              li {
                font-size: 1.6rem;
                &:first-child a {
                  color: #ff6f0f;
                }
                a{
-
                  &:hover{
                    color: #ff6f0f;
-                 }
-               }
-             } 
-            
-           }
-         }
+                 }}}}}
          .fa-bars{
-          
          color: transparent;
         grid-area: bars;
-        
-          
          }
-        
-      
         .btn {
-          
           @include btn-2();
           text-align: center;
           font-size: 1.6rem;
@@ -285,25 +224,16 @@ body {
           gap: .5rem;
           margin: 0 0 0 auto;
           grid-area: btn;
-
           i {
             font-size: 1.6rem;
             align-items: center;
-          }
-        }
-      }
-    }
-  }
-
+          }}}}}
   .home {
     background-image: url(../image/carousel-1.jpg);
     background-size: cover;
     height: 100vh;
     grid-area: home;
     margin-bottom: 3rem;
-    
-
-   
     .homebg {
       background-color: #001d23 !important;
       height: 100vh;
@@ -312,7 +242,6 @@ body {
       grid-template-columns: 1fr 3fr 1fr;
       grid-template-areas: ". c-home .";
       position: relative;
-      
       .btn-2{
         z-index: 4;
         @include btn();
@@ -322,23 +251,7 @@ body {
         font-size: 3rem;
         padding: .5rem 1rem;
         position: fixed; 
-        
-
-        // padding: .5rem 0.8rem;
-        // background-color: $btn-color;
-        // color: $font-color;
-        // position: absolute;
-        // top: 90%;
-        // right: 5%;
-        // font-size: 3rem;
-        // text-align: center;
-        // cursor: pointer;
-        
-
-        
-        
       }
-      
       .container-home {
         grid-area: c-home;
         display: flex;
@@ -347,7 +260,6 @@ body {
         align-items: center;
         text-align: center;
         gap: 2rem;
-
         .h1 {
           color: $font-color;
           font-size: 5.6rem;
@@ -360,20 +272,13 @@ body {
           @include btn();
           font-size: 1.8rem;
           opacity: 1;
-
           i {
             font-size: 1.8rem;
             margin-left: 1rem;
-          }
-        }
-      }
-    }
-  }
-
+          }}}}}
   .about {
     grid-area: about;
     margin: 3rem 0;
-
     .container-about {
       @include d-flex(center, center);
       gap: 7rem;
@@ -395,66 +300,48 @@ body {
           border: 1rem solid #fff;
           left: 75%;
           top: 0;
-        }
-      }
-
+        }}
       .about-right {
         width: 45%;
         padding: 0 2.4rem;
         min-width: 45rem;
-
         .p-24 {
           padding: 2.4rem;
           font-size: 1.6rem;
           border-bottom: 0.5rem solid $btn-color;
           border-radius: 0.6rem;
           margin-bottom: 2.4rem;
-
           p {
             margin-bottom: 0.8rem;
           }
           span {
             color: $btn-color;
-          }
-        }
-
+          }}
         .a-buttons {
           display: flex;
           gap: 2rem;
           .btn {
             @include btn();
             font-size: 1.6rem;
-
             i {
               font-size: 1.6rem;
               margin-left: 1rem;
-            }
-          }
-
+            }}
           .btn-2 {
             @include btn-2();
             font-size: 1.6rem;
             i {
               font-size: 1.6rem;
               margin-left: 1rem;
-            }
-          }
-        }
-
+            }}}
         .p-1 {
           font-size: 1.6rem;
           color: rgb(117, 113, 113);
           margin-bottom: 4.8rem;
-        }
-      }
-    }
-  }
-
-  
+        }}}}
   .feature {
     grid-area: feature;
     margin: 3rem 0;
-    
     .feature-start {      
       width: 100%;
       text-align: center;      
@@ -464,17 +351,12 @@ body {
         padding: 0.4rem 1.6rem;
         margin-bottom: 1.6rem;
       }
-
       .s-h2 {
         font-size: 4rem;
         width: 40%;
-        
         margin: 0 auto;
         margin-bottom: 4.8rem;
-      }
-
-    }
-
+      }}
     .container-feature {
       @include d-flex(center, center);
       gap: 2rem;
@@ -541,17 +423,12 @@ body {
                      &:hover {
                          background-color:$btn-color;
                          color: white;
-                         }
-                 }
-         
+                         }}
                      &:hover {
                      .btn-saf {
                      display: flex;
                      z-index: 2;
-                     }
-                 }
-                  }
-                 }
+                     }}}}
                    .imagebutton:hover .covering {
                      bottom: 0;
                      height: 100%;
@@ -559,10 +436,7 @@ body {
       .progress-text {  
         @include d-flex(space-between, center );
         gap: 10rem;
-        
       }
-      
-
       .feature-left {
         @include d-flex(center, center );
         flex-direction: column;
@@ -571,13 +445,11 @@ body {
         border-radius: 0.5rem;
         width: 30%;
         min-width: 40rem;
-        
         .causes-tag {
           @include causes-head();
         }
         span{
           font-size: 1.4rem;
-          
         }
         .s-h2 {
           font-size: 2rem;
@@ -590,14 +462,10 @@ body {
           text-align: center;
           p{
             color: #787878;
-          }
-        }
+          }}
         .feature-img {
           width: 100%;
-        }
-      }
-    }
-
+        }}}
     .feature-center {
       @include d-flex(center, center );
         flex-direction: column;
@@ -605,7 +473,7 @@ body {
         border-top: 0.5rem solid $btn-color;
         border-radius: 0.5rem;
         width: 30%;
-      min-width: 40rem;
+        min-width: 40rem;
       .causes-tag2 {
         @include causes-head();
       }
@@ -624,13 +492,10 @@ body {
         text-align: center;
         p{
           color: #787878;
-        }
-      }
+        }}
       .feature-img {
         width: 100%;
-      }
-    }
-
+      }}
     .feature-right {
       padding: 0 1.5rem 1.5rem 1.5rem;
       border-top: 0.5rem solid $btn-color;
@@ -651,26 +516,20 @@ body {
         margin-bottom: 0.5rem;
         text-align: center;
       }
-
       .p-24 {
         padding: 2.4rem;
         font-size: 1.6rem;
         text-align: center;
         p{
           color: #787878;
-        }
-      }
+        }}
       .feature-img {
         justify-content: center;
         width: 100%;
-      }
-    }
-  }
-}
+      }}}} 
 .whatwedo {
   grid-area: whatwedo;
   margin: 4rem 0;
-
   .whatwedo-start {
     h4 {
       font-size: 1.6rem;
@@ -679,21 +538,16 @@ body {
       margin-bottom: 1.6rem;
       text-align: center;
     }
-
     .s-h2 {
       font-size: 4rem;
       margin-bottom: 4.8rem;
       text-align: center;
-    }
-  }
-
+    }}
   .container-whatwedo {
     @include d-flex(center, center);
     gap: 2rem;
     padding: 0 7%;
     flex-wrap: wrap;
-    
-
     .whatwedo-left {
       display: flex;
       flex-direction: column;
@@ -706,11 +560,9 @@ body {
       box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
       border: 1px solid #fff;
       .what-img {
-        
         width: 25%;
         height: auto;
       }
-
       .s-h2 {
         font-size: 3rem;
         margin-bottom: 0.5rem;
@@ -723,16 +575,11 @@ body {
       }
       .btn-2 {
         @include btn-2();
-
         font-size: 1.6rem;
-
         i {
           font-size: 1.6rem;
           margin-left: 1rem;
-        }
-      }
-    }
-
+        }}}
     .whatwedo-center {
       border: 1px solid #fff;
       display: flex;
@@ -747,30 +594,23 @@ body {
       .what-img {
         width: 25%;
       }
-
       .s-h2 {
         font-size: 3rem;
         margin-bottom: 0.5rem;
         text-align: center;
       }
-
       .p-24 {
         padding: 2.4rem;
         font-size: 1.7rem;
         text-align: center;
       }
-
       .btn-2 {
         @include btn-2();
         font-size: 1.6rem;
-
         i {
           font-size: 1.6rem;
           margin-left: 1rem;
-        }
-      }
-    }
-
+        }}}
     .whatwedo-right {
       border: 1px solid #fff;
       display: flex;
@@ -785,69 +625,44 @@ body {
       .what-img {
         width: 25%;
       }
-
       .s-h2 {
         font-size: 3rem;
         margin-bottom: 0.5rem;
         text-align: center;
       }
-
       .p-24 {
         padding: 2.4rem;
         font-size: 1.7rem;
         text-align: center;
       }
-
       .btn-2 {
         @include btn-2();
-
         font-size: 1.6rem;
-
         i {
           font-size: 1.6rem;
           margin-left: 1rem;
-        }
-      }
-    }
-  }
-}
-
+        }}}}}
 .donatenow {
   background-image: url(../image/carousel-2.jpg);
   background-size: cover;
-//  height: 100vh;
   height: 75rem;
-  
   grid-area: donatenow;
   margin-bottom: 3rem;
-  
   .donatebg {
     background-color: #001d23 !important;
-    // height: 100vh;
     height: 75rem;
-    
-    
     opacity: 0.75;
     padding: 0 7%;
-    
   }
   .container-donatenow {
     @include d-flex(center, center );
     height: 100%;
     flex-wrap: wrap;
     padding: 2.5rem 0;
-    
     gap: 5rem;
-    
-
-    
-    
     .donatenow-left {
-      // margin-top: 4rem;
       width: 45%;
       min-width: 45rem;
-      
-      // margin-top: 15rem;
       h4 {
         width: 25%;
         min-width: 15rem;
@@ -859,7 +674,6 @@ body {
         margin-bottom: 1rem;
         text-align: center;
       }
-
       .s-h2 {
         color: #fff;
         font-size: 4rem;
@@ -869,10 +683,8 @@ body {
         color: #fff;
         padding: 1rem;
         font-size: 1.7rem;
-      }
-    }
+      }}
     .donatenow-right {
-      // margin-top: 15rem;
       min-width: 45rem;
       width: 45%;
       .form-grant {
@@ -886,11 +698,7 @@ body {
             cursor: pointer;
             color: $btn-color;
             border: 1px solid $btn-color;
-          }
-        }
-
-        
-
+          }}
         .btn3 {
           background-color: #ccc;
           gap: 2rem;
@@ -902,28 +710,19 @@ body {
             cursor: pointer;
             color: $btn-color;
             border: 1px solid $btn-color;
-          }
-        }
+          }}
         .btn {
           @include btn();
           font-size: 1.6rem;
           i{
             padding-left: 1.5rem;
             font-size: 1.6rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-  
+          }}}}}}
   .team-members-section{
     margin-top: 7.2rem;
     grid-area: teammembers;
     padding: 1rem 7%;
     .title{
-        
         text-align: center;
         h4{
             font-size: 1.6rem;
@@ -931,10 +730,8 @@ body {
         h2{
             font-size: 4rem;
             margin-bottom:4.8rem; 
-        }
-    }
+        }}
     .card-group{
-        // @include d-flex(space-evenly,center);
         display: grid;
         grid-template-columns: repeat(4,1fr);
         .card{
@@ -950,14 +747,11 @@ body {
                 font-weight:400;
             }
             img{
-                width: 100%;
+                width: 100%; 
                 height: auto;
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
-            }
-        }
-    }
-  }
+            }}}}
   .testimonial{
     grid-area: testimonial;
     padding: 2rem 7%;
@@ -970,7 +764,6 @@ body {
       font-family: Trebuchet MS;
       display: block;
       font-size: 2rem;
-
       page {
           position: absolute;
           top: 2em;
@@ -984,7 +777,6 @@ body {
          }
           .card-description{
               display: flex;
-              
               width: 50%;
               flex-direction: column;
               justify-content:center;
@@ -996,35 +788,25 @@ body {
               font-size: 1.5rem;
               margin: 3rem auto;
           }
-
           div {
               padding: 0, 5rem;
           }
-
           label {
               cursor: pointer;
               background: orangered;
               color: white;
               padding: 1em 2em;
-              
-          }
-      }
-
+          }}
       @for $i from 1 through 3 {
           #page#{$i}cb:checked~ {
               #page#{$i} {
                   transform: scale(1);
-              }
-          }
-      }
-  }
-  }
+              }}}}}
   footer {
     grid-area: footer;
     padding: 1rem 7%;
     margin-top: 7.2rem;
     background-color: #001D23 !important;
-    
     .footer-top{
         margin-top: 7.2rem;
         display: grid;
@@ -1032,7 +814,6 @@ body {
         gap: 2rem;
         margin-bottom: 4.8rem;
         .box-1{
-          
             h2{
                 margin-bottom: 2.4rem;
                 font-size: 4rem;
@@ -1040,8 +821,7 @@ body {
                 span{
                     font-size: 4rem;
                     color: #fff;
-                }
-            }
+                }}
             p{
                 color: #ccc;
                 margin-bottom: 1.6rem;
@@ -1054,10 +834,8 @@ body {
                 border: 1px solid #fff;
                 padding: 0.5rem;
                 border-radius: 0.5rem;
-            }
-        }
+            }}
         .box-2{
-            
             h3{
                 font-size: 2rem;
                 color: #fff;
@@ -1070,12 +848,8 @@ body {
                     margin-bottom: 1.6rem;
                     span{
                         margin-left: 1rem;
-                    }
-                }
-            }
-        }
+                    }}}}
         .box-3{
-            
             h3{
                 font-size: 2rem;
                 color: #fff;
@@ -1086,12 +860,8 @@ body {
                 color: #ccc;
                 li{
                     padding: 0.3rem;
-                }
-            }
-            
-        }
+                }}}
         .box-4{
-            
             h3{
                 font-size: 2rem;
                 color: #fff;
@@ -1107,7 +877,6 @@ body {
                 border: 1px solid #ccc;
                 border-radius: 0.5rem;
                 background-color: transparent;
-                
                 input{
                     background-color: transparent;
                     color: #fff;
@@ -1122,56 +891,33 @@ body {
                     color: #fff;
                     background-color: #ff6f0f;
                     cursor: pointer;
-                }
-            }
-        }
-    }
-    
-    
+                }}}}
     .box-5{
             display: flex;
             justify-content: space-between;
             padding: 2.5rem;
             p{
                 color: #ccc; 
-            }
-    }
-  }
-
+            }}}
   @media only screen and(max-width: 992px){
-    
-    
-
-
     .team-members-section{
       .card-group{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
         row-gap: 2rem;
-        
-      }
-    }
-
+      }}
     .footer {
       .footer-top{
         grid-template-columns: repeat(2, 1fr);
         gap: 5rem;
-      }
-    }
-  }
- 
-
+      }}}
   @media only screen and(max-width: 768px) {
-
     .header-top {
      position: absolute;
      bottom: 100%;
-      
     }
-
     .header-bottom {
       grid-template-columns: 1fr;
-      
       .logo{
         grid-area: logo;
       }
@@ -1179,39 +925,28 @@ body {
         grid-area: btn;
       }
       .navbar{
-        
           display: none;
            .list-group {
              @include d-flex(center, center );
              flex-direction: column;
-           }
-        
-        
-      
-      }
+           }}
       .fa-bars{
         grid-area: bars;
         display: inline-block;
         margin-left: 2rem;
         color: $font-color !important;
-       }
-    }
-
-
+       }}
   .container-feature{
-      
     .feature-right{
         width: 100%;
         min-width: 50%;
-        
       }
       .feature-left{
         width: 100%;
       }
       .feature-center{
         width: 100%;
-      }
-    }
+      }}
     .whatwedo{
       .whatwedo-right{
         width: 100%;
@@ -1222,39 +957,22 @@ body {
       }
       .whatwedo-center{
         width: 100%;
-      } 
-    }
-    
+      } }
     .team-members-section{
       .card-group{
         grid-template-columns: repeat(1, 1fr);
         column-gap: 2rem;
-        
-      }
-    }
+      }}
     .testimonial{
       .card-group{
         grid-template-areas: "card-1"
         "card-2"
         "card-3"; 
         grid-template-columns: 1fr;
-        
         row-gap: 1rem;
-      }
-    }
-
+      }}
     .footer {
       .footer-top{
         grid-template-columns: 1fr;
         gap: 5rem;
-      }
-    }
-}
-
-
-
-
-
-  
-
- 
+      }}}
