@@ -299,24 +299,32 @@
       <div class="row my-3 ">
         <div class="col  ">
           <p class="text-center">
-            <a class="btn btn-primary me-5" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-            <button class="btn btn-primary mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-            <button class="btn btn-primary ms-5" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+            <div class="row ">
+              <div class="col-md-4 ">
+                <a class="btn btn-outline-warning w-100 mb-3 fs-5" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Woman</a>
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-outline-warning w-100 mb-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Man</button>
+              </div>
+              <div class="col-md-4">
+               <button class="btn btn-outline-warning w-100 mb-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Both Of Them</button>
+              </div>
+        </div>
           </p>
         </div>
       </div>
         <div class="row ">
-          <div class="col">
+          <div class="col-md-6">
             <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              <div class="card card-body  ">
+                <img src="./collapse/matris-woman.jpg" class="img-fluid h-100" alt="">
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <div class="collapse multi-collapse" id="multiCollapseExample2">
               <div class="card card-body">
-                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <img src="./collapse/matris-man.jpg" class="img-fluid" alt="">
               </div>
             </div>
           </div>
