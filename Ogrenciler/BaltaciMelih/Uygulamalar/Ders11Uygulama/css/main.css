@@ -50,5 +50,11 @@ header {
 .friends {
   background-color: #3fc1c9; }
 
-.joinus {
+.joinUs {
   background-color: #3fc1c9; }
+  .joinUs form {
+    background-color: #3fc1c9; }
+
+footer {
+  background-color: #364f6b;
+  color: white; }

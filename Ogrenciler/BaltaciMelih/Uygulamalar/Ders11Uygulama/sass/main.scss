@@ -75,6 +75,13 @@ header{
 .findNew{
     @extend .exploreNew;
 }
-.joinus{
+.joinUs{
     background-color: $bgcolorsecondary;
+    & form{
+        background-color: $bgcolorsecondary;
+    }
+}
+footer{
+    background-color: $bgcolorprimary;
+    color: white;
 }
