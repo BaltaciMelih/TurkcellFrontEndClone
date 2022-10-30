@@ -68,6 +68,7 @@ body {
   gap: $gap;
   font-size: 18px;
   border: $border;
+  cursor: pointer;
 }
 
 @mixin inputs($width, $height, $color, $bgc, $border, $radius) {
