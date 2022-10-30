@@ -61,7 +61,7 @@
           </ul>
         </div>
         <div class="col-12 col-md-4 d-flex">
-          <form class="d-flex flex-column bg-info w-100 p-4">
+          <form class="d-flex flex-column w-100 p-4">
             <h2 class="text-center text-light">Join Us</h2>
             <p class="text-center text-light">Please fill out the form</p>
             <div class="form-floating mb-4">
@@ -219,7 +219,60 @@
           />
         </div>
       </section>
-      <section class="joinUs"></section>
+      <section class="joinUs d-flex justify-content-center">
+        <form class="d-flex flex-column bg-info w-50 p-4">
+          <h2 class="text-center text-light">Join Us</h2>
+          <p class="text-center text-light">Please fill out the form</p>
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              id="username"
+              class="form-control"
+              placeholder="Username"
+            />
+            <label for="username" class="form-label text-secondary"
+              >Username</label
+            >
+          </div>
+
+          <div class="form-floating mb-4">
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Email"
+            />
+            <label for="email" class="form-label text-secondary">Email</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Password"
+            />
+            <label for="password" class="form-label text-secondary"
+              >Password</label
+            >
+          </div>
+
+          <div class="form-floating mb-4">
+            <input
+              type="password"
+              id="repassword"
+              class="form-control"
+              placeholder="Phone"
+            />
+            <label for="repassword" class="form-label text-secondary"
+              >Repassword</label
+            >
+          </div>
+          <button type="button" class="btn btn-outline-light btn-lg">
+            Submit
+          </button>
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>
