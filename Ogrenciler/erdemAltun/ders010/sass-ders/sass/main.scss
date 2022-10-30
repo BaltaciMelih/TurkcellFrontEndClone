@@ -641,14 +641,13 @@ h1{
 
 .causes {
   padding: 10% 10%;
-  background-color: $bgColor4;
 
 }
 .feature-causes{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $bgColor;
+  background-color: rgb(250, 249, 248);
   padding: 2rem;
 
   .maintitle{

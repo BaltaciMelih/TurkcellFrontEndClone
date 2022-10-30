@@ -1,77 +1,77 @@
-$orange: #FF6F0F;
+$orange: #ff6f0f;
 
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
-.header{
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    color: rgb(143, 143, 143);
-    border-bottom: 1px solid rgb(88, 88, 88);
-}
-
-.fa-envelope-o{
-    margin-left: 20px;
+.header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  color: rgb(143, 143, 143);
+  border-bottom: 1px solid rgb(88, 88, 88);
 }
 
-.team{
-    color: white;
+.fa-envelope-o {
+  margin-left: 20px;
 }
 
-.navbar{
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-    .logo{
-        text-decoration: none;
-    }
-
-    h1{
-        color: $orange;
-    }
-} 
-.navbar-header{
-    width: 95%;
-    z-index: 10;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 25px;
+.team {
+  color: white;
 }
 
-.list{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.navbar {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-    a{
+  .logo {
+    text-decoration: none;
+  }
+
+  h1 {
+    color: $orange;
+  }
+}
+.navbar-header {
+  width: 95%;
+  z-index: 10;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  a {
     text-decoration: none;
     color: white;
-    }
+  }
 
-    a:hover{
-        color: $orange;
-    }
+  a:hover {
+    color: $orange;
+  }
 }
 .dropdown {
   position: relative;
   display: inline-block;
 
-  span{
+  span {
     color: white;
   }
 }
 
-.dropdown-container{
-    display: none;
+.dropdown-container {
+  display: none;
 }
 
 .dropdown-content {
@@ -81,16 +81,16 @@ body{
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 0;
 
-  a{
+  a {
     padding: 5px;
     color: black;
   }
 
-  a:hover{
-    background-color: #E9ECEF;
+  a:hover {
+    background-color: #e9ecef;
   }
 }
 
@@ -98,62 +98,205 @@ body{
   display: block;
 }
 
-.btn-donate{
-    background-color: transparent;
-    border: 2px  solid $orange;
-    color: $orange;
-    padding: 15px;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 1rem;
+.btn-donate {
+  background-color: transparent;
+  border: 2px solid $orange;
+  color: $orange;
+  padding: 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-.btn-donate:hover{
-    background-color: $orange;
-    color: white;
-
+.btn-donate:hover {
+  background-color: $orange;
+  color: white;
 }
 
-.img-container{
-    background-color: #0c1e22;
+.img-container {
+  background-color: #0c1e22;
 }
 
 .img-container img {
-    height: 600px;
-    width: 100%;
-    position: absolute;
-    opacity: .30;
-    
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  opacity: 0.3;
 }
 
-.text{
-    height: 600px;
-    width: 40%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    color: #fff;
-    p{
-        color: gray;
-        margin-bottom: 40px;
-    }
+.text {
+  height: 600px;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  p {
+    color: gray;
+    margin-bottom: 40px;
+  }
 }
 
-.btn{
-    border: none;
-    border-radius: 4px;
-    background-color: $orange;
-    padding: 15px;
-    color: white;
-    font-weight: 500;
-    font-size: 1rem;
+.btn {
+  border: none;
+  border-radius: 4px;
+  background-color: $orange;
+  padding: 15px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
 }
-.btn:hover{
-    background-color: transparent;
-    border: 2px  solid $orange;
-    color: $orange;
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid $orange;
+  color: $orange;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 60px auto;
+  gap: 25px;
+}
+
+.img-container2 {
+  background-image: url("https://technext.github.io/chariteam/img/about-1.jpg");
+  background-color: red;
+  width: 100%;
+  position: relative;
+}
+
+.inside-img {
+  position: absolute;
+  background-color: red;
+  z-index: 10;
+  width: 10%;
+}
+
+.title-about-us {
+  background-color: rgb(255, 228, 205);
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  color: $orange;
+}
+
+.header-text {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.container2 h3 {
+  color: $orange;
+}
+
+.text-box {
+  background-color: #f8f8f9;
+  border-bottom: 5px solid $orange;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  display: block;
+}
+
+.learn-more {
+  @extend .btn;
+}
+
+.contact-us {
+  @extend .btn;
+  background-color: transparent;
+  color: $orange;
+  border: 2px solid $orange;
+}
+.contact-us:hover {
+  background-color: $orange;
+  color: white;
+}
+
+.title-feature-causes {
+  @extend .title-about-us;
+  width: 100px;
+}
+
+.container3 {
+  padding: 70px;
+  background-color: rgb(241, 241, 241);
+}
+.container3-header {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.container3 p {
+  @extend .header-text;
+  margin-top: 20px;
+}
+
+.card-div {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 29%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 0;
+  border-top: 8px solid $orange;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-title {
+  background-color: $orange;
+  width: 35%;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.goal {
+  background-color: rgb(247, 247, 247);
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
 }

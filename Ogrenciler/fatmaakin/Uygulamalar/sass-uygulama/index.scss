@@ -1,0 +1,290 @@
+$color:#FF6F0F;
+$textColor:#787878;
+$h1:"Saira",sans-serif;
+$p:"Inter",sans-serif;
+$animation:fadeInUp;
+
+@mixin btn-hover($hbColor, $hColor){
+background-color: $hbColor;
+color: $hColor;
+}
+
+@mixin start-animation(){
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeInUp;
+}
+@mixin acss($acolor){
+    a, i, li{
+    color: $acolor;
+    text-decoration: none; 
+    list-style: none}
+}
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin design( $fa-width, $fa-height, $fa-bgcolor, $fa-margin, $fa-padding, $fa-color, $fa-fsize) {
+    width: $fa-width;
+    height: $fa-height;
+    background-color: $fa-bgcolor;
+    margin: $fa-margin;
+    padding: $fa-padding;
+    color: $fa-color;
+    font-size: $fa-fsize;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+    .wwdtext-second-card{
+        @include flex(row);
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.wwdtext {
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+   
+    @include design(none, none, none, none, 48px 12px, none, none);
+    &-first {
+        h2 {
+            @include design( 125px, 32px, #fff0e6, 0px 0px 16px, 4px 16px, #ff6f0f, 16px);
+            border-radius: 50rem;
+            @include flex(none);
+            justify-content: center;
+            align-items: center;
+           
+        }
+        h1 {
+            @include design(500px, 85px, none, none, none, #001d23, 36px);
+            text-align: center;
+        }
+        @include FlexDesign(flex, center, center, column);
+        @include design( 500px, 133px, none, 0px 98px 48px, 0px, inherit, inherit);
+    }
+    &-second {
+        @include flex(row);
+        justify-content: center;
+        align-items: center;
+       
+        gap: 10px;
+        
+        &-card {
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+      
+            @include design( 336px, 347.7px, none, 24px 10px 10px, 24px, #787878, 16px);
+            box-shadow: 1px 1px 2px white, 0 0 25px rgb(205, 205, 214), 0 0 5px darkblue;
+            img {
+                margin-bottom: 24px;
+            }
+            h1 {
+                @include design( 288px, 27.7px, none, 0px 0px 16px, 0px, #001d23, calc(1.275rem + 0.3vw));
+                text-align: center;
+            }
+            p {
+                @include design( 288px, 72px, none, 0px 0px 24px, none,$textColor, 18px);
+                line-height: 1.5;
+                text-align: center;
+            }
+            button {
+                @include design( 164.95px, 46px, white, none, 6px 16px, $color, 18px);
+                text-align: center;
+                border-radius: 5px;
+                border: 1px solid $color;
+                &:hover {
+                    background-color: $color;
+                    color: white;
+                    transition-duration: 0.5s;
+                    animation-timing-function: ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.mainform {
+    @include design(none, none, $textColor, 48px 0px, 24px 0px, none, none);
+    @include flex(row);
+    justify-content: center;
+    align-items: center;
+    // @include FlexDesign(flex, center, center, row);
+    background-image: url("https://images.pexels.com/photos/2113709/pexels-photo-2113709.jpeg?cs=srgb&dl=pexels-daniel-edeke-2113709.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+ 
+    &-left {
+        @include design( 582px,
+        229.03px,
+        none,
+        48px 0px 0px,
+        0px 24px,
+        $textColor,
+        none);
+        h2 {
+            @include flex(row);
+            justify-content: center;
+            align-items: center;
+
+            @include design( 125.28px,
+            32px,
+            #fff0e6,
+            0px 0px 16px,
+            4px 16px,
+            $color,
+            16px);
+            border-radius: 15px;
+        }
+        h1 {
+            @include design( 444px,
+            90.06px,
+            none,
+            0px 0px 48px,
+            none,
+            #ffffff,
+            37.525px);
+        }
+        p {
+            @include design(444px,
+            96px,
+            none,
+            none,
+            none,
+            #ffffff80,
+            16px);
+        }
+    }
+    &-right {
+        @include design(534px,
+        450px,
+        #ffffff,
+        none,
+        48px,
+        $textColor,
+        none);
+        transition: all .3s;
+        &-form-group {
+            margin-bottom: 1em;
+            transition: all .3s;
+            &:focus-within {
+                transform: scale(1.05, 1.05)
+            }
+        }
+        &-formcontrol {
+            @include design( 454px,
+            58px,
+            #f8f8f9,
+            16px 0px 0px,
+            0px 8px,
+            $textColor,
+            16px);
+            border: 0px;
+            border-radius: 5px;
+            box-shadow: none;
+            
+            border-radius: 0px;
+            
+            border-style: none none solid none;
+           
+            transition: all .5s;
+            padding: 5px;
+            &::placeholder {
+                color: transparent;
+            }
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+            &:hover {
+                border: 1px solid $color;
+            }
+        }
+        &-label {
+            
+            color: $textColor, ;
+            display: block;
+            opacity: 1;
+            transform: translateY(-2.3em);
+            transform-origin: 0 0;
+            transition: all .3s;
+        }
+      
+        &-value {
+            display: flex;
+            @include design( 454px,
+            58px,
+            #f8f8f9,
+            16px 0px 0px,
+            0px 8px,
+            $textColor,
+            16px);
+            input {
+                @include design( 145.34px,
+                58px,
+                #f9f9fa,
+                0px 0px 0px -1px,
+                16px 12px,
+                #000000,
+                16px);
+                border: 0;
+                transition-duration: 0.3s;
+                animation-timing-function: ease-in-out;
+                &:hover {
+                    color: $color;
+                    border: 2px solid $color;
+                }
+            }
+            &-1 {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                
+            }
+            &-3 {
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+        &-button {
+            @include design( 454px,
+            58px,
+            white,
+            16px 0px 0px,
+            0px 0px,
+            $textColor,
+            16px);
+            &-yapi {
+                @include design( 236.11px,
+                60px,
+                $color,
+                none,
+                6px 48px,
+                #ffffff,
+                16px);
+                border-radius: 5px;
+                border: 0;
+                transition-duration: 0.5s;
+                animation-timing-function: ease-in-out;
+                &:hover {
+                    background-color: white;
+                    color: $color;
+                    border: $color 1px solid;
+                }
+            }
+        }
+    }
+}

@@ -11,7 +11,22 @@
   font-family: inter; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  overflow-x: hidden;
+  /* yatay scroll kapatma */
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth; }
+
+html::-webkit-scrollbar {
+  width: 1.2rem;
+  background-color: #fff; }
+
+html::-webkit-scrollbar-track {
+  background-color: transparent; }
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: black; }
 
 i {
   font-size: 2.5rem; }
@@ -86,10 +101,10 @@ body {
               scale: 1.2; }
     body .header .container .header-bottom {
       display: grid;
-      grid-template-columns: 1fr 3fr 1fr;
-      grid-template-areas: "logo navbar btn";
+      grid-template-columns: 1fr 3fr 1fr 0.1fr;
+      grid-template-areas: "logo navbar btn bars ";
       align-items: center;
-      padding: 2rem 7%; }
+      padding: 1rem 7%; }
       body .header .container .header-bottom .logo {
         grid-area: logo; }
         body .header .container .header-bottom .logo h2 {
@@ -100,6 +115,7 @@ body {
           color: #ff6f0f;
           font-size: 3rem; }
       body .header .container .header-bottom .navbar {
+        margin-left: 2rem;
         grid-area: navbar;
         padding-right: 3rem; }
         body .header .container .header-bottom .navbar ul {
@@ -113,27 +129,31 @@ body {
               color: #ff6f0f; }
             body .header .container .header-bottom .navbar ul li a:hover {
               color: #ff6f0f; }
+      body .header .container .header-bottom .fa-bars {
+        color: transparent;
+        grid-area: bars; }
       body .header .container .header-bottom .btn {
-        grid-area: btn;
-        padding: 1rem 2rem;
+        padding: 0.6rem 1rem;
         border: 1px solid #ff6f0f;
         border-radius: 1rem;
         background-color: transparent;
         color: #ff6f0f;
         text-align: center;
         font-size: 1.6rem;
-        width: 75%;
+        width: 50%;
+        min-width: 16rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
-        margin: 0 0 0 auto; }
+        gap: .5rem;
+        margin: 0 0 0 auto;
+        grid-area: btn; }
         body .header .container .header-bottom .btn:hover {
           background-color: #ff6f0f;
           color: #fff; }
         body .header .container .header-bottom .btn i {
           border-radius: 50%;
-          padding: 1rem; }
+          padding: .5rem; }
         body .header .container .header-bottom .btn i {
           font-size: 1.6rem;
           align-items: center; }
@@ -149,7 +169,26 @@ body {
       opacity: 0.75;
       display: grid;
       grid-template-columns: 1fr 3fr 1fr;
-      grid-template-areas: ". c-home ."; }
+      grid-template-areas: ". c-home .";
+      position: relative; }
+      body .home .homebg .btn-2 {
+        z-index: 4;
+        padding: 1rem 2rem;
+        border: 1px solid #ff6f0f;
+        border-radius: 1rem;
+        background-color: #ff6f0f;
+        color: #fff;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 90%;
+        right: 3rem;
+        font-size: 3rem;
+        padding: .5rem 1rem;
+        position: fixed; }
+        body .home .homebg .btn-2:hover {
+          background-color: transparent;
+          color: #ff6f0f; }
       body .home .homebg .container-home {
         grid-area: c-home;
         display: flex;
@@ -189,8 +228,8 @@ body {
       padding: 0 7%;
       flex-wrap: wrap; }
       body .about .container-about .about-left {
-        width: 40%;
-        min-width: 30rem;
+        width: 45%;
+        min-width: 45rem;
         position: relative;
         padding: 5rem 2.4rem; }
         body .about .container-about .about-left img {
@@ -204,9 +243,9 @@ body {
           left: 75%;
           top: 0; }
       body .about .container-about .about-right {
-        width: 40%;
+        width: 45%;
         padding: 0 2.4rem;
-        min-width: 30rem; }
+        min-width: 45rem; }
         body .about .container-about .about-right .p-24 {
           padding: 2.4rem;
           font-size: 1.6rem;
@@ -234,7 +273,7 @@ body {
               font-size: 1.6rem;
               margin-left: 1rem; }
           body .about .container-about .about-right .a-buttons .btn-2 {
-            padding: 1rem 2rem;
+            padding: 0.6rem 1rem;
             border: 1px solid #ff6f0f;
             border-radius: 1rem;
             background-color: transparent;
@@ -245,7 +284,7 @@ body {
               color: #fff; }
             body .about .container-about .about-right .a-buttons .btn-2 i {
               border-radius: 50%;
-              padding: 1rem; }
+              padding: .5rem; }
             body .about .container-about .about-right .a-buttons .btn-2 i {
               font-size: 1.6rem;
               margin-left: 1rem; }
@@ -290,7 +329,7 @@ body {
         border-top: 0.5rem solid #ff6f0f;
         border-radius: 0.5rem;
         width: 30%;
-        min-width: 35rem; }
+        min-width: 40rem; }
         body .feature .container-feature .feature-left .causes-tag {
           border-bottom-left-radius: 0.6rem;
           border-bottom-right-radius: 0.6rem;
@@ -324,7 +363,7 @@ body {
       border-top: 0.5rem solid #ff6f0f;
       border-radius: 0.5rem;
       width: 30%;
-      min-width: 35rem; }
+      min-width: 40rem; }
       body .feature .feature-center .causes-tag2 {
         border-bottom-left-radius: 0.6rem;
         border-bottom-right-radius: 0.6rem;
@@ -358,7 +397,7 @@ body {
       align-items: center;
       flex-direction: column;
       width: 30%;
-      min-width: 35rem; }
+      min-width: 40rem; }
       body .feature .feature-right .causes-tag3 {
         border-bottom-left-radius: 0.6rem;
         border-bottom-right-radius: 0.6rem;
@@ -428,7 +467,7 @@ body {
         font-size: 1.7rem;
         text-align: center; }
       .whatwedo .container-whatwedo .whatwedo-left .btn-2 {
-        padding: 1rem 2rem;
+        padding: 0.6rem 1rem;
         border: 1px solid #ff6f0f;
         border-radius: 1rem;
         background-color: transparent;
@@ -439,7 +478,7 @@ body {
           color: #fff; }
         .whatwedo .container-whatwedo .whatwedo-left .btn-2 i {
           border-radius: 50%;
-          padding: 1rem; }
+          padding: .5rem; }
         .whatwedo .container-whatwedo .whatwedo-left .btn-2 i {
           font-size: 1.6rem;
           margin-left: 1rem; }
@@ -465,7 +504,7 @@ body {
         font-size: 1.7rem;
         text-align: center; }
       .whatwedo .container-whatwedo .whatwedo-center .btn-2 {
-        padding: 1rem 2rem;
+        padding: 0.6rem 1rem;
         border: 1px solid #ff6f0f;
         border-radius: 1rem;
         background-color: transparent;
@@ -476,7 +515,7 @@ body {
           color: #fff; }
         .whatwedo .container-whatwedo .whatwedo-center .btn-2 i {
           border-radius: 50%;
-          padding: 1rem; }
+          padding: .5rem; }
         .whatwedo .container-whatwedo .whatwedo-center .btn-2 i {
           font-size: 1.6rem;
           margin-left: 1rem; }
@@ -502,7 +541,7 @@ body {
         font-size: 1.7rem;
         text-align: center; }
       .whatwedo .container-whatwedo .whatwedo-right .btn-2 {
-        padding: 1rem 2rem;
+        padding: 0.6rem 1rem;
         border: 1px solid #ff6f0f;
         border-radius: 1rem;
         background-color: transparent;
@@ -513,7 +552,7 @@ body {
           color: #fff; }
         .whatwedo .container-whatwedo .whatwedo-right .btn-2 i {
           border-radius: 50%;
-          padding: 1rem; }
+          padding: .5rem; }
         .whatwedo .container-whatwedo .whatwedo-right .btn-2 i {
           font-size: 1.6rem;
           margin-left: 1rem; }
@@ -521,29 +560,35 @@ body {
 .donatenow {
   background-image: url(../image/carousel-2.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 75rem;
   grid-area: donatenow;
   margin-bottom: 3rem; }
   .donatenow .donatebg {
     background-color: #001d23 !important;
-    height: 100vh;
-    opacity: 0.75; }
+    height: 75rem;
+    opacity: 0.75;
+    padding: 0 7%; }
   .donatenow .container-donatenow {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 0 7%; }
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
+    gap: 5rem; }
     .donatenow .container-donatenow .donatenow-left {
-      margin-top: 15rem; }
+      width: 45%;
+      min-width: 45rem; }
       .donatenow .container-donatenow .donatenow-left h4 {
-        width: 18%;
+        width: 25%;
+        min-width: 15rem;
         background-color: #ccc;
         border-radius: 10rem;
         font-size: 1.6rem;
         color: #ff6f0f;
-        padding: 0.7rem 1.6rem;
-        margin-bottom: 1rem; }
+        padding: 0.7rem 0;
+        margin-bottom: 1rem;
+        text-align: center; }
       .donatenow .container-donatenow .donatenow-left .s-h2 {
         color: #fff;
         font-size: 4rem;
@@ -553,22 +598,15 @@ body {
         padding: 1rem;
         font-size: 1.7rem; }
     .donatenow .container-donatenow .donatenow-right {
-      margin-top: 15rem; }
+      min-width: 45rem;
+      width: 45%; }
       .donatenow .container-donatenow .donatenow-right .form-grant .subscribe {
         border: 1px solid #fff;
         height: 6rem;
-        width: 54rem;
+        width: 100%;
         border-radius: 7px;
         margin-bottom: 1.5rem; }
         .donatenow .container-donatenow .donatenow-right .form-grant .subscribe:hover {
-          cursor: pointer;
-          color: #ff6f0f;
-          border: 1px solid #ff6f0f; }
-      .donatenow .container-donatenow .donatenow-right .form-grant .subject {
-        height: 6rem;
-        width: 54rem;
-        border-radius: 7px; }
-        .donatenow .container-donatenow .donatenow-right .form-grant .subject:hover {
           cursor: pointer;
           color: #ff6f0f;
           border: 1px solid #ff6f0f; }
@@ -588,10 +626,14 @@ body {
         border: 1px solid #ff6f0f;
         border-radius: 1rem;
         background-color: #ff6f0f;
-        color: #fff; }
+        color: #fff;
+        font-size: 1.6rem; }
         .donatenow .container-donatenow .donatenow-right .form-grant .btn:hover {
           background-color: transparent;
           color: #ff6f0f; }
+        .donatenow .container-donatenow .donatenow-right .form-grant .btn i {
+          padding-left: 1.5rem;
+          font-size: 1.6rem; }
 
 .team-members-section {
   margin-top: 7.2rem;
@@ -690,78 +732,75 @@ footer {
   background-color: #001D23 !important; }
   footer .footer-top {
     margin-top: 7.2rem;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
     margin-bottom: 4.8rem; }
-    footer .footer-top .box-1 {
-      width: 25%; }
-      footer .footer-top .box-1 h2 {
-        margin-bottom: 2.4rem;
+    footer .footer-top .box-1 h2 {
+      margin-bottom: 2.4rem;
+      font-size: 4rem;
+      color: #ff6f0f; }
+      footer .footer-top .box-1 h2 span {
         font-size: 4rem;
-        color: #ff6f0f; }
-        footer .footer-top .box-1 h2 span {
-          font-size: 4rem;
-          color: #fff; }
-      footer .footer-top .box-1 p {
+        color: #fff; }
+    footer .footer-top .box-1 p {
+      color: #ccc;
+      margin-bottom: 1.6rem; }
+    footer .footer-top .box-1 ul {
+      display: flex;
+      gap: 1rem; }
+    footer .footer-top .box-1 li {
+      border: 1px solid #fff;
+      padding: 0.5rem;
+      border-radius: 0.5rem; }
+    footer .footer-top .box-2 h3 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 2.4rem; }
+    footer .footer-top .box-2 ul {
+      font-size: 1.6rem; }
+      footer .footer-top .box-2 ul li {
         color: #ccc;
         margin-bottom: 1.6rem; }
-      footer .footer-top .box-1 ul {
-        display: flex;
-        gap: 1rem; }
-      footer .footer-top .box-1 li {
-        border: 1px solid #fff;
-        padding: 0.5rem;
-        border-radius: 0.5rem; }
-    footer .footer-top .box-2 {
-      width: 25%; }
-      footer .footer-top .box-2 h3 {
-        font-size: 2rem;
+        footer .footer-top .box-2 ul li span {
+          margin-left: 1rem; }
+    footer .footer-top .box-3 h3 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 2.4rem; }
+    footer .footer-top .box-3 ul {
+      font-size: 1.6rem;
+      color: #ccc; }
+      footer .footer-top .box-3 ul li {
+        padding: 0.3rem; }
+    footer .footer-top .box-4 h3 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 2.4rem; }
+    footer .footer-top .box-4 p {
+      font-size: 1.6rem;
+      margin-bottom: 1.6rem;
+      color: #ccc; }
+    footer .footer-top .box-4 .footer-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      background-color: transparent; }
+      footer .footer-top .box-4 .footer-button input {
+        background-color: transparent;
         color: #fff;
-        margin-bottom: 2.4rem; }
-      footer .footer-top .box-2 ul {
-        font-size: 1.6rem; }
-        footer .footer-top .box-2 ul li {
-          color: #ccc;
-          margin-bottom: 1.6rem; }
-          footer .footer-top .box-2 ul li span {
-            margin-left: 1rem; }
-    footer .footer-top .box-3 {
-      width: 25%; }
-      footer .footer-top .box-3 h3 {
-        font-size: 2rem;
-        color: #fff;
-        margin-bottom: 2.4rem; }
-      footer .footer-top .box-3 ul {
-        font-size: 1.6rem;
-        color: #ccc; }
-        footer .footer-top .box-3 ul li {
-          padding: 0.3rem; }
-    footer .footer-top .box-4 {
-      width: 25%; }
-      footer .footer-top .box-4 h3 {
-        font-size: 2rem;
-        color: #fff;
-        margin-bottom: 2.4rem; }
-      footer .footer-top .box-4 p {
-        font-size: 1.6rem;
-        margin-bottom: 1.6rem;
-        color: #ccc; }
-      footer .footer-top .box-4 .footer-button {
-        border: 1px solid #ccc;
+        padding-left: 2.4rem;
+        height: 4rem;
+        border: 0px; }
+      footer .footer-top .box-4 .footer-button button {
+        height: 4rem;
+        border: none;
         border-radius: 0.5rem;
-        background-color: transparent; }
-        footer .footer-top .box-4 .footer-button input {
-          background-color: transparent;
-          color: #fff;
-          padding-left: 2.4rem;
-          height: 4rem;
-          border: 0px; }
-        footer .footer-top .box-4 .footer-button button {
-          height: 4rem;
-          border-radius: 0.5rem;
-          color: #fff;
-          background-color: #ff6f0f;
-          cursor: pointer; }
+        color: #fff;
+        background-color: #ff6f0f;
+        cursor: pointer; }
   footer .box-5 {
     display: flex;
     justify-content: space-between;
@@ -769,7 +808,37 @@ footer {
     footer .box-5 p {
       color: #ccc; }
 
+@media only screen and (max-width: 992px) {
+  .team-members-section .card-group {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem; }
+  .footer .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem; } }
+
 @media only screen and (max-width: 768px) {
+  .header-top {
+    position: absolute;
+    bottom: 100%; }
+  .header-bottom {
+    grid-template-columns: 1fr; }
+    .header-bottom .logo {
+      grid-area: logo; }
+    .header-bottom .btn {
+      grid-area: btn; }
+    .header-bottom .navbar {
+      display: none; }
+      .header-bottom .navbar .list-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+    .header-bottom .fa-bars {
+      grid-area: bars;
+      display: inline-block;
+      margin-left: 2rem;
+      color: #fff !important; }
   .container-feature .feature-right {
     width: 100%;
     min-width: 50%; }
@@ -785,10 +854,12 @@ footer {
   .whatwedo .whatwedo-center {
     width: 100%; }
   .team-members-section .card-group {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 1rem; }
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem; }
   .testimonial .card-group {
     grid-template-areas: "card-1" "card-2" "card-3";
     grid-template-columns: 1fr;
-    row-gap: 1rem; } }
+    row-gap: 1rem; }
+  .footer .footer-top {
+    grid-template-columns: 1fr;
+    gap: 5rem; } }

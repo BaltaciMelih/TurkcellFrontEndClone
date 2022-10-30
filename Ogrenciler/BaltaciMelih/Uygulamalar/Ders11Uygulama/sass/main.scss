@@ -1,0 +1,89 @@
+$bgcolornav: #2f455d;
+$bgcolorheader: #171f29;
+$bgcolorprimary: #364f6b;
+$bgcolorsecondary: #3fc1c9;
+$textsecondary: #7e8996;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    border-bottom: 5px solid $bgcolorsecondary;
+    background-color: $bgcolornav;
+    & .navbar {
+            & .logo {
+                & a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            & .menu {
+                @extend .logo;
+                & a {
+                    color: $textsecondary;
+                }
+            }
+        }
+}
+header{
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/20/10/14/mountain-2158661_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 500rem rgba($color: $bgcolorheader, $alpha: 0.9);
+    & .container-fluid{
+    width: auto;
+    height: auto;
+    }
+    & h1{
+        font-size: 4rem;
+        font-weight: 200;
+    }
+    & ul{
+        color: white;
+    }
+    & form {
+        margin: 50px 0;
+        border-radius: 0.5rem;
+        background-color: $bgcolorsecondary;
+    }
+}
+.discover{
+    background-color: $bgcolorprimary;
+    color: white;
+    & h2{
+        font-size: 4rem;
+        font-weight: 200;
+    }
+}
+.exploreNew{
+    background-color: white;
+    color: $textsecondary;
+    & h2{
+        font-weight: 400;
+    }
+    & img{
+        height: 500px;
+        border-radius: 50%;
+    }
+}
+.friends{
+    @extend .discover;
+    background-color: $bgcolorsecondary;
+}
+.findNew{
+    @extend .exploreNew;
+    background-color: $bgcolorprimary;
+    color: white;
+}
+.joinUs{
+    background-color: $bgcolorsecondary;
+    & form{
+        background-color: $bgcolorsecondary;
+    }
+}
+footer{
+    background-color: $bgcolorprimary;
+    color: white;
+}
