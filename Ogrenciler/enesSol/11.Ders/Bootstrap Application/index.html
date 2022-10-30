@@ -15,7 +15,7 @@
   <body>
     <!-- NAVBAR STARTS HERE -->
     <nav
-      class="navbar border-bottom border-info navbar-custom navbar-expand-lg"
+      class="navbar fixed-top px-5 border-bottom border-info navbar-custom navbar-expand-lg"
     >
       <div class="container-fluid d-flex">
         <a class="navbar-brand" href="#">Social Network</a>
@@ -53,134 +53,279 @@
     <!-- NAVBAR ENDS HERE -->
 
     <!-- CONTENT-1 STARTS HERE -->
-    <div class="content-1">
-      <div class="discover-text">
-        <h1 class="display-1">Discover The Colorful World</h1>
-        <blockquote class="blockquote">
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
-          </p>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
-          </p>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
-          </p>
-        </blockquote>
-      </div>
-      <div class="discover-form bg-info">
-        <p>Join Us</p>
-        <p>Please fill out the form</p>
-
-        <div class="form-div">
-          <form>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput"
-                placeholder="Username"
-              />
+    <div class="container-fluid content-1">
+      <div class="row">
+        <div class="col-12 col-md-8 d-flex flex-columnn">
+          <div class="d-flex flex-column align-items-start text-white px-5">
+            <h2 class="display-1 mt-5 py-5">Discover The Colorful World</h2>
+            <ul class="list-group text-decoration-none mt-2">
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center py-5">
+          <div class="card text-white bg-info mb-3 mt-5" style="width: 22rem">
+            <div class="card-header d-flex justify-content-center">
+              <h2>Join Us</h2>
             </div>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput2"
-                placeholder="Email"
-              />
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-center">
+                Please fill out the form
+              </h5>
+              <form>
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="username"
+                    aria-describedby="emailHelp"
+                    placeholder="Username"
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="repassword"
+                    placeholder="Password"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-info btn-outline-light d-grid gap-2 col-12 mx-auto"
+                >
+                  Submit
+                </button>
+              </form>
             </div>
-            <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                id="formGroupExampleInput2"
-                placeholder="Password"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                id="formGroupExampleInput2"
-                placeholder="Repassword"
-              />
-            </div>
-            <input class="btn btn-primary" type="submit" value="Submit" />
-          </form>
+          </div>
         </div>
       </div>
     </div>
     <!-- CONTENT 1 ENDS HERE -->
-    <div class="content-2">
-      <h1 class="display-4">Discover</h1>
-      <blockquote class="blockquote">
-        <p class="mb-0 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsa
-          reprehenderit doloribus rerum quod voluptates quam. Accusantium quae
-          placeat dignissimos explicabo ea. Doloremque voluptate porro quisquam
-          maiores earum voluptas illum mollitia. Ea saepe voluptates, sed vitae
-          praesentium aspernatur commodi amet!.
-        </p>
-      </blockquote>
-      <button class="btn btn-primary" type="submit">Find Out More</button>
+    <div
+      class="container-fluid bg-info d-flex flex-column align-items-center text-white py-5"
+    >
+      <div><h2>Discovery</h2></div>
+      <div class="text-center p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti
+        deserunt tenetur in officiis! Minima laborum nemo nobis amet debitis
+        voluptate consectetur libero dolorum. Recusandae adipisci quibusdam
+        totam alias vero! Cumque, quae sequi. Architecto, aspernatur. Ad aliquam
+        totam quia consequuntur pariatur, quibusdam tenetur velit explicabo
+        porro maiores, ducimus mollitia. Ut.
+      </div>
+      <button
+        type="submit"
+        class="btn btn-dark btn-outline-danger border-white text-white rounded p-2"
+      >
+        Find Out More
+      </button>
+      <!-- <br /><br /> -->
     </div>
     <!-- CONTENT 2 ENDS HERE -->
 
     <!-- CONTENT 3 -->
-    <div class="content-3 d-lg-flex">
-      <div class="left-img">
-        <img src="phoneimg.jpg" class="rounded-circle" alt="" />
-      </div>
-      <div class="content-3-text">
-        <h3>Explore New Places</h3>
-        <p class="text-break">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-          voluptates consequuntur aut perspiciatis, consequatur debitis deleniti
-          odio sint rem eaque fuga quam incidunt, dolores voluptatem harum eum
-          autem labore sit facere. Dolore pariatur tenetur praesentium ducimus,
-          maiores temporibus ipsum laborum non blanditiis rem esse a ex?
-          Deleniti adipisci quas quam.
-        </p>
+    <div class="container-fluid bg-white">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img
+            src="phoneimg.jpg"
+            alt=""
+            class="img-fluid rounded-circle mt-2 p-5"
+          />
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column align-items-start">
+          <h2 class="mt-5">Explore New Places</h2>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repudiandae, nemo. Quisquam soluta culpa reiciendis tempora? Fugit
+            culpa dolorum quisquam nam laborum. Sunt, ratione, dolorum vitae
+            expedita id, velit provident aspernatur delectus nobis ad quidem
+            beatae accusamus dolor aut a! Voluptas.
+          </p>
+          <div class="py-5">
+            <ul class="list-group text-decoration-none mt-2">
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+
     <!-- CONTENT 4 -->
-    <div class="content-2" style="background-color: #3fc1c9">
-      <h1 class="display-4">Friends</h1>
-      <blockquote class="blockquote">
-        <p class="mb-0 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsa
-          reprehenderit doloribus rerum quod voluptates quam. Accusantium quae
-          placeat dignissimos explicabo ea. Doloremque voluptate porro quisquam
-          maiores earum voluptas illum mollitia. Ea saepe voluptates, sed vitae
-          praesentium aspernatur commodi amet!.
-        </p>
-      </blockquote>
-      <button class="btn btn-primary" type="submit">Find Out More</button>
+    <div
+      class="container-fluid bg-info d-flex flex-column align-items-center py-5"
+    >
+      <div><h2 class="text-white">Friends</h2></div>
+      <div class="text-white text-center p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit expedita
+        itaque praesentium aspernatur at similique neque! Autem quod quisquam
+        consequuntur optio, nesciunt rerum ducimus ea minus a adipisci sed hic
+        esse. Atque error similique natus ad eligendi odit, sed libero! Culpa
+        dolor, nam fuga consequatur asperiores consectetur recusandae! Quo.
+      </div>
+      <button
+        type="submit"
+        class="btn btn-info btn-outline-dark border border-white text-white rounded p-2"
+      >
+        Find Out More
+      </button>
     </div>
+
     <!-- CONTENT 5 -->
-    <div class="content-3">
-      <div class="content-3-text">
-        <h3>Explore New Places</h3>
-        <p class="text-break">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-          voluptates consequuntur aut perspiciatis, consequatur debitis deleniti
-          odio sint rem eaque fuga quam incidunt, dolores voluptatem harum eum
-          autem labore sit facere. Dolore pariatur tenetur praesentium ducimus,
-          maiores temporibus ipsum laborum non blanditiis rem esse a ex?
-          Deleniti adipisci quas quam.
-        </p>
+    <div class="container-fluid bg-dark">
+      <div class="row">
+        <div
+          class="col-12 col-md-6 d-flex flex-column align-items-start text-white p-5"
+        >
+          <h2 class="mt-5">Explore New Places</h2>
+          <p class="mt-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis pariatur facere repudiandae, quasi quae nesciunt, quo
+            eum nihil aperiam, autem at quis. Impedit esse itaque soluta earum
+            saepe aperiam ducimus qui! Vel at dolorum laudantium molestiae ex
+            modi recusandae autem.
+          </p>
+          <div class="py-5">
+            <ul class="list-group text-decoration-none mt-2">
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+              </blockquote>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            src="phoneimg.jpg"
+            class="img-fluid rounded-circle mt-5 p-5"
+            alt=""
+          />
+        </div>
       </div>
-      <div class="left-img">
-        <img src="phoneimg.jpg" class="rounded-circle" alt="" />
+    </div>
+
+    <!-- CONTENT 6 -->
+    <div class="container-fluid bg-info text-white d-flex flex-column py-5">
+      <div class="row d.flex justify-content-center">
+        <div class="col-12 col-md-6">
+          <form>
+            <h2>Join Us</h2>
+            <div class="mb-4 mt-4">
+              <input
+                type="email"
+                class="form-control"
+                id="username"
+                aria-describedby="emailHelp"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your e-mail"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter subject"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                name="text"
+                id="text"
+                aria-label="With textarea"
+                placeholder="Enter message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-info btn-outline-light d-grid gap-2 col-12 mx-auto"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="container-fluid bg-dark text-white d-flex justify-content-center"
+    >
+      <h3 class="p-5">Social Network</h3>
     </div>
 
     <script
