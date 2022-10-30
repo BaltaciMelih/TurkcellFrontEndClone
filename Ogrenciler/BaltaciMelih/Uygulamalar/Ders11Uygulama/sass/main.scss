@@ -74,6 +74,8 @@ header{
 }
 .findNew{
     @extend .exploreNew;
+    background-color: $bgcolorprimary;
+    color: white;
 }
 .joinUs{
     background-color: $bgcolorsecondary;
