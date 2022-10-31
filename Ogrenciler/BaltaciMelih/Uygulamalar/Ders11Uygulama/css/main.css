@@ -72,7 +72,3 @@ footer {
     background-color: #364f6b; }
     .projects .btn:hover {
       background-color: #3fc1c9; }
-
-@media (max-width: 760px) {
-  .ProjectOne {
-    width: 50%; } }
