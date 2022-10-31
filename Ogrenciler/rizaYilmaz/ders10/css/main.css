@@ -667,22 +667,34 @@ body {
       margin-bottom: 4.8rem; }
   .team-members-section .card-group {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); }
-    .team-members-section .card-group .card, .team-members-section .card-group .card-2, .team-members-section .card-group .card-3, .team-members-section .card-group .card-4 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem; }
+    .team-members-section .card-group .card-1, .team-members-section .card-group .card-2, .team-members-section .card-group .card-3, .team-members-section .card-group .card-4 {
       background-color: #dcd5d5;
       border: 0px;
       text-align: center;
-      border-radius: 0.5rem; }
-      .team-members-section .card-group .card h3, .team-members-section .card-group .card-2 h3, .team-members-section .card-group .card-3 h3, .team-members-section .card-group .card-4 h3 {
+      border-radius: 0.5rem;
+      position: relative; }
+      .team-members-section .card-group .card-1 .cards-animation h3, .team-members-section .card-group .card-2 .cards-animation h3, .team-members-section .card-group .card-3 .cards-animation h3, .team-members-section .card-group .card-4 .cards-animation h3 {
         margin: 2.4rem 0rem 0.8rem 0rem;
         font-size: 2rem; }
-      .team-members-section .card-group .card h4, .team-members-section .card-group .card-2 h4, .team-members-section .card-group .card-3 h4, .team-members-section .card-group .card-4 h4 {
+      .team-members-section .card-group .card-1 .cards-animation h4, .team-members-section .card-group .card-2 .cards-animation h4, .team-members-section .card-group .card-3 .cards-animation h4, .team-members-section .card-group .card-4 .cards-animation h4 {
         font-weight: 400; }
-      .team-members-section .card-group .card img, .team-members-section .card-group .card-2 img, .team-members-section .card-group .card-3 img, .team-members-section .card-group .card-4 img {
+      .team-members-section .card-group .card-1 .cards-animation img, .team-members-section .card-group .card-2 .cards-animation img, .team-members-section .card-group .card-3 .cards-animation img, .team-members-section .card-group .card-4 .cards-animation img {
         width: 100%;
         height: auto;
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem; }
+      .team-members-section .card-group .card-1 .cards-animation ul, .team-members-section .card-group .card-2 .cards-animation ul, .team-members-section .card-group .card-3 .cards-animation ul, .team-members-section .card-group .card-4 .cards-animation ul {
+        display: none;
+        justify-content: center;
+        gap: 1rem; }
+      .team-members-section .card-group .card-1 .cards-animation:hover, .team-members-section .card-group .card-2 .cards-animation:hover, .team-members-section .card-group .card-3 .cards-animation:hover, .team-members-section .card-group .card-4 .cards-animation:hover {
+        transform: translateY(-50px); }
+        .team-members-section .card-group .card-1 .cards-animation:hover ul, .team-members-section .card-group .card-2 .cards-animation:hover ul, .team-members-section .card-group .card-3 .cards-animation:hover ul, .team-members-section .card-group .card-4 .cards-animation:hover ul {
+          display: flex; }
+          .team-members-section .card-group .card-1 .cards-animation:hover ul li a i:hover, .team-members-section .card-group .card-2 .cards-animation:hover ul li a i:hover, .team-members-section .card-group .card-3 .cards-animation:hover ul li a i:hover, .team-members-section .card-group .card-4 .cards-animation:hover ul li a i:hover {
+            color: #ff6f0f; }
 
 .testimonial {
   grid-area: testimonial;
@@ -817,6 +829,29 @@ footer {
     padding: 2.5rem; }
     footer .box-5 p {
       color: #ccc; }
+
+.upbuton {
+  background-color: #ff6f0f;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 25px;
+  right: 50px;
+  position: fixed;
+  transition: all 0.4s ease-in-out; }
+  .upbuton span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    height: 100%;
+    color: white; }
+  .upbuton:hover {
+    background-color: transparent;
+    border: 1px solid #ff6f0f; }
+    .upbuton:hover span {
+      color: #ff6f0f; }
 
 @media only screen and (max-width: 992px) {
   .team-members-section .card-group {
