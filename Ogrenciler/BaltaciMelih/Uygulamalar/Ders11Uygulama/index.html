@@ -23,7 +23,7 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <nav>
+    <nav class="sticky-top">
       <div class="navbar container-fluid d-flex p-3 m-auto w-75">
         <div class="logo fs-4">
           <a href="">Social Network</a>
@@ -61,7 +61,7 @@
           </ul>
         </div>
         <div class="col-12 col-md-4 d-flex">
-          <form class="d-flex flex-column bg-info w-100 p-4">
+          <form class="d-flex flex-column w-100 p-4">
             <h2 class="text-center text-light">Join Us</h2>
             <p class="text-center text-light">Please fill out the form</p>
             <div class="form-floating mb-4">
@@ -128,13 +128,12 @@
         <div class="btn btn-outline-light btn-lg">Find Out More</div>
       </section>
       <section class="exploreNew row d-flex p-5">
-        <div class="col-6 text-end">
-          <img
-            src="https://img.tamindir.com/resize/1200x675/2020/12/470608/google-haritalar-fotograf-gonderme.jpg"
-            alt="phone"
-          />
-        </div>
-        <div class="col-6 text-start">
+        <img
+          class="col-12 col-md-6 text-end img-fluid"
+          src="https://img.tamindir.com/resize/1200x675/2020/12/470608/google-haritalar-fotograf-gonderme.jpg"
+          alt="phone"
+        />
+        <div class="col-12 col-md-6 text-start">
           <h2>Explore New Places</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
@@ -179,8 +178,8 @@
         <div class="btn btn-outline-light btn-lg">Find Out More</div>
       </section>
       <section class="findNew row d-flex p-5">
-        <div class="col-6 text-start">
-          <h2>Explore New Places</h2>
+        <div class="col-md-6 text-start">
+          <h2>Find New Friends</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             debitis sit laudantium explicabo veritatis esse minima nulla
@@ -212,15 +211,70 @@
             </li>
           </ul>
         </div>
-        <div class="col-6 text-start">
-          <img
-            src="https://img.tamindir.com/resize/1200x675/2020/12/470608/google-haritalar-fotograf-gonderme.jpg"
-            alt="phone"
-          />
-        </div>
+        <img
+          class="col-md-6 text-start img-fluid"
+          src="https://seralakehotel.com/wp-content/uploads/2020/04/Seyahat-Plan%C4%B1-Nas%C4%B1l-Yap%C4%B1l%C4%B1r-Nelere-Dikkat-Etmeliyiz.jpg.webp"
+          alt="phone"
+        />
       </section>
-      <section class="joinUs"></section>
+      <section class="joinUs d-flex justify-content-center">
+        <form class="d-flex flex-column w-50 p-4">
+          <h2 class="text-start text-light">Join Us</h2>
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              id="username"
+              class="form-control"
+              placeholder="Username"
+            />
+            <label for="username" class="form-label text-secondary"
+              >Enter Your Name</label
+            >
+          </div>
+
+          <div class="form-floating mb-4">
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Email"
+            />
+            <label for="email" class="form-label text-secondary"
+              >Enter Your Email</label
+            >
+          </div>
+
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              id="subject"
+              class="form-control"
+              placeholder="subject"
+            />
+            <label for="subject" class="form-label text-secondary"
+              >Enter Your Subject</label
+            >
+          </div>
+
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              id="textarea"
+              class="form-control"
+              placeholder="Phone"
+            />
+            <label for="textarea" class="form-label text-secondary"
+              >Enter Message</label
+            >
+          </div>
+          <button type="button" class="btn btn-outline-light btn-lg">
+            Send Message
+          </button>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="text-center p-5">
+      <h4>Social Network</h4>
+    </footer>
   </body>
 </html>

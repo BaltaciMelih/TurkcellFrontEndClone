@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   padding: 0;
   margin: 0; }
@@ -161,3 +162,163 @@ body {
   z-index: 2;
   text-align: center;
   align-items: center; }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: #FF6F0F; }
+
+.button-2 {
+  height: 30px;
+  width: 50px;
+  display: flex;
+  justify-content: center; }
+
+.ft-1 {
+  color: white;
+  width: 100%;
+  height: 400px;
+  background-color: #0c1e22;
+  display: flex;
+  justify-content: space-around; }
+
+.ft-2 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20%; }
+
+.ft-3 {
+  grid-column-start: 1;
+  grid-row-start: 2; }
+
+.adress {
+  grid-column-start: 2;
+  grid-row-start: 2; }
+
+.ad-0 {
+  font-family: saira;
+  font-size: 24px;
+  color: #f8f8f9; }
+
+.ql {
+  grid-column-start: 3;
+  grid-row-end: 3; }
+
+.nl {
+  grid-column-start: 4;
+  grid-row-end: 3; }
+
+.nl-0 {
+  font-family: saira;
+  font-size: 24px;
+  color: #f8f8f9; }
+
+.ql-0 {
+  font-family: saira;
+  font-size: 24px;
+  color: #f8f8f9; }
+
+.ql-0 {
+  font-family: saira;
+  font-size: 24px;
+  color: #f8f8f9; }
+
+.ql-1 {
+  color: #898989; }
+
+.nl-1 {
+  color: #ccc; }
+
+.ftd {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #0c1e22; }
+
+.ys {
+  color: #fff;
+  display: block;
+  text-decoration: none; }
+
+.db {
+  color: #000; }
+
+.al {
+  color: #ccc;
+  display: flex; }
+
+.al-2 {
+  color: #ccc;
+  display: flex;
+  justify-content: flex-end; }
+
+.codex {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff; }
+
+.btn-s {
+  background-color: #FF6F0F;
+  width: 100px;
+  height: 45px;
+  border-radius: 8px;
+  display: grid; }
+
+.mail {
+  width: 100px;
+  height: 45px; }
+
+.btn-3 {
+  display: grid;
+  grid-column-start: 4;
+  grid-row-end: 5;
+  border: solid 1px rgba(255, 255, 255, 0.251);
+  width: 230px;
+  height: 51px;
+  border-radius: 8px; }
+
+.btn-3 :hover {
+  border: 2px solid #FF6F0F;
+  transition: 0.2s; }
+
+.chari {
+  color: #FF6F0F; }
+
+.adress-2 {
+  color: #8f8f8f; }
+
+.lorem-20 {
+  color: #8f8f8f; }
+
+.up button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #FF6F0F;
+  border-radius: 8px;
+  float: right;
+  overflow: auto; }
+
+.btn-3 input {
+  width: 160px;
+  border-radius: 8px;
+  background-color: #0c1e22; }
+
+.btn-3 {
+  display: flex;
+  justify-content: flex-end; }
+
+.btn-s {
+  text-align: center;
+  font-size: 16px;
+  font-family: ınter;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 51px; }
+
+.social-media a img {
+  border: 1px solid #ccc;
+  border-radius: 5px; }
