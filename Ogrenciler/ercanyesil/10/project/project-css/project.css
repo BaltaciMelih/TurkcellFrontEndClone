@@ -9,7 +9,10 @@
   /* grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 80px 1fr 80px; */
   /* grid-template-columns: repeat(3,1fr); */
-  grid-template-areas: "header header header" "nav nav nav"                                               "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"                                              
+ "main main main"
+ "footer footer footer"; }
 
 header, footer, main, nav {
   background-color: brown;
@@ -31,4 +34,8 @@ footer {
 
 @media (max-width: 768px) {
   .project-container {
-    grid-template-areas: "header" "nav"                                               "main" "aside" "footer"; } }
+    grid-template-areas: "header"
+ "nav"                                              
+ "main"
+ "aside"
+ "footer"; } } 
