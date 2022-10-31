@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 .navbar {
-  background: linear-gradient(90deg, #020024 0%, #00d4ff 0%, #6363c7 100%);
+  background: linear-gradient(90deg, #020024 0%, rgba(50, 38, 38, 0.594275) 0%, #39565e 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -126,7 +126,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background: linear-gradient(90deg, #020024 0%, #00d4ff 0%, #6363c7 100%);
+  background: linear-gradient(90deg, #020024 0%, rgba(50, 38, 38, 0.594275) 0%, #39565e 100%);
   color: white;
   padding: 40px;
   text-align: center; }
@@ -150,7 +150,7 @@
       color: black;
       transform: scale(1.2); }
 
-.container3, .container5, .container7, .container6 {
+.container3, .container5, .container7, .container6, .container8 {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -170,7 +170,7 @@
     border-radius: 10px;
     margin: 25px;
     box-shadow: #26394d 20px 20px 30px 10px;
-    background-color: #597ba7; }
+    background: linear-gradient(90deg, #020024 0%, rgba(50, 38, 38, 0.594275) 0%, #39565e 100%); }
     .container3-box img {
       width: 100%;
       border-top-left-radius: 10px;
@@ -199,7 +199,7 @@
         transform: scale(1.2); }
 
 .container4 {
-  background: linear-gradient(90deg, #020024 0%, #00d4ff 0%, #6363c7 100%); }
+  background: linear-gradient(90deg, #020024 0%, rgba(50, 38, 38, 0.594275) 0%, #39565e 100%); }
 
 .container5-box {
   width: 28%;
@@ -277,7 +277,7 @@
         transform: scale(1.2); }
   .container7-form {
     width: 45%;
-    background: linear-gradient(90deg, #020024 0%, #00d4ff 0%, #6363c7 100%);
+    background: linear-gradient(90deg, #020024 0%, rgba(50, 38, 38, 0.594275) 0%, #39565e 100%);
     padding: 20px;
     padding-top: 40px;
     padding-bottom: 40px; }
@@ -296,6 +296,7 @@
       height: 50px; }
       .container7-form .radiobuttons-secili-button:checked + label {
         background-color: white;
+        color: black;
         border-color: black; }
       .container7-form .radiobuttons-secili-button {
         position: absolute;
@@ -304,7 +305,7 @@
       .container7-form .radiobuttons-radiobutton {
         display: inline-block;
         font-weight: 400;
-        color: black;
+        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -334,6 +335,20 @@
         color: black;
         transform: scale(1.2); }
 
+.container8 {
+  background: linear-gradient(90deg, #020024 0%, rgba(50, 38, 38, 0.594275) 0%, #39565e 100%); }
+  .container8-box {
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    margin: 25px;
+    text-align: center;
+    background-color: white; }
+    .container8-box img {
+      width: 25%; }
+    .container8-box .image {
+      width: 47%; }
+
 @media screen and (max-width: 768px) {
   .drop-down {
     display: block !important; }
@@ -352,7 +367,7 @@
         left: 0;
         top: 70px;
         font-size: 24px;
-        background: linear-gradient(90deg, #020024 0%, #00d4ff 0%, #6363c7 100%);
+        background: linear-gradient(90deg, #020024 0%, rgba(50, 38, 38, 0.594275) 0%, #39565e 100%);
         width: 100%; }
         .menu-bar .menu2 .list-item li {
           display: block;
@@ -390,4 +405,12 @@
     width: 95%;
     margin-bottom: 20px; }
     .container7-box .button, .container7-form .button {
-      width: 40%; } }
+      width: 40%; }
+  .container8-box {
+    width: 85%; }
+    .container8-box img {
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%; }
+    .container8-box .image {
+      margin-top: 5px; } }

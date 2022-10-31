@@ -1,38 +1,3 @@
-// $bgColor: red;
-// $px100: 100px;
-
-// .container {
-//   display: flex;
-//   .box1 {
-//     padding: 30px;
-//   }
-// }
-
-// @mixin deneme($ali, $w, $h) {
-//   background-color: $ali;
-//   margin: 10px;
-//   width: $w;
-//   height: $h;
-// }
-
-// .box1 {
-//   @include deneme(green, 154px, 167px);
-// }
-
-// .box2 {
-//   @extend .box1;
-//   width: $px100 * 2;
-//   background-color: $bgColor;
-// }
-
-// .box3 {
-//   @extend .box1;
-// }
-
-// .box4 {
-//   @include deneme(blue, 48px, 90px);
-// }
-
 // UYGULAMA
 html {
   width: 100vw;
@@ -59,54 +24,39 @@ nav {
 }
 
 .content-1 {
-  width: 100%;
-  height: 750px;
-  background-image: url("../mountain.jpg");
+  background-image: url(../mountain.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 100px;
-  padding-bottom: 50px;
-
-  .discover-form {
-    width: 23%;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
-    padding: 25px 10px;
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      & input {
-        width: 100%;
-      }
-    }
-  }
+  position: relative;
 }
 
-.content-2 {
+.content-1::before {
+  content: "";
+  position: absolute;
   width: 100%;
-  // height: 200px;
-  padding: 50px 0;
-  color: white;
-  background-color: #2f455d;
-  text-align: center;
-  p {
-    padding: 0 200px;
-  }
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  background-color: #151c28ef;
+  z-index: 1;
 }
 
-.content-3 {
-  width: 100%;
-  height: 800px;
-  padding: 50px 0;
-  gap: 250px;
-  justify-content: space-around;
-  img {
-    width: 30%;
+.custom-bg-dark-blue {
+  background-color: #2f455d !important;
+}
+
+.card-width {
+  width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    left: 0;
+    background-color: #151c28ef;
+    z-index: 1;
   }
 }
