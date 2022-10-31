@@ -95,7 +95,7 @@ body {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.list-none {
+.list-none-enes {
   list-style: none;
   gap: 10px;
   font-size: 18px;
@@ -111,7 +111,7 @@ a:hover {
   color: orangered;
 }
 
-.text-semi-white {
+.text-semi-white-enes {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -123,7 +123,7 @@ a:hover {
 //   font-size: 24px;
 // }
 
-.container-1 {
+.container-1-enes {
   box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8);
   @include bg(gray);
   background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
@@ -149,7 +149,7 @@ a:hover {
     color: white;
     align-items: center;
   }
-  & .nav {
+  & .nav-enes {
     background-color: #001d23;
     @include display-flex(row, center, center);
     padding: 20px;
@@ -166,7 +166,7 @@ a:hover {
       background-color: orangered;
     }
   }
-  .content {
+  .content-enes {
     color: white;
     // @include display-flex(row, center, center);
     text-align: center;
@@ -188,17 +188,19 @@ a:hover {
   }
 }
 
-.container-2 {
+.container-2-enes {
   padding: 75px 0;
   @include display-flex(row, space-around, center);
+  flex-wrap: wrap;
   box-shadow: inset 0 0 0 2000px rgba(0, 29, 35, 0.8);
+
   // margin:  auto;
   background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
-  height: 350px;
+
   h2 {
     font-size: 40px;
   }
-  .left-part {
+  .left-part-enes {
     p {
       word-break: break-word;
       max-width: 500px;
@@ -210,11 +212,12 @@ a:hover {
       margin-top: 25px;
     }
   }
-  .right-part {
+  .right-part-enes {
     background-color: white;
     padding: 25px;
     border-radius: 3px;
     border: 1px solid rgba(230, 230, 230, 0.103);
+    gap: 25px;
     button {
       @include buttons(white, orangered, 10px, 2px orangered solid);
       @include display-flex(row, center, center);
@@ -232,18 +235,18 @@ a:hover {
       }
     }
   }
-  .donate-btn {
+  .donate-btn-enes {
     font-size: 18px;
     color: orangered;
     background-color: #fff0e6;
     border-radius: 20px;
     padding: 8px 10px;
   }
-  .donate-part {
+  .donate-part-enes {
     @include display-flex(column, center, center);
     gap: 10px;
   }
-  .inputs {
+  .inputs-enes {
     @include inputs(
       450px,
       50px,
@@ -256,7 +259,7 @@ a:hover {
   .inputs:last-child {
     margin-bottom: 25px;
   }
-  .dollars-box {
+  .dollars-box-enes {
     display: inline-block;
     background-color: red;
     width: 150px;
@@ -278,20 +281,21 @@ a:hover {
 
 footer {
   background-color: #001d23;
-  .bottom {
+  .bottom-enes {
     border-top: 1px solid rgba(128, 128, 128, 0.356);
     padding: 25px 0;
     @include display-flex(row, space-around, normal);
-    .bottom-white {
+    .bottom-white-enes {
       @include whiteHeadings(white, 16px, regular);
     }
   }
 }
 
-.container-3 {
+.container-3-enes {
   padding: 50px;
   @include display-flex(row, space-evenly, normal);
-  .footer-1 {
+  flex-wrap: wrap;
+  .footer-1-enes {
     h2 {
       margin-bottom: 20px;
     }
@@ -307,16 +311,16 @@ footer {
       margin-top: 20px;
     }
   }
-  .footer-2 {
+  .footer-2-enes {
     p:first-child {
       @include whiteHeadings(white, 20px, bold);
       margin-bottom: 20px;
     }
-    .space {
+    .space-enes {
       line-height: 30px;
     }
   }
-  .footer-3 {
+  .footer-3-enes {
     p:first-child {
       @include whiteHeadings(white, 20px, bold);
       margin-bottom: 20px;
@@ -346,7 +350,7 @@ footer {
       color: white !important;
     }
   }
-  .footer-4 {
+  .footer-4-enes {
     p:first-child {
       @include whiteHeadings(white, 20px, bold);
       margin-bottom: 20px;
