@@ -1,7 +1,7 @@
 * {
   margin: 0; }
 
-.container4 {
+.container4okan {
   animation-name: myfirst;
   animation-duration: 2s;
   animation-timing-function: ease;
@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px; }
-  .container4 button {
+  .container4okan button {
     width: 150px;
     border-radius: 15px;
     padding: 10px;
@@ -23,7 +23,7 @@
     color: #FF6F0F;
     font-size: 1.2rem; }
 
-.container5 {
+.container5okan {
   animation-name: myfirst;
   animation-duration: 2s;
   animation-timing-function: ease;
@@ -36,7 +36,7 @@
   gap: 20px;
   width: 100%;
   height: 500px; }
-  .container5 .box {
+  .container5okan .box {
     animation-name: myfirst;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -51,24 +51,24 @@
     gap: 20px;
     box-shadow: 10px 0px 50px grey;
     border: 1px solid #f3eded; }
-    .container5 .box .imgbox {
+    .container5okan .box .imgbox {
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 0px;
       margin-top: 10%;
       align-items: center; }
-    .container5 .box .boxyazi {
+    .container5okan .box .boxyazi {
       margin-left: 20%;
       width: 280px;
       color: gray;
       font-size: 19px;
       text-align: center; }
-    .container5 .box .boxbaslik {
+    .container5okan .box .boxbaslik {
       display: flex;
       justify-content: center;
       padding: 5px; }
-    .container5 .box button {
+    .container5okan .box button {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -82,7 +82,7 @@
       background-color: white;
       color: orangered;
       margin-left: 25%; }
-    .container5 .box button:hover {
+    .container5okan .box button:hover {
       background-color: #FF6F0F;
       color: white;
       cursor: pointer; }
@@ -103,7 +103,7 @@
   width: 600px;
   margin-left: 35%; }
 
-.container6 {
+.container6okan {
   animation-name: myfirst;
   animation-duration: 2s;
   animation-timing-function: ease;
@@ -117,7 +117,7 @@
   width: 100%;
   height: 600px;
   align-items: center; }
-  .container6 .box {
+  .container6okan .box {
     position: relative;
     overflow: hidden;
     width: 300px;
@@ -127,7 +127,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px; }
-    .container6 .box .boxyazi {
+    .container6okan .box .boxyazi {
       bottom: 0;
       width: 100%;
       height: 100px;
@@ -136,9 +136,11 @@
       padding-top: 19px;
       background-color: #F8F8F9;
       transition: height .5s; }
-    .container6 .box p {
+    .container6okan .box p {
       line-height: 30px; }
-    .container6 .box .visib {
+    .container6okan .box a {
+      color: black; }
+    .container6okan .box .visib {
       display: flex;
       flex-direction: row;
       justify-content: start;
@@ -148,19 +150,19 @@
       text-decoration: none;
       list-style-type: none;
       font-size: 24px; }
-    .container6 .box img {
+    .container6okan .box img {
       transition: transform .5s; }
-    .container6 .box:hover .boxyazi {
+    .container6okan .box:hover .boxyazi {
       height: 200px; }
-    .container6 .box:hover img {
+    .container6okan .box:hover img {
       transform: translateY(-25px); }
-    .container6 .box .boximg {
+    .container6okan .box .boximg {
       position: relative;
       overflow: hidden; }
-      .container6 .box .boximg img {
+      .container6okan .box .boximg img {
         position: relative; }
 
-.container7 {
+.container7okan {
   animation-name: myfirst;
   animation-duration: 2s;
   animation-timing-function: ease;
@@ -171,7 +173,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px; }
-  .container7 button {
+  .container7okan button {
     width: 160px;
     border-radius: 15px;
     padding: 10px;
@@ -182,7 +184,7 @@
     color: #FF6F0F;
     font-size: 1.2rem; }
 
-.container8 {
+.container8okan {
   animation-name: myfirst;
   animation-duration: 2s;
   animation-timing-function: ease;
@@ -195,13 +197,13 @@
   gap: 20px;
   width: 100%;
   height: 600px; }
-  .container8 .vision1 {
+  .container8okan .vision1 {
     visibility: hidden; }
-  .container8 .vision2 {
+  .container8okan .vision2 {
     visibility: visible; }
-  .container8 .vision3 {
+  .container8okan .vision3 {
     visibility: hidden; }
-  .container8 .box {
+  .container8okan .box {
     width: 635px;
     height: 311px;
     background-color: #ffffff;
@@ -209,20 +211,20 @@
     flex-direction: column;
     justify-content: start;
     gap: 20px; }
-    .container8 .box .littleimage {
+    .container8okan .box .littleimage {
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 0px; }
-      .container8 .box .littleimage img {
+      .container8okan .box .littleimage img {
         border-radius: 50%;
         border: 7px solid #e3750f; }
-    .container8 .box .boxarrow {
+    .container8okan .box .boxarrow {
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 10px; }
-    .container8 .box .content__yazi {
+    .container8okan .box .content__yazi {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -234,18 +236,18 @@
       background-color: #ff6f0f;
       border-radius: 10px;
       padding: 20px; }
-    .container8 .box a {
+    .container8okan .box a {
       text-decoration: none;
       display: inline-block;
       padding: 8px 16px; }
-    .container8 .box a:hover {
+    .container8okan .box a:hover {
       background-color: #db6666;
       color: black; }
-    .container8 .box .previous:active .vision1 {
+    .container8okan .box .previous:active .vision1 {
       visibility: visible; }
-    .container8 .box .previous:active .vision2 {
+    .container8okan .box .previous:active .vision2 {
       visibility: hidden; }
-    .container8 .box .previous:active .vision3 {
+    .container8okan .box .previous:active .vision3 {
       visibility: hidden; }
 
 .previous {
@@ -260,26 +262,26 @@
   color: white; }
 
 @media only screen and (max-width: 768px) {
-  .container4 {
+  .container4okan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 60px; }
-  .container5 {
+  .container5okan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     height: 1000px;
     margin-left: 5%; }
-  .container6 {
+  .container6okan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     height: 1800px;
     margin-left: 0%; }
-    .container6 .content__baslik {
+    .container6okan .content__baslik {
       display: flex;
       justify-content: center; }
   .content__yazi {
@@ -291,7 +293,7 @@
     margin-left: 20%; }
   .content__baslik {
     margin-left: 10%; }
-  .container8 .box {
+  .container8okan .box {
     margin-left: 14%; } }
 
 @keyframes myfirst {
