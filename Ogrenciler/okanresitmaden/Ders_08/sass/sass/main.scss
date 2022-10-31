@@ -273,17 +273,17 @@
   }
 
 @media only screen and (max-width: 768px) {
-    .container4{
+    .container4okan{
         @include display-flexokan(column,center ,60px );
         
     }
-    .container5{
+    .container5okan{
         
         @include display-flexokan(column,center ,10px );
         height: 1000px;
         margin-left: 5%;
     }
-    .container6{
+    .container6okan{
         @include display-flexokan(column,center ,10px );
         height: 1800px;
         margin-left: 0%;
@@ -300,7 +300,7 @@
     .content__baslik{
         margin-left: 10%;
     }
-    .container8{
+    .container8okan{
         .box{
             margin-left: 14%;
         }

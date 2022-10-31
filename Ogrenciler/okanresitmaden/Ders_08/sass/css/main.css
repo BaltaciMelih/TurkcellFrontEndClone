@@ -262,26 +262,26 @@
   color: white; }
 
 @media only screen and (max-width: 768px) {
-  .container4 {
+  .container4okan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 60px; }
-  .container5 {
+  .container5okan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     height: 1000px;
     margin-left: 5%; }
-  .container6 {
+  .container6okan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     height: 1800px;
     margin-left: 0%; }
-    .container6 .content__baslik {
+    .container6okan .content__baslik {
       display: flex;
       justify-content: center; }
   .content__yazi {
@@ -293,7 +293,7 @@
     margin-left: 20%; }
   .content__baslik {
     margin-left: 10%; }
-  .container8 .box {
+  .container8okan .box {
     margin-left: 14%; } }
 
 @keyframes myfirst {
