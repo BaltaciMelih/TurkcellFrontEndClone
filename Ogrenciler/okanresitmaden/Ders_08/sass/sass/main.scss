@@ -47,7 +47,7 @@
 }
 
 
-.container4{
+.container4okan{
     @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor__okan(rgb(255, 255, 255));
     @include display-flexokan(column,center,20px);
@@ -59,7 +59,7 @@
     }
 }
 
-.container5{
+.container5okan{
     @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor__okan(rgb(255, 255, 255));
     @include display-flexokan(row,center,20px);
@@ -118,7 +118,7 @@
 }
 
 
-.container6{
+.container6okan{
     @include animation(myfirst,2s ,ease ,1s ,alternate );
     @include bgcolor__okan(rgb(255, 255, 255));
     @include display-flexokan(row,center,20px);
@@ -147,6 +147,9 @@
         // ul{
         //     // position: absolute;
         // }
+        a{
+          color: black;
+        }
         .visib{
             // position: absolute;
             // visibility: hidden;
@@ -184,7 +187,7 @@
 
     }
 }
-.container7{
+.container7okan{
     @include animation(myfirst,2s ,ease ,2s ,alternate );
     @include bgcolor__okan(rgb(255, 255, 255));
     @include display-flexokan(column,center,20px);
@@ -196,7 +199,7 @@
     }
     
 }
-.container8{
+.container8okan{
     @include animation(myfirst,2s ,ease ,2s ,alternate );
     @include bgcolor__okan(rgb(255, 255, 255));
     @include display-flexokan(row,center,20px);
