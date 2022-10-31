@@ -155,6 +155,10 @@ ion-icon:hover {
   }
 
   .nav-icons {
-    display: none;
+    display: hidden;
   }
+}
+
+.card-width {
+  width: 1450px !important;
 }

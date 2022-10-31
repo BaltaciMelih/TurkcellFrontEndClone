@@ -44,6 +44,10 @@ nav {
   background-color: #2f455d !important;
 }
 
+.card-width {
+  width: 350px;
+}
+
 @media screen and (max-width: 768px) {
   .content-1::before {
     content: "";
