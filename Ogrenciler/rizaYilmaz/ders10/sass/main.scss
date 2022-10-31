@@ -633,30 +633,65 @@ body {
             font-size: 4rem;
             margin-bottom:4.8rem; 
         }}
-    .card-group{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        .card{
-            background-color: rgb(220, 213, 213);
-            border:  0px;
-            text-align: center;
-            border-radius: 0.5rem;
-            h3{
-                margin: 2.4rem 0rem 0.8rem 0rem;
-                font-size: 2rem;
+        .card-group{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          gap: 0.5rem;
+          .card-1{
+              background-color: rgb(220, 213, 213);
+              border:  0px;
+              text-align: center;
+              border-radius: 0.5rem;
+              position: relative;
+              
+              .cards-animation{
+              h3{
+                  margin: 2.4rem 0rem 0.8rem 0rem;
+                  font-size: 2rem;
+              }
+              h4{
+                  font-weight:400;
+              }
+              img{
+                  width: 100%;
+                  height: auto;
+                  border-top-left-radius: 0.5rem;
+                  border-top-right-radius: 0.5rem;
+              }
+              ul{
+                display: none;
+                justify-content: center;
+                gap: 1rem;
+                // margin-bottom: 1rem;
+              }
+              &:hover{
+                
+                transform: translateY(-50px);
+              
+              ul{
+                display: flex;
+                li a i:hover{
+                  color: #ff6f0f;
+                  
+                }
+              }
+              
             }
-            h4{
-                font-weight:400;
-            }
-            img{
-                width: 100%; height: auto;
-                border-top-left-radius: 0.5rem;
-                border-top-right-radius: 0.5rem;
-            }
+              }
+              
+          }
+          .card-2{
+            @extend .card-1;
+          }
+          .card-3{
+            @extend .card-1;
+          }
+          .card-4{
+            @extend .card-1;
             
           }
-            .card-2, .card-3, .card-4 { @extend .card; }
-          }}
+      }
+    }
   .testimonial{
     grid-area: testimonial;
     padding: 2rem 7%;
