@@ -18,18 +18,27 @@
     background-color: #3FC1C9;
 
 }
-#submit{
-    background-color: #3FC1C9;
-    
-}
+            body{
+                background-color: #3FC1C9;
+            }
+            
+            .bg {
+                background-color: #3FC1C9;
+                
+            
+            }
 
-.maintxt{
-    position: relative;
-    
-}
-.overlay-text{
-    position: absolute;
-}
-.maintxt img{
-    position: absolute;
-}
+            #find{
+              background-color:#364F6B;
+              color: white;
+              width: 175px;
+              height: 40px;
+              text-align: center;
+              font-size: 14px;
+              border: 1px solid white;
+              border-radius: 3px;
+              
+            }
+            .my{
+              margin-top: 0 !important;
+            }

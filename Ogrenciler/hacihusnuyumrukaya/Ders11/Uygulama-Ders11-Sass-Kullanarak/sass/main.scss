@@ -1,0 +1,286 @@
+@mixin background1{background-color: rgb(117, 123, 131);}
+@mixin background2{background-color:rgb(118, 160, 238);}
+@mixin textcolorwhite{color: white;}
+@mixin textcolorblack {color: black;}
+@mixin textcolor1{color: rgb(117, 123, 131);}
+@mixin bordercolor1 {border-color: rgb(118, 160, 238);}
+@mixin bordercolorwhite { border-color: white;   }
+@mixin backgroundwhite{background-color: white;}
+@mixin containerden {   
+    width: 100%;    
+    height: auto;
+    margin: 0 auto;
+    font-size: 18px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}  
+@mixin  button-item {
+    border: 1px solid;
+    height: 40px;
+    border-radius: 10px;
+}  
+@mixin flex-item {
+    display: flex;
+    align-items: center;      
+    justify-content: center;   
+    text-align: center;
+}
+ *{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .navbar
+ {
+    @include background1();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    align-items: center;  
+    width: 100%; 
+    padding: 10px;
+    padding-left: 30px; 
+    @include textcolorwhite(); 
+    border-bottom: 5px solid;
+    @include bordercolor1();
+    position:fixed;
+    z-index: 2;
+    &-logo{     
+            font-size: 30px;    
+    }
+    &-menu{
+        margin-right: 30px;
+        ul{
+            display: flex;
+            overflow: hidden;
+        }
+        li{
+            display: inline;
+            margin: 5px;
+        }
+         li a{
+            @include textcolorwhite(); 
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+         }
+        a:hover { @include textcolorblack();}
+        a { text-decoration: none;}
+    }
+    .menu-bar 
+    {
+        display: flex;
+        align-items: center;
+        margin: auto 2rem;
+        padding: 20px;
+        display: none;   
+        button 
+        {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .fa-solid 
+        {
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: rgb(13, 13, 39);
+        } 
+        .menu2{display: none;}
+        .drop-down{display: none;}
+    }
+ } 
+ .container1{
+    position: relative;     
+    height: auto;    
+    @include containerden();                
+    flex-direction: row;
+    padding-top: 100px; 
+    padding-bottom: 70px;   
+    background-image:url(https://picsum.photos/id/135/1600);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    align-items: baseline;   
+    &-metin
+    {
+        width: 60%; 
+        @include textcolorwhite(); 
+        text-align: center;
+        h1{font-size: 48px; 
+            margin-bottom: 20px;}
+        li{margin-bottom: 20px; list-style: none;}
+        span{margin-left: 20px;}
+    }
+    &-form
+    {
+        width: 30%; 
+        @include textcolorwhite(); 
+        .form-control 
+        {
+            width: 80%;
+            @include background2();
+            border-radius: 5px;
+            padding: 15px; 
+            text-align: center;
+            h4{font-size:24px; margin: 10px;} 
+            p{margin-bottom: 20px;}
+            &-in{
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+                border: 0px;
+                padding-left: 5%;
+                margin-bottom: 10px;
+            } 
+            .button{     
+                @include background2(); 
+                @include bordercolorwhite();
+                @include button-item();
+                @include flex-item();
+                &:hover{
+                   @include textcolorblack();
+                   @include backgroundwhite();
+                } 
+            }  
+        }    
+   } 
+}
+
+.container2
+{
+    @include containerden();
+    @include background1(); 
+    @include textcolorwhite(); 
+    padding: 40px;
+    text-align: center; 
+    span{margin-bottom: 10px;}
+    p{font-size: 20px; margin-bottom: 10px;}
+    .button{
+        @include button-item();
+        @include flex-item();
+        padding: 5px;
+        &:hover
+        {
+            @include backgroundwhite();
+            @include textcolorblack();
+        }
+    }
+}
+
+.container3
+{
+    @include containerden();
+    flex-direction: row;
+    padding: 30px; 
+    &-left  
+    {
+        width: 45;
+        img{
+            border-radius: 50%;
+        }
+        padding-right: 10px;
+    }
+    &-right
+    {
+        width: 45%;
+        text-align: left; 
+        flex-direction: column;
+        @include textcolor1();
+        h2{font-size: 36px; margin-bottom: 20px;}
+        p{margin-bottom: 20px;} 
+        li{list-style: none; margin-bottom: 20px;}
+        span{margin-left: 15px;}
+    }
+}
+
+.container4
+{
+    @extend .container2;
+    @include background2();
+}
+
+.container5
+{
+    @include containerden();
+    flex-direction: row;
+    padding: 30px; 
+    padding-left: 7%; 
+    &-right  
+    {
+        width: 45%;
+        img{
+            border-radius: 50%;
+            margin-left: 5%;
+        }
+    } 
+    &-left
+    {
+        width: 45%;
+        text-align: left;
+        flex-direction: column;
+        @include textcolor1();
+        h2{font-size: 36px; margin-bottom: 20px;}
+        p{margin-bottom: 20px;} 
+        li{list-style: none; margin-bottom: 20px;}
+        span{margin-left: 15px;}
+    }   
+} 
+.footer
+{
+    @extend .container2;
+}    
+@media screen and (max-width: 768px) {
+    .drop-down{display: block !important;}
+    .navbar-menu{display: none;}     
+    .menu-bar{  
+        display:block !important;    
+        .menu2 
+        {    
+            height: auto; 
+            .list-item
+            {
+                position: absolute;  
+                left: 0;   
+                top:70px;     
+                font-size:24px;
+                @include background1();
+                width: 100%;
+                border-bottom: 5px solid;
+                @include bordercolor1();
+                li{ 
+                    display:block;
+                    margin: 5px;
+                    a{
+                        @include textcolorwhite(); 
+                        padding: 10px 10px;
+                        text-decoration: none;
+                        &:hover   
+                        {
+                               @include textcolorblack();    
+                        }  
+                     }
+                }
+            } 
+ 
+        }
+        &:hover .menu2
+        {
+            display: block;      
+        }
+    }   
+    .container1-metin ,.container1-form
+    { 
+        width: 100%;  
+    }
+    .form-control{width: 100%; margin-left: 10%;} 
+    .container3-left {
+        width: 100%; 
+        img{margin-left: 10%;}    
+    }
+    .container3-right {width: 100%;}
+    .container5-left {width: 100%;}
+    .container5-right {margin-left: 3%; width: 100%;}
+}   

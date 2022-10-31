@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR STARTS HERE -->
+    <nav
+      class="navbar fixed-top px-5 border-bottom border-info navbar-custom navbar-expand-lg"
+    >
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand text-white" href="#">Social Network</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="align ms-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Discover</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Friends</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Join Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS HERE -->
+
+    <!-- CONTENT-1 STARTS HERE -->
+    <div class="container-fluid content-1 p-5">
+      <div class="row">
+        <div class="col-12 col-md-8 d-flex flex-columnn">
+          <div class="d-flex flex-column align-items-start text-white px-5">
+            <h2 class="display-1 mt-5 py-5">Discover The Colorful World</h2>
+            <ul class="list-group text-decoration-none mt-2">
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+                  expedita perspiciatis quas voluptatum sit incidunt.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                  eos fugit praesentium eligendi voluptatum sequi.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  dignissimos, reiciendis rerum impedit explicabo eligendi!
+                </p>
+              </blockquote>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center py-5">
+          <div class="card text-white bg-info mb-3 mt-5 card-width">
+            <div class="d-flex justify-content-center">
+              <h2 class="pt-3">Join Us</h2>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-center">
+                Please fill out the form
+              </h5>
+              <form class="text-secondary">
+                <div class="form-floating mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="username"
+                    aria-describedby="emailHelp"
+                    placeholder="Username"
+                  />
+                  <label for="username">Username</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Username"
+                  />
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="password"
+                    aria-describedby="emailHelp"
+                    placeholder="Password"
+                  />
+                  <label for="password">Password</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="repassword"
+                    aria-describedby="emailHelp"
+                    placeholder="Repassword"
+                  />
+                  <label for="repassword">Repassword</label>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-info btn-outline-light d-grid gap-2 col-12 mx-auto"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTENT 1 ENDS HERE -->
+    <div
+      class="container-fluid custom-bg-dark-blue d-flex flex-column align-items-center text-white py-5"
+    >
+      <div><h2>Discover</h2></div>
+      <div class="text-center p-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione odit,
+        distinctio ipsam adipisci laborum reiciendis eligendi maxime sint
+        voluptas aliquam, cupiditate odio facilis, enim atque. Facere
+        accusantium consequatur, fugiat eaque, ducimus deserunt deleniti modi
+        omnis quibusdam dolorum quia ut corrupti rerum beatae placeat architecto
+        animi. Obcaecati, laborum et! Debitis, eum!
+      </div>
+      <button
+        type="submit"
+        class="btn btn-outline-secondary border-white text-white rounded p-2"
+      >
+        Find Out More
+      </button>
+      <!-- <br /><br /> -->
+    </div>
+    <!-- CONTENT 2 ENDS HERE -->
+
+    <!-- CONTENT 3 -->
+    <div class="container-fluid bg-white">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img
+            src="traveller.jpg"
+            alt=""
+            class="img-fluid rounded-circle mt-2 p-5"
+          />
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column align-items-start">
+          <h2 class="mt-5">Explore New Places</h2>
+          <p class="mt-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            veniam, repudiandae, voluptas molestias quam illum accusamus, nihil
+            perspiciatis fuga obcaecati dolore itaque. Possimus incidunt ut
+            beatae magni. Aperiam veniam dolorem, dolore dignissimos quod odit
+            saepe velit, esse iste tempore recusandae animi fugit voluptatibus
+            laboriosam iure?
+          </p>
+          <div class="py-5">
+            <ul class="list-group text-decoration-none mt-2">
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                  est.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, tempore?
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Sapiente, animi!
+                </p>
+              </blockquote>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT 4 -->
+    <div
+      class="container-fluid bg-info d-flex flex-column align-items-center py-5"
+    >
+      <div><h2 class="text-white">Friends</h2></div>
+      <div class="text-white text-center p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+        repellendus minima officia maxime velit voluptate, non eos. Quibusdam
+        corrupti, culpa nostrum natus ea hic, sapiente incidunt numquam quisquam
+        nulla saepe amet quod itaque et pariatur deserunt perspiciatis quia
+        soluta magni. Ratione laboriosam laudantium quia dolor! Ratione
+        doloremque iusto molestiae hic.
+      </div>
+      <button
+        type="submit"
+        class="btn btn-outline-secondary border border-white text-white rounded p-2"
+      >
+        Find Out More
+      </button>
+    </div>
+
+    <!-- CONTENT 5 -->
+    <div class="container-fluid custom-bg-dark-blue">
+      <div class="row">
+        <div
+          class="col-12 col-md-6 d-flex flex-column align-items-start text-white p-5"
+        >
+          <h2 class="mt-5">Find New Friends</h2>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            velit a, deserunt praesentium qui ipsam, est sunt, aliquid minus
+            quam iusto ratione. Neque sed eligendi pariatur tempora mollitia
+            iure odit laborum id quis, quaerat rerum facilis et totam porro!
+            Nesciunt!
+          </p>
+          <div class="py-5">
+            <ul class="list-group text-decoration-none mt-2">
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
+                  nam.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Autem, dicta!
+                </p>
+              </blockquote>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                  voluptas?
+                </p>
+              </blockquote>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            src="phoneimg.jpg"
+            class="img-fluid rounded-circle mt-5 p-5"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT 6 -->
+    <div class="container-fluid bg-info text-white d-flex flex-column py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-6">
+          <form class="text-secondary">
+            <h2 class="text-white">Join Us</h2>
+            <div class="form-floating mb-4 mt-4">
+              <input
+                type="text"
+                class="form-control"
+                id="yourname"
+                aria-describedby="emailHelp"
+                placeholder="Enter your name"
+              />
+              <label for="yourname">Enter Your Name</label>
+            </div>
+            <div class="form-floating mb-4 mt-4">
+              <input
+                type="email"
+                class="form-control"
+                id="yourmail"
+                aria-describedby="emailHelp"
+                placeholder="Enter your email"
+              />
+              <label for="yourmail">Enter your email</label>
+            </div>
+            <div class="form-floating mb-4 mt-4">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                aria-describedby="emailHelp"
+                placeholder="Subject"
+              />
+              <label for="subject">Enter subject</label>
+            </div>
+            <div class="form-floating mb-4 mt-4">
+              <input
+                type="text"
+                class="form-control"
+                id="yourmessage"
+                aria-describedby="emailHelp"
+                placeholder="Enter your message"
+              />
+              <label for="yourmessage">Enter your message</label>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-info btn-outline-light d-grid gap-2 col-12 mx-auto"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="container-fluid custom-bg-dark-blue text-white d-flex justify-content-center"
+    >
+      <h3 class="p-5">Social Network</h3>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
