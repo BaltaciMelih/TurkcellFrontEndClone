@@ -112,7 +112,7 @@ body {
     color: gray;
     margin-bottom: 40px; }
 
-.animate__animated.animate__slideInDown {
+.animate__animated .animate__slideInDown {
   --animate-duration: 2s; }
 
 .btn, .learn-more, .contact-us {
