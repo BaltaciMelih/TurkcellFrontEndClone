@@ -1,3 +1,30 @@
+$color:#FF6F0F;
+$textColor:#787878;
+$h1:"Saira",sans-serif;
+$p:"Inter",sans-serif;
+$animation:fadeInUp;
+
+@mixin btn-hover($hbColor, $hColor){
+background-color: $hbColor;
+color: $hColor;
+}
+
+@mixin start-animation(){
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeInUp;
+}
+@mixin acss($acolor){
+    a, i, li{
+    color: $acolor;
+    text-decoration: none; 
+    list-style: none}
+}
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -14,28 +41,31 @@
     font-size: $fa-fsize;
 }
 
-@mixin FlexDesign($fa-display, $fa-jcontenet, $fa-aitems, $fa-fdirection) {
-    display: $fa-display;
-    justify-content: $fa-jcontenet;
-    align-items: $fa-aitems;
-    flex-direction: $fa-fdirection;
-}
-@media screan and (max-width:550px) {
-    .mainform{
-        @include FlexDesign(flex, center, center, column)
-       
+
+@media only screen and (max-width: 768px) {
+  
+    .wwdtext-second-card{
+        @include flex(row);
+        justify-content: center;
+        align-items: center;
+
     }
-    
 }
 
 .wwdtext {
-    @include FlexDesign(flex, center, center, column);
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+   
     @include design(none, none, none, none, 48px 12px, none, none);
     &-first {
         h2 {
             @include design( 125px, 32px, #fff0e6, 0px 0px 16px, 4px 16px, #ff6f0f, 16px);
             border-radius: 50rem;
-            @include FlexDesign(flex, center, center, none);
+            @include flex(none);
+            justify-content: center;
+            align-items: center;
+           
         }
         h1 {
             @include design(500px, 85px, none, none, none, #001d23, 36px);
@@ -45,10 +75,17 @@
         @include design( 500px, 133px, none, 0px 98px 48px, 0px, inherit, inherit);
     }
     &-second {
-        @include FlexDesign(flex, center, center, row);
+        @include flex(row);
+        justify-content: center;
+        align-items: center;
+       
         gap: 10px;
+        
         &-card {
-            @include FlexDesign(flex, center, center, column);
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+      
             @include design( 336px, 347.7px, none, 24px 10px 10px, 24px, #787878, 16px);
             box-shadow: 1px 1px 2px white, 0 0 25px rgb(205, 205, 214), 0 0 5px darkblue;
             img {
@@ -59,17 +96,17 @@
                 text-align: center;
             }
             p {
-                @include design( 288px, 72px, none, 0px 0px 24px, none, #787878, 18px);
+                @include design( 288px, 72px, none, 0px 0px 24px, none,$textColor, 18px);
                 line-height: 1.5;
                 text-align: center;
             }
             button {
-                @include design( 164.95px, 46px, white, none, 6px 16px, #ff6f0f, 18px);
+                @include design( 164.95px, 46px, white, none, 6px 16px, $color, 18px);
                 text-align: center;
                 border-radius: 5px;
-                border: 1px solid #ff6f0f;
+                border: 1px solid $color;
                 &:hover {
-                    background-color: #ff6f0f;
+                    background-color: $color;
                     color: white;
                     transition-duration: 0.5s;
                     animation-timing-function: ease-in-out;
@@ -80,36 +117,36 @@
 }
 
 .mainform {
-    @include design(none, none, #787878, 48px 0px, 24px 0px, none, none);
-    @include FlexDesign(flex, center, center, row);
+    @include design(none, none, $textColor, 48px 0px, 24px 0px, none, none);
+    @include flex(row);
+    justify-content: center;
+    align-items: center;
+    // @include FlexDesign(flex, center, center, row);
     background-image: url("https://images.pexels.com/photos/2113709/pexels-photo-2113709.jpeg?cs=srgb&dl=pexels-daniel-edeke-2113709.jpg&fm=jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: 100% 100%;
-    // background-color: #787878;
-    // design( $width, $height, $bgcolor, $margin, $padding, $color, $fsize)
-    // opacity: 0.6;
-    // filter: alpha(opacity=60);
+ 
     &-left {
         @include design( 582px,
         229.03px,
         none,
         48px 0px 0px,
         0px 24px,
-        #787878,
+        $textColor,
         none);
         h2 {
-            @include FlexDesign(flex,
-            center,
-            center,
-            row);
+            @include flex(row);
+            justify-content: center;
+            align-items: center;
+
             @include design( 125.28px,
             32px,
             #fff0e6,
             0px 0px 16px,
             4px 16px,
-            #ff6f0f,
+            $color,
             16px);
             border-radius: 15px;
         }
@@ -138,7 +175,7 @@
         #ffffff,
         none,
         48px,
-        #787878,
+        $textColor,
         none);
         transition: all .3s;
         &-form-group {
@@ -154,7 +191,7 @@
             #f8f8f9,
             16px 0px 0px,
             0px 8px,
-            #787878,
+            $textColor,
             16px);
             border: 0px;
             border-radius: 5px;
@@ -174,12 +211,12 @@
                 outline: none;
             }
             &:hover {
-                border: 1px solid #dc3545;
+                border: 1px solid $color;
             }
         }
         &-label {
             
-            color: #787878, ;
+            color: $textColor, ;
             display: block;
             opacity: 1;
             transform: translateY(-2.3em);
@@ -194,7 +231,7 @@
             #f8f8f9,
             16px 0px 0px,
             0px 8px,
-            #787878,
+            $textColor,
             16px);
             input {
                 @include design( 145.34px,
@@ -208,8 +245,8 @@
                 transition-duration: 0.3s;
                 animation-timing-function: ease-in-out;
                 &:hover {
-                    color: #ff6f0f;
-                    border: 2px solid #ff6f0f;
+                    color: $color;
+                    border: 2px solid $color;
                 }
             }
             &-1 {
@@ -228,12 +265,12 @@
             white,
             16px 0px 0px,
             0px 0px,
-            #787878,
+            $textColor,
             16px);
             &-yapi {
                 @include design( 236.11px,
                 60px,
-                #ff6f0f,
+                $color,
                 none,
                 6px 48px,
                 #ffffff,
@@ -244,8 +281,8 @@
                 animation-timing-function: ease-in-out;
                 &:hover {
                     background-color: white;
-                    color: #ff6f0f;
-                    border: #ff6f0f 1px solid;
+                    color: $color;
+                    border: $color 1px solid;
                 }
             }
         }
