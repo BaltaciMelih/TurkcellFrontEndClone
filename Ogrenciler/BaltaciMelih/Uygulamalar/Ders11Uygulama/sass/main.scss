@@ -87,3 +87,14 @@ footer{
     background-color: $bgcolorprimary;
     color: white;
 }
+.projects{
+    color: #7e8996;
+    & h2{
+        font-size: 4rem;
+        font-weight: 200;
+    }
+    & .btn{
+        background-color: $bgcolorprimary;
+        &:hover{
+        background-color: #3fc1c9;
+        }}}     
