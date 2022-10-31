@@ -55,6 +55,9 @@ $container-padding: 0 7%;
     padding: 0 2.4rem 0.6rem 2.4rem;
     margin-bottom: 2.4rem;
 }
+.animate__animated.animate__slideInDown {
+    --animate-duration: 2s;
+}
 
 * {
     margin: 0;
@@ -462,7 +465,87 @@ body {
                 gap: 10rem;
 
             }
+            // şafak progress bar bölümü 
+            .progress {
+               margin-top: 1rem;
+               margin-bottom: 1rem;
+               width: 95%;
+               height: 20px;
+               border-radius: 5px;
+               border: 1px solid rgb(189, 113, 113);
+               overflow: hidden;
+               position: relative;
+            }
+            .progress span {
+               font-size: 15px;
+                height: 100%;
+                display: block;
+                width: 90%;
+                color: #fff;
+                line-height: 20px;
+                position: absolute;
+                text-align: end;
+                padding-right: 5px;
+                background-color: $btn-color;
+            }
+            // şafak progress bar bölümü bitiş
 
+            // şafak yazılan image button kodları
+            .imagebutton {
+               position: relative;
+               height: 270px;
+               width: 100%;
+                &feature-img {
+                    width: 100%;
+                    height: 270px;
+                    position: relative;
+                        }
+                     .covering {
+                        position: absolute;
+                        bottom: 100%;
+                        left: 0;
+                        right: 0;
+                        background-color: rgba(0, 0, 0, .5);
+                        overflow: hidden;
+                        width: 100%;
+                        height: 0;
+                        transition: .5s ease;
+                      .btn-saf {
+                        position: absolute;
+                        font-size: 1.5rem;
+                        height: 50px;
+                        width: 40%;
+                        background-color: rgba(0, 0, 0, .5);
+                        @include d-flex(center, center);
+                        text-align: center;
+                        border: 2px solid $btn-color;
+                        color: $btn-color;
+                        border-radius: 10px;
+                        display: none;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                            &:hover {
+                                background-color:$btn-color;
+                                color: white;
+                                }
+                        }
+                
+                            &:hover {
+                            .btn-saf {
+                            display: flex;
+                            z-index: 2;
+                            }
+                        }
+                         }
+                        }
+                          .imagebutton:hover .covering {
+                            bottom: 0;
+                            height: 100%;
+                          }
+            //şafak yazılan image buton kodları bitiş
 
             .feature-left {
                 @include d-flex(center, center);
@@ -476,10 +559,9 @@ body {
                 .causes-tag {
                     @include causes-head();
                 }
-
+                                //    buradaki coloru sil
                 span {
-                    font-size: 1.4rem;
-                    color: #787878;
+                    font-size: 1.4rem; 
                 }
 
                 .s-h2 {
@@ -903,96 +985,62 @@ body {
     grid-area: testimonial;
     padding: 1rem 7%;
     margin-top: 7.2rem;
-
-    .title {
-
-        text-align: center;
-
-        h4 {
-            font-size: 1.6rem;
-        }
-
-        h2 {
-            font-size: 4rem;
-            margin-bottom: 4.8rem;
-        }
-    }
-
-    .card-group {
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-areas: "card-1 card-2 card-3";
-        gap: 2rem;
-
-        .card-1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            grid-area: card-1;
-            gap: 2rem;
-
-            img {
-                border: 7px solid #ff6f0f;
+        // yeni gelen kodlar
+    carousel {
+            width: 100%;
+            margin-bottom: 25rem;
+            text-align: center;
+            font-family: Trebuchet MS;
+            display: block;
+            font-size: 2rem;
+    
+            page {
+                position: absolute;
+                top: 2em;
+                left: 0;
+                width: 100%;
+                transition: transform 0.5s;
+                transform: scale(0);
+               img{
+                border: 7px solid $btn-color;
                 border-radius: 50%;
-                align-items: center;
-            }
-
-            .card-description {
-                p {
-                    margin-bottom: 1.6rem;
+               }
+                .card-description{
+                    display: flex;
+                    margin-left: 38rem;
+                    width: 50%;
+                    flex-direction: column;
+                    justify-content:center;
+                    text-align: center;
+                    border: 2px solid $btn-color;
+                    border-radius: 10%;
+                    background-color: $btn-color;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    margin-bottom: 3rem;
                 }
-
-                background-color: #ff6f0f;
-                border-radius: 1rem;
-                padding: 1rem;
-                text-align: center;
+    
+                div {
+                    padding: 0, 5rem;
+                }
+    
+                label {
+                    cursor: pointer;
+                    background: orangered;
+                    color: white;
+                    padding: 1em 2em;
+                }
+            }
+    
+            @for $i from 1 through 3 {
+                #page#{$i}cb:checked~ {
+                    #page#{$i} {
+                        transform: scale(1);
+                    }
+                }
             }
         }
-
-        .card-2 {
-            grid-area: card-2;
-            @extend .card-1;
-            justify-content: flex-start;
-
-            img {
-                border: 7px solid #ff6f0f;
-                border-radius: 50%;
-            }
-
-            .card-description {
-                p {
-                    margin-bottom: 1.6rem;
-                }
-
-                background-color: #ff6f0f;
-                border-radius: 1rem;
-                padding: 1rem;
-                text-align: center;
-            }
-        }
-
-        .card-3 {
-            grid-area: card-3;
-            @extend .card-1;
-
-            img {
-                border: 7px solid #ff6f0f;
-                border-radius: 50%;
-            }
-
-            .card-description {
-                p {
-                    margin-bottom: 1.6rem;
-                }
-
-                background-color: #ff6f0f;
-                border-radius: 1rem;
-                padding: 1rem;
-                text-align: center;
-            }
-        }
-    }
+        // yeni gelen kodlar
 }
 
 footer {

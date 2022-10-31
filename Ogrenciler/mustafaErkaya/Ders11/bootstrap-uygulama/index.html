@@ -4,54 +4,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap app</title>
+    <title>Bootstrap App Template</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <!-- Buraya bakılacak -->
-
-    <nav class="navbar navbar-expand-lg bg-primary">
+         <!-- Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg bg-success bg-gradient bg-opacity-75">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Social Network</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand ps-5 text-light" href="#">Social Network</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
-                    <li class="nav-item">
+            <div class="collapse navbar-collapse pe-5 justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Discover</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#">New Friends</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Join Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="home container-fluid bg-black"style="background-image: url(manzara.jpg); background-size: cover; height:950px;">
+             <!-- Discover the colorful world -->
+    <section class="container-fluid bg-black"style="background-image: url(manzara.jpg); background-size: cover; min-height: 100vh; ">
     <div class="container">
             <div class="row pt-5">
-                <div class="col-md-8 my-3 ">
-                  <h1 class="display-2 text-white mb-5">
-                    <span class="fw-semibold text-warning">
-                      Discover
-                    </span> the colorful world
-                  </h1>
-                    <ul class="list-group list-unstyled text-secondary">
-                        <li class="lh-lg"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nostrum.</li>
-                        <li class="lh-lg"><i class="bi bi-chevron-right me-3"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nesciunt?</li>
-                        <li class="lh-lg"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, dicta?</li>
+                <div class="col-md-8 my-5 py-5"><h1 class="display-2 text-white mb-5"><span class="fw-semibold text-warning">Discover</span> the colorful world</h1>
+                    <ul class="list-group list-unstyled text-white">
+                        <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nostrum.</li>
+                        <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nesciunt?</li>
+                        <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, dicta?</li>
                     </ul>
-                    </div>
-                    <div class="col-md-4 my-3">
-                        <form class="bg-info p-2">
+                </div>
+                    <div class="col-md-4 my-5 py-5">
+                        <form class="bg-info p-2 rounded-4">
                             <h4 class="text-center mt-3 text-white">Join Us</h4>
                             <p class="text-center lead text-white">Please fill out the form</p>
                             <div class="form-row row g-4">
@@ -67,80 +65,297 @@
                                 <div class="form-group col-md-12">
                                     <input type="number" class="form-control"placeholder="Phone" required >
                                 </div>
-                                <button type="submit" class="col-md-10 mx-auto btn btn-outline-light ">Submit</button>
+                                <div >
+                                <button type="submit" class="col-12 mx-auto btn btn-outline-light ">Submit</button>
+                              </div>
                             </div> 
                         </form>
                     </div>
                 </div>
-                
-        </div>
+            </div>
     </div>
     </section>
-
+    <!--Discover-->
     <section class="discover container-fluid bg-secondary">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col text-center text-light">
-            <h2 class="display-4">Discover</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi doloribus quas accusantium omnis ea, quod possimus repudiandae asperiores dolor ex fugiat iste. Aspernatur dolorum magni obcaecati numquam quas necessitatibus labore eveniet impedit iusto, laboriosam facilis odit voluptatum ipsam!</p>
-            <button class="btn btn-outline-light">Find Out More</button>
-          </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col text-center text-light">
+                    <h2 class="display-4">Discover</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi doloribus quas
+                        accusantium omnis ea, quod possimus repudiandae asperiores dolor ex fugiat iste. Aspernatur dolorum
+                        magni obcaecati numquam quas necessitatibus labore eveniet impedit iusto, laboriosam facilis odit
+                        voluptatum ipsam!</p>
+                    <button class="btn btn-outline-light">Find Out More</button>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
+
+                <!-- carousel -->
+    <section class="container-fluid py-5 bg-black">
+      <div class="col-10 mx-auto">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./carousel/girl-1822525.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./carousel/tiger.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./carousel/cat.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>            
+                <!-- Expolore New Places -->
     <section class="container">
-      <div class="row py-5 ">
-        <div class="col-md-6">
-          <img class="img-fluid rounded-circle shadow-lg bg-light" src="new-places.jpg" alt="">
+        <div class="row py-5 ">
+            <div class="col-md-6">
+                <img class="img-fluid rounded-circle shadow-lg bg-light" src="new-places.jpg" alt="">
+            </div>
+            <div class="col-md-6 text-secondary pt-4">
+                <h3 class="fw-normal mb-2">Expolore New Places</h3>
+                <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque rem amet
+                    explicabo vitae eligendi exercitationem, ipsa numquam deserunt esse odit fugiat. Porro nulla odio,
+                    adipisci rem nesciunt beatae consectetur!</p>
+                <ul class="list-group list-unstyled text-secondary">
+                    <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Assumenda, nostrum.</li>
+                    <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Dolor, nesciunt?</li>
+                    <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Neque, dicta?</li>
+                </ul>
+            </div>
+    
         </div>
-        <div class="col-md-6 text-secondary pt-4">
-          <h3 class="fw-normal mb-2">Expolore New Places</h3>
-          <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque rem amet explicabo vitae eligendi exercitationem, ipsa numquam deserunt esse odit fugiat. Porro nulla odio, adipisci rem nesciunt beatae consectetur!</p>
-          <ul class="list-group list-unstyled text-secondary">
-            <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nostrum.</li>
-            <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nesciunt?</li>
-            <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, dicta?</li>
-        </ul>
-        </div>
-
       </div>
     </section>
-
+                     <!-- Friends -->
     <section class="friends container-fluid bg-primary bg-opacity-75">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col text-center text-light">
-            <h2 class="display-4">Friends</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi doloribus quas accusantium omnis ea, quod possimus repudiandae asperiores dolor ex fugiat iste. Aspernatur dolorum magni obcaecati numquam quas necessitatibus labore eveniet impedit iusto, laboriosam facilis odit voluptatum ipsam!</p>
-            <button class="btn btn-outline-light">Find Out More</button>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col text-center text-light">
+                    <h2 class="display-4">Friends</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi doloribus quas
+                        accusantium omnis ea, quod possimus repudiandae asperiores dolor ex fugiat iste. Aspernatur dolorum
+                        magni obcaecati numquam quas necessitatibus labore eveniet impedit iusto, laboriosam facilis odit
+                        voluptatum ipsam!</p>
+                    <button class="btn btn-outline-light">Find Out More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cards -->
+    <section class="card-template container-fluid">
+      <div class="row g-4 mb-5 ">
+        <h1 class="display-5 text-center mt-5 text-info">Card Template</h1>
+        <div class="card col-lg-2 col-md-6  " >
+          <img src="./cards/card-1.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body bg-info">
+            <h5 class="card-title">Woman</h5>
+            <p class="card-text ">It’s certainly true that men and women handle negative emotional states differently. When things aren’t going well in a woman’s life, she tends to interpret it as depression. When a man doesn’t feel good about himself, he tends to express it as anger.</p>
+            <a href="#" class="btn btn-primary  ">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card col-lg-2 col-md-6 " >
+          <img src="./cards/card-2.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body bg-warning">
+            <h5 class="card-title">Love For Life</h5>
+            <p class="card-text">Not least, the spirit of love demands that we acknowledge how much we ourselves may one day stand in need of this form of love-as-forgiveness. We cannot rely on always having justice on our side, in always being able to make a claim on others based on our own unsullied righteousness and goodness</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card col-lg-4 col-md-12" >
+          <img src="./cards/card-3.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body bg-black  text-white-50 ">
+            <h5 class="card-title display-6 text-warning opacity-50">Charm</h5>
+            <p class="card-text">Eyes are organs of the visual system. They provide living organisms with vision, the ability to receive and process visual detail, as well as enabling several photo response functions that are independent of vision.</p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col-lg-2 col-md-6   " >
+          <img src="./cards/card-4.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body bg-warning">
+            <h5 class="card-title">Concert</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card col-lg-2 col-md-6  " >
+          <img src="./cards/card-5.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body bg-info ">
+            <h5 class="card-title">B-W Man</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
     </section>
-
+                   <!-- Find New Friends -->
     <section class="container-fluid bg-dark">
-      <div class="row p-5 ">
-
-        <div class="col-md-6 text-secondary pt-4">
-          <h3 class="fw-normal mb-2">Find New Friends</h3>
-          <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque rem amet explicabo vitae eligendi exercitationem, ipsa numquam deserunt esse odit fugiat. Porro nulla odio, adipisci rem nesciunt beatae consectetur!</p>
-          <ul class="list-group list-unstyled text-secondary">
-            <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nostrum.</li>
-            <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nesciunt?</li>
-            <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, dicta?</li>
-        </ul>
+        <div class="row p-5 ">
+            <div class="col-md-6 text-secondary pt-4">
+                <h3 class="fw-normal mb-2">Find New Friends</h3>
+                <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque rem amet
+                    explicabo vitae eligendi exercitationem, ipsa numquam deserunt esse odit fugiat. Porro nulla odio,
+                    adipisci rem nesciunt beatae consectetur!</p>
+                <ul class="list-group list-unstyled text-secondary">
+                    <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Assumenda, nostrum.</li>
+                    <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Dolor, nesciunt?</li>
+                    <li class="lh-lg mb-5"><i class="bi bi-chevron-right me-3"></i>Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Neque, dicta?</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid rounded-circle " src="new-friends.jpg" alt="">
+            </div>
         </div>
-        <div class="col-md-6">
-          <img class="img-fluid rounded-circle " src="new-friends.jpg" alt="">
-        </div>
-        
-
-      </div>
     </section>
 
+    <!-- Alerts -->
+    <section class="alerts container-fluid py-4">
+      <div class="accordion accordion-flush row px-5   " id="accordionFlushExample">
+        <div class="accordion-item col-lg-4 ">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <h5 class="display-6 ">Rıza Yılmaz </h5>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body fs-5">I'm <code> Electrical Electronics Engineer </code></div>
+          </div>
+        </div>
+        <div class="accordion-item col-lg-4">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed   type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <h5 class="display-6">Mustafa Erkaya </h5>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body fs-5">I'm <code> Mechatronics Engineer</code></div>
+          </div>
+        </div>
+        <div class="accordion-item col-lg-4">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <h5 class="display-6">Şafak Şenol </h5>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body fs-5">I'm <code> Electrical Electronics Engineer </code></div>
+          </div>
+        </div>
+      </div>
+    </section>
+                                <!-- Join us -->
+    <section class="container-fluid bg-info bg-gradient">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <form class=" mt-5 mb-5">
+                    <h2 class="text-light mb-3">Join Us</h2>
+                    <div class="form-row row g-4">
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-lg" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="e-mail" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="class="form-group col-md-12"">
+                            <input type="password" class="form-control" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <textarea class="w-100 mb-3 rounded-4 " rows="4" placeholder="Enter message"></textarea>
+                          <button type="submit" class="col-md-12 mx-auto btn btn-outline-light ">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+              <!-- Collapse -->
+    <section class="collapse-app container-fluid py-5">
+      <div class="row my-3 ">
+        <div class="col  ">
+          <p class="text-center">
+            <div class="row ">
+              <div class="col-md-4 ">
+                <a class="btn btn-outline-warning w-100 mb-3 fs-5" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Woman</a>
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-outline-warning w-100 mb-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Man</button>
+              </div>
+              <div class="col-md-4">
+               <button class="btn btn-outline-warning w-100 mb-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Both Of Them</button>
+              </div>
+        </div>
+          </p>
+        </div>
+      </div>
+        <div class="row ">
+          <div class="col-md-6">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body  ">
+                <img src="./collapse/matris-woman.jpg" class="img-fluid h-100" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                <img src="./collapse/matris-man.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>          
+              <!-- Social Network -->
+    <section class="container-fluid bg-dark bg-gradient  ">
+        <div class="row pt-3">
+        <h3 class="text-center text-warning display-6">Designed By</h3>
+        <div class="col-md-4 pt-3 mb-5">
+            <h4 class="text-center text-warning mb-3">Mustafa Erkaya</h4>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3 " href="https://tr.linkedin.com/">Linkedin</a>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3" href="https://github.com/">Github</a>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3" href="https://twitter.com/">Twitter</a>
+        </div>
 
-
+        <div class="col-md-4 pt-3 mb-5">
+            <h4 class="text-center text-warning mb-3">Şafak Şenol</h4>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3" href="https://tr.linkedin.com/">Linkedin</a>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3" href="https://github.com/">Github</a>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3" href="https://twitter.com/">Twitter</a>
+        </div>
+        <div class="col-md-4 pt-3 mb-5">
+            <h4 class="text-center text-warning mb-3">Rıza Yılmaz</h4>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3" href="https://tr.linkedin.com/">Linkedin</a>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3" href="https://github.com/">Github</a>
+            <a class="nav-link text-center text-white bg-primary mt-1 rounded-3" href="https://twitter.com/">Twitter</a>
+        </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>

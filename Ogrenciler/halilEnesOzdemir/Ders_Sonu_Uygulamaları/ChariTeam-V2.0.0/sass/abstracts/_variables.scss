@@ -1,0 +1,21 @@
+$color-primary: #ff6f0f;
+$color-primary-light: lighten($color-primary, 20%);
+$color-primary-dark: darken($color-primary, 20%);
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-grey-light: #f8f8f9;
+$color-grey-light-2: #e9ecef;
+$color-grey-light-3: #ced4da;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: lighten(#777, 30%);
+
+$color-dark: #011316c6;
+
+$color-white: #fff;
+$color-black: #000;
+
+$font-primary: 'Inter', sans-serif;
+$font-display: 'Saira', sans-serif;
