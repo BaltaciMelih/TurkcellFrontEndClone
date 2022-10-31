@@ -4,10 +4,16 @@ $bg-color: #7a7c9d;
 $btn-color: #ff6f0f;
 $font-color: #fff;
 $container-padding: 0 7%;
-@mixin d-flex($just, $align) {
+
+@mixin d-flex($just, $align, $gp) {
   display: flex;
   justify-content: $just;
   align-items: $align;
+  gap: $gp;
+}
+@mixin fsc($fs, $fc){
+  font-size: $fs;
+  color:$fc;
 }
 .animate__animated.animate__slideInDown {
   --animate-duration: 2s;
@@ -87,8 +93,7 @@ span {
   margin-bottom: 4.8rem;
 }
 h4 {
-  font-size: 1.6rem;
-  color: $btn-color;
+  @include fsc(1.6rem, $btn-color);
   padding: 0.4rem 1.6rem;
   margin-bottom: 1.6rem;
 }
@@ -122,12 +127,11 @@ body {
     grid-area: header;
     .container {
       .header-top {
-        @include d-flex(space-between, center);
+        @include d-flex(space-between, center, 0rem);
         padding: 1rem 7%;
         border-bottom: 2px solid #3f3f3f;
         .h-t-left {
-          @include d-flex(flex-start, center);
-          gap: 2rem;
+          @include d-flex(flex-start, center, 2rem);
           color: #ccc;
           span{
             font-size: 1.3rem;
@@ -136,18 +140,15 @@ body {
             font-size: 1.4rem;
           }}
         .h-t-right {
-          @include d-flex(flex-end, center);
-          gap: 1rem;
+          @include d-flex(flex-end, center, 1rem);
           span{
-            color: #ccc;
-            font-size: 1.4rem;
+            @include fsc(1.4rem, #ccc);
           }
           .icons {
             display: flex;
             gap: 1rem;
             i{
-              color: #ccc;
-              font-size: 1.8rem;
+              @include fsc(1.8rem, #ccc);
               &:hover{
                 color: #ff6f0f;
                 scale: 1.2; 
@@ -161,32 +162,27 @@ body {
         .logo {
           grid-area: logo;
           h2 {
-            font-size: 3rem;
-            color: $font-color;
+            @include fsc(3rem, $font-color);
             cursor: pointer;
           }
           .h2 {
-            color: $btn-color;
-            font-size: 3rem;
+            @include fsc(3rem, $btn-color);
           }}
          .navbar {
           margin-left: 2rem;
            grid-area: navbar;
            padding-right: 3rem;
            ul {
-            @include d-flex(flex-end, center);
-             gap: 2rem;
+            @include d-flex(flex-end, center, 2rem);
              .dropdown-element{
               position: relative;
               i{
-                color: white;
-                font-size: 16px;
+                @include fsc(1.6rem, $font-color);
               }
               .dropdown{
                 display: none;
                 position: absolute;
-                top: 2rem;
-                width: 11rem;
+                top: 2rem; width: 11rem;
                 background-color: #f9f9f9;
                 border: 1px;
                 border-radius: 0.5rem;
@@ -218,10 +214,7 @@ body {
           font-size: 1.6rem;
           width: 50%;
           min-width: 16rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: .5rem;
+          @include d-flex(center, center, .5rem);
           margin: 0 0 0 auto;
           grid-area: btn;
           i {
@@ -250,23 +243,21 @@ body {
         top: 90%; right: 3rem;
         font-size: 3rem;
         padding: .5rem 1rem;
-        position: fixed; 
+        position: fixed;
+        a{
+          z-index: 10;
+        }
       }
       .container-home {
         grid-area: c-home;
-        display: flex;
+        @include d-flex(center, center, 2rem);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        gap: 2rem;
         .h1 {
-          color: $font-color;
-          font-size: 5.6rem;
+          @include fsc(5.6rem, $font-color);
         }
         .p {
-          color: #ccc;
-          font-size: 2rem;
+          @include fsc(2rem, #ccc);
         }
         .btn {
           @include btn();
@@ -280,8 +271,7 @@ body {
     grid-area: about;
     margin: 3rem 0;
     .container-about {
-      @include d-flex(center, center);
-      gap: 7rem;
+      @include d-flex(center, center, 7rem);
       padding: 0 7%;
       flex-wrap: wrap;
       .about-left {
@@ -290,16 +280,13 @@ body {
         position: relative;
         padding: 5rem 2.4rem;
         img {
-          width: 100%;
-          height: auto;
+          width: 100%; height: auto;
         }
         .img-top {
           position: absolute;
-          width: 200px;
-          height: 200px;
+          width: 200px; height: 200px;
           border: 1rem solid #fff;
-          left: 75%;
-          top: 0;
+          left: 75%; top: 0;
         }}
       .about-right {
         width: 45%;
@@ -335,8 +322,7 @@ body {
               margin-left: 1rem;
             }}}
         .p-1 {
-          font-size: 1.6rem;
-          color: rgb(117, 113, 113);
+          @include fsc(1.6rem, rgb(117, 113, 113));
           margin-bottom: 4.8rem;
         }}}}
   .feature {
@@ -346,8 +332,7 @@ body {
       width: 100%;
       text-align: center;      
       h4 {
-        font-size: 1.6rem;
-        color: $btn-color;
+        @include fsc(1.6rem, $btn-color);
         padding: 0.4rem 1.6rem;
         margin-bottom: 1.6rem;
       }
@@ -358,26 +343,21 @@ body {
         margin-bottom: 4.8rem;
       }}
     .container-feature {
-      @include d-flex(center, center);
-      gap: 2rem;
+      @include d-flex(center, center, 2rem);
       padding: 0 7%;
       flex-wrap: wrap;
       .progress {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        width: 95%;
-        height: 20px;
+        margin: 1rem 0;
+        width: 95%; height: 20px;
         border-radius: 5px;
         border: 1px solid rgb(189, 113, 113);
         overflow: hidden;
         position: relative;
      }
      .progress span {
-        font-size: 15px;
-         height: 100%;
+      @include fsc(1.5rem, #fff);
+         height: 100%; width: 90%;
          display: block;
-         width: 90%;
-         color: #fff;
          line-height: 20px;
          position: absolute;
          text-align: end;
@@ -386,37 +366,30 @@ body {
      }
       .imagebutton {
         position: relative;
-        height: 270px;
-        width: 100%;
+        height: 270px; width: 100%;
          &feature-img {
-             width: 100%;
-             height: 270px;
+             width: 100%; height: 270px;
              position: relative;
                  }
               .covering {
                  position: absolute;
                  bottom: 100%;
-                 left: 0;
-                 right: 0;
+                 left: 0; right: 0;
                  background-color: rgba(0, 0, 0, .5);
                  overflow: hidden;
-                 width: 100%;
-                 height: 0;
+                 width: 100%; height: 0;
                  transition: .5s ease;
                .btn-saf {
                  position: absolute;
-                 font-size: 1.5rem;
-                 height: 50px;
-                 width: 40%;
+                 @include fsc(1.5rem, $btn-color);
+                 height: 50px; width: 40%;
                  background-color: rgba(0, 0, 0, .5);
-                 @include d-flex(center, center);
+                 @include d-flex(center, center, 0rem);
                  text-align: center;
                  border: 2px solid $btn-color;
-                 color: $btn-color;
                  border-radius: 10px;
                  display: none;
-                 top: 50%;
-                 left: 50%;
+                 top: 50%; left: 50%;
                  -webkit-transform: translate(-50%, -50%);
                  -ms-transform: translate(-50%, -50%);
                  transform: translate(-50%, -50%);
@@ -434,11 +407,10 @@ body {
                      height: 100%;
                    }
       .progress-text {  
-        @include d-flex(space-between, center );
-        gap: 10rem;
+        @include d-flex(space-between, center, 10rem);
       }
       .feature-left {
-        @include d-flex(center, center );
+        @include d-flex(center, center, 0rem);
         flex-direction: column;
         padding: 0 1.5rem 1.5rem 1.5rem;
         border-top: 0.5rem solid $btn-color;
@@ -467,7 +439,7 @@ body {
           width: 100%;
         }}}
     .feature-center {
-      @include d-flex(center, center );
+      @include d-flex(center, center, 0rem);
         flex-direction: column;
         padding: 0 1.5rem 1.5rem 1.5rem;
         border-top: 0.5rem solid $btn-color;
@@ -478,8 +450,7 @@ body {
         @include causes-head();
       }
       span{
-        font-size: 1.4rem;
-        color: #787878;
+        @include fsc(1.4rem, #787878);
       }
       .s-h2 {
         font-size: 2rem;
@@ -500,7 +471,7 @@ body {
       padding: 0 1.5rem 1.5rem 1.5rem;
       border-top: 0.5rem solid $btn-color;
       border-radius: 0.5rem;
-      @include d-flex(center, center );
+      @include d-flex(center, center, 0rem);
         flex-direction: column;
         width: 30%;
       min-width: 40rem;
@@ -508,8 +479,7 @@ body {
         @include causes-head();
       }
       span{
-        font-size: 1.4rem;
-        color: #787878;
+        @include fsc(1.4rem, #787878);
       }
       .s-h2 {
         font-size: 2rem;
@@ -532,8 +502,7 @@ body {
   margin: 4rem 0;
   .whatwedo-start {
     h4 {
-      font-size: 1.6rem;
-      color: $btn-color;
+      @include fsc(1.6rem, $btn-color);
       padding: 0.4rem 1.6rem;
       margin-bottom: 1.6rem;
       text-align: center;
@@ -544,16 +513,12 @@ body {
       text-align: center;
     }}
   .container-whatwedo {
-    @include d-flex(center, center);
-    gap: 2rem;
+    @include d-flex(center, center, 2rem);
     padding: 0 7%;
     flex-wrap: wrap;
     .whatwedo-left {
-      display: flex;
+      @include d-flex(center,center, 2rem);
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
       padding: 3rem 0;
       width: 30%;
       min-width: 40rem;
@@ -561,7 +526,6 @@ body {
       border: 1px solid #fff;
       .what-img {
         width: 25%;
-        height: auto;
       }
       .s-h2 {
         font-size: 3rem;
@@ -581,67 +545,11 @@ body {
           margin-left: 1rem;
         }}}
     .whatwedo-center {
-      border: 1px solid #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      width: 30%;
-      min-width: 40rem;
-      padding: 3rem 0;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-      .what-img {
-        width: 25%;
-      }
-      .s-h2 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-      }
-      .p-24 {
-        padding: 2.4rem;
-        font-size: 1.7rem;
-        text-align: center;
-      }
-      .btn-2 {
-        @include btn-2();
-        font-size: 1.6rem;
-        i {
-          font-size: 1.6rem;
-          margin-left: 1rem;
-        }}}
+        @extend .whatwedo-left;
+    }
     .whatwedo-right {
-      border: 1px solid #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      width: 30%;
-      min-width: 40rem;
-      padding: 3rem 0;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-      .what-img {
-        width: 25%;
-      }
-      .s-h2 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-      }
-      .p-24 {
-        padding: 2.4rem;
-        font-size: 1.7rem;
-        text-align: center;
-      }
-      .btn-2 {
-        @include btn-2();
-        font-size: 1.6rem;
-        i {
-          font-size: 1.6rem;
-          margin-left: 1rem;
-        }}}}}
+      @extend .whatwedo-left;
+      }}}
 .donatenow {
   background-image: url(../image/carousel-2.jpg);
   background-size: cover;
@@ -655,11 +563,10 @@ body {
     padding: 0 7%;
   }
   .container-donatenow {
-    @include d-flex(center, center );
+    @include d-flex(center, center, 5rem );
     height: 100%;
     flex-wrap: wrap;
     padding: 2.5rem 0;
-    gap: 5rem;
     .donatenow-left {
       width: 45%;
       min-width: 45rem;
@@ -668,21 +575,18 @@ body {
         min-width: 15rem;
         background-color: #ccc;
         border-radius: 10rem;
-        font-size: 1.6rem;
-        color: $btn-color;
+        @include fsc(1.6rem, $btn-color);
         padding: 0.7rem 0;
         margin-bottom: 1rem;
         text-align: center;
       }
       .s-h2 {
-        color: #fff;
-        font-size: 4rem;
+        @include fsc(4rem, #fff);
         margin-bottom: 1rem;
       }
       .p-24 {
-        color: #fff;
+        @include fsc(1.7rem, #fff);
         padding: 1rem;
-        font-size: 1.7rem;
       }}
     .donatenow-right {
       min-width: 45rem;
@@ -690,8 +594,7 @@ body {
       .form-grant {
         .subscribe {
           border: 1px solid #fff;
-          height: 6rem;
-          width: 100%;
+          height: 6rem; width: 100%;
           border-radius: 7px;
           margin-bottom: 1.5rem;
           &:hover {
@@ -702,8 +605,7 @@ body {
         .btn3 {
           background-color: #ccc;
           gap: 2rem;
-          height: 6rem;
-          width: 32.5%;
+          height: 6rem; width: 32.5%;
           font-size: 2rem;
           margin-bottom: 1.5rem;
           &:hover {
@@ -747,11 +649,12 @@ body {
                 font-weight:400;
             }
             img{
-                width: 100%; 
-                height: auto;
+                width: 100%; height: auto;
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
-            }}}}
+            }}
+            .card-2, .card-3, .card-4 { @extend .card; }
+          }}
   .testimonial{
     grid-area: testimonial;
     padding: 2rem 7%;
@@ -766,8 +669,7 @@ body {
       font-size: 2rem;
       page {
           position: absolute;
-          top: 2em;
-          left: 0;
+          top: 2em; left: 0;
           width: 100%;
           transition: transform 0.5s;
           transform: scale(0);
@@ -776,16 +678,14 @@ body {
           border-radius: 50%;
          }
           .card-description{
-              display: flex;
+            @include d-flex(center, center, 0rem);
               width: 50%;
               flex-direction: column;
-              justify-content:center;
               text-align: center;
               border: 2px solid $btn-color;
               border-radius: 10%;
               background-color: $btn-color;
-              color: #fff;
-              font-size: 1.5rem;
+              @include fsc(1.5rem, #fff);
               margin: 3rem auto;
           }
           div {
@@ -816,11 +716,9 @@ body {
         .box-1{
             h2{
                 margin-bottom: 2.4rem;
-                font-size: 4rem;
-                color:#ff6f0f;
+                @include fsc(4rem, #ff6f0f);
                 span{
-                    font-size: 4rem;
-                    color: #fff;
+                  @include fsc(4rem, #fff);
                 }}
             p{
                 color: #ccc;
@@ -837,8 +735,7 @@ body {
             }}
         .box-2{
             h3{
-                font-size: 2rem;
-                color: #fff;
+              @include fsc(2rem, #fff);
                 margin-bottom: 2.4rem;
             }
             ul{
@@ -851,29 +748,25 @@ body {
                     }}}}
         .box-3{
             h3{
-                font-size: 2rem;
-                color: #fff;
+              @include fsc(2rem, #fff);
                 margin-bottom: 2.4rem;
             }
             ul{
-                font-size: 1.6rem;
-                color: #ccc;
+              @include fsc(1.6rem, #ccc);
                 li{
                     padding: 0.3rem;
                 }}}
         .box-4{
             h3{
-                font-size: 2rem;
-                color: #fff;
+              @include fsc(2rem, #fff);
                 margin-bottom: 2.4rem;
             }
             p{
-                font-size: 1.6rem;
+              @include fsc(1.6rem, #ccc);
                 margin-bottom: 1.6rem;
-                color: #ccc;
             }
             .footer-button{
-                @include d-flex(space-between, center );
+                @include d-flex(space-between, center, 0rem);
                 border: 1px solid #ccc;
                 border-radius: 0.5rem;
                 background-color: transparent;
@@ -927,7 +820,7 @@ body {
       .navbar{
           display: none;
            .list-group {
-             @include d-flex(center, center );
+             @include d-flex(center, center, 0rem);
              flex-direction: column;
            }}
       .fa-bars{
@@ -948,28 +841,14 @@ body {
         width: 100%;
       }}
     .whatwedo{
-      .whatwedo-right{
-        width: 100%;
-        min-width: 50%;
-      }
       .whatwedo-left{
-        width: 100%;
+        width: 85% !important;
       }
-      .whatwedo-center{
-        width: 100%;
-      } }
+    }
     .team-members-section{
       .card-group{
         grid-template-columns: repeat(1, 1fr);
         column-gap: 2rem;
-      }}
-    .testimonial{
-      .card-group{
-        grid-template-areas: "card-1"
-        "card-2"
-        "card-3"; 
-        grid-template-columns: 1fr;
-        row-gap: 1rem;
       }}
     .footer {
       .footer-top{
