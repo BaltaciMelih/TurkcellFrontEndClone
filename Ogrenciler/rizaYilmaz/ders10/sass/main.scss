@@ -652,7 +652,9 @@ body {
                 width: 100%; height: auto;
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
-            }}
+            }
+            
+          }
             .card-2, .card-3, .card-4 { @extend .card; }
           }}
   .testimonial{
@@ -792,6 +794,26 @@ body {
             p{
                 color: #ccc; 
             }}}
+            .upbuton{
+              background-color: $btn-color;
+              border-radius: 10px;
+              width: 48px; height: 48px;
+              position: absolute;
+              bottom: 25px; right: 50px;
+              position: fixed;
+              transition: all 0.4s ease-in-out;
+              & span {
+                @include d-flex(center,center,0);
+                height: 100%;
+                color:white;
+                
+              }
+              &:hover { 
+                background-color: transparent;
+                border: 1px solid $btn-color;
+                & span {
+                  color: $btn-color;
+                }}}
   @media only screen and(max-width: 992px){
     .team-members-section{
       .card-group{

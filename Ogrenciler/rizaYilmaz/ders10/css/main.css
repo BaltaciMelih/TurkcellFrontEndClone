@@ -818,6 +818,29 @@ footer {
     footer .box-5 p {
       color: #ccc; }
 
+.upbuton {
+  background-color: #ff6f0f;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 25px;
+  right: 50px;
+  position: fixed;
+  transition: all 0.4s ease-in-out; }
+  .upbuton span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    height: 100%;
+    color: white; }
+  .upbuton:hover {
+    background-color: transparent;
+    border: 1px solid #ff6f0f; }
+    .upbuton:hover span {
+      color: #ff6f0f; }
+
 @media only screen and (max-width: 992px) {
   .team-members-section .card-group {
     grid-template-columns: repeat(2, 1fr);
