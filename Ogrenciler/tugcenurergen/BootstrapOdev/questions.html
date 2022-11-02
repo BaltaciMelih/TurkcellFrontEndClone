@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+      <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img class="nav-img" src="./images/logo.jpg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-bg-secondary"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >HomePage</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./questions.html"
+                >Frequently Asked Questions</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search" />
+            <button class="btn btn-outline-success me-5" type="submit">
+              Search
+            </button>
+          </form>
+          <button type="button" class="btn btn-dark">Login</button>
+        <button type="button" class="btn btn-secondary">Sign in</button>
+        </div>
+        <button type="button" class="btn btn-warning text-light btn-lg me-5">
+          <i class="fa-solid fa-cart-shopping text-light"></i>
+          Cart</button>
+        
+      </div>
+    </nav>
+  <nav class="navbar navbar-dark bg-secondary d-flex flex-wrap justify-content-around">
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Man
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Woman
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Child
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Office
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Home
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row mt-5 ">
+    <div class="col col-10 m-auto">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css"
+        rel="stylesheet" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link text-dark" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              <span class="badge me-4 float-left rounded-pill text-bg-secondary text-light">Answered</span>
+              <h3 class="ms-4">Soru</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, consequuntur. Quos rerum placeat
+                excepturi explicabo dolorum officia. Sit aperiam quaerat rem sapiente</p>
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show">
+            <div class="card-body ms-5 p-5">
+              <span class="badge me-4 float-left rounded-pill text-bg-warning">Checked</span>
+
+              <h4>Cevap</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum quisquam tempora necessitatibus
+                fuga in iusto voluptate tenetur ullam provident.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-5">
+          <div class="card-header">
+            <a class="collapsed card-link text-dark" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseTwo">
+              <span class="badge me-4 float-left rounded-pill text-bg-secondary text-light">Answered</span>
+
+              <h3>Soru</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, consequuntur. Quos rerum placeat
+                excepturi explicabo dolorum officia. Sit aperiam quaerat rem sapiente</p>
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse">
+            <div class="card-body ms-5 p-5">
+              <span class="badge me-4 float-left rounded-pill text-bg-warning">Checked</span>
+
+              <h4>Cevap</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum quisquam tempora necessitatibus
+                fuga in iusto voluptate tenetur ullam provident.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-5">
+          <div class="card-header">
+            <a class="collapsed card-link text-dark" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseThree">
+              <span class="badge me-4 float-left rounded-pill text-bg-secondary text-light">Answered</span>
+
+              <h3>Soru</h3>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, consequuntur. Quos rerum placeat
+                excepturi explicabo dolorum officia. Sit aperiam quaerat rem sapiente</p>
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse">
+            <div class="card-body ms-5 p-5">
+              <span class="badge me-4 float-left rounded-pill text-bg-warning">Checked</span>
+
+              <h4>Cevap</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum quisquam tempora necessitatibus
+                fuga in iusto voluptate tenetur ullam provident.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-5">
+          <div class="card-header">
+            <a class="card-link  text-dark" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+              <span class="badge me-4 float-left rounded-pill text-bg-secondary text-light">Answered</span>
+
+              <h3>Soru</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, consequuntur. Quos rerum placeat
+                excepturi explicabo dolorum officia. Sit aperiam quaerat rem sapiente</p>
+            </a>
+          </div>
+          <div id="collapseFour" class="collapse show ">
+            <div class="card-body ms-5 p-5">
+              <span class="badge me-4 float-left rounded-pill text-bg-warning">Checked</span>
+
+              <h4>Cevap</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum quisquam tempora necessitatibus
+                fuga in iusto voluptate tenetur ullam provident.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+     <div class="footer row bg-dark gap-5 pt-5 mt-5">
+      <div class="col col-lg-8 m-auto">
+        <div class="row text-secondary">
+          <div class="col col-lg-3 text-center">
+            <h3>Shoppinol</h3>
+            <br />
+            <ul>
+              <li>
+                <a href="./aboutus.html">Who are we?</a>
+              </li>
+              <li class="">lorem</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>contact</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+          </div>
+          <div class="col col-lg-3 text-center">
+            <h3>About Us</h3>
+            <br />
+            <ul>
+              <li>
+                <a href="./aboutus.html">About Us</a>
+              </li>
+              <li>lorem</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>contact</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+          </div>
+          <div class="col col-lg-3 text-center">
+            <h3>Campains</h3>
+            <br />
+            <ul>
+              <li>
+                <a href="./aboutus.html">Campains</a>
+              </li>
+              <li>lorem</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>contact</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+          </div>
+          <div class="col col-lg-3 text-center">
+            <h3>Help</h3>
+            <br />
+            <ul>
+              <li>
+                <a href="./aboutus.html">Help</a>
+              </li>
+              <li>lorem</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>contact</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col p-5 text-center col-xl-6 col-12 col-lg-6 col-sm-12">
+              <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae nostrum expedita quidem illum nisi omnis! Adipisci, dolores! Maxime, voluptatibus repudiandae. Dolores tempore laborum quo voluptatum fugiat eos! Tempora, quae.</p>
+              <a href="https://www.instagram.com"><i class="fa-brands fa-instagram text-light"></i></a>
+              <a href="https://www.facebook.com"><i class="fa-brands fa-facebook text-light"></i></a>
+              <a href="https://www.twitter.com"><i class="fa-brands fa-twitter text-light"></i></a>
+              <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin text-light"></i></a>
+            </div>
+
+            <div class="col  p-5 col-xl-6 col-12 col-lg-6 col-sm-12">
+               <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              
+             
+            
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
