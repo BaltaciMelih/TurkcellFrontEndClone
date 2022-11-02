@@ -126,11 +126,11 @@ console.log("Javascript Giriş");
 
 // String Metodları
 
-let value;
-const firstName = "Melih";
-const lastName = "Baltacı";
-const department = "Yazılım";
-const salary = "1000";
+// let value;
+// const firstName = "Melih";
+// const lastName = "Baltacı";
+// const department = "Yazılım";
+// const salary = "1000";
 
 // value = firstName + " " + lastName;
 // value = firstName
@@ -146,13 +146,70 @@ const salary = "1000";
 // value = firstName.concat(" ", lastName, " Deneme");
 // value = "İsim:" + firstName + "\nSoyisim: " + lastName + "\nMaaş: " + salary + "\nDepartman: " + department;
 
-value = `
-<ul>
-    <li>${firstName}</li>
-    <li>${lastName}</li>
-    <li>${salary}</li>
-    <li>${department}</li>
-</ul>
-`;
-document.body.innerHTML = value;
-value = console.log(value);
+// value = `
+// <ul>
+//     <li>${firstName}</li>
+//     <li>${lastName}</li>
+//     <li>${salary}</li>
+//     <li>${department}</li>
+// </ul>
+// `;
+// document.body.innerHTML = value;
+// value = console.log(value);
+
+// Array Özellikleri
+
+// let value;
+// const numbers = [45, 78, 34, 79, 5];
+// const lang = ["Python", "C++", "Javascript"];
+
+// value = numbers.length;
+// value = numbers[3];
+// value = numbers[numbers.length - 1];
+// numbers.push(200);
+// value = numbers;
+// value = numbers.indexOf(5);
+// value = numbers.includes(23);
+// numbers.pop();
+// numbers.shift();
+// numbers[1] = 3;
+// value = numbers.sort(function (x, y) {
+//   return y - x;
+// });
+// console.log(value);
+
+// Obje Özellikleri
+
+// let value;
+// const user = {
+//   name: "Varol Maksutoğlu",
+//   age: 36,
+//   email: "melihbaltaci@hotmail.com",
+//   langs: ["Python", "C++", "Javascript"],
+//   adress: {
+//     city: "İstanbul",
+//     street: "Şahika",
+//   },
+//   work: function () {
+//     console.log("Çalışıyor");
+//   },
+// };
+
+// value = user.adress.city;
+// value = user.work();
+// value = user["name"];
+// console.log(value);
+// console.log(typeof value);
+
+// Zaman Objesi
+
+// let value;
+// let now = new Date();
+
+// // value = now.getFullYear();
+// // value = now.getMonth();
+// // value = now.getDay();
+// // value = now.getDate();
+// value = `${now.getDate()}/${now.getMonth()}/${now.getFullYear()}`;
+
+// console.log(value);
