@@ -1,3 +1,5 @@
+
+
 $home-font:'Rubik', sans-serif;
 $home-header-font: 'Prata', serif;
 $home-h3-font: 'Poppins', sans-serif;
@@ -16,18 +18,24 @@ h3{
     font-family: $home-header-font;
     text-shadow: 2px 2px 12px #e0e411;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-
-body {
-    .home{
-        .arrow{
-            position: absolute;
-            top: 90%;
-            right: 3rem;
-            position: fixed;
-            z-index: 2;
-        } 
+    body {
+        .home{
+            .arrow{
+                position: absolute;
+                top: 90%;
+                right: 3rem;
+                position: fixed;
+                z-index: 2;
+            } 
+        }
+    
+        
     }
 
-    
 }
+

@@ -1,0 +1,123 @@
+$w70:70%;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.imgSlider{
+    width: $w70;
+    padding-top: 50%;
+    background-image: url("../fenderr.png");
+    background-size: 100% 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeImage 15s linear infinite;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+@keyframes changeImage {
+    0%{
+        background-image: url("../fenderr.png");
+    }
+    50%{
+        background-image:url("../gitarr.png") ;
+    }
+    75%{
+        background-image:url("../piyanoo.png") ;
+    }
+    100%{
+        background-image: url("../sahne1.png");
+    }
+}
+
+#gitar-ana{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+#kategori{
+    color:#0049AF;
+    margin-left:280px ;
+}
+
+.hr{
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.kate{
+    display: grid;
+    grid-gap:8px;
+    grid-template-columns:25% 25% 25% 25%;
+    margin-right: 220px;
+    margin-left: -70px;
+    
+}
+
+.kate-1{
+    grid-column-start:1;
+    width: 80%;
+    margin-left: 270px;
+    border-radius: 8px;
+    grid-row-end: 1;
+}
+
+.kate-2{
+    grid-column-start: 2;
+    width: 167px;
+    
+    margin-left: 270px;
+    border-radius: 8px;
+    grid-row-end: 1;
+}
+.kate-3{
+    grid-column-start: 3;
+    width: 167px;
+    
+    margin-left: 270px;
+    border-radius: 8px;
+    grid-row-end: 1;
+    
+}
+
+.footer-1{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50% ;
+}
+
+.logo{
+grid-row-start: 2;
+grid-column-start: 1;
+
+}
+
+.iletişim{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.destek{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.takip{
+
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+
