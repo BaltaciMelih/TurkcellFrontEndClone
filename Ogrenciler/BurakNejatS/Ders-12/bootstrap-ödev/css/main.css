@@ -10784,7 +10784,7 @@ body {
 
 .imgSlider {
   width: 70%;
-  height: 700px;
+  padding-top: 50%;
   background-image: url("../fenderr.png");
   background-size: 100% 100%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -10827,15 +10827,15 @@ body {
 
 .kate {
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 8px;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
+  margin-right: 220px;
+  margin-left: -70px;
 }
 
 .kate-1 {
   grid-column-start: 1;
-  width: 167px;
-  height: 167px;
+  width: 80%;
   margin-left: 270px;
   border-radius: 8px;
   grid-row-end: 1;
@@ -10844,7 +10844,6 @@ body {
 .kate-2 {
   grid-column-start: 2;
   width: 167px;
-  height: 167px;
   margin-left: 270px;
   border-radius: 8px;
   grid-row-end: 1;
@@ -10853,10 +10852,36 @@ body {
 .kate-3 {
   grid-column-start: 3;
   width: 167px;
-  height: 167px;
   margin-left: 270px;
   border-radius: 8px;
   grid-row-end: 1;
+}
+
+.footer-1 {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+}
+
+.logo {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.iletişim {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.destek {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.takip {
+  grid-column-start: 4;
+  grid-row-start: 2;
 }
 
 /*# sourceMappingURL=main.css.map */
