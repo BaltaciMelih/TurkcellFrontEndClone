@@ -174,13 +174,86 @@
       .third-page-container .third-page-box2-container .third-page-educationbox-container img,
       .third-page-container .third-page-box2-container .third-page-purewaterbox-container img,
       .third-page-container .third-page-box2-container .third-page-healthylifebox-container img {
-        width: 400px;
+        width: 410px;
         height: 300px; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container img:hover,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container img:hover,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container img:hover {
+          background-color: black;
+          opacity: 0.7; }
+      .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-box-top,
+      .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-box-top,
+      .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-box-top {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        background-color: #ff6f0f;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        font-size: 1rem;
+        font-family: sans-serif;
+        padding: 5px 8px;
+        width: 100px;
+        margin-left: 130px; }
+      .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-box-head,
+      .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-box-head,
+      .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-box-head {
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem; }
+      .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-box-p,
+      .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-box-p,
+      .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-box-p {
+        color: #787878;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.5; }
       .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal,
       .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal,
       .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
         background-color: #f8f8f9;
         width: 400px;
-        height: 50px;
+        height: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
         border-width: 10px;
         border-radius: 5px; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal p,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal p,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal p {
+          font-size: 1rem;
+          font-family: "Inter", sans-serif; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal small,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal small,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal small {
+          color: #787878;
+          font-size: 0.875rem;
+          margin-left: 5px; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-money,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-money,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-money {
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-progress,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-progress,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-progress {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ff6f0f;
+          width: 80%; }
+          .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar,
+          .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar,
+          .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar {
+            background-color: lightblue;
+            display: flex;
+            justify-content: flex-end;
+            width: 46px;
+            height: 1px; }
