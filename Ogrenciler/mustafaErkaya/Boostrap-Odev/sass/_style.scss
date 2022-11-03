@@ -1,7 +1,7 @@
 $home-font:'Rubik', sans-serif;
 $home-header-font: 'Prata', serif;
 $home-h3-font: 'Poppins', sans-serif;
-$main-color:#242424;
+
 
 h3{
     font-family: $home-h3-font;
@@ -26,10 +26,8 @@ body {
             right: 3rem;
             position: fixed;
             z-index: 2;
-        }
+        } 
     }
 
-    .product{
-        background-color: $main-color;
-    }
+    
 }
