@@ -215,10 +215,11 @@
       .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal,
       .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal,
       .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal {
-        display: flex;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
         background-color: #f8f8f9;
         width: 400px;
-        height: 50px;
+        height: 70px;
         margin-left: 10px;
         margin-right: 10px;
         border-width: 10px;
@@ -234,7 +235,25 @@
           color: #787878;
           font-size: 0.875rem;
           margin-left: 5px; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-money,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-money,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-money {
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
         .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-progress,
         .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-progress,
         .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-progress {
-          background-color: #ff6f0f; }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ff6f0f;
+          width: 80%; }
+          .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar,
+          .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar,
+          .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar {
+            background-color: lightblue;
+            display: flex;
+            justify-content: flex-end;
+            width: 46px;
+            height: 1px; }
