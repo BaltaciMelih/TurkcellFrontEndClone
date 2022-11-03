@@ -256,10 +256,11 @@ $btn-bg: #ff6f0f;
         line-height: 1.5;
       }
       .third-page-goal {
-        display: flex;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
         background-color: $bg-light;
         width: 400px;
-        height: 50px;
+        height: 70px;
         margin-left: 10px;
         margin-right: 10px;
         border-width: 10px;
@@ -273,8 +274,24 @@ $btn-bg: #ff6f0f;
           font-size: 0.875rem;
           margin-left: 5px;
         }
+        .third-page-goal-money {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
         .third-page-goal-progress {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           background-color: #ff6f0f;
+          width: 80%;
+          .third-page-goal-progress-bar {
+            background-color: lightblue;
+            display: flex;
+            justify-content: flex-end;
+            width: 46px;
+            height: 1px;
+          }
         }
       }
     }
