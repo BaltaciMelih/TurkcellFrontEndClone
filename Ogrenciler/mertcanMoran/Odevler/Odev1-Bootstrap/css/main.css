@@ -13967,3 +13967,6 @@ textarea.form-control-lg {
 
 .bi-fuel-pump::before {
   content: ""; }
+
+.navbar-inner-tesla {
+  background-image: url("../thumbnails/84-nikola-tesla-4266530829.jpg"); }
