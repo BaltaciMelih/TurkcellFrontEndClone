@@ -14,7 +14,7 @@ body{
 
 .imgSlider{
     width: $w70;
-    padding-top: 50%;
+    padding-top: 38%;
     background-image: url("../fenderr.png");
     background-size: 100% 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -56,40 +56,40 @@ body{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.kate{
-    display: grid;
-    grid-gap:8px;
-    grid-template-columns:25% 25% 25% 25%;
-    margin-right: 220px;
-    margin-left: -70px;
+// .kate{
+//     display: grid;
+//     grid-gap:8px;
+//     grid-template-columns:25% 25% 25% 25%;
+//     margin-right: 220px;
+//     margin-left: -70px;
     
-}
+// }
 
-.kate-1{
-    grid-column-start:1;
-    width: 80%;
-    margin-left: 270px;
-    border-radius: 8px;
-    grid-row-end: 1;
-}
+// .kate-1{
+//     grid-column-start:1;
+//     width: 80%;
+//     margin-left: 270px;
+//     border-radius: 8px;
+//     grid-row-end: 1;
+// }
 
-.kate-2{
-    grid-column-start: 2;
-    width: 167px;
+// .kate-2{
+//     grid-column-start: 2;
+//     width: 167px;
     
-    margin-left: 270px;
-    border-radius: 8px;
-    grid-row-end: 1;
-}
-.kate-3{
-    grid-column-start: 3;
-    width: 167px;
+//     margin-left: 270px;
+//     border-radius: 8px;
+//     grid-row-end: 1;
+// }
+// .kate-3{
+//     grid-column-start: 3;
+//     width: 167px;
     
-    margin-left: 270px;
-    border-radius: 8px;
-    grid-row-end: 1;
+//     margin-left: 270px;
+//     border-radius: 8px;
+//     grid-row-end: 1;
     
-}
+// }
 
 .footer-1{
     display: grid;
@@ -118,6 +118,22 @@ grid-column-start: 1;
 
     grid-column-start: 4;
     grid-row-start: 2;
+}
+
+#sepet{
+    padding: 20px;
+}
+
+.row{
+   
+    margin-left: 150px;
+}
+.top{
+    color: #0049AF;
+    position: sticky;
+    bottom: 20px;
+    width: 4%;
+   
 }
 
 
