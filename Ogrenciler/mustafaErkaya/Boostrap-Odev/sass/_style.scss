@@ -18,10 +18,7 @@ h3{
     font-family: $home-header-font;
     text-shadow: 2px 2px 12px #e0e411;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
 
     body {
         .home{
@@ -33,9 +30,31 @@ h3{
                 z-index: 2;
             } 
         }
+
+        .erkayagrid{ 
+            .col{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas: "best-seller three-img "
+                                     ". opportunity-product"
+                ;
+
+                .best-seller{
+                    grid-area: best-seller;
+                }
+
+                .three-img {
+                    grid-area: three-img;  
+                }
+
+                .opportunity-product{
+                    grid-area: opportunity-product;
+                }
+            }
+        }
     
         
     }
 
-}
+
 
