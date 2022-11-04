@@ -1,79 +1,259 @@
-.cont {
+.second-page-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5px;
+  margin: 50px 50px; }
+
+.second-page-picture-container {
+  width: 612px;
+  height: 518.4px; }
+
+.second-page-image-relative {
+  position: relative; }
+  .second-page-image-relative .img1 {
+    width: 612px;
+    height: 518.4px; }
+
+.second-page-image-absolute {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 10px; }
+  .second-page-image-absolute .img2 {
+    object-fit: cover; }
+
+.second-page-sidebar {
   display: flex;
-  flex-wrap: wrap; }
-  .cont .container {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #fff !important;
-    visibility: visible;
-    min-height: 400px;
-    width: 612px !important;
-    height: 518.4px !important;
-    position: relative !important;
-    overflow: hidden !important;
-    margin-bottom: 10px;
-    flex-wrap: wrap; }
-    .cont .container .img1 {
-      object-fit: cover;
-      padding-right: 3rem !important;
-      padding-top: 3rem !important;
-      width: 612px !important;
-      height: 518.4px !important;
-      position: absolute !important; }
-    .cont .container .img2 {
-      width: 200px !important;
-      height: 200px !important;
-      right: 0;
-      top: 0;
-      position: absolute !important;
-      margin-left: 5px;
-      margin-bottom: 5px;
-      border: 10px solid #fff; }
-
-.data-aboutUs {
-  visibility: visible;
-  animation-delay: 0.5s;
-  animation-name: fadeInUp;
-  flex: 0 0 auto;
-  width: 50%;
-  max-width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-top: 3rem;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-  .data-aboutUs .h-1 {
-    margin-left: 30px; }
-  .data-aboutUs .aboutus {
-    border-radius: 50rem !important;
-    background-color: #fff0e6 !important;
-    color: #ff6f0f !important;
-    padding-top: 0.25rem !important;
-    padding-bottom: 0.25rem !important;
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
-    margin-bottom: 1rem !important;
-    display: inline-block !important; }
-  .data-aboutUs h1 {
-    margin-bottom: 3rem !important;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 30px 5px; }
+  .second-page-sidebar .second-page-sidebar-box1 {
+    color: #ff6f0f;
+    background-color: #fff0e6;
+    width: 70px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center; }
+  .second-page-sidebar .second-page-sidebar-box2 {
     font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2; }
+    font-weight: bold;
+    line-height: 50px;
+    width: 600px; }
+  .second-page-sidebar .second-page-sidebar-box3 {
+    background-color: #f8f8f9;
+    padding: 20px 30px;
+    width: 600px;
+    border-bottom-color: #ff6f0f;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    border-bottom-width: 5px; }
+    .second-page-sidebar .second-page-sidebar-box3 .second-page-sidebar-box3-quote {
+      width: 480px;
+      margin-bottom: 10px;
+      line-height: 20px;
+      font-size: 1rem; }
+    .second-page-sidebar .second-page-sidebar-box3 .second-page-sidebar-box3-founder {
+      font-size: 1rem;
+      color: #ff6f0f; }
+  .second-page-sidebar .second-page-sidebar-box4 {
+    color: #787878;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 600px; }
+  .second-page-sidebar .second-page-sidebar-box5 {
+    display: flex;
+    text-align: center;
+    gap: 7px; }
+    .second-page-sidebar .second-page-sidebar-box5 .second-page-sidebar-box5-learnbtn {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: #ff6f0f;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 5px 10px;
+      width: 150px;
+      height: 50px;
+      font-family: Roboto, Arial;
+      font-size: 16px; }
+      .second-page-sidebar .second-page-sidebar-box5 .second-page-sidebar-box5-learnbtn i {
+        color: #ff6f0f;
+        background-color: white;
+        border-width: 15px;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 16px; }
+    .second-page-sidebar .second-page-sidebar-box5 .second-page-sidebar-box5-learnbtn:hover {
+      color: #ff6f0f;
+      background-color: white;
+      border-color: #ff6f0f;
+      border-style: solid;
+      border-radius: 5px;
+      border-width: 1px; }
+    .second-page-sidebar .second-page-sidebar-box5 .second-page-sidebar-box5-contactbtn {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      color: #ff6f0f;
+      background-color: white;
+      border-color: #ff6f0f;
+      border-style: solid;
+      border-radius: 5px;
+      border-width: 1px;
+      font-size: 16px;
+      padding: 5px 10px;
+      width: 150px;
+      height: 50px;
+      font-family: Roboto, Arial;
+      font-size: 16px;
+      cursor: pointer; }
+      .second-page-sidebar .second-page-sidebar-box5 .second-page-sidebar-box5-contactbtn i {
+        color: white;
+        background-color: #ff6f0f;
+        border-width: 15px;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 16px; }
+    .second-page-sidebar .second-page-sidebar-box5 .second-page-sidebar-box5-contactbtn:hover {
+      color: white;
+      background-color: #ff6f0f; }
 
-.bg-light {
-  background-color: #f8f8f9 !important;
-  border-radius: 6px !important;
-  padding: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-  border-width: 5px !important;
-  margin-left: 30px;
-  border-bottom: 1px solid #ff6f0f !important; }
-  .bg-light p {
-    font-size: 1rem; }
-  .bg-light .tempor {
-    margin-left: 50% !important; }
-  .bg-light span {
-    color: #ff6f0f !important; }
+/* third page */
+.third-page-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 1000px;
+  margin: 50px;
+  background-color: #f8f8f9; }
+  .third-page-container .third-page-box1-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .third-page-container .third-page-box1-container .third-page-box-a {
+      color: #ff6f0f;
+      background-color: #fff0e6;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      border-radius: 15px; }
+    .third-page-container .third-page-box1-container .third-page-box-b {
+      font-family: Saira, sans-serif;
+      font-weight: bold;
+      font-size: 2.5rem;
+      line-height: 1.5;
+      margin-left: 50px;
+      width: 600px; }
+  .third-page-container .third-page-box2-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    max-width: 600px;
+    margin: 50px; }
+    .third-page-container .third-page-box2-container .third-page-educationbox-container,
+    .third-page-container .third-page-box2-container .third-page-purewaterbox-container,
+    .third-page-container .third-page-box2-container .third-page-healthylifebox-container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      justify-content: space-between;
+      align-content: center;
+      border-top-color: #ff6f0f;
+      border-top-width: 5px;
+      border-top-style: solid;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+      .third-page-container .third-page-box2-container .third-page-educationbox-container img,
+      .third-page-container .third-page-box2-container .third-page-purewaterbox-container img,
+      .third-page-container .third-page-box2-container .third-page-healthylifebox-container img {
+        width: 410px;
+        height: 300px; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container img:hover,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container img:hover,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container img:hover {
+          background-color: black;
+          opacity: 0.7; }
+      .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-box-top,
+      .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-box-top,
+      .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-box-top {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        background-color: #ff6f0f;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        font-size: 1rem;
+        font-family: sans-serif;
+        padding: 5px 8px;
+        width: 100px;
+        margin-left: 130px; }
+      .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-box-head,
+      .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-box-head,
+      .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-box-head {
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem; }
+      .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-box-p,
+      .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-box-p,
+      .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-box-p {
+        color: #787878;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.5; }
+      .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal,
+      .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal,
+      .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        background-color: #f8f8f9;
+        width: 400px;
+        height: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-width: 10px;
+        border-radius: 5px; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal p,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal p,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal p {
+          font-size: 1rem;
+          font-family: "Inter", sans-serif; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal small,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal small,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal small {
+          color: #787878;
+          font-size: 0.875rem;
+          margin-left: 5px; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-money,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-money,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-money {
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+        .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-progress,
+        .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-progress,
+        .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-progress {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ff6f0f;
+          width: 80%; }
+          .third-page-container .third-page-box2-container .third-page-educationbox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar,
+          .third-page-container .third-page-box2-container .third-page-purewaterbox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar,
+          .third-page-container .third-page-box2-container .third-page-healthylifebox-container .third-page-goal .third-page-goal-progress .third-page-goal-progress-bar {
+            background-color: lightblue;
+            display: flex;
+            justify-content: flex-end;
+            width: 46px;
+            height: 1px; }
