@@ -8392,6 +8392,9 @@ textarea.form-control-lg {
 h3, .h3 {
   font-family: "Poppins", sans-serif; }
 
+.product-shadow {
+  box-shadow: rgba(208, 203, 203, 0.24) 0px 3px 8px; }
+
 .home-font {
   font-family: "Rubik", sans-serif; }
 
@@ -8409,10 +8412,17 @@ body .home .arrow {
 body .erkayagrid .col {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: "best-seller three-img " ". opportunity-product"; }
+  grid-template-areas: "best-seller three-img " ". opportunity-product"  ". featured"; }
   body .erkayagrid .col .best-seller {
     grid-area: best-seller; }
   body .erkayagrid .col .three-img {
     grid-area: three-img; }
   body .erkayagrid .col .opportunity-product {
     grid-area: opportunity-product; }
+  body .erkayagrid .col .featured {
+    grid-area: featured; }
+
+@media only screen and (max-width: 768px) {
+  .erkayagrid .col {
+    display: flex !important;
+    flex-direction: column !important; } }
