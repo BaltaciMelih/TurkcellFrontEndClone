@@ -1,0 +1,212 @@
+@mixin vh-size($size) {
+  height: $size;
+}
+
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1 rem=10px
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+// HEADER
+
+.hero {
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../img/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+
+  &__text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.fa-yellow {
+  color: #f8cd28;
+}
+// Heading
+.heading-title {
+  margin-bottom: 6rem;
+  /* backface-visibility: hidden; */
+
+  &__main-title {
+    letter-spacing: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  &__subtitle {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+// Diamond Grid
+.diamond-hero {
+  position: relative;
+
+  &__content {
+    z-index: 2;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+
+    h2 {
+      font-size: 72px;
+      font-weight: normal;
+      margin: 0 0 20px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.75;
+    }
+  }
+}
+
+.generic {
+  padding: 5rem 0;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Button
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 2s;
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #777;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.form-subscribe {
+  width: 40%;
+  padding: 8px 16px;
+  border: 3px solid #fff;
+  font-size: 14px;
+  height: auto;
+}
+
+.fa-brands {
+  color: #fff;
+}
