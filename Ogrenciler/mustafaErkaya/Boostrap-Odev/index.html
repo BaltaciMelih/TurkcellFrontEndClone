@@ -17,8 +17,8 @@
 
 
   <body class="bg-info container-fluid" >
-    <nav class="navbar navbar-expand-lg bg-info">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-black fixed-top ">
+      <div class="container-fluid ">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
@@ -239,8 +239,10 @@
     <section class="product py-4 container-fluid bg-info">
       <h2 class="text-center mb-4 text-white">Product</h2>
 
+        <!-- id -->
       <div
-        id="carouselExampleControls"
+      
+        id="products-part" 
         class="carousel slide"
         data-bs-ride="carousel"
       >
@@ -249,7 +251,7 @@
             <div class="d-flex gap-3 justify-content-center">
               <div class="row">
                 
-                  <div class="card mx-2 col-md bg-info " style="width: 17rem">
+                  <div class="card m-2 col-md bg-info product-shadow " style="width: 17rem">
                     <img
                       src="./Product/armani1.png"
                       class="card-img-top img-fluid"
@@ -272,7 +274,7 @@
                   </div>
                 
 
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
                   <img
                     src="./Product/diesel-p2-1.png"
                     class="card-img-top img-fluid"
@@ -293,7 +295,7 @@
                     <a href="#" class="btn btn-success mt-3">Buy Now !</a>
                   </div>
                 </div>
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
                   <img
                     src="./Product/guess1.png"
                     class="card-img-top img-fluid"
@@ -318,7 +320,7 @@
           <div class="carousel-item">
             <div class="d-flex gap-3 justify-content-center w-100">
               <div class="row">
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
                   <img
                     src="./Product/micheal1.png"
                     class="card-img-top img-fluid"
@@ -337,7 +339,7 @@
                     <a href="#" class="btn btn-success mt-3">Buy Now !</a>
                   </div>
                 </div>
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
                   <img
                     src="./Product/polo1.png"
                     class="card-img-top img-fluid"
@@ -356,7 +358,7 @@
                     <a href="#" class="btn btn-success mt-3">Buy Now !</a>
                   </div>
                 </div>
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
                   <img
                     src="./Product/welder1.png "
                     class="card-img-top img-fluid"
@@ -381,7 +383,7 @@
           <div class="carousel-item">
             <div class="d-flex gap-3 justify-content-center ">
               <div class="row">
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
                   <img
                     src="./Product/wesse-c1.png"
                     class="card-img-top img-fluid"
@@ -402,7 +404,7 @@
                   </div>
                 </div>
 
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
                   <img
                     src="./Product/wesse1.png"
                     class="card-img-top img-fluid"
@@ -421,7 +423,7 @@
                     <a href="#" class="btn btn-success mt-3">Buy Now !</a>
                   </div>
                 </div>
-                <div class="card mx-2 col-md bg-info " style="width: 17rem">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
                   <img
                     src="./Product/diesel1.png"
                     class="card-img-top img-fluid"
@@ -447,8 +449,9 @@
         <button
           class="carousel-control-prev text-bg-success"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#products-part"
           data-bs-slide="prev"
+          style="height: 50px; width: 50px; margin: auto; border-radius: 50%;"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -456,8 +459,9 @@
         <button
           class="carousel-control-next text-bg-success"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#products-part"
           data-bs-slide="next"
+          style="height: 50px; width: 50px; margin: auto; border-radius: 50%;"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -465,22 +469,25 @@
       </div>
     </section>
 
+
+
+
     <div class="erkayagrid row px-5">
       <div class="col ">
 
      
     <!-- best seller         container padingi kaldırıldı  -->   
-    <section class="best-seller col-md  py-2  sticky-md-top">
+    <section class="best-seller col-md  py-2  sticky-md-top ">
       <!-- sticky-md-top ile 768 pxden aşağısında sticky none -->
         <div class="  ">
           <h2 class="text-center text-white pb-3">Best Seller</h2>
 
-          <div class="card col-12 bg-warning">
+          <div class="card col-12 bg-info  p-3">
             <div class="row border-2 py-2">
-              <div class="col-6">
-                <img class="img-fluid" src="./Product/diesel-p2-1.png" alt="">
+              <div class="col-6 product-shadow">
+                <img class="img-fluid " src="./Product/diesel-p2-1.png" alt="">
               </div>
-              <div class="col-6">
+              <div class="col-6 product-shadow">
                 <div class="card-body text-center text-white">
                   <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
                   <h5 class="card-title">Diesel</h5>
@@ -516,10 +523,10 @@
          
           
             <div class="row py-2">
-              <div class="col-6">
+              <div class="col-6 product-shadow">
                 <img class="img-fluid" src="./Product/guess1.png" alt="">
               </div>
-              <div class="col-6"> 
+              <div class="col-6 product-shadow"> 
                 <div class="card-body text-center text-white">
                   <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
                   <h5 class="card-title">Guess</h5>
@@ -538,58 +545,55 @@
     </section>
 
        <!-- image -->
-    <section class="three-img col-md  py-2 mx-4  ">
-      
-        
+    <section class="three-img   py-2 mx-4  ">
+      <h2 class="text-center text-warning py-2">Extra Part</h2>
+
+        <div class="row ps-5 ">
        
-          <h2 class="text-center text-warning py-2">Extra Part</h2>
-          <div class="row">
-        <div class="col-md-4">
-          <img class="img-fluid" src="./three-img/1_10.jpg" alt="" />
+        <div class="col-md-5 ms-auto">
+          <img class="img-fluid  " src="./three-img/1_10.jpg" alt="" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-12 my-3">
           <img  class="img-fluid" src="./three-img/2_10.jpg" alt="" />
         </div>
-        <div class="col-md-4">
-          <img  class="img-fluid" src="./three-img/3_10.jpg" alt="" />
+        <div class="col-md-5 ms-auto">
+          <img  class="img-fluid " src="./three-img/3_10.jpg" alt="" />
         </div>
       </div>
-    
     
     </section>
 
  
 
 <!-- opportunity-product -->
-    <section class="opportunity-product container " style="height: 900px;">
-      <h2 class="text-center text-white py-3">OpportunityProducts</h2>
+    <section class="opportunity-product container mt-3 py-4" style="height: 900px;">
+      <h2 class="text-center text-white py-3 my-2">OpportunityProducts</h2>
       <div class="row">
         
           <div class="col-md-6">
             <p class="">
-              <button class="btn btn-primary  w-75 ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              <button class="btn btn-success  w-75 ms-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#opportunity-product-1" aria-expanded="false" aria-controls="opportunity-product-1">
                 Opportunity Product 1
               </button>
             </p>
             <div style="min-height: 120px;">
-              <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+              <div class="collapse collapse-horizontal" id="opportunity-product-1">
+                <div class="card ms-md-5 col-md bg-info" style="width: 17rem">
                   <img
-                    src="./Product/wesse-c1.png"
+                    src="./opportunity-product/diesel-p3-1.png"
                     class="card-img-top img-fluid"
                     alt="..."
                   />
                   <div class="card-body text-center text-white">
                     <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
-                    <h5 class="card-title">Wesse Connect</h5>
-                    <p>WWC1001-02 Akıllı Saat</p>
+                    <h5 class="card-title">Diesel</h5>
+                    <p>DZ1927 Kol Saatit</p>
 
                     <p class="card-text">
-                      Çelik / Quartz Teknoloji / 44 mm Kasa Çapı / Yuvarlak Kasa
-                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                      Silikon / Quartz Teknoloji / 44 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
                     </p>
 
-                    <span class="d-block">$448.72</span>
+                    <span class="d-block">$850.99</span>
                     <a href="#" class="btn btn-success mt-3">Buy Now !</a>
                   </div>
                 </div>
@@ -599,29 +603,28 @@
         
           <div class="col-md-6">
             <p>
-              <button class="btn btn-primary w-75 ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              <button class="btn btn-success w-75 ms-5 " type="button" data-bs-toggle="collapse" data-bs-target="#opportunity-product-2" aria-expanded="false" aria-controls="opportunity-product-2">
                 Opportunity Product 2
               </button>
             </p>
             <div style="min-height: 120px;">
-              <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                <div class="card mx-2 col-md bg-info" style="width: 17rem">
+              <div class="collapse collapse-horizontal" id="opportunity-product-2">
+                <div class="card mx-md-5 col-md bg-info" style="width: 17rem">
                   <img
-                    src="./Product/wesse-c1.png"
+                    src="./opportunity-product/fossil-1.png"
                     class="card-img-top img-fluid"
                     alt="..."
                   />
                   <div class="card-body text-center text-white">
                     <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
-                    <h5 class="card-title">Wesse Connect</h5>
-                    <p>WWC1001-02 Akıllı Saat</p>
+                    <h5 class="card-title">Fossil</h5>
+                    <p>FBQ2492 Erkek Kol Saati</p>
 
                     <p class="card-text">
-                      Çelik / Quartz Teknoloji / 44 mm Kasa Çapı / Yuvarlak Kasa
-                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                      Çelik / Quartz Teknoloji / 45 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
                     </p>
 
-                    <span class="d-block">$448.72</span>
+                    <span class="d-block">$500</span>
                     <a href="#" class="btn btn-success mt-3">Buy Now !</a>
                   </div>
                 </div>
@@ -629,6 +632,53 @@
             </div>
           </div>
         
+      </div>
+    </section>
+
+    <!-- featured-product                       -->
+    <!-- featuren collara lg verdik !!!!!!! -->
+    <section class="featured container">
+      <h2 class="text-white text-center p-4 ">Featured Products</h2>
+      <div class="row px-4 my-3">
+        <div class="card col-lg-5 bg-info p-3 product-shadow" >
+          <img
+            src="./featured/versace.png"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body text-center text-white">
+            <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+            <h5 class="card-title">Versace</h5>
+            <p>VRSCVE8102519 Kadın Kol Saati</p>
+            <p class="card-text">
+              Çelik / Quartz Teknoloji / 45 mm Kasa Çapı / Yuvarlak Kasa
+              Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+            </p>
+
+            <span class="d-block">$1625</span>
+            <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+          </div>
+        </div>
+
+        <div class="card  col-lg-5 ms-lg-auto bg-info p-3 product-shadow" >
+          <img
+            src="./featured/armani-p2-1.png"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body text-center text-white">
+            <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+            <h5 class="card-title">Armani Exchange</h5>
+            <p>AX1731Erkek Kol Saati</p>
+            <p class="card-text">
+              Çelik / Quartz Teknoloji / 45 mm Kasa Çapı / Yuvarlak Kasa
+              Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+            </p>
+
+            <span class="d-block">$745</span>
+            <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+          </div>
+        </div>
       </div>
     </section>
 
