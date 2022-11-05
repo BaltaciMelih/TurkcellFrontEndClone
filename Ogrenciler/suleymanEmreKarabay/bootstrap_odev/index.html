@@ -1,13 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="container-fluid bg-primary pb-5">
+      <nav class="container nav">
+        <div class="logo">
+          <a href="#" class="logoLink">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bullseye logoIcon" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+            <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+            </svg>
+            <div>
+              <span class="logoFirst">Emre</span>
+              <span class="logoSecond">Karabay</span>
+            </div>
+          </a>
+          
+        </div>
+        <div class="menu">
+          <ul class="menuList">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Car</a></li>
+            <li><a href="#">Bicycle</a></li>
+            <li><a href="#">Motorcycle</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+        <div class="navbarRight">
+          <div class="butonGroup">
+            <input class="signUpButton" type="button" value="Sign up">
+            <input class="signInButton" type="button" value="Sign in">
+          </div>
+          <div class="cartIcon">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-check-fill " viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg></a>
+          </div>
+            
+          </div>
+        </div>
+      </nav>
+      <section class="container ">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="https://picsum.photos/1500/500
+              " class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                <input class="corouselButton" type="button" value="Acele et kaçırma">
+  
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/1500/500
+              " class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+                <input class="corouselButton" type="button" value="Fırsatları kaçırma">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/1500/500
+              " class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+                <input class="corouselButton" type="button" value="Acele et kaçırma">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+  
+    </header>
     
-</body>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

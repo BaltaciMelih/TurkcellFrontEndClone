@@ -516,8 +516,8 @@ progress {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
   margin-right: auto;
   margin-left: auto; }
 
@@ -8392,6 +8392,9 @@ textarea.form-control-lg {
 h3, .h3 {
   font-family: "Poppins", sans-serif; }
 
+.product-shadow {
+  box-shadow: rgba(208, 203, 203, 0.24) 0px 3px 8px; }
+
 .home-font {
   font-family: "Rubik", sans-serif; }
 
@@ -8399,13 +8402,27 @@ h3, .h3 {
   font-family: "Prata", serif;
   text-shadow: 2px 2px 12px #e0e411; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-  * body .home .arrow {
-    position: absolute;
-    top: 90%;
-    right: 3rem;
-    position: fixed;
-    z-index: 2; }
+body .home .arrow {
+  position: absolute;
+  top: 90%;
+  right: 3rem;
+  position: fixed;
+  z-index: 2; }
+
+body .erkayagrid .col {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "best-seller three-img " ". opportunity-product"  ". featured"; }
+  body .erkayagrid .col .best-seller {
+    grid-area: best-seller; }
+  body .erkayagrid .col .three-img {
+    grid-area: three-img; }
+  body .erkayagrid .col .opportunity-product {
+    grid-area: opportunity-product; }
+  body .erkayagrid .col .featured {
+    grid-area: featured; }
+
+@media only screen and (max-width: 768px) {
+  .erkayagrid .col {
+    display: flex !important;
+    flex-direction: column !important; } }
