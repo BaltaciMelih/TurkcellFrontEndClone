@@ -11156,13 +11156,9 @@ body {
   font-size: 1.6rem;
 }
 
-.vh-50 {
-  height: 50vh;
-}
-
 .hero {
   height: 95vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -11177,13 +11173,8 @@ body {
   text-align: center;
 }
 
-.fa-yellow {
-  color: #f8cd28;
-}
-
 .heading-title {
   margin-bottom: 6rem;
-  /* backface-visibility: hidden; */
 }
 
 .heading-title__main-title {
@@ -11199,34 +11190,6 @@ body {
   font-weight: 700;
   letter-spacing: 1rem;
   animation: moveInRight 1s ease-out;
-}
-
-.diamond-hero {
-  position: relative;
-}
-
-.diamond-hero__content {
-  z-index: 2;
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 500px;
-}
-
-.diamond-hero__content h2, .diamond-hero__content .h2 {
-  font-size: 72px;
-  font-weight: normal;
-  margin: 0 0 20px;
-}
-
-.diamond-hero__content p {
-  margin: 0;
-  line-height: 1.75;
-}
-
-.generic {
-  padding: 5rem 0;
 }
 
 @keyframes moveInLeft {
@@ -11268,7 +11231,7 @@ body {
   }
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -11304,12 +11267,12 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 2s;
+  transition: all 0.4s;
 }
 
 .btn--white {
   background-color: #fff;
-  color: #777;
+  color: black;
 }
 
 .btn--white::after {
@@ -11327,8 +11290,4 @@ body {
   border: 3px solid #fff;
   font-size: 14px;
   height: auto;
-}
-
-.fa-brands {
-  color: #fff;
 }

@@ -16,16 +16,17 @@
   </head>
 
   <body>
+    <!-- HEADER PART START -->
     <header class="header">
       <nav class="navbar navbar-expand-md fixed-top py-3 bg-transparent navbar-dark">
         <div class="container">
-          <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="#">Underground Store</a>
+          <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="home.html">Underground Store</a>
           <button
             class="navbar-toggler bg-transparent"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#undergroundNavbar"
+            aria-controls="undergroundNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -33,10 +34,10 @@
               <i class="fas fa-bars text-white"></i>
             </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="undergroundNavbar">
             <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-3 gap-1 ms-auto">
               <li class="nav-item">
-                <a class="nav-link active text-light fs-4" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active text-light fs-4" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-4" href="clothing.html">Clothing</a>
@@ -45,7 +46,7 @@
                 <a class="nav-link nav-hover fs-4" href="albums.html">Albums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="#">FAQ</a>
+                <a class="nav-link fs-4" href="faq.html">FAQ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-4" href="about-us.html">About Us</a>
@@ -55,11 +56,9 @@
         </div>
       </nav>
     </header>
-
-    <!-- HEADER PART FINISH -->
+    <!-- HEADER PART END -->
 
     <!-- HERO PART START -->
-
     <section id="hero">
       <div class="container-fluid vh-100 hero">
         <div class="hero__text-container">
@@ -71,7 +70,9 @@
         </div>
       </div>
     </section>
+    <!-- HERO PART END -->
 
+    <!-- STORY PART START -->
     <section id="story">
       <div
         class="container-fluid vh-100"
@@ -98,8 +99,10 @@
         </div>
       </div>
     </section>
+    <!-- STORY PART END -->
 
-    <section class="" id="albums">
+    <!-- ALBUMS PART START -->
+    <section id="albums">
       <div class="container-fluid bg-light py-5">
         <div class="row">
           <div class="col-12 col-md-5">
@@ -139,50 +142,90 @@
         </div>
       </div>
     </section>
+    <!-- ALBUMS PART END -->
 
-    <section class="generic" style="background-color: burlywood" id="quotes">
-      <div class="container-fluid py-5">
-        <div class="row h-100">
-          <div class="col-12 d-flex justify-content-center align-items-center flex-column">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
-              <!-- data-bs-ride="carousel -->
+    <!-- CAROUSEL PART START -->
+    <section>
+      <div class="container-lg">
+        <div class="row">
+          <div class="col">
+            <div id="undergroundCarouselCaption" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#undergroundCarouselCaption"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#undergroundCarouselCaption"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#undergroundCarouselCaption"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
               <div class="carousel-inner">
-                <div class="carousel-item active w-100">
-                  <h1 class="mb-3 h2 text-dark text-center mb-5">Defkhan</h1>
-                  <p class="text-dark fs-2 mb-3">Sana sabah peynir ekmek Filistin'de bomba var...</p>
+                <div class="carousel-item active">
+                  <img
+                    src="img/quote-img-1.jpg"
+                    class="d-block w-100 img-fluid rounded-5"
+                    alt="Norm-Ender-Quote"
+                    style="height: 550px"
+                  />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h5 class="fs-3">Norm Ender</h5>
+                    <p>Herkesi yavaş yavaş tanıyorsun Pastadaki mum sayısı çoğalınca...</p>
+                  </div>
                 </div>
-                <div class="carousel-item w-100">
-                  <h1 class="mb-3 h2 text-dark text-center mb-5">Sagopa Kajmer</h1>
-
-                  <p class="text-dark fs-2 mb-3">
-                    "düşman" kelimesinin anlamını arkadaş sıfatını taşıyanlardan öğrendim"
-                  </p>
+                <div class="carousel-item">
+                  <img
+                    src="img/quote-img-2.jpg"
+                    style="height: 550px"
+                    class="d-block w-100 img-fluid rounded-5"
+                    alt="Defkhan-Quote"
+                  />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h5 class="fs-3">Defkhan</h5>
+                    <p>Sana sabah peynir ekmek Filistin'de bomba var...</p>
+                  </div>
                 </div>
-                <div class="carousel-item w-100">
-                  <h1 class="mb-3 h2 text-dark text-center mb-5">Norm Ender</h1>
-
-                  <p class="text-dark fs-2 mb-3">"Herkesi yavaş yavaş tanıyorsun Pastadaki mum sayısı çoğalınca..."</p>
+                <div class="carousel-item">
+                  <img
+                    src="img/quote-img-3.jpeg"
+                    class="d-block w-100 img-fluid rounded-5"
+                    style="height: 550px"
+                    alt="Sagopa-Kajmer-Quote"
+                  />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h5 class="fs-3">Sagopa Kajmer</h5>
+                    <p>"düşman" kelimesinin anlamını arkadaş sıfatını taşıyanlardan öğrendim.</p>
+                  </div>
                 </div>
               </div>
-
               <button
                 class="carousel-control-prev"
                 type="button"
-                data-bs-target="#carouselExampleDark"
+                data-bs-target="#undergroundCarouselCaption"
                 data-bs-slide="prev"
-                style="left: -90px"
               >
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 3rem; height: 3rem"></span>
-                <span class="visually-hidden bg-warning">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
               </button>
               <button
                 class="carousel-control-next"
                 type="button"
-                data-bs-target="#carouselExampleDark"
+                data-bs-target="#undergroundCarouselCaption"
                 data-bs-slide="next"
-                style="right: -90px"
               >
-                <span class="carousel-control-next-icon" aria-hidden="true" style="width: 3rem; height: 3rem"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
@@ -190,6 +233,10 @@
         </div>
       </div>
     </section>
+
+    <!-- Carousel Part END -->
+
+    <!-- CLOTHING PART START -->
 
     <section class="" id="clothing">
       <div class="container-fluid bg-light py-5">
@@ -200,9 +247,9 @@
               src="https://yt3.ggpht.com/IC7uqK4cRv2l-K58IlOpoUC-kxggyYB4PR5kbtGLSb1KigxPkpIBU1gQOyAY7WK5f3a21aGC=s900-c-k-c0x00ffffff-no-rj"
             />
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3">
+          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3 ms-lg-5">
             <h3 class="product-title display-2 fw-semibold m-0">Ceza</h3>
-            <h5 class="product-subtitle fs-5">T-SHIRT AND CAP</h5>
+            <h5 class="product-subtitle fs-4">T-SHIRT</h5>
             <div class="rating">
               <ul class="d-flex text-decoration-none list-unstyled">
                 <li><i class="fa-solid fa-star &bigstar; fa-yellow"></i></li>
@@ -231,21 +278,24 @@
       </div>
     </section>
 
-    <section id="testimonials"></section>
+    <!-- CLOTHING PART END -->
+
+    <!-- SLOGAN START -->
 
     <section id="slogan" style="background-color: bisque">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center p-4">
-            <h4 class="mb-5 fw-semibold mx-auto lh-base" style="width: 80%; color: #494949; font-size: 5rem">
+            <h4 class="mb-5 fw-semibold mx-auto lh-base" style="color: #494949; font-size: 4rem">
               Take your first step into underground life with albums and dresses.
             </h4>
             <a class="btn btn-success" href="">SHOP NOW</a>
           </div>
         </div>
       </div>
-      <div></div>
     </section>
+
+    <!-- SLOGAN END-->
 
     <!-- FOOTER PART -->
 
@@ -346,6 +396,7 @@
         </div>
       </div>
     </footer>
+    <!-- FOOTER FINISH -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
