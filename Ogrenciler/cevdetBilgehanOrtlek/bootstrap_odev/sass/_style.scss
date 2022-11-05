@@ -1,0 +1,44 @@
+$footerbgcolor:#1c2331;
+
+.padding-card{
+    padding-left: 7%;
+}
+
+.footer-details{
+
+    hr{
+        width: 60px; 
+        background-color: $primary; 
+        height: 2px;
+    }
+
+
+}
+
+.footer-background{
+    background-color: $primary; 
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.social-media-color{
+    svg{
+        color: $footerbgcolor;
+    }
+
+
+}
+.footer-bottom{
+background-color: $footerbgcolor;
+}
+
+.footer-text-color{
+    color: $footerbgcolor;
+}
+
+.container-bgcolor{
+    @extend.footer-bottom;
+}

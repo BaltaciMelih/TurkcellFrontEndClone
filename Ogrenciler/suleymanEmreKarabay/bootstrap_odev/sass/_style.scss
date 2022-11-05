@@ -40,7 +40,10 @@ $colorSecondary:rgb(111, 85, 255);
 
 a{
     cursor: pointer;
+    list-style: none;
+    text-decoration: none;
 }
+
 .nav{
     @include display(flex,row,space-between,center ,0px );
     padding: 1% 3%;
@@ -68,11 +71,11 @@ a{
             margin: 0;
             li{
                 a{
-                    @include font(16px, 400,white);
-                    list-style: none;
-                    text-decoration: none;
+                    @include font(16px, 500,white);
+                    
                     &:hover{
-                        @include font(16px, 400, grey);
+                        @include font(16px, 500, grey);
+
                     }
                 }
 
@@ -110,6 +113,68 @@ a{
             }
 
         }
+    }    
+}
+.carousel{
+    .carousel-item{
+        h5{
+            @include font(50px, 600, white);
+        }
+        p{
+            @include font(20px, 300, white);
+
+        }
+        .corouselButton{
+            @include button($colorPrimary, solid, $colorPrimary,3px,8px);
+                    padding: 2% 4%;
+                    @include font(16px, 600, $primary);
+                    &:hover{
+                        @include buttonHover(black,solid ,white, 3px,8px );
+                        @include font(16px, 600, white);
+                    }
+        }
+    }
+    
+    .carouselIndicatorsButtonGroup{
+        button{
+            background-color: black;
+            svg{
+                color: white;
+                &:hover{
+                    color: grey;
+                }
+                &:focus{
+                    color: red;
+                }
+            }
+            
+            
+        }
+    }
+
+}
+.products{
+
+    .productsCard{
+        .cardButton{
+            @include button($colorSecondary, solid, $colorSecondary,3px,8px);
+            padding: 2% 4%;
+            @include font(16px, 600, $primary);
+                &:hover{
+                    @include buttonHover(white,solid ,black, 3px,8px );
+                    
+                }
+        }
+    }
+}
+
+footer{
+    .footerHeader{
+        cursor: default;        ;
+        .footerlistItem{
+           
+            text-align: center;
+        }
     }
 }
 
@@ -122,5 +187,14 @@ a{
             }
         }
         
+    }
+    .carouselBackNextIcon{
+        display: none;
+    }
+    .carousel-inner{
+        text-align: center;
+    }
+    .footerBottomRights{
+        text-align: center;
     }
 }
