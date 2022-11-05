@@ -11347,3 +11347,32 @@ body {
   display: block;
   margin-top: 30px;
 }
+
+.faq {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/faq_banner.jpeg");
+  background-size: cover;
+  height: 35vh;
+}
+
+.faq__text-box {
+  padding: 136px 0 129px;
+  width: 49%;
+  text-align: center;
+  margin: auto;
+}
+
+.faq__title {
+  color: #fff;
+  font-family: playfair display, serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.faq__subtitle {
+  font-size: 21px;
+  font-family: playfair display, serif;
+  color: #fff;
+  display: block;
+  margin-top: 30px;
+}
