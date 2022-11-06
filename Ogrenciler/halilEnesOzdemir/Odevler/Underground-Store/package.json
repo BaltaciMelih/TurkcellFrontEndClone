@@ -1,0 +1,17 @@
+{
+  "name": "underground-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch scss -o css --output-style expanded"
+  },
+  "keywords": [],
+  "author": "Halil Enes",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.2",
+    "node-sass": "^7.0.3"
+  }
+}

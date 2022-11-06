@@ -1,0 +1,16 @@
+{
+  "name": "odev01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o css"
+  },
+  "keywords": [],
+  "author": "Ahmet Melih Baltaci",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "node-sass": "^7.0.3"
+  }
+}
