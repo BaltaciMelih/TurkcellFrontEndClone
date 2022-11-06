@@ -15,7 +15,7 @@
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-    transform:rotate(var(--_a)) translateY(120%) rotateX(90deg);
+    transform:rotate(var(--_a)) translateY(-120%) rotateX(90deg);
 }
 .gallery > img:nth-child(1) {--_a: 0deg}
 .gallery > img:nth-child(2) {--_a: 60deg}
