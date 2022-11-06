@@ -156,6 +156,9 @@ a{
 .products{
 
     .productsCard{
+        svg{
+            color: orangered;
+        }
         .cardButton{
             @include button($colorSecondary, solid, $colorSecondary,3px,8px);
             padding: 2% 4%;
@@ -167,15 +170,38 @@ a{
         }
     }
 }
+.productDetailBottomButton{
+    border: none;
+}
+
+.addToCartButton{
+    @include button($colorSecondary, solid, $colorSecondary,3px,8px);
+            padding: 1% 2%;
+            @include font(16px, 600, $primary);
+                &:hover{
+                    @include buttonHover(white,solid ,black, 3px,8px );
+                    
+                }
+}
 
 footer{
     .footerHeader{
-        cursor: default;        ;
-        .footerlistItem{
-           
-            text-align: center;
-        }
+        cursor: default; 
     }
+    
+    .footerlistItem{
+           
+        text-align: center;
+    }
+    a{
+        color: white;
+        &:hover{
+            color: gray;
+        }
+        
+    }
+    
+    
 }
 
 @media (max-width:768px) {
