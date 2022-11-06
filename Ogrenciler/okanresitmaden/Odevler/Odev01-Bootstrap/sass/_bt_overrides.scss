@@ -1,0 +1,106 @@
+@mixin bg($bgcolor){
+    background-color: $bgcolor;
+}
+@mixin color($color){
+    color:$color;
+}
+$dark:black;
+$success:rgb(9, 73, 12);
+$primary:rgb(8, 8, 139);
+$secondary:rgb(110, 106, 106);
+$warning:#310047;
+$danger:rgb(75, 74, 74);
+body{
+    padding-right: 0;
+}
+.row{
+    margin-right: 0 !important;
+}
+.navbar{
+    a:hover{
+        transform: translateY(-10px);
+        transition: transform .4s;
+        background-color: #2f3441;
+        border: 1px solid white;
+    }
+}
+
+
+.col-2{
+    button{
+        width: 200px;
+        height: 45px;
+    }
+}
+.carousel-caption{
+    button:hover{
+        @include bg(black);
+        transition: background-color 0.4s ease;
+
+    }
+}
+@mixin bg($bgcolor){
+    background-color: $bgcolor;
+}
+@mixin color($color){
+    color:$color;
+}
+@keyframes card1{
+    from {@include bg(white)}
+    to {@include bg(rgb(33, 138, 38))}
+    from {@include color(black)}
+    to {@include color(white)}
+}
+
+
+@keyframes card2{
+    from {@include bg(white)}
+    to {@include bg(blue)}
+    from {@include color(black)}
+    to {@include color(white)}
+}
+
+@keyframes card3{
+    from {@include bg(white)}
+    to {@include bg(rgb(0, 0, 0))}
+    from {@include color(black)}
+    to {@include color(white)}
+}
+@mixin cardanimation($name, $duration, $fillmode, $delay){
+    animation-name:$name;
+    animation-duration: $duration;
+    animation-fill-mode: $fillmode;
+    animation-delay: $delay;
+}
+.card1:hover{
+    @include cardanimation(card1,4s ,forwards ,0s );
+    cursor: pointer;
+    .table{
+        color: white;
+    }
+}
+.card2:hover{
+    @include cardanimation(card2,4s ,forwards ,0s );
+    cursor: pointer;
+    .table{
+        color: white;
+    }
+}
+.card3:hover{
+    @include cardanimation(card3,4s ,forwards ,0s );
+    cursor: pointer;
+    .table{
+        color: white;
+    }
+}
+.buttonanim{
+    button:hover{
+        @include bg(black);
+        transition: background-color 2s ease;
+        color: white;
+
+    }
+}
+
+
+
