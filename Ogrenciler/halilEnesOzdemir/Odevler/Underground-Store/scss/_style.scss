@@ -50,6 +50,101 @@ body {
   background-position: 40%;
 }
 
+// CLOTHING
+.clothing {
+  background: url('../img/clothing-background.jpg') no-repeat center;
+  background-size: cover;
+
+  &__text-box {
+    padding: 13rem 0 13rem;
+    width: 49%;
+    margin: auto;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+// ALBUMS
+.albums {
+  background: url(../img/album-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  &__text-box {
+    padding: 130px 0 130px;
+    width: 49%;
+    margin: auto;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  &__subtitle {
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.faq {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/faq_banner.jpeg');
+  background-size: cover;
+  height: 40vh;
+
+  &__text-box {
+    padding: 13rem 0 13rem;
+    width: 50%;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  &__subtitle {
+    display: block;
+  }
+}
+
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/about-us-bg-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+
+  &__text-box {
+    padding: 136px 0 129px;
+    width: 49%;
+    text-align: center;
+    margin: auto;
+  }
+  &__title {
+    color: #fff;
+    font-family: playfair display, serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    font-size: 21px;
+    font-family: playfair display, serif;
+    color: #fff;
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+// CLOTHING
+
+.sliderMainImage,
+.sliderThumb {
+  cursor: pointer;
+}
+
 // Heading Part
 .heading-title {
   margin-bottom: 6rem;
@@ -176,123 +271,4 @@ body {
   border: 3px solid #fff;
   font-size: 14px;
   height: auto;
-}
-
-// CLOTHING
-
-.clothing {
-  background: url(../img/clothing-background.jpg) no-repeat center;
-  background-size: cover;
-
-  &__text-box {
-    padding: 136px 0 129px;
-    width: 49%;
-    text-align: center;
-    margin: auto;
-  }
-  &__title {
-    color: #fff;
-    font-family: playfair display, serif;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 30px;
-  }
-  &__subtitle {
-    font-size: 21px;
-    font-family: playfair display, serif;
-    color: #fff;
-    display: block;
-    margin-top: 30px;
-  }
-}
-
-// ALBUMS
-
-.albums {
-  background: url(../img/album-bg.jpg) no-repeat center;
-  background-size: cover;
-
-  &__text-box {
-    padding: 136px 0 129px;
-    width: 49%;
-    text-align: center;
-    margin: auto;
-  }
-  &__title {
-    color: #fff;
-    font-family: playfair display, serif;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 30px;
-  }
-  &__subtitle {
-    font-size: 21px;
-    font-family: playfair display, serif;
-    color: #fff;
-    display: block;
-    margin-top: 30px;
-  }
-}
-
-.faq {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/faq_banner.jpeg');
-  background-size: cover;
-  height: 35vh;
-
-  &__text-box {
-    padding: 136px 0 129px;
-    width: 49%;
-    text-align: center;
-    margin: auto;
-  }
-  &__title {
-    color: #fff;
-    font-family: playfair display, serif;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 30px;
-  }
-  &__subtitle {
-    font-size: 21px;
-    font-family: playfair display, serif;
-    color: #fff;
-    display: block;
-    margin-top: 30px;
-  }
-}
-
-.about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/about-us-bg-img.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40vh;
-
-  &__text-box {
-    padding: 136px 0 129px;
-    width: 49%;
-    text-align: center;
-    margin: auto;
-  }
-  &__title {
-    color: #fff;
-    font-family: playfair display, serif;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 30px;
-  }
-  &__subtitle {
-    font-size: 21px;
-    font-family: playfair display, serif;
-    color: #fff;
-    display: block;
-    margin-top: 30px;
-  }
-}
-
-// CLOTHING
-
-.sliderMainImage,
-.sliderThumb {
-  cursor: pointer;
 }
