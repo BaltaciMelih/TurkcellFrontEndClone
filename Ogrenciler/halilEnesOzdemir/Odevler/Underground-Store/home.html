@@ -7,6 +7,7 @@
     <title>Underground Store | TR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/5e36563075.js" crossorigin="anonymous"></script>
   </head>
 
@@ -69,26 +70,17 @@
 
     <!-- STORY PART START -->
     <section id="story">
-      <div
-        class="container-fluid vh-100"
-        style="
-          background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url('https://s7d1.scene7.com/is/image/izotope/rapper-recording?resMode=sharp2&wid=1800&');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: 40%;
-        "
-      >
+      <div class="container-fluid story">
         <div class="row h-100">
-          <div class="col-6 px-5 ms-5 d-flex flex-column gap-5 align-items-center justify-content-center h-100">
+          <div class="col-6 px-5 ms-5 d-flex flex-column gap-5 align-items-md-start justify-content-center">
             <h1 class="display-1 mb-3 text-light">THE STORY</h1>
-            <p class="text-light fs-2" style="width: 90%">
+            <p class="text-light fs-2 lh-base" style="width: 90%">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sit dolor. Eveniet sequi magnam dolorum
               ea tempore quasi non dicta in nesciunt nemo voluptatem itaque delectus
             </p>
-            <p class="text-light fs-2" style="width: 90%">
+            <p class="text-light fs-2 lh-base" style="width: 90%">
               The restless Lewis began crooning something while strumming on his guitar, John felt inspired to jam with
-              an alaap, and the result: the seamless fusion of Eastern and Western sounds
+              an alaap, and the result: the seamless fusion of Eastern and Western.
             </p>
           </div>
         </div>
@@ -101,16 +93,12 @@
       <div class="container-fluid bg-light py-5">
         <div class="row">
           <div class="col-12 col-md-5">
-            <img
-              class="img-fluid h-100 w-100"
-              src="https://i.scdn.co/image/ab67616d0000b273ae03d01bd0a03f28f1866593"
-              alt=""
-            />
+            <img class="img-fluid h-100 rounded-2 d-block m-auto" src="img/home-album-def.jpg" alt="home-page-album" />
           </div>
           <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3">
-            <h3 class="product-title display-2 fw-semibold m-0">Defkhan</h3>
-            <h5 class="product-subtitle fs-5 m-0">Beş Dokuz</h5>
-            <div class="rating">
+            <h3 class="product-title display-2 fw-bolder">Defkhan</h3>
+            <h5 class="product-subtitle fs-4">Beş Dokuz(Plak)</h5>
+            <div class="rating mb-3">
               <ul class="d-flex text-decoration-none list-unstyled">
                 <li><i class="fa-solid fa-star &bigstar; fa-yellow"></i></li>
                 <li><i class="fa-solid fa-star &bigstar; fa-yellow"></i></li>
@@ -120,7 +108,7 @@
               </ul>
             </div>
 
-            <p class="fs-2 ms-md-5 lh-base text-md-center" style="width: 80%">
+            <p class="fs-2 ms-md-5 lh-base text-md-center mb-md-3" style="width: 90%">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed nibh pharetra, congue lectus at,
               malesuada augue. Donec tincidunt faucibus lacus malesuada augue.
             </p>
@@ -152,19 +140,19 @@
                   data-bs-slide-to="0"
                   class="active"
                   aria-current="true"
-                  aria-label="Slide 1"
+                  aria-label="Quote 1"
                 ></button>
                 <button
                   type="button"
                   data-bs-target="#undergroundCarouselCaption"
                   data-bs-slide-to="1"
-                  aria-label="Slide 2"
+                  aria-label="Quote 2"
                 ></button>
                 <button
                   type="button"
                   data-bs-target="#undergroundCarouselCaption"
                   data-bs-slide-to="2"
-                  aria-label="Slide 3"
+                  aria-label="Quote"
                 ></button>
               </div>
               <div class="carousel-inner">
@@ -233,19 +221,19 @@
 
     <!-- CLOTHING PART START -->
 
-    <section class="" id="clothing">
+    <section id="clothing">
       <div class="container-fluid bg-light py-5">
-        <div class="row w-100">
+        <div class="row">
           <div class="col-12 col-md-5 order-md-last ms-auto">
             <img
-              class="img-fluid h-100"
-              src="https://yt3.ggpht.com/IC7uqK4cRv2l-K58IlOpoUC-kxggyYB4PR5kbtGLSb1KigxPkpIBU1gQOyAY7WK5f3a21aGC=s900-c-k-c0x00ffffff-no-rj"
+              class="img-fluid rounded-4 ms-auto d-block m-auto"
+              src="https://img.discogs.com/Y2kSOQyFICf4-aCRXIKAaxjFglQ=/600x801/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-241062-1456438269-6406.jpeg.jpg"
             />
           </div>
           <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3 ms-lg-5">
-            <h3 class="product-title display-2 fw-semibold m-0">Ceza</h3>
-            <h5 class="product-subtitle fs-4">T-SHIRT</h5>
-            <div class="rating">
+            <h3 class="product-title display-2 fw-bolder m-0">Ceza</h3>
+            <h5 class="product-subtitle fs-3">T-Shirt</h5>
+            <div class="rating mb-3">
               <ul class="d-flex text-decoration-none list-unstyled">
                 <li><i class="fa-solid fa-star &bigstar; fa-yellow"></i></li>
                 <li><i class="fa-solid fa-star &bigstar; fa-yellow"></i></li>
@@ -255,7 +243,7 @@
               </ul>
             </div>
 
-            <p class="fs-2 ms-md-5 lh-base text-md-center" style="width: 80%">
+            <p class="fs-2 ms-md-5 lh-base text-md-center mb-md-3" style="width: 90%">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed nibh pharetra, congue lectus at,
               malesuada augue. Donec tincidunt faucibus lacus malesuada augue.
             </p>
