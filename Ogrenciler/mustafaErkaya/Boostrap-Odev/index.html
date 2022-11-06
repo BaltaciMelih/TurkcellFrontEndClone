@@ -17,9 +17,11 @@
 
 
   <body class="bg-info container-fluid" >
-    <nav class="navbar navbar-expand-lg  fixed-top ">
-      <div class="container-fluid ">
-        <a class="navbar-brand" href="#">Logo M.E Design</a>
+
+
+    <nav class="navbar navbar-expand-lg  bg-warning fixed-top ">
+      <div class="container ">
+        <img class="img-fluid" src="logo/logo.png" alt="" style="height: 50px; ">
         <button
           class="navbar-toggler"
           type="button"
@@ -31,22 +33,28 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="erkaya">
+        <div class="collapse navbar-collapse ms-md-5" id="erkaya">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item nav-border">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item nav-border ms-4 me-2">
+              <a class="nav-link" href="#product">Product</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item nav-border mx-2">
+              <a class="nav-link" href="#best-seller">Best Seller</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item nav-border mx-2">
+              <a class="nav-link" href="#three-img">Extra Part</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item nav-border mx-2">
+              <a class="nav-link" href="#opportunity-product">Opportunity Products</a>
+            </li>
+            <li class="nav-item nav-border mx-2">
+              <a class="nav-link" href="#featured">Featured Products</a>
+            </li>
+            <li class="nav-item nav-border mx-2">
+              <a class="nav-link" href="#">Contact</a>
             </li>
        
             
@@ -58,9 +66,10 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi bi-search"></i>
             </button>
+            <a href=""><i class="bi bi-cart3 fs-3 mx-3"></i></a>
           </form>
         </div>
       </div>
@@ -224,8 +233,9 @@
 
     <!-- Product -->
 
-            <!-- cardlara beyaz shadow eklenecek -->
-    <section class="product py-4 container-fluid bg-info">
+            <!-- cardlara beyaz shadow eklenecek -- "eklendi" -->
+            <!-- product section "d-blok-none yapıldı" -->
+    <section id="product" class="product py-4 container-fluid bg-info d-md-block d-none "> 
       <h2 class="text-center mb-4 text-white">Product</h2>
 
         <!-- id -->
@@ -459,24 +469,326 @@
     </section>
 
 
+    <!-- product responsive -->
+    <section id="product" class="product-responsive py-4 container-fluid bg-info d-md-none ">
+      <h2 class="text-center mb-4 text-white">Product</h2>
+      <div
+      
+        id="products-part2" 
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex gap-3 justify-content-center">
+              <div class="row">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
+                  <img
+                    src="./Product/diesel-p2-1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">Diesel</h5>
+                    <p>DZ1973 Erkek Kol Saati</p>
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 44 mm Kasa Çapı / Yuvarlak Kasa
+                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                    </p>
+                    <small class="text-decoration-line-through me-2"
+                      >$1000.00</small
+                    >
+                    <span>$900.00</span>
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
 
 
-    <div class="erkayagrid row px-5">
+                  
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex gap-3 justify-content-center w-100">
+              <div class="row">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
+                  <img
+                    src="./Product/micheal1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">Michael Kors</h5>
+                    <p>MK8561 Erkek Kol Saati</p>
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 45 mm Kasa Çapı / Yuvarlak Kasa
+                      Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik
+                    </p>
+                    <span class="me-2 d-block">$600.90</span>
+
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex gap-3 justify-content-center ">
+              <div class="row">
+
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
+                  <img
+                    src="./Product/wesse-c1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">Wesse Connect</h5>
+                    <p>WWC1001-02 Akıllı Saat</p>
+
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 44 mm Kasa Çapı / Yuvarlak Kasa
+                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                    </p>
+
+                    <span class="d-block">$448.72</span>
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="d-flex gap-3 justify-content-center w-100 ">
+              <div class="row">
+                <div class="card m-2 col-md bg-info product-shadow " style="width: 17rem">
+                  <img
+                    src="./Product/armani1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">Armani Exchange</h5>
+                    <p>AX1325 Erkek Kol Saati</p>
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 44 mm Kasa Çapı / Yuvarlak
+                      Kasa Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                    </p>
+                    <small class="text-decoration-line-through me-2"
+                      >$560.90</small
+                    >
+                    <span>$448.72</span>
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="d-flex gap-3 justify-content-center w-100">
+              <div class="row">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
+                  <img
+                    src="./Product/guess1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">Guess</h5>
+                    <p>GUW0668G7 Kol Saati</p>
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 45 mm Kasa Çapı / Yuvarlak Kasa
+                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                    </p>
+                    <span class="me-2 d-block">$800</span>
+                
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="d-flex gap-3 justify-content-center w-100">
+              <div class="row">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
+                  <img
+                    src="./Product/polo1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">U.S. Polo Assn.</h5>
+                    <p>USPA1024-01 Kol Saati</p>
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 41 mm Kasa Çapı / Yuvarlak Kasa
+                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                    </p>
+                    <span class="me-2 d-block">$750</span>
+                
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="d-flex gap-3 justify-content-center w-100">
+              <div class="row">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
+                  <img
+                    src="./Product/welder1.png "
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">Welder Moody Watch</h5>
+                    <p>WWRC401 45 mm Kol Saati</p>
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 41 mm Kasa Çapı / Yuvarlak Kasa
+                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                    </p>
+                    <span class="me-2 d-block">$1200</span>
+                
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="d-flex gap-3 justify-content-center w-100">
+              <div class="row">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
+                  <img
+                    src="./Product/wesse1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">Wesse</h5>
+                    <p>WWG203802 Kol Saati</p>
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 45 mm Kasa Çapı / Yuvarlak Kasa
+                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                    </p>
+                
+                    <span class="d-block">$448.72</span>
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="d-flex gap-3 justify-content-center w-100">
+              <div class="row">
+                <div class="card  m-2 col-md bg-info product-shadow" style="width: 17rem">
+                  <img
+                    src="./Product/diesel1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-white">
+                    <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
+                    <h5 class="card-title">Diesel</h5>
+                    <p>DZ1436 Kol Saati</p>
+                    <p class="card-text">
+                      Çelik / Quartz Teknoloji / 44 mm Kasa Çapı / Yuvarlak Kasa
+                      Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                    </p>
+                
+                    <span class="d-block">$448.72</span>
+                    <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+        <button
+          class="carousel-control-prev text-bg-success"
+          type="button"
+          data-bs-target="#products-part2"
+          data-bs-slide="prev"
+          style="height: 50px; width: 50px; margin: auto; border-radius: 50%;"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next text-bg-success"
+          type="button"
+          data-bs-target="#products-part2"
+          data-bs-slide="next"
+          style="height: 50px; width: 50px; margin: auto; border-radius: 50%;"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+    <div class="erkayagrid row px-5 ">
       <div class="col ">
 
      
     <!-- best seller         container padingi kaldırıldı  -->   
-    <section class="best-seller col-md  py-2  sticky-md-top ">
+    <section id="best-seller" class="best-seller col-md   py-3  sticky-md-top ">
       <!-- sticky-md-top ile 768 pxden aşağısında sticky none -->
-        <div class="  ">
-          <h2 class="text-center text-white pb-3">Best Seller</h2>
+        
+          <h2 class="text-center text-white pt-5 pb-2">Best Seller</h2>
 
           <div class="card col-12 bg-info  p-3">
+           
             <div class="row border-2 py-2">
+              
               <div class="col-6 product-shadow">
-                <img class="img-fluid " src="./Product/diesel-p2-1.png" alt="">
+                <a href="best-seller-1.html" target="_blank"><img class="img-fluid " src="./Product/diesel-p2-1.png" alt=""></a>
               </div>
               <div class="col-6 product-shadow">
+              
                 <div class="card-body text-center text-white">
                   <h6 class="card-subtitle mb-2 text-muted">M.E Design</h6>
                   <h5 class="card-title">Diesel</h5>
@@ -486,15 +798,18 @@
                     >$1000.00</small
                   >
                   <span>$900.00</span>
-                  <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  <a href="best-seller-1.html" target="_blank" class="btn btn-success mt-3">Buy Now !</a>
                 </div>
+              
               </div>
+            
             </div>
+          
             
          
             <div class="row py-2">
               <div class="col-6 ">
-                <img class="img-fluid " src="./Product/welder1.png" alt="">
+                <a href="best-seller-2.html" target="_blank"><img class="img-fluid " src="./Product/welder1.png" alt=""></a>
               </div>
               <div class="col-6">
                 <div class="card-body text-center text-white">
@@ -504,7 +819,7 @@
                   
                   <span class="me-2 d-block">$1200</span>
 
-                  <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  <a href="best-seller-2.html" target="_blank" class="btn btn-success mt-3">Buy Now !</a>
                 </div>
               </div>
 
@@ -513,7 +828,7 @@
           
             <div class="row py-2">
               <div class="col-6 product-shadow">
-                <img class="img-fluid" src="./Product/guess1.png" alt="">
+                <a href="best-seller-3.html" target="_blank"><img class="img-fluid" src="./Product/guess1.png" alt=""></a>
               </div>
               <div class="col-6 product-shadow"> 
                 <div class="card-body text-center text-white">
@@ -523,19 +838,19 @@
                  
                   <span class="me-2 d-block">$800</span>
 
-                  <a href="#" class="btn btn-success mt-3">Buy Now !</a>
+                  <a href="best-seller-3.html" target="_blank" class="btn btn-success mt-3">Buy Now !</a>
                 </div>
               </div>
             </div>
           
         </div>
-      </div>
+      
     
     </section>
 
        <!-- image -->
-    <section class="three-img   py-2 mx-4  ">
-      <h2 class="text-center text-warning py-2">Extra Part</h2>
+    <section id="three-img" class="three-img   py-3 mx-4  ">
+      <h2 class="text-center text-warning py-5">Extra Part</h2>
 
         <div class="row ps-5 ">
        
@@ -555,8 +870,8 @@
  
 
 <!-- opportunity-product -->
-    <section class="opportunity-product container mt-3 py-4" style="height: 900px;">
-      <h2 class="text-center text-white py-3 my-2">OpportunityProducts</h2>
+    <section id="opportunity-product" class="opportunity-product container mt-3 py-2" style="height: 900px;">
+      <h2 class="text-center text-white py-5 my-2">OpportunityProducts</h2>
       <div class="row">
         
           <div class="col-md-6">
@@ -626,7 +941,7 @@
 
     <!-- featured-product                       -->
     <!-- featuren collara lg verdik !!!!!!! -->
-    <section class="featured container">
+    <section id="featured"  class="featured container">
       <h2 class="text-white text-center p-4 ">Featured Products</h2>
       <div class="row px-4 my-3">
         <div class="card col-lg-5 bg-info p-3 product-shadow" >
