@@ -1,0 +1,15 @@
+$avg_Size: 5%;
+$avg_Size2: 7%;
+.flex{
+  display: flex;
+}
+.back-img{
+  background-image: url("../images/background_odev1.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  .container-md{
+    height: 100%;
+    padding-bottom: $avg_Size2;
+  }
+}

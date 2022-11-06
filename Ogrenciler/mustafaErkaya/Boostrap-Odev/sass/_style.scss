@@ -5,6 +5,18 @@ $home-header-font: 'Prata', serif;
 $home-h3-font: 'Poppins', sans-serif;
 $product-shadow:  rgba(208, 203, 203, 0.24) 0px 3px 8px;
 
+@mixin border {
+    border: 1px solid black;
+    // border-top-left-radius: 2rem;
+    // border-bottom-right-radius: 2rem;
+    border-radius: 0.7rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 h3{
     font-family: $home-h3-font;
     
@@ -13,7 +25,9 @@ h3{
     box-shadow: $product-shadow;
 }
 
-
+.nav-border{
+    @include border;
+}
 
 .home-font{
     font-family: $home-font;

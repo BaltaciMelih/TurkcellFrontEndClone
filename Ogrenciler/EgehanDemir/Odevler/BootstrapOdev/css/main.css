@@ -8385,3 +8385,15 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+.flex {
+  display: flex; }
+
+.back-img {
+  background-image: url("../images/background_odev1.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .back-img .container-md {
+    height: 100%;
+    padding-bottom: 7%; }
