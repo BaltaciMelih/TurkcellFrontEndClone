@@ -179,29 +179,34 @@
 //   console.log(lang);
 // });
 
-// let sayi = prompt("Bir sayı girin");
+//    Mükemmel Sayı Sorusu Çözümü Farklı Yöntem
+
+// let i,j;
+// let sayi;
+// let toplam=0;
+// sayi=prompt("Sayıyı giriniz:");
+// for(i=1; i<sayi; i++)
+//  {
+//      if (sayi%i==0)
+//       {
+//           toplam = toplam + i;
+//      }
+// }
+//  if (sayi==toplam)
+//  {
+//       console.log(sayi + " Sayısı Mükemmel Sayıdır");
+//  }
+//  else
+//  {
+//       console.log(sayi + " Sayısı Mükemmel Sayı Değildir");
+//  }
+
+// Faktöriyel Sorusunun Çözümü
+
+// let sayi = prompt("Bir Sayı Giriniz");
 // let sonuc = 1;
-// for (let i = 2; i <= sayi; i++) {
-//   sonuc = sonuc * i;
+// for (let i=2; i<= sayi; i++){
+//      sonuc = sonuc * i;
+     
 // }
 // console.log(sonuc);
-
-let i,j;
-let sayi;
-let toplam=0;
-sayi=prompt("Sayıyı giriniz:");
-for(i=1; i<sayi; i++)
- {
-      if (sayi%i==0)
-      {
-            toplam=toplam+i;      
-      }
- }
- if (sayi==toplam)
- {
-      console.log(sayi + " Sayısı Mükemmel Sayıdır");       
- }
- else
- {
-      console.log(sayi + " Sayısı Mükemmel Sayı Değildir");       
- }
