@@ -11157,8 +11157,8 @@ body {
 }
 
 .hero {
-  height: 95vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-bg.jpg");
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -11171,6 +11171,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.story {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/story-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-position: 40%;
 }
 
 .heading-title {

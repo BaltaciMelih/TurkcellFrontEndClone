@@ -10,6 +10,7 @@
   "author": "Halil Enes",
   "license": "MIT",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
     "node-sass": "^7.0.3"
   }
