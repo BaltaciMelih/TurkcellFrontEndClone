@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Underground Store | TR</title>
+    <link rel="shortcut icon" href="img/underground-store-logo.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://kit.fontawesome.com/5e36563075.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body id="top">
     <!-- HEADER PART START -->
     <header class="header">
-      <nav class="navbar navbar-expand-md fixed-top py-3 bg-transparent navbar-dark">
+      <div class="backToTop">
+        <a href="#top">
+          <img src="img/back-to-top.png" />
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-md fixed-top py-3 navbar-dark bg-secondary bg-opacity-10">
         <div class="container">
           <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="home.html">Underground Store</a>
           <button
-            class="navbar-toggler bg-transparent"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#undergroundNavbar"
@@ -32,19 +39,19 @@
           <div class="collapse navbar-collapse" id="undergroundNavbar">
             <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-3 gap-1 ms-auto">
               <li class="nav-item">
-                <a class="nav-link active text-light fs-4" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link active text-light fs-4 fw-semibold" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="clothing.html">Clothing</a>
+                <a class="nav-link fs-4 text-light" href="clothing.html">Clothing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-hover fs-4" href="albums.html">Albums</a>
+                <a class="nav-link nav-hover fs-4 text-light" href="albums.html">Albums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="faq.html">FAQ</a>
+                <a class="nav-link fs-4 text-light" href="faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="about-us.html">About Us</a>
+                <a class="nav-link fs-4 text-light" href="about-us.html">About Us</a>
               </li>
             </ul>
           </div>
@@ -59,7 +66,7 @@
         <div class="hero__text-container">
           <h1 class="heading-title text-uppercase text-light">
             <p class="heading-title__main-title mb-5 display-1">UNDERGROUND LIFE</p>
-            <p class="heading-title__subtitle display-6">Everything You Need in One Place</p>
+            <p class="heading-title__subtitle display-6 lh-base">Everything You Need in One Place</p>
           </h1>
           <a href="#" class="btn btn--white btn--animated">Explore</a>
         </div>
@@ -89,14 +96,18 @@
 
     <!-- ALBUMS PART START -->
     <section id="albums">
-      <div class="container-fluid bg-light py-5">
+      <div class="container-fluid bg-secondary bg-opacity-25 py-3">
         <div class="row">
           <div class="col-12 col-md-5">
-            <img class="img-fluid h-100 rounded-2 d-block m-auto" src="img/home-album-def.jpg" alt="home-page-album" />
+            <img
+              class="img-fluid h-100 rounded-2 d-block m-auto albums-img"
+              src="img/home-album-def.jpg"
+              alt="home-page-album"
+            />
           </div>
           <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3">
-            <h3 class="product-title display-2 fw-bolder">Defkhan</h3>
-            <h5 class="product-subtitle fs-4">Beş Dokuz(Plak)</h5>
+            <h3 class="product-title display-2 fw-semibold text-dark">Defkhan</h3>
+            <h5 class="product-subtitle fs-3">Beş Dokuz(Plak)</h5>
             <div class="rating mb-3">
               <ul class="d-flex text-decoration-none list-unstyled">
                 <li><i class="fa-solid fa-star &bigstar; fa-yellow"></i></li>
@@ -127,7 +138,7 @@
     <!-- ALBUMS PART END -->
 
     <!-- CAROUSEL PART START -->
-    <section>
+    <section id="carousel" class="bg-light py-4">
       <div class="container-lg">
         <div class="row">
           <div class="col">
@@ -160,7 +171,7 @@
                     src="img/quote-img-1.jpg"
                     class="d-block w-100 img-fluid rounded-5"
                     alt="Norm-Ender-Quote"
-                    style="height: 550px"
+                    style="height: 54rem"
                   />
                   <div class="carousel-caption d-none d-sm-block">
                     <h5 class="fs-3">Norm Ender</h5>
@@ -170,7 +181,7 @@
                 <div class="carousel-item">
                   <img
                     src="img/quote-img-2.jpg"
-                    style="height: 550px"
+                    style="height: 54rem"
                     class="d-block w-100 img-fluid rounded-5"
                     alt="Defkhan-Quote"
                   />
@@ -182,8 +193,8 @@
                 <div class="carousel-item">
                   <img
                     src="img/quote-img-3.jpeg"
-                    class="d-block w-100 img-fluid rounded-5"
-                    style="height: 550px"
+                    class="d-block w-100 img-fluid rounded-5 shadow-lg"
+                    style="height: 54rem"
                     alt="Sagopa-Kajmer-Quote"
                   />
                   <div class="carousel-caption d-none d-sm-block">
@@ -221,10 +232,10 @@
     <!-- CLOTHING PART START -->
 
     <section id="clothing">
-      <div class="container-fluid bg-light py-5">
+      <div class="container-fluid bg-secondary bg-opacity-25 py-3">
         <div class="row">
           <div class="col-12 col-md-5 order-md-last ms-auto">
-            <img class="img-fluid rounded-4 ms-auto d-block m-auto" src="img/home-tshirt-ceza.jpg" />
+            <img class="img-fluid rounded-4 ms-auto d-block m-auto clothing-img" src="img/home-tshirt-ceza.jpg" />
           </div>
           <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3 ms-lg-5">
             <h3 class="product-title display-2 fw-bolder m-0">Ceza</h3>
@@ -241,7 +252,8 @@
 
             <p class="fs-2 ms-md-5 lh-base text-md-center mb-md-3" style="width: 90%">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed nibh pharetra, congue lectus at,
-              malesuada augue. Donec tincidunt faucibus lacus malesuada augue.
+              malesuada augue. Donec tincidunt faucibus lacus malesuada augue. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
             </p>
 
             <div class="d-grid gap-2 d-sm-block">
@@ -261,14 +273,14 @@
 
     <!-- SLOGAN START -->
 
-    <section id="slogan" style="background-color: bisque">
-      <div class="container">
+    <section id="slogan" class="bg-light">
+      <div class="container py-3">
         <div class="row">
           <div class="col-md-12 text-center p-4">
-            <h4 class="mb-5 fw-semibold mx-auto lh-base" style="color: #494949; font-size: 4rem">
+            <h4 class="mb-5 fw-bold mx-auto lh-base" style="font-size: 3.6rem; opacity: 0.75">
               Take your first step into underground life with albums and dresses.
             </h4>
-            <a class="btn btn-success" href="">SHOP NOW</a>
+            <button class="btn btn-success btn-lg px-5 py-3 rounded-5 fs-4 fw-bolder" href="">SHOP NOW</button>
           </div>
         </div>
       </div>

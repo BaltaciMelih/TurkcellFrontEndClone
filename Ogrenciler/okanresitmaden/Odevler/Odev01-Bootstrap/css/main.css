@@ -1,3 +1,4 @@
+@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
 body {
   padding-right: 0; }
 
@@ -77,8 +78,7 @@ body {
 
 .buttonanim button:hover {
   background-color: black;
-  transition: background-color 2s ease;
-  color: white; }
+  transition: background-color 2s ease; }
 
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
@@ -8468,7 +8468,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.bgheader {
+.bgsetting {
   background-image: url(https://wallpaperaccess.com/full/1580037.jpg);
   background-repeat: none;
   background-size: cover;
@@ -8480,7 +8480,7 @@ textarea.form-control-lg {
   right: 0;
   position: absolute; }
 
-.bgheader3 {
+.bgsetting2 {
   background-image: url(https://www.wallpapertip.com/wmimgs/53-533665_awesome-wallpapers-for-pc-high-resolution-3d-art.jpg);
   background-repeat: none;
   background-size: cover;
@@ -8490,13 +8490,13 @@ textarea.form-control-lg {
   z-index: -1;
   left: 0;
   right: 0;
-  position: absolute;
   padding: 0;
   margin-top: 0;
+  position: absolute;
   right: 0; }
 
-.bgheader4 {
-  background-image: url(https://www.wallpapertip.com/wmimgs/53-533665_awesome-wallpapers-for-pc-high-resolution-3d-art.jpg);
+.bgsetting3 {
+  background-image: url(https://www.hdwallpapers.in/download/green_stars_space_galaxy_black_sky_background_4k_hd_green-3840x2160.jpg);
   background-repeat: none;
   background-size: cover;
   opacity: 1;
@@ -8505,14 +8505,33 @@ textarea.form-control-lg {
   z-index: 0;
   left: 0;
   right: 0;
-  position: absolute;
-  background-image: url(https://www.hdwallpapers.in/download/green_stars_space_galaxy_black_sky_background_4k_hd_green-3840x2160.jpg);
   padding: 0;
-  margin-top: 0; }
+  margin-top: 0;
+  position: absolute; }
 
-.basket {
-  color: white;
-  font-size: 30px; }
+.card-animation {
+  width: 500px;
+  height: 320px; }
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 2s;
+  transform-style: preserve-3d; }
+
+.card-animation:hover .flipper {
+  transform: rotateY(180deg); }
+
+.frontside, .backside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+.backside {
+  background-color: black;
+  transform: rotateY(180deg); }
 
 .footer {
   margin-top: 0;
@@ -8529,7 +8548,7 @@ textarea.form-control-lg {
     transition: transform .5s; }
 
 .footerimg img:hover {
-  transform: rotateY(360deg);
+  transform: rotate(360deg);
   transition: transform 4s; }
 
 .checked {
@@ -8548,9 +8567,6 @@ textarea.form-control-lg {
 
 .animationheader {
   animation: hed 3s forwards 0s; }
-
-.animationheader2 {
-  animation: hed 3s forwards 1s; }
 
 @keyframes txtclrchange__animation {
   from {
@@ -8579,6 +8595,9 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #fff; }
 
+.backside .btn a:hover {
+  color: black; }
+
 .container-about .card1:hover {
   transform: translateY(-45px);
   transition: transform 2s; }
@@ -8593,7 +8612,3 @@ textarea.form-control-lg {
 
 .container-about a:hover {
   color: #6e6a6a; }
-
-@media (max-width: 767.98px) {
-  .team {
-    flex-direction: column; } }
