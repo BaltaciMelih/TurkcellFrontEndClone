@@ -155,6 +155,12 @@ a{
 }
 .products{
     .productsCard{
+        border: 1px solid white;
+
+        &:hover{
+            border: 1px solid $colorPrimary;
+
+        }
         svg{
             color: orangered;
         }
