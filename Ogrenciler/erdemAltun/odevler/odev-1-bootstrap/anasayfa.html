@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <title>Anasayfa</title>
+  </head>
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar fixed-top navbar-expand-md bg-warning d-flex position-sticky">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand ps-4 col-md-2" href="#"><img src="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/images/logo.png" alt="" style="width: 170px;"></a>
+
+       
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end col-md-4"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/anasayfa.html">Anasayfa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Araçlarımız
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/audi.html">Audi</a></li>
+                <li><a class="dropdown-item" href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/porsche.html">Porshe</a></li>
+                <li><a class="dropdown-item" href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/mustang.html">Mustang</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Mercedes</a></li>
+                <li><a class="dropdown-item" href="#">Lamborghini</a></li>
+                <li><a class="dropdown-item" href="#">Bugatti</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/SSS.html">SSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/hakkımızda.html">Hakkımızda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <!-- carousel -->
+
+    <div
+      id="carouselDark"
+      class="carousel carousel-light slide h-75"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselDark"
+          data-bs-slide-to="0"
+          class=""
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+          class=""
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+          class="active"
+          aria-current="true"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item" data-bs-interval="10000">
+          <img
+            src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+            class="d-block w-100"
+            alt="..."
+          />
+          
+
+         
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="d-block w-100"
+            alt="..."
+          />
+         
+
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="d-block w-100"
+            alt="..."
+          />
+    
+
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- card -->
+
+    <div class="cards container my-5">
+      <div class="row">
+        <div class="card col-md-4 ">
+          <img
+              src="https://images.unsplash.com/photo-1617195920950-1145bf9a9c72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+              class="d-block w-100 h-75"
+              alt="..."
+            />
+            
+
+          <div class="card-body">
+            <h5 class="card-title ">Audi TT</h5>
+            <p class="card-text ">
+              İlk olarak 1998 yılında karşımıza çıkan Audi’nin ikonik modeli TT, sınırlı sayıda üretilecek özel bir versiyonla karşımızda.
+            </p>
+            <a href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/audi.html" class="btn btn-warning">İncele</a>
+          </div>
+        </div>
+        <div class="card col-md-4 ">
+          <img
+          src="https://images.unsplash.com/photo-1656077917464-5e1ffa323d6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+          class="d-block w-100 h-75 "
+          alt="..."
+        />
+
+          <div class="card-body">
+            <h5 class="card-title">Porsche Panamera</h5>
+            <p class="card-text">
+              Tipik Porsche dinamizmine sahip ve aynı anda daha verimli. Çoğu kişi bunun imkansız olduğunu söyledi. Diğerleri cesaret dedi.
+            </p>
+            <a href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/porsche.html" class="btn btn-warning">İncele</a>
+          </div>
+        </div>
+        <div class="card col-md-4">
+          <img
+          src="https://images.unsplash.com/photo-1567818772638-4e4d98a02ec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          class="d-block w-100 h-75"
+          alt="..."
+        />
+
+          <div class="card-body">
+            <h5 class="card-title">Ford Mustang</h5>
+            <p class="card-text">
+              Bu model 464 beygir gücü ve 569 Nm tork sunan 5.0 litrelik bir V8'e sahip. Tam bir performans canavarı!
+            </p>
+            <a href="/Ogrenciler/erdemAltun/odevler/odev-1-bootstrap/mustang.html" class="btn btn-warning">İncele</a>
+          </div>
+        </div>
+
+        
+          <div class="card col-md-4 my-5" >
+            <img
+            src="https://images.unsplash.com/photo-1578847945645-05da1befc0c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80"
+            class="d-block w-100 h-75"
+            alt="..."
+          />
+    
+            <div class="card-body">
+              <h5 class="card-title">Mercedes G-Class</h5>
+              <p class="card-text">
+                40 yıldır emsalsiz. Sadece G-Serisi bir G-Serisi gibi görünür. Size sadece benzersiz bir tasarım sunmaz; kişiliğinizin güçlü yanlarını ortaya çıkarır.
+              </p>
+              <a href="#" class="btn btn-warning">İncele</a>
+            </div>
+          </div>
+          <div class="card col-md-4 my-5" >
+            <img
+            src="https://images.unsplash.com/photo-1580414057403-c5f451f30e1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            class="d-block w-100 h-75"
+            alt="..."
+          />
+    
+            <div class="card-body">
+              <h5 class="card-title">Lamborghini Huracan</h5>
+              <p class="card-text">
+                2011 yılında V12 motoru ve çarpıcı görünümü ile gönüllerde taht kuran Aventador, 2022 yılında yine bizi kendine hayran bırakıyor.
+              </p>
+              <a href="#" class="btn btn-warning">İncele</a>
+            </div>
+          </div>
+          <div class="card col-md-4 my-5" >
+            <img
+            src="https://images.unsplash.com/photo-1600712242805-5f78671b24da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+            class="d-block w-100 h-75"
+            alt="..."
+          />
+    
+            <div class="card-body">
+              <h5 class="card-title">Bugatti Veyron</h5>
+              <p class="card-text">
+                Daha önce hiç bir kara aracının 431 km/h yaptığını gördünüz mü? Sadece bu sebeple bile tam bir koleksiyon eşyası.
+              </p>
+              <a href="#" class="btn btn-warning">İncele</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+
+    
+    
+
+   <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+ 
+  <div class="container p-4">
+    
+    <section class="mb-3">
+     
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-facebook"></i>
+      </a>
+
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-twitter"></i></a>
+
+     
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-google"></i
+      ></a>
+
+     
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-instagram"></i
+      ></a>
+
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-youtube"></i
+      ></a>
+
+    </section>
+   
+
+    
+    <section class="">
+      <form action="">
+        
+        <div class="row d-flex justify-content-center">
+          
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Avantajlardan yararlanmak için kaydolun</strong>
+            </p>
+          </div>
+          
+
+          <div class="col-md-5 col-12">
+            <div class="form-outline form-white mb-1">
+              <input type="email" id="form521" class="form-control" placeholder="Email Adresi" />
+              <label class="form-label" for="form521"></label>
+            </div>
+          </div>
+          
+
+          
+          <div class="col-auto">
+           
+            <button type="submit" class="btn btn-outline-light mb-2">
+              Kayıt ol
+            </button>
+          </div>
+          
+        </div>
+       
+      </form>
+    </section>
+  
+    <section class="mb-2">
+      <p>
+        Yıllardır otomobil sektörüne kattıkları değerle sektörün öncüsü olan markalarla yaptığımız ortaklıktan gurur dolayı duyuyoruz. Araç alım satım, yerinde acil servisimizle sizlere daha iyi bir deneyim sunmak için çalışıyoruz.
+      </p>
+    </section>
+    <h5 class="text-uppercase">İş Ortaklarımız</h5>
+  
+
+
+    <section class="">
+     
+      <div class="row">
+       
+        <div class="col-lg-6 col-md-6 mb-2 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.audi.com.tr/tr/web/tr.html?utm_source=google&utm_medium=cpc&utm_campaign=audi-brand-ao&gclid=CjwKCAjw8JKbBhBYEiwAs3sxN2pxpI0cxlsnGOHSsVH_fzoyU9zDQ-WZkXV8fPCcEH72DCFE4P6u7BoCQywQAvD_BwE" class="text-white"><img src="https://www.freepnglogos.com/uploads/audi-logo-0.gif" alt="" style="width: 100px;"></a>
+            </li>
+            <li>
+              <a href="https://www.mercedes-benz.com.tr/?gclid=CjwKCAjw8JKbBhBYEiwAs3sxN0L6FWVTjnpqjGk0oso4a5_DswOTC7R3STyoxPJ0MiUvgxV_euvkOxoCPPsQAvD_BwE&gclsrc=aw.ds&group=all&subgroup=see-all&view=BODYTYPE" class="text-white"><img src="https://pngimg.com/uploads/mercedes_logos/mercedes_logos_PNG6.png" alt="" style="width: 200px;"></a>
+            </li>
+            
+            <li>
+              <a href="https://www.ford.com.tr/modeller/gelecek-araclar/mustang-mach-e?utm_source=google&utm_medium=cpc&utm_campaign=mustangmachebrand&utm_content=search&gclid=CjwKCAjw8JKbBhBYEiwAs3sxN-74jNd05rusu7FL0Km4EWYMzIelR-5MPcAPxMktkUt6ByFPYiyhEBoCdqYQAvD_BwE" class="text-white"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/1280px-SMU_Mustang_logo.svg.png" alt="" style="width: 80px;"></a>
+            </li>
+          </ul>
+        </div>
+       
+        <div class="col-lg-6 col-md-6 mb-2 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.porsche.com.tr/?gclid=CjwKCAjw8JKbBhBYEiwAs3sxN1NRxz-w51ybjBTvcVxl4m77gqWoAil9Fni31-zs6dgpDBkmUqflyhoC7r4QAvD_BwE" class="text-white"><img src="https://upload.wikimedia.org/wikipedia/it/thumb/a/a1/Logo_della_Porsche.svg/1589px-Logo_della_Porsche.svg.png" alt="" style="width: 65px;"></a>
+            </li>
+            <li>
+              <a href="https://www.lamborghini.com/en-en/dealerships/lamborghini-istanbul" class="text-white"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Lamborghini_Logo.svg/1200px-Lamborghini_Logo.svg.png" alt="" style="width: 65px;"></a>
+            </li>
+            <li>
+              <a href="https://www.bugatti.com/" class="text-white"><img src="https://www.carlogos.org/logo/Bugatti-logo-2560x1440.png" alt="" style="width: 100px;"></a>
+            </li>
+          </ul>
+        </div>
+      
+    </section>
+   
+  </div>
+  
+
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="">LUXURY CAR</a>
+  </div>
+  
+</footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
