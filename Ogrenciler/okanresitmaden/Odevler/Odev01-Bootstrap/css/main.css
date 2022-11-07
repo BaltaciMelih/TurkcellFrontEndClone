@@ -8468,7 +8468,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.bgheader {
+.bgsetting {
   background-image: url(https://wallpaperaccess.com/full/1580037.jpg);
   background-repeat: none;
   background-size: cover;
@@ -8480,7 +8480,7 @@ textarea.form-control-lg {
   right: 0;
   position: absolute; }
 
-.bgheader3 {
+.bgsetting2 {
   background-image: url(https://www.wallpapertip.com/wmimgs/53-533665_awesome-wallpapers-for-pc-high-resolution-3d-art.jpg);
   background-repeat: none;
   background-size: cover;
@@ -8491,11 +8491,11 @@ textarea.form-control-lg {
   left: 0;
   right: 0;
   padding: 0;
-  margin-top: zero;
+  margin-top: 0;
   position: absolute;
   right: 0; }
 
-.bgheader4 {
+.bgsetting3 {
   background-image: url(https://www.hdwallpapers.in/download/green_stars_space_galaxy_black_sky_background_4k_hd_green-3840x2160.jpg);
   background-repeat: none;
   background-size: cover;
@@ -8506,7 +8506,7 @@ textarea.form-control-lg {
   left: 0;
   right: 0;
   padding: 0;
-  margin-top: zero;
+  margin-top: 0;
   position: absolute; }
 
 .card-animation {
@@ -8554,7 +8554,7 @@ textarea.form-control-lg {
 .checked {
   color: #0e3c61; }
 
-@keyframes hed {
+@keyframes productanimate {
   0% {
     transform: translateY(-1200px) scale(0.7);
     opacity: .7; }
@@ -8565,8 +8565,8 @@ textarea.form-control-lg {
     transform: scale(1);
     opacity: 1; } }
 
-.animationheader {
-  animation: hed 3s forwards 0s; }
+.animationproducts {
+  animation: productanimate 3s forwards 0s; }
 
 @keyframes txtclrchange__animation {
   from {

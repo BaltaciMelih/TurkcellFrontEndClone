@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.albums-img,
+.clothing-img,
+.products-img {
+  &:hover {
+    transform: scale(0.85);
+  }
+}
+
 @mixin section-bg($name) {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../img/#{$name}.jpg');
@@ -57,7 +65,8 @@ body {
 }
 
 // CLOTHING
-.clothing {
+.clothing,
+.about {
   background: url('../img/clothing-background.jpg') no-repeat center;
   background-size: cover;
 
@@ -112,35 +121,6 @@ body {
   }
   &__subtitle {
     display: block;
-  }
-}
-
-.about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/about-us-bg-img.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40vh;
-
-  &__text-box {
-    padding: 136px 0 129px;
-    width: 49%;
-    text-align: center;
-    margin: auto;
-  }
-  &__title {
-    color: #fff;
-    font-family: playfair display, serif;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 30px;
-  }
-  &__subtitle {
-    font-size: 21px;
-    font-family: playfair display, serif;
-    color: #fff;
-    display: block;
-    margin-top: 30px;
   }
 }
 
