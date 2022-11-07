@@ -1,0 +1,25 @@
+$text-font:cursive;
+$tittle-font:sans-serif;
+
+.card{
+    background-color: transparent !important;
+}
+
+.navbar-nav a{
+    font-weight: bolder;
+}
+.About-us p{
+    font-family: $text-font;
+}
+.mission p{
+    font-family: $text-font;
+}
+.card-text{
+    font-family: $text-font;
+}
+
+.card-title{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: $tittle-font;
+}

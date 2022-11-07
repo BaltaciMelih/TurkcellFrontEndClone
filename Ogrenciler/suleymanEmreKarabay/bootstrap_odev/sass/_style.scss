@@ -154,7 +154,6 @@ a{
 
 }
 .products{
-
     .productsCard{
         svg{
             color: orangered;
@@ -183,6 +182,8 @@ a{
                     
                 }
 }
+
+
 
 footer{
     .footerHeader{
@@ -222,5 +223,13 @@ footer{
     }
     .footerBottomRights{
         text-align: center;
+    }
+
+    .carouselProductDelete{
+        display: none;
+    }
+
+    .products{
+     text-align: center;
     }
 }

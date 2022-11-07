@@ -13,7 +13,7 @@
     <title>PerfuMen</title>
   </head>
   <body>
-    <header class="topBar">
+    <header class="topBar" id="topBar">
       <div class="container-fluid row p-3">
         <div
           class="d-none d-lg-flex gap-3 col-lg-4 align-self-center text-light"
@@ -164,173 +164,189 @@
       </div>
     </nav>
     <main>
-      <div class="container row ms-auto me-auto">
-        <img
-          class="col-md-12 ms-auto me-auto bentleyImg"
-          src="image/ForMenBlackEdition-2.jpg"
-          alt=""
-        />
-        <h2 class="mt-5 mb-5">TÜM PARFÜMLER</h2>
-        <div class="container">
-          <div>
-            <h3 class="mb-md-3 mb-0">POPÜLER</h3>
-          </div>
-          <div class="row mb-4">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <a
-                class="text-decoration-none text-black"
-                href="product-detail-prof.html"
-                ><div class="card popularProduct">
-                  <img
-                    src="image/acquadigio-profumo.jpg"
-                    class="card-img-top border-bottom"
-                    alt="acqua di gio profumo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Giorgio Armani</h4>
-                    <h5 class="text-center">Acqua Di Gio Profumo</h5>
-                    <p class="card-text text-center fs-5 text-success">
-                      2.860,00 TL
-                    </p>
-                  </div>
-                </div></a
-              >
+      <section class="bg-light brCrumb">
+        <div class="container p-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pt-3">
+              <li class="breadcrumb-item">
+                <a href="homepage.html">Anasayfa</a>
+              </li>
+              <li class="breadcrumb-item active text-dark" aria-current="page">
+                Parfümler
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <section class="popProducts">
+        <div class="container row ms-auto me-auto">
+          <img
+            class="col-md-12 ms-auto me-auto bentleyImg"
+            src="image/ForMenBlackEdition-2.jpg"
+            alt=""
+          />
+          <h2 class="mt-5 mb-5">TÜM PARFÜMLER</h2>
+          <div class="container">
+            <div>
+              <h3 class="mb-md-3 mb-0">POPÜLER</h3>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <a
-                class="text-decoration-none text-black"
-                href="product-detail-elixir.html"
-                ><div class="card popularProduct">
-                  <img
-                    src="image/sauvage.jpg"
-                    class="card-img-top border-bottom"
-                    alt="acqua di gio profumo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Dior</h4>
-                    <h5 class="text-center">Sauvage Elixir</h5>
-                    <p class="card-text text-center fs-5 text-success">
-                      4.409,00 TL
-                    </p>
-                  </div>
-                </div></a
-              >
+            <div class="row mb-4">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a
+                  class="text-decoration-none text-black"
+                  href="product-detail-prof.html"
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/acquadigio-profumo.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Giorgio Armani</h4>
+                      <h5 class="text-center">Acqua Di Gio Profumo</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        2.860,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a
+                  class="text-decoration-none text-black"
+                  href="product-detail-elixir.html"
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/sauvage.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Dior</h4>
+                      <h5 class="text-center">Sauvage Elixir</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        4.409,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a
+                  class="text-decoration-none text-black"
+                  href="porduct-detail-invictus.html"
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/invictus.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Paco Rabanne</h4>
+                      <h5 class="text-center">İnvictus</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        1.637,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/hugo boss.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Hugo Boss</h4>
+                      <h5 class="text-center">Boss Bottled</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        1.717,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <a
-                class="text-decoration-none text-black"
-                href="porduct-detail-invictus.html"
-                ><div class="card popularProduct">
-                  <img
-                    src="image/invictus.jpg"
-                    class="card-img-top border-bottom"
-                    alt="acqua di gio profumo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Paco Rabanne</h4>
-                    <h5 class="text-center">İnvictus</h5>
-                    <p class="card-text text-center fs-5 text-success">
-                      1.637,00 TL
-                    </p>
-                  </div>
-                </div></a
-              >
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <a class="text-decoration-none text-black" href=""
-                ><div class="card popularProduct">
-                  <img
-                    src="image/hugo boss.jpg"
-                    class="card-img-top border-bottom"
-                    alt="acqua di gio profumo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Hugo Boss</h4>
-                    <h5 class="text-center">Boss Bottled</h5>
-                    <p class="card-text text-center fs-5 text-success">
-                      1.717,00 TL
-                    </p>
-                  </div>
-                </div></a
-              >
-            </div>
-          </div>
-          <div class="row mb-5">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <a class="text-decoration-none text-black" href=""
-                ><div class="card popularProduct">
-                  <img
-                    src="image/bformen.jpg"
-                    class="card-img-top border-bottom"
-                    alt="acqua di gio profumo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Bentley</h4>
-                    <h5 class="text-center">For Men Black Edition</h5>
-                    <p class="card-text text-center fs-5 text-success">
-                      2.040, 00 TL
-                    </p>
-                  </div>
-                </div></a
-              >
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <a class="text-decoration-none text-black" href=""
-                ><div class="card popularProduct">
-                  <img
-                    src="image/jeanpaul.jpg"
-                    class="card-img-top border-bottom"
-                    alt="acqua di gio profumo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Jean Paul Gaultier</h4>
-                    <h5 class="text-center">Le Beau Le Parfum</h5>
-                    <p class="card-text text-center fs-5 text-success">
-                      1.755,00 TL
-                    </p>
-                  </div>
-                </div></a
-              >
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <a class="text-decoration-none text-black" href=""
-                ><div class="card popularProduct">
-                  <img
-                    src="image/spicebomb.jpg"
-                    class="card-img-top border-bottom"
-                    alt="acqua di gio profumo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Victor&Rolf</h4>
-                    <h5 class="text-center">SpiceBomb Extreme</h5>
-                    <p class="card-text text-center fs-5 text-success">
-                      2.310,00 TL
-                    </p>
-                  </div>
-                </div></a
-              >
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <a class="text-decoration-none text-black" href=""
-                ><div class="card popularProduct">
-                  <img
-                    src="image/versace-eros.jpg"
-                    class="card-img-top border-bottom"
-                    alt="acqua di gio profumo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Versace</h4>
-                    <h5 class="text-center">Eros</h5>
-                    <p class="card-text text-center fs-5 text-success">
-                      1.860,00 TL
-                    </p>
-                  </div>
-                </div></a
-              >
+            <div class="row mb-5">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/bformen.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Bentley</h4>
+                      <h5 class="text-center">For Men Black Edition</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        2.040, 00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/jeanpaul.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Jean Paul Gaultier</h4>
+                      <h5 class="text-center">Le Beau Le Parfum</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        1.755,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/spicebomb.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Victor&Rolf</h4>
+                      <h5 class="text-center">SpiceBomb Extreme</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        2.310,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/versace-eros.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Versace</h4>
+                      <h5 class="text-center">Eros</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        1.860,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="bg-primary p-5">
       <div class="container row m-auto">
@@ -409,6 +425,12 @@
       <h6 class="mb-0 text-center cartcurt align-self-center">
         Designed by Ahmet Melih BALTACI
       </h6>
+    </div>
+    <div class="backToTop position-absolute position-fixed">
+      <a href="#topBar"
+        ><button type="button" class="btn btn-secondary text-white btn-sm">
+          <i class="fa-solid fa-angle-up"></i></button
+      ></a>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
