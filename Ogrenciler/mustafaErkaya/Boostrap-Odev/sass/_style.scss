@@ -1,13 +1,13 @@
-
-
 $home-font:'Rubik', sans-serif;
 $home-header-font: 'Prata', serif;
 $home-h3-font: 'Poppins', sans-serif;
-$product-shadow:  rgba(208, 203, 203, 0.24) 0px 3px 8px;
+$card-shadow:  rgba(208, 203, 203, 0.24) 0px 3px 8px;
 $h2-font: 'Dancing Script', cursive;
+
 @mixin border {
     border-bottom: 2px solid black ;
 }
+
 *{
     box-sizing: border-box;
 }
@@ -25,10 +25,10 @@ h2 {
 }
 .p-1{
     font-size: 14px;
-    
 }
-.product-shadow{
-    box-shadow: $product-shadow;
+
+.card-shadow{
+    box-shadow: $card-shadow;
 }
 .nav-border{
     border-bottom: 2px solid transparent ;
@@ -58,50 +58,52 @@ h2 {
             .card{
             .covering{
                   position: absolute;
-                //    bottom: 100%;
                   left: 0; right: 0;
                   overflow: hidden;
                   width: 90%; height: auto;
                   display: none;
-                //   display: none;
+                }
             }
-            
-        }
-        .card:hover .covering {
+            .card:hover .covering {
              display: block;
             transition: .5s ease;
-          }
-          .card:hover .lost {
+            }
+            .card:hover .lost {
             display: none;
            transition: .5s ease;
-       }
+            }
         }
-
         .product-responsive{
             .card{
                 .covering-2{
                       position: absolute;
                       overflow: hidden;
                       width: 90%; height: auto;
-                      display: none;
-                    //   display: none;
-                    transition:all .5s ease;
+                      visibility: hidden;
                 }
                 
             }
             .card:hover .covering-2 {
-                 display: block;
-                transition:all .5s ease;
-                
+                 visibility: visible;
               }
               .card:hover .lost-2 {
-                display: none;
-               transition:all .5s ease;
+                visibility: hidden;
            }
         }
-// animation
-        
-   
+        .best-seller-product {
+            .img-2{
+                position: absolute;
+                top: 30%; right: 100%;
+                width: 43%;
+                transition: all .6s;
+            }
+            .lost-3:hover .img-2{
+                right: 55%;   
+            }
+            .lost-3:hover .v-1{
+                visibility: hidden;
+            }
+        }
 // animation product finish
         .erkayagrid{ 
             .erkaya-col{
@@ -110,34 +112,31 @@ h2 {
                 grid-template-areas: "best-seller three-img "
                                      ". opportunity-product" 
                                      ". featured"
-                                     ". contact"
-                ;
-
+                                     ". contact" ;
                 .best-seller{
                     grid-area: best-seller;
                     .card {
                         .right-ani{
                             position: absolute;
-                            
-                            width: 50%; 
-                            right: 100%;
-                            top: 20px; bottom: 0;
-                            // overflow: hidden;
+                            width: 45%; 
+                            right: 120%;
+                            top: 10px; bottom: 0;
                             transition: all 0.6s;
                         }
-                        .card-ani:hover  .right-ani{
-                            right: 50%;
-                        }
+                    }
+                    .card:hover .right-ani{
+                        right: 50%;
+                    }
+                    .card:hover .lost-2{
+                        visibility: hidden;
                     }
                 }
-
                 .three-img {
                     grid-area: three-img;  
                 }
 
                 .opportunity-product{
                     grid-area: opportunity-product;
-                    
                 }
                 .featured{
                     grid-area: featured;
@@ -148,6 +147,7 @@ h2 {
             }
         }
             }
+    
 
     @media only screen and(max-width: 992px){
         .erkayagrid {
@@ -156,8 +156,6 @@ h2 {
                 flex-direction: column !important;
                 
             }
-           
-           
         }
     }
 
