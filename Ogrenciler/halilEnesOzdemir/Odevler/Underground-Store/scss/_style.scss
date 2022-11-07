@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.albums-img,
+.clothing-img,
+.products-img {
+  &:hover {
+    transform: scale(0.85);
+  }
+}
+
 @mixin section-bg($name) {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../img/#{$name}.jpg');

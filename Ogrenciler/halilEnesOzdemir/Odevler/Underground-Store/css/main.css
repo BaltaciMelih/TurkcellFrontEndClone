@@ -11141,6 +11141,12 @@ fieldset:disabled .btn {
   }
 }
 
+.albums-img:hover,
+.clothing-img:hover,
+.products-img:hover {
+  transform: scale(0.85);
+}
+
 *,
 *::after,
 *::before {
