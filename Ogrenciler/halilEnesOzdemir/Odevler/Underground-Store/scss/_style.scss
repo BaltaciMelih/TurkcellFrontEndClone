@@ -1,15 +1,12 @@
+// Sass Variables
+$btn-bg-light: lighten($bg-white, 10%);
+$btn-bg-dark: lighten($bg-dark, 10%);
+
+// SASS Mixin
 @mixin reset-css {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.albums-img,
-.clothing-img,
-.products-img {
-  &:hover {
-    transform: scale(0.85);
-  }
 }
 
 @mixin section-bg($name) {
@@ -18,10 +15,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-}
-
-@mixin vh-size($size) {
-  height: $size;
 }
 
 *,
@@ -38,8 +31,6 @@ body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
 }
-
-// HERO PART
 
 .hero {
   @include section-bg(hero-bg);
@@ -59,12 +50,6 @@ body {
   background-position: 40%;
 }
 
-.bg-nav {
-  background-color: $bg-secondary;
-  opacity: 0.25;
-}
-
-// CLOTHING
 .clothing,
 .about {
   background: url('../img/clothing-background.jpg') no-repeat center;
@@ -86,23 +71,18 @@ body {
   }
 }
 
-// ALBUMS
 .albums {
-  background: url(../img/album-bg.jpg) no-repeat center;
+  background: url('../img/album-bg.jpg') no-repeat center;
   background-size: cover;
 
   &__text-box {
-    padding: 130px 0 130px;
-    width: 49%;
-    margin: auto;
+    @extend .clothing__text-box;
   }
   &__title {
-    font-weight: 700;
-    line-height: 1.3;
+    @extend .clothing__title;
   }
   &__subtitle {
-    display: block;
-    margin-top: 30px;
+    @extend .clothing__subtitle;
   }
 }
 
@@ -112,19 +92,16 @@ body {
   height: 40vh;
 
   &__text-box {
-    padding: 13rem 0 13rem;
-    width: 50%;
+    @extend .albums__text-box;
   }
   &__title {
-    font-weight: 700;
-    line-height: 1.3;
+    @extend .albums__title;
   }
   &__subtitle {
     display: block;
   }
 }
 
-// Heading Part
 .heading-title {
   margin-bottom: 6rem;
 
@@ -142,51 +119,7 @@ body {
     animation: moveInRight 1s ease-out;
   }
 }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+// SASS Nested
 .btn {
   &,
   &:link,
@@ -210,12 +143,10 @@ body {
       opacity: 0;
     }
   }
-
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
-
   &::after {
     content: '';
     display: inline-block;
@@ -228,41 +159,23 @@ body {
     z-index: -1;
     transition: all 0.4s;
   }
-
   &--white {
-    background-color: #fff;
-    color: black;
+    background-color: $btn-bg-light;
+    color: $btn-bg-dark;
 
     &::after {
-      background-color: #fff;
+      background-color: $btn-bg-light;
     }
   }
-
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
 }
 
-// Footer-Form
-.form-subscribe {
-  width: 40%;
-  padding: 8px 16px;
-  border: 3px solid #fff;
-  font-size: 14px;
-  height: auto;
-}
-
 .hoverScale:hover {
   transform: scale(1.3);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-.albums-img,
-.clothing-img {
-  &:hover {
-    transform: scale(0.85);
-  }
 }
 
 .backToTop {
@@ -271,4 +184,20 @@ body {
   right: 3.2rem;
   position: fixed;
   z-index: 2;
+}
+
+.albums-img,
+.clothing-img,
+.products-img {
+  &:hover {
+    transform: scale(0.85);
+  }
+}
+
+.form-subscribe {
+  width: 40%;
+  padding: 8px 16px;
+  border: 3px solid #fff;
+  font-size: 14px;
+  height: auto;
 }
