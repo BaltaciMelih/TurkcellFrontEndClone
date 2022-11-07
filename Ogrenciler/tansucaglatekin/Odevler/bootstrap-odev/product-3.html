@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Urunler</title>
+  </head>
+  <body>
+
+    <header class="border-bottom" id="header">
+      <div class="container-fluid bg-secondary p-1 text-center">
+        <h5 class="nav-title">Hoşgeldiniz !! Sepete ek %10 indirim </h5>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about-us.html">Hakkımızda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ürünler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="product-1.html">At Nalı Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-2.html">Dünya Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-3.html">Güneş Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-4.html">Kalp Kolye ucu</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Sık Sorulan Sorular</a>
+              </li>
+            </ul>
+            <div class="me-auto">
+              <a href="home-page.html"><img src="https://cdn-icons-png.flaticon.com/512/2237/2237677.png" alt="logo" width="80px">
+              </a>
+            </div>
+            <form class="d-flex gap-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+              <img class="p-modal pt-2" data-bs-toggle="modal" data-bs-target="#person-modal" src="./node_modules/bootstrap-icons/icons/person.svg" alt="person" width="30">
+              <button type="button" class="btn btn-white position-relative">
+                <img src="./node_modules/bootstrap-icons/icons/cart2.svg" alt="basket" width="18">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
+                  2
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="modal" id="person-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">GİRİŞ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="kullanıcı" class="form-label">Kullanıcı Adı</label>
+                  <input class="form-control" id="kullanıcı">
+                </div>
+                <div class="mb-3">
+                  <label for="sifre" class="form-label">Şifre</label>
+                  <input type="password" class="form-control" id="sifre">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="check">
+                  <label class="form-check-label" for="check">Kaydet</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Giriş</button>
+              <button type="button" class="btn btn-primary">Yeni kayıt oluştur</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-sm-5 order-2">
+          <img class="w-100" data-bs-target="#product1-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/001-900x900.jpg" alt="1">
+          <img class="w-100" data-bs-target="#product2-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9758-Ccopieweb-900x900.jpg" alt="2">
+          <img class="w-100" data-bs-target="#product3-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9919-copieweb-900x900.jpg" alt="3">
+        </div>
+        <div class="product-sticky col-sm-7 my-5 order-1">
+          <div class="text-center">
+            <h2>Güneş Kolye Ucu</h2>
+            <p>250 ₺</p>
+            <p>Turuncu mineli güneş şeklinde 14 ayar altın kolye ucu. <br>
+              Figür ebatları: 2.2 x 2.2 cm | Ağırlık: 3.94 gr (+-%10 değişebilir)
+            </p>
+          </div>
+          <div class="d-flex gap-5 justify-content-center">
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Adet
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item">1</a></li>
+                <li><a class="dropdown-item">2</a></li>
+                <li><a class="dropdown-item">3</a></li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn btn-info">Sepete Ekle</button>
+            </div>
+          </div>
+          <div class="accordion mt-5">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                  Ürün Hakında
+                </button>
+              </h2>
+              <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1">
+                <div class="accordion-body">
+                  Ürünlerimiz 14 ayar altındır. <br>
+                  Ürünlerinizi dilediğiniz zaman kullanabilirsiniz. Duş alırken, spor yaparken ya da yüzerken takılarınızı çıkarmak zorunda değilsiniz. Gerçek altının güzelliği buradadır, ürününüz solmaz ya da renk değiştirmez.
+                </div>
+             </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                  Teslimat Detayı
+                </button>
+              </h2>
+              <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2">
+                <div class="accordion-body">
+                  Satın aldığınız ürünler 3-5 iş günü içerisinde sigortalı şekilde Yurtiçi Kargo'ya teslim edilir. Ürününüz kargoya verildiğinde satın alma işlemi sırasında belirtmiş olduğunuz email adresinize bir onay emaili yollanır.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL START -->
+    <div class="modal" id="product1-modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/001-900x900.jpg" alt="1">
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product2-modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9758-Ccopieweb-900x900.jpg" alt="2">
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product3-modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9919-copieweb-900x900.jpg" alt="1">
+        </div>
+      </div>
+    </div>
+    <!-- MODAL END -->
+
+    <footer class="container-fluid bg-secondary py-1 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 my-3">
+            <ul><h6>POPÜLER KATEGORİLER</h6>
+              <li class="list-group-item">İstediğini Yazır</li>
+              <li class="list-group-item">Zincir</li>
+              <li class="list-group-item">Özel Koleksiyon</li>
+              <li class="list-group-item">Bijuteri</li>
+              <li class="list-group-item">Aksesuar</li>
+            </ul>
+          </div>
+          <div class="col-sm-3 my-3">
+            <ul><h6>KURUMSAL</h6>
+              <li class="list-group-item">Anasayfa</li>
+              <li class="list-group-item">Hakkımızda</li>
+              <li class="list-group-item">Sıkça Sorulan Sorular</li>
+            </ul>
+          </div>
+          <div class="col-sm-3 my-3">
+            <ul><h6>SÖZLEŞMELER</h6>
+              <li class="list-group-item">Mesafeli Satış Sözleşmesi</li>
+              <li class="list-group-item">Kargo Teslimat değişim & iade</li>
+              <li class="list-group-item">Gizlilik Politikası</li>
+            </ul>
+          </div>
+          <div class="col-sm-3 my-3 border-start border-dark">
+            <p>Sosyal Medya'da Bizi Takip Edin</p>
+            <div class="d-flex gap-3">
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="instagram">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/twitter.svg" alt="twitter">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/facebook.svg" alt="facebook">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/whatsapp.svg" alt="whatsapp">
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-sm-8">
+                <input class="form-control bg-transparent border-info" type="email" placeholder="E-posta adresiniz">
+              </div>
+              <div class="col-sm-4">
+                <button class="btn btn-info">Gönder</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12"><p class="ps-4 text-black-50">Copyright &copy; 2022 | tansucaglatekin</p></div>
+      </div>
+    </footer>
+
+    <a class="top rounded bg-light shadow" href="#header"><img class="p-2" src="./node_modules/bootstrap-icons/icons/arrow-bar-up.svg" alt="arrow"></a>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

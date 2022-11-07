@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NStart Support</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/tab-icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/tab-icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/tab-icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <!-- *** NAVBAR STARTS HERE -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary px-5 fixed-top position-static"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main.html"
+          ><img
+            src="img/nstart-logo/nstart-logo-nav.png"
+            class="img-fluid"
+            alt="corporate-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="main.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">ABOUT US</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link active" href="faq.html">F.A.Q.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My ACCOUNT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                GAMES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="bannerlord.html"
+                    >MB II: Bannerlord</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="reddead.html"
+                    >Red Dead Redemption II</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gowragnarok.html"
+                    >God of War Ragnarok</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">My Purchases</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-info btn-outline-success text-white"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- *** NAVBAR ENDS HERE *** -->
+
+    <!-- *** FAQ STARTS HERE *** -->
+    <h1 class="display-1 text-center text-secondary pt-5 mt-5 mb-5">
+      Frequently Asked Questions
+    </h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="accordion" class="accordion">
+            <div class="card p-0 mb-4 border-0">
+              <div class="card-header border-0 p-0" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn w-100 fw-bold text-decoration-none text-black btn-link"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    How do I download games from NStart?
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Once you have installed the Steam application, you will need
+                  to login to the Steam account you have added (or will add)
+                  your game to. Your game is tied to this Steam account and
+                  cannot be re-registered to a different account. Clicking
+                  Library in the Steam application will bring you to a listing
+                  of all games that have been registered to this Steam account.
+                  Double click any of these titles to install and run the game.
+                </div>
+              </div>
+            </div>
+            <div class="card p-0 mb-4 border-0">
+              <div class="card-header border-0 p-0" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn w-100 fw-bold text-decoration-none btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How can I display my NStart Wallet funds?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  By default, Steam will always try to use your Steam Wallet
+                  funds first when a purchase is made. On the purchase
+                  confirmation screen, if you do not switch your intended
+                  payment method away from the Wallet, your Wallet funds will be
+                  spent. Check your purchase confirmation emails for all of your
+                  recent purchases for more information.
+                </div>
+              </div>
+            </div>
+            <div class="card p-0 mb-4 border-0">
+              <div class="card-header border-0 p-0" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn w-100 fw-bold text-decoration-none btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    What forms of payment do you accept?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  In your country, the following payment methods can be used:
+                  Visa (National), Mastercard (National), Mobile Payments, Is
+                  Bank, Akbank, Yapi Kredi, PTT.
+                </div>
+              </div>
+            </div>
+            <div class="card p-0 mb-4 border-0">
+              <div class="card-header border-0 p-0" id="headingFour">
+                <h5 class="mb-0">
+                  <button
+                    class="btn w-100 fw-bold text-decoration-none btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    How can I avoid missing sales for the games that I want?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Steam's Wishlist feature can be used to receive a notification
+                  when a game that you want goes on sale. You can find more
+                  information on how to use the Steam Wishlist feature here:
+                </div>
+              </div>
+            </div>
+            <div class="card p-0 mb-5 border-0">
+              <div class="card-header border-0 p-0" id="headingFive">
+                <h5 class="mb-0">
+                  <button
+                    class="btn w-100 fw-bold text-decoration-none btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Do I get an extra copy to gift if I own a game twice?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseFive"
+                class="collapse"
+                aria-labelledby="headingFive"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Unless otherwise stated, you will not receive extra giftable
+                  copies for duplicate purchases on a single Steam account.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center vertical">
+          <img
+            src="img/faq-images/nstart-bg.jpg"
+            alt="game-collage-design-image"
+            class="w-100 mt-0"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- *** FAQ ENDS HERE *** -->
+
+    <!-- *** FOOTER STARTS HERE *** -->
+    <footer class="py-5 px-0 bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box mb-5">
+              <a href="main.html"
+                ><img
+                  src="img/nstart-logo/nstart-logo.png"
+                  class="img-fluid w-50"
+                  alt="corporate-logo-footer"
+              /></a>
+              <h3 class="fs-2 fw-bold text-white my-3">We Accept</h3>
+              <div class="card-area">
+                <i class="text-light mx-0 bi bi-coin"></i>
+                <i class="text-light mx-2 bi bi-wallet2"></i>
+                <i class="text-light mx-0 bi bi-credit-card"></i>
+                <i class="text-light mx-2 bi bi-paypal"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box mb-5">
+              <h2 class="text-white fs-3 fw-bold">Media</h2>
+              <ul class="list-unstyled p-0">
+                <li>
+                  <a href="#" class="lh-lg text-light text-decoration-none"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lh-lg text-light text-decoration-none"
+                    >Distribution</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lh-lg text-light text-decoration-none"
+                    >Gift Cards</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lh-lg text-light text-decoration-none"
+                    >Jobs</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lh-lg text-light text-decoration-none"
+                    >Workshops</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lh-lg text-light text-decoration-none"
+                    >Contact Our Team</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box mb-5">
+              <h2 class="text-white fs-3 fw-bold">Website</h2>
+              <ul class="list-unstyled p-0">
+                <li>
+                  <a
+                    href="main.html"
+                    class="lh-lg py-5 text-light text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about-us.html"
+                    class="lh-lg text-light text-decoration-none"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    class="lh-lg text-light text-decoration-none"
+                    >Frequently Asked Questions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="bannerlord.html"
+                    class="lh-lg text-light text-decoration-none"
+                    >Mount & Blade II: Bannerlord</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="reddead.html"
+                    class="lh-lg text-light text-decoration-none"
+                    >Red Dead Redemption II</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gowragnarok.html"
+                    class="lh-lg text-light text-decoration-none"
+                    >God of War Ragnarok</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box mb-5">
+              <h2 class="text-white fs-3 fw-bold">Newsletter</h2>
+              <p class="text-light">
+                Subscribe to our Newsletter to enjoy daily content on gaming
+                developments!
+              </p>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your e-mail"
+                  aria-label="Enter your Email ..."
+                  aria-describedby="basic-addon2"
+                />
+                <span
+                  class="input-group-text bg-danger text-white"
+                  id="basic-addon2"
+                  ><i class="bi bi-arrow-right"></i
+                ></span>
+              </div>
+              <h2 class="text-white fs-3 fw-bold">Follow us on</h2>
+              <p class="socials fs-4">
+                <i class="mx-0 text-light bi bi-facebook"></i>
+                <i class="mx-2 text-light bi bi-instagram"></i>
+                <i class="mx-0 text-light bi bi-youtube"></i>
+                <i class="mx-2 text-light bi bi-twitter"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS HERE -->
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
