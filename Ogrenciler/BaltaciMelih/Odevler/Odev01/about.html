@@ -13,7 +13,7 @@
     <title>PerfuMen</title>
   </head>
   <body>
-    <header class="topBar">
+    <header class="topBar" id="topBar">
       <div class="container-fluid row p-3">
         <div
           class="d-none d-lg-flex gap-3 col-lg-4 align-self-center text-light"
@@ -164,6 +164,20 @@
       </div>
     </nav>
     <main>
+      <section class="bg-light brCrumb">
+        <div class="container p-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pt-3">
+              <li class="breadcrumb-item">
+                <a href="homepage.html">Anasayfa</a>
+              </li>
+              <li class="breadcrumb-item active text-dark" aria-current="page">
+                Hakkımızda
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
       <section class="aboutUs">
         <h2 class="w-100 text-center p-3">HAKKIMIZDA</h2>
         <h2 class="w-100 text-center pb-3">
@@ -326,6 +340,12 @@
       <h6 class="mb-0 text-center cartcurt align-self-center">
         Designed by Ahmet Melih BALTACI
       </h6>
+    </div>
+    <div class="backToTop position-absolute position-fixed">
+      <a href="#topBar"
+        ><button type="button" class="btn btn-secondary text-white btn-sm">
+          <i class="fa-solid fa-angle-up"></i></button
+      ></a>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>

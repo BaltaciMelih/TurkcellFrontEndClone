@@ -15,7 +15,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
-        <a href="Home-page.html" class="navbar-brand">Mertcan Elektromarket</a>
+        <a href="Home-page.html" class="navbar-brand text-light"
+          >Mer<span class="fw-bolder">Tech</span> Elektromarket</a
+        >
+        <i class="bi bi-lightning-fill text-warning"></i>
         <input
           class="form-control form-control-sm mx-lg-5 w-25"
           type="text"
@@ -55,16 +58,50 @@
     </nav>
     <!-- Hakkımızda -->
     <section
-      class="container-fluid about"
+      class="text-center container-fluid about"
+      style="
+        background-image: url(./thumbnails/aboutuspic-931595862.jpg);
+        min-height: 100vh;
+        background-size: cover;
+      "
     >
-    <div class="container">
-      <div class="row py-5">
-        <div class="col-md-5">
-          <h2 class="text-light my-5">
-            <span class="fw-bolder">Hakkımızda</span>
-          </h2>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-5">
+            <h2 class="text-light my-5">
+              <span class="fw-bolder">Hakkımızda</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn"
+              data-wow-offset="200"
+            >
+              <i class="bi bi-people-fill"></i>
+              <h2>Ekibimiz</h2>
+              <p class="lead">
+                Alanında tecrübeli ekibimiz ve ürün tedarikçilerimizle sizlere
+                en iyi hizmeti sunmak için buradayız.
+              </p>
+            </div>
+            <div
+              class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn"
+              data-wow-offset="200"
+            >
+              <i class="bi bi-pc-display"></i>
+              <h2>Misyonumuz</h2>
+              <p class="lead">
+                Dünya çapında bir Türk elektrik üretim ve dağıtım firması olmak
+                ve yenilik ve gelişmeyi sürekli hale getirmeyi misyon edindik.
+              </p>
+            </div>
+            <div class="clearfix visible-md-block visible-sm-block"></div>
+          </div>
         </div>
+      </div>
     </section>
+
     <!-- Footer -->
 
     <footer>
@@ -200,6 +237,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>

@@ -8554,7 +8554,7 @@ textarea.form-control-lg {
 .checked {
   color: #0e3c61; }
 
-@keyframes hed {
+@keyframes productanimate {
   0% {
     transform: translateY(-1200px) scale(0.7);
     opacity: .7; }
@@ -8565,8 +8565,8 @@ textarea.form-control-lg {
     transform: scale(1);
     opacity: 1; } }
 
-.animationheader {
-  animation: hed 3s forwards 0s; }
+.animationproducts {
+  animation: productanimate 3s forwards 0s; }
 
 @keyframes txtclrchange__animation {
   from {
