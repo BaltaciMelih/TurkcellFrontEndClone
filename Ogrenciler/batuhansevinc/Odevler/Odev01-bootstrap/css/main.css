@@ -8391,6 +8391,9 @@ textarea.form-control-lg {
 
 .carousel-img-height {
   height: 750px; }
+  @media screen and (max-width: 650px) {
+    .carousel-img-height {
+      height: 500px; } }
 
 footer img {
   width: 100%; }

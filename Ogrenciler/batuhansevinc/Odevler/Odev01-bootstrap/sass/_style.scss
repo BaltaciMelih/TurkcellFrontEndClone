@@ -4,6 +4,9 @@ $header-color: rgb(146, 6, 189);
     &-img{
         &-height{ 
             height: 750px;
+            @media screen and (max-width:650px) {
+            height: 500px;
+            }
         }
     }
 }
@@ -12,9 +15,6 @@ $header-color: rgb(146, 6, 189);
     justify-content: center;
     align-items: center;
 }
-@mixin gradient-x-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) {
-    background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
-  }
 footer{
     img{
         width: 100%;
