@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Underground Store | TR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <script src="https://kit.fontawesome.com/5e36563075.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body id="top">
     <header class="header">
+      <div class="backToTop">
+        <a href="#top">
+          <img src="../img/back-to-top.png" style="width: 4rem; height: 4rem" />
+        </a>
+      </div>
       <nav class="navbar navbar-expand-md py-3">
         <div class="container">
           <a class="navbar-brand text-uppercase fw-bolder fs-4" href="#">Underground Store</a>
@@ -31,25 +36,33 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-3 gap-1 ms-auto">
               <li class="nav-item">
-                <a class="nav-link active fs-5" aria-current="page" href="../home.html">Home</a>
+                <a class="nav-link active fs-4" aria-current="page" href="../home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="#clothing.html">Clothing</a>
+                <a class="nav-link fs-4 text-dark" href="../clothing.html">Clothing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-hover fs-5" href="#albums.html">Albums</a>
+                <a class="nav-link nav-hover fs-4 text-dark" href="../albums.html">Albums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="#faq.html">FAQ</a>
+                <a class="nav-link fs-4 text-dark" href="../faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="">About Us</a>
+                <a class="nav-link fs-4 text-dark" href="../about-us.html">About Us</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
+    <div aria-label="breadcrumb" class="p-2 mt-3 ms-5">
+      <ol class="breadcrumb" class="">
+        <li class="breadcrumb-item"><a href="../home.html" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item"><a href="../clothing.html" class="text-decoration-none">Clothing</a></li>
+        <li class="breadcrumb-item active" aria-current="page" class="text-decoration-none">T-Shirt-2</li>
+      </ol>
+    </div>
 
     <div class="row py-5 g-5">
       <div class="col-9 mx-auto col-lg-6">
@@ -98,8 +111,8 @@
           <option value="2">L</option>
           <option value="3">XL</option>
         </select>
-        <div class="d-grid my-4">
-          <button class="btn btn-lg btn-dark" type="button" id="cartBtn">Add to Cart</button>
+        <div class="d-grid my-4 mb-sm-5">
+          <button class="btn btn-lg btn-dark py-1" type="button">Add to Cart</button>
         </div>
 
         <div class="accordion">
@@ -113,7 +126,7 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                <strong>Description</strong>
+                <strong class="fs-5">Description</strong>
               </button>
             </h2>
 
@@ -135,7 +148,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                <strong>Availability In Store</strong>
+                <strong class="fs-5">Availability In Store</strong>
               </button>
             </h2>
 
@@ -158,7 +171,7 @@
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                <strong>Delivery and Returns</strong>
+                <strong class="fs-5">Delivery and Returns</strong>
               </button>
             </h2>
 
@@ -182,7 +195,7 @@
                 aria-expanded="true"
                 aria-controls="collapseFour"
               >
-                <strong>Size and Fit</strong>
+                <strong class="fs-5">Size and Fit</strong>
               </button>
             </h2>
 
@@ -211,7 +224,7 @@
               </a>
               <div class="card-body">
                 <p class="card-text fw-bold text-center">I Love Rap T-shirt</p>
-                <small class="text-secondary text-center d-block"> 135₺ </small>
+                <small class="text-secondary text-center d-block"> 120₺ </small>
               </div>
             </div>
           </div>
@@ -222,8 +235,8 @@
                 <img src="../img/clothing-1.jpg" class="card-img-top img-fluid" height="300" alt="Product" />
               </a>
               <div class="card-body">
-                <p class="card-text fw-bold text-center">I Love Rap T-shirt</p>
-                <small class="text-secondary text-center d-block"> 135₺ </small>
+                <p class="card-text fw-bold text-center">Underground T-shirt</p>
+                <small class="text-secondary text-center d-block">200₺ </small>
               </div>
             </div>
           </div>
@@ -231,11 +244,11 @@
           <div class="col-sm-6 col-lg-3">
             <div class="card mb-sm-3 mb-lg-0">
               <a href="#">
-                <img src="../img/clothing-2.jpg" class="card-img-top img-fluid" height="300" alt="Product" />
+                <img src="../img/clothing-4.jpg" class="card-img-top img-fluid" height="300" alt="Product" />
               </a>
               <div class="card-body">
-                <p class="card-text fw-bold text-center">I Love Rap T-shirt</p>
-                <small class="text-secondary text-center d-block"> 135₺ </small>
+                <p class="card-text fw-bold text-center">Iron Maiden T-Shirt</p>
+                <small class="text-secondary text-center d-block"> 185₺ </small>
               </div>
             </div>
           </div>
@@ -246,8 +259,8 @@
                 <img src="../img/clothing-7-dark.jpg" class="card-img-top img-fluid" height="300" alt="Product" />
               </a>
               <div class="card-body">
-                <p class="card-text fw-bold text-center">I Love Rap T-shirt</p>
-                <small class="text-secondary text-center d-block"> 135₺ </small>
+                <p class="card-text fw-bold text-center">Hiphop T-Shirt</p>
+                <small class="text-secondary text-center d-block"> 125₺ </small>
               </div>
             </div>
           </div>

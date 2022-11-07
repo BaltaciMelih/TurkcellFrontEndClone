@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/Ogrenciler/okanresitmaden/Odevler/Odev01-Bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <title>Document</title>
+    <title>About Us</title>
 </head>
 <body>
+    <!-- NAVBAR START-->
     <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 fixed-top px-5">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbardeneme2" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarforproject2" >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbardeneme2">
+          <img src="/Ogrenciler/okanresitmaden/Odevler/Odev01-Bootstrap/photos/gamers-meydın-png.png" class="img-fluid" alt="">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarforproject2">
             <ul class="navbar-nav gap-5">
               <li class="nav-item">
                 <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
@@ -25,43 +25,48 @@
               </li>
               <li class="nav-item">
                 <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                     Our Products
                   </button>
                   <ul class="dropdown-menu bg-dark">
+                    <li><a class="dropdown-item text-white" href="allproducts.html">All Products</a></li>
                     <li><a class="dropdown-item text-white" href="laptop.html">Gaming Laptops</a></li>
                     <li><a class="dropdown-item text-white" href="keyboard.html">Gaming Keyboards</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Gaming Headphones</a></li>
+                    <li><a class="dropdown-item text-white" href="headphones.html">Gaming Headphones</a></li>
                   </ul>
                 </div>
               </li>
   
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Questions</a>
+                <a class="nav-link text-white" href="questions.html">FAQ</a>
+                
               </li>
-              <div class="mx-5 basket d-flex align-items-center">
-                <i class="fa fa-shopping-cart"></i>
+              <div class="d-flex gap-2 align-items-center">
+                <button class="btn btn-danger "><i href="" class="bi bi-basket text-white"></i></button>
+                <button class="btn btn-danger px-4">0$</button>
               </div>
             </ul>
           </div>
         </div>
       </nav>
+      <!-- navbar end -->
     <div class="container-fluid container-about dflex justify-content-center bg-dark">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-6 my-5">
                 <h2 class="text-white text-center my-5 p-0">Our Story</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat nesciunt error itaque in, quos sequi. Temporibus omnis blanditiis doloremque praesentium! Tenetur voluptates ab a libero cum odit porro impedit neque delectus blanditiis sunt, adipisci beatae voluptate exercitationem est. Culpa ex voluptates deleniti, excepturi quidem minus. Temporibus fugit earum veritatis?</p>
+                <p class="txtefect">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat nesciunt error itaque in, quos sequi. Temporibus omnis blanditiis doloremque praesentium! Tenetur voluptates ab a libero cum odit porro impedit neque delectus blanditiis sunt, adipisci beatae voluptate exercitationem est. Culpa ex voluptates deleniti, excepturi quidem minus. Temporibus fugit earum veritatis?</p>
             </div>
         </div>
         <div class="row d-flex justify-content-center">
             <h2 class="text-center text-white my-5">Our Team</h2>
             <div class="col-12 col-md-2">
+                <!-- team cards start -->
                 <div class="card card1 border border-3 d-flex bg-dark align-items-center border-danger mb-5">
                     <img src="/Ogrenciler/okanresitmaden/Odevler/Odev01-Bootstrap/photos/team.png" class="img-fluid rounded-circle teamimg__sizer" alt="">
                     <ul class="teamscl__media d-flex flex-row gap-2 my-2 px-0">
-                        <li><a href="" class="fa fa-linkedin-square teamscl__media2"></a></li>
-                        <li><a href="" class="fa fa-facebook-square teamscl__media2"></a></li>
-                        <li><a href="" class="fa fa-twitter-square teamscl__media2"></a></li>
+                        <li><a href="" class="bi bi-instagram teamscl__media2"></a></li>
+                        <li><a href="" class="bi bi-linkedin teamscl__media2"></a></li>
+                        <li><a href="" class="bi bi-twitter teamscl__media2"></a></li>
                         <li><a href="" class="bi bi-youtube teamscl__media2"></a></li>
 
                     </ul>
@@ -73,10 +78,10 @@
                 <div class="card card2 border border-3 d-flex bg-dark align-items-center border-danger mb-5">
                     <img src="/Ogrenciler/okanresitmaden/Odevler/Odev01-Bootstrap/photos/team2.png" class="img-fluid rounded-circle teamimg__sizer" alt="">
                     <ul class="teamscl__media d-flex flex-row gap-2 my-2 px-0">
-                        <li><a href="" class="fa fa-linkedin-square teamscl__media2"></a></li>
-                        <li><a href="" class="fa fa-facebook-square teamscl__media2"></a></li>
-                        <li><a href="" class="fa fa-twitter-square teamscl__media2"></a></li>
-                        <li><a href="" class="fa fa-youtube-square teamscl__media2"></a></li>
+                        <li><a href="" class="bi bi-instagram teamscl__media2"></a></li>
+                        <li><a href="" class="bi bi-linkedin teamscl__media2"></a></li>
+                        <li><a href="" class="bi bi-twitter teamscl__media2"></a></li>
+                        <li><a href="" class="bi bi-youtube teamscl__media2"></a></li>
                     </ul>
                     <p class="text-danger">Reşit Maden</p>
                     <h4><span class="badge bg-secondary">Founder</span></h4>
@@ -86,20 +91,21 @@
                     <div class="card card3 border border-3 d-flex bg-dark align-items-center border-danger mb-5">
                         <img src="/Ogrenciler/okanresitmaden/Odevler/Odev01-Bootstrap/photos/team3.png" class="img-fluid rounded-circle teamimg__sizer" alt="">
                         <ul class="teamscl__media d-flex flex-row gap-2 my-2 px-0">
-                            <li><a href="" class="fa fa-linkedin-square teamscl__media2"></a></li>
-                            <li><a href="" class="fa fa-facebook-square teamscl__media2"></a></li>
-                            <li><a href="" class="fa fa-twitter-square teamscl__media2"></a></li>
-                            <li><a href="" class="fa fa-youtube-square teamscl__media2"></a></li>
+                            <li><a href="" class="bi bi-instagram teamscl__media2"></a></li>
+                            <li><a href="" class="bi bi-linkedin teamscl__media2"></a></li>
+                            <li><a href="" class="bi bi-twitter teamscl__media2"></a></li>
+                            <li><a href="" class="bi bi-youtube teamscl__media2"></a></li>
                         </ul>
                         <p class="text-danger">Okan Maden</p>
                         <h6><span class="badge bg-secondary ">Software Engineer</span></h6>
                     </div>
             </div>
         </div>
+        <!-- team cards end -->
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
                 <h2 class="text-center text-white my-5">Our Mission</h2>
-            <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia cum deserunt libero nostrum dolorum, facere cupiditate, quasi ullam voluptas tempore suscipit distinctio dicta eos ipsam itaque eius adipisci id vitae eaque magni blanditiis deleniti tenetur. Tenetur similique minima laudantium, voluptatibus nostrum amet placeat. Veniam architecto earum facere ipsum fugit dolorum.</p>
+            <p class="text-center txtefect">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia cum deserunt libero nostrum dolorum, facere cupiditate, quasi ullam voluptas tempore suscipit distinctio dicta eos ipsam itaque eius adipisci id vitae eaque magni blanditiis deleniti tenetur. Tenetur similique minima laudantium, voluptatibus nostrum amet placeat. Veniam architecto earum facere ipsum fugit dolorum.</p>
             </div>
         </div>
 
