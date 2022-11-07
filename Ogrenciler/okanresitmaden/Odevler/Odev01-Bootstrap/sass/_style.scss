@@ -97,7 +97,7 @@ $zero:0;
     color: rgb(14, 60, 97);
   }
 
-  @keyframes hed {
+  @keyframes productanimate {
     0% {
       transform: translateY(-1200px) scale(.7);
       opacity: .7
@@ -114,8 +114,8 @@ $zero:0;
     }
   }
 
-  .animationheader{
-    animation: hed 3s forwards 0s ;
+  .animationproducts{
+    animation: productanimate 3s forwards 0s ;
   }
 
 @keyframes txtclrchange__animation {
