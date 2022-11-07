@@ -8525,25 +8525,28 @@ a {
     .carousel .carouselIndicatorsButtonGroup button svg:focus {
       color: red; }
 
-.products .productsCard svg {
-  color: orangered; }
-
-.products .productsCard .cardButton {
-  background-color: #6f55ff;
-  border-style: solid;
-  border-color: #6f55ff;
-  border-width: 3px;
-  border-radius: 8px;
-  padding: 2% 4%;
-  font-size: 16px;
-  font-weight: 600;
-  color: black; }
-  .products .productsCard .cardButton:hover {
-    background-color: white;
+.products .productsCard {
+  border: 1px solid white; }
+  .products .productsCard:hover {
+    border: 1px solid #dcfb6e; }
+  .products .productsCard svg {
+    color: orangered; }
+  .products .productsCard .cardButton {
+    background-color: #6f55ff;
     border-style: solid;
-    border-color: black;
+    border-color: #6f55ff;
     border-width: 3px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    padding: 2% 4%;
+    font-size: 16px;
+    font-weight: 600;
+    color: black; }
+    .products .productsCard .cardButton:hover {
+      background-color: white;
+      border-style: solid;
+      border-color: black;
+      border-width: 3px;
+      border-radius: 8px; }
 
 .productDetailBottomButton {
   border: none; }
@@ -8590,4 +8593,8 @@ footer a {
   .carousel-inner {
     text-align: center; }
   .footerBottomRights {
+    text-align: center; }
+  .carouselProductDelete {
+    display: none; }
+  .products {
     text-align: center; } }

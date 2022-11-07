@@ -10895,10 +10895,6 @@ body {
   width: fit-content;
 }
 
-.btn {
-  border-radius: 0;
-}
-
 .img-thumbnail {
   border: none;
 }
@@ -10960,9 +10956,9 @@ li {
   padding-left: 25px;
 }
 
-.btn-outline-warning {
+.btn-outline {
   border-radius: 0;
-  border: 2px solid yellow;
+  border: 2px solid;
   color: #000;
   font-size: 12px;
   font-weight: bold;
@@ -10983,7 +10979,6 @@ li {
     border-radius: 20px;
     height: 6px;
     width: 35%;
-    background: yellow;
     margin: 10px auto;
   }
   .pqr {

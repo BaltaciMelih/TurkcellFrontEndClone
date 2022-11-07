@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Underground Store | TR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="../img/underground-store-logo.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/5e36563075.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body id="top">
     <header class="header">
+      <div class="backToTop">
+        <a href="#top">
+          <img src="../img/back-to-top.png" style="width: 4rem; height: 4rem" />
+        </a>
+      </div>
       <nav class="navbar navbar-expand-md py-3">
         <div class="container">
           <a class="navbar-brand text-uppercase fw-bolder fs-4" href="#">Underground Store</a>
@@ -31,19 +37,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-3 gap-1 ms-auto">
               <li class="nav-item">
-                <a class="nav-link active fs-5" aria-current="page" href="../home.html">Home</a>
+                <a class="nav-link active fs-4" aria-current="page" href="../home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="../clothing.html">Clothing</a>
+                <a class="nav-link fs-4 text-dark" href="../clothing.html">Clothing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-hover fs-5" href="../albums.html">Albums</a>
+                <a class="nav-link nav-hover fs-4 text-dark" href="../albums.html">Albums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="../faq.html">FAQ</a>
+                <a class="nav-link fs-4 text-dark" href="../faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="../about-us.html">About Us</a>
+                <a class="nav-link fs-4 text-dark" href="../about-us.html">About Us</a>
               </li>
             </ul>
           </div>
@@ -51,11 +57,19 @@
       </nav>
     </header>
 
+    <div aria-label="breadcrumb" class="p-2 mt-3 ms-5">
+      <ol class="breadcrumb" class="">
+        <li class="breadcrumb-item"><a href="../home.html" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item"><a href="../albums.html" class="text-decoration-none">Albums</a></li>
+        <li class="breadcrumb-item active" aria-current="page" class="text-decoration-none">Album-3</li>
+      </ol>
+    </div>
+
     <div class="row py-5 g-5">
       <div class="col-9 mx-auto col-lg-6">
         <img
           src="../img/album-img-3.jpg"
-          class="m-1 w-100 sliderMainImage img-fluid"
+          class="m-1 w-100 sliderMainImage img-fluid products-img"
           data-bs-toggle="modal"
           data-bs-target="#imageModal"
           alt=""
@@ -84,22 +98,22 @@
       </div>
 
       <div class="col-12 col-lg-6">
-        <h2 id="productName" class="text-sm-center text-lg-start">Turkish Rap T-shirt</h2>
+        <h2 id="productName" class="text-sm-center text-lg-start">Killa Hakan-Killa Hakan(Albüm)</h2>
         <small class="text-muted text-sm-center d-block text-lg-start"> Product: 01234 </small>
         <h4 class="my-4 text-sm-center text-lg-start">
-          <span class="text-decoration-line-through text-muted">$150</span>
+          <span class="text-decoration-line-through text-muted">₺180</span>
 
-          <span id="price" class="ms-2"> ₺135</span>
+          <span id="price" class="ms-2">₺140</span>
         </h4>
-        <label for="selectSize" class="text-muted text-sm-center text-lg-start d-block"> Size </label>
+        <label for="selectSize" class="text-muted text-sm-center text-lg-start d-block"> Type </label>
         <select class="form-select w-100 w-md-75 mx-auto" name="selectSize" id="size">
-          <option selected>S</option>
-          <option value="1">M</option>
-          <option value="2">L</option>
-          <option value="3">XL</option>
+          <option selected>CD</option>
+          <option value="1">DVD</option>
+          <option value="2">MP3</option>
+          <option value="3">ALBUM</option>
         </select>
-        <div class="d-grid my-4">
-          <button class="btn btn-lg btn-dark" type="button" id="cartBtn">Add to Cart</button>
+        <div class="d-grid my-4 mb-3">
+          <button class="btn btn-lg btn-dark py-1" type="button">Add to Cart</button>
         </div>
 
         <div class="accordion">
@@ -113,10 +127,9 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                <strong>Description</strong>
+                <strong class="fs-5">Description</strong>
               </button>
             </h2>
-
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
               <div class="accordion-body">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis laudantium hic exercitationem
@@ -135,7 +148,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                <strong>Availability In Store</strong>
+                <strong class="fs-5">Availability In Store</strong>
               </button>
             </h2>
 
@@ -158,7 +171,7 @@
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                <strong>Delivery and Returns</strong>
+                <strong class="fs-5">Delivery and Returns</strong>
               </button>
             </h2>
 
@@ -182,7 +195,7 @@
                 aria-expanded="true"
                 aria-controls="collapseFour"
               >
-                <strong>Size and Fit</strong>
+                <strong class="fs-5">Size and Fit</strong>
               </button>
             </h2>
 
@@ -207,7 +220,12 @@
           <div class="col-sm-6 col-lg-3">
             <div class="card mb-sm-3 mb-lg-0">
               <a href="#">
-                <img src="../img/album-like-1.jpg" class="card-img-top img-fluid" height="300" alt="Product" />
+                <img
+                  src="../img/album-like-1.jpg"
+                  class="card-img-top img-fluid products-img"
+                  height="300"
+                  alt="Product"
+                />
               </a>
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Da Poet- Kendini Bul</p>
@@ -219,7 +237,12 @@
           <div class="col-sm-6 col-lg-3">
             <div class="card mb-sm-3 mb-lg-0">
               <a href="#">
-                <img src="../img/album-like-2.jpg" class="card-img-top img-fluid" height="300" alt="Product" />
+                <img
+                  src="../img/album-like-2.jpg"
+                  class="card-img-top img-fluid products-img"
+                  height="300"
+                  alt="Product"
+                />
               </a>
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Eypio-Urgan</p>
@@ -231,10 +254,15 @@
           <div class="col-sm-6 col-lg-3">
             <div class="card mb-sm-3 mb-lg-0">
               <a href="#">
-                <img src="../img/album-like-3.jpg" class="card-img-top img-fluid" height="300" alt="Product" />
+                <img
+                  src="../img/album-like-3.jpg"
+                  class="card-img-top img-fluid products-img"
+                  height="300"
+                  alt="Product"
+                />
               </a>
               <div class="card-body">
-                <p class="card-text fw-bold text-center">Sagopa K. -Bir Pesimistin Gözyaşları</p>
+                <p class="card-text fw-bold text-center">Sagopa Kajmer-Romantizma</p>
                 <small class="text-secondary text-center d-block"> 280₺ </small>
               </div>
             </div>
@@ -243,7 +271,12 @@
           <div class="col-sm-6 col-lg-3 like">
             <div class="card mb-sm-3 mb-lg-0">
               <a href="#">
-                <img src="../img/album-like-4.jpg" class="card-img-top img-fluid" height="300" alt="Product" />
+                <img
+                  src="../img/album-like-4.jpg"
+                  class="card-img-top img-fluid products-img"
+                  height="300"
+                  alt="Product"
+                />
               </a>
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Rapozof-Vokal Anestezi</p>

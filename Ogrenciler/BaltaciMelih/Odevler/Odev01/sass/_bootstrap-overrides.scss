@@ -6,9 +6,14 @@ $light: #616161;
 $dark: #333333;
 
 
+
 // Acordion for FAQ
 $accordion-color: black;
 $accordion-button-active-color: white;
 $accordion-button-active-bg: $primary;
 $accordion-border-color: $dark;
 $accordion-button-focus-box-shadow: unset;
+
+// Select for Product Detail
+$form-select-focus-border-color: $primary;
+$form-select-focus-box-shadow: unset;

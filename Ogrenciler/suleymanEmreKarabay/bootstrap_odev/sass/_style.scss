@@ -154,8 +154,13 @@ a{
 
 }
 .products{
-
     .productsCard{
+        border: 1px solid white;
+
+        &:hover{
+            border: 1px solid $colorPrimary;
+
+        }
         svg{
             color: orangered;
         }
@@ -183,6 +188,8 @@ a{
                     
                 }
 }
+
+
 
 footer{
     .footerHeader{
@@ -222,5 +229,13 @@ footer{
     }
     .footerBottomRights{
         text-align: center;
+    }
+
+    .carouselProductDelete{
+        display: none;
+    }
+
+    .products{
+     text-align: center;
     }
 }
