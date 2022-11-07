@@ -15,17 +15,23 @@
     <script src="https://kit.fontawesome.com/5e36563075.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body id="top">
     <header class="header">
-      <nav class="navbar navbar-expand-md fixed-top py-3 navbar-dark">
+      <div class="backToTop">
+        <a href="#top">
+          <img src="img/back-to-top.png" />
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-md fixed-top py-3 navbar-dark bg-secondary bg-opacity-10">
         <div class="container">
-          <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="#">Underground Store</a>
+          <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="home.html">Underground Store</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#undergroundNavbar"
+            aria-controls="undergroundNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -33,22 +39,22 @@
               <i class="fas fa-bars text-white"></i>
             </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="undergroundNavbar">
             <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-3 gap-1 ms-auto">
               <li class="nav-item">
-                <a class="nav-link active text-light fs-4" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link active text-light fs-4 fw-semibold" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="clothing.html">Clothing</a>
+                <a class="nav-link fs-4 text-light" href="clothing.html">Clothing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-hover fs-4" href="albums.html">Albums</a>
+                <a class="nav-link nav-hover fs-4 text-light" href="albums.html">Albums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="faq.html">FAQ</a>
+                <a class="nav-link fs-4 text-light" href="faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="about-us.html">About Us</a>
+                <a class="nav-link fs-4 text-light" href="about-us.html">About Us</a>
               </li>
             </ul>
           </div>
@@ -73,7 +79,7 @@
 
     <section id="albums-products " class="py-5">
       <div class="container">
-        <div class="row mb-5 gap-sm-3 gap-md-0 gap-lg-0">
+        <div class="row mb-5 gap-sm-3 gap-md-0 gap-lg-0 py-5">
           <div class="col-md-7 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3">
             <h3 class="product-title h1 fw-semibold m-0">Ceza-Suspus</h3>
             <h5 class="product-subtitle m-0 text-secondary">Stok Kodu: (T3957)</h5>
@@ -100,12 +106,13 @@
             </a>
           </div>
           <div class="col-md-5 order-first order-md-last">
-            <img src="img/album-img-1.jpg" class="img-fluid rounded-4 h-100" alt="" />
+            <img src="img/album-img-1.jpg" class="img-fluid rounded-4 h-100 products-img" alt="" />
           </div>
         </div>
-        <div class="row mb-5 gap-sm-3 gap-md-0 gap-lg-0">
+
+        <div class="row mb-5 gap-sm-3 gap-md-0 gap-lg-0 py-5">
           <div class="col-md-5 order-first">
-            <img src="img/album-img-2.jpg" class="img-fluid rounded-4 h-100" alt="" />
+            <img src="img/album-img-2.jpg" class="img-fluid rounded-4 h-100 products-img" alt="" />
           </div>
           <div class="col-md-7 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3">
             <h3 class="product-title h1 fw-semibold m-0">Kezzo-Karanlık</h3>
@@ -134,7 +141,7 @@
           </div>
         </div>
 
-        <div class="row mb-5 gap-sm-3 gap-md-0 gap-lg-0">
+        <div class="row mb-5 gap-sm-3 gap-md-0 gap-lg-0 py-5">
           <div class="col-md-7 d-flex flex-column justify-content-center align-items-center gap-sm-3 gap-lg-3">
             <h3 class="product-title h1 fw-semibold m-0">Killa Hakan-Killa Hakan</h3>
             <h5 class="product-subtitle m-0 text-secondary">Stok Kodu: (T3857)</h5>
@@ -161,7 +168,7 @@
             </a>
           </div>
           <div class="col-md-5 order-first order-md-last">
-            <img src="img/album-img-3.jpg" class="img-fluid rounded-4 h-100" alt="" />
+            <img src="img/album-img-3.jpg" class="img-fluid rounded-4 h-100 products-img" alt="" />
           </div>
         </div>
       </div>

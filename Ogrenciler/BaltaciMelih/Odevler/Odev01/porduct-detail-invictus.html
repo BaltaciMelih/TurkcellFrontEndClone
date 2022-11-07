@@ -13,7 +13,7 @@
     <title>PerfuMen</title>
   </head>
   <body>
-    <header class="topBar">
+    <header class="topBar" id="topBar">
       <div class="container-fluid row p-3">
         <div
           class="d-none d-lg-flex gap-3 col-lg-4 align-self-center text-light"
@@ -164,6 +164,215 @@
       </div>
     </nav>
     <main></main>
+    <section class="bg-light brCrumb">
+      <div class="container p-1">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb pt-3">
+            <li class="breadcrumb-item">
+              <a href="homepage.html">Anasayfa</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="products.html">Parfümler</a>
+            </li>
+            <li class="breadcrumb-item active text-dark" aria-current="page">
+              Paco Rabanne Invictus
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <section class="productDetail my-4">
+      <div class="container row m-auto">
+        <aside class="col-lg-5 card">
+          <img src="image/invictus.jpg" alt="" />
+        </aside>
+        <article class="col-lg-7">
+          <h4 class="text-secondary">Paco Rabanne</h4>
+          <h3 class="text-black">Invıctus</h3>
+          <div class="rating flex-wrap">
+            <span><i class="fa fa-star text-warning"></i></span>
+            <span><i class="fa fa-star text-warning"></i></span>
+            <span><i class="fa fa-star text-warning"></i></span>
+            <span><i class="fa fa-star text-warning"></i></span>
+            <span><i class="fa fa-star"></i></span>
+          </div>
+          <p class="text-success fw-semibold">Stokta</p>
+          <p class="fs-3 text-black fw-bold">1.637,00 TL</p>
+          <div class="descriptionList">
+            <p>
+              Efsanevi bir şampiyon. Cesur, başarılı, karşı konulamaz, zafer
+              tutkunu bir erkek. Tüm kadınların hayal ettiği, fethedilemez bir
+              kahraman… Invictus, şampiyonların kokusu!
+            </p>
+            <dl class="row">
+              <dt class="col-sm-3">Tür</dt>
+              <dd class="col-sm-9">Sucul</dd>
+
+              <dt class="col-sm-3">Çıkış Tarihi</dt>
+              <dd class="col-sm-9">
+                <p>2013</p>
+              </dd>
+
+              <dt class="col-sm-3">Tasarımcı</dt>
+              <dd class="col-sm-9">
+                Anne Flipo, Dominique Ropion, Olivier Polge, Veronique Nyberg
+              </dd>
+
+              <dt class="col-sm-3">Baskın Notalar</dt>
+              <dd class="col-sm-9">Narenciye ve Defne Yaprağı</dd>
+            </dl>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <label class="form-label" for="sizeSelect">Boyut</label>
+              <select class="form-select" name="sizeSelect" id="sizeSelect">
+                <option value="50">50mL</option>
+                <option value="100">100mL</option>
+              </select>
+            </div>
+            <div class="col-md-8 align-self-end mt-3">
+              <a href="#" class="btn btn-dark">
+                <i class="fa fa-shopping-basket me-1"></i>Sepete Ekle
+              </a>
+              <a href="#" class="btn btn-dark">
+                <i class="text-primary fa fa-heart me-1"></i>Favorilere Ekle
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="productDetail2 mt-5">
+      <div class="container row m-auto">
+        <h3 class="text-center mb-5">Ürün Özellikleri</h3>
+        <div class="col-lg-4">
+          <h4 class="mb-4">Ana Notalar</h4>
+          <img class="img-fluid" src="image/invictusaccords.jpg" alt="" />
+        </div>
+        <div class="col-lg-8">
+          <h4 class="mb-4">Performans Özellikleri</h4>
+          <h5 class="mb-4">Uzun Ömür (Kalıcılık)</h5>
+          <div class="progress mb-4">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-label="Example with label"
+              style="width: 60%"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              60%
+            </div>
+          </div>
+          <h5 class="mb-4">Silaj (Yayınım)</h5>
+          <div class="progress mb-4">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-label="Example with label"
+              style="width: 80%"
+              aria-valuenow="80"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              80%
+            </div>
+          </div>
+          <h5 class="mb-4">Cinsiyet ve Maskülenlik Derecesi</h5>
+          <div class="progress mb-4">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-label="Example with label"
+              style="width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              70%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="similarProducts mt-5">
+      <div class="container row m-auto mb-4">
+        <h3 class="text-center mb-5">Benzer Ürünler</h3>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a class="text-decoration-none text-black" href=""
+            ><div class="card popularProduct">
+              <img
+                src="image/bformen.jpg"
+                class="card-img-top border-bottom"
+                alt="acqua di gio profumo"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-center">Bentley</h4>
+                <h5 class="text-center">For Men Black Edition</h5>
+                <p class="card-text text-center fs-5 text-success">
+                  2.040, 00 TL
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a class="text-decoration-none text-black" href=""
+            ><div class="card popularProduct">
+              <img
+                src="image/jeanpaul.jpg"
+                class="card-img-top border-bottom"
+                alt="acqua di gio profumo"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-center">Jean Paul Gaultier</h4>
+                <h5 class="text-center">Le Beau Le Parfum</h5>
+                <p class="card-text text-center fs-5 text-success">
+                  1.755,00 TL
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a class="text-decoration-none text-black" href=""
+            ><div class="card popularProduct">
+              <img
+                src="image/spicebomb.jpg"
+                class="card-img-top border-bottom"
+                alt="acqua di gio profumo"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-center">Victor&Rolf</h4>
+                <h5 class="text-center">SpiceBomb Extreme</h5>
+                <p class="card-text text-center fs-5 text-success">
+                  2.310,00 TL
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a class="text-decoration-none text-black" href=""
+            ><div class="card popularProduct">
+              <img
+                src="image/versace-eros.jpg"
+                class="card-img-top border-bottom"
+                alt="acqua di gio profumo"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-center">Versace</h4>
+                <h5 class="text-center">Eros</h5>
+                <p class="card-text text-center fs-5 text-success">
+                  1.860,00 TL
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
     <footer class="bg-primary p-5">
       <div class="container row m-auto">
         <div class="col-lg-2">
@@ -241,6 +450,12 @@
       <h6 class="mb-0 text-center cartcurt align-self-center">
         Designed by Ahmet Melih BALTACI
       </h6>
+    </div>
+    <div class="backToTop position-absolute position-fixed">
+      <a href="#topBar"
+        ><button type="button" class="btn btn-secondary text-white btn-sm">
+          <i class="fa-solid fa-angle-up"></i></button
+      ></a>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>

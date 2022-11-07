@@ -108,12 +108,51 @@
 //     i++;
 // }
 
-let i = 0;
-while(i < 10) {
-    if(i == 3 || i == 5) {
-        i++;
-        continue;
-    }
-    console.log("deneme ${i}");
-    i++;
-}
+// let i = 0;
+// while(i < 10) {
+//     if(i == 3 || i == 5) {
+//         i++;
+//         continue;
+//     }
+//     console.log("deneme ${i}");
+//     i++;
+// }
+
+// i = 0;
+// do{
+//     console.log(i);
+//     i++;
+// }while (i<10);
+
+// for döngüsü
+
+// const langs = ["java", "c++", "js", "c#"]
+
+// for(let i = 0; i < langs.length; i++) {
+//     console.log(langs[i])
+// } 
+
+//array map()
+// langs.map(function(lang){
+//     console.log(lang)
+// });
+
+
+// let sayi = prompt("Bir sayı giriniz");
+// let sonuc = 1;
+// for(let i = 2; i<=sayi; i++){
+//     sonuc = sonuc * i;
+// }
+// console.log(sonuc)
+
+
+//  let sayi = prompt("Bir sayı giriniz");
+// let sonuc = 0;
+// for (let i = 1; i<sayi; i++){
+//     if (sayi % i == 0)
+//        sonuc = sonuc + i; }
+// if (sonuc == sayi)
+//     console.log(sayi + " mükemmel sayıdır");
+//  else 
+//     console.log(sayi + " mükemmel sayı değildir");
+    

@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Underground Store | TR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/underground-store-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://kit.fontawesome.com/5e36563075.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body id="top">
     <header class="header">
-      <nav class="navbar navbar-expand-md fixed-top py-3 bg-transparent navbar-dark">
+      <div class="backToTop">
+        <a href="#top">
+          <img src="img/back-to-top.png" />
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-md fixed-top py-3 navbar-dark bg-secondary bg-opacity-10">
         <div class="container">
-          <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="#">Underground Store</a>
+          <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="home.html">Underground Store</a>
           <button
-            class="navbar-toggler bg-transparent"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#undergroundNavbar"
+            aria-controls="undergroundNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -28,22 +35,22 @@
               <i class="fas fa-bars text-white"></i>
             </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="undergroundNavbar">
             <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-3 gap-1 ms-auto">
               <li class="nav-item">
-                <a class="nav-link active text-light fs-4" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link active text-light fs-4 fw-semibold" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="clothing.html">Clothing</a>
+                <a class="nav-link fs-4 text-light" href="clothing.html">Clothing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-hover fs-4" href="albums.html">Albums</a>
+                <a class="nav-link nav-hover fs-4 text-light" href="albums.html">Albums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="faq.html">FAQ</a>
+                <a class="nav-link fs-4 text-light" href="faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="about-us.html">About Us</a>
+                <a class="nav-link fs-4 text-light" href="about-us.html">About Us</a>
               </li>
             </ul>
           </div>
@@ -211,6 +218,56 @@
                       <h4>+1 243 456 789</h4>
                       <h4>hello@undergroundstore.com</h4>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="accPanelOpen-headingSix">
+                  <button
+                    class="accordion-button fs-3 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accPanelOpen-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="accPanelOpen-collapseSix"
+                  >
+                    Kargo teslimatı sırasında yerimde yoktum, ne yapmalıyım ?
+                  </button>
+                </h2>
+                <div
+                  id="accPanelOpen-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="accPanelOpen-headingSix"
+                >
+                  <div class="accordion-body">
+                    Adres teslim siparişlerinizde kargo ilgili kişiyi bulamazsa not bırakır. Adresinizde hata varsa
+                    kargo bizi arayarak durumu bildirir ve bizde size durumu bildirerek teslim almanızı sağlarız.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="accPanelOpen-headingSeven">
+                  <button
+                    class="accordion-button fs-3 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accPanelOpen-collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="accPanelOpen-collapseSeven"
+                  >
+                    Ürünlerin garantisi var mı?
+                  </button>
+                </h2>
+                <div
+                  id="accPanelOpen-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="accPanelOpen-headingSeven"
+                >
+                  <div class="accordion-body">
+                    Sitemizde satışa sunmuş olduğumuz ürünlerin hepsi 2 yıl garanti kapsamındadır. Ancak Bazı; aksesuar,
+                    tel, burgu, eğitim CD'leri, anfi veya benzeri mekanik ürünler dış etkenlere karşı korumasız
+                    olduğundan sadece teslim aldığınız anda arızalı çıkarsa onarım/değişim yapılır. Ürünün beraberindeki
+                    Faturasını veya varsa Garanti Belgesini saklayınız (Fatura garanti belgesi yerine geçerlidir).
                   </div>
                 </div>
               </div>

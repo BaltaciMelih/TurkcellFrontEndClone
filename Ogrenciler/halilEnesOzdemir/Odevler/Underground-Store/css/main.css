@@ -4,6 +4,7 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11140,6 +11141,12 @@ fieldset:disabled .btn {
   }
 }
 
+.albums-img:hover,
+.clothing-img:hover,
+.products-img:hover {
+  transform: scale(0.85);
+}
+
 *,
 *::after,
 *::before {
@@ -11154,6 +11161,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hero {
@@ -11182,24 +11190,33 @@ body {
   background-position: 40%;
 }
 
-.clothing {
+.bg-nav {
+  background-color: #6c757d;
+  opacity: 0.25;
+}
+
+.clothing,
+.about {
   background: url("../img/clothing-background.jpg") no-repeat center;
   background-size: cover;
 }
 
-.clothing__text-box {
+.clothing__text-box,
+.about__text-box {
   padding: 13rem 0 13rem;
   width: 49%;
   margin: auto;
 }
 
-.clothing__title {
+.clothing__title,
+.about__title {
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 30px;
 }
 
-.clothing__subtitle {
+.clothing__subtitle,
+.about__subtitle {
   display: block;
   margin-top: 30px;
 }
@@ -11243,42 +11260,6 @@ body {
 
 .faq__subtitle {
   display: block;
-}
-
-.about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/about-us-bg-img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40vh;
-}
-
-.about__text-box {
-  padding: 136px 0 129px;
-  width: 49%;
-  text-align: center;
-  margin: auto;
-}
-
-.about__title {
-  color: #fff;
-  font-family: playfair display, serif;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 30px;
-}
-
-.about__subtitle {
-  font-size: 21px;
-  font-family: playfair display, serif;
-  color: #fff;
-  display: block;
-  margin-top: 30px;
-}
-
-.sliderMainImage,
-.sliderThumb {
-  cursor: pointer;
 }
 
 .heading-title {
@@ -11345,7 +11326,7 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all 0.2s;
+  transition: all 0.5s;
   position: relative;
   font-size: 1.6rem;
 }
@@ -11353,6 +11334,7 @@ body {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .btn:hover::after {
@@ -11403,4 +11385,17 @@ body {
 .hoverScale:hover {
   transform: scale(1.3);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.albums-img:hover,
+.clothing-img:hover {
+  transform: scale(0.85);
+}
+
+.backToTop {
+  position: absolute;
+  top: 90%;
+  right: 3.2rem;
+  position: fixed;
+  z-index: 2;
 }

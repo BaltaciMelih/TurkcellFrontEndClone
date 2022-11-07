@@ -20,23 +20,23 @@ $zero:0;
 
 @mixin padding__margintop{
   padding: $zero;
-  margin-top: zero;
+  margin-top: $zero;
   position: $postitionforbg;
 }
 
-.bgheader{
+.bgsetting{
     @include bgsetting__home(url(https://wallpaperaccess.com/full/1580037.jpg),none ,cover ,.5 ,100% ,1000px ,-1 ,0 ,0 );
     position:$postitionforbg;
 }
 
-.bgheader3{
+.bgsetting2{
     @include bgsetting__home(url(https://www.wallpapertip.com/wmimgs/53-533665_awesome-wallpapers-for-pc-high-resolution-3d-art.jpg),none ,cover ,.5 ,100% ,1000px ,-1 ,0 ,0 );
     @include padding__margintop();
     right: $zero;
 }
 
 
-.bgheader4{
+.bgsetting3{
     @include bgsetting__home(url(https://www.hdwallpapers.in/download/green_stars_space_galaxy_black_sky_background_4k_hd_green-3840x2160.jpg),none ,cover ,1 ,100% ,400px ,0 ,0 ,0 );
     @include padding__margintop();
 }
@@ -97,7 +97,7 @@ $zero:0;
     color: rgb(14, 60, 97);
   }
 
-  @keyframes hed {
+  @keyframes productanimate {
     0% {
       transform: translateY(-1200px) scale(.7);
       opacity: .7
@@ -114,8 +114,8 @@ $zero:0;
     }
   }
 
-  .animationheader{
-    animation: hed 3s forwards 0s ;
+  .animationproducts{
+    animation: productanimate 3s forwards 0s ;
   }
 
 @keyframes txtclrchange__animation {
