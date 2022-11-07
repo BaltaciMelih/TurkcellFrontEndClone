@@ -1,0 +1,28 @@
+$avg_Size: 5%;
+$avg_Size2: 7%;
+.flex{
+  display: flex;
+}
+
+
+  .navbar{
+    background: linear-gradient(to bottom, rgba(13, 14, 81, 0.977), rgba(76, 78, 180, 0.977));
+  }
+
+  @media only screen and (min-width: 768px) {
+    .card-img-top {
+      width: 100%;
+      height: 17vw;
+      object-fit: cover;
+    }
+  }
+
+.back-img{
+  background-image: url("../images/tech_products.jpeg");
+  background-size: contain;
+  background-position: center;
+  .container-md{
+    height: 100%;
+    padding-bottom: $avg_Size2;
+  }
+}
