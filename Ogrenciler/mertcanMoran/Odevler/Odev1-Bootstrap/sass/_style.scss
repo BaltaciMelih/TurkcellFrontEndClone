@@ -11,7 +11,11 @@ $social-buttons-circle-dark-grey: #1a1d20;
     display: flex;
   }
 }
-
+@mixin aboutİmage {
+  background-image: url("../thumbnails/aboutuspic-931595862.jpg");
+  min-height: 100vh;
+  background-size: cover;
+}
 .bg-cards {
   background-color: $bg-cards;
 }
@@ -23,6 +27,9 @@ $social-buttons-circle-dark-grey: #1a1d20;
   justify-content: space-between;
 }
 
+.about {
+  @include aboutİmage;
+}
 a {
   color: $link-light-grey;
   &:hover {
@@ -79,12 +86,11 @@ footer {
         font-size: 20px;
         line-height: 40px;
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
-        color: #fff;
         border-radius: 100%;
         outline: 0;
         background-color: $footer-background-grey;

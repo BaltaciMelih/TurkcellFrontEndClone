@@ -13968,30 +13968,31 @@ textarea.form-control-lg {
 .bi-fuel-pump::before {
   content: ""; }
 
-.navbar-inner-tesla {
-  background-image: url("../thumbnails/84-nikola-tesla-4266530829.jpg"); }
-
 .bg-cards {
   background-color: #ece6e6; }
 
-@media only screen and (max-width: 768px) {
-  .flex {
-    display: flex;
-    justify-content: space-between; } }
+.bg-signUp {
+  background-color: #3b86b9; }
 
-.formChange {
-  background-color: rgba(49, 130, 192, 0.784);
-  width: 1422px; }
+.flex {
+  justify-content: space-between; }
+  @media only screen and (max-width: 768px) {
+    .flex {
+      display: flex; } }
+
+.about {
+  background-image: url("../thumbnails/aboutuspic-931595862.jpg");
+  min-height: 100vh;
+  background-size: cover; }
 
 a {
   color: #6c757d; }
-
-a:hover {
-  color: #fec503;
-  text-decoration: none; }
+  a:hover {
+    color: #fe7c03;
+    text-decoration: none; }
 
 ::selection {
-  background: #fec503;
+  background: #fe7c03;
   text-shadow: none; }
 
 footer {
@@ -14013,7 +14014,6 @@ footer {
   .footer-column .nav-item span.footer-title {
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
     text-transform: uppercase; }
   .footer-column .nav-item .fas {
     margin-right: 0.5rem; }
@@ -14022,28 +14022,21 @@ footer {
     @media (min-width: 768px) {
       .footer-column ul {
         text-align: left; } }
-
-ul.social-buttons {
-  margin-bottom: 0; }
-
-ul.social-buttons li a:active,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:hover {
-  background-color: #fec503; }
-
-ul.social-buttons li a {
-  font-size: 20px;
-  line-height: 40px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  color: #fff;
-  border-radius: 100%;
-  outline: 0;
-  background-color: #1a1d20; }
+    .footer-column ul.social-buttons {
+      margin-bottom: 0; }
+      .footer-column ul.social-buttons li a {
+        font-size: 20px;
+        line-height: 40px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #fe7c03;
+        border-radius: 100%;
+        outline: 0;
+        background-color: #1a1d20; }
 
 footer .quick-links {
   font-size: 90%;
