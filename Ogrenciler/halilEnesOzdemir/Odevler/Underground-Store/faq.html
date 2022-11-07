@@ -10,17 +10,23 @@
     <script src="https://kit.fontawesome.com/5e36563075.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body id="top">
     <header class="header">
-      <nav class="navbar navbar-expand-md fixed-top py-3 bg-transparent navbar-dark">
+      <div class="backToTop">
+        <a href="#top">
+          <img src="img/back-to-top.png" />
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-md fixed-top py-3 navbar-dark bg-secondary bg-opacity-10">
         <div class="container">
-          <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="#">Underground Store</a>
+          <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="home.html">Underground Store</a>
           <button
-            class="navbar-toggler bg-transparent"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#undergroundNavbar"
+            aria-controls="undergroundNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -28,22 +34,22 @@
               <i class="fas fa-bars text-white"></i>
             </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="undergroundNavbar">
             <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-3 gap-1 ms-auto">
               <li class="nav-item">
-                <a class="nav-link active text-light fs-4" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link active text-light fs-4 fw-semibold" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="clothing.html">Clothing</a>
+                <a class="nav-link fs-4 text-light" href="clothing.html">Clothing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-hover fs-4" href="albums.html">Albums</a>
+                <a class="nav-link nav-hover fs-4 text-light" href="albums.html">Albums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="faq.html">FAQ</a>
+                <a class="nav-link fs-4 text-light" href="faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4" href="about-us.html">About Us</a>
+                <a class="nav-link fs-4 text-light" href="about-us.html">About Us</a>
               </li>
             </ul>
           </div>
