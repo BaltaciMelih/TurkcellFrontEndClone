@@ -1,0 +1,122 @@
+@mixin photo(){
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin animateTop(){
+  animation: moveInTop 1s ease-out;
+        @keyframes moveInTop {
+            0% {
+              opacity: 0;
+              transform: translateY(-2rem);
+            }
+          
+            80% {
+              transform: translateY(1rem);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+}
+*{
+    font-family: 'Google Sans', 'Google Sans Text', Roboto, sans-serif;
+}
+
+a, li, i{
+    list-style: none;
+    text-decoration: none;
+    &:hover{
+        color: palevioletred;
+    }
+}
+h2{
+  @include animateTop();
+}
+.newCard{
+  &:hover{
+    transform: translateY(20px);
+    transition: 0.5s;
+  }
+}
+.collectCard{
+  @extend .newCard
+}
+.recommendCard{
+  margin-left: 4%;
+  background-color: transparent;
+  border: none;
+  gap:4%;
+  cursor: pointer;
+  img {
+      border-radius: 50%;
+  }
+  
+}
+.koleksiyonerName{
+    font-size: 11px;
+}
+.koleksiyonTarih{
+    font-size: 10px;
+}
+.productOneriler{
+  .card{
+    &:hover{
+      .card-body{
+          margin-top: -11%;
+          transition: 0.5s;
+        }
+    }
+  }}
+.hero {
+    height: 55vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.mockplus.com/images/banner.jpg');
+    @include photo();
+    &-text {
+        padding-top:13%;
+    }
+    h1{
+        @include animateTop();
+    }
+  }
+.aboutUs{
+  .subbranchesPhoto{
+    height: 20rem;
+    &Second {
+        margin-left:-8%;
+    }
+  }
+  .subbranchesText{
+    margin: 4% 0 4% -8%;
+    &Second {
+      @extend .subbranchesText;
+        z-index: 1;
+        margin-left:0;
+    }
+    }}
+    .team{
+      @include photo();
+      background-image:url('https://www.mockplus.com/enUS/images/about/ba.png');
+      &PP {
+          border-radius: 50%;
+              width: 102px;
+              height: 102px;
+              img{
+                  margin: 9% 9%;
+                  border-radius: 50%;
+                  width: 84px;
+                  height: 84px;
+              }
+      }
+    }
+.faq_search{
+  height: 36vh;
+  font-size: 18px;
+  background-image:url('https://www.mockplus.com/enUS/images/about/ba.png');
+}
+.faq-questions{
+  padding-top: 7%;
+  padding-left: 26%;
+  padding-bottom: 10%;
+}
