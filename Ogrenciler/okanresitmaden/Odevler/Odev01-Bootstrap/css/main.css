@@ -19,67 +19,6 @@ body {
   background-color: black;
   transition: background-color 0.4s ease; }
 
-@keyframes card1 {
-  from {
-    background-color: white; }
-  to {
-    background-color: #218a26; }
-  from {
-    color: black; }
-  to {
-    color: white; } }
-
-@keyframes card2 {
-  from {
-    background-color: white; }
-  to {
-    background-color: blue; }
-  from {
-    color: black; }
-  to {
-    color: white; } }
-
-@keyframes card3 {
-  from {
-    background-color: white; }
-  to {
-    background-color: black; }
-  from {
-    color: black; }
-  to {
-    color: white; } }
-
-.card1:hover {
-  animation-name: card1;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-  cursor: pointer; }
-  .card1:hover .table {
-    color: white; }
-
-.card2:hover {
-  animation-name: card2;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-  cursor: pointer; }
-  .card2:hover .table {
-    color: white; }
-
-.card3:hover {
-  animation-name: card3;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-  cursor: pointer; }
-  .card3:hover .table {
-    color: white; }
-
-.buttonanim button:hover {
-  background-color: black;
-  transition: background-color 2s ease; }
-
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -8612,3 +8551,64 @@ textarea.form-control-lg {
 
 .container-about a:hover {
   color: #6e6a6a; }
+
+@keyframes card1 {
+  from {
+    background-color: white; }
+  to {
+    background-color: #218a26; }
+  from {
+    color: black; }
+  to {
+    color: white; } }
+
+@keyframes card2 {
+  from {
+    background-color: white; }
+  to {
+    background-color: blue; }
+  from {
+    color: black; }
+  to {
+    color: white; } }
+
+@keyframes card3 {
+  from {
+    background-color: white; }
+  to {
+    background-color: black; }
+  from {
+    color: black; }
+  to {
+    color: white; } }
+
+.card1:hover {
+  animation-name: card1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  cursor: pointer; }
+  .card1:hover .table {
+    color: white; }
+
+.card2:hover {
+  animation-name: card2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  cursor: pointer; }
+  .card2:hover .table {
+    color: white; }
+
+.card3:hover {
+  animation-name: card3;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  cursor: pointer; }
+  .card3:hover .table {
+    color: white; }
+
+.buttonanim button:hover {
+  background-color: black;
+  transition: background-color 2s ease; }
