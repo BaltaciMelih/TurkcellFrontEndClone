@@ -1,0 +1,57 @@
+.underline:hover{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transition: 0.3s ease-in;
+    color: red !important;
+}
+.home-header{
+    background-image: url(../img/img-3-photoaidcom-darken.jpg);
+    height: 100vh;
+    i{
+        color: white;
+    }
+    .button-user{
+        padding: 5px;
+        &:hover{
+            background-color: #ffe800;
+        }
+    } 
+}
+.card-animation{
+    &:hover{
+        animation: card-animation 1s both;
+    } 
+}
+@keyframes card-animation{
+    from{
+        
+    }
+    to{
+        background-color: gray;
+        color: white;
+        scale: 1.1;
+    }
+}
+.text-company{
+    font-size: 16px;
+}
+footer{
+    i{
+        color: white;
+        &:hover{
+            color: blue;
+        }
+    }
+    ul{
+        li{
+            cursor: pointer;
+        }
+    }
+}
+.button-user{
+    padding: 5px;
+    &:hover{
+        background-color: #ffe800;
+        color: black !important;
+    }
+}
