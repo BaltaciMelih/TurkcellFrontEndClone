@@ -1,5 +1,8 @@
 $w70:70%;
-
+@mixin df-jcc {
+    display: flex;
+    justify-content: center;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +14,6 @@ body{
     height: 100vh;
     
 }
-
 .imgSlider{
     width: $w70;
     padding-top: 38%;
@@ -41,8 +43,7 @@ body{
 
 #gitar-ana{
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
+    @include df-jcc();
     
 }
 #kategori{
@@ -55,33 +56,27 @@ body{
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-
-
 .footer-1{
     display: grid;
     grid-gap: 8px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50% ;
 }
-
 .logo{
 grid-row-start: 2;
 grid-column-start: 1;
-
 }
 
 .iletişim{
     grid-column-start: 2;
     grid-row-start: 2;
 }
-
 .destek{
     grid-column-start: 3;
     grid-row-start: 2;
 }
 
 .takip{
-
     grid-column-start: 4;
     grid-row-start: 2;
 }
@@ -89,9 +84,7 @@ grid-column-start: 1;
 #sepet{
     padding: 20px;
 }
-
 .row{
-   
     margin-left: 150px;
 }
 .top{
@@ -99,12 +92,8 @@ grid-column-start: 1;
     position: sticky;
     bottom: 20px;
     width: 4%;
-   
 }
-
-
 // ürün kart
-
 .details {
     border: 1.5px solid grey;
     color: #212121;
@@ -112,7 +101,6 @@ grid-column-start: 1;
     height: auto;
     box-shadow: 0px 0px 10px #212121;
 }
-
 .cart {
     background-color: #212121;
     color: white;
@@ -133,20 +121,14 @@ grid-column-start: 1;
     width: fit-content;
 }
 
-.btn {
-    border-radius: 0;
-}
-
 .img-thumbnail {
     border: none;
 }
-
 .card {
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
     border-radius: 5px;
     padding-bottom: 10px;
 }
-
 //ürün detayları 
 
 .abc {
@@ -164,9 +146,7 @@ grid-column-start: 1;
     padding-left: 80%;
     top: 0
 }
-
 li {
-    
     line-height: 50px;
     color: #000
 }
@@ -201,9 +181,9 @@ li {
     padding-left: 25px
 }
 
-.btn-outline-warning {
+.btn-outline {
     border-radius: 0;
-    border: 2px solid yellow;
+    border: 2px solid;
     color: #000;
     font-size: 12px;
     font-weight: bold;
@@ -225,7 +205,6 @@ li {
         border-radius: 20px;
         height: 6px;
         width: 35%;
-        background: yellow;
         margin: 10px auto
     }
 
@@ -239,7 +218,6 @@ li {
         padding-left: 90px;
         padding-top: 10px
     }
-
     .klo {
         display: flex;
         text-align: center;
@@ -247,14 +225,8 @@ li {
         margin-right: 40px
     }
 }
-
 // video
 .inceleme{
-    display: flex;
-    justify-content: center;
+    @include df-jcc();
     padding: 50px;
 }
-
-// h3{
-// text-align: center;
-// }
