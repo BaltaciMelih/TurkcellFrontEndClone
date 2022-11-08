@@ -8460,36 +8460,10 @@ body .product-responsive .card:hover .covering-2 {
 body .product-responsive .card:hover .lost-2 {
   visibility: hidden; }
 
-body .best-seller-product .img-2 {
-  position: absolute;
-  top: 30%;
-  right: 100%;
-  width: 43%;
-  transition: all .6s; }
-
-body .best-seller-product .lost-3:hover .img-2 {
-  right: 55%; }
-
-body .best-seller-product .lost-3:hover .v-1 {
-  visibility: hidden; }
-
 body .erkayagrid .erkaya-col {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "best-seller three-img " ". opportunity-product"  ". featured" ". contact"; }
-  body .erkayagrid .erkaya-col .best-seller {
-    grid-area: best-seller; }
-    body .erkayagrid .erkaya-col .best-seller .card .right-ani {
-      position: absolute;
-      width: 45%;
-      right: 120%;
-      top: 10px;
-      bottom: 0;
-      transition: all 0.6s; }
-    body .erkayagrid .erkaya-col .best-seller .card:hover .right-ani {
-      right: 50%; }
-    body .erkayagrid .erkaya-col .best-seller .card:hover .lost-2 {
-      visibility: hidden; }
   body .erkayagrid .erkaya-col .three-img {
     grid-area: three-img; }
   body .erkayagrid .erkaya-col .opportunity-product {
@@ -8502,4 +8476,21 @@ body .erkayagrid .erkaya-col {
 @media only screen and (max-width: 992px) {
   .erkayagrid .erkaya-col {
     display: flex !important;
-    flex-direction: column !important; } }
+    flex-direction: column !important; }
+    .erkayagrid .erkaya-col .best-seller .card .right-ani {
+      display: none; } }
+
+@media only screen and (min-width: 992px) {
+  .best-seller {
+    grid-area: best-seller; }
+    .best-seller .card .right-ani {
+      position: absolute;
+      width: 45%;
+      right: 120%;
+      top: 10px;
+      bottom: 0;
+      transition: all 0.6s; }
+    .best-seller .card:hover .right-ani {
+      right: 50%; }
+    .best-seller .card:hover .lost-2 {
+      visibility: hidden; } }
