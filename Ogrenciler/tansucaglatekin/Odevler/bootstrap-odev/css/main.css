@@ -8480,4 +8480,5 @@ footer li:hover {
     transform: scale(0.9); }
   .carousel-caption {
     top: auto;
-    bottom: auto; } }
+    bottom: auto;
+    left: 50%; } }
