@@ -8408,37 +8408,67 @@ h2, .h2 {
     opacity: 1;
     transform: translateY(0); } }
 
-.newCard:hover, .collectCard:hover {
-  transform: translateY(20px);
-  transition: 0.5s; }
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; }
+
+.up {
+  position: absolute;
+  top: 90%;
+  right: 3.2rem;
+  position: fixed;
+  z-index: 2; }
+
+.newProductCard, .designerCard {
+  width: 20rem; }
+  .newProductCard:hover, .designerCard:hover {
+    transform: translateY(20px);
+    transition: 0.5s; }
 
 .recommendCard {
   margin-left: 4%;
   background-color: transparent;
   border: none;
-  gap: 4%;
-  cursor: pointer; }
+  width: 10rem;
+  box-shadow: none;
+  gap: 4%; }
   .recommendCard img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden; }
+  .recommendCard .card-body-middle {
+    border-radius: 50%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+  .recommendCard:hover img {
+    opacity: 0.5; }
+  .recommendCard:hover .card-body-middle {
+    opacity: 1; }
 
 .koleksiyonerName {
-  font-size: 11px; }
+  font-size: 13px; }
 
 .koleksiyonTarih {
-  font-size: 10px; }
+  font-size: 12px; }
 
 .productOneriler .card:hover .card-body {
   margin-top: -11%;
   transition: 0.5s; }
 
-.hero {
-  height: 55vh;
+.aboutUsHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.mockplus.com/images/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
-  .hero-text {
-    padding-top: 13%; }
-  .hero h1, .hero .h1 {
+  .aboutUsHero-text {
+    padding-top: 13%;
+    padding-bottom: 13%; }
+  .aboutUsHero h1, .aboutUsHero .h1 {
     animation: moveInTop 1s ease-out; }
 
 @keyframes moveInTop {
@@ -8451,7 +8481,7 @@ h2, .h2 {
     opacity: 1;
     transform: translateY(0); } }
 
-.aboutUs .subbranchesPhoto {
+.aboutUs .subbranchesPhoto, .aboutUs .subbranchesPhotoSecond {
   height: 20rem; }
   .aboutUs .subbranchesPhotoSecond {
     margin-left: -8%; }
@@ -8482,6 +8512,6 @@ h2, .h2 {
   background-image: url("https://www.mockplus.com/enUS/images/about/ba.png"); }
 
 .faq-questions {
-  padding-top: 7%;
-  padding-left: 26%;
-  padding-bottom: 10%; }
+  padding-top: 9%;
+  padding-left: 8%;
+  padding-bottom: 7%; }
