@@ -17,6 +17,14 @@ $btn-bg-dark: lighten($bg-dark, 10%);
   background-position: 50%;
 }
 
+@mixin footer-bg($name) {
+  background-image: url('../img/#{$name}.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
 *,
 *::after,
 *::before {
@@ -47,7 +55,7 @@ body {
 
 .story {
   @include section-bg(story-bg);
-  background-position: 40%;
+  background-position: 45%;
 }
 
 .clothing,
@@ -103,17 +111,13 @@ body {
 }
 
 .heading-title {
-  margin-bottom: 6rem;
-
   &__main-title {
-    letter-spacing: 2rem;
+    letter-spacing: 1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
   }
   &__subtitle {
-    display: block;
-    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1rem;
     animation: moveInRight 1s ease-out;
@@ -200,4 +204,8 @@ body {
   border: 3px solid #fff;
   font-size: 14px;
   height: auto;
+}
+
+.footer-bg {
+  @include footer-bg(footer-bg);
 }

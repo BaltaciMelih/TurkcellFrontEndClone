@@ -20,8 +20,8 @@
         </a>
       </div>
 
-      <nav class="navbar navbar-expand-md fixed-top py-3 navbar-dark bg-secondary bg-opacity-10">
-        <div class="container">
+      <nav class="navbar navbar-expand-md fixed-top py-3 navbar-dark bg-secondary bg-opacity-10 container-fluid">
+        <div class="container-fluid">
           <a class="navbar-brand text-light text-uppercase fw-bolder fs-3" href="home.html">Underground Store</a>
           <button
             class="navbar-toggler"
@@ -64,7 +64,7 @@
     <section id="hero">
       <div class="container-fluid vh-100 hero">
         <div class="hero__text-container">
-          <h1 class="heading-title text-uppercase text-light">
+          <h1 class="heading-title text-uppercase text-light mb-5">
             <p class="heading-title__main-title mb-5 display-1">UNDERGROUND LIFE</p>
             <p class="heading-title__subtitle display-6 lh-base">Everything You Need in One Place</p>
           </h1>
@@ -78,15 +78,20 @@
     <section id="story">
       <div class="container-fluid story">
         <div class="row h-100">
-          <div class="col-6 px-5 ms-5 d-flex flex-column gap-5 align-items-md-start justify-content-center">
+          <div
+            class="col-6 px-5 ms-5 d-flex flex-column gap-5 align-items-start justify-content-center"
+            style="width: 70%"
+          >
             <h1 class="display-1 mb-3 text-light">THE STORY</h1>
-            <p class="text-light fs-2 lh-base" style="width: 90%">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sit dolor. Eveniet sequi magnam dolorum
-              ea tempore quasi non dicta in nesciunt nemo voluptatem itaque delectus
+            <p class="text-light fs-3 lh-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sit dolor. <br />
+              Eveniet sequi magnam doloru ea tempore quasi non dicta in nesciunt nemo. <br />
+              Eveniet sequi magnam doloru ea tempore quasi non dicta in nesciunt nemo.
             </p>
-            <p class="text-light fs-2 lh-base" style="width: 90%">
-              The restless Lewis began crooning something while strumming on his guitar, John felt inspired to jam with
-              an alaap, and the result: the seamless fusion of Eastern and Western.
+            <p class="text-light fs-3 lh-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sit dolor. <br />
+              Eveniet sequi magnam doloru ea tempore quasi non dicta in nesciunt nemo. <br />
+              Eveniet sequi magnam doloru ea tempore quasi non dicta in nesciunt nemo.
             </p>
           </div>
         </div>
@@ -290,17 +295,8 @@
 
     <!-- FOOTER PART -->
 
-    <footer id="footer">
-      <div
-        class="container-fluid vh-100"
-        style="
-          background-image: url('https://demo.web3canvas.com/themeforest/duotone/images/background-bg-07.jpg');
-          background-position: center center;
-          background-size: cover;
-          background-attachment: fixed;
-          background-repeat: no-repeat;
-        "
-      >
+    <footer id="footer" class="mt-5">
+      <div class="container-fluid footer-bg">
         <div class="row d-flex justify-content-center align-items-center gap-5 flex-column text-center">
           <div class="col-md-6">
             <h2
@@ -376,7 +372,7 @@
               <h4>hello@undergroundstore.com</h4>
             </div>
           </div>
-          <div class="col-md-12 mb-5">
+          <div class="col-md-12 mb-3">
             <div class="shape-line">
               <img src="img/shape-line.png" alt="" class="img-fluid" />
             </div>
