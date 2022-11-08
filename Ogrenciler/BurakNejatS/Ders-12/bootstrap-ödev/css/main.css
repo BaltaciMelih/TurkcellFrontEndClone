@@ -10796,16 +10796,16 @@ body {
 
 @keyframes changeImage {
   0% {
-    background-image: url("../fenderr.png");
+    background-image: url("../görseller/fenderr.png");
   }
   50% {
-    background-image: url("../gitarr.png");
+    background-image: url("../görseller/gitarr.png");
   }
   75% {
-    background-image: url("../piyanoo.png");
+    background-image: url("../görseller/piyanoo.png");
   }
   100% {
-    background-image: url("../sahne1.png");
+    background-image: url("../görseller/sahne1.png");
   }
 }
 #gitar-ana {
@@ -10832,32 +10832,28 @@ body {
   grid-template-rows: 50% 50%;
 }
 
-.logo {
+#logo {
   grid-row-start: 2;
   grid-column-start: 1;
 }
 
-.iletişim {
+#iletişim {
   grid-column-start: 2;
   grid-row-start: 2;
 }
 
-.destek {
+#destek {
   grid-column-start: 3;
   grid-row-start: 2;
 }
 
-.takip {
+#takip {
   grid-column-start: 4;
   grid-row-start: 2;
 }
 
 #sepet {
   padding: 20px;
-}
-
-.row {
-  margin-left: 150px;
 }
 
 .top {

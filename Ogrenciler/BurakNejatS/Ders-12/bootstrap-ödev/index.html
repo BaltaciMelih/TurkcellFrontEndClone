@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./piyano.html">
     <link rel="stylesheet" href="./bateri.html">
     <link rel="stylesheet" href="sss.html">
-    <link rel="shortcut icon" type="image/png" href="./bnsss.png"/>
+    <link rel="shortcut icon" type="image/png" href="./görseller/bnsss.png"/>
 
     <title>BNS Müzik Dükkanı</title>
 </head>
@@ -30,14 +30,14 @@
                         <div class="dropdown-menu">
                             <a href="./bateri.html" class="dropdown-item">Bateriler</a>
                             <a href="./gitar.html" class="dropdown-item">Gitarlar</a>
-                            <a href="./piyano.html" class="dropdown-item">Piyanolar</a>
+                            <a href="./piyano.html" class="dropdown-item">Piy</a>
                         </div>
                     </div>
                     <a href="./sss.html" class="nav-item nav-link">S.S.S.</a>
                     <a href="./hakkımızda.html" class="nav-item nav-link">Hakkımızda</a>
                     
                 </div>
-                <a href="./index.html"><img class="p-0" src="./bnsss.png" alt="logo" width="250px" height="250px" ></a>
+                <a href="./index.html"><img class="p-0" src="./görseller/bnsss.png" alt="logo" width="250px" height="250px" ></a>
                 <form class="d-flex col-md-2">
                     <div class="input-group">                    
                         <input type="text" class="form-control" placeholder="Ürün, kategori veya marka ara">
@@ -61,17 +61,24 @@
     </nav>
 <div  class="imgSlider"></div><br><br><br>
 
-<h1 id="kategori" class="fs-1 fw-bolder" >Kategoriler</h1> <hr class="hr">
+ <hr class="hr">
 
-
-<div class="row" >
-
-    <div  class=" col-9 col-md-3"><a href="./gitar.html"> <img  class="image-fluid rounded " src="./elektro.jpg.webp" alt="" > </a> </div>
-    <div class="col-9 col-md-3"> <a href="./piyano.html"><img class="image-fluid"src="./piyano.jpg.webp" alt=""></a></div>
-    <div class="col-9 col-md-3 "> <a href="./bateri.html"><img class="image-fluid " src="./davul.jpg.webp" alt=""></a></div>
-</div>
+<div class="container-md ">
+    <div class="row g-2 justify-content-center">
+        <h1 class="text-center">Kategoriler</h1>
+    <div  class="col-md-4">
+    <a href="./gitar.html"> <img  class="image-fluid rounded " src="./görseller/elektro.jpg.webp" alt="" ></a>
+    </div>
+    <div class="col-md-4">
+    <a href="./piyano.html"><img class="image-fluid"src="./görseller/piyano.jpg.webp" alt=""></a>
+    </div>
+    <div class="col-md-4 ">
+    <a href="./bateri.html"><img class="image-fluid " src="./görseller/davul.jpg.webp" alt=""></a>
+    </div>
+    </div>
+    </div>
 <br><br><br> 
-<hr class="hr">
+
 
 <a href="#"  ><img class="top"src="./up.png" alt=""></a>
 
@@ -79,10 +86,11 @@
 
 
 <footer>
-    <div class="footer-1">
-        <div class="logo"> <img src="./bnsss.png" alt="logo" width="200px" height="200px"></div>
+    <div class="container-md-12">
+        <div class="row g-2 justify-content-center">
+        <div id="logo" class="col-md-3"> <img src="./görseller/bnsss.png" alt="logo" width="200px" height="200px"></div>
 
-        <div class="iletişim">
+        <div id="iletişim" class="col-md-3">
             <h2>İletişim</h2><hr>
             <ul>
             <i class="bi bi-telephone"> 554 778 2007</i><br>
@@ -93,7 +101,7 @@
         </div>
 
 
-        <div class="destek">
+        <div id="destek" class="col-md-3">
             <h2>Destek</h2><hr>
             <ul>
                 <a href="#">Müşteri Hizmetleri</a><br>
@@ -101,7 +109,7 @@
             </ul>
         </div>
 
-        <div class="takip">
+        <div id="takip" class="col-md-3">
             <h2>Bizi Takip Edin</h2><hr>
             <a href="#"><img src="https://img.icons8.com/ios/45/null/instagram-new--v1.png"/></a>
             <a href="#"><img src="https://img.icons8.com/ios/45/null/youtube-play--v1.png"/></a>
@@ -109,7 +117,7 @@
         </div>
 
     
-
+    </div>
     </div>
 </footer>
 <script
