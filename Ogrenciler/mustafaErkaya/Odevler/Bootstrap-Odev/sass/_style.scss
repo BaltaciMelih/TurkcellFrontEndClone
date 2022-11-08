@@ -1,0 +1,161 @@
+$home-font:'Rubik', sans-serif;
+$home-header-font: 'Prata', serif;
+$home-h3-font: 'Poppins', sans-serif;
+$card-shadow:  rgba(208, 203, 203, 0.24) 0px 3px 8px;
+$h2-font: 'Dancing Script', cursive;
+
+@mixin border {
+    border-bottom: 2px solid black ;
+}
+
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h3{
+    font-family: $home-h3-font;
+    
+}
+h2 {
+    font-family: $h2-font;
+    border-bottom: 2px solid #A2701A;
+}
+.p-1{
+    font-size: 14px;
+}
+
+.card-shadow{
+    box-shadow: $card-shadow;
+}
+.nav-border{
+    border-bottom: 2px solid transparent ;
+}
+.nav-border:hover{
+    @include border; 
+}
+.home-font{
+    font-family: $home-font;
+}
+.header-font {
+    font-family: $home-header-font;
+    text-shadow: 2px 2px 12px #e0e411;
+}
+    body {
+        .home{
+            .arrow{
+                position: absolute;
+                top: 90%;
+                right: 3rem;
+                position: fixed;
+                z-index: 2;
+            } 
+        }
+// animation start
+        .product{
+            .card{
+            .covering{
+                  position: absolute;
+                  left: 0; right: 0;
+                  overflow: hidden;
+                  width: 90%; height: auto;
+                  display: none;
+                }
+            }
+            .card:hover .covering {
+             display: block;
+            transition: .5s ease;
+            }
+            .card:hover .lost {
+            display: none;
+           transition: .5s ease;
+            }
+        }
+        .product-responsive{
+            .card{
+                .covering-2{
+                      position: absolute;
+                      overflow: hidden;
+                      width: 90%; height: auto;
+                      visibility: hidden;
+                }
+                
+            }
+            .card:hover .covering-2 {
+                 visibility: visible;
+              }
+              .card:hover .lost-2 {
+                visibility: hidden;
+           }
+        }
+    
+// animation product finish
+        .erkayagrid{ 
+            .erkaya-col{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas: "best-seller three-img "
+                                     ". opportunity-product" 
+                                     ". featured"
+                                     ". contact" ;
+               
+                .three-img {
+                    grid-area: three-img;  
+                }
+
+                .opportunity-product{
+                    grid-area: opportunity-product;
+                }
+                .featured{
+                    grid-area: featured;
+                }
+                .contact{
+                    grid-area: contact;
+                }
+            }
+        }
+            }
+    
+
+    @media only screen and(max-width: 992px){
+        .erkayagrid {
+            .erkaya-col{
+                display: flex !important;
+                flex-direction: column !important;
+                .best-seller{
+                    .card {
+                        .right-ani{ 
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    @media only screen and(min-width: 992px){
+        .best-seller{
+            grid-area: best-seller;
+            .card {
+                .right-ani{
+                    position: absolute;
+                    width: 45%; 
+                    right: 120%;
+                    top: 10px; bottom: 0;
+                    transition: all 0.6s;
+                }
+            }
+            .card:hover .right-ani{
+                right: 50%;
+            }
+            .card:hover .lost-2{
+                visibility: hidden;
+            }
+        }
+    }
+
+

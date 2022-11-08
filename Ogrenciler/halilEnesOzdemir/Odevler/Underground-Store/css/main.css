@@ -11181,7 +11181,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-position: 40%;
+  background-position: 45%;
 }
 
 .clothing,
@@ -11210,6 +11210,11 @@ body {
   margin-top: 30px;
 }
 
+.clothing-img:hover, .albums-img:hover,
+.about-img:hover {
+  transform: scale(0.85);
+}
+
 .albums {
   background: url("../img/album-bg.jpg") no-repeat center;
   background-size: cover;
@@ -11218,27 +11223,20 @@ body {
 .faq {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/faq_banner.jpeg");
   background-size: cover;
-  height: 40vh;
 }
 
 .faq__subtitle {
   display: block;
 }
 
-.heading-title {
-  margin-bottom: 6rem;
-}
-
 .heading-title__main-title {
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
 .heading-title__subtitle {
-  display: block;
-  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1rem;
   animation: moveInRight 1s ease-out;
@@ -11311,18 +11309,20 @@ body {
   z-index: 2;
 }
 
-.albums-img:hover,
-.clothing-img:hover,
-.products-img:hover {
-  transform: scale(0.85);
-}
-
 .form-subscribe {
   width: 40%;
   padding: 8px 16px;
   border: 3px solid #fff;
   font-size: 14px;
   height: auto;
+}
+
+.footer-bg {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 @keyframes moveInLeft {
