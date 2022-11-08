@@ -1,5 +1,10 @@
 $w70:70%;
 
+@mixin df-jcc {
+    display: flex;
+    justify-content: center;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -26,23 +31,22 @@ body{
 }
 @keyframes changeImage {
     0%{
-        background-image: url("../fenderr.png");
+        background-image: url("../görseller/fenderr.png");
     }
     50%{
-        background-image:url("../gitarr.png") ;
+        background-image:url("../görseller/gitarr.png") ;
     }
     75%{
-        background-image:url("../piyanoo.png") ;
+        background-image:url("../görseller/piyanoo.png") ;
     }
     100%{
-        background-image: url("../sahne1.png");
+        background-image: url("../görseller/sahne1.png");
     }
 }
 
 #gitar-ana{
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
+    @include df-jcc();
     
 }
 #kategori{
@@ -63,25 +67,31 @@ body{
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50% ;
 }
+<<<<<<< HEAD
+#logo{
+=======
 
 .logo{
+>>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
 grid-row-start: 2;
 grid-column-start: 1;
-
 }
 
-.iletişim{
+#iletişim{
     grid-column-start: 2;
     grid-row-start: 2;
 }
+<<<<<<< HEAD
+#destek{
+=======
 
 .destek{
+>>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
     grid-column-start: 3;
     grid-row-start: 2;
 }
 
-.takip{
-
+#takip{
     grid-column-start: 4;
     grid-row-start: 2;
 }
@@ -90,21 +100,19 @@ grid-column-start: 1;
     padding: 20px;
 }
 
+<<<<<<< HEAD
+=======
 .row{
-   
     margin-left: 150px;
 }
+>>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
 .top{
     color: #0049AF;
     position: sticky;
     bottom: 20px;
     width: 4%;
-   
 }
-
-
 // ürün kart
-
 .details {
     border: 1.5px solid grey;
     color: #212121;
@@ -131,10 +139,6 @@ grid-column-start: 1;
 
 .card-body {
     width: fit-content;
-}
-
-.btn {
-    border-radius: 0;
 }
 
 .img-thumbnail {
@@ -166,7 +170,6 @@ grid-column-start: 1;
 }
 
 li {
-    
     line-height: 50px;
     color: #000
 }
@@ -201,9 +204,9 @@ li {
     padding-left: 25px
 }
 
-.btn-outline-warning {
+.btn-outline {
     border-radius: 0;
-    border: 2px solid yellow;
+    border: 2px solid;
     color: #000;
     font-size: 12px;
     font-weight: bold;
@@ -225,7 +228,6 @@ li {
         border-radius: 20px;
         height: 6px;
         width: 35%;
-        background: yellow;
         margin: 10px auto
     }
 
@@ -239,7 +241,6 @@ li {
         padding-left: 90px;
         padding-top: 10px
     }
-
     .klo {
         display: flex;
         text-align: center;
@@ -247,14 +248,8 @@ li {
         margin-right: 40px
     }
 }
-
 // video
 .inceleme{
-    display: flex;
-    justify-content: center;
+    @include df-jcc();
     padding: 50px;
 }
-
-// h3{
-// text-align: center;
-// }

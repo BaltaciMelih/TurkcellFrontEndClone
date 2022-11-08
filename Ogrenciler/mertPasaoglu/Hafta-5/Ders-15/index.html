@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*      let input = prompt("Sayi Giriniz ");
+        let result = input;
+        for(let i = 2; i < input; i++){
+         result = i * result;
+        }
+        document.write(result); */
+
+
+let input=prompt("Enter a value");
+let v=input;
+let count=0;
+for(let i=1; i<input; i++)
+{
+if(input%i==0)
+{
+	count=count+i;
+}
+}
+if(count==v)
+{
+alert("given no is perfect");
+}
+else
+{
+alert("given no is not a perfect");
+}
+    </script>
+</body>
+</html>

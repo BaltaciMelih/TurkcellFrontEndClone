@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="./gitar.html">
     <link rel="stylesheet" href="./piyano.html">
     <link rel="stylesheet" href="./bateri.html">
-    <title>Document</title>
+    <link rel="stylesheet" href="sss.html">
+    <link rel="shortcut icon" type="image/png" href="./görseller/bnsss.png"/>
+
+    <title>BNS Müzik Dükkanı</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button active" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
@@ -25,16 +28,22 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tüm Kategoriler</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Yaylılar</a>
+<<<<<<< HEAD
+                            <a href="./bateri.html" class="dropdown-item">Bateriler</a>
+                            <a href="./gitar.html" class="dropdown-item">Gitarlar</a>
+                            <a href="./piyano.html" class="dropdown-item">Piy</a>
+=======
+                            <a href="#" class="dropdown-item">Vurmalılar</a>
                             <a href="#" class="dropdown-item">Telliler</a>
                             <a href="#" class="dropdown-item">Tuşlular</a>
+>>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
                         </div>
                     </div>
-                    <a href="#" class="nav-item nav-link">Sıkça Sorulan Sorular</a>
+                    <a href="./sss.html" class="nav-item nav-link">S.S.S.</a>
                     <a href="./hakkımızda.html" class="nav-item nav-link">Hakkımızda</a>
                     
                 </div>
-                <a href="./index.html"><img class="p-0" src="./bnsss.png" alt="logo" width="250px" height="250px" ></a>
+                <a href="./index.html"><img class="p-0" src="./görseller/bnsss.png" alt="logo" width="250px" height="250px" ></a>
                 <form class="d-flex col-md-2">
                     <div class="input-group">                    
                         <input type="text" class="form-control" placeholder="Ürün, kategori veya marka ara">
@@ -58,33 +67,36 @@
     </nav>
 <div  class="imgSlider"></div><br><br><br>
 
-<h1 id="kategori" class="fs-1 fw-bolder" >Kategoriler</h1> <hr class="hr">
+ <hr class="hr">
 
-<!-- <div class="col-md-9">
-    <div  id="gitar-ana" class="col-md-3" style="margin-top: 0px; margin-bottom: 30px; position: absolute; left: 17.056 3%; margin-left:130px;">
-        <img src="./elektro.jpg.webp" alt="" height="167px" width="167px">
+<div class="container-md ">
+    <div class="row g-2 justify-content-center">
+        <h1 class="text-center">Kategoriler</h1>
+    <div  class="col-md-4">
+    <a href="./gitar.html"> <img  class="image-fluid rounded " src="./görseller/elektro.jpg.webp" alt="" ></a>
     </div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
-</div> -->
-
-<div class="row">
-
-    <div  class=" col-12 col-md-4"><a href="./gitar.html"> <img  class="image-fluid rounded" src="./elektro.jpg.webp" alt="" > </a> </div>
-    <div class="col-12 col-md-4"> <a href="./piyano.html"><img class="image-fluid"src="./piyano.jpg.webp" alt=""></a></div>
-    <div class="col-12 col-md-4"> <a href="./bateri.html"><img class="image-fluid" src="./davul.jpg.webp" alt=""></a></div>
-</div>
+    <div class="col-md-4">
+    <a href="./piyano.html"><img class="image-fluid"src="./görseller/piyano.jpg.webp" alt=""></a>
+    </div>
+    <div class="col-md-4 ">
+    <a href="./bateri.html"><img class="image-fluid " src="./görseller/davul.jpg.webp" alt=""></a>
+    </div>
+    </div>
+    </div>
 <br><br><br> 
-<hr class="hr">
+
 
 <a href="#"  ><img class="top"src="./up.png" alt=""></a>
 
 
-<footer>
-    <div class="footer-1">
-        <div class="logo"> <img src="./bnsss.png" alt="logo" width="200px" height="200px"></div>
 
-        <div class="iletişim">
+
+<footer>
+    <div class="container-md-12">
+        <div class="row g-2 justify-content-center">
+        <div id="logo" class="col-md-3"> <img src="./görseller/bnsss.png" alt="logo" width="200px" height="200px"></div>
+
+        <div id="iletişim" class="col-md-3">
             <h2>İletişim</h2><hr>
             <ul>
             <i class="bi bi-telephone"> 554 778 2007</i><br>
@@ -95,15 +107,15 @@
         </div>
 
 
-        <div class="destek">
+        <div id="destek" class="col-md-3">
             <h2>Destek</h2><hr>
             <ul>
                 <a href="#">Müşteri Hizmetleri</a><br>
-                <a href="#">Sıkça Sorulan Sorular</a>
+                <a href="./sss.html">Sıkça Sorulan Sorular</a>
             </ul>
         </div>
 
-        <div class="takip">
+        <div id="takip" class="col-md-3">
             <h2>Bizi Takip Edin</h2><hr>
             <a href="#"><img src="https://img.icons8.com/ios/45/null/instagram-new--v1.png"/></a>
             <a href="#"><img src="https://img.icons8.com/ios/45/null/youtube-play--v1.png"/></a>
@@ -111,9 +123,13 @@
         </div>
 
     
-
+    </div>
     </div>
 </footer>
-
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"
+></script>
 </body>
 </html>
