@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-primary ">
@@ -21,7 +22,7 @@
                 <a class="nav-link active text-white" aria-current="page" href="./aboutUs.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Help</a>
+                <a class="nav-link active text-white" aria-current="page" href="./help.html">Help</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -31,52 +32,39 @@
           </div>
         </div>
       </nav>
+
+      <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                <div class="col-12 col-md-4 mt-5 mb-5">
+                    <img src="data:image/jpeg;base64,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" style="height:auto; width:auto;" class="card-img-top img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-12 col-md-4 mt-5">
+                    <div class="row">
+                    <div class="col-md-6 text-end">
+                        <ul class="list-unstyled">
+                        <li class="fw-bold">Marka:</li>
+                        <li class="fw-bold">Model Adı:</li>
+                        <li class="fw-bold">Renk:</li>
+                        <li class="fw-bold">Şarj Kutusu:</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-start">
+                        <ul class = "list-unstyled">
+                            <li>Apple</li>
+                            <li>Airpods</li>
+                            <li>Beyaz</li>
+                            <li>Mega-Safe şarj kutusu</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </section>
       
-      <div class="container-fluid container">
-        <div class="row">
-            <div class="col-12 col-md-12 mt-3">
-                <h3 class="fst-italic text-success text-center">FAQ </h3>
-                <div class="mySelectMenu mt-4">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Frequently Asked Questions</option>
-                        <option value="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit.</option>
-                        <option value="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, debitis!</option>
-                        <option value="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, qui!</option>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Answer" id="floatingTextarea"></textarea>
-                            <label for="floatingTextarea"></label>
-                          </div>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <h3 class="fst-italic text-success text-center">Contact Us</h3>
-                <div class="myForm px-5">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Please enter a name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Surname</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Please enter a surname">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Contact Number</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(+90)xxxxxxxxxx">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        <div class="d-flex justify-content-center mt-2">
-                            <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
       <footer class="text-center text-md-start bg-primary text-muted">
         <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
           <div class="me-5 d-none d-md-block">
@@ -165,7 +153,5 @@
           © Your Site Name, All Right Reserved
         </div>
       </footer>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
