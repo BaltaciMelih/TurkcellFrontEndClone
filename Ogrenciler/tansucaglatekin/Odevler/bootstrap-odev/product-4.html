@@ -88,14 +88,32 @@
       </div>
     </header>
 
-    <section class="container-fluid mb-5">
+    <section class="container-fluid mb-2">
       <div class="row">
-        <div class="col-sm-5 order-2">
-          <img class="w-100" data-bs-target="#product1-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/009-900x900.jpg" alt="1">
-          <img class="w-100" data-bs-target="#product2-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9135-copieweb-900x900.jpg" alt="2">
-          <img class="w-100" data-bs-target="#product3-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9592copieweb-900x900.jpg" alt="3">
+        <div class="col-sm-5">
+          <div id="carousel-product" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img data-bs-target="#product1-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/009-900x900.jpg" class="d-block w-100" alt="1">
+              </div>
+              <div class="carousel-item">
+                <img data-bs-target="#product2-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9135-copieweb-900x900.jpg" class="d-block w-100" alt="2">
+              </div>
+              <div class="carousel-item">
+                <img data-bs-target="#product3-modal" data-bs-toggle="modal" src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9592copieweb-900x900.jpg" class="d-block w-100" alt="3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-product" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-product" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="product-sticky col-sm-7 my-5 order-1">
+        <div class="col-sm-7 my-5">
           <div class="text-center">
             <h2>Kalp Kolye Ucu</h2>
             <p>280 ₺</p>
@@ -118,7 +136,7 @@
               <button class="btn btn-info">Sepete Ekle</button>
             </div>
           </div>
-          <div class="accordion mt-5">
+          <div class="accordion my-5">
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-1">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
@@ -176,10 +194,129 @@
     </div>
     <!-- MODAL END -->
 
-    <footer class="container-fluid bg-secondary py-1 position-relative">
+    <section  class="container my-2">
+      <div class="row">
+        <div class="col-sm-5 mb-2">
+          <h5>DEĞERLENDİRMELER</h5>
+          <p>Henüz değerlendirme yapılmadı.</p>
+        </div>
+        <div class="col-sm-7">
+          <h5>YORUM YAPINIZ</h5>
+          <form>
+            <div class="mb-3">
+              <label for="product-form-textarea" class="form-label">Değerlendirmeniz:</label>
+              <textarea class="form-control" id="product-form-textarea" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="product-form" class="form-label">İsim *</label>
+                  <input type="email" class="form-control" id="product-form">
+                </div>
+                <div class="col-sm-6">
+                  <label for="product-form" class="form-label">E-posta adresiniz *</label>
+                <input type="email" class="form-control" id="product-form">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-info">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-sm-12 text-center my-2">
+          <h3>En Beğenilenler</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 product-boxs">
+          <div class="d-flex product-box mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>8</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>2</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/10592287/c/763/763/314/184/il/0d3203/1747656274/il_300x300.1747656274_iwk7.jpg" alt="1">
+        </div>
+        <div class="col-sm-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>5</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>0</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/16015357/r/il/a85c7a/3025372159/il_300x300.3025372159_akux.jpg" alt="2">
+        </div>
+        <div class="col-sm-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>4</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>1</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6560359/r/il/125462/2671490550/il_300x300.2671490550_e78z.jpg" alt="3">
+        </div>
+        <div class="col-sm-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>7</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>2</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6636756/c/342/342/77/53/il/2a536e/3160324385/il_300x300.3160324385_f8az.jpg" alt="4">
+        </div>
+        <div class="col-sm-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>5</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>0</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/12318214/c/2724/2724/0/0/il/935682/2426210026/il_300x300.2426210026_leag.jpg" alt="5">
+        </div>
+        <div class="col-sm-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>4</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>1</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6920641/r/il/6d97b5/882452775/il_300x300.882452775_ptde.jpg" alt="6">
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid bg-secondary p-3">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3 my-3">
+          <div class="col-sm-3 my-4">
             <ul><h6>POPÜLER KATEGORİLER</h6>
               <li class="list-group-item">İstediğini Yazır</li>
               <li class="list-group-item">Zincir</li>
@@ -188,21 +325,21 @@
               <li class="list-group-item">Aksesuar</li>
             </ul>
           </div>
-          <div class="col-sm-3 my-3">
+          <div class="col-sm-3 my-4">
             <ul><h6>KURUMSAL</h6>
               <li class="list-group-item">Anasayfa</li>
               <li class="list-group-item">Hakkımızda</li>
               <li class="list-group-item">Sıkça Sorulan Sorular</li>
             </ul>
           </div>
-          <div class="col-sm-3 my-3">
+          <div class="col-sm-3 my-4">
             <ul><h6>SÖZLEŞMELER</h6>
               <li class="list-group-item">Mesafeli Satış Sözleşmesi</li>
               <li class="list-group-item">Kargo Teslimat değişim & iade</li>
               <li class="list-group-item">Gizlilik Politikası</li>
             </ul>
           </div>
-          <div class="col-sm-3 my-3 border-start border-dark">
+          <div class="col-sm-3 my-4 border-start border-dark">
             <p>Sosyal Medya'da Bizi Takip Edin</p>
             <div class="d-flex gap-3">
               <div>
@@ -219,7 +356,7 @@
               </div>
             </div>
             <div class="row mt-4">
-              <div class="col-sm-8">
+              <div class="col-sm-8 mb-2">
                 <input class="form-control bg-transparent border-info" type="email" placeholder="E-posta adresiniz">
               </div>
               <div class="col-sm-4">
@@ -227,8 +364,8 @@
               </div>
             </div>
           </div>
+          <div class="col-sm-12"><p class="ps-4 text-black-50">Copyright &copy; 2022 | tansucaglatekin</p></div>
         </div>
-        <div class="col-sm-12"><p class="ps-4 text-black-50">Copyright &copy; 2022 | tansucaglatekin</p></div>
       </div>
     </footer>
 
