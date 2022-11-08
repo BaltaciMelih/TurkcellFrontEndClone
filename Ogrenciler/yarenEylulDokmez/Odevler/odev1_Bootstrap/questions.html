@@ -17,6 +17,11 @@
 </head>
 <body>
     <header>
+      <div class="up">
+        <a href="#top">
+          <img src="https://cdn-icons-png.flaticon.com/512/2267/2267904.png" height="40px" width="40px" />
+        </a>
+      </div>
         <nav class="navbar bg-success navbar-expand-md p-3">
             <div class="container-fluid ms-5 me-5">
                 <a class="navbar-brand text-light" href="./main.html">LL Store</a>
@@ -39,9 +44,9 @@
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                           <ul class="dropdown-menu bg-success border-0">
-                            <li><a class="dropdown-item text-light" href="./product1.html">LL Woman</a></li>
-                            <li><a class="dropdown-item text-light" href="./product2.html">LL Beauty</a></li>
-                            <li><a class="dropdown-item text-light" href="./product3.html">LL Home</a></li>
+                            <li><a class="dropdown-item text-light" href="./llwoman.html">LL Woman</a></li>
+                            <li><a class="dropdown-item text-light" href="./llbeauty.html">LL Beauty</a></li>
+                            <li><a class="dropdown-item text-light" href="./llhome.html">LL Home</a></li>
                           </ul>
                         </li>
                         <li class="nav-item">
@@ -54,9 +59,35 @@
                 </div>
                 <div class="collapse navbar-collapse justify-content-end text-light" id="navbarItems">
                     <ul class="navbar-nav ">
-                        <li class="nav-item">
-                          <a class="nav-link text-light" href="#">Sign in</a>
-                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#"data-bs-toggle="modal" data-bs-target="#signinModal" data-bs-whatever="@mdo">Sign in</a>
+                        <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title text-danger fs-5" id="signinModalLabel">Sign in</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="signin-name" class="col-form-label text-danger">Kullanıcı Adı:</label>
+                                    <input type="text" class="form-control" id="signin-name">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="signin-password" class="col-form-label text-danger">Şifre:</label>
+                                    <input type="password" class="form-control" id="signin-password"></input>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="#" class="text-danger">Kayıt olun</a>
+                                <button type="button" class="btn btn-primary text-light">Send message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lang</a>
                             <ul class="dropdown-menu bg-success border-0">
@@ -70,14 +101,14 @@
             </div>
         </nav>
     </header>
-    <div class="faq_search d-flex flex-column justify-content-center align-items-center text-center text-primary">
+    <div id="yardımSearchbar" class="faq_search d-flex flex-column justify-content-center align-items-center text-center text-primary">
         <h2>Nasıl Yardım Edebiliriz?</h2>
         <form class="d-flex col-6 m-3" role="search">
             <input class="form-control" type="search" id="faq_arananSorun" placeholder="Sorununuzu Arayın" aria-label="Sorununuzu Arayın">
           </form>
     </div>
-    <div class="faq-questions d-flex flex-column">
-    <div class=" accordion col-8" id="faqSoruları">
+    <div id="faqSoruları"class="faq-questions d-flex flex-column">
+    <div class=" accordion col-11" >
         <div class="accordion-item">
           <h3 class="accordion-header" id="ilkSoru">
             <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ilkSoruCevabı" aria-expanded="true" aria-controls="ilkSoruCevabı">
@@ -116,7 +147,7 @@
         </div>
       </div>
     </div>
-    <div class="d-flex flex-column text-center  m-5">
+    <div id="iletisimFormu" class="d-flex flex-column text-center  m-5">
        <h2 class="text-primary">Sorununuz Çözülmedi mi?</h2> 
        <div class="row">
         <div class="col-md-5 col-12 ms-2 m-5 g-4 d-flex flex-column text-start">

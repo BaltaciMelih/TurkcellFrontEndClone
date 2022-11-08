@@ -1,10 +1,11 @@
+$danger:palevioletred;
 @mixin photo(){
     background-size: cover;
     background-repeat: no-repeat;
 }
 @mixin animateTop(){
   animation: moveInTop 1s ease-out;
-        @keyframes moveInTop {
+        @keyframes moveInTop { 
             0% {
               opacity: 0;
               transform: translateY(-2rem);
@@ -28,37 +29,70 @@ a, li, i{
     list-style: none;
     text-decoration: none;
     &:hover{
-        color: palevioletred;
+        color: $danger;
     }
 }
 h2{
   @include animateTop();
 }
-.newCard{
+.card{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.up{
+  position: absolute;
+  top: 90%;
+  right: 3.2rem;
+  position: fixed;
+  z-index: 2;
+}
+.newProductCard{
+  width: 20rem;
   &:hover{
     transform: translateY(20px);
     transition: 0.5s;
   }
 }
-.collectCard{
-  @extend .newCard
+.designerCard{
+  @extend .newProductCard
 }
 .recommendCard{
   margin-left: 4%;
   background-color: transparent;
   border: none;
+  width: 10rem;
+  box-shadow: none;
   gap:4%;
-  cursor: pointer;
   img {
       border-radius: 50%;
+      opacity: 1;
+      display: block;
+      transition: .5s ease;
+      backface-visibility: hidden;
   }
-  
+  .card-body-middle{
+    border-radius: 50%;
+    transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+  }
+  &:hover{
+    img{
+      opacity: 0.5;
+    }
+    .card-body-middle{
+      opacity: 1;
+    }
+  }
 }
 .koleksiyonerName{
-    font-size: 11px;
+    font-size: 13px;
 }
 .koleksiyonTarih{
-    font-size: 10px;
+    font-size: 12px;
 }
 .productOneriler{
   .card{
@@ -69,21 +103,23 @@ h2{
         }
     }
   }}
-.hero {
-    height: 55vh;
+
+.aboutUs{
+  &Hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.mockplus.com/images/banner.jpg');
     @include photo();
     &-text {
         padding-top:13%;
+        padding-bottom: 13%;
     }
     h1{
         @include animateTop();
     }
   }
-.aboutUs{
   .subbranchesPhoto{
     height: 20rem;
     &Second {
+      @extend .subbranchesPhoto;
         margin-left:-8%;
     }
   }
@@ -116,7 +152,7 @@ h2{
   background-image:url('https://www.mockplus.com/enUS/images/about/ba.png');
 }
 .faq-questions{
-  padding-top: 7%;
-  padding-left: 26%;
-  padding-bottom: 10%;
+  padding-top: 9%;
+  padding-left: 8%;
+  padding-bottom: 7%;
 }
