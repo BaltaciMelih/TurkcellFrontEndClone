@@ -11210,6 +11210,11 @@ body {
   margin-top: 30px;
 }
 
+.clothing-img:hover, .albums-img:hover,
+.about-img:hover {
+  transform: scale(0.85);
+}
+
 .albums {
   background: url("../img/album-bg.jpg") no-repeat center;
   background-size: cover;
@@ -11218,7 +11223,6 @@ body {
 .faq {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/faq_banner.jpeg");
   background-size: cover;
-  height: 40vh;
 }
 
 .faq__subtitle {
@@ -11303,12 +11307,6 @@ body {
   right: 3.2rem;
   position: fixed;
   z-index: 2;
-}
-
-.albums-img:hover,
-.clothing-img:hover,
-.products-img:hover {
-  transform: scale(0.85);
 }
 
 .form-subscribe {
