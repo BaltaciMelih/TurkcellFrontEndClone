@@ -11181,7 +11181,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-position: 40%;
+  background-position: 45%;
 }
 
 .clothing,
@@ -11225,20 +11225,14 @@ body {
   display: block;
 }
 
-.heading-title {
-  margin-bottom: 6rem;
-}
-
 .heading-title__main-title {
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
 .heading-title__subtitle {
-  display: block;
-  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1rem;
   animation: moveInRight 1s ease-out;
@@ -11323,6 +11317,14 @@ body {
   border: 3px solid #fff;
   font-size: 14px;
   height: auto;
+}
+
+.footer-bg {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 @keyframes moveInLeft {
