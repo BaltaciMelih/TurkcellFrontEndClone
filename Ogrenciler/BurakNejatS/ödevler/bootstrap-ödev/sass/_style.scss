@@ -67,29 +67,22 @@ body{
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50% ;
 }
-<<<<<<< HEAD
+
 #logo{
-=======
+    grid-row-start: 2;
+    grid-column-start: 1;
 
-.logo{
->>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
-grid-row-start: 2;
-grid-column-start: 1;
 }
-
 #iletişim{
     grid-column-start: 2;
     grid-row-start: 2;
 }
-<<<<<<< HEAD
-#destek{
-=======
 
-.destek{
->>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
-    grid-column-start: 3;
-    grid-row-start: 2;
+#destek{
+grid-column-start: 3;
+grid-row-start: 2;
 }
+
 
 #takip{
     grid-column-start: 4;
@@ -100,12 +93,8 @@ grid-column-start: 1;
     padding: 20px;
 }
 
-<<<<<<< HEAD
-=======
-.row{
-    margin-left: 150px;
-}
->>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
+
+
 .top{
     color: #0049AF;
     position: sticky;
