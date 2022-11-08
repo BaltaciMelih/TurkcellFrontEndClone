@@ -1,4 +1,4 @@
-let value;
+// -let value;
 
 // html içerisine eleman ekleme
 // const newButton = document.createElement("a");

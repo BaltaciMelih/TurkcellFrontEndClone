@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LL Woman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+      <div class="up">
+        <a href="#top">
+          <img src="https://cdn-icons-png.flaticon.com/512/2267/2267904.png" height="40px" width="40px" />
+        </a>
+      </div>
+        <nav class="navbar navbar-expand-md bg-success  p-3">
+            <div class="container-fluid ms-5 me-5">
+                <a class="navbar-brand text-light" href="./main.html">LL Store</a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarItems"
+                aria-controls="navbarItems"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="navbarItems">
+                    <ul class="navbar-nav justify-content-start gap-2">
+                        <li class="nav-item ">
+                          <a class="nav-link text-light" href="./main.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-danger" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                          <ul class="dropdown-menu bg-success border-0">
+                            <li><a class="dropdown-item text-light" href="./llwoman.html">LL Woman</a></li>
+                            <li><a class="dropdown-item text-light" href="./llbeauty.html"aria-current="page">LL Beauty</a></li>
+                            <li><a class="dropdown-item text-light" href="./llhome.html">LL Home</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="./aboutUs.html">About US</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="./questions.html">FAQ</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end text-light" id="navbarItems">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#"data-bs-toggle="modal" data-bs-target="#signinModal" data-bs-whatever="@mdo">Sign in</a>
+                        <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title text-danger fs-5" id="signinModalLabel">Sign in</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="signin-name" class="col-form-label text-danger">Kullanıcı Adı:</label>
+                                    <input type="text" class="form-control" id="signin-name">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="signin-password" class="col-form-label text-danger">Şifre:</label>
+                                    <input type="password" class="form-control" id="signin-password"></input>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="#" class="text-danger">Kayıt olun</a>
+                                <button type="button" class="btn btn-primary text-light">Send message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lang</a>
+                            <ul class="dropdown-menu bg-success border-0">
+                              <li><a class="dropdown-item text-light">Türkçe</a></li>
+                              <li><a class="dropdown-item text-light">English</a></li>
+                              <li><a class="dropdown-item text-light">German</a></li>
+                            </ul>
+                          </li>
+                      </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="urunAcıklama"class="d-flex flex-column m-5" >
+      <nav aria-label="breadcrumb col-12">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./main.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">LL Home</li>
+        </ol>
+      </nav>
+  </div>
+    <div id="oneriler"class=" productOneriler d-flex flex-column text-center mt-5 mb-5 " >
+      <h2 class="text-primary">Tüm Ürünler</h2>
+      <div class="d-flex flex-row flex-wrap justify-content-center gap-5 pt-5 pb-5" id="urunCard">
+        <div class="card" style="width: 16rem;">
+          <img src="https://cdn.shopify.com/s/files/1/0472/7118/2499/products/72abd6e22f86435965bfaaae356f8da87115f8b645ce7bdfbc77c7ba5ae42bdf.jpg?v=1652915314" class="card-img-top" alt="yapayçiçek">
+          <div class="card-body">
+            <p class="koleksiyonerName text-start text-black-50 m-0 mt-3">Octavia Spencer</p>
+            <p class="koleksiyonTarih text-start text-black-50 m-1">12.05.2022</p>
+            <a class="stretched-link" href="./product3.html">Hasır Vazolu Dekoratif Yapay Bitki</a>
+            <p class="card-text m-0">349,90</p>
+          </div>
+        </div>
+        <div class="card" style="width: 16rem;">
+          <img src="https://cdn.shopify.com/s/files/1/0472/7118/2499/products/72abd6e22f86435965bfaaae356f8da87115f8b645ce7bdfbc77c7ba5ae42bdf.jpg?v=1652915314" class="card-img-top" alt="yapayçiçek">
+          <div class="card-body">
+            <p class="koleksiyonerName text-start text-black-50 m-0 mt-3">Octavia Spencer</p>
+            <p class="koleksiyonTarih text-start text-black-50 m-1">12.05.2022</p>
+            <a class="stretched-link" href="./product3.html">Hasır Vazolu Dekoratif Yapay Bitki</a>
+            <p class="card-text m-0">349,90</p>
+          </div>
+        </div>
+        <div class="card" style="width: 16rem;">
+          <img src="https://cdn.shopify.com/s/files/1/0472/7118/2499/products/72abd6e22f86435965bfaaae356f8da87115f8b645ce7bdfbc77c7ba5ae42bdf.jpg?v=1652915314" class="card-img-top" alt="yapayçiçek">
+          <div class="card-body">
+            <p class="koleksiyonerName text-start text-black-50 m-0 mt-3">Octavia Spencer</p>
+            <p class="koleksiyonTarih text-start text-black-50 m-1">12.05.2022</p>
+            <a class="stretched-link" href="./product3.html">Hasır Vazolu Dekoratif Yapay Bitki</a>
+            <p class="card-text m-0">349,90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="d-flex flex-row flex-wrap bg-success text-center text-light pt-4 pb-3">
+                <div class="col-12 col-md-3 col-sm-6 ">
+                    <h5>Products</h5>
+                    <ul class="p-0">
+                        <a class="text-white" href="./main.html"><li >Anasayfa</li></a>
+                        <a class="text-white" href="./product1.html"><li >LL Woman</li></a>
+                        <a class="text-white" href="./product2.html"><li >LL Beauty</li></a>
+                        <a class="text-white" href="./product3.html"><li >LL Home</li></a>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-sm-6 pt-3">
+                    <h5>Support</h5>
+                    <ul class="p-0">
+                        <a class="text-white"href="./aboutUs.html"><li >About Us</li></a>
+                        <a class="text-white"href="./aboutUs.html"><li>Contact Us</li></a>
+                        <a class="text-white" href="./questions.html"><li>FAQ</li></a>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-sm-6 pt-3">
+                    <h5>Social Media</h5>
+                        <a class="text-light" href="" ><li class="fa-brands fa-twitter"></li></a>
+                        <a class="text-light" href="" ><li class="fa-brands fa-facebook"></li></a>
+                        <a class="text-light" href=""  ><li class="fa-brands fa-youtube"></li></a>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-sm-6 pt-3">
+                    <h5>Newsletter</h5>
+                    <p>Bizden haberdar olun</p>
+                    <div class="input-group ps-5 pe-5">
+                        <input type="text" class="form-control" placeholder="Your e-mail" aria-label="Your e-mail" aria-describedby="footer-button">
+                        <button class="btn btn-outline-light text-light" type="button" id="footer-button">Button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-success text-white-50 pt-3 pb-1 ps-4 fs-6">
+                <p>@2022 Yaren Eylül Dökmez </p>
+            </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>  
+</body>
+</html>
