@@ -1,8 +1,10 @@
 $w70:70%;
+
 @mixin df-jcc {
     display: flex;
     justify-content: center;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@ body{
     height: 100vh;
     
 }
+
 .imgSlider{
     width: $w70;
     padding-top: 38%;
@@ -56,13 +59,20 @@ body{
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+
 .footer-1{
     display: grid;
     grid-gap: 8px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50% ;
 }
+<<<<<<< HEAD
 #logo{
+=======
+
+.logo{
+>>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
 grid-row-start: 2;
 grid-column-start: 1;
 }
@@ -71,7 +81,12 @@ grid-column-start: 1;
     grid-column-start: 2;
     grid-row-start: 2;
 }
+<<<<<<< HEAD
 #destek{
+=======
+
+.destek{
+>>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
     grid-column-start: 3;
     grid-row-start: 2;
 }
@@ -85,6 +100,12 @@ grid-column-start: 1;
     padding: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.row{
+    margin-left: 150px;
+}
+>>>>>>> cdf9285e1fe2712947c6e0fe45a3b2b589debc37
 .top{
     color: #0049AF;
     position: sticky;
@@ -99,6 +120,7 @@ grid-column-start: 1;
     height: auto;
     box-shadow: 0px 0px 10px #212121;
 }
+
 .cart {
     background-color: #212121;
     color: white;
@@ -122,11 +144,13 @@ grid-column-start: 1;
 .img-thumbnail {
     border: none;
 }
+
 .card {
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
     border-radius: 5px;
     padding-bottom: 10px;
 }
+
 //ürün detayları 
 
 .abc {
@@ -144,6 +168,7 @@ grid-column-start: 1;
     padding-left: 80%;
     top: 0
 }
+
 li {
     line-height: 50px;
     color: #000
