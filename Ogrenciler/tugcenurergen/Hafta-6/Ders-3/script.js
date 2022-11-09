@@ -115,12 +115,11 @@
 //     console.log(lang);
 // });
 
+// let sayi = prompt("sayı giriniz");
+// let result = 1;
+// for (let i = 1; i <= sayi; i++) {
+//   result = result * i;
+// }
+// console.log(result);
 
 
-
-let sayi = prompt("sayı giriniz");
-let result = 1;
-for(let i = 1; i<=sayi ; i++){
-    result = result * i;
-}
-console.log(result);
