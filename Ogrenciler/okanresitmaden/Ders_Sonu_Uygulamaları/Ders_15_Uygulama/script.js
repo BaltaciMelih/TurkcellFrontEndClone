@@ -235,7 +235,7 @@ let value;
 // }
 
 
-// tek tek silme
+// tek tek silme ve tümünü silme
 
 const removeitemsbypart = document.querySelectorAll(".deleteitem");
 const todolistitem = document.querySelectorAll(".list-group-item");
@@ -247,9 +247,11 @@ for (let i = 0; i<removeitemsbypart.length; i++){
     
     clearall.addEventListener("click", function(){
         todolistitem[i].remove();
+        console.log("bütün todolar silindi");
     })
     removeitemsbypart[i].addEventListener("click", function(){
         todolistitem[i].remove();
+        console.log("todo",(i+1)+" silindi.");
 
     })
 }
