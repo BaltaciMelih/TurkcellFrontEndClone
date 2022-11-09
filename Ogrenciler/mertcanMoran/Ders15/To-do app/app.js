@@ -41,7 +41,7 @@ const todoAdd = document.getElementById("todo-add");
 let todoin = document.getElementById("todo");
 todoAdd.addEventListener("click", addNewTodo);
 
-function addNewTodo() {
+function addNewTodo(e) {
   //console.log("Submit oldu");
   let newTodo = [
     document.createElement("li"),
@@ -61,11 +61,10 @@ function addNewTodo() {
   newTodo[0].appendChild(newTodo[1]);
   const newTodoText = document.createTextNode(todoin.value);
   newTodo[2].appendChild(newTodoText);
-  todoin.value = "";
   ul.appendChild(newTodo[0]).appendChild(newTodoText);
   newTodo[0].appendChild(newTodo[1]).appendChild(newTodo[2]);
   deleteItem();
-  //e.preventDefault();
+  e.preventDefault();
 }
 
 // To-do listleri tek tek silmeyi aşağıdaki kod ile yaptım.
