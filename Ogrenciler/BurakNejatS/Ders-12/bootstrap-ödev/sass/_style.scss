@@ -1,8 +1,10 @@
 $w70:70%;
+
 @mixin df-jcc {
     display: flex;
     justify-content: center;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@ body{
     height: 100vh;
     
 }
+
 .imgSlider{
     width: $w70;
     padding-top: 38%;
@@ -28,16 +31,16 @@ body{
 }
 @keyframes changeImage {
     0%{
-        background-image: url("../fenderr.png");
+        background-image: url("../görseller/fenderr.png");
     }
     50%{
-        background-image:url("../gitarr.png") ;
+        background-image:url("../görseller/gitarr.png") ;
     }
     75%{
-        background-image:url("../piyanoo.png") ;
+        background-image:url("../görseller/piyanoo.png") ;
     }
     100%{
-        background-image: url("../sahne1.png");
+        background-image: url("../görseller/sahne1.png");
     }
 }
 
@@ -56,27 +59,33 @@ body{
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+
 .footer-1{
     display: grid;
     grid-gap: 8px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50% ;
 }
-.logo{
-grid-row-start: 2;
-grid-column-start: 1;
+
+#logo{
+    grid-row-start: 2;
+    grid-column-start: 1;
 }
 
-.iletişim{
+
+
+#iletişim{
     grid-column-start: 2;
     grid-row-start: 2;
 }
+
 .destek{
     grid-column-start: 3;
     grid-row-start: 2;
 }
 
-.takip{
+#takip{
     grid-column-start: 4;
     grid-row-start: 2;
 }
@@ -84,6 +93,8 @@ grid-column-start: 1;
 #sepet{
     padding: 20px;
 }
+
+
 .row{
     margin-left: 150px;
 }
@@ -101,6 +112,7 @@ grid-column-start: 1;
     height: auto;
     box-shadow: 0px 0px 10px #212121;
 }
+
 .cart {
     background-color: #212121;
     color: white;
@@ -124,11 +136,13 @@ grid-column-start: 1;
 .img-thumbnail {
     border: none;
 }
+
 .card {
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
     border-radius: 5px;
     padding-bottom: 10px;
 }
+
 //ürün detayları 
 
 .abc {
@@ -146,6 +160,7 @@ grid-column-start: 1;
     padding-left: 80%;
     top: 0
 }
+
 li {
     line-height: 50px;
     color: #000
