@@ -161,59 +161,64 @@ let value;
 
 
 
-const todosremove1 = document.getElementsByClassName("delete-item")[0];
-const todosremove2 = document.getElementsByClassName("delete-item")[1];
-const todosremove3 = document.getElementsByClassName("delete-item")[2];
-const todosremove4 = document.getElementsByClassName("delete-item")[3];
-const todosremoveall = document.querySelector(".list-group");
-const clearall = document.getElementById("clear-todos");
-clearall.addEventListener("click", clearfunc);
 
 
-todosremove1.addEventListener("click", clearfunc1);
-todosremove2.addEventListener("click", clearfunc2);
-todosremove3.addEventListener("click", clearfunc3);
-todosremove4.addEventListener("click", clearfunc4);
+
+// const todosremove1 = document.getElementsByClassName("delete-item")[0];
+// const todosremove2 = document.getElementsByClassName("delete-item")[1];
+// const todosremove3 = document.getElementsByClassName("delete-item")[2];
+// const todosremove4 = document.getElementsByClassName("delete-item")[3];
+// const todosremoveall = document.querySelector(".list-group");
+// const clearall = document.getElementById("clear-todos");
+// clearall.addEventListener("click", clearfunc);
 
 
-function clearfunc(){
-    todosremoveall.innerHTML = "";
-    console.log("todolar silindi");
-}
+// todosremove1.addEventListener("click", clearfunc1);
+// todosremove2.addEventListener("click", clearfunc2);
+// todosremove3.addEventListener("click", clearfunc3);
+// todosremove4.addEventListener("click", clearfunc4);
 
 
-function clearfunc1(){
-    item1= document.querySelectorAll(".list-group-item");
-    item1[0].addEventListener("click", function(){
-        item1[0].remove();
-    })
-    console.log("todo1 silindi");
-}
 
-function clearfunc2(){
-    item2= document.querySelectorAll(".list-group-item");
-    item2[1].addEventListener("click", function(){
-        item2[1].remove();
-    })
-    console.log("todo2 silindi");
+
+// function clearfunc(){
+//     todosremoveall.innerHTML = "";
+//     console.log("todolar silindi");
+// }
+
+
+// function clearfunc1(){
+//     item1= document.querySelectorAll(".list-group-item");
+//     item1[0].addEventListener("click", function(){
+//         item1[0].remove();
+//     })
+//     console.log("todo1 silindi");
+// }
+
+// function clearfunc2(){
+//     item2= document.querySelectorAll(".list-group-item");
+//     item2[1].addEventListener("click", function(){
+//         item2[1].remove();
+//     })
+//     console.log("todo2 silindi");
     
-}
+// }
 
-function clearfunc3(){
-    item3= document.querySelectorAll(".list-group-item");
-    item3[2].addEventListener("click", function(){
-        item3[2].remove();
-    })
-    console.log("todo3 silindi");
-}
+// function clearfunc3(){
+//     item3= document.querySelectorAll(".list-group-item");
+//     item3[2].addEventListener("click", function(){
+//         item3[2].remove();
+//     })
+//     console.log("todo3 silindi");
+// }
 
-function clearfunc4(){
-    item4= document.querySelectorAll(".list-group-item");
-    item4[3].addEventListener("click", function(){
-        item4[3].remove();
-    })
-    console.log("todo4 silindi");
-}
+// function clearfunc4(){
+//     item4= document.querySelectorAll(".list-group-item");
+//     item4[3].addEventListener("click", function(){
+//         item4[3].remove();
+//     })
+//     console.log("todo4 silindi");
+// }
 // const filterInput = document.getElementById("filter");
 // filterInput.addEventListener("keyUp", filterTodo);
 // function filterTodo(e){
@@ -228,4 +233,24 @@ function clearfunc4(){
 //         li.style.display='none';
 //     }
 // }
+
+
+// tek tek silme
+
+const removeitemsbypart = document.querySelectorAll(".deleteitem");
+const todolistitem = document.querySelectorAll(".list-group-item");
+const clearall = document.getElementById("clear-todos");
+
+
+for (let i = 0; i<removeitemsbypart.length; i++){
+
+    
+    clearall.addEventListener("click", function(){
+        todolistitem[i].remove();
+    })
+    removeitemsbypart[i].addEventListener("click", function(){
+        todolistitem[i].remove();
+
+    })
+}
 
