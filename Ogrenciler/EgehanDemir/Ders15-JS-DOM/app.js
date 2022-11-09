@@ -13,7 +13,7 @@
 
 // value.appendChild(newButton);
 
-// silme
+//silme
 // value = document.querySelector(".list-group-item");
 // value.remove();
 
@@ -28,13 +28,13 @@
 
 // const filterInput = document.getElementById("filter");
 
-// filtetInput.onfocus = function () {
+// filterInput.onfocus = function () {
 //   console.log("Focus olduk");
 // };
 
 // filterInput.addEventListener("focus", function (e) {
-//   console.log(e.target.placeholder);
-//   e.target.placeholder = "Todo Yazın";
+//     e.target.placeholder = "Todo Yazın";
+//     console.log(e.target.placeholder);
 // });
 
 // const todoForm = document.getElementById("todo-form");
@@ -68,6 +68,7 @@
 //   e.target.style.backgroundColor = "green";
 //   e.target.style.borderColor = "green";
 // });
+
 // todoButton.addEventListener("mouseleave", function (e) {
 //   e.target.style.backgroundColor = "red";
 //   e.target.style.borderColor = "red";
