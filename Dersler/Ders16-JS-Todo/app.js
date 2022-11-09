@@ -48,6 +48,9 @@ function clearAllTodos() {
 }
 
 function deleteTodo(e) {
+  console.log(e.target);
+  console.log(e.target.parentElement);
+  console.log(e.target.parentElement.parentElement);
   if (e.target.className === "fa fa-remove") {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
