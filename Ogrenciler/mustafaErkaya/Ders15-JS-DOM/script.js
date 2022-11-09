@@ -1,16 +1,44 @@
 let value;
-// value = document;
-//value = document.body;
-//value = document.head;
-//value = document.URL;
-//value = document.scripts;
 
+// value = document.all;
+// value = document.body;
+value = document.head;
+value = document.location;
+value = document.URL;
+value = document.scripts[0];
+value = document.links;
+value = document.links[3].getAttribute("class");
+value = document.links[document.links.length - 1].classList;
+value = document.links[0].className;
 
-value = document.querySelectorAll("li:nth-child(even)");
+// ID ile html element seçme
+value = document.getElementById("link3");
+// Class ile html element seçme
+value = document.getElementsByClassName("link");
+// Tag ile html element seçme
+value = document.getElementsByTagName("a");
 
-value.forEach(function(e){
-    e.style.background = "black";
-    e.style.width = "300px";
-    e.style.color = "white";
-})
+// querySelector ile html element seçme
+value = document.querySelectorAll(".link");
+
+value = document.querySelector("#link3");
+
+value.style.border = "5px solid red";
+value.style.color = "brown";
+
+value.className += " btn btn-success";
+value.textContent = "Sıkça Sorulan Sorular";
+
+value = document.querySelectorAll("a:nth-child(3)");
+value = document.querySelector(".link:last-child");
+value = document.querySelectorAll("a:nth-child(odd)");
+value = document.querySelectorAll("a:first-child");
+
+value = document.querySelectorAll("a:nth-child(even)");
+
+value.forEach(function (e) {
+  e.style.background = "#ce0";
+  e.style.color = "#fff";
+});
+
 console.log(value);

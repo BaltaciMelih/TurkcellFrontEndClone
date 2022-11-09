@@ -56,14 +56,16 @@ console.log("Tüm todolar silindi");
 
 const carList = document.querySelector("car-list");
 
-// Markaların tek tek silme işlemi 
+// Markaların tek tek silme işlemi
+
 const listGroupİtem = document.querySelectorAll(".list-group-item");
 for (let i = 0; i < listGroupİtem.length; i++){
-    listGroupİtem[i].addEventListener("click", clearListİtem);
-    function clearListİtem() {
-        listGroupİtem[i].remove();
-    }
+listGroupİtem[i].addEventListener("click", clearListİtem);
+function clearListİtem() {
+      listGroupİtem[i].remove();
+ }
 }
+
 
 // Marka ekleme butonuna bastığında marka ekleme bakılacak
 const listGroup = document.querySelector(".list-group");
@@ -80,36 +82,27 @@ function addTodo(todo) {
     if (todotext) {
         const newLi = document.createElement("li");
         newLi.innerText = todotext;
-        newLi.classList.add("list-group-item");
+        newLi.classList.add("list-group-item", "d-flex", "justify-content-between");
         listGroup.appendChild(newLi);
+        let newA = document.createElement("a");
+        newA.innerHTML = "<i class='fa fa-remove'></i>";
+        newA.classList.add("delete-item");
+        newLi.appendChild(newA);
     }
     console.log(todotext);
     
-    //li ve listgroup oluşturuldu
-
-    // let newLi = document.createElement("li");
-    // newLi.classList.add("list-group-item");
-    // newLi.innerText = todoInput.value;
-    // listGroup.appendChild("newLi");
-    // console.log(newLi);
-
-    // //  a ve delete-item oluşturma
-    
-    // let newA = document.createElement("a");
-    // newA.innerHTML = "<i class='fa fa-remove'></i>"
-    // newA.classList.add("delete-item");
-    // newLi.appendChild("newA");
-        
 }
 
-filterInput.addEventListener("input", (e) => {
-    const value = e.target.value;
-    listGroupİtem.forEach(li => {
+// List içerisinde filter işlemi
 
-        const invisible = li.innerText.toLowerCase().includes(value.toLowerCase());
-        li.classList.toggle("d-none", !invisible);
-        console.log(li);
-        
-    })
-    
-})
+filterInput.addEventListener("input", (e) => {const value = e.target.value;
+    const childCount = listGroup.childElementCount;
+
+    const items = listGroup.getElementsByTagName("li");
+    console.log(items);
+    for (const i in [...Array(childCount).keys()]) {
+        const item = items[i]; const invisible = item.innerText.toLowerCase().includes(value.toLowerCase());
+         item.classList.toggle("d-none", !invisible);
+        }
+}
+); 
