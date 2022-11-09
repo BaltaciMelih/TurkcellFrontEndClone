@@ -1,4 +1,4 @@
-let value;
+//let value;
 
 // html içerisine eleman ekleme
 //const newButton = document.createElement("a");
@@ -8,13 +8,13 @@ let value;
 newButton.className = "btn btn-danger";
 newButton.href = "#"; */
 
-/* const text = document.createTextNode("Clear All");
-newButton.appendChild(text);
+//const text = document.createTextNode("Ödevi bitir");
+/* newButton.appendChild(text);
 
 value.appendChild(newButton); */
 
 // silme
-//value = document.querySelector(".list-group");
+ul = document.querySelector(".list-group");
 //value.remove();
 
 // Class ekleme ve Silme
@@ -37,38 +37,60 @@ value.appendChild(newButton); */
   e.target.placeholder = "Todo Yazın";
 }); */
 
-const todoForm = document.getElementById("todo-form"); // Bu önemli todo ekleye basınca submit olduğunu anlayabiliyoruz.
-let newTodo = document.querySelector(".list-group-item");
-todoForm.addEventListener("submit", submitForm);
+const todoAdd = document.getElementById("todo-add");
+let todoin = document.getElementById("todo");
+todoAdd.addEventListener("click", addNewTodo);
 
-function submitForm() {
-  console.log("Submit oldu");
-  newTodo.append.innerHTML = "ödevi bitir";
+function addNewTodo() {
+  //console.log("Submit oldu");
+  let newTodo = [
+    document.createElement("li"),
+    document.createElement("a"),
+    document.createElement("i"),
+  ];
+
+  newTodo[2].classList.add("fa", "fa-remove");
+  newTodo[1].classList.add("delete-item");
+  newTodo[1].href = "#";
+  newTodo[1].appendChild(newTodo[2]);
+  newTodo[0].classList.add(
+    "list-group-item",
+    "d-flex",
+    "justify-content-between"
+  );
+  newTodo[0].appendChild(newTodo[1]);
+  const newTodoText = document.createTextNode(todoin.value);
+  newTodo[2].appendChild(newTodoText);
+  todoin.value = "";
+  ul.appendChild(newTodo[0]).appendChild(newTodoText);
+  newTodo[0].appendChild(newTodo[1]).appendChild(newTodo[2]);
+  deleteItem();
   //e.preventDefault();
 }
 
 // To-do listleri tek tek silmeyi aşağıdaki kod ile yaptım.
-const todoList = document.querySelectorAll(".list-group-item");
-for (let i = 0; i < todoList.length; i++) {
-  todoList[i].addEventListener("click", clearItemsFunc);
-  function clearItemsFunc() {
-    todoList[i].innerHTML = "";
-    //todoList.previousElementSibling.innerHTML = "";
-
-    console.log(`To-do ${todoList[i]} temizlendi`);
+function deleteItem() {
+  const todoList = document.querySelectorAll(".list-group-item");
+  for (let i = 0; i < todoList.length; i++) {
+    todoList[i].addEventListener("click", clearItemsFunc);
+    function clearItemsFunc() {
+      todoList[i].innerHTML = "";
+      //todoList.previousElementSibling.innerHTML = "";
+      console.log(`To-do temizlendi`);
+    }
   }
 }
 
-value = document.querySelector(".list-group");
+ul = document.querySelector(".list-group");
 const clearTodos = document.getElementById("clear-todos"); // Tüm taskları temizleyin butonuna basınca hepsini temizliyor.
 clearTodos.addEventListener("click", clearTodosFunc);
 function clearTodosFunc() {
-  value.innerHTML = "";
+  ul.innerHTML = "";
 }
 
 //todoList.previousElementSibling.addEventListener("click", clearTodosFunc);
 
-console.log(clearTodos);
+//console.log(clearTodos);
 
 /* filterInput.addEventListener("keyup", filterTodo);
 function filterTodo(e) {
