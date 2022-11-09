@@ -1,0 +1,67 @@
+$color_1: #313437;
+$color_2: #7d8285;
+$color_3: inherit;
+$background-color_1: #fff;
+
+body {
+    background-image: linear-gradient(rgb(250, 250, 210), rgb(247, 214, 155)) !important
+}
+li,a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{   
+    font-size: 1.05rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+thead,tbody,tfoot,tr,td,th {
+    border-color: #ffb950db !important;
+    border-style: solid;
+    border-width: 0;
+}
+.photo-gallery {
+    color: $color_1;
+    p {
+        color: $color_2;
+    }
+    h2 {
+        font-weight: bold;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        color: $color_3;
+    }
+    .intro {
+        font-size: 16px;
+        max-width: 500px;
+        margin: 0 auto 40px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .photos {
+        padding-bottom: 20px;
+    }
+    .item {
+        padding-bottom: 30px;
+    }
+}
+@media (max-width:768px) {
+    .photo-gallery {
+        h2 {
+            margin-bottom: 25px;
+            padding-top: 25px;
+            font-size: 24px;
+        }
+    }
+}

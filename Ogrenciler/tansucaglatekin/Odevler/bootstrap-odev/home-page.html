@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    
+    <header class="border-bottom" id="header">
+      <div class="container-fluid bg-secondary p-1 text-center">
+        <h5 class="nav-title">Hoşgeldiniz !! Sepete ek %10 indirim </h5>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about-us.html">Hakkımızda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ürünler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="product-1.html">At Nalı Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-2.html">Dünya Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-3.html">Güneş Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-4.html">Kalp Kolye ucu</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Sık Sorulan Sorular</a>
+              </li>
+            </ul>
+            <div class="me-auto">
+              <a href="home-page.html"><img src="https://cdn-icons-png.flaticon.com/512/2237/2237677.png" alt="logo" width="80px">
+              </a>
+            </div>
+            <form class="d-flex gap-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+              <img class="p-modal pt-2" data-bs-toggle="modal" data-bs-target="#person-modal" src="./node_modules/bootstrap-icons/icons/person.svg" alt="person" width="30">
+              <button type="button" class="btn btn-white position-relative">
+                <img src="./node_modules/bootstrap-icons/icons/cart2.svg" alt="basket" width="18">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
+                  2
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="modal" id="person-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">GİRİŞ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="kullanıcı" class="form-label">Kullanıcı Adı</label>
+                  <input class="form-control" id="kullanıcı">
+                </div>
+                <div class="mb-3">
+                  <label for="sifre" class="form-label">Şifre</label>
+                  <input type="password" class="form-control" id="sifre">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="check">
+                  <label class="form-check-label" for="check">Kaydet</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Giriş</button>
+              <button type="button" class="btn btn-primary">Yeni kayıt oluştur</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="carousel" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.anguscoote.com.au/content/category/0930930001572934155.jpg?width=1310&height=655&fit=crop&q=60" class="d-block w-100 carousel-bg " max-height="550" alt="bg-1">
+        </div>
+        <div class="carousel-caption carousel-animation">
+          <h5 class="fs-1"><i>Sizin için<br>tasarlıyoruz</i></h5>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.anguscoote.com.au/content/category/0975559001572934321.jpg?width=1310&height=655&fit=crop&q=60" class="d-block w-100 carousel-bg" max-height="550" alt="bg-2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.anguscoote.com.au/content/category/0738563001660182096.jpg?width=1310&height=655&fit=crop&q=60" class="d-block w-100 carousel-bg" max-height="550" alt="bg-3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    
+    <section class="container">
+      <div class="row py-5">
+        <div class="col-md-4">
+          <hr>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center">ÇOK SATANLAR</h3>
+        </div>
+        <div class="col-md-4">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="card shadow border-0">
+            <div class="urun-animation urun-1 rounded-top">
+              <a href="product-1.html"><img src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/006-900x900.jpg" class="card-img-top" alt="at-nali"></a>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="card-body">
+                <h5 class="card-title">At Nalı Kolye Ucu</h5>
+                <p class="card-text">310 ₺</p>
+              </div>
+              <div class="urun-sepet border border-2 border-primary p-2 me-3 rounded">
+                <img src="./node_modules/bootstrap-icons/icons/cart2.svg" height="20" alt="basket">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card shadow border-0">
+            <div class="urun-animation urun-2 rounded-top">
+              <a href="product-2.html"><img src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/004-900x900.jpg" class="card-img-top" alt="dünya"></a>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="card-body">
+                <h5 class="card-title">Dünya Kolye Ucu</h5>
+                <p class="card-text">300 ₺</p>
+              </div>
+              <div class="urun-sepet border border-2 border-primary p-2 me-3 rounded">
+                <img src="./node_modules/bootstrap-icons/icons/cart2.svg" height="20" alt="basket">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card shadow border-0">
+            <div class="urun-animation urun-3 rounded-top">
+              <a href="product-3.html"><img src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/001-900x900.jpg" class="card-img-top" alt="günes"></a>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="card-body">
+                <h5 class="card-title">Güneş Kolye Ucu</h5>
+                <p class="card-text">250 ₺</p>
+              </div>
+              <div class="urun-sepet border border-2 border-primary p-2 me-3 rounded">
+                <img src="./node_modules/bootstrap-icons/icons/cart2.svg" height="20" alt="basket">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card shadow border-0">
+            <div class="urun-animation urun-4 rounded-top">
+              <a href="product-4.html"><img src="https://www.lafetejewellery.com/wp-content/uploads/2022/10/009-900x900.jpg" class="card-img-top" alt="kalp"></a>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="card-body">
+                <h5 class="card-title">Kalp Kolye Ucu</h5>
+                <p class="card-text">280 ₺</p>
+              </div>
+              <div class="urun-sepet border border-2 border-primary p-2 me-3 rounded">
+                <img src="./node_modules/bootstrap-icons/icons/cart2.svg" height="20" alt="basket">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-info my-5 p-2 text-center w-100 text-light fs-5">Tüm Ürünler</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-md-12 text-center my-2">
+          <h3>En Beğenilenler</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 product-boxs">
+          <div class="d-flex product-box mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>8</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>2</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/10592287/c/763/763/314/184/il/0d3203/1747656274/il_300x300.1747656274_iwk7.jpg" alt="1">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>5</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>0</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/16015357/r/il/a85c7a/3025372159/il_300x300.3025372159_akux.jpg" alt="2">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>4</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>1</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6560359/r/il/125462/2671490550/il_300x300.2671490550_e78z.jpg" alt="3">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>7</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>2</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6636756/c/342/342/77/53/il/2a536e/3160324385/il_300x300.3160324385_f8az.jpg" alt="4">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>5</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>0</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/12318214/c/2724/2724/0/0/il/935682/2426210026/il_300x300.2426210026_leag.jpg" alt="5">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>4</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>1</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6920641/r/il/6d97b5/882452775/il_300x300.882452775_ptde.jpg" alt="6">
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid bg-secondary p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 my-4">
+            <ul><h6>POPÜLER KATEGORİLER</h6>
+              <li class="list-group-item">İstediğini Yazır</li>
+              <li class="list-group-item">Zincir</li>
+              <li class="list-group-item">Özel Koleksiyon</li>
+              <li class="list-group-item">Bijuteri</li>
+              <li class="list-group-item">Aksesuar</li>
+            </ul>
+          </div>
+          <div class="col-md-3 my-4">
+            <ul><h6>KURUMSAL</h6>
+              <li class="list-group-item">Anasayfa</li>
+              <li class="list-group-item">Hakkımızda</li>
+              <li class="list-group-item">Sıkça Sorulan Sorular</li>
+            </ul>
+          </div>
+          <div class="col-md-3 my-4">
+            <ul><h6>SÖZLEŞMELER</h6>
+              <li class="list-group-item">Mesafeli Satış Sözleşmesi</li>
+              <li class="list-group-item">Kargo Teslimat değişim & iade</li>
+              <li class="list-group-item">Gizlilik Politikası</li>
+            </ul>
+          </div>
+          <div class="col-md-3 my-4 border-start border-dark">
+            <p>Sosyal Medya'da Bizi Takip Edin</p>
+            <div class="d-flex gap-3">
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="instagram">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/twitter.svg" alt="twitter">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/facebook.svg" alt="facebook">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/whatsapp.svg" alt="whatsapp">
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-sm-8 mb-2">
+                <input class="form-control bg-transparent border-info" type="email" placeholder="E-posta adresiniz">
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-info">Gönder</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12"><p class="ps-4 text-black-50">Copyright &copy; 2022 | tansucaglatekin</p></div>
+        </div>
+      </div>
+    </footer>
+
+    <a class="top rounded bg-light shadow" href="#header"><img class="p-2" src="./node_modules/bootstrap-icons/icons/arrow-bar-up.svg" alt="arrow"></a>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

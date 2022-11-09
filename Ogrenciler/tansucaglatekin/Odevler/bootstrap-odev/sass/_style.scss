@@ -1,0 +1,112 @@
+.carousel-bg {
+    filter: grayscale(50%);
+}
+.carousel-caption{
+    left: 70%;
+    right: 0%;
+    bottom: 20.25rem;
+    color: $gray-800;
+    // display: block;
+}
+.nav-title {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {  
+    50% { 
+        opacity: 0; 
+    }
+}
+.carousel-animation {
+  animation-name: carousel;
+  animation-duration: 2s;
+}
+@keyframes carousel {
+    0%   {left:0}
+    100% {left:70%}
+  }
+.urun-animation {
+    background-size: cover;
+    display: block;
+    & img {
+        transition:all 2s ease;
+    }
+}
+.p-modal {
+    cursor: pointer;
+}
+.urun-1 {
+    background-image: url(https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9405-scaled-900x1350.jpg);
+    & img:hover {
+        opacity: 0;
+    }
+}
+.urun-2 {
+    @extend .urun-1;
+    background-image: url(https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9686-copieweb-900x900.jpg);
+}
+.urun-3 {
+    @extend .urun-1;
+    background-image: url(https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9758-Ccopieweb-900x900.jpg);
+}
+.urun-4 {
+    @extend .urun-1;
+    background-image: url(https://www.lafetejewellery.com/wp-content/uploads/2022/10/U8A9135-copieweb-900x900.jpg);
+}
+.urun-sepet:hover {
+    cursor: pointer;
+    background-color: $primary;
+}
+.product-boxs{
+    transition:all 1s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        .product-box {
+            opacity: 1;
+        }
+    }
+    .product-box{
+        transition:all 1s ease-in-out;
+        bottom: 1%;
+        opacity: 0;
+    }
+}
+.about-us-circle {
+    height: 400px;
+    width: 400px;
+    left: 20%;
+    top: 450px;
+    opacity: 0.5;
+}
+footer li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.top {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    position: fixed;
+}
+@media only screen and (max-width: 780px) {
+    .about-us-circle {
+        height: 200px;
+        width: 200px;
+    }
+    .product-box {
+        & img {
+            display: none;
+        }
+        & span {
+            display: none;
+        }
+    }
+    .product-boxs:hover {
+        transform: scale(0.9);
+    }
+    .carousel-caption {
+        top: auto;
+        bottom: auto;
+        left: 50%;
+    }
+}

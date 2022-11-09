@@ -1,0 +1,17 @@
+$success:#A2701A;
+$info:#242424;
+$danger:#D11518;
+
+$headings-margin-bottom:  0px  ;
+
+
+@mixin make-container($gutter: $container-padding-x) {
+    --#{$prefix}gutter-x: #{$gutter};
+    --#{$prefix}gutter-y: 0;
+    width: 100%;
+    padding-right: 0 !important; // stylelint-disable-line function-disallowed-list
+    padding-left: 0 !important; // stylelint-disable-line function-disallowed-list
+    margin-right: auto;
+    margin-left: auto;
+  }
+  

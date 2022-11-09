@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Sık Sorulan Sorular</title>
+  </head>
+  <body>
+
+    <header class="border-bottom" id="header">
+      <div class="container-fluid bg-secondary p-1 text-center">
+        <h5 class="nav-title">Hoşgeldiniz !! Sepete ek %10 indirim </h5>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about-us.html">Hakkımızda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ürünler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="product-1.html">At Nalı Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-2.html">Dünya Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-3.html">Güneş Kolye ucu</a></li>
+                  <li><a class="dropdown-item" href="product-4.html">Kalp Kolye ucu</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Sık Sorulan Sorular</a>
+              </li>
+            </ul>
+            <div class="me-auto">
+              <a href="home-page.html"><img src="https://cdn-icons-png.flaticon.com/512/2237/2237677.png" alt="logo" width="80px">
+              </a>
+            </div>
+            <form class="d-flex gap-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+              <img class="p-modal pt-2" data-bs-toggle="modal" data-bs-target="#person-modal" src="./node_modules/bootstrap-icons/icons/person.svg" alt="person" width="30">
+              <button type="button" class="btn btn-white position-relative">
+                <img src="./node_modules/bootstrap-icons/icons/cart2.svg" alt="basket" width="18">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
+                  2
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="modal" id="person-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">GİRİŞ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="kullanıcı" class="form-label">Kullanıcı Adı</label>
+                  <input class="form-control" id="kullanıcı">
+                </div>
+                <div class="mb-3">
+                  <label for="sifre" class="form-label">Şifre</label>
+                  <input type="password" class="form-control" id="sifre">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="check">
+                  <label class="form-check-label" for="check">Kaydet</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Giriş</button>
+              <button type="button" class="btn btn-primary">Yeni kayıt oluştur</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Sıkça Sorulan Sorular</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panels-heading1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panels-collapse1" aria-expanded="true" aria-controls="panels-collapse1">
+              Teslimat Koşulları
+            </button>
+          </h2>
+          <div id="panels-collapse1" class="accordion-collapse collapse show" aria-labelledby="panels-heading1">
+            <div class="accordion-body">
+                Değerli müşterilerimiz,<br>
+                Sipariş sürecimiz 3-7 iş günüdür. Siparişler 3-7 iş gününde hazırlanıp Türkiye içinde Yurtiçi kargoya, yurtdışında Ekspress kargoya teslim edilecektir. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panels-heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panels-collapse2" aria-expanded="false" aria-controls="panels-collapse2">
+              Üyelik ve Kullanım Şartları
+            </button>
+          </h2>
+          <div id="panels-collapse2" class="accordion-collapse collapse" aria-labelledby="panels-heading2">
+            <div class="accordion-body">
+              Sitenin genel kullanım şartları, bununla ilgili genel kurallar ve yasal sorumluluklar <br>
+              Aşağıda belirtilen şartlar, kurallar ve yasal sorumlulukları içeren Kullanıcı Sözleşmesi’nin kullanılmadan önce okunması tavsiye edilir. <br>
+              Belirtilen şartların sizin için uygun olmaması halinde lütfen fiseason.com sitesini kullanmayınız. Siteyi kullanarak ve kişisel bilgilerinizin yer alacağı formu doldurarak bu sayfalarda yazılı şartları kabul etmiş sayılmaktasınız. <br>
+              1. Kullanım ve Güvenlik Kuralları
+              Site üzerinde verilen hizmetler aksi belirtilmedikçe, ücretsizdir. <br>
+              2. İçerik Kullanımı <br>
+              3. Sorumluluklar
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panels-heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panels-collapse3" aria-expanded="false" aria-controls="panels-collapse3">
+              Satış Sözleşmesi
+            </button>
+          </h2>
+          <div id="panels-collapse3" class="accordion-collapse collapse" aria-labelledby="panels-heading3">
+            <div class="accordion-body">
+              ÖN BİLGİLENDİRME <br>
+              MADDE 1 SATICI BİLGİLERİ <br>
+              MADDE 1.1 - SATICI <br>
+              MADDE 1.2 - ALICI <br>
+              Müşteri olarak alışveriş sitesine üye olan kişi. Üye olurken kullanılan adres ve iletişim bilgileri esas alınır.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panels-heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panels-collapse4" aria-expanded="false" aria-controls="panels-collapse4">
+              Garanti ve İade Koşulları
+            </button>
+          </h2>
+          <div id="panels-collapse4" class="accordion-collapse collapse" aria-labelledby="panels-heading4">
+            <div class="accordion-body">
+              Garanti Koşulları <br>
+              Tüm ürünler aksi belirtilmediği takdirde üretici firmaların garantisi altındadır. Garanti koşullarının geçerli olabilmesi için kargo teslimatı esnasında ürünü mutlaka kontrol ediniz. Herhangi bir hasar gördüğünüzde tutanak tutturarak ürünü teslim almayınız. Ürün üzerinde yapılan değişiklikler, ürünün paketinin açılmış olması, ürünün deforme olması ya da ürünün orijinal dizaynının bozulması garanti kapsamı dışındadır. Hassas, alerjik yapıya sahip cilt tipleri için önerilmez. <br><br>
+              Ürün İade ve Değişim Koşulları <br> 
+              Sitemiz üzerinden satın aldığınız ürünün eksik veya hatalı çıkması halinde teslimat tarihinden itibaren en geç 24-48 saat içerisinde bizimle iletişim kurmanız gerekmektedir. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panels-heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panels-collapse5" aria-expanded="false" aria-controls="panels-collapse5">
+              Gizlilik ve Ödeme Güvenliği
+            </button>
+          </h2>
+          <div id="panels-collapse5" class="accordion-collapse collapse" aria-labelledby="panels-heading5">
+            <div class="accordion-body">
+              Değerli Üye, <br><br>
+              Müşterilerine daha iyi hizmet verebilmek amacıyla bazı kişisel bilgilerinizi (isim, yaş, ilgi alanlarınız, e-posta vb.) sizlerden talep etmektedir. <br>
+              Sunucularında toplanan bu bilgiler, dönemsel kampanya çalışmaları, müşteri profillerine yönelik özel promosyon faaliyetlerinin kurgulanması ve istenmeyen e-postaların iletilmemesine yönelik müşteri "sınıflandırma" çalışmalarında sadece Fİ ELEKTRONİK SAN. VE TİC LTD . ŞTI bünyesinde kullanılmaktadır. <br>
+              Üyelik formlarından topladığı bilgileri, söz konusu üyenin haberi ya da aksi bir talimatı olmaksızın, üçüncü şahıslarla kesinlikle paylaşmamakta, faaliyet dışı hiçbir nedenle ticari amaçla kullanmamakta ve de satmamaktadır.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-md-12 text-center my-2">
+          <h3>En Beğenilenler</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 product-boxs">
+          <div class="d-flex product-box mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>8</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>2</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/10592287/c/763/763/314/184/il/0d3203/1747656274/il_300x300.1747656274_iwk7.jpg" alt="1">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>5</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>0</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/16015357/r/il/a85c7a/3025372159/il_300x300.3025372159_akux.jpg" alt="2">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>4</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>1</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6560359/r/il/125462/2671490550/il_300x300.2671490550_e78z.jpg" alt="3">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>7</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>2</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6636756/c/342/342/77/53/il/2a536e/3160324385/il_300x300.3160324385_f8az.jpg" alt="4">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>5</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>0</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/12318214/c/2724/2724/0/0/il/935682/2426210026/il_300x300.2426210026_leag.jpg" alt="5">
+        </div>
+        <div class="col-md-2 product-boxs">
+          <div class="product-box d-flex mx-4 position-absolute">
+            <div class="me-4">
+              <img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="heart">
+              <span>4</span>
+            </div>
+            <div class="ms-5">
+              <img src="./node_modules/bootstrap-icons/icons/chat-right.svg" alt="chat">
+              <span>1</span>
+            </div>
+          </div>
+          <img class="w-100" src="https://i.etsystatic.com/6920641/r/il/6d97b5/882452775/il_300x300.882452775_ptde.jpg" alt="6">
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid bg-secondary p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 my-4">
+            <ul><h6>POPÜLER KATEGORİLER</h6>
+              <li class="list-group-item">İstediğini Yazır</li>
+              <li class="list-group-item">Zincir</li>
+              <li class="list-group-item">Özel Koleksiyon</li>
+              <li class="list-group-item">Bijuteri</li>
+              <li class="list-group-item">Aksesuar</li>
+            </ul>
+          </div>
+          <div class="col-md-3 my-4">
+            <ul><h6>KURUMSAL</h6>
+              <li class="list-group-item">Anasayfa</li>
+              <li class="list-group-item">Hakkımızda</li>
+              <li class="list-group-item">Sıkça Sorulan Sorular</li>
+            </ul>
+          </div>
+          <div class="col-md-3 my-4">
+            <ul><h6>SÖZLEŞMELER</h6>
+              <li class="list-group-item">Mesafeli Satış Sözleşmesi</li>
+              <li class="list-group-item">Kargo Teslimat değişim & iade</li>
+              <li class="list-group-item">Gizlilik Politikası</li>
+            </ul>
+          </div>
+          <div class="col-md-3 my-4 border-start border-dark">
+            <p>Sosyal Medya'da Bizi Takip Edin</p>
+            <div class="d-flex gap-3">
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="instagram">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/twitter.svg" alt="twitter">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/facebook.svg" alt="facebook">
+              </div>
+              <div>
+                <img src="./node_modules/bootstrap-icons/icons/whatsapp.svg" alt="whatsapp">
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-sm-8 mb-2">
+                <input class="form-control bg-transparent border-info" type="email" placeholder="E-posta adresiniz">
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-info">Gönder</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12"><p class="ps-4 text-black-50">Copyright &copy; 2022 | tansucaglatekin</p></div>
+      </div>
+    </footer>
+
+    <a class="top rounded bg-light shadow" href="#header"><img class="p-2" src="./node_modules/bootstrap-icons/icons/arrow-bar-up.svg" alt="arrow"></a>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

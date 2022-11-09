@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b310f5df9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="image/PM-white-transparent.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>PerfuMen-Products</title>
+  </head>
+  <body>
+    <header class="topBar" id="topBar">
+      <div class="container-fluid row p-3">
+        <div
+          class="d-none d-lg-flex gap-3 col-lg-4 align-self-center text-light"
+        >
+          <span>TRY (TR)</span>
+          <span><i class="fa-solid fa-location-pin"></i> İstanbul,Türkiye</span>
+        </div>
+        <div class="col-lg-4 col-md-12 text-center">
+          <img
+            src="image/PM-black-transparent.png"
+            alt=""
+            width="100"
+            height="50"
+          />
+        </div>
+        <div
+          class="col-lg-4 text-center text-lg-end m-lg-0 mt-3 align-self-center"
+        >
+          <a href="" class="btn btn-light">
+            <i class="fa fa-user"></i>
+            <span class="d-none d-lg-inline-block">Hesabım</span>
+          </a>
+          <a href="" class="btn btn-light">
+            <i class="fa fa-star"></i>
+            <span class="d-none d-lg-inline-block">Favoriler</span>
+          </a>
+          <!-- Modal Trigger Button -->
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="modal"
+            data-bs-target="#shopModal"
+          >
+            <i class="fa fa-shopping-cart"></i>
+            <span class="d-none d-lg-inline-block">Sepet</span>
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="shopModal"
+            tabindex="-1"
+            aria-labelledby="shopModallLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="shopModalLabel">Sepetim</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Sepetinizde Ürün Bulunmamaktadır.</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Anladım
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="homepage.html"
+          ><h1>Perfu<span class="text-secondary">Men</span></h1></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarHamburger"
+          aria-controls="navbarHamburger"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarHamburger">
+          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="homepage.html"
+                >ANASAYFA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">PARFÜMLER</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MARKALAR
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Giorgio Armani</a></li>
+                <li><a class="dropdown-item" href="#">Dior</a></li>
+                <li><a class="dropdown-item" href="#">Bentley</a></li>
+                <li><a class="dropdown-item" href="#">Hugo Boss</a></li>
+                <li><a class="dropdown-item" href="#">Paco Rabanne</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Jean Paul Gaultier</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Victor&Rolf</a></li>
+                <li><a class="dropdown-item" href="#">Versace</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">HAKKIMIZDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FAQ.html">SSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bestSeller">POPÜLER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactUs">İLETİŞİM</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Ürün Adı Yazınız"
+                aria-label="search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="bg-light brCrumb">
+        <div class="container p-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pt-3">
+              <li class="breadcrumb-item">
+                <a href="homepage.html">Anasayfa</a>
+              </li>
+              <li class="breadcrumb-item active text-dark" aria-current="page">
+                Parfümler
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <section class="popProducts">
+        <div class="container row ms-auto me-auto">
+          <img
+            class="col-md-12 ms-auto me-auto bentleyImg"
+            src="image/ForMenBlackEdition-2.jpg"
+            alt=""
+          />
+          <h2 class="mt-5 mb-5">TÜM PARFÜMLER</h2>
+          <div class="container">
+            <div>
+              <h3 class="mb-md-3 mb-0">POPÜLER</h3>
+            </div>
+            <div class="row mb-4">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a
+                  class="text-decoration-none text-black"
+                  href="product-detail-prof.html"
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/acquadigio-profumo.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Giorgio Armani</h4>
+                      <h5 class="text-center">Acqua Di Gio Profumo</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        2.860,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a
+                  class="text-decoration-none text-black"
+                  href="product-detail-elixir.html"
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/sauvage.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Dior</h4>
+                      <h5 class="text-center">Sauvage Elixir</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        4.409,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a
+                  class="text-decoration-none text-black"
+                  href="porduct-detail-invictus.html"
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/invictus.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Paco Rabanne</h4>
+                      <h5 class="text-center">İnvictus</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        1.637,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/hugo boss.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Hugo Boss</h4>
+                      <h5 class="text-center">Boss Bottled</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        1.717,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/bformen.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Bentley</h4>
+                      <h5 class="text-center">For Men Black Edition</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        2.040, 00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/jeanpaul.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Jean Paul Gaultier</h4>
+                      <h5 class="text-center">Le Beau Le Parfum</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        1.755,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/spicebomb.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Victor&Rolf</h4>
+                      <h5 class="text-center">SpiceBomb Extreme</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        2.310,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <a class="text-decoration-none text-black" href=""
+                  ><div class="card popularProduct">
+                    <img
+                      src="image/versace-eros.jpg"
+                      class="card-img-top border-bottom"
+                      alt="acqua di gio profumo"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Versace</h4>
+                      <h5 class="text-center">Eros</h5>
+                      <p class="card-text text-center fs-5 text-success">
+                        1.860,00 TL
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary p-5">
+      <div class="container row m-auto">
+        <div class="col-lg-2">
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="footerLink" href="">Hakkımızda</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">İletişim</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">KVKK Metni</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="footerLink" href="">İade ve Değişim</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">Satış Sözleşmesi</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">Ödeme ve Teslimat</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">Hesabım</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="footerLink" href="">Kargo Takip</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">Siparişlerim</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">Alışveriş Sepetim</a>
+            </li>
+            <li class="mb-2">
+              <a class="footerLink" href="">Favorilerim</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center">
+          <h4 class="text-white">Müşteri Hizmetleri</h4>
+          <i class="fa fa-phone mb-4 text-white"></i
+          ><span class="ms-3 fs-5 fw-bold text-white">444 4 444</span>
+          <h4 class="text-white">E-mail</h4>
+          <i class="fa-solid fa-envelope text-white"></i
+          ><span class="ms-3 text-white">info@perfumen.com</span>
+        </div>
+        <div class="col-lg-3 text-center">
+          <h4 class="text-white">E-Bülten Abonelik</h4>
+          <div class="form-floating mb-3 w-75 m-auto">
+            <input
+              type="email"
+              class="form-control bg-light text-white"
+              id="mailInput"
+              placeholder="Email"
+            />
+            <label for="mailInput" class="text-white">E-mail adresiniz</label>
+          </div>
+          <button class="btn btn-light btn-lg w-75">Kayıt Ol</button>
+        </div>
+      </div>
+    </footer>
+    <div class="designedBy container-fluid bg-light p-3">
+      <h6 class="mb-0 text-center cartcurt align-self-center">
+        Designed by Ahmet Melih BALTACI
+      </h6>
+    </div>
+    <div class="backToTop position-absolute position-fixed">
+      <a href="#topBar"
+        ><button type="button" class="btn btn-secondary text-white btn-sm">
+          <i class="fa-solid fa-angle-up"></i></button
+      ></a>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

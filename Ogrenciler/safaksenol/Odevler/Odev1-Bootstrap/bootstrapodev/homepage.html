@@ -3,35 +3,469 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Cheap-Buy</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+          <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-md bg-warning">
-        <div class="container-md">
-            <a class="navbar-brand ps-5 text-light" href="homepage.html">Cheap-Buy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid">
+            <a href="homepage.html"><img src="./image/productimage/pagelogo.png" class="img" width="50px"></a>
+            <span class="text-primary display-6 fw-bold fst-italic">↓<span class="text-info display-4 fw-bold ">C</span>HEAP <span class="text-info display-4 fw-bold">B</span>UY↓</span>
+            </img>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHomePage"
+                aria-controls="navbarHomePage" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse pe-5 justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarHomePage">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link active text-white" aria-current="page" href="homepage.html">Home</a>
+                        <a class="nav-link active text-primary fw-bold" aria-current="page" href="homepage.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-info fw-bold" href="productpages.html"role="button" data-bs-toggle="dropdown" aria-expanded="false">Ürünler</a>
+                        <ul class="dropdown-menu bg-warning"> 
+                            <li><a class="dropdown-item" href="productpages.html">Tüm Ürünler</a></li>
+                            <li><a class="dropdown-item" href="macbookpage.html">Macbook</a></li>
+                            <li><a class="dropdown-item" href="hppage.html">Hp</a></li>
+                            <li><a class="dropdown-item" href="asuspage.html">Asus</a></li>
+                            <li><a class="dropdown-item" href="ıphonepage.html">Iphone</a></li>
+                            <li><a class="dropdown-item" href="samsungpage.html">Samsung</a></li>
+                            <li><a class="dropdown-item" href="xiaomipage.html">Xiaomi</a></li>
+                            <li><a class="dropdown-item" href="headphonepage.html">Kulaklık</a></li>
+                            <li><a class="dropdown-item" href="chargepage.html">Kablosuz Şarj</a></li>
+                            <li><a class="dropdown-item" href="mousepage.html">Mouse</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white " href="product1page.html">Products</a>
+                        <a class="nav-link text-primary fw-bold " href="questions.html">Sıkça Sorulan Sorular</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white " href="questions.html">Ouestions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white " href="aboutus.html">About Us</a>
+                        <a class="nav-link text-info fw-bold" href="aboutus.html">Hakkımızda</a>
                     </li>
                 </ul>
+                <div class="g-2">
+                <button class="btn text-bg-danger">Giriş Yap</button>
+                <button class="btn text-bg-danger">Sepetim</button>
+               </div>
+                
             </div>
         </div>
     </nav>
+           <!-- CAROUSEL -->
+    <section class="container-md py-5 bg-none mt-5 ">
+        <div class="col-md-6 mx-auto">
+   <div id="carouselHomePage" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./image/productimage/carousel image/black friday.jpg" class="d-block w-100" alt="blackfriday">
+        </div>
+        <div class="carousel-item">
+            <img src="./image/productimage/carousel image/buy.jpg" class="d-block w-100" alt="buy">
+            <div class="carousel-caption d-none d-md-block h-60"></div>
+        </div>
+        <div class="carousel-item">
+            <img src="./image/productimage/carousel image/shopping.jpg" class="d-block w-100" alt="shopping">
+            <div class="carousel-caption d-none d-md-block h-60"></div>
+        </div>
+        <div class="carousel-item">
+            <img src="./image/productimage/carousel image/sale2.jpg" class="d-block w-100" alt="sale">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomePage" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHomePage" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    </div>
+    </section>
+            <!-- TECHNOLOGICAL PRODUCTS-->
+    <div class="container-md text-center mb-5 mt-5">
+    <h2 class="display-4 text-dark ">→TEKNOLOJİ ÜRÜNLERİMİZ←</h2>
+    </div>
+            <!--LAPTOPS-->
+    <div class="container-md text-center mb-5 ">
+    <h2 class="display-6 bg-danger text-light mb-5">LAPTOPLAR</h2>
+    <div class="row g-2">
+        <div class="col-md-4">
+            <img src="./image/productimage/laptops/product-1 macbook/macbook1.jpg" class="img-thumbnail img-fluid"
+                width="75%">
+            <h3>MacBook Pro 14 inç</h3>
+            <h4>Fiyat:41.499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 75%">İndirimin bitmesine son 10 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#macbookPage">Sepete Ekle</button>
+            <div class="modal fade" id="macbookPage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="macbookPageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="macbookPageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success "><a class="nav-link text-light" href="macbookpage.html">Ürün Detayı</a></button>
+        </div>
+        <div class="col-md-4">
+            <img src="./image/productimage/laptops/product-2 hp/hp2.jpg" class="img-thumbnail img-fluid" width="75%">
+            <h3>Hp Pavlion 15-EC2056T</h3>
+            <h4>Fiyat:17.499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 50%">İndirimin bitmesine son 25 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#hpPage">Sepete Ekle</button>
+            <div class="modal fade" id="hpPage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="hpPageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="hpPageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success "><a class="nav-link text-light" href="hppage.html">Ürün Detayı</a></button>
+        </div>
+        <div class="col-md-4">
+            <img src="./image/productimage/laptops/product-3 asus/asus1.jpg" class="img-thumbnail img-fluid"
+                width="75%">
+            <h3>Asus Rog Strix X515EA</h3>
+            <h4>Fiyat:22.499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 45%">İndirimin bitmesine son 40 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#asusPage">Sepete Ekle</button>
+            <div class="modal fade" id="asusPage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="asusPageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="asusPageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success"><a class="nav-link text-light" href="asuspage.html">Ürün Detayı</a></button>
+        </div>
+
+    </div>
+    </div>
+            <!--MOBILE PHONES-->
+    <div class="container-md text-center mb-5">
+    <h2 class="display-6 bg-primary text-light mb-5">TELEFONLAR</h2>
+    <div class="row g-2">
+        <div class="col-md-4">
+            <img src="./image/productimage/telefonlar/product-1 ıphone/ıphone.jpg" class="img-thumbnail img-fluid"
+                width="75%">
+            <h3>Iphone 14 Pro Max 256GB</h3>
+            <h4>Fiyat:39.499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 80%">İndirimin bitmesine son 20 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#iphonePage">Sepete Ekle</button>
+            <div class="modal fade" id="iphonePage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="iphonePageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="iphonePageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success "><a class="nav-link text-light" href="ıphonepage.html">Ürün Detayı</a></button>
+        </div>
+        <div class="col-md-4">
+            <img src="./image/productimage/telefonlar/product-2 samsung/samsung1.jpg" class="img-thumbnail img-fluid"
+                width="75%">
+            <h3>Samsung Galaxy S22 Ultra</h3>
+            <h4>Fiyat:34.499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 65%">İndirimin bitmesine son 40 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#samsungPage">Sepete Ekle</button>
+            <div class="modal fade" id="samsungPage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="samsungPageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="samsungPageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success"><a class="nav-link text-light" href="samsungpage.html">Ürün
+                    Detayı</a></button>
+        </div>
+        <div class="col-md-4">
+            <img src="./image/productimage/telefonlar/product-3 xiaomi/xiaomi.jpg" class="img-thumbnail img-fluid"
+                width="75%">
+            <h3>Xiaomi Mi 11 Ultra</h3>
+            <h4>Fiyat:25.499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 90%">İndirimin bitmesine son 5 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#xiaomiPage">Sepete Ekle</button>
+            <div class="modal fade" id="xiaomiPage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="xiaomiPageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="xiaomiPageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success"><a class="nav-link text-light" href="xiaomipage.html">Ürün
+                    Detayı</a></button>
+        </div>
+    </div>
+    </div>
+            <!--ACCESSORIES-->
+    <div class="container-md text-center">
+    <h2 class="display-6 bg-warning text-light mb-5">AKSESUARLAR</h2>
+    <div class="row g-2">
+        <div class="col-md-4">
+            <img src="./image/productimage/accessory/product-1 headphone/beats1.jpg" class="img-thumbnail img-fluid "
+                width="75%">
+            <h3>Beats Kulaklık</h3>
+            <h4>Fiyat:7.499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 55%">İndirimin bitmesine son 80 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#headPhonePage">Sepete Ekle</button>
+            <div class="modal fade" id="headPhonePage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="headPhonePageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="headPhonePageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success"><a class="nav-link text-light" href="headphonepage.html">Ürün
+                    Detayı</a></button>
+        </div>
+        <div class="col-md-4">
+            <img src="./image/productimage/accessory/product-2 charger/charge1.jpg" class="img-thumbnail img-fluid "
+                width="75%">
+            <h3>Baseus Kablosuz Şarj Aleti</h3>
+            <h4>Fiyat:1.499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 70%">İndirimin bitmesine son 35 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#chargePage">Sepete Ekle</button>
+            <div class="modal fade" id="chargePage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="chargePageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="chargePageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success"><a class="nav-link text-light" href="chargepage.html">Ürün
+                    Detayı</a></button>
+        </div>
+        <div class="col-md-4">
+            <img src="./image/productimage/accessory/product-3 mouse/mouse1.jpg" class="img-thumbnail img-fluid"
+                width="75%">
+            <h3>Logitech G300S Gaming Mouse</h3>
+            <h4>Fiyat:499 TL(Kdv Dahil)</h4>
+            <div class="progress mt-3 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 95%">İndirimin bitmesine son 8 ürün!!!</div>
+            </div>
+            <button type="button" class="btn btn-success text-light" data-bs-toggle="modal"
+                data-bs-target="#mousePage">Sepete Ekle</button>
+            <div class="modal fade" id="mousePage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="mousePageButton" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="mousePageButton">Sepete Ürün Ekleme</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Ürünü sepete eklemek ister misiniz?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <button type="button" class="btn btn-success text-light">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-success"><a class="nav-link text-light" href="mousepage.html">Ürün Detayı</a></button>
+        </div>
+    </div>
+    </div>
+               <!--FOOTER-->
+    <footer class="container-fluid text-center text-white bg-success mt-5">
+    <div class="container p-4 gap-2">
+            <div class="row justify-content-between">
+                <div class="col-md-4 ">
+               <h5 class="text-uppercase">İş Ortaklarımız</h5>
+            <ul class="list-unstyled mb-0">
+                <li>
+                    <a href="https://www.apple.com/" class="text-white">Apple</a>
+                </li>
+                <li>
+                    <a href="https://www.samsung.com/tr/" class="text-white">Samsung</a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/tr" class="text-white">Xiaomi</a>
+                </li>
+                <li>
+                    <a href="https://www.hp.com/tr-tr/home.html" class="text-white">Hp</a>
+                </li>
+                <li>
+                    <a href="https://www.asus.com/tr/" class="text-white">Asus</a>
+                </li>
+                <li>
+                    <a href="https://www.logitech.com/tr-tr" class="text-white">Logitech</a>
+                </li>
+                <li>
+                    <a href="https://www.beatsbydre.com/" class="text-white">Beats Audio</a>
+                </li>
+            </ul>
+           </div>
+            
+                <div class="col-md-4 ">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VaAwGzYm2bg" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sosyal Medya Hesaplarımız</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="https://tr-tr.facebook.com/" class="text-white">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" class="text-white">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="text-white">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" class="text-white">Youtube</a>
+                        </li>
+                    </ul>
+                          <h5 class="mb-2 mt-3">İletişim</h5>
+                          <h6 class="">Adres:Aydınevler Mahallesi İnönü Caddesi No:20 Küçükyalı Ofispark B Blok - Maltepe / İSTANBUL</h6>
+
+                </div>
+            </div>
+        </div>
+
+    <div class="text-center p-3 bg-warning text-info fw-bold">
+        © 2022 Copyright:
+        <a class="text-info" href="homepage.html">CheapBuy.com</a>
+    </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+@mixin globalHeight {
+    height: 70vh;
+}
+header{
+    border-bottom: 3px solid $secondary;
+}
+nav{
+    & .nav-link {
+        color: white;
+        &:hover {
+            color: $secondary;
+        }
+    }
+    & .dropdown-item{
+        color: $dark;
+        &:hover{
+            background-color: $secondary;
+        }
+    }
+}
+.carouselHeader {
+    font-weight: 100;
+    font-style: italic;
+}
+.headImage{
+    & .carousel-inner{
+        @include globalHeight();
+        & img{
+            @include globalHeight();
+        }
+        & h2{
+            top: 40%;
+            left: 15%;
+        }
+        & span {
+            @extend .carouselHeader;
+            top: 55%;
+            left: 15%;
+            text-decoration: underline;
+        }
+    }
+}
+.mottoPerfume{
+    & h2{
+        @extend .carouselHeader;
+        top: 5%;
+    }
+}
+.masterPerfumers{
+    & .masterPerfumer{
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2rem;
+        width: fit-content;
+        overflow: hidden;
+        & a{
+            &:hover{
+                color: $secondary;
+            }
+        }
+        &:hover{
+            & .bg-white{
+                opacity: 1;
+            }
+            & img{
+                transform: scale(1.1);
+            }
+        }
+    }
+     & img{
+        filter: grayscale(100%);
+        height: 20rem;
+        width: 20rem;
+        transition: all 0.5s ease-in-out;
+    }
+    & .bg-white{
+        width: 18rem;
+        border-radius: 1rem;
+        left: 5%;
+        top: 70%;
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+        z-index: 1;
+    }
+}
+footer{
+    & .footerLink{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.popularProduct:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.aboutUs{
+    & img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+.backToTop{
+    bottom: 2%;
+    right: 2%;
+}

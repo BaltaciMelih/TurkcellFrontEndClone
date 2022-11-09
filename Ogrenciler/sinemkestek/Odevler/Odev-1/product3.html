@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>About Us</title>
+  </head>
+  <body>
+    <nav
+    class="navbar navbar-brand-2 border-bottom border-2 justify-content-center" >
+    <a class="navbar-brand" href="index.html">
+      <img src="logo.jpg" class="logo rounded-circle"  alt="" width="150px" />
+    </a>
+  </nav>
+
+    <nav class="navbar navbar-expand-md  px-2">
+      <button
+        class="navbar-toggler justify-content-end bg-warning"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active mx-4">
+            <a class="nav-link fw-bolder " href="index.html">Home </a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link fw-bolder " href="index.html">Products</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link fw-bolder " href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link fw-bolder " href="#">Beekeepers</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link fw-bolder " href="frequently-ask.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-ıcons flex-column ">
+        <form class="d-flex">
+          <button
+            class="nav-icon d-flex align-items-center btn   m-1 "
+            type="button"
+          >
+            <input
+              class=" btn  btn-light form-control d-lg-block me-1 d-none "
+              type="text"
+              placeholder="Looking For Something!"
+            />
+            <i class="fa-sharp fa-solid fa-magnifying-glass "></i>
+          </button>
+
+          <button class="nav-icon btn  m-1" type="button">
+            <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+          </button>
+          <button class="nav-icon btn   m-1"><i class="fa-regular fa-user"></i></button>
+        </form>
+      </div>
+    </nav>
+
+
+    <section class="product-container container">
+      <div class="product-content row d-flex">
+        <div class="product-img col-md-5">
+          <div
+            id="carouselActiveIndicators"
+            class="carousel slide h-25 d-inline"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselActiveIndicators"
+                data-bs-slide-to="0"
+                class="active thumbnail"
+                aria-current="true"
+                aria-label="Slide 1"
+              >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Sweet-Orange-Blossom-Open-Jar_2048x_80519e2f-c57a-42b9-9182-578f8926c9cb_2048x.jpg?v=1666792610"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </button>
+              <button
+                type="button"
+                class="thumbnail"
+                data-bs-target="#carouselActiveIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Raspberry-Blossom-Honey-Open-Jar_2048x_d6351cde-b80e-4cb8-b403-615f6ca47747_1512x.jpg?v=1666792875"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </button>
+              <button
+                type="button"
+                class="thumbnail"
+                data-bs-target="#carouselActiveIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Raspberry-Blossom-Honey-Fruit-bowl_2048x.jpg?v=1666793036"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Sweet-Orange-Blossom-Open-Jar_2048x_80519e2f-c57a-42b9-9182-578f8926c9cb_2048x.jpg?v=1666792610"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Sweet-Orange-Blossom_2048x.jpg?v=1631038991"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Raspberry-Blossom-Honey-Fruit-bowl_2048x.jpg?v=1666793036"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselActiveIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselActiveIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="product-inf col-md-7 p-4 d-flex flex-column justify-content-center"
+        >
+          <h2>
+            <span class="fw-bolder text-danger"> </span>
+          </h2>
+          <h3>Home Honey</h3>
+          <div class="p-3">
+            <p>
+              Our single flower honeys (never flavored or infused)are from the four corners of the country. <br>
+              This one comes to us from Florida with light citrus notes.
+            </p>
+           
+            <p class="d-inline-block fs-4 fw-bold">27.99</p>
+            <small class="fw-bold">$</small>
+          </div>
+          <div class="select-options">
+            <a href="#" class="btn btn-dark">Add To Card</a>
+            <button
+              type="button"
+              class="btn btn-warning dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Size
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bolder" href="#">311G </a></li>
+              <li><a class="dropdown-item fw-bolder" href="#">450G</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-recommendation container">
+      <div class="recommendation-container  row justify-content-around">
+        <div class="recommendation-header">
+          <h3 class="border-bottom border-2">You May Also Like</h3>
+        </div>
+        <div class="recommendation-container-product col-4 col-sm-3">
+          <div class="btn-buy position-absolute top-50 mx-5">
+            <a href="product2.html" class="btn btn-warning">BUY IT NOW</a>
+          </div>
+          <img
+            class="img-fluid"
+            src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Raw-Wild-Clover-Hex-w-Wand_2048x.jpg?v=1629837092"
+            alt=""
+          />
+          <div
+            class="Raw Wild Clover Honey"
+          >
+            <p class="fw-bolder fs-5">Orange Blossom Honey</p>
+            <p class="fw-bold">12.99$</p>
+          </div>
+        </div>
+        <div
+          class="recommendation-container-product col-md-4 position-relative"
+        >
+          <div class="btn-buy position-absolute top-50 mx-5">
+            <a href="" class="btn btn-warning">BUY IT NOW</a>
+          </div>
+          <img
+            class="img-fluid"
+            src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Avocado-Blossom-Honey_2048x.jpg?v=1631038968"
+            alt=""
+          />
+          <div
+            class="recommendation-content d-flex flex-column align-items-center"
+          >
+            <p class="fw-bolder fs-5">Avocado Blossom Honey</p>
+            <p class="fw-bold">12.99$</p>
+          </div>
+        </div>
+        <div class="recommendation-container-product position-relative col-md-4">
+          <div class="btn-buy position-absolute top-50 mx-5">
+            <a href="" class="btn btn-warning">BUY IT NOW</a>
+          </div>
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 translate-middle-y rounded-5"
+            >Sale</span
+          >
+          <img
+            class="img-fluid"
+            src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Honey-Blossom-Bundle_2048x.jpg?v=1631038988"
+            alt=""
+          />
+          <div
+            class="recommendation-content d-flex flex-column align-items-center"
+          >
+            <p class="fw-bolder fs-5">Flower Honey Collection</p>
+            <p class="fw-bold "><del><small>54.99$</small></del> 64.99$ </p>
+          </div>
+        </div>
+        <div class="recommendation-container-product col-md-4">
+          <div class="btn-buy position-absolute top-50 mx-5">
+            <a href="" class="btn btn-warning">BUY IT NOW</a>
+          </div>
+          <img
+            class="img-fluid"
+            src="https://cdn.shopify.com/s/files/1/0560/3210/0548/products/Blueberry-Blossom-Honey_2048x.jpg?v=1631038973"
+            alt=""
+          />
+          <div
+            class="recommendation-content d-flex flex-column align-items-center"
+          >
+            <p class="fw-bolder fs-5">Blueberry Blossom Honey</p>
+            <p class="fw-bold">12.99$</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-reviews d-flex justify-content-center align-items-center ">
+      <div class="d-flex justify-content-center border-1 border-bottom"> 
+        <div><img src="https://cdn-icons-png.flaticon.com/128/4338/4338294.png" alt=""></div>
+        <div class="reviews-header px-3 fw-bolder fs-3"><h3 >Reviews</h3></div></div>
+       <div class="reviews-container">
+         <div class="reviews-content">
+           <p>"ıts very delicious thankkk you!  :)"</p>
+           <div class="review-custom right-0">
+             <h6><i class="fa-regular fa-user"></i>Elizabeth T.</h6>
+           </div>
+         </div>
+         <div class="reviews-content ">
+           <p>"Yummmmy! Best raw honey I've ever seen."</p>
+           <div class="review-custom right-0">
+             <h6><i class="fa-regular fa-user"></i> Elizabeth T.</h6>
+           </div>
+         </div>
+         <div class="reviews-content ">
+           <p>"Best honey! We couldn't give up."</p>
+           <div class="review-custom right-0">
+             <h6><i class="fa-regular fa-user"></i> Elizabeth T.</h6>
+           </div>
+         </div>
+         
+         <div class="reviews-content ">
+           <p>"They delivered it so so fast."</p>
+           <div class="review-custom right-0">
+             <h6><i class="fa-regular fa-user"></i>Elizabeth T.</h6>
+           </div>
+         </div>
+         <div class="reviews-content ">
+           <p>"We have prejudice, but we really really like it"</p>
+           <div class="review-custom right-0">
+           <h6> <i class="fa-regular fa-user"></i>Elizabeth T.</h6>
+           </div>
+           
+        
+         </div>
+         <div class="reviews-content ">
+           <p>"It's good. We'll order again"</p>
+           <div class="review-custom right-0">
+             <h6><i class="fa-regular fa-user"></i>Elizabeth T.</h6>
+           </div>
+           
+         
+       </div>
+       <div class="reviews-content ">
+         <p>"You can order it with peace of mind "</p>
+         <div class="review-custom right-0">
+           <h6><i class="fa-regular fa-user"></i>Elizabeth T.</h6>
+         </div>
+       </div>
+        
+     </section>
+     <section class="footer bg-light">
+       <footer >
+          <section class="d-flex justify-content-around p-4" >
+           <div class="">
+             <span>Get connected with us on social networks</span>
+           </div>   
+           <div class="">
+             <a href="" class="text-white me-4">
+               <i class="fab fa-facebook-f co"></i>
+             </a>
+             <a href="" class="text-white me-4">
+               <i class="fab fa-twitter"></i>
+             </a>
+           
+             <a href="" class="text-white me-4">
+               <i class="fab fa-instagram"></i>
+             </a> 
+           </div>
+          
+         </section>
+        
+     
+        
+         <div class="text-center text-light p-3" style="background-color: rgba(9, 8, 14, 0.89)">
+            All rights reserved & 2020 ©Copyright:
+           <a class="text-white" href="#" ><img src="https://cdn-icons-png.flaticon.com/512/5371/5371054.png" style="width:55px;" alt=""><i class="fa-light fa-honey-pot"></i></a>
+          
+         </div>
+       </footer>
+       
+     
+     </div>
+    </section>
+    <section class="footer bg-light">
+      <footer >
+         <section class="d-flex justify-content-around p-4" >
+          <div class="">
+            <span>Get connected with us on social networks</span>
+          </div>   
+          <div class="">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f co"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+          
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a> 
+          </div>
+        
+        </section>
+       
+    
+       
+       
+        <div class="text-center text-light p-3" style="background-color: rgba(9, 8, 14, 0.89)">
+           All rights reserved & 2020 ©Copyright:
+          <a class="text-white" href="#" ><img src="https://cdn-icons-png.flaticon.com/512/5371/5371054.png" style="width:55px;" alt=""><i class="fa-light fa-honey-pot"></i></a
+            >
+        </div>
+      </footer>
+      
+    
+    </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
