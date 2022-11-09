@@ -15,15 +15,14 @@ function eventListeners() {
   secondCardBody.addEventListener("click", deleteTodo);
   filter.addEventListener("keyup", filterTodos);
 }
-
 // Todo Ekleme
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
   if (newTodo === "") {
-    showAlert("danger", "Lütfen bir todo giriniz.");
+    showAlert();
   } else {
     addTodoToUI(newTodo);
-    showAlert("success", "Todo başarılı bir şekilde eklendi.");
+    console.log("Todo Girişi Başarılı");
   }
   e.preventDefault();
 }
@@ -70,10 +69,7 @@ function filterTodos(e) {
     const text = listItem.textContent.toLowerCase();
     console.log(text.indexOf(filterValue));
     if (text.indexOf(filterValue) === -1) {
-      const alert = document.querySelector(".alert");
-      if (!alert) {
-        showAlert("warning", "Aradığınız Todo Bulunamadı!");
-      }
+      // Bulamadı
       listItem.setAttribute("style", "display:none !important");
     } else {
       listItem.setAttribute("style", "display:block");
@@ -81,14 +77,13 @@ function filterTodos(e) {
   });
 }
 
-// Alert Metodu
-function showAlert(type, message) {
-  const alert = document.createElement("div");
-  alert.className = `mt-3 alert alert-${type}`;
-  alert.textContent = message;
-  firstCardBody.appendChild(alert);
+function showAlert(){
+  const newTodo2 = todoInput.value.trim();
+  if(newTodo2 === ""){
+    const alert = document.createElement("div");
+    alert.className.add("alert alert-danger");
+    message.textContent="Gecerlli Bir Deger girin";
+    alert.innerHTML=message;
 
-  setTimeout(function () {
-    alert.remove();
-  }, 2000);
+  }
 }

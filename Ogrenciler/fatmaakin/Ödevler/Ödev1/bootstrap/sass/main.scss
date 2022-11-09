@@ -1,0 +1,19 @@
+.collection{
+    background-image: url("https://images.unsplash.com/photo-1558470598-a5dda9640f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.accessory .img-fluid{
+    
+        
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      
+      
+      
+}
+.accessory .img-fluid:hover {
+    transform: scale(1.1);
+  }
