@@ -17,6 +17,11 @@
 </head>
 <body>
     <header>
+      <div class="up">
+        <a href="#top">
+          <img src="https://cdn-icons-png.flaticon.com/512/2267/2267904.png" height="40px" width="40px" />
+        </a>
+      </div>
         <nav class="navbar  navbar-expand-md bg-success p-3">
             <div class="container-fluid ms-5 me-5">
                 <a class="navbar-brand text-light" href="./main.html">LL Store</a>
@@ -39,9 +44,9 @@
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                           <ul class="dropdown-menu bg-success border-0">
-                            <li><a class="dropdown-item text-light" href="./product1.html">LL Woman</a></li>
-                            <li><a class="dropdown-item text-light" href="./product2.html">LL Beauty</a></li>
-                            <li><a class="dropdown-item text-light" href="./product3.html">LL Home</a></li>
+                            <li><a class="dropdown-item text-light" href="./llwoman.html">LL Woman</a></li>
+                            <li><a class="dropdown-item text-light" href="./llbeauty.html">LL Beauty</a></li>
+                            <li><a class="dropdown-item text-light" href="./llhome.html">LL Home</a></li>
                           </ul>
                         </li>
                         <li class="nav-item">
@@ -54,9 +59,35 @@
                 </div>
                 <div class="collapse navbar-collapse justify-content-end text-light" id="navbarItems">
                     <ul class="navbar-nav ">
-                        <li class="nav-item">
-                          <a class="nav-link text-light" href="#">Sign in</a>
-                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#"data-bs-toggle="modal" data-bs-target="#signinModal" data-bs-whatever="@mdo">Sign in</a>
+                        <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title text-danger fs-5" id="signinModalLabel">Sign in</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="signin-name" class="col-form-label text-danger">Kullanıcı Adı:</label>
+                                    <input type="text" class="form-control" id="signin-name">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="signin-password" class="col-form-label text-danger">Şifre:</label>
+                                    <input type="password" class="form-control" id="signin-password"></input>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="#" class="text-danger">Kayıt olun</a>
+                                <button type="button" class="btn btn-primary text-light">Send message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lang</a>
                             <ul class="dropdown-menu bg-success border-0">
@@ -70,45 +101,45 @@
             </div>
         </nav>
     </header>
-    <div class="hero container-fluid text-center" id="aboutusHero">
-      <div class="hero-text text-light text-center">
+    <div id="aboutusHero" class="aboutUsHero container-fluid text-center" >
+      <div class="aboutUsHero-text text-light text-center">
       <h1>Kadın Gücüyle Kadınların Hayatını Süslüyoruz</h1>
       </div>
     </div>
-    <div class="aboutUs d-flex flex-column justify-content-center m-4" id="hakkımızda">
+    <div id="hakkımızda"class="aboutUs d-flex flex-column justify-content-center m-4" >
       <h2 class="text-primary text-center m-4">Hakkımızda</h2>
       <p class="m-4">2022 yılında Yaren Eylül Dökmez'in kafasında kurulmuş olan LL Store üç alanda faaliyet gösteren hayali bir şirkettir.Kadın tasarımcı ve 2022 yılında Yaren Eylül Dökmez'in kafasında kurulmuş olan LL Store üç alanda faaliyet gösteren hayali bir şirkettir.Kadın tasarımcı ve mühendislerden oluşan ekibimizle kafamızda çalışıyoruz.</p>
       <div class="subbranches d-flex flex-column p-5 gap-5">
-        <div class="d-flex flex-row ">
-          <div class="subbranchesPhoto d-flex col-7">
+        <div class="d-flex flex-row flex-wrap subbranchesCard ">
+          <div class="subbranchesPhoto d-flex col-12 col-md-7">
             <img src="https://media.istockphoto.com/id/916092484/photo/women-clothes-hanging-on-hangers-clothing-rails-fashion-design.jpg?s=612x612&w=0&k=20&c=fUpcbOITkQqitglZfgJkWO3py-jsbuhc8eZfb4sdrfE=" class="d-block h-100 w-100"  alt="home">
           </div>
-          <div class="subbranchesText d-flex flex-column justify-content-center bg-light text-dark fs-6 col-5 p-4 ">
+          <div class="subbranchesText d-flex flex-column justify-content-center bg-light text-dark fs-6 col-12 col-md-5 p-4 ">
             <h3>LL Woman</h3>
             <p>2022 yılında Yaren Eylül Dökmez'in kafasında faaliyete geçmiş ve hızla gelişmekte olan bir LL Store altdalıdır.</p>
           </div>
         </div>
-        <div class="d-flex flex-row ">
-          <div class="subbranchesTextSecond d-flex flex-column justify-content-center bg-light text-dark fs-6 col-5 p-4">
+        <div class="d-flex flex-row flex-wrap subbranchesCard">
+          <div class="subbranchesTextSecond d-flex flex-column justify-content-center bg-light text-dark fs-6 col-12 col-md-5 p-4">
             <h3>LL Beauty</h3>
             <p>2022 yılında Yaren Eylül Dökmez'in kafasında faaliyete geçmiş ve hızla gelişmekte olan bir LL Store altdalıdır.</p>
             </div>
-          <div class="subbranchesPhotoSecond d-flex col-7">
+          <div class="subbranchesPhotoSecond d-flex col-12 col-md-7">
             <img src="https://static.sehatq.com/cdn-cgi/image/f=auto,width=330,fit=pad,background=white,quality=100/content/review/image/1635943656.jpeg" class="d-block h-100 w-100"  alt="home">
           </div>
         </div>
-        <div class="d-flex flex-row ">
-          <div class="subbranchesPhoto d-flex col-7">
+        <div class="d-flex flex-row flex-wrap subbranchesCard">
+          <div class="subbranchesPhoto d-flex col-12 col-md-7">
             <img src="https://assets.architecturaldigest.in/photos/60083d8b1dd783c692024804/master/w_1600%2Cc_limit/Bangalore-rustic-home-interiors-architecture-22.jpg" class="d-block h-100 w-100"  alt="home">
           </div>
-          <div class="subbranchesText d-flex flex-column justify-content-center bg-light text-dark fs-6 col-5 p-4">
+          <div class="subbranchesText d-flex flex-column justify-content-center bg-light text-dark fs-6 col-12 col-md-5 p-4">
             <h3>LL Home</h3>
             <p>2022 yılında Yaren Eylül Dökmez'in kafasında faaliyete geçmiş ve hızla gelişmekte olan bir LL Store altdalıdır.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="team d-flex flex-column justify-content-center mt-4 mb-4" id="takımUyeleri">
+    <div id="ekip"class="team d-flex flex-column justify-content-center mt-4 mb-4" >
       <h2 class="text-primary text-center m-4">Ekibimiz</h2> 
       <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators ">
@@ -164,7 +195,7 @@
         </button>
       </div>
     </div>
-    <div class="d-flex flex-column text-center  m-5" id="iletisimFormu">
+    <div id="iletisimFormu"class="d-flex flex-column text-center  m-5" >
       <h2 class="text-primary">Bizimle İletişime Geçin</h2> 
       <div class="row">
        <div class="d-flex flex-column text-start col-md-5 col-12 ms-2 m-5 g-4 ">

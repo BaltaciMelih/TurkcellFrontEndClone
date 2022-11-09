@@ -1,0 +1,244 @@
+$w70:70%;
+
+@mixin df-jcc {
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.imgSlider{
+    width: $w70;
+    padding-top: 38%;
+    background-image: url("../fenderr.png");
+    background-size: 100% 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeImage 15s linear infinite;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+@keyframes changeImage {
+    0%{
+        background-image: url("../görseller/fenderr.png");
+    }
+    50%{
+        background-image:url("../görseller/gitarr.png") ;
+    }
+    75%{
+        background-image:url("../görseller/piyanoo.png") ;
+    }
+    100%{
+        background-image: url("../görseller/sahne1.png");
+    }
+}
+
+#gitar-ana{
+    border-radius: 10px;
+    @include df-jcc();
+    
+}
+#kategori{
+    color:#0049AF;
+    margin-left:280px ;
+}
+
+.hr{
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+.footer-1{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50% ;
+}
+
+#logo{
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+}
+#iletişim{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#destek{
+grid-column-start: 3;
+grid-row-start: 2;
+}
+
+
+#takip{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+#sepet{
+    padding: 20px;
+}
+
+
+
+.top{
+    color: #0049AF;
+    position: sticky;
+    bottom: 20px;
+    width: 4%;
+}
+// ürün kart
+.details {
+    border: 1.5px solid grey;
+    color: #212121;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #212121;
+}
+
+.cart {
+    background-color: #212121;
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 900;
+    width: 100%;
+    height: 39px;
+    padding-top: 9px;
+    box-shadow: 0px 5px 10px  #212121;
+}
+
+.card {
+    width: fit-content;
+}
+
+.card-body {
+    width: fit-content;
+}
+
+.img-thumbnail {
+    border: none;
+}
+
+.card {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+//ürün detayları 
+
+.abc {
+    padding-left: 40px
+}
+
+.pqr {
+    padding-right: 70px;
+    padding-top: 14px
+}
+
+.para {
+    float: right;
+    margin-right: 0;
+    padding-left: 80%;
+    top: 0
+}
+
+li {
+    line-height: 50px;
+    color: #000
+}
+
+.col-md-2 {
+    padding-bottom: 20px;
+    font-weight: bold
+}
+
+.col-md-2 a {
+    text-decoration: none;
+    color: #000
+}
+
+.col-md-2.mio {
+    font-size: 12px;
+    padding-top: 7px
+}
+
+.des::after {
+    content: '.';
+    font-size: 0;
+    display: block;
+    border-radius: 20px;
+    height: 6px;
+    width: 55%;
+    background: #0049AF;
+    margin: 14px 0
+}
+
+.r4 {
+    padding-left: 25px
+}
+
+.btn-outline {
+    border-radius: 0;
+    border: 2px solid;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    width: 70%
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 98%;
+        display: flex;
+        flex-flow: column;
+        text-align: center
+    }
+
+    .des::after {
+        content: '.';
+        font-size: 0;
+        display: block;
+        border-radius: 20px;
+        height: 6px;
+        width: 35%;
+        margin: 10px auto
+    }
+
+    .pqr {
+        text-align: center;
+        margin: 0 30px
+    }
+
+    .para {
+        text-align: center;
+        padding-left: 90px;
+        padding-top: 10px
+    }
+    .klo {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        margin-right: 40px
+    }
+}
+// video
+.inceleme{
+    @include df-jcc();
+    padding: 50px;
+}

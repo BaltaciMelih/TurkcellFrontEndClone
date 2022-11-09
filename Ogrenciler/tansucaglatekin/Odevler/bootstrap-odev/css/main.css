@@ -8448,19 +8448,15 @@ textarea.form-control-lg {
       opacity: 1; }
   .product-boxs .product-box {
     transition: all 1s ease-in-out;
-    margin-top: 130px;
+    bottom: 1%;
     opacity: 0; }
 
 .about-us-circle {
   height: 400px;
   width: 400px;
-  left: 200px;
-  top: 400px;
+  left: 20%;
+  top: 450px;
   opacity: 0.5; }
-
-.product-sticky {
-  left: 41%;
-  position: fixed; }
 
 footer li:hover {
   cursor: pointer;
@@ -8473,8 +8469,16 @@ footer li:hover {
   position: fixed; }
 
 @media only screen and (max-width: 780px) {
-  .product-sticky {
-    position: static; }
   .about-us-circle {
     height: 200px;
-    width: 200px; } }
+    width: 200px; }
+  .product-box img {
+    display: none; }
+  .product-box span {
+    display: none; }
+  .product-boxs:hover {
+    transform: scale(0.9); }
+  .carousel-caption {
+    top: auto;
+    bottom: auto;
+    left: 50%; } }
