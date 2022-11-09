@@ -20,10 +20,10 @@ function eventListeners() {
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
   if (newTodo === "") {
-    console.log("Bir Todo Girin");
+    showAlert("danger", "Lütfen bir todo giriniz.");
   } else {
     addTodoToUI(newTodo);
-    console.log("Todo Girişi Başarılı");
+    showAlert("success", "Todo başarılı bir şekilde eklendi.");
   }
   e.preventDefault();
 }
@@ -70,10 +70,25 @@ function filterTodos(e) {
     const text = listItem.textContent.toLowerCase();
     console.log(text.indexOf(filterValue));
     if (text.indexOf(filterValue) === -1) {
-      // Bulamadı
+      const alert = document.querySelector(".alert");
+      if (!alert) {
+        showAlert("warning", "Aradığınız Todo Bulunamadı!");
+      }
       listItem.setAttribute("style", "display:none !important");
     } else {
       listItem.setAttribute("style", "display:block");
     }
   });
+}
+
+// Alert Metodu
+function showAlert(type, message) {
+  const alert = document.createElement("div");
+  alert.className = `mt-3 alert alert-${type}`;
+  alert.textContent = message;
+  firstCardBody.appendChild(alert);
+
+  setTimeout(function () {
+    alert.remove();
+  }, 2000);
 }
