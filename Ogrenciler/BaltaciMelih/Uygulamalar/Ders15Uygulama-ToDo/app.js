@@ -83,19 +83,31 @@
 // Seçtiğim bir elementin
 // console.log(value);
 
-// Tüm Todo Temizle
+// Todo
+
 const listGroup = document.querySelector("#list-group");
 const listGroupItems = document.querySelectorAll(".list-group-item");
 const clearTodos = document.getElementById("clear-todos");
+const deleteItems = document.getElementsByClassName("delete-item");
+const todoButton = document.querySelector("#todo-add");
+const todoInput = document.querySelector("#todo");
+
+function deleteItem(i) {
+  deleteItems[i].parentElement.className = "d-none";
+}
+
+// Tüm Todo Temizle
+
 clearTodos.addEventListener("click", clearTodosFunc);
 
 function clearTodosFunc() {
-  listGroupItems.forEach((e) => e.remove());
+  for (let i = 0; i < deleteItems.length; i++) {
+    deleteItem(i);
+  }
 }
 
 // Seçili Todo Temizleyin
-const deleteItems = document.getElementsByClassName("delete-item");
-deleteItemLoop();
+
 function deleteItemLoop() {
   for (let i = 0; i < deleteItems.length; i++) {
     function deleteItem() {
@@ -104,14 +116,13 @@ function deleteItemLoop() {
     deleteItems[i].addEventListener("click", deleteItem);
   }
 }
+deleteItemLoop();
 
 // Todo Ekle
-const todoButton = document.querySelector("#todo-add");
 
 todoButton.addEventListener("click", newTodo);
 
-function newTodo(e) {
-  const todoInput = document.querySelector("#todo");
+function newTodo() {
   const li = document.createElement("li");
   li.className = "list-group-item d-flex justify-content-between";
   const textNode = document.createTextNode(todoInput.value);
@@ -120,11 +131,8 @@ function newTodo(e) {
   a.className = "delete-item";
   const faIcon = document.createElement("i");
   faIcon.className = "fa fa-remove";
-
+  todoInput.value = "";
   listGroup.appendChild(li).appendChild(textNode);
   li.appendChild(a).appendChild(faIcon);
-
-  e.preventDefault();
-  todoInput.remove;
   deleteItemLoop();
 }
