@@ -42,7 +42,7 @@ function addTodoToUI(newTodo) {
   todoInput.value = "";
 }
 
-// ütün todoları silme
+// Bütün todoları silme
 function clearAllTodos() {
   // todoList.innerHTML = "";
   while (todoList.firstChild != null) {

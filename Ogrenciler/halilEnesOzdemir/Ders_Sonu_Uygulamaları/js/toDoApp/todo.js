@@ -1,119 +1,123 @@
-// Select All Elements
+// Select DOM Elements.
 const form = document.querySelector('#todo-form');
 const todoInput = document.querySelector('#todo');
-const todoList = document.querySelector('.list-group');
-const cardBodyFirst = document.querySelectorAll('.card-body')[0];
-const cardBodySecond = document.querySelectorAll('.card-body')[1];
-const cardRow = document.querySelector('.card');
-const cardContainer = document.querySelector('.container');
-const allTodos = document.querySelector('.todo-lists');
-// console.log(cardBodyFirst);
+const todoLists = document.querySelector('.list-group');
+const firstCardBody = document.querySelectorAll('.card-body')[0];
+const secondCardBody = document.querySelectorAll('.card-body')[1];
+const clearButton = document.querySelector('#clear-todos');
 const filter = document.querySelector('#filter');
-const clearAll = document.querySelector('#clear-todos');
 
-let deleteBtns;
-let editBtns;
+eventListeners();
+function eventListeners() {
+  form.addEventListener('submit', addTodo);
+  clearButton.addEventListener('click', clearAll);
+  secondCardBody.addEventListener('click', deleteTodo);
+  filter.addEventListener('keyup', filterTodos);
+  document.addEventListener('DOMContentLoaded', starterConditions);
+}
 
-const addLocalTodos = function (todo) {
-  const newTodoUl = document.createElement('ul');
-  newTodoUl.classList.add('list-group');
+function starterConditions() {
+  let starter = getStorage();
+  starter.forEach(function (todo) {
+    addTodoUI(todo);
+  });
+}
 
+function addTodo(e) {
+  const newTodo = todoInput.value.trim();
+  if (newTodo == '') {
+    todoInput.style.border = '2px solid red';
+    showAlert('danger', 'Lütfen boş bırakmayınız');
+    setTimeout(() => {
+      todoInput.style.border = '1px solid rgba(0,0,0,.125)';
+    }, 1500);
+  } else {
+    addTodoUI(newTodo);
+    addStorage(newTodo);
+    showAlert('success', 'Başarıyla eklendi LS + UI');
+  }
+  e.preventDefault();
+}
+
+// String değeri arayüze ekleme
+function addTodoUI(todo) {
   const newTodoLi = document.createElement('li');
   newTodoLi.classList.add('list-group-item', 'd-flex', 'justify-content-between');
+  // newTodoLi.classname = 'list-group-item d-flex justify-content-between';
 
-  const newTodoText = document.createElement('span');
-  newTodoText.classList.add('list-group-item-text');
-  newTodoLi.textContent = todo.text;
+  const newTodoDeleteBtn = document.createElement('a');
 
-  newTodoUl.appendChild(newTodoLi);
-
-  const newTodoDiv = document.createElement('div');
-  newTodoDiv.classList.add('list-group-icons', 'd-flex', 'gap-2', 'justify-content-center', 'align-items-center');
-
-  newTodoLi.appendChild(newTodoDiv);
-
-  const newTodoDeleteBtn = document.createElement('button');
   newTodoDeleteBtn.classList.add('delete-item', 'order-last');
+  newTodoDeleteBtn.href = '#';
+  newTodoDeleteBtn.innerHTML = `<i class='fa fa-remove'></i>`;
 
-  const newTodoDeleteIcon = document.createElement('i');
-  newTodoDeleteIcon.classList.add('fa', 'fa-remove');
+  newTodoLi.appendChild(newTodoDeleteBtn);
+  newTodoLi.appendChild(document.createTextNode(todo));
+  todoLists.appendChild(newTodoLi);
+  todoInput.value = '';
+}
 
-  newTodoDeleteBtn.appendChild(newTodoDeleteIcon);
+function addStorage(newTodo) {
+  let todos = getStorage();
+  todos.push(newTodo);
+  localStorage.setItem('todos', JSON.stringify(todos)); // Arrayleri string şeklinde gönderdik.
+}
+// Storage'den tüm todoları almak için kullanılır.
+function getStorage() {
+  let todos;
+  localStorage.getItem('todos') !== null ? (todos = JSON.parse(localStorage.getItem('todos'))) : [];
+  return todos;
+}
 
-  const newTodoEditBtn = document.createElement('button');
-  newTodoEditBtn.classList.add('edit-item');
+function showAlert(type, message) {
+  const alert = document.createElement('div');
+  alert.className = `alert alert-${type}`;
+  alert.textContent = message;
+  firstCardBody.appendChild(alert);
 
-  const newTodoEditIcon = document.createElement('i');
-  newTodoEditIcon.classList.add('fa', 'fa-edit');
+  setTimeout(() => {
+    alert.remove();
+  }, 1500);
+}
 
-  newTodoEditBtn.appendChild(newTodoEditIcon);
-
-  newTodoDiv.appendChild(newTodoDeleteBtn);
-  newTodoDiv.appendChild(newTodoEditBtn);
-
-  allTodos.appendChild(newTodoUl);
-};
-
-// Event Listeners
-
-const starterConditions = () => {
-  const todos = JSON.parse(localStorage.getItem('todos'));
-  if (!todos) {
-    localStorage.setItem('todos', JSON.stringify([]));
-  } else {
-    todos.forEach((todo) => addLocalTodos(todo));
-
-    deleteBtns = document.querySelectorAll('.delete-item');
-    console.log(deleteBtns);
-
-    editBtns = document.querySelectorAll('.edit-item');
-    console.log(editBtns);
+function clearAll() {
+  while (todoLists.firstChild !== null) {
+    todoLists.removeChild(todoLists.firstChild);
   }
-};
+}
 
-starterConditions();
+function filterTodos(e) {
+  const filterValue = e.target.value.toLowerCase();
+  const listItems = document.querySelectorAll('.list-group-item');
+  console.log(listItems);
+  listItems.forEach(function (listItem) {
+    const text = listItem.textContent.toLowerCase();
+    if (text.indexOf(filterValue) === -1) {
+      // Bulamadı
+      listItem.setAttribute('style', 'display:none !important');
+    } else {
+      listItem.setAttribute('style', 'display:block');
+    }
+  });
+}
 
-const addToDo = (e) => {
-  e.preventDefault();
+function deleteTodo(e) {
+  if (e.target.className === 'fa fa-remove') {
+    const todo = e.target.parentElement.parentElement;
+    todo.remove();
+    deleteStorage(e.target.parentElement.parentElement.textContent);
+    showAlert('success', 'Todo başarıyla Local Storageden silindi.');
+  }
+}
 
-  const todoText = todoInput.value;
+function deleteStorage(willDeleted) {
+  let allTodos = getStorage();
+  allTodos.forEach(function (anyTodo, i) {
+    if (anyTodo === willDeleted) {
+      allTodos.splice(i, 1);
+    }
+  });
+  localStorage.setItem('todos', JSON.stringify(allTodos));
+}
 
-  const todo = {
-    text: todoText,
-  };
-
-  const todos = JSON.parse(localStorage.getItem('todos'));
-  todos.push(todo);
-  localStorage.setItem('todos', JSON.stringify(todos));
-  console.log(todos);
-
-  addLocalTodos(todo);
-  form.reset;
-};
-
-const deleteTodo = (e) => {
-  const todo = e.target.parentElement.parentElement;
-  const text = todo.innerHTML;
-  console.log(text);
-
-  let todos = JSON.parse(localStorage.getItem('todos'));
-  todos = todos.filter((tdName) => tdName.text != text);
-  localStorage.setItem('todos', JSON.stringify(todos));
-  todo.remove();
-};
-
-const editTodo = (e) => {
-  const todo = e.target.parentElement.parentElement;
-  const text = todo.innerHTML;
-
-  let todos = JSON.parse(localStorage.getItem('todos'));
-  todos = todos.filter((tdName) => tdName.text != text);
-  localStorage.setItem('todos', JSON.stringify(todos));
-  todo.remove();
-
-  input.value;
-};
-
-form.addEventListener('submit', addToDo);
-deleteBtns.forEach((btn) => addEventListener('click', deleteTodo));
-editBtns.forEach((btn) => btn.addEventListener('click', editTodo));
+// https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array

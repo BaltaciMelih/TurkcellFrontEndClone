@@ -16,14 +16,20 @@ function eventListeners() {
   filter.addEventListener("keyup", filterTodos);
 }
 
+function showAlert(whichSection,alertType){
+  whichSection.innerHTML += ´<div class="alert alert-${alertType} mt-3" role="alert">Lütfen boş değer</div>´;
+}
+
 // Todo Ekleme
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
   if (newTodo === "") {
-    showAlert("danger", "Lütfen bir todo giriniz.");
+    firstCardBody.innerHTML += '<div class="alert alert-danger mt-3" role="alert">Lütfen boş değer</div>';
+    showAlert("danger");
   } else {
     addTodoToUI(newTodo);
-    showAlert("success", "Todo başarılı bir şekilde eklendi.");
+    firstCardBody.innerHTML += '<div class="alert alert-success mt-3" role="alert">Ekleme başarılı</div>';
+
   }
   e.preventDefault();
 }
@@ -70,25 +76,10 @@ function filterTodos(e) {
     const text = listItem.textContent.toLowerCase();
     console.log(text.indexOf(filterValue));
     if (text.indexOf(filterValue) === -1) {
-      const alert = document.querySelector(".alert");
-      if (!alert) {
-        showAlert("warning", "Aradığınız Todo Bulunamadı!");
-      }
+      // Bulamadı
       listItem.setAttribute("style", "display:none !important");
     } else {
       listItem.setAttribute("style", "display:block");
     }
   });
-}
-
-// Alert Metodu
-function showAlert(type, message) {
-  const alert = document.createElement("div");
-  alert.className = `mt-3 alert alert-${type}`;
-  alert.textContent = message;
-  firstCardBody.appendChild(alert);
-
-  setTimeout(function () {
-    alert.remove();
-  }, 2000);
 }

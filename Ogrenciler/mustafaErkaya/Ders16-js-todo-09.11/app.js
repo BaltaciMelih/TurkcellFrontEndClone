@@ -57,8 +57,11 @@ function deleteTodo(e) {
   // console.log(e.target.parentElement.parentElement);
   if (e.target.className === "fa fa-remove") {
     e.target.parentElement.parentElement.remove();
-    console.log("todo başarıyla silindi");
+    showAlert('success', 'başarı ile sildiniz.');
   }
+  // else {
+  //   showAlert('danger', '2. card body-de ikona tıklamadınız ');
+  // }
 }
 
 // Filtreleme
