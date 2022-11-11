@@ -84,6 +84,7 @@ function clearAll() {
   while (todoLists.firstChild !== null) {
     todoLists.removeChild(todoLists.firstChild);
   }
+  localStorage.removeItem('todos');
 }
 
 function filterTodos(e) {
