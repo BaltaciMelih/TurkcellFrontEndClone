@@ -96,3 +96,15 @@ function filterTodos(e) {
     }
   });
 }
+
+// Local Storage e  String Kaydetme
+// localStorage.setItem("Key","İçerik");
+// const value=localStorage.getItem("Key");
+// console.log(value);
+//  localStorage.clear();
+
+//  Local Storage e  Array Kaydetme
+//  const todosSample=["Todo 1","Todo 2","Todo 3","Todo 4"];
+//  localStorage.setItem("Todolar",JSON.stringify(todosSample));
+//  const sampleTodo=JSON.parse(localStorage.getItem("Todolar"));
+//  console.log(sampleTodo); 
