@@ -6,6 +6,7 @@ const clearButton = document.getElementById("clear-todos");
 const firstCardBody = document.querySelectorAll(".card-body")[0];
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const filter = document.getElementById("filter");
+// console.log(filter);
 
 // Eventler
 eventListeners();
@@ -48,6 +49,7 @@ function clearAllTodos() {
   while (todoList.firstChild != null) {
     todoList.removeChild(todoList.firstChild); // Daha hızlı çalışacak
   }
+  showAlert("success", "tüm todolar silindi.")
 }
 
 // Delete Todo (tek tek silme işlemi)
@@ -95,3 +97,11 @@ function showAlert(type, message) {
     alert.remove();
   }, 2000);
 }
+
+// const lGroup = todoList;
+
+// localStorage.getItem('lGroup');
+
+// if (lGroup != null) {
+//     select.selectedIndex = selectedMovieIndex;
+// }
