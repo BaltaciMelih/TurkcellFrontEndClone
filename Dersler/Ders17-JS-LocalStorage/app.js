@@ -9,6 +9,7 @@ const filter = document.getElementById("filter");
 
 // Eventler
 eventListeners();
+// loadAllTodosToUI();
 function eventListeners() {
   form.addEventListener("submit", addTodo);
   clearButton.addEventListener("click", clearAllTodos);
