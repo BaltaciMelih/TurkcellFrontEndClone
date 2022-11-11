@@ -122,7 +122,7 @@ deleteItemLoop();
 
 todoButton.addEventListener("click", newTodo);
 
-function newTodo() {
+function newTodo(e) {
   const li = document.createElement("li");
   li.className = "list-group-item d-flex justify-content-between";
   const textNode = document.createTextNode(todoInput.value);
@@ -135,4 +135,5 @@ function newTodo() {
   listGroup.appendChild(li).appendChild(textNode);
   li.appendChild(a).appendChild(faIcon);
   deleteItemLoop();
+  e.preventDefault();
 }

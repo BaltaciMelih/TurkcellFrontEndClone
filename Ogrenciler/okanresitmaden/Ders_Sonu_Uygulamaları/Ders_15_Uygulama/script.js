@@ -242,6 +242,11 @@ const todolistitem = document.querySelectorAll(".list-group-item");
 const clearall = document.getElementById("clear-todos");
 
 
+
+
+
+
+
 for (let i = 0; i<removeitemsbypart.length; i++){
 
     
@@ -255,4 +260,6 @@ for (let i = 0; i<removeitemsbypart.length; i++){
 
     })
 }
+
+
 
