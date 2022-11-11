@@ -4,9 +4,8 @@ const todoInput = document.getElementById("todo");
 const todoList = document.querySelector(".list-group");
 const clearButton = document.getElementById("clear-todos");
 const firstCardBody = document.querySelectorAll(".card-body")[0];
-const secondCardBody = document.querySelectorAll(".card-body")[1];
+const secondCardBody = document.querySelector(".list-group");
 const filter = document.getElementById("filter");
-// console.log(filter);
 
 // Eventler
 eventListeners();
@@ -49,7 +48,7 @@ function clearAllTodos() {
   while (todoList.firstChild != null) {
     todoList.removeChild(todoList.firstChild); // Daha hızlı çalışacak
   }
-  showAlert("success", "tüm todolar silindi.")
+  showAlert("success", "Bütün Todolar başarılı bir şekilde kaldırıldı.");
 }
 
 // Delete Todo (tek tek silme işlemi)
@@ -59,11 +58,9 @@ function deleteTodo(e) {
   // console.log(e.target.parentElement.parentElement);
   if (e.target.className === "fa fa-remove") {
     e.target.parentElement.parentElement.remove();
-    showAlert('success', 'başarı ile sildiniz.');
+    console.log("todo başarıyla silindi");
   }
-  // else {
-  //   showAlert('danger', '2. card body-de ikona tıklamadınız ');
-  // }
+  showAlert("success", "Todo başarılı bir şekilde kaldırıldı.");
 }
 
 // Filtreleme
@@ -97,11 +94,3 @@ function showAlert(type, message) {
     alert.remove();
   }, 2000);
 }
-
-// const lGroup = todoList;
-
-// localStorage.getItem('lGroup');
-
-// if (lGroup != null) {
-//     select.selectedIndex = selectedMovieIndex;
-// }
