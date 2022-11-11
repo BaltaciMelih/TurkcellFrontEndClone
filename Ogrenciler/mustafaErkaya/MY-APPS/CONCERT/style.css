@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:wght@200;400;500&display=swap');
+
+.playing{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
+
+.key {
+    border: 4px solid black;
+    
+   
+    /* font-size: 1.5rem; */
+    text-shadow: 0 0 5px black;
+    transition: all 0.07s;
+
+}
+
+.font {
+    font-family: 'Roboto Mono', monospace;
+}
+span{
+    color: #ccc;
+}
