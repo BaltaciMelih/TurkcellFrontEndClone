@@ -1,0 +1,914 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap");
+/* variables */
+$bg-color: #7a7c9d;
+$btn-color: #ff6f0f;
+$font-color: #fff;
+$container-padding: 0 7%;
+
+@mixin d-flex($just, $align, $gp) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+  gap: $gp;
+}
+@mixin fsc($fs, $fc){
+  font-size: $fs;
+  color:$fc;
+}
+.animate__animated.animate__slideInDown {
+  --animate-duration: 2s;
+}
+@mixin btn {
+  padding: 1rem 2rem;
+  border: 1px solid $btn-color;
+  border-radius: 1rem;
+  background-color: $btn-color;
+  color: $font-color;
+  &:hover {
+    background-color: transparent;
+    color: $btn-color;
+  } }
+@mixin btn-2 {
+  padding: 0.6rem 1rem;
+  border: 1px solid $btn-color;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: $btn-color;
+  &:hover {
+    background-color: $btn-color;
+    color: $font-color;
+  }
+  i {
+    border-radius: 50%;
+    padding: .5rem;
+  } }
+@mixin causes-head {
+  border-bottom-left-radius: 0.6rem;
+          border-bottom-right-radius: 0.6rem;
+          background-color: $btn-color;
+          color: $font-color;
+          font-size: 2.1rem;
+          display: inline-block;
+          padding: 0 2.4rem 0.6rem 2.4rem;
+          margin-bottom: 2.4rem; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.4s;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: inter;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden; /* yatay scroll kapatma */
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1.2rem;
+  background-color: #fff;
+}
+html::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: black;
+}
+i {
+  font-size: 2.5rem;
+}
+a {
+  color: $font-color;
+}
+span {
+  font-size: 1.8rem;
+}
+.s-h2 {
+  font-size: 4rem;
+  margin-bottom: 4.8rem;
+}
+h4 {
+  @include fsc(1.6rem, $btn-color);
+  padding: 0.4rem 1.6rem;
+  margin-bottom: 1.6rem;
+}
+h5 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+p {
+  font-size: 1.6rem;
+}
+body {
+  font-family: "Inter", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "home home home"
+    "about about about"
+    "feature feature feature"
+    "whatwedo whatwedo whatwedo"
+    "donatenow donatenow donatenow"
+    "teammembers teammembers teammembers"
+    "testimonial testimonial testimonial"
+    "footer footer footer";
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(0, 29, 35, 0.8);
+    grid-area: header;
+    .container {
+      .header-top {
+        @include d-flex(space-between, center, 0rem);
+        padding: 1rem 7%;
+        border-bottom: 2px solid #3f3f3f;
+        .h-t-left {
+          @include d-flex(flex-start, center, 2rem);
+          color: #ccc;
+          span{
+            font-size: 1.3rem;
+          }
+          i{
+            font-size: 1.4rem;
+          }}
+        .h-t-right {
+          @include d-flex(flex-end, center, 1rem);
+          span{
+            @include fsc(1.4rem, #ccc);
+          }
+          .icons {
+            display: flex;
+            gap: 1rem;
+            i{
+              @include fsc(1.8rem, #ccc);
+              &:hover{
+                color: #ff6f0f;
+                scale: 1.2; 
+              }}}}} 
+      .header-bottom { 
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 0.1fr;
+        grid-template-areas: "logo navbar btn bars ";
+        align-items: center;
+        padding: 1rem 7%;
+        .logo {
+          grid-area: logo;
+          h2 {
+            @include fsc(3rem, $font-color);
+            cursor: pointer;
+          }
+          .h2 {
+            @include fsc(3rem, $btn-color);
+          }}
+         .navbar {
+          margin-left: 2rem;
+           grid-area: navbar;
+           padding-right: 3rem;
+           ul {
+            @include d-flex(flex-end, center, 2rem);
+             .dropdown-element{
+              position: relative;
+              i{
+                @include fsc(1.6rem, $font-color);
+              }
+              .dropdown{
+                display: none;
+                position: absolute;
+                top: 2rem; width: 11rem;
+                background-color: #f9f9f9;
+                border: 1px;
+                border-radius: 0.5rem;
+                padding: 12px 16px;
+                a{
+                  color: #001D23 !important;
+                  &:hover{
+                    color: #ff6f0f !important;
+                  }}} 
+              &:hover .dropdown{
+                display: block;
+              }}
+             li {
+               font-size: 1.6rem;
+               &:first-child a {
+                 color: #ff6f0f;
+               }
+               a{
+                 &:hover{
+                   color: #ff6f0f;
+                 }}}}}
+         .fa-bars{
+         color: transparent;
+        grid-area: bars;
+         }
+        .btn {
+          @include btn-2();
+          text-align: center;
+          font-size: 1.6rem;
+          width: 50%;
+          min-width: 16rem;
+          @include d-flex(center, center, .5rem);
+          margin: 0 0 0 auto;
+          grid-area: btn;
+          i {
+            font-size: 1.6rem;
+            align-items: center;
+          }}}}}
+  .home {
+    background-image: url(../image/carousel-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    grid-area: home;
+    margin-bottom: 3rem;
+    .homebg {
+      background-color: #001d23 !important;
+      height: 100vh;
+      opacity: 0.75;
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas: ". c-home .";
+      position: relative;
+      .btn-2{
+        z-index: 4;
+        @include btn();
+        width: 5rem; height: 5rem;
+        position: absolute;
+        top: 90%; right: 3rem;
+        font-size: 3rem;
+        padding: .5rem 1rem;
+        position: fixed;
+        a{
+          z-index: 10;
+        }
+      }
+      .container-home {
+        grid-area: c-home;
+        @include d-flex(center, center, 2rem);
+        flex-direction: column;
+        text-align: center;
+        .h1 {
+          @include fsc(5.6rem, $font-color);
+        }
+        .p {
+          @include fsc(2rem, #ccc);
+        }
+        .btn {
+          @include btn();
+          font-size: 1.8rem;
+          opacity: 1;
+          i {
+            font-size: 1.8rem;
+            margin-left: 1rem;
+          }}}}}
+  .about {
+    grid-area: about;
+    margin: 3rem 0;
+    .container-about {
+      @include d-flex(center, center, 7rem);
+      padding: 0 7%;
+      flex-wrap: wrap;
+      .about-left {
+        width: 45%;
+        min-width: 45rem;
+        position: relative;
+        padding: 5rem 2.4rem;
+        img {
+          width: 100%; height: auto;
+        }
+        .img-top {
+          position: absolute;
+          width: 200px; height: 200px;
+          border: 1rem solid #fff;
+          left: 75%; top: 0;
+        }}
+      .about-right {
+        width: 45%;
+        padding: 0 2.4rem;
+        min-width: 45rem;
+        .p-24 {
+          padding: 2.4rem;
+          font-size: 1.6rem;
+          border-bottom: 0.5rem solid $btn-color;
+          border-radius: 0.6rem;
+          margin-bottom: 2.4rem;
+          p {
+            margin-bottom: 0.8rem;
+          }
+          span {
+            color: $btn-color;
+          }}
+        .a-buttons {
+          display: flex;
+          gap: 2rem;
+          .btn {
+            @include btn();
+            font-size: 1.6rem;
+            i {
+              font-size: 1.6rem;
+              margin-left: 1rem;
+            }}
+          .btn-2 {
+            @include btn-2();
+            font-size: 1.6rem;
+            i {
+              font-size: 1.6rem;
+              margin-left: 1rem;
+            }}}
+        .p-1 {
+          @include fsc(1.6rem, rgb(117, 113, 113));
+          margin-bottom: 4.8rem;
+        }}}}
+  .feature {
+    grid-area: feature;
+    margin: 3rem 0;
+    .feature-start {      
+      width: 100%;
+      text-align: center;      
+      h4 {
+        @include fsc(1.6rem, $btn-color);
+        padding: 0.4rem 1.6rem;
+        margin-bottom: 1.6rem;
+      }
+      .s-h2 {
+        font-size: 4rem;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 4.8rem;
+      }}
+    .container-feature {
+      @include d-flex(center, center, 2rem);
+      padding: 0 7%;
+      flex-wrap: wrap;
+      .progress {
+        margin: 1rem 0;
+        width: 95%; height: 20px;
+        border-radius: 5px;
+        border: 1px solid rgb(189, 113, 113);
+        overflow: hidden;
+        position: relative;
+     }
+     .progress span {
+      @include fsc(1.5rem, #fff);
+         height: 100%; width: 90%;
+         display: block;
+         line-height: 20px;
+         position: absolute;
+         text-align: end;
+         padding-right: 5px;
+         background-color: $btn-color;
+     }
+      .imagebutton {
+        position: relative;
+        height: 270px; width: 100%;
+         &feature-img {
+             width: 100%; height: 270px;
+             position: relative;
+                 }
+              .covering {
+                 position: absolute;
+                 bottom: 100%;
+                 left: 0; right: 0;
+                 background-color: rgba(0, 0, 0, .5);
+                 overflow: hidden;
+                 width: 100%; height: 0;
+                 transition: .5s ease;
+               .btn-saf {
+                 position: absolute;
+                 @include fsc(1.5rem, $btn-color);
+                 height: 50px; width: 40%;
+                 background-color: rgba(0, 0, 0, .5);
+                 @include d-flex(center, center, 0rem);
+                 text-align: center;
+                 border: 2px solid $btn-color;
+                 border-radius: 10px;
+                 display: none;
+                 top: 50%; left: 50%;
+                 -webkit-transform: translate(-50%, -50%);
+                 -ms-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+                     &:hover {
+                         background-color:$btn-color;
+                         color: white;
+                         }}
+                     &:hover {
+                     .btn-saf {
+                     display: flex;
+                     z-index: 2;
+                     }}}}
+                   .imagebutton:hover .covering {
+                     bottom: 0;
+                     height: 100%;
+                   }
+      .progress-text {  
+        @include d-flex(space-between, center, 10rem);
+      }
+      .feature-left {
+        @include d-flex(center, center, 0rem);
+        flex-direction: column;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        border-top: 0.5rem solid $btn-color;
+        border-radius: 0.5rem;
+        width: 30%;
+        min-width: 40rem;
+        .causes-tag {
+          @include causes-head();
+        }
+        span{
+          font-size: 1.4rem;
+        }
+        .s-h2 {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+          text-align: center;
+        }
+        .p-24 {
+          padding: 2.4rem;
+          font-size: 1.6rem;
+          text-align: center;
+          p{
+            color: #787878;
+          }}
+        .feature-img {
+          width: 100%;
+        }}}
+    .feature-center {
+      @include d-flex(center, center, 0rem);
+        flex-direction: column;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        border-top: 0.5rem solid $btn-color;
+        border-radius: 0.5rem;
+        width: 30%;
+        min-width: 40rem;
+      .causes-tag2 {
+        @include causes-head();
+      }
+      span{
+        @include fsc(1.4rem, #787878);
+      }
+      .s-h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      .p-24 {
+        padding: 2.4rem;
+        font-size: 1.6rem;
+        text-align: center;
+        p{
+          color: #787878;
+        }}
+      .feature-img {
+        width: 100%;
+      }}
+    .feature-right {
+      padding: 0 1.5rem 1.5rem 1.5rem;
+      border-top: 0.5rem solid $btn-color;
+      border-radius: 0.5rem;
+      @include d-flex(center, center, 0rem);
+        flex-direction: column;
+        width: 30%;
+      min-width: 40rem;
+      .causes-tag3 {
+        @include causes-head();
+      }
+      span{
+        @include fsc(1.4rem, #787878);
+      }
+      .s-h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      .p-24 {
+        padding: 2.4rem;
+        font-size: 1.6rem;
+        text-align: center;
+        p{
+          color: #787878;
+        }}
+      .feature-img {
+        justify-content: center;
+        width: 100%;
+      }}}} 
+.whatwedo {
+  grid-area: whatwedo;
+  margin: 4rem 0;
+  .whatwedo-start {
+    h4 {
+      @include fsc(1.6rem, $btn-color);
+      padding: 0.4rem 1.6rem;
+      margin-bottom: 1.6rem;
+      text-align: center;
+    }
+    .s-h2 {
+      font-size: 4rem;
+      margin-bottom: 4.8rem;
+      text-align: center;
+    }}
+  .container-whatwedo {
+    @include d-flex(center, center, 2rem);
+    padding: 0 7%;
+    flex-wrap: wrap;
+    .whatwedo-left {
+      @include d-flex(center,center, 2rem);
+      flex-direction: column;
+      padding: 3rem 0;
+      width: 30%;
+      min-width: 40rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      border: 1px solid #fff;
+      .what-img {
+        width: 25%;
+      }
+      .s-h2 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      .p-24 {
+        padding: 2.4rem;
+        font-size: 1.7rem;
+        text-align: center;
+      }
+      .btn-2 {
+        @include btn-2();
+        font-size: 1.6rem;
+        i {
+          font-size: 1.6rem;
+          margin-left: 1rem;
+        }}}
+    .whatwedo-center {
+        @extend .whatwedo-left;
+    }
+    .whatwedo-right {
+      @extend .whatwedo-left;
+      }}}
+.donatenow {
+  background-image: url(../image/carousel-2.jpg);
+  background-size: cover;
+  height: 75rem;
+  grid-area: donatenow;
+  margin-bottom: 3rem;
+  .donatebg {
+    background-color: #001d23 !important;
+    height: 75rem;
+    opacity: 0.75;
+    padding: 0 7%;
+  }
+  .container-donatenow {
+    @include d-flex(center, center, 5rem );
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
+    .donatenow-left {
+      width: 45%;
+      min-width: 45rem;
+      h4 {
+        width: 25%;
+        min-width: 15rem;
+        background-color: #ccc;
+        border-radius: 10rem;
+        @include fsc(1.6rem, $btn-color);
+        padding: 0.7rem 0;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .s-h2 {
+        @include fsc(4rem, #fff);
+        margin-bottom: 1rem;
+      }
+      .p-24 {
+        @include fsc(1.7rem, #fff);
+        padding: 1rem;
+      }}
+    .donatenow-right {
+      min-width: 45rem;
+      width: 45%;
+      .form-grant {
+        .subscribe {
+          border: 1px solid #fff;
+          height: 6rem; width: 100%;
+          border-radius: 7px;
+          margin-bottom: 1.5rem;
+          &:hover {
+            cursor: pointer;
+            color: $btn-color;
+            border: 1px solid $btn-color;
+          }}
+        .btn3 {
+          background-color: #ccc;
+          gap: 2rem;
+          height: 6rem; width: 32.5%;
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+          &:hover {
+            cursor: pointer;
+            color: $btn-color;
+            border: 1px solid $btn-color;
+          }}
+        .btn {
+          @include btn();
+          font-size: 1.6rem;
+          i{
+            padding-left: 1.5rem;
+            font-size: 1.6rem;
+          }}}}}}
+  .team-members-section{
+    margin-top: 7.2rem;
+    grid-area: teammembers;
+    padding: 1rem 7%;
+    .title{
+        text-align: center;
+        h4{
+            font-size: 1.6rem;
+        }
+        h2{
+            font-size: 4rem;
+            margin-bottom:4.8rem; 
+        }}
+        .card-group{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          gap: 0.5rem;
+          .card-1{
+              background-color: rgb(220, 213, 213);
+              border:  0px;
+              text-align: center;
+              border-radius: 0.5rem;
+              position: relative;
+              
+              .cards-animation{
+              h3{
+                  margin: 2.4rem 0rem 0.8rem 0rem;
+                  font-size: 2rem;
+              }
+              h4{
+                  font-weight:400;
+              }
+              img{
+                  width: 100%;
+                  height: auto;
+                  border-top-left-radius: 0.5rem;
+                  border-top-right-radius: 0.5rem;
+              }
+              ul{
+                display: none;
+                justify-content: center;
+                gap: 1rem;
+                // margin-bottom: 1rem;
+              }
+              &:hover{
+                
+                transform: translateY(-50px);
+              
+              ul{
+                display: flex;
+                li a i:hover{
+                  color: #ff6f0f;
+                  
+                }
+              }
+              
+            }
+              }
+              
+          }
+          .card-2{
+            @extend .card-1;
+          }
+          .card-3{
+            @extend .card-1;
+          }
+          .card-4{
+            @extend .card-1;
+            
+          }
+      }
+    }
+  .testimonial{
+    grid-area: testimonial;
+    padding: 2rem 7%;
+    margin: 2rem 0;
+    margin-bottom: 8rem;
+    carousel {
+      width: 100%;
+      margin-bottom: 25rem;
+      text-align: center;
+      font-family: Trebuchet MS;
+      display: block;
+      font-size: 2rem;
+      page {
+          position: absolute;
+          top: 2em; left: 0;
+          width: 100%;
+          transition: transform 0.5s;
+          transform: scale(0);
+         img{
+          border: 7px solid $btn-color;
+          border-radius: 50%;
+         }
+          .card-description{
+            @include d-flex(center, center, 0rem);
+              width: 50%;
+              flex-direction: column;
+              text-align: center;
+              border: 2px solid $btn-color;
+              border-radius: 10%;
+              background-color: $btn-color;
+              @include fsc(1.5rem, #fff);
+              margin: 3rem auto;
+          }
+          div {
+              padding: 0, 5rem;
+          }
+          label {
+              cursor: pointer;
+              background: orangered;
+              color: white;
+              padding: 1em 2em;
+          }}
+      @for $i from 1 through 3 {
+          #page#{$i}cb:checked~ {
+              #page#{$i} {
+                  transform: scale(1);
+              }}}}}
+  footer {
+    grid-area: footer;
+    padding: 1rem 7%;
+    margin-top: 7.2rem;
+    background-color: #001D23 !important;
+    .footer-top{
+        margin-top: 7.2rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-bottom: 4.8rem;
+        .box-1{
+            h2{
+                margin-bottom: 2.4rem;
+                @include fsc(4rem, #ff6f0f);
+                span{
+                  @include fsc(4rem, #fff);
+                }}
+            p{
+                color: #ccc;
+                margin-bottom: 1.6rem;
+            }
+            ul{
+                display: flex;
+                gap: 1rem;
+            }
+            li{
+                border: 1px solid #fff;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }}
+        .box-2{
+            h3{
+              @include fsc(2rem, #fff);
+                margin-bottom: 2.4rem;
+            }
+            ul{
+                font-size: 1.6rem;
+                li{
+                    color: #ccc;
+                    margin-bottom: 1.6rem;
+                    span{
+                        margin-left: 1rem;
+                    }}}}
+        .box-3{
+            h3{
+              @include fsc(2rem, #fff);
+                margin-bottom: 2.4rem;
+            }
+            ul{
+              @include fsc(1.6rem, #ccc);
+                li{
+                    padding: 0.3rem;
+                }}}
+        .box-4{
+            h3{
+              @include fsc(2rem, #fff);
+                margin-bottom: 2.4rem;
+            }
+            p{
+              @include fsc(1.6rem, #ccc);
+                margin-bottom: 1.6rem;
+            }
+            .footer-button{
+                @include d-flex(space-between, center, 0rem);
+                border: 1px solid #ccc;
+                border-radius: 0.5rem;
+                background-color: transparent;
+                input{
+                    background-color: transparent;
+                    color: #fff;
+                    padding-left: 2.4rem;
+                    height: 4rem;
+                    border: 0px;
+                }
+                button{
+                    height: 4rem;
+                    border: none;
+                    border-radius: 0.5rem;
+                    color: #fff;
+                    background-color: #ff6f0f;
+                    cursor: pointer;
+                }}}}
+    .box-5{
+            display: flex;
+            justify-content: space-between;
+            padding: 2.5rem;
+            p{
+                color: #ccc; 
+            }}}
+            .upbuton{
+              background-color: $btn-color;
+              border-radius: 10px;
+              width: 48px; height: 48px;
+              position: absolute;
+              bottom: 25px; right: 50px;
+              position: fixed;
+              transition: all 0.4s ease-in-out;
+              & span {
+                @include d-flex(center,center,0);
+                height: 100%;
+                color:white;
+                
+              }
+              &:hover { 
+                background-color: transparent;
+                border: 1px solid $btn-color;
+                & span {
+                  color: $btn-color;
+                }}}
+  @media only screen and(max-width: 992px){
+    .team-members-section{
+      .card-group{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+      }}
+    .footer {
+      .footer-top{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+      }}}
+  @media only screen and(max-width: 768px) {
+    .header-top {
+     position: absolute;
+     bottom: 100%;
+    }
+    .header-bottom {
+      grid-template-columns: 1fr;
+      .logo{
+        grid-area: logo;
+      }
+      .btn{
+        grid-area: btn;
+      }
+      .navbar{
+          display: none;
+           .list-group {
+             @include d-flex(center, center, 0rem);
+             flex-direction: column;
+           }}
+      .fa-bars{
+        grid-area: bars;
+        display: inline-block;
+        margin-left: 2rem;
+        color: $font-color !important;
+       }}
+  .container-feature{
+    .feature-right{
+        width: 100%;
+        min-width: 50%;
+      }
+      .feature-left{
+        width: 100%;
+      }
+      .feature-center{
+        width: 100%;
+      }}
+    .whatwedo{
+      .whatwedo-left{
+        width: 85% !important;
+      }
+    }
+    .team-members-section{
+      .card-group{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+      }}
+    .footer {
+      .footer-top{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+      }}}
