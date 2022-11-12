@@ -63,6 +63,7 @@ function deleteTodo(e) {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
   }
+  deleteTodoFromLS(e.target.parentElement.parentElement.textContent);
 }
 
 // Filtreleme
@@ -138,7 +139,14 @@ function loadAllTodosToUI() {
   });
 }
 
-// Tek tek silme tarafı ödev
+// Tek Tek silme tarafı ödevdi yapıldı düzgün şekilde çalışıyor pazar sabah 04.47
 
-
-
+function deleteTodoFromLS(text) {
+  todos = getTodosFromStorage();
+  todos.forEach(function (item, index) {
+    if (item === text) {
+      todos.splice(index, 1);
+    }
+  });
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
