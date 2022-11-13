@@ -14,6 +14,7 @@ function eventListeners() {
   clearButton.addEventListener("click", clearAllTodos);
   secondCardBody.addEventListener("click", deleteTodo);
   filter.addEventListener("keyup", filterTodos);
+  document.addEventListener("DOMContentLoaded", loadAllTodosToUI);
 }
 
 // Todo Ekleme
@@ -23,7 +24,7 @@ function addTodo(e) {
     showAlert("danger", "Lütfen bir todo giriniz.");
   } else {
     addTodoToUI(newTodo);
-    addToStorage(newTodo);
+    addTodoToStorage(newTodo);
     showAlert("success", "Todo başarılı bir şekilde eklendi.");
   }
   e.preventDefault();
@@ -49,6 +50,7 @@ function clearAllTodos() {
   while (todoList.firstChild != null) {
     todoList.removeChild(todoList.firstChild); // Daha hızlı çalışacak
   }
+  localStorage.removeItem("todos");
 }
 
 // Delete Todo (tek tek silme işlemi)
@@ -59,14 +61,13 @@ function deleteTodo(e) {
   if (e.target.className === "fa fa-remove") {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
-  } else {
   }
+  deleteItemFromLS(e.target.parentElement.parentElement.textContent);
 }
 
 // Filtreleme
 function filterTodos(e) {
   const filterValue = e.target.value.toLowerCase();
-  console.log(filterValue);
   const listItems = document.querySelectorAll(".list-group-item");
   // console.log(listItems);
   listItems.forEach(function (listItem) {
@@ -85,17 +86,6 @@ function filterTodos(e) {
 }
 
 // Alert Metodu
-// function showAlert(type, message) {
-//   const alert = document.createElement("div");
-//   alert.className = `mt-3 alert alert-${type}`;
-//   alert.textContent = message;
-//   firstCardBody.appendChild(alert);
-
-//   setTimeout(function () {
-//     alert.remove();
-//   }, 2000);
-// }
-
 function showAlert(type, message) {
   const alert = document.createElement("div");
   alert.className = `mt-3 alert alert-${type}`;
@@ -107,56 +97,54 @@ function showAlert(type, message) {
   }, 2000);
 }
 
-// Local Storage - String
+// Local Storage'e String Kaydetme
 // localStorage.setItem("Key", "İçerik");
-
-// const value = localStorage.getItem("Deneme");
 // const value = localStorage.getItem("Key");
-
 // console.log(value);
-
 // localStorage.clear();
 
-// const todosSample = ["Todo1", "Todo2", "Todo3", "Todo4"];
-// localStorage.setItem("todolar", JSON.stringify(todosSample));
-//
-// const sampleTodos = JSON.parse(localStorage.getItem("todolar"));
-
+// Local Storage'e Array Kaydetme
+// const todosSample = ["Todo 1", "Todo 2", "Todo 3", "Todo 4"];
+// localStorage.setItem("todolar", JSON.stringify(todosSample)); // "['Todo 1', 'Todo 2', 'Todo 3', 'Todo 4']"
+// const sampleTodos = JSON.parse(localStorage.getItem("todolar")); // ['Todo 1', 'Todo 2', 'Todo 3', 'Todo 4']
 // console.log(sampleTodos);
 
-// APP
-
-function addToStorage(newTodo) {
-  let todoItems = getFromStorage();
-
-  // console.log(listItem);
-  todoItems.push(newTodo);
-  localStorage.setItem("todos", JSON.stringify(todoItems));
-}
-
-function getFromStorage() {
-  let getData;
-  if (localStorage.getItem("todos")) {
-    getData = JSON.parse(localStorage.getItem("todos"));
-  } else {
-    getData = [];
-  }
-  return getData;
-}
-
-loadAllTodos();
-
-function loadAllTodos(getData) {
-  let data = getFromStorage();
-  if (data) {
-    JSON.parse(data).forEach(function (newTodo) {
-      addTodoToUI(newTodo);
-    });
-  }
-}
-// addToStorage();
-
-// Metotlar
 // getTodosFromStorage
 // addTodoToStorage
-// loadAllTodos (get bunun içinde kullanılabilir)
+// loadAllTodos
+
+// Local Storage'dan veri alma - Veri varsa o veri gelir yoksa boş array gelir.
+function getTodosFromStorage() {
+  let todos;
+  if (localStorage.getItem("todos") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("todos"));
+  }
+  return todos;
+}
+
+// Local Storage'a veri gönderme - Önce storage'daki verileri alıp sonra üzerine ekleme yapıp tekrar gönderdik.
+function addTodoToStorage(newTodo) {
+  let todos = getTodosFromStorage();
+  todos.push(newTodo);
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function loadAllTodosToUI() {
+  let todos = getTodosFromStorage();
+  todos.forEach(function (todo) {
+    addTodoToUI(todo);
+  });
+}
+
+// Tek tek silme tarafı ödev
+function deleteItemFromLS(text) {
+  let todos = getTodosFromStorage();
+  todos.forEach(function (todo, index) {
+    if (todo === text) {
+      todos.splice(index, 1);
+    }
+  });
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
