@@ -137,5 +137,4 @@ function loadAllTodosToUI() {
     addTodoToUI(todo);
   });
 }
-
-// Tek tek silme tarafı ödev
+// tek tek silme tarafı ödev

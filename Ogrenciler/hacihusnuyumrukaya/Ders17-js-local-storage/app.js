@@ -9,7 +9,6 @@ const filter = document.getElementById("filter");
 
 // Eventler
 eventListeners();
-// loadAllTodosToUI();
 function eventListeners() {
   form.addEventListener("submit", addTodo);
   clearButton.addEventListener("click", clearAllTodos);
@@ -61,6 +60,8 @@ function deleteTodo(e) {
   // console.log(e.target.parentElement.parentElement);
   if (e.target.className === "fa fa-remove") {
     e.target.parentElement.parentElement.remove();
+    let deleteTodo=e.target.parentElement.parentElement;
+    RemoveLocalStorage(deleteTodo.textContent);
     console.log("todo başarıyla silindi");
   }
 }
@@ -139,3 +140,12 @@ function loadAllTodosToUI() {
 }
 
 // Tek tek silme tarafı ödev
+function RemoveLocalStorage(deleteTodo) {
+  let todos = getTodosFromStorage();
+  for(let i = 0; i < todos.length; i++) {
+    if(deleteTodo === todos[i]) {
+      todos.splice(i,1);
+    }
+  }
+  localStorage.setItem("todos", JSON.stringify(todos));
+}

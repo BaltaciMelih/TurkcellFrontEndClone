@@ -139,3 +139,6 @@ function loadAllTodosToUI() {
 }
 
 // Tek tek silme tarafı ödev
+
+
+
