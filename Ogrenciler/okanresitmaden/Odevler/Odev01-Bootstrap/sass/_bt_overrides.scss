@@ -1,9 +1,7 @@
 @mixin bg($bgcolor){
     background-color: $bgcolor;
 }
-@mixin color($color){
-    color:$color;
-}
+
 @mixin w__h($w,$h){
     width: $w;
     height: $h;
@@ -48,55 +46,7 @@ body{
 
     }
 }
-@keyframes card1{
-    from {@include bg(white)}
-    to {@include bg(rgb(33, 138, 38))}
-    from {@include color(black)}
-    to {@include color(white)}
-}
 
-
-@keyframes card2{
-    from {@include bg(white)}
-    to {@include bg(blue)}
-    from {@include color(black)}
-    to {@include color(white)}
-}
-
-@keyframes card3{
-    from {@include bg(white)}
-    to {@include bg(rgb(0, 0, 0))}
-    from {@include color(black)}
-    to {@include color(white)}
-}
-
-.card1:hover{
-    @include cardanimation(card1,4s ,forwards ,0s );
-    cursor: pointer;
-    .table{
-        @include color(white);
-    }
-}
-.card2:hover{
-    @include cardanimation(card2,4s ,forwards ,0s );
-    cursor: pointer;
-    .table{
-        @include color(white);
-    }
-}
-.card3:hover{
-    @include cardanimation(card3,4s ,forwards ,0s );
-    cursor: pointer;
-    .table{
-        @include color(white);
-    }
-}
-.buttonanim{
-    button:hover{
-        @include bg(black);
-        transition: background-color 2s ease;
-    }
-}
 
 
 
