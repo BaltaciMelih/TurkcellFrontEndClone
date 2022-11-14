@@ -14,15 +14,18 @@ function eventListeners() {
   clearButton.addEventListener("click", clearAllTodos);
   secondCardBody.addEventListener("click", deleteTodo);
   filter.addEventListener("keyup", filterTodos);
+  document.addEventListener("DOMContentLoaded", loadAllTodosToUI);
 }
+
 // Todo Ekleme
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
   if (newTodo === "") {
-    showAlert();
+    showAlert("danger", "Lütfen bir todo giriniz.");
   } else {
     addTodoToUI(newTodo);
-    console.log("Todo Girişi Başarılı");
+    addTodoToStorage(newTodo);
+    showAlert("success", "Todo başarılı bir şekilde eklendi.");
   }
   e.preventDefault();
 }
@@ -47,6 +50,7 @@ function clearAllTodos() {
   while (todoList.firstChild != null) {
     todoList.removeChild(todoList.firstChild); // Daha hızlı çalışacak
   }
+  localStorage.removeItem("todos");
 }
 
 // Delete Todo (tek tek silme işlemi)
@@ -57,7 +61,8 @@ function deleteTodo(e) {
   if (e.target.className === "fa fa-remove") {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
-  }
+  };
+  deleteTodoFromLS(e.target.parentElement.parentElement.textContent);
 }
 
 // Filtreleme
@@ -69,7 +74,10 @@ function filterTodos(e) {
     const text = listItem.textContent.toLowerCase();
     console.log(text.indexOf(filterValue));
     if (text.indexOf(filterValue) === -1) {
-      // Bulamadı
+      const alert = document.querySelector(".alert");
+      if (!alert) {
+        showAlert("warning", "Aradığınız Todo Bulunamadı!");
+      }
       listItem.setAttribute("style", "display:none !important");
     } else {
       listItem.setAttribute("style", "display:block");
@@ -77,13 +85,51 @@ function filterTodos(e) {
   });
 }
 
+// Alert Metodu
 function showAlert(type, message) {
   const alert = document.createElement("div");
   alert.className = `mt-3 alert alert-${type}`;
   alert.textContent = message;
   firstCardBody.appendChild(alert);
-  
+
   setTimeout(function () {
     alert.remove();
   }, 2000);
+}
+
+// Local Storage'dan veri alma - Veri varsa o veri gelir yoksa boş array gelir.
+function getTodosFromStorage() {
+  let todos;
+  if (localStorage.getItem("todos") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("todos"));
+  }
+  return todos;
+}
+
+// Local Storage'a veri gönderme - Önce storage'daki verileri alıp sonra üzerine ekleme yapıp tekrar gönderdik.
+function addTodoToStorage(newTodo) {
+  let todos = getTodosFromStorage();
+  todos.push(newTodo);
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function loadAllTodosToUI() {
+  let todos = getTodosFromStorage();
+  todos.forEach(function (todo) {
+    addTodoToUI(todo);
+  });
+}
+
+// Tek tek silme tarafı ödev
+
+function deleteTodoFromLS(text) {
+  todos = getTodosFromStorage();
+  todos.forEach(function (item, index){
+    if (item === text){
+      todos.splice(index,1);
+    }
+  });
+  localStorage.setItem('todos', JSON.stringify(todos));
 }
