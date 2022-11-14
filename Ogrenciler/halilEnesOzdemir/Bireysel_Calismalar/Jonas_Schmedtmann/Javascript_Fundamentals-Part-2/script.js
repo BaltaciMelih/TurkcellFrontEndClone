@@ -60,23 +60,39 @@
 // ************* Arrow Functions ***************
 
 // Function expression
-const calcAge2 = function (birthYear) {
-  return 2022 - birthYear;
-};
-const age2 = calcAge2(1998);
+// const calcAge2 = function (birthYear) {
+//   return 2022 - birthYear;
+// };
+// const age2 = calcAge2(1998);
 
 // Arrow Function
-const calcAge3 = (birthYear) => 2022 - birthYear;
-const age3 = calcAge3(1998);
-console.log(age3);
+// const calcAge3 = (birthYear) => 2022 - birthYear;
+// const age3 = calcAge3(1998);
+// console.log(age3);
 
-const yearUntilRetirement = (birthYear, firstName) => {
-  const age = 2022 - birthYear;
-  const retirement = 65 - age;
-  // return retirement;
-  return `${firstName} retires in ${retirement} years`;
-};
+// const yearUntilRetirement = (birthYear, firstName) => {
+//   const age = 2022 - birthYear;
+//   const retirement = 65 - age;
+//   // return retirement;
+//   return `${firstName} retires in ${retirement} years`;
+// };
 
-console.log(yearUntilRetirement(1998, 'Halil'));
-console.log(yearUntilRetirement(1993, 'Murat'));
-console.log(yearUntilRetirement(1976, 'Yusuf'));
+// console.log(yearUntilRetirement(1998, 'Halil'));
+// console.log(yearUntilRetirement(1993, 'Murat'));
+// console.log(yearUntilRetirement(1976, 'Yusuf'));
+
+// *************  Functions Calling Other Functions ***************
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+  // console.log(apples, oranges);
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
