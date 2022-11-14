@@ -5,7 +5,6 @@ const todoList = document.querySelector(".list-group");
 const clearButton = document.getElementById("clear-todos");
 const firstCardBody = document.querySelectorAll(".card-body")[0];
 const secondCardBody = document.querySelectorAll(".card-body")[1];
-const filter = document.getElementById("filter");
 
 // Eventler
 eventListeners();
@@ -13,13 +12,14 @@ function eventListeners() {
   form.addEventListener("submit", addTodo);
   clearButton.addEventListener("click", clearAllTodos);
   secondCardBody.addEventListener("click", deleteTodo);
-  filter.addEventListener("keyup", filterTodos);
+  filter.addEventListener("keyup", filterTodos)
 }
+
 // Todo Ekleme
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
   if (newTodo === "") {
-    showAlert();
+    console.log("Bir Todo Girin");
   } else {
     addTodoToUI(newTodo);
     console.log("Todo Girişi Başarılı");
@@ -41,7 +41,6 @@ function addTodoToUI(newTodo) {
   todoInput.value = "";
 }
 
-// ütün todoları silme
 function clearAllTodos() {
   // todoList.innerHTML = "";
   while (todoList.firstChild != null) {
@@ -49,41 +48,26 @@ function clearAllTodos() {
   }
 }
 
-// Delete Todo (tek tek silme işlemi)
 function deleteTodo(e) {
-  // console.log(e.target);
-  // console.log(e.target.parentElement);
-  // console.log(e.target.parentElement.parentElement);
+//   console.log(e.target);
+//   console.log(e.target.parentElement);
+//   console.log(e.target.parentElement.parentElement);
   if (e.target.className === "fa fa-remove") {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
   }
 }
 
-// Filtreleme
-function filterTodos(e) {
-  const filterValue = e.target.value.toLowerCase();
-  const listItems = document.querySelectorAll(".list-group-item");
-  // console.log(listItems);
-  listItems.forEach(function (listItem) {
-    const text = listItem.textContent.toLowerCase();
-    console.log(text.indexOf(filterValue));
-    if (text.indexOf(filterValue) === -1) {
-      // Bulamadı
-      listItem.setAttribute("style", "display:none !important");
-    } else {
-      listItem.setAttribute("style", "display:block");
-    }
-  });
-}
-
-function showAlert(type, message) {
-  const alert = document.createElement("div");
-  alert.className = `mt-3 alert alert-${type}`;
-  alert.textContent = message;
-  firstCardBody.appendChild(alert);
-  
-  setTimeout(function () {
-    alert.remove();
-  }, 2000);
+function filterTodos(e){
+    const filterValue = e.target.value.toLowerCase();
+    const listItem = document.querySelectorAll(".list-group-item");
+    listItem.forEach(function(listItem){
+        const text = listItem.textContent.toLocaleLowerCase();
+        if(text.indexOf(filterValue) === -1){
+            listItem.setAttribute("style", "display:none !important")
+        }
+        else{
+            listItem.setAttribute("style", "display:block")
+        }
+    })
 }
