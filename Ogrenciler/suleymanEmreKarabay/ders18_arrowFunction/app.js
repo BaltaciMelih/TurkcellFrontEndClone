@@ -15,8 +15,16 @@
 
 // console.log(isim,soyad);
 
-const dizi = ["emre","karabay"];
+// const dizi = ["emre","karabay"];
 
-for (const i of dizi) {
-    console.log(i);
-}
+// for (const i of dizi) {
+//     console.log(i);
+// }
+
+const langs = ["süleyman","emre","karabay"];
+
+console.log(...langs);
+
+const newLangs = [...langs,"eskişehir"];
+
+console.log(...newLangs);
