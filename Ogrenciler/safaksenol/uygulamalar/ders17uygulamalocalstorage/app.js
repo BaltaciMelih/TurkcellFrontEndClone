@@ -9,6 +9,7 @@ const filter = document.getElementById("filter");
 
 // Eventler
 eventListeners();
+// loadAllTodosToUI();
 function eventListeners() {
   form.addEventListener("submit", addTodo);
   clearButton.addEventListener("click", clearAllTodos);
@@ -44,7 +45,7 @@ function addTodoToUI(newTodo) {
   todoInput.value = "";
 }
 
-// Bütün todoları silme
+// ütün todoları silme
 function clearAllTodos() {
   // todoList.innerHTML = "";
   while (todoList.firstChild != null) {
@@ -62,7 +63,7 @@ function deleteTodo(e) {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
   }
-  deleteItemFromLS(e.target.parentElement.parentElement.textContent);
+  deleteTodoFromLS(e.target.parentElement.parentElement.textContent);
 }
 
 // Filtreleme
@@ -138,13 +139,14 @@ function loadAllTodosToUI() {
   });
 }
 
-// Tek tek silme tarafı ödev
-function deleteItemFromLS(text) {
-  let todos = getTodosFromStorage();
-  todos.forEach(function (todo, index) {
-    if (todo === text) {
+// Tek Tek silme tarafı ödevdi yapıldı düzgün şekilde çalışıyor pazar sabah 04.47
+
+function deleteTodoFromLS(text) {
+  todos = getTodosFromStorage();
+  todos.forEach(function (item, index) {
+    if (item === text) {
       todos.splice(index, 1);
     }
   });
-  localStorage.setItem("todos", JSON.stringify(todos));
+  localStorage.setItem('todos', JSON.stringify(todos));
 }
