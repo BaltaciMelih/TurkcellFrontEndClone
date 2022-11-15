@@ -21,19 +21,10 @@
 //     console.log(i);
 // }
 
-// const langs = ["süleyman","emre","karabay"];
+const langs = ["süleyman","emre","karabay"];
 
-// console.log(...langs);
+console.log(...langs);
 
-// const newLangs = [...langs,"eskişehir"];
+const newLangs = [...langs,"eskişehir"];
 
-// console.log(...newLangs);
-
-
-let number = [1,2,3,4];
-
-// let number2 = number.map(x=>x*2);
-
-// console.log(number2);
-
-number.forEach(e => console.log(e));
+console.log(...newLangs);
