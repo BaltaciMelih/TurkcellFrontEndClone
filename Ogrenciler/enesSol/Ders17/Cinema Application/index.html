@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinema Bilet Rezervasyon Uygulaması</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="moviescene">
+        <div class="ratio ratio-16x9" id="video-wrapper">
+          <iframe
+            width="100%"
+            height="200"
+            src="https://www.youtube.com/embed/dMsSORIgsOg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            id="bg-video"
+          ></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class="movieseat">A1</div>
+        <div class="movieseat">A2</div>
+        <div class="movieseat">A3</div>
+        <div class="movieseat">A4</div>
+        <div class="movieseat">A5</div>
+        <div class="movieseat">A6</div>
+        <div class="movieseat">A7</div>
+        <div class="movieseat">A8</div>
+      </div>
+      <div class="row">
+        <div class="movieseat">B1</div>
+        <div class="movieseat">B2</div>
+        <div class="movieseat">B3</div>
+        <div class="movieseat reserved">B4</div>
+        <div class="movieseat">B5</div>
+        <div class="movieseat reserved">B6</div>
+        <div class="movieseat">B7</div>
+        <div class="movieseat">B8</div>
+      </div>
+      <div class="row">
+        <div class="movieseat">C1</div>
+        <div class="movieseat">C2</div>
+        <div class="movieseat reserved">C3</div>
+        <div class="movieseat">C4</div>
+        <div class="movieseat reserved">C5</div>
+        <div class="movieseat">C6</div>
+        <div class="movieseat">C7</div>
+        <div class="movieseat">C8</div>
+      </div>
+      <div class="row">
+        <div class="movieseat">D1</div>
+        <div class="movieseat">D2</div>
+        <div class="movieseat">D3</div>
+        <div class="movieseat">D4</div>
+        <div class="movieseat">D5</div>
+        <div class="movieseat">D6</div>
+        <div class="movieseat">D7</div>
+        <div class="movieseat">D8</div>
+      </div>
+      <div class="row">
+        <div class="movieseat">E1</div>
+        <div class="movieseat">E2</div>
+        <div class="movieseat">E3</div>
+        <div class="movieseat">E4</div>
+        <div class="movieseat">E5</div>
+        <div class="movieseat">E6</div>
+        <div class="movieseat">E7</div>
+        <div class="movieseat">E8</div>
+      </div>
+    </div>
+    <div class="moviesellist">
+      <select id="moviesel">
+        <option disabled>Film Seçiniz</option>
+        <option value="50" id="bergen">Bergen</option>
+        <option value="75" id="muslum">Müslüm</option>
+        <option value="100" id="avengers">Avengers</option>
+      </select>
+    </div>
+    <ul class="ticketinfo">
+      <li>
+        <div class="movieseat"></div>
+        <small>Boş</small>
+      </li>
+      <li>
+        <div class="movieseat reserved"></div>
+        <small>Dolu</small>
+      </li>
+      <li>
+        <div class="movieseat selected"></div>
+        <small>Seçilen</small>
+      </li>
+    </ul>
+    <p class="text">
+      <span id="numofmovieseat">4</span> adet koltuk için ödenecek ücret
+      <span id="movieseatfee">200</span>TLdir
+    </p>
+    <div class="rezervbutton" id="rezervbutton">Rezerve Et</div>
+    <script src="app.js"></script>
+  </body>
+</html>

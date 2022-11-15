@@ -77,13 +77,13 @@ function filterTodos(e) {
   });
 }
 
-function showAlert(){
-  const newTodo2 = todoInput.value.trim();
-  if(newTodo2 === ""){
-    const alert = document.createElement("div");
-    alert.className.add("alert alert-danger");
-    message.textContent="Gecerlli Bir Deger girin";
-    alert.innerHTML=message;
-
-  }
+function showAlert(type, message) {
+  const alert = document.createElement("div");
+  alert.className = `mt-3 alert alert-${type}`;
+  alert.textContent = message;
+  firstCardBody.appendChild(alert);
+  
+  setTimeout(function () {
+    alert.remove();
+  }, 2000);
 }

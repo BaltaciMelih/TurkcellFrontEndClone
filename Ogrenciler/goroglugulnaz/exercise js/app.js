@@ -130,6 +130,11 @@ filterInput.addEventListener("input", (e) => {
       .includes(value.toLowerCase());
     item.classList.toggle("d-none", !invisible);
   }
+  //Alert Methodu
+  function showAlert(type,message){
+  const alert = document.createElement("div")
+  
+  }
 
   // listGroup.children.forEach((li) => {
   //   console.log(li);
