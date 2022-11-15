@@ -4,7 +4,6 @@ const movieseatfee = document.getElementById("movieseatfee");
 const moviesel = document.getElementById("moviesel");
 const movieseats = document.querySelectorAll(".movieseat:not(.reserved)");
 const button = document.querySelector("#rezervbutton");
-button.onclick = saveToLocalStorage;
 
 getFromLocalStorage();
 calculateTotal();
