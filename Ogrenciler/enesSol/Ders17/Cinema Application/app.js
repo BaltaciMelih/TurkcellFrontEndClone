@@ -65,7 +65,12 @@ function getFromLocalStorage() {
   }
 }
 
+// Add Seats on Click
 function saveToLocalStorage(indexs) {
-  localStorage.setItem("selectedSeats", JSON.stringify(indexs));
-  localStorage.setItem("selectedMovieIndex", moviesel.selectedIndex);
+  document.addEventListener("click", function (e) {
+    if (e.target.id === "rezervbutton") {
+      localStorage.setItem("selectedSeats", JSON.stringify(indexs));
+      localStorage.setItem("selectedMovieIndex", moviesel.selectedIndex);
+    }
+  });
 }
