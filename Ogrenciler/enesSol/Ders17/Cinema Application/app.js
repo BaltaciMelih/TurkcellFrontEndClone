@@ -5,6 +5,27 @@ const moviesel = document.getElementById("moviesel");
 const movieseats = document.querySelectorAll(".movieseat:not(.reserved)");
 const button = document.querySelector("#rezervbutton");
 const options = document.querySelectorAll("option");
+const bgVideo = document.getElementById("bg-video");
+
+moviesel.addEventListener("click", function (e) {
+  const selectedMovie = options[e.target.selectedIndex].id;
+
+  switch (selectedMovie) {
+    case "avengers":
+      bgVideo.src = "https://www.youtube.com/embed/6ZfuNTqbHE8";
+      break;
+    case "bergen":
+      bgVideo.src = "https://www.youtube.com/embed/dMsSORIgsOg";
+      break;
+
+    case "muslum":
+      bgVideo.src = "https://www.youtube.com/embed/bpWRHiBOhQc";
+      break;
+
+    default:
+      break;
+  }
+});
 
 getFromLocalStorage();
 calculateTotal();
