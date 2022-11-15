@@ -17,4 +17,4 @@ let numbers = [1, 4, 9, 16];
 // const result = langs.filter(lang => lang.length > 4);
 // console.log(result)
 
-langs.forEach((e) => console.log(e)) 
+// langs.forEach((e) => console.log(e)) 
