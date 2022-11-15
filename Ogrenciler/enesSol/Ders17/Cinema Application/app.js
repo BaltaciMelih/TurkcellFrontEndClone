@@ -4,6 +4,7 @@ const movieseatfee = document.getElementById("movieseatfee");
 const moviesel = document.getElementById("moviesel");
 const movieseats = document.querySelectorAll(".movieseat:not(.reserved)");
 const button = document.querySelector("#rezervbutton");
+const options = document.querySelectorAll("option");
 
 getFromLocalStorage();
 calculateTotal();
@@ -40,7 +41,7 @@ function calculateTotal() {
     return seatsArr.indexOf(seat);
   });
 
-  console.log(selectedSeatIndexs);
+  // console.log(selectedSeatIndexs);
 
   let selectedSeatCount = selectedSeats.length;
   numofmovieseat.innerText = selectedSeatCount;
