@@ -6,15 +6,16 @@ const clearButton = document.getElementById("clear-todos");
 const firstCardBody = document.querySelectorAll(".card-body")[0];
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const filter = document.getElementById("filter");
-console.log(firstCardBody);
 
 // Eventler
 eventListeners();
+// loadAllTodosToUI();
 function eventListeners() {
   form.addEventListener("submit", addTodo);
   clearButton.addEventListener("click", clearAllTodos);
   secondCardBody.addEventListener("click", deleteTodo);
   filter.addEventListener("keyup", filterTodos);
+  document.addEventListener("DOMContentLoaded", loadAllTodosToUI);
 }
 
 // Todo Ekleme
@@ -24,6 +25,7 @@ function addTodo(e) {
     showAlert("danger", "Lütfen bir todo giriniz.");
   } else {
     addTodoToUI(newTodo);
+    addTodoToStorage(newTodo);
     showAlert("success", "Todo başarılı bir şekilde eklendi.");
   }
   e.preventDefault();
@@ -49,6 +51,7 @@ function clearAllTodos() {
   while (todoList.firstChild != null) {
     todoList.removeChild(todoList.firstChild); // Daha hızlı çalışacak
   }
+  localStorage.removeItem("todos");
 }
 
 // Delete Todo (tek tek silme işlemi)
@@ -57,6 +60,9 @@ function deleteTodo(e) {
   // console.log(e.target.parentElement);
   // console.log(e.target.parentElement.parentElement);
   if (e.target.className === "fa fa-remove") {
+    
+    let newTodo = e.target.parentElement.parentElement;
+    deleteTodoFromStorage(newTodo);
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
   }
@@ -92,4 +98,66 @@ function showAlert(type, message) {
   setTimeout(function () {
     alert.remove();
   }, 2000);
+}
+
+// Local Storage'e String Kaydetme
+// localStorage.setItem("Key", "İçerik");
+// const value = localStorage.getItem("Key");
+// console.log(value);
+// localStorage.clear();
+
+// Local Storage'e Array Kaydetme
+// const todosSample = ["Todo 1", "Todo 2", "Todo 3", "Todo 4"];
+// localStorage.setItem("todolar", JSON.stringify(todosSample)); // "['Todo 1', 'Todo 2', 'Todo 3', 'Todo 4']"
+// const sampleTodos = JSON.parse(localStorage.getItem("todolar")); // ['Todo 1', 'Todo 2', 'Todo 3', 'Todo 4']
+// console.log(sampleTodos);
+
+// getTodosFromStorage
+// addTodoToStorage
+// loadAllTodos
+
+// Local Storage'dan veri alma - Veri varsa o veri gelir yoksa boş array gelir.
+function getTodosFromStorage() {
+  let todos;
+  if (localStorage.getItem("todos") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("todos"));
+  }
+  return todos;
+}
+
+// Local Storage'a veri gönderme - Önce storage'daki verileri alıp sonra üzerine ekleme yapıp tekrar gönderdik.
+function addTodoToStorage(newTodo) {
+  let todos = getTodosFromStorage();
+  todos.push(newTodo);
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function loadAllTodosToUI() {
+  let todos = getTodosFromStorage();
+  todos.forEach(function (todo) {
+    addTodoToUI(todo);
+  });
+}
+
+/* let setTodosToLocalStorage = (newTodo) => {
+  localStorage.setItem('todos', JSON.stringify(newTodo));
+} */
+
+// Tek tek silme tarafı ödev
+function deleteTodoFromStorage(newTodo) {
+  let todos = getTodosFromStorage();
+
+  for(let i = 0; i < todos.length; i++){
+    if (todos[i].todos == newTodo) {
+        todos.splice(i, 1);
+    }
+}
+/* setTodosToLocalStorage(newTodo); */
+
+}
+
+function clearTodo() {
+  localStorage.clear();
 }
