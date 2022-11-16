@@ -10,10 +10,15 @@ body{
 }
 .seat{
     background-color: #444451;
-    height: 15px;
-    width: 15px;
+    height: auto;
+    width: 30px;
     margin: 3px;
     border-radius: 5px;
+    padding: 5px;
+}
+.hidden{
+    height: 20px;
+    width: 20px;
 }
 .seat.selected{
     background-color: #f6eb6f;
@@ -59,4 +64,12 @@ body{
 p.text span{
     color: #f6eb6f;
 }
+#button{
+    padding: 10px ;
+    border-radius: 1rem;
+    background-color: #f6eb6f;
 
+}
+#button:hover{
+    scale: 1.1;
+}

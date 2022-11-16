@@ -2,17 +2,22 @@ const container = document.querySelector('.container');
 const count = document.getElementById('count');
 const amount = document.getElementById('amount');
 const select = document.getElementById('movie');
-const seats = document.querySelectorAll('.seat:not(.reserved)')
-
+const seats = document.querySelectorAll('.seat:not(.hidden)')
+const button = document.querySelector('#button')
+console.log(button);
 getFromLocalStorage();
 calculateTotal();
 
 container.addEventListener('click', function(e) {
-    if(e.target.classList.contains('seat') && !e.target.classList.contains('reserved')){
-        e.target.classList.toggle('selected');
+    if(e.target.parentElement.classList.contains('seat') && !e.target.parentElement.classList.contains('reserved')){
+        e.target.parentElement.classList.toggle('selected');
         calculateTotal()
+        
     }
+    console.log(e.target.parentElement);
 });
+
+seats.forEach((item)=>item.innerHTML='<img src="./img/seat.png" alt="" style="width: 100%;" >')
 
 select.addEventListener('change', function(e){
     calculateTotal()
@@ -41,7 +46,22 @@ function calculateTotal() {
     amount.innerText = selectedSeatCount * select.value;
 
     saveToLocalStorage(selectedSeatIndexs);
+    
+    console.log(seats);
 }
+
+if (selectedSeats !=null && selectedSeats.length > 0) {
+    seats.forEach(function(seat, index) {
+        if (selectedSeats.indexOf(index) > -1) {
+            seat.classList.add('reserved');
+        }
+    });
+}
+
+
+
+
+
 
 function getFromLocalStorage() {
     const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
