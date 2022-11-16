@@ -30,7 +30,7 @@ h2 {
   display: flex;
   background-color: rgb(226, 226, 226);
   justify-content: center;
-  height: 100vh;
+  padding-bottom: 60px;
   padding-top: 90px;
 }
 .saloon-container {
@@ -168,7 +168,7 @@ h2 {
   background-color: #fafbfc;
 }
 #seans {
-  width: 70px;
+  width: 85px;
   border-radius: 12px;
   height: 28px;
   padding: 2px;
