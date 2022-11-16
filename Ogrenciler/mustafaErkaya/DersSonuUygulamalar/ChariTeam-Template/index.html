@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Chari Team Template</title>
+</head>
+
+<body>
+    <!-- header -->
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="h-t-left">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>123 Street, New York, USA</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-message"></i>
+                        <span>info@example.com</span>
+                    </div>
+                </div>
+                <div class="h-t-right">
+                    <div>
+                        <span>Follow us: </span>
+                    </div>
+                    <div class="icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="logo">
+                    <h2><span class="h2">Chari</span>Team</h2>
+                </div>
+                
+                <nav class="navbar active" id="navbar">
+                    <ul class="list-group">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#feature">Causes</a>
+                        </li>
+                        <li class="dropdown-element">
+                            <a href="">Pages</a> <i class="fa-solid fa-angle-down"></i>
+                            <div class="dropdown">
+                                <a href="#">Service</a>
+                                <a href="#">Donate</a> 
+                                <a href="#">Our Team</a> 
+                                <a href="#">Testimonial</a> 
+                                <a href="#">404 Page</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+                <i class="fa-solid fa-bars " onclick="menuToggle();"></i>
+
+                <button class="btn">
+                    donate now <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+        
+        <div class="homebg"> 
+            <div class="container-home animate__animated animate__slideInDown">
+                <h1 class="h1">Let's Change The World With Humanity</h1>
+                <p class="p">
+                    Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet
+                    lorem sit clita duo justo erat amet
+                </p>
+                <button class="btn">
+                    learn more<i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about animate__animated animate__fadeInUp" id="about">
+        <div class="container-about">
+            <div class="about-left">
+                <img class="about-img-1" src="./image/about-1.jpg" alt="">
+                <img class="img-top" src="./image/about-2.jpg" alt="">
+            </div>
+            <div class="about-right">
+                <h4>About Us</h4>
+                <h2 class="s-h2">We Help People In Need Around The World</h2>
+                <div class="p-24">
+                    <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem sit clita duo justo erat
+                        amet</p>
+                    <span>Jhon Doe, Founder</span>
+                </div>
+                <div class="a-buttons">
+                    <button class="btn">learn more<i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn-2">contanct us<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+               <!--Feature Causes-->
+               
+    <section class="feature animate__animated animate__fadeInUp" id="feature">
+            <div class="feature-start">
+                
+                <h4>Feature Causes</h4>
+                <h2 class="s-h2">Every Child Deserves The Opportunity To Learn</h2>
+                </div>
+            <div class="container-feature">
+              <div class="feature-left">
+                <div class="causes-tag">
+                <small > education</small></div>
+                <h2 class="s-h2">Education For African Children</h2>
+                <div class="p-24">
+                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                </div>
+                <div class="causes-progress">
+                   <div class="progress-text">
+                    <p class="text-one">
+                        $10,000<span>Goal</span>
+                    </p>
+                    <p class="text-two">
+                        $9,542<span>Raised</span>
+                    </p>
+                   </div>
+                   <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 100%;"><span>90%</span>
+                    </div>
+                </div>
+                </div>
+                <div class="imagebutton">
+                    <img class="feature-img" src="./image/courses-1.jpg" alt="kidsone">
+                    <div class="covering">
+                        <div class="btn-saf">Read More → </div>
+                    </div>
+                </div>
+              </div>
+            <div class="feature-center">
+                
+                <div class="causes-tag2">    
+                <small >Pure Water</small></div>
+                <h2 class="s-h2">Ensure Pure Drinking Water</h2>
+                <div class="p-24">
+                    <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                </div>
+                <div class="causes-progress">
+                    <div class="progress-text">
+                        <p class="text-one">
+                            $10,000<span>Goal</span>
+                        </p>
+                        <p class="text-two">
+                            $9,542<span>Raised</span>
+                        </p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 100%;"><span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagebutton">
+                    <img class="feature-img" src="./image/courses-2.jpg" alt="kidsone">
+                    <div class="covering">
+                        <div class="btn-saf">Read More → </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-right">
+                <div class="causes-tag3">
+                <small >healty life</small></div>
+                <h2 class="s-h2">Ensure Medical Treatment</h2>
+                <div class="p-24">
+                    <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                </div>
+                <div class="causes-progress">
+                    <div class="progress-text">
+                        <p class="text-one">
+                            $10,000<span>Goal</span>
+                        </p>
+                        <p class="text-two">
+                            $9,542<span>Raised</span>
+                        </p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 100%;"><span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagebutton">
+                    <img class="feature-img" src="./image/courses-3.jpg" alt="kidsone">
+                    <div class="covering">
+                        <div class="btn-saf">Read More → </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--What We Do-->
+    <section class="whatwedo animate__animated animate__fadeInUp" id="whatWeDo">
+        <div class="whatwedo-start">
+            <h4>What We Do</h4>
+            <h2 class="s-h2">Learn More What We Do And Get Involved</h2>
+        </div>
+        <div class="container-whatwedo">
+              <div class="whatwedo-left">
+                <img class="what-img" src="./image/icon-1.png" alt="whatone">
+                <h2 class="s-h2">Child Education</h2>
+               <div class="p-24">
+                <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+               </div>
+                <button class="btn-2">Learn More<i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            <div class="whatwedo-center">
+                <img class="what-img" src="./image/icon-2.png" alt="whattwo">
+                <h2 class="s-h2">Medical Treatment</h2>
+                <div class="p-24">
+                    <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                </div>
+                <button class="btn-2">Learn More<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="whatwedo-right">
+                <img class="what-img" src="./image/icon-3.png" alt="whattwo">
+                <h2 class="s-h2">Pure Drinking Water</h2>
+                <div class="p-24">
+                    <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                </div>
+                <button class="btn-2">Learn More<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>      
+    </section>
+    
+      <!--Donate Now-->
+     <section class="donatenow animate__animated animate__fadeInUp" id="donateNow">
+        <div class="donatebg">
+        <div class="container-donatenow">
+        <div class="donatenow-left">
+              <h4>Donate Now</h4>
+              <h2 class="s-h2">Thanks For The Results Achieved With You</h2>
+          <div class="p-24">
+              <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+          </div>
+        </div>
+         <div class="donatenow-right">
+            <form class="form-grant">
+                <input class="subscribe" type="text" id="name" placeholder="Your Name" />
+                
+                <input class="subscribe" type="email" id="email" placeholder="Your email" /><br />
+                
+                <button class="btn3">$10</button>
+                <button class="btn3">$20</button>
+                <button class="btn3">$30</button>
+                <button class="btn">Donate Now<i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+        </div>
+     </section>
+    <section class="team-members-section animate__animated animate__fadeInUp">
+            <div class="title">
+                <h4>Team Members</h4>
+                <h2>Let's Meet With Our Ordinary Soldiers</h2>
+            </div>
+            <div class="card-group">
+                <div class="card-1">
+                    <div class="cards-animation">
+                
+                    <img src="./image/team-1.jpg" alt="team 1 image">
+                    <h3>Full Name</h3>
+                    <h4>Designation</h4>
+                    <ul>
+                       <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li> 
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <div class="cards-animation">
+                        <img src="./image/team-2.jpg" alt="team 2 image">
+                        <h3>Full Name</h3>
+                        <h4>Designation</h4>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li> 
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="card-3">
+                    <div class="cards-animation">
+                
+                    <img src="./image/team-3.jpg" alt="team 3 image">
+                    <h3>Full Name</h3>
+                    <h4>Designation</h4>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li> 
+                         <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                     </ul>
+                </div>
+            </div>
+                <div class="card-4">
+                    <div class="cards-animation">
+               
+                    <img src="./image/team-4.jpg" alt="team 4 image">
+                    <h3>Full Name</h3>
+                    <h4>Designation</h4>
+                    <ul>
+                        <li><a href=""><i class="fa-brands  fa-facebook"></i></a></li>
+                         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li> 
+                         <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                     </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+    <section class="testimonial animate__animated animate__fadeInUp" id="testimonial">
+        <carousel>
+            <input type="radio" id="page1cb" checked name="pages" />
+            <input type="radio" id="page2cb" name="pages" />
+            <input type="radio" id="page3cb" name="pages" />
+            <!-- page 1 -->
+            <page id="page1">
+                <div class="card-3">
+                    <img src="./image/testimonial-1.jpg" alt="">
+                    <div class="card-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis ex est
+                            blanditiis voluptates veniam laboriosam accusamus beatae facilis sint provident, praesentium
+                            aspernatur facere. Consequatur inventore culpa vel voluptates laudantium!</p>
+                        <h5>Doner Name</h5>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <label for="page2cb" title="Start"><b>NEXT→</b></label>
+            </page>
+            <!-- page 2 -->
+            <page id="page2">
+                <div class="card-2">
+                    <img src="./image/testimonial-2.jpg" alt="">
+                    <div class="card-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis ex est
+                            blanditiis voluptates veniam laboriosam accusamus beatae facilis sint provident, praesentium
+                            aspernatur facere. Consequatur inventore culpa vel voluptates laudantium!</p>
+                        <h5>Doner Name</h5>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <label for="page3cb" title="Next"><b>NEXT→</b></label>
+            </page>
+            <!-- page 3 -->
+            <page id="page3">
+                <div class="card-3">
+                    <img src="./image/testimonial-3.jpg" alt="">
+                    <div class="card-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis ex est
+                            blanditiis voluptates veniam laboriosam accusamus beatae facilis sint provident, praesentium
+                            aspernatur facere. Consequatur inventore culpa vel voluptates laudantium!</p>
+                        <h5>Doner Name</h5>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <label for="page1cb" title="Next"><b>NEXT→</b></label>
+            </page>
+        </carousel>
+    </section>
+    <footer class="footer animate__animated animate__fadeInUp" id="footer">
+        <div class="footer-top">
+        <div class="box-1">
+            <h2><span class="h2">Chari</span>Team</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum id eum ipsa ratione quae deleniti a? Quaerat aut voluptatem saepe?</p>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li> 
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li> 
+            </ul>
+        </div>
+        <div class="box-2">
+            <h3>Address</h3>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i><span>123 Street, New York, USA</span></li>
+                <li><i class="fas fa-phone-alt"></i><span>+012 345 67890</span></li>
+                <li><i class="fa-solid fa-message"></i><span>info@example.com</span></li>
+            </ul>
+        </div>
+        <div class="box-3">
+            <h3>Quick Links </h3>
+            <ul>
+                <li>> <a href="#">About Us</a></li>
+                <li>> <a href="#">Contact Us</a></li>
+                <li>> <a href="#">Our Services</a></li>
+                <li>> <a href="#">Terms & Condition</a></li>
+                <li>> <a href="#">Support</a></li>
+            </ul>
+        </div>
+        <div class="box-4">
+            <h3>Newsletter</h3>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="footer-button">
+                <input type="text" value="Your email">
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <div class="box-5">
+            <p>© <a href="#">Your Site Name</a>, All Right Reserved.</p>
+            <p>Designed By <a href="">HTML Codex</a></p>
+        </div>
+    </div>
+    </footer>
+    <a class="upbuton" href="#home"><span>↑</span></a>
+    <script>
+        let navbar=document.getElementById("navbar");
+        
+         function menuToggle(){
+             if(navbar.style.display=="none"){
+                 navbar.style.display="flex";
+                   navbar.style.justifyContent="center";
+             }
+             else(navbar.style.display="none");
+
+             
+         }
+    </script>
+  </body>
+</html>
