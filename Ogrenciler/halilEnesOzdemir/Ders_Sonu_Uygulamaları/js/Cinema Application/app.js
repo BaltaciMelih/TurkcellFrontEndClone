@@ -68,6 +68,8 @@ const saveToLocalStorage = () => {
       });
 
       localStorage.setItem('selectedSeats' + moviesel.selectedIndex, JSON.stringify(indexofSelected));
+      numofmovieseat.innerText = 0;
+      movieseatfee.innerText = 0;
     }
   });
 };
