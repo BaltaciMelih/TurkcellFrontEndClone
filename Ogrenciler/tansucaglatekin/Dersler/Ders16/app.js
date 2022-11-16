@@ -1,6 +1,6 @@
-// let value;
+let value;
 
-// html içerisine eleman ekleme
+// // html içerisine eleman ekleme
 // const newButton = document.createElement("a");
 // value = document.getElementsByClassName("card-body")[1];
 
