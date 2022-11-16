@@ -30,7 +30,7 @@ function addTodo(e) {
     showAlert('danger', 'Lütfen boş bırakmayınız');
     setTimeout(() => {
       todoInput.style.border = '1px solid rgba(0,0,0,.125)';
-    }, 1500);
+    }, 2500);
   } else {
     addTodoUI(newTodo);
     addStorage(newTodo);
@@ -65,7 +65,11 @@ function addStorage(newTodo) {
 // Storage'den tüm todoları almak için kullanılır.
 function getStorage() {
   let todos;
-  localStorage.getItem('todos') !== null ? (todos = JSON.parse(localStorage.getItem('todos'))) : [];
+  if (localStorage.getItem('todos') === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem('todos'));
+  }
   return todos;
 }
 
@@ -84,12 +88,13 @@ function clearAll() {
   while (todoLists.firstChild !== null) {
     todoLists.removeChild(todoLists.firstChild);
   }
+  localStorage.removeItem('todos');
 }
 
 function filterTodos(e) {
   const filterValue = e.target.value.toLowerCase();
   const listItems = document.querySelectorAll('.list-group-item');
-  console.log(listItems);
+  // console.log(listItems);
   listItems.forEach(function (listItem) {
     const text = listItem.textContent.toLowerCase();
     if (text.indexOf(filterValue) === -1) {
