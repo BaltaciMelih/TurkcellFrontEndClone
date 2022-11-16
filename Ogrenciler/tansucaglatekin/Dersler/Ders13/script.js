@@ -49,6 +49,7 @@
 // var merhaba = function () {
 //   console.log("Merhaba");
 // };
+// merhaba();
 // console.log(merhaba);
 // console.log(typeof merhaba);
 
@@ -65,23 +66,23 @@
 // var a = 10; // function scope
 // let b = 20; // block scope
 // const c = 30; // block scope
-// // global scope
-// // deneme();
+// // // global scope
+// deneme();
 // {
 //   // block scope
 //   var d = "merhaba";
-//   // console.log("1- ", d);
-//   // var b = 40;
+//   console.log("1- ", d);
+// //   var b = 40;
 //   console.log("1- ", c + b);
 // }
 
-// // function deneme() { // functional scope
-// //   var b = 40;
-// //   console.log("1- ", c + b); // Okan 70-20, Batuhan 70-40
-// // }
+// function deneme() { // functional scope
+//   var b = 40;
+//   console.log("1- ", c + b); // Okan 70-20, Batuhan 70-40
+// }
 
 // console.log("2- ", b);
-// // console.log("2- ", d);
+// console.log("2- ", d);
 
 // {
 //   let a = 5;
@@ -132,14 +133,14 @@
 // // s = a / b; // Bölme Operatörü
 // // s = a % b; // MOD Operatörü
 
-// // s = Math.PI;
-// // s = Number(Math.PI.toFixed(4));
-// // s = Math.round(a / b);
-// // s = Math.ceil(a / b);
-// // s = Math.floor(a / b);
-// // s = Math.sqrt(16);
-// // s = Math.pow(4, 3);
-// // s = Math.floor(Math.random() * 80 + 20);
+// s = Math.PI;
+// s = Number(Math.PI.toFixed(4));
+// s = Math.round(a / b);
+// s = Math.ceil(a / b);
+// s = Math.floor(a / b);
+// s = Math.sqrt(16);
+// s = Math.pow(4, 3);
+// s = Math.floor(Math.random() * 80 + 20);
 // console.log(s);
 
 // String Metodları
@@ -209,12 +210,12 @@
 // // numbers.pop();
 // // numbers.shift();
 // // numbers[1] = 3;
-// // value = numbers.sort(function (x, y) {
-// //   return x - y;
-// // });
-// // value = numbers.sort(function (x, y) {
-// //   return y - x;
-// // });
+// value = numbers.sort(function (x, y) {
+//   return x - y;
+// });
+// value = numbers.sort(function (x, y) {
+//   return y - x;
+// });
 // console.log(value);
 
 // Obje Özellikleri
