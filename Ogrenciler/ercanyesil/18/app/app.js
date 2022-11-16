@@ -40,12 +40,17 @@ select.addEventListener('change', function(e){
 
 function calculateTotal(){
     const selectedKoltuklar = container.querySelectorAll('.koltuk.selected');
+    const reservedKoltuklar = container.querySelectorAll('.koltuk.reserved');
 
     const selectedKoltukArray =[];
+    const reservedKoltukArray =[];
     const koltuklarArray = [];
 
     selectedKoltuklar.forEach(function(koltuk){
         selectedKoltukArray.push(koltuk);
+    });
+    selectedKoltuklar.forEach(function(koltuk){
+        reservedKoltukArray.push(koltuk);
     });
 
     koltuklar.forEach(function(koltuk){
@@ -56,6 +61,9 @@ function calculateTotal(){
     let selectedKoltukIndexs = selectedKoltukArray.map(function(koltuk){
         return koltuklarArray.indexOf(koltuk);
     });
+    let reservedKoltukIndexs = reservedKoltukArray.map(function(koltuk){
+        return koltuklarArray.indexOf(koltuk);
+    });
 
     console.log(selectedKoltukIndexs);
 
@@ -64,15 +72,24 @@ function calculateTotal(){
     amount.innerText = selectedKoltukCount * select.value;  
     
     saveToLocalStroage(selectedKoltukIndexs);
+    saveToLocalStroage(reservedKoltukIndexs);
 }
 
 function getFromLocalStorage(){
     const selectedKoltuklar = JSON.parse(localStorage.getItem('selectedKoltuklar'));
+    const reservedKoltuklar = JSON.parse(localStorage.getItem('reservedKoltuklar'));
 
     if (selectedKoltuklar !=null && selectedKoltuklar.length > 0) {
         koltuklar.forEach(function(koltuk, index){
             if (selectedKoltuklar.indexOf(index) > -1) {
                 koltuk.classList.add('selected');
+            }
+        });
+    }
+    if (reservedKoltuklar !=null && reservedKoltuklar.length > 0) {
+        koltuklar.forEach(function(koltuk, index){
+            if (reservedKoltuklar.indexOf(index) > -1) {
+                koltuk.classList.add('reserved');
             }
         });
     }
@@ -88,6 +105,7 @@ function getFromLocalStorage(){
 
 function saveToLocalStroage(indexs){
     localStorage.setItem('selectedKoltuklar', JSON.stringify(indexs));
+    localStorage.setItem('reservedKoltuklar', JSON.stringify(indexs));
     localStorage.setItem('selectedMovieIndex', select.selectedIndex);
 }
 
