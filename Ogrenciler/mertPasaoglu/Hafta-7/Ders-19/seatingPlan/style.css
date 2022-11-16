@@ -124,7 +124,7 @@ body {
   font-size: 50px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-bottom: 10px solid red;
+  border-bottom: 10px solid rgb(251, 49, 49);
 }
 
 .koltuk.selected {
@@ -170,6 +170,10 @@ body {
   margin: 15px 0;
   transform: rotateX(-48deg);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  margin-bottom: 120px;
+}
+img {
+  width: 450px;
 }
 
 .movie-list {
