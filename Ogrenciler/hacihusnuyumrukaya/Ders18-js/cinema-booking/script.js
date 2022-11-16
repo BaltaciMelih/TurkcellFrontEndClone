@@ -8,6 +8,7 @@ const paybutton=document.getElementById('pay-btn');
 let SelectedCount=0;
 getFromLocalStorage();
 Total();
+
 //Eventler
 eventListeners();
 function eventListeners() {
@@ -25,14 +26,25 @@ function selected(e){
      Total();
    }
 }
+const refreshCinema = () => {
+    document.querySelectorAll('.container .selected').forEach(function (seat) {
+      seat.classList.remove('selected');
+    });
+    document.querySelectorAll('.container .reserved').forEach(function (seat) {
+      seat.classList.remove('reserved');
+    });
+
+  };
 
 select.addEventListener('change', function(e){
+    refreshCinema();
+    getFromLocalStorage();
     Total();
 });
 
 function Total(){
     const selectedSeats=containers.querySelectorAll(".seat.selected");
-    const selectedSeats2=containers.querySelectorAll(".seat.reserved");
+    const selectedSeats2=containers.querySelectorAll(".seat.reserved")
     const selectedSeatsArr=[];
     const seatsArr=[];
     selectedSeats.forEach(function(seat){
@@ -58,7 +70,7 @@ function Total(){
 }
 
 function getFromLocalStorage(){
-    const selectedSeats2=JSON.parse(localStorage.getItem('reservedSeats'));
+    const selectedSeats2=JSON.parse(localStorage.getItem('reservedSeats'+ select.selectedIndex ));
     if(selectedSeats2!=null && selectedSeats2.length>0){
         seats.forEach(function(seat, index){
             if(selectedSeats2.indexOf(index)>-1)
@@ -74,15 +86,15 @@ function getFromLocalStorage(){
 }
 
 function saveLocalStorage(indexs){
-    sessionStorage.setItem('selectedSeats',JSON.stringify(indexs));
-    sessionStorage.setItem('selectedMovieIndex',select.selectedIndex);
+    sessionStorage.setItem('selectedSeats'+ select.selectedIndex,JSON.stringify(indexs));
+    sessionStorage.setItem('selectedMovieIndex'+ select.selectedIndex,select.selectedIndex);
 }
 
 function payButtons(){
-    let ıtems = JSON.parse(sessionStorage.getItem("selectedSeats"));
-    localStorage.setItem('reservedSeats',JSON.stringify(ıtems));
-    localStorage.setItem('reservedMovieIndex',select.selectedIndex);
-    const selectedSeats=JSON.parse(sessionStorage.getItem('selectedSeats'));
+    let ıtems = JSON.parse(sessionStorage.getItem("selectedSeats"+ select.selectedIndex));
+    localStorage.setItem('reservedSeats'+ select.selectedIndex,JSON.stringify(ıtems));
+    localStorage.setItem('reservedMovieIndex'+ select.selectedIndex,select.selectedIndex);
+    const selectedSeats=JSON.parse(sessionStorage.getItem('selectedSeats'+ select.selectedIndex));
     // const selectedMovieIndex=localStorage.getItem('selectedMovieIndex');
     if(selectedSeats!=null && selectedSeats.length>0){
         seats.forEach(function(seat, index){
