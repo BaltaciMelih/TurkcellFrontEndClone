@@ -58,7 +58,6 @@ h2 {
 .seat::before {
   content: "";
   width: 6px;
-  height: 4px;
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -68,7 +67,6 @@ h2 {
 .seat::after {
   content: "";
   width: 6px;
-  height: 4px;
   position: absolute;
   bottom: -3px;
   right: 0;
