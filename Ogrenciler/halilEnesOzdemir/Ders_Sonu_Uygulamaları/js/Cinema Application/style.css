@@ -84,3 +84,15 @@ body {
 p.text span {
   color: #f7e62f;
 }
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.moviescene button {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(59, 56, 56, 0.822);
+}
