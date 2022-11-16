@@ -1,6 +1,7 @@
 body{
     background-image:url(perde.png);
     background-color: rgb(36, 33, 33);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,9 +27,10 @@ body{
     text-align:center;
     font-size: 12px;
     height: 25px;
-    width: 25px;
-    margin:5px;
-    border-radius: 5px;
+    width: 28px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 5px;
 }
 
 .movieseat.selected{
@@ -75,7 +77,7 @@ body{
     margin: 0;
     outline: 0;
     padding: 12px 20px;
-    transition: all .1s linear;
+    transition: all 0.1s linear;
 }
 .rezervbutton:active {
     box-shadow: 0 2px 0 #006599;
@@ -83,4 +85,15 @@ body{
 }
 p.text span{
     color: #f7e62f;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.moviescene button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(59, 56, 56, 0.822);
 }
