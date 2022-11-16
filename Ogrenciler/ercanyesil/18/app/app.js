@@ -113,7 +113,7 @@ const rezerve = () => {
     koltuklar.forEach(koltuk => {
         if (koltuk.classList.contains('selected')) {
             koltuk.classList.add('reserved')
-            koltuk.classList.remove('selected')
+            
         }
     });
     
