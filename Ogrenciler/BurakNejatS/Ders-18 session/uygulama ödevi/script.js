@@ -48,13 +48,14 @@ updateSelectedCount();
       let reservedSeats = document.querySelectorAll('container .seat.occupied');
       const sumofSeats = [...selectedSeats, ...reservedSeats];
       const sumofArray = [...seats];
-
+ 
       let secilenKoltuklar = sumofSeats.forEach(function(i){
         return sumofArray.indexOf(i);
+
       });
     }
     localStorage.setItem('selectedSeats' +  movieSelect.selectedIndex, JSON.stringify(secilenKoltuklar));
-  });
+  }); 
   // localStorage.setItem("koltuklar", JSON.stringify(updateSelectedCount())); 
   // const sampleSeats = JSON.parse(localStorage.getItem("koltuklar"));
 
