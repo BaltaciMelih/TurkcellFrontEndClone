@@ -44,7 +44,7 @@ h2 {
   position: relative;
   background-color: rgb(219, 219, 219);
 }
-.seat {
+.seat ,.seat2{
   background-color: rgba(68, 1, 1, 0.89);
   height: 19px;
   width: 18px;

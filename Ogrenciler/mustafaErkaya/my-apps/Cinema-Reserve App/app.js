@@ -3,12 +3,13 @@ const count = document.getElementById("count"); // Seçilen koltuklar
 const amount = document.getElementById("amount"); // ücretler
 const select = document.getElementById("movie");
 const seats = document.querySelectorAll(".seat:not(.reserved)");
-
+const seatstwo = document.querySelectorAll(".seat");
 
 // localStorage için ilk başa localS ve hesaplamayı çağırdık.
 getFromLocalStorage();
 calculateTotal();
 
+seatstwo.
 container.addEventListener("click", function(e){
     if (e.target.classList.contains('seat') && !e.target.classList.contains('reserved')) {  /* seat clasına sahip olup olmadığını soruyoruz */
           /* ve reserved clasına sahip olmayanları seçiyoruz */
