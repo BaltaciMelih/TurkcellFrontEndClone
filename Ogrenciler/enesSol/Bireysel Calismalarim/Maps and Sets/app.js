@@ -46,3 +46,67 @@
 // console.log(mySet[2]); returns undefined
 
 // The biggest advantage of using sets is that we can store distinct elements in sets and then create arrays based on those sets.
+
+// *** MAPS ***
+// Maps store Key & Value pairs.
+
+// const myMap = new Map([
+//   ["name", "Enes"],
+//   ["surname", "Sol"],
+// ]);
+
+// console.log(myMap);
+
+// Javascript objects only store 1 key object. If we add another key, they remember the last ones. This is why we use Maps!
+// const myObject = {};
+
+// const a = {};
+// const b = {};
+
+// myObject[a] = "a";
+// myObject[b] = "b";
+
+// console.log(myObject);
+
+// const myMap = new Map([
+//   [a, "a"],
+//   [b, "b"],
+// ]);
+// console.log(myMap);
+
+// Advantages of using Map
+// const myMap = new Map([
+//   [{}, "a"],
+//   [{}, "b"],
+// ]);
+
+// Set
+
+// myMap.set("{}", "c");
+
+// console.log(myMap);
+
+// Delete
+// const myMap = new Map([[1, 1]]);
+// myMap.delete(1);
+
+// Clear
+// const myMap = new Map([
+//   [1, "one"],
+//   [2, "two"],
+// ]);
+// myMap.clear();
+
+// Has
+// const myMap = new Map([
+//   [1, "one"],
+//   [2, "two"],
+// ]);
+
+// console.log(myMap.has(1)); returns true
+// console.log(myMap.has(3)); returns false
+// console.log(myMap.has("one")); returns false because it looks for keys
+// console.log(myMap.has("1")); returns false
+
+// Size
+// console.log(myMap.size);
