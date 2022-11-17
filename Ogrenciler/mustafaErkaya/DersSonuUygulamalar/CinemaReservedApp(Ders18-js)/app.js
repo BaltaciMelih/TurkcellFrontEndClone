@@ -10,16 +10,34 @@ getFromLocalStorage();
 calculateTotal();
 
 // buton ile reserved yapma
+//butona click yaptığımda önceki reservli olanlar gidiyor bunu düzeltelim
+
 button.addEventListener("click", function(e){
     const chair = container.querySelectorAll(".seat.selected");
-    const reservedSeatArr = [1,2];
     
+    
+    const reservedSeatsArr = [];
+    const seatsArr = [];
+    
+    chair.forEach(function(seat){
+        reservedSeatsArr.push(seat);
+    });
+    // console.log(selectedSeatsArr);
+    seats.forEach(function(seat){
+        seatsArr.push(seat);
+    });
+    // console.log(seats);
+
+    let reservedSeatIndexs = reservedSeatsArr.map(function(seat) {
+        return seatsArr.indexOf(seat);
+    });
     console.log(chair);
     chair.forEach((e) => {
         e.classList.add("reserved");
 
-        saveToLocalStorage(e);
+       
     })
+    saveToLocalStorage(reservedSeatIndexs);
 
     
 
@@ -102,12 +120,12 @@ function calculateTotal() {
 
 
 function getFromLocalStorage() {
-    const selectedSeats = JSON.parse(localStorage.getItem('reservedSeats'));
+    const reservedSeats = JSON.parse(localStorage.getItem('reservedSeats'));
 
-    if(selectedSeats !=null && selectedSeats.length > 0) {
+    if(reservedSeats !=null && reservedSeats.length > 0) {
         seats.forEach(function(seat, index) {
-            if (selectedSeats.indexOf(index) > -1) {
-                seat.classList.add('selected');
+            if (reservedSeats.indexOf(index) > -1) {
+                seat.classList.add('reserved');  // artık reserved olanları çekiyoruz debeg ile bak !!!!
             }
         });
     }
