@@ -4,8 +4,8 @@ const REZERV_KOLTUKLAR_KEY = "rezerveKoltuklar";
 const SATIN_ALINAN_KOLTUKLAR_KEY = "satinAlinanKoltuklar";
 let bilgiDiv = document.querySelector(".bilgi");
 let ucretDiv = document.querySelector(".toplamUcret");
-
 const BILET_UCRETI = 25;
+let filmSecimi = document.querySelector("#filmSecimi");
 
 eventListeners();
 function eventListeners() {
@@ -18,8 +18,13 @@ function eventListeners() {
     "DOMContentLoaded",
     getSatinAlinanKoltuklarFromStorage
   );
-  document.addEventListener("DOMContentLoaded", satinAlinanKoltuklar);
-  document.addEventListener("DOMContentLoaded", rezerveEdilenKoltuklar);
+  filmSecimi.addEventListener("change", filmSecimiFonks);
+  filmSecimi.addEventListener("change", satinAlinanKoltuklar);
+  document.addEventListener("change", rezerveEdilenKoltuklar);
+}
+
+function filmSecimiFonks() {
+  localStorage.setItem("film", filmSecimi.value);
 }
 
 function bilgiYazdirma() {
@@ -42,8 +47,11 @@ function bilgiSildirme() {
 }
 
 function satinAl() {
+  let film = localStorage.getItem("film");
+  let keyAdi = "satinAlinanKoltuklar" + film;
+
   let rezerveEdilenKoltuklar = getRezerveKoltuklarFromStorage();
-  let satinAlinanKoltuklarDizisi = getSatinAlinanKoltuklarFromStorage();
+  let satinAlinanKoltuklarDizisi = getSatinAlinanKoltuklarFromStorage(keyAdi);
 
   rezerveEdilenKoltuklar.forEach((element) => {
     satinAlinanKoltuklarDizisi.push(element);
@@ -91,36 +99,44 @@ function setRezervKoltuklar(rezervKoltuklar) {
 }
 
 function setSatınAlınanKoltuklar(satınAlınanKoltuklar) {
-  localStorage.setItem(
-    SATIN_ALINAN_KOLTUKLAR_KEY,
-    JSON.stringify(satınAlınanKoltuklar)
-  );
+  let film = localStorage.getItem("film");
+  let keyAdi = "satinAlinanKoltuklar" + film;
+  localStorage.setItem(keyAdi, JSON.stringify(satınAlınanKoltuklar));
 }
 
 function satinAlinanKoltuklar() {
-  const satinAlinanKoltuklar = getSatinAlinanKoltuklarFromStorage();
+  let film = localStorage.getItem("film");
+  let keyAdi = "satinAlinanKoltuklar" + film;
+
+  const satinAlinanKoltuklar = getSatinAlinanKoltuklarFromStorage(keyAdi);
+  console.log(satinAlinanKoltuklar);
   setSatınAlınanKoltuklar(satinAlinanKoltuklar);
-  koltukNumaralari.forEach((element) => {
-    satinAlinanKoltuklar.forEach((element2) => {
-      if (element.value === element2) {
-        element.className += " bg-info border-0 disabled";
+  butunKoltuklarBos();
+  satinAlinanKoltuklar.forEach((element) => {
+    koltukNumaralari.forEach((element2) => {
+      if (element2.value === element) {
+        element2.className += " bg-info border-0 disabled";
       }
     });
   });
+
   bilgiYazdirma();
   bilgiSildirme();
 }
 
-function getSatinAlinanKoltuklarFromStorage() {
-  let satinAlinanKoltuklar;
-  if (localStorage.getItem("satinAlinanKoltuklar") === null) {
-    satinAlinanKoltuklar = [];
+function butunKoltuklarBos() {
+  koltukNumaralari.forEach((element) => {
+    element.classList.remove("bg-info", "border-0", "disabled");
+  });
+}
+
+function getSatinAlinanKoltuklarFromStorage(key) {
+  if (localStorage.getItem(key) === null) {
+    key = [];
   } else {
-    satinAlinanKoltuklar = JSON.parse(
-      localStorage.getItem("satinAlinanKoltuklar")
-    );
+    key = JSON.parse(localStorage.getItem(key));
   }
-  return satinAlinanKoltuklar;
+  return key;
 }
 
 function rezerveEdilenKoltuklar() {
