@@ -226,7 +226,7 @@ console.log(elis.fullName()); */
 
 // Prototypal Inheritance
 
-const person = {
+/* const person = {
   name: 'xxxxxx',
   surname: 'yyyyyyy',
   age: 0,
@@ -250,3 +250,207 @@ console.log(arin.hasOwnProperty('age'));
 console.log(arin.hasOwnProperty('surname')); // false --->Protoype'ında
 
 console.log('surname' in arin); // Prototype'da olsun olmasın true döner...
+ */
+// ---------------- OBJECT PART 3 ---------------
+
+//1 -> Shorthand Properties
+
+// let name = 'arin',
+//   age = 5;
+
+// ESKİ USÜL
+/* const myObj = {
+  name: name,
+  age: age,
+}; */
+
+// YENİ USÜL -> Key ve value ikilisi aynıysa tekini ver yeter paşam :)
+
+// const myObj = {
+//   name,
+//   age,
+// };
+
+// console.log(myObj);
+
+//2 -> Computed Property Names
+
+// ESKİ USÜL
+
+/* let prop1 = 'name';
+
+let myObj = {};
+
+myObj[prop1] = 'arin';
+console.log(myObj); */
+
+// YENİ USÜL
+
+// let prop1 = 'name';
+
+// BOŞ NESNE OLUŞTURMAYA GEREK KALMADI..., kütüphanelerde bu özellik çok sık kullanılır.
+
+// let myObj = {
+//   [prop1]: 'arin',
+// };
+
+// console.log(myObj);
+
+//3 -> Short Method Syntax
+/* 
+const person = {
+  name: 'John',
+  surname: 'Doe',
+  age: 40,
+  fullName: function () {
+    return this.name + ' ' + this.surname;
+  },
+}; */
+
+// const person = {
+//   name: 'John',
+//   surname: 'Doe',
+//   age: 40,
+//   fullName() {
+//     return this.name + ' ' + this.surname;
+//   },
+// };
+
+//  İki nokta ve Function ifadesinden kurtulup biraz daha  kısa yazabiliyoruz.
+
+//4 ---------------------- OBJECT DESTRUCTURING ------------------
+
+/* const person = {
+  name: 'John',
+  surname: 'Doe',
+  age: 40,
+  fullName() {
+    return this.name + ' ' + this.surname;
+  },
+}; */
+
+/* let myVar1 = person.name;
+console.log(myVar1);
+
+let myVar2 = person.age;
+console.log(myVar2); */
+
+// let { name: myVar1, age: myVar2 } = person;
+// console.log(myVar1, myVar2);
+
+// let { name: name, age: age } = person;
+// console.log(name, age);
+
+// let { name, age } = person;
+// console.log(name, age);
+
+/* const books = [
+  {
+    title: 'Kırmızı Pazartesi',
+    author: 'Haruki Murakami',
+    pageNum: 296,
+    imageURL: 'https://i.idefix.com/cache/600x600-0/originals/0000000064101-1.jpg',
+    topic:
+      '1968-1970 yılları arasında geçen olaylar, o günün toplumsal gerçeklerini de satırlara taşıyor. Ama romanın odağında bu toplumsal olaylar değil üçlü bir aşk var. Gençliğin rüzgârıyla hareketlenen İmkânsızın Şarkısını ölümle erken karşılaşan gençlerin hayatı yönlendiriyor. Hiçbir şeyin önem taşımadığı, amaçsızlığın ağır bastığı, özgür seksin kol gezdiği bir öğrenci hayatı... Ama diğer yanda da yoğun duygular var... İmkânsız aşklar, imkânsız şarkılar söyleten. Hemen hemen her Japon gencinin okuduğu roman anayurdu dışında da çok kişi tarafından sahipleniliyor.',
+  },
+  {
+    title: 'Şeker Portakalı',
+    author: 'Jose Muro de Vasconselos',
+    pageNum: 200,
+    imageURL: 'https://i.idefix.com/cache/600x600-0/originals/0000000064031-1.jpg',
+    topic:
+      'İrlandalı yazar Bram Stoker’ın, iki taraf arasındaki bu irade ve güç çatışmasını işlediği ve korku edebiyatının başyapıtlarından biri sayılan Dracula, yayımlanmasının üzerinden yüz yılı aşkın süre geçmesine karşın, bugün de aynı ilgiyle okunuyor.',
+  },
+  {
+    title: 'En Uzun Yüzyıl',
+    author: 'İlber Ortaylı',
+    pageNum: 296,
+    imageURL: 'https://i.idefix.com/cache/600x600-0/originals/0001744876001-1.jpg',
+    topic:
+      '1968-1970 yılları arasında geçen olaylar, o günün toplumsal gerçeklerini de satırlara taşıyor. Ama romanın odağında bu toplumsal olaylar değil üçlü bir aşk var. Gençliğin rüzgârıyla hareketlenen İmkânsızın Şarkısını ölümle erken karşılaşan gençlerin hayatı yönlendiriyor. Hiçbir şeyin önem taşımadığı, amaçsızlığın ağır bastığı, özgür seksin kol gezdiği bir öğrenci hayatı... Ama diğer yanda da yoğun duygular var... İmkânsız aşklar, imkânsız şarkılar söyleten. Hemen hemen her Japon gencinin okuduğu roman anayurdu dışında da çok kişi tarafından sahipleniliyor.',
+  },
+  {
+    title: 'Dracula',
+    author: 'Bram Stoker',
+    pageNum: 200,
+    imageURL: 'https://i.idefix.com/cache/600x600-0/originals/0001828853001-1.jpg',
+    topic:
+      'İrlandalı yazar Bram Stoker’ın, iki taraf arasındaki bu irade ve güç çatışmasını işlediği ve korku edebiyatının başyapıtlarından biri sayılan Dracula, yayımlanmasının üzerinden yüz yılı aşkın süre geçmesine karşın, bugün de aynı ilgiyle okunuyor.',
+  },
+  {
+    title: 'Karamazov Kardeşler',
+    author: 'Fyodor Mihayloviç Dostoyevski',
+    pageNum: 200,
+    imageURL: 'https://i.idefix.com/cache/600x600-0/originals/0001803800001-1.jpg',
+    topic:
+      'İrlandalı yazar Bram Stoker’ın, iki taraf arasındaki bu irade ve güç çatışmasını işlediği ve korku edebiyatının başyapıtlarından biri sayılan Dracula, yayımlanmasının üzerinden yüz yılı aşkın süre geçmesine karşın, bugün de aynı ilgiyle okunuyor.',
+  },
+  {
+    title: 'Sultanın Korsanları',
+    author: 'Emrah Safa Gürcan',
+    pageNum: 296,
+    imageURL: 'https://i.idefix.com/cache/600x600-0/originals/0001780787001-1.jpg',
+    topic:
+      '1968-1970 yılları arasında geçen olaylar, o günün toplumsal gerçeklerini de satırlara taşıyor. Ama romanın odağında bu toplumsal olaylar değil üçlü bir aşk var. Gençliğin rüzgârıyla hareketlenen İmkânsızın Şarkısını ölümle erken karşılaşan gençlerin hayatı yönlendiriyor. Hiçbir şeyin önem taşımadığı, amaçsızlığın ağır bastığı, özgür seksin kol gezdiği bir öğrenci hayatı... Ama diğer yanda da yoğun duygular var... İmkânsız aşklar, imkânsız şarkılar söyleten. Hemen hemen her Japon gencinin okuduğu roman anayurdu dışında da çok kişi tarafından sahipleniliyor.',
+  },
+]; */
+
+// for (const { title, author, pageNum } of books) {
+//   console.log(title + ': ' + author + ' ' + pageNum);
+// }
+
+//  ------------------- SPREAD OPERATOR (Object Literals) -------------
+
+/* const person = {
+  name: 'John',
+  surname: 'Doe',
+  age: 40,
+  fullName() {
+    return this.name + ' ' + this.surname;
+  },
+};
+
+let person2 = { ...person };
+console.log(person2); */
+
+/* myObj1 = {
+  name: 'Arin',
+  age: 6,
+};
+
+myObj2 = {
+  job: 'Student',
+  gender: 'female',
+};
+
+const arin = { ...myObj1, ...myObj2, school: 'Zehra Baysal' };
+console.log(arin); */
+
+//  ------------------- REST OPERATOR (Object Literals) -------------
+
+/* const person = {
+  name: 'John',
+  surname: 'Doe',
+  age: 40,
+  fullName() {
+    return this.name + ' ' + this.surname;
+  },
+};
+
+const { name, surname, ...rest } = person;
+console.log(rest); */
+
+//  ------------------- OBJECT VALUES-OBJECT ENTRIES -------------
+
+/* const person = {
+  name: 'John',
+  surname: 'Doe',
+  age: 40,
+  fullName() {
+    return this.name + ' ' + this.surname;
+  },
+};
+
+console.log(Object.keys(person));
+console.log(Object.values(person));
+console.log(Object.entries(person)); */
