@@ -5,7 +5,7 @@ const key1="Hacı";
 const key2={a:10, b:20};
 const key3= () => 5;
 
-//set değer ekleme
+//Map set değer ekleme
 denemeMap.set(key1,"İlk değer"); //mapta değer ekleme
 denemeMap.set(key2,"İkinci değer");
 denemeMap.set(key3,"Üçüncü değer");
@@ -28,12 +28,15 @@ denemeMap.set(key3,"Üçüncü değer");
 //      i++;
 //  }
 
+//Map ForEach
   denemeMap.forEach(function(value,key){     //anahtar ve değerleri döndürür bütün mapteki
      console.log(key,value);
    });
 
+//Map Has true-false
 // console.log(denemeMap.has("Hacı"));  //değerin olup olmadığının kontrolü
 
+//Map Keys  anahtarları verir.
 // console.log(denemeMap.keys());
 
 // let metin = "";
@@ -42,7 +45,7 @@ denemeMap.set(key3,"Üçüncü değer");
 // }
 // console.log(metin);
 
-//Values
+//Map Values
 // console.log(denemeMap.values());
 
 // let total=0 ;
@@ -83,19 +86,23 @@ denemeMap.set(key3,"Üçüncü değer");
 
 
 //Set-Kümeler ----------------------------------
-//  const mySet=new Set();
-//  mySet.add(50);
+//  const mySet=new Set(); //set oluşturma
+//  mySet.add(50); //değer ekleme
 //  mySet.add(2.23);
 //  mySet.add("Deneme");
 //  mySet.add(false);
 //  mySet.add([1,2,3]);
 //  mySet.add({a:1,b:2});
 
+//Set içine bir dizi oluşturup ekleme
  const arr=[1,2,7,4,3,2,1];
 const mySet=new Set(arr); //yeni set ekledik içine arr dizisini attık.
 //   console.log([...mySet[2]]);   //set içindeki veriye tek tek ulaşım sağlayamadım******
+//Set Add
 mySet.add(6); //set e eleman ekledim.
+//Set Delete
 // mySet.delete(3); // setten eleman silme
+//Set Has
 //console.log(mySet.has(4));  //değerin olup olmadığı kontrolü
 
 //For-Each
@@ -109,10 +116,10 @@ mySet.add(6); //set e eleman ekledim.
 //  }
 
 
-
+//Set Clear
 // mySet.clear();  //set in içini sildi
 
-//Entries
+//Set -Entries
 //  console.log(mySet.entries());  // value-value
 // let metin = "";
 //  for (const deger of mySet) {
@@ -121,9 +128,9 @@ mySet.add(6); //set e eleman ekledim.
 //  console.log(metin);
 //  document.getElementById("deneme0").innerHTML = metin;
 
-//Values
+//Set -Values
 // console.log(mySet.values()); //değerleri verir.
-//Keys
+//Set-Keys
 // console.log(mySet.keys());   //tüm değerlerini verir yine
 
 
@@ -141,3 +148,15 @@ mySet.add(6); //set e eleman ekledim.
 // const C=new Set(a.filter(num => B.has(num)));
 // console.log(C);
 
+//  const a=[1,2,3,4,5]; //Dizilerde fark
+//  const b=[2,3,4,5,6];
+
+//  const B=new Set(b);
+//  const C=new Set(a.filter(num => !B.has(num)));
+//  console.log(C);
+
+// const a=[1,2,3,4,5]; //Dizilerde birleşim
+// const b=[2,3,4,5,6];
+
+// const B=new Set([...a,...b]);
+// console.log(B);
