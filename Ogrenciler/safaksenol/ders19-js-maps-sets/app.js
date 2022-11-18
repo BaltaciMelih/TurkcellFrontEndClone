@@ -68,7 +68,6 @@ const mySet = new Set(arr);
 //     console.log(val);
 // }); // konsolda for oftaki çıktının aynısını aldık!
 
-
 //ÖDEV KISMI
 
 //1-Map içindeki (clear,delete,entries,has,keys,set,size,values) fonksiyonları nedir ve nasıl kullanılır?
@@ -90,9 +89,9 @@ const mySet = new Set(arr);
 
 //örnek uygulama
 let recipeMap = new Map([
-  ['cucumber', 500],
-  ['tomatoes', 350],
-  ['onion',    50]
+  ["cucumber", 500],
+  ["tomatoes", 350],
+  ["onion", 50],
 ]);
 // for (let vegetable of recipeMap.keys()) {
 //     console.log(vegetable);
@@ -109,22 +108,21 @@ let recipeMap = new Map([
 // });
 
 let prices = Object.fromEntries([
-  ['banana', 1],
-  ['orange', 2],
-  ['meat', 4]
+  ["banana", 1],
+  ["orange", 2],
+  ["meat", 4],
 ]);
 
 // console.log(prices.orange); // orange değeri olan 2 çıktısını alırız.
 
-
 let map = new Map();
 
-map.set('name', 'safak');
+map.set("name", "safak");
 
 let keys = [...map.keys()];
-keys.push('more');
+keys.push("more");
 
-console.log(keys);//bu şekilde bir ekleme yöntemide kullanabiliriz.
+console.log(keys); //bu şekilde bir ekleme yöntemide kullanabiliriz.
 
 //2-Set içindeki (clear,delete,entries,has,keys,set,size,values) fonksiyonları nedir ve nasıl kullanılır?
 
@@ -168,9 +166,3 @@ let set = new Set(["oranges", "apples", "bananas"]);
 // Element sayısını veren size özelliği vardır.
 
 //her zaman ekleme sırasına göre sıralanır, bu nedenle bu koleksiyonların sırasız olduğunu söyleyemeyiz, ancak öğeleri yeniden sıralayamayız veya bir öğeyi numarasına göre doğrudan alamayız.
-
-
-
-
-
-
