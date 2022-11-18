@@ -26,7 +26,7 @@ ul = document.querySelector(".list-group");
 
 // DOM Eventleri
 
-//const filterInput = document.getElementById("filter");
+const filterInput = document.getElementById("filter");
 
 /* filterInput.onfocus = function () {
   console.log("Focus olduk");
@@ -91,8 +91,8 @@ function clearTodosFunc() {
 
 //console.log(clearTodos);
 
-/* filterInput.addEventListener("keyup", filterTodo);
-function filterTodo(e) {
+filterInput.addEventListener("keyup", filterTodos);
+/* function filterTodo(e) {
   console.log(e.target.value);
 } */
 
@@ -119,3 +119,26 @@ console.log(listItem.previousElementSibling); */
 // Seçtiğim bir elementin
 
 //console.log(listItem);
+
+function filterTodos(e) {
+  const filterValue = e.target.value.toLowerCase();
+  const listItem = document.querySelectorAll(".list-group-item");
+  listItem.forEach(function (listItem) {
+    const text = listItem.textContent.toLocaleLowerCase();
+    if (text.indexOf(filterValue) === -1) {
+      listItem.appendChild(message);
+      console.log(listItem);
+    } else {
+      listItem.setAttribute("style", "display:block; background-color: red;");
+    }
+  });
+}
+
+function Alert(e) {
+  const message = document.createElement("div");
+  e.message.classList.add("alert", "alert-danger", "alert-success");
+  console.log(message);
+  //return message;
+}
+
+Alert();
