@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
-const seats = document.querySelectorAll(".row .seat:not(.occupied)");
+const seatsSuitable = document.querySelectorAll(".row .seat:not(.occupied)");
+const seats = document.querySelectorAll('.row .seat');
 const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movies");
@@ -10,118 +11,83 @@ let ticketPrice = movieSelect.value;
 
 
 function updateSelectedCount() {
-const selectedSeats= document.querySelectorAll(".row .seat.selected");
-selectedSeatsCount = selectedSeats.length;
-count.innerText=selectedSeatsCount;
-return selectedSeatsCount;
+  const selectedSeats = document.querySelectorAll(".row .seat.selected");
+  selectedSeatsCount = selectedSeats.length;
+  count.innerText = selectedSeatsCount;
+  return selectedSeatsCount;
 }
 
-// function updateColors () {
-// const selectedColors = document.querySelectorAll(".row .seat.selected");
-// selectedColors = colorSeats.style.background = "#fff";
-// return selectedColors;
-// }
-
-function updateTotalPrice(){
-    const totalPrice = document.querySelectorAll(".row .seat.selected");
-    totalPriceCount = totalPrice.length;
-    total.innerText= updateSelectedCount() * ticketPrice;
-    return totalPriceCount;
+function updateTotalPrice() {
+  const totalPrice = document.querySelectorAll(".row .seat.selected");
+  totalPriceCount = totalPrice.length;
+  total.innerText = updateSelectedCount() * ticketPrice;
+  return totalPriceCount;
 }
 
 
-container.addEventListener("click", e => {
-if (e.target.classList.contains("seat") &&
-!e.target.classList.contains("occupied")) {
-e.target.classList.toggle("selected");
-}
-savelocalStorage();
-updateTotalPrice();
-updateSelectedCount();
+container.addEventListener('click', e => {
+  if (e.target.classList.contains('seat') && !e.target.classList.contains("occupied")) {
+    e.target.classList.toggle('selected');
+  }
+  savelocalStorage();
+  updateTotalPrice();
+  // updateSelectedCount();
 });
 
-
- function savelocalStorage(){
-  document.addEventListener('click', function (e){
-    if (e.target.id === "rezerveEt"){
-      let selectedSeats = document.querySelectorAll('container .seat.selected');
-      let reservedSeats = document.querySelectorAll('container .seat.occupied');
-      const sumofSeats = [...selectedSeats, ...reservedSeats];
+let selectedSeats1;
+function savelocalStorage() {
+  let reservedSeats;
+  let secilenKoltuklar = [];
+  rezerve.addEventListener('click', function (e) {
+    if (e.target.id == 'rezerveEt') {
+      selectedSeats1 = document.querySelectorAll('.row .seat.selected');
+      reservedSeats = document.querySelectorAll('.row .seat.occupied');
+      const sumofSeats = [...selectedSeats1, ...reservedSeats];
       const sumofArray = [...seats];
+      sumofSeats.map(function (item, index) {
+        secilenKoltuklar.push(sumofArray.indexOf(item));
 
-      let secilenKoltuklar = sumofSeats.forEach(function(i){
-        return sumofArray.indexOf(i);
       });
+      console.log(secilenKoltuklar);
+      localStorage.setItem('selectedSeats1', JSON.stringify(secilenKoltuklar));
     }
-    localStorage.setItem('selectedSeats' +  movieSelect.selectedIndex, JSON.stringify(secilenKoltuklar));
   });
-  // localStorage.setItem("koltuklar", JSON.stringify(updateSelectedCount())); 
-  // const sampleSeats = JSON.parse(localStorage.getItem("koltuklar"));
+  count.innerText = 0;
+  total.innerText = 0;
+}
 
-  // localStorage.setItem("renkler", JSON.stringify(updateColors()));
-  // const sampleColors= JSON.parse(localStorage.getItem("renkler"));
-  // console.log(sampleSeats);
- }
- 
- function getSeatsCountFromStorage(){
- let savedSeats;
- if (localStorage.getItem("savedSeats") === null) {
-    savedSeats = [];
+function getSeatsFromStorage() {
+  selectedSeats1 = JSON.parse(localStorage.getItem("selectedSeats1"));
+  console.log(selectedSeats1.indexOf(155));
+  
+  if (localStorage.getItem("selectedSeats1") === null) {
+    selectedSeats1 = [];
   } else {
-    savedSeats = JSON.parse(localStorage.getItem("savedSeats"));
-  }
-  return savedSeats;
- }
-
- function getSeatsColorFromStorage(){
-  let savedColor;
-  const selectedSeats= document.querySelectorAll(".row .seat.selected");
-  if (localStorage.getItem("savedColor") === null) {
-    savedColor = [];
-  } else {
-    savedColor = JSON.parse(localStorage.getItem("savedColor"));
-    seats.forEach(function(seat,index){
-      if(selectedSeats.indexOf(index)>0){
+    seats.forEach(function (seat, index) {
+      if(selectedSeats1.indexOf(index)>-1){
         seat.classList.add('occupied');
       }
+      
     });
   }
-  
- }
- function addSeatsToStorage(newSeats){
-    let savedSeats = getSeatsCountFromStorage();
-    savedSeats.push(newSeats);
-    localStorage.setItem("savedSeats", JSON.stringify(savedSeats));
- }
+}
+getSeatsFromStorage();
 
- function addSeatsColorToStorage(newColor){
-  let savedColor = getSeatsColorFromStorage();
-  savedColor.push(newColor);
-  localStorage.setItem("savedColor", JSON.stringify(savedColor));
- }
+//  function addSeatsToStorage(newSeats){
+//     let selectedSeats1 = getSeatsCountFromStorage();
+//     selectedSeats1.push(newSeats);
+//     console.log(selectedSeats1);
+//     localStorage.setItem("selectedSeats1", JSON.stringify(selectedSeats1));
+//  }
 
- function loadAllSeatsToUI(){
-  let savedSeats = getSeatsCountFromStorage();
-    savedSeats.forEach(function (savedSeat) {
+function loadAllSeatsToUI() {
+  let savedSeats = getSeatsFromStorage();
+  savedSeats.forEach(function (savedSeat) {
     addTodoToUI(savedSeat);
   });
-  let savedColor =getSeatsColorFromStorage();
-   savedColor.forEach(function (savedColor){
-    addTodoToUI(savedColor);
-   });
- }
+}
 
- rezerve.addEventListener("click", function(event) {
-    const newSeats = updateSelectedCount();
-    addSeatsToStorage(newSeats);
-    
-    const newColor = updateColors();
-    addSeatsColorToStorage(newColor);
- });
-
-
-secimSil.addEventListener("click",(e) => {
-    localStorage.removeItem("savedSeats");
-    localStorage.removeItem("selectedSeats1");
+secimSil.addEventListener("click", (e) => {
+  localStorage.removeItem("selectedSeats10");
 });
- 
+
