@@ -1,4 +1,4 @@
-const selection = document.querySelector(".container"); //en dış kapsayıcının seçilip click işleminin yönetilmesi.
+const selection = document.querySelector(".container2"); //en dış kapsayıcının seçilip click işleminin yönetilmesi.
 const number = document.getElementById("number"); // bilet sayısı
 const price = document.getElementById("price"); // bilet fiyatı
 const movieselection = document.getElementById("movies");
@@ -35,9 +35,7 @@ function totalprice(){ // ücret için oluşturulan fonksyion
             return seatsArr.indexOf(seat);
         });
         
-        let selectedchairnumber =  selectedSeats.length; //seçilen koltukların array uzunluğu
-        number.innerText = selectedchairnumber; // x adet koltuk sayısı için.
-        price.innerText = selectedchairnumber * movieselection.value; // x fiyat
+        localStorage.setItem("selectedSeats"+ movieselection.selectedIndex, JSON.stringify(selectedIndex)); // objeler ile çekilebilir.
 
         saveToLocalStorage(selectedindex); //seçilen koltukların localstorage'a kaydedilmesi.
 }
@@ -59,17 +57,15 @@ function getFromLocalStorage(){ //localstorage'dan yükleme işlemi
     if (selectedSeats != null && selectedSeats.length > 0){
         seats.forEach(function(seat, index){
             if (selectedSeats.indexOf(index) > -1 ){
-                seat.classList.add("selected");
-            }
+                seat.classList.add("booked"); 
+                            }
         });
     }
-
-    if (selectedMovieindex != null){
-
-        movieselection.selectedIndex = selectedMovieindex;
-    }
-
 }
+
+
+// javascript ile dropdown
+
 
 
 

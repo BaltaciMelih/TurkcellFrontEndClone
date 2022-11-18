@@ -1,0 +1,86 @@
+body {
+  background-image: url(perde.png);
+  background-color: rgb(36, 33, 33);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+.row {
+  display: flex;
+}
+.moviescene {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  margin: 30px 0;
+  box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.8);
+}
+.movieseat {
+  background-color: #444451;
+  color: rgb(19, 195, 226);
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.movieseat.selected {
+  background-color: #f7e62f;
+}
+.movieseat.reserved {
+  background-color: white;
+}
+.movieseat:not(.reserved):hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.movieseat:nth-of-type(2) {
+  margin-right: 20px;
+}
+.movieseat:nth-last-of-type(4) {
+  margin-right: 20px;
+}
+.moviesellist {
+  margin: 20px 0;
+}
+.ticketinfo {
+  background-color: rgba(170, 97, 97, 0.8);
+  color: white;
+  display: flex;
+  padding: 5px 10px;
+}
+.ticketinfo li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.rezervbutton {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all 0.1s linear;
+}
+.rezervbutton:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+p.text span {
+  color: #f7e62f;
+}
