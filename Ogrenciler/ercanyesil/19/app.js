@@ -47,7 +47,7 @@ const arr = [1, 2, 7, 4, 3, 2, 1];
 
 const mySet = new Set(arr);
 
-// console.log(mySet);
+ console.log(mySet);
 // console.log(typeof mySet);
 // console.log(mySet.has(5));
 
