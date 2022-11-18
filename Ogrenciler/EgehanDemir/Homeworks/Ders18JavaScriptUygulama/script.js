@@ -44,7 +44,7 @@ function savelocalStorage() {
       reservedSeats = document.querySelectorAll('.row .seat.occupied');
       const sumofSeats = [...selectedSeats1, ...reservedSeats];
       const sumofArray = [...seats];
-      sumofSeats.map(function (item, index) {
+      sumofSeats.map(function (item) {
         secilenKoltuklar.push(sumofArray.indexOf(item));
 
       });
@@ -88,6 +88,6 @@ function loadAllSeatsToUI() {
 }
 
 secimSil.addEventListener("click", (e) => {
-  localStorage.removeItem("selectedSeats10");
+  localStorage.removeItem("selectedSeats1");
 });
 
