@@ -155,7 +155,11 @@ h2 {
   position: relative;
   top: 32px;
 }
+<<<<<<< HEAD
 #pay-btn {
+=======
+.pay-btn {
+>>>>>>> parent of d7ab2fa... Revert "Merge branch 'main' of https://github.com/waroi/TurkcellFrontEnd"
   width: 130px;
   height: 37px;
   background-color: rgba(255, 206, 177, 0.623);
@@ -165,7 +169,11 @@ h2 {
   bottom: 0;
   right: 0;
 }
+<<<<<<< HEAD
 #pay-btn:hover {
+=======
+.pay-btn:hover {
+>>>>>>> parent of d7ab2fa... Revert "Merge branch 'main' of https://github.com/waroi/TurkcellFrontEnd"
   transform: scale(1.1);
   background-color: #fafbfc;
 }
