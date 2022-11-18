@@ -1,8 +1,8 @@
 {
-  "name": "uygulama_sinema",
+  "name": "ders_18_uygulama",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "sass": "node-sass -w sass -o css"
   },
@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.2",
-    "bootstrap-icons": "^1.10.2",
     "node-sass": "^8.0.0"
   }
 }

@@ -6,7 +6,6 @@ const clearButton = document.getElementById("clear-todos");
 const firstCardBody = document.querySelectorAll(".card-body")[0];
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const filter = document.getElementById("filter");
-console.log(firstCardBody);
 
 // Eventler
 eventListeners();
@@ -24,13 +23,17 @@ function addTodo(e) {
     showAlert("danger", "Lütfen bir todo giriniz.");
   } else {
     addTodoToUI(newTodo);
+    newlocalStorage (newTodo);
     showAlert("success", "Todo başarılı bir şekilde eklendi.");
   }
   e.preventDefault();
+ 
+  
 }
 
 // Todo Ekleme (UI Tarafını Oluşturma)
 function addTodoToUI(newTodo) {
+  // newlocalStorage (newTodo);
   const listItem = document.createElement("li");
   const link = document.createElement("a");
   link.href = "#";
@@ -41,7 +44,33 @@ function addTodoToUI(newTodo) {
   listItem.appendChild(link);
   todoList.appendChild(listItem);
   todoInput.value = "";
+  // localStorage.setItem ("todo",JSON.stringify(newTodo));
+  // const sample = JSON.parse(localStorage.getItem("todo"));
+  // console.log(sample);
 }
+
+function newlocalStorage (newTodo){
+let sample;
+if (localStorage.getItem("sample") != null ) {
+  localStorage.setItem ("newTodo",JSON.stringify(newTodo));
+  sample.push(newTodo) ;
+  
+} else {
+  sample = [""];
+  localStorage.setItem ("newTodo",JSON.stringify(newTodo));
+  sample.push(newTodo) ;
+  
+}
+
+console.log(sample);};
+
+// function newlocalStorage (newTodo){const random= JSON.parse(localStorage.getItem("newTodo"))  
+// };
+
+
+
+
+
 
 // ütün todoları silme
 function clearAllTodos() {
@@ -93,3 +122,20 @@ function showAlert(type, message) {
     alert.remove();
   }, 2000);
 }
+// localStorage.setItem("Key" ,"İçerik");
+
+// const value = localStorage.getItem ("Key");
+
+// console.log(value);
+
+// localStorage.clear();
+
+// const todoSample = ["Todo 1","Todo 2","Todo 3","Todo 4"];
+
+// localStorage.setItem("todolar", JSON.stringify(todoSample));
+
+// const sampleTodo = JSON.parse(localStorage.getItem(todolar));
+
+// console.log(sampleTodos);
+
+
