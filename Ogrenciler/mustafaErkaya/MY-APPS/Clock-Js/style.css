@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    text-align: center;
+    font-size: 10px;
+}
+
+body{
+    font-size: 2rem;
+    background-image: linear-gradient(to right top, #051237, #00497e, #008499, #00be75, #a8eb12);
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+
+.clock{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 15px solid #fff;
+    
+    margin: 0 auto;
+    box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px #ccc,
+    inset 0 0 8px rgb(23, 22, 22),
+    0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.clock-circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+
+.hand{
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;  
+    /* absolute ile 3 div de aynı hizada */
+    top: 50%;
+    transform-origin: 100%;
+}
