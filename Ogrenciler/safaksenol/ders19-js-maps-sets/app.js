@@ -111,7 +111,7 @@ let recipeMap = new Map([
 let prices = Object.fromEntries([
   ['banana', 1],
   ['orange', 2],
-  ['meat', 4]
+  ['meat', 45]
 ]);
 
 // console.log(prices.orange); // orange değeri olan 2 çıktısını alırız.
