@@ -46,7 +46,7 @@ console.log(elis.friends); // BİZ BUNU İSTEMİYORUZ... ['Ela', 'Rüzgar', 'Ç�
 // Görünüm klasik ve daha kolay bir hale geliyor...
 
 // CLASS DECLARATION
-class Person {
+/* class Person {
   constructor(name, surname, age) {
     this.name = name;
     this.surname = surname;
@@ -57,7 +57,7 @@ class Person {
   fullName() {
     return this.name + ' ' + this.surname;
   }
-}
+} */
 
 // CLASS EXPRESSION
 // const Person = class {
@@ -73,7 +73,7 @@ class Person {
 //   }
 // };
 
-const arin = new Person('Arin', 'Cekic', 5);
+/* const arin = new Person('Arin', 'Cekic', 5);
 const elis = new Person('Elis', 'Cekic', 3);
 
 console.log(arin);
@@ -88,4 +88,24 @@ arin.friends.push('Çınar');
 console.log(arin.friends);
 console.log(elis.friends);
 
-console.log(typeof Person); // JS CLASSLARI ÖZEL BİR JAVASCRİPT FONKSİYONLARIDIR...
+console.log(typeof Person); // JS CLASSLARI ÖZEL BİR JAVASCRİPT FONKSİYONLARIDIR... */
+
+// -----------------------CLASS PART II -----------------------
+
+class Person {
+  constructor(name, surname, age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+    this.friends = ['Ela', 'Rüzgar'];
+  }
+
+  fullName() {
+    return this.name + ' ' + this.surname;
+  }
+}
+
+console.log(typeof Person);
+
+const arin = new Person('Arin', 'Cekic', 5);
+console.log(arin);
