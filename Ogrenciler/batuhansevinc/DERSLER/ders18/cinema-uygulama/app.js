@@ -7,8 +7,7 @@ function seatFunction(e){
     }
 }
 function addEventListener(){
-    container.addEventListener("click",seatFunction(e));
+    container.addEventListener("click",seatFunction);
 }
 
-function getFromLocalStorage(){
-}
+container.addEventListener("click",seatFunction)
