@@ -16,6 +16,7 @@ function eventListeners() {
   secondCardBody.addEventListener("click", deleteTodo);
   filter.addEventListener("keyup", filterTodos);
   document.addEventListener("DOMContentLoaded", loadAllTodosToUI);
+  document.addEventListener("DOMContentLoaded", deleteTodoFromStorage);
 }
 
 // Todo Ekleme
@@ -63,6 +64,7 @@ function deleteTodo(e) {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
   }
+  deleteTodoFromStorage();
 }
 
 // Filtreleme
@@ -138,3 +140,10 @@ function loadAllTodosToUI() {
   });
 }
 // tek tek silme tarafı ödev
+function deleteTodoFromStorage() {
+  let todos = getTodosFromStorage();
+  //if(todos.)
+  todos.forEach(function (e) {
+    deleteTodo(e.target.value);
+  });
+}
