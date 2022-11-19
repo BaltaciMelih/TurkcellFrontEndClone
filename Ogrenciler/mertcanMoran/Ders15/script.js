@@ -35,4 +35,4 @@ value.forEach(function (e) {
   e.style.background = "#ce0";
   e.style.color = "#000";
 });
-console.log(value);
+//console.log(value);

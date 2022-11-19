@@ -14,7 +14,7 @@ console.log(map1);
 
 map1.set('a', 97);
 
-console.log(map1.get('a'));
+console.log(map1.get('a')); 
 // expected output: 97
 
 console.log(map1.size);

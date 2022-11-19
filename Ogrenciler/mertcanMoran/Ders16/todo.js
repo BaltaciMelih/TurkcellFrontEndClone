@@ -19,6 +19,7 @@ function eventListeners() {
 // Todo Ekleme
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
+
   if (newTodo === "") {
     showAlert("danger", "Lütfen bir todo giriniz.");
   } else {
@@ -37,9 +38,12 @@ function addTodoToUI(newTodo) {
   link.innerHTML = "<i class='fa fa-remove'></i>";
   listItem.className = "list-group-item d-flex justify-content-between";
   listItem.appendChild(document.createTextNode(newTodo));
+
   listItem.appendChild(link);
   todoList.appendChild(listItem);
   todoInput.value = "";
+
+  //localStorage.GetItem("todolar",newTodo);
 }
 
 // ütün todoları silme
@@ -92,3 +96,26 @@ function showAlert(type, message) {
     alert.remove();
   }, 2000);
 }
+
+/* localStorage.setItem("Deneme", "Deneme İçerik");
+const x = localStorage.getItem("Deneme");
+console.log(x); */
+
+const todoSample = ["todo1"];
+
+function setItem() {
+  //const todoInput = document.getElementById("todo");
+  //const newTodo = todoInput.value.trim();
+  const newitem = ["todo1", "todo2", "todo3"];
+
+  localStorage.setItem("todolar", newitem);
+}
+setItem();
+
+function getItem() {
+  let todolarr = localStorage.getItem(JSON.stringify("todolar"));
+  let todom = JSON.parse(todolarr);
+  console.log(todolarr);
+  addTodoToUI(todolarr[0]);
+}
+getItem();

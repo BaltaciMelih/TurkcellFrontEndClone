@@ -4,9 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cinema App</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <div class="movieList">
+      <select name="movie" id="movie">
+        <option value="10">Film 1</option>
+        <option value="20">Film 2</option>
+        <option value="30">Film 3</option>
+      </select>
+    </div>
+
+    <ul class="infoSeat">
+      <li>
+        <div class="seat selecteds"></div>
+        <span>Seçili</span>
+      </li>
+      <li>
+        <div class="seat"></div>
+        <span>Boş</span>
+      </li>
+      <li>
+        <div class="seat solds"></div>
+        <span>Dolu</span>
+      </li>
+    </ul>
+
+    <p>
+      <span id="counter">1</span>Adet Koltuk İçin Hesaplanan Ödeme
+      <span id="payment">20</span>TL
+    </p>
+
+    <button type="submit" id="payButton">Satın Al</button>
+
     <script src="app.js"></script>
   </body>
 </html>

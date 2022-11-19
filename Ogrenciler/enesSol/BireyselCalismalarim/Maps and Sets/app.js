@@ -1,11 +1,11 @@
 // *** SETS ***
 
-// const arr = [1, 2, 2, 5, 3, 4, 5];
+const arr = [1, 2, 2, 5, 3, 4, 5];
 // const arr = [1, 2, 3, 4, 5];
-// const mySet = new Set(arr);
+const mySet = new Set(arr);
 
-// console.log(arr);
-// console.log(mySet);
+console.log(arr);
+console.log(mySet);
 
 // JS sets are used to remove duplicates from an array.
 
