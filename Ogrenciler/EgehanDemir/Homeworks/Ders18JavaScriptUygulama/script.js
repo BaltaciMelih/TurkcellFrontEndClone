@@ -44,7 +44,7 @@ function savelocalStorage() {
       reservedSeats = document.querySelectorAll('.row .seat.occupied');
       const sumofSeats = [...selectedSeats1, ...reservedSeats];
       const sumofArray = [...seats];
-     sumofSeats.map(function (item) {
+      sumofSeats.map(function (item) {
         secilenKoltuklar.push(sumofArray.indexOf(item));
       });
       console.log(secilenKoltuklar);
@@ -62,10 +62,10 @@ function getSeatsFromStorage() {
     selectedSeats1 = [];
   } else {
     seats.forEach(function (seat, index) {
-      if(selectedSeats1.indexOf(index) == true){
+      if (selectedSeats1.indexOf(index) > -1) {
         seat.classList.add('occupied');
       }
-      
+
     });
   }
 }
