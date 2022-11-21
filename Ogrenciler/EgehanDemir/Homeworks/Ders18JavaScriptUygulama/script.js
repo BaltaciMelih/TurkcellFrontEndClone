@@ -46,7 +46,6 @@ function savelocalStorage() {
       const sumofArray = [...seats];
       sumofSeats.map(function (item) {
         secilenKoltuklar.push(sumofArray.indexOf(item));
-
       });
       console.log(secilenKoltuklar);
       localStorage.setItem('selectedSeats1', JSON.stringify(secilenKoltuklar));
@@ -59,33 +58,26 @@ function savelocalStorage() {
 function getSeatsFromStorage() {
   selectedSeats1 = JSON.parse(localStorage.getItem("selectedSeats1"));
   console.log(selectedSeats1.indexOf(155));
-  
   if (localStorage.getItem("selectedSeats1") === null) {
     selectedSeats1 = [];
   } else {
     seats.forEach(function (seat, index) {
-      if(selectedSeats1.indexOf(index)>-1){
+      if (selectedSeats1.indexOf(index) > -1) {
         seat.classList.add('occupied');
       }
-      
+
     });
   }
 }
+
 getSeatsFromStorage();
 
-//  function addSeatsToStorage(newSeats){
-//     let selectedSeats1 = getSeatsCountFromStorage();
-//     selectedSeats1.push(newSeats);
-//     console.log(selectedSeats1);
-//     localStorage.setItem("selectedSeats1", JSON.stringify(selectedSeats1));
-//  }
-
-function loadAllSeatsToUI() {
-  let savedSeats = getSeatsFromStorage();
-  savedSeats.forEach(function (savedSeat) {
-    addTodoToUI(savedSeat);
-  });
-}
+// function loadAllSeatsToUI() {
+//   let savedSeats = getSeatsFromStorage();
+//   savedSeats.forEach(function (savedSeat) {
+//     addTodoToUI(savedSeat);
+//   });
+// }
 
 secimSil.addEventListener("click", (e) => {
   localStorage.removeItem("selectedSeats1");
