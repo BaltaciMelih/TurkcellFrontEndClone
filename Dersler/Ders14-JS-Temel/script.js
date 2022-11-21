@@ -134,7 +134,12 @@
 // console.log(kare(3));
 
 // Arrow Function
-// const kare = (x) => x * x;
+
+// const kare = (x) => {
+//   return x * x;
+// };
+
+// const kare = x => x * x;
 // console.log(kare(3));
 
 // Loops - Döngüler

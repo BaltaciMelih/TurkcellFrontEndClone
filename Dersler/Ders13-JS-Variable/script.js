@@ -208,7 +208,11 @@
 // // value = numbers.includes(23);
 // // numbers.pop();
 // // numbers.shift();
-// // numbers[1] = 3;
+// numbers[1] = 3;
+// console.log(numbers);
+// let a = ["deneme", "bir", "üç", "beş"];
+// a.sort();
+// console.log(a);
 // // value = numbers.sort(function (x, y) {
 // //   return x - y;
 // // });
