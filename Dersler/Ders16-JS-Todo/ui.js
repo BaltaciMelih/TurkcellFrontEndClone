@@ -23,3 +23,9 @@ UI.prototype.displayMessage = function (message, type) {
     div.remove();
   }, 2000);
 };
+
+let a = setInterval(function () {
+  console.log("Deneme");
+}, 2000);
+
+console.log(typeof a);
