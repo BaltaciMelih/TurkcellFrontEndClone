@@ -19,6 +19,6 @@
 // }
 // console.log(cube(4)+1)
 
-const cube = (x) => x * x * x;
+const cube = (x) => (x % 2 == 0 ? x * x * x : null);
 
-console.log(cube(3));
+console.log(cube(4));

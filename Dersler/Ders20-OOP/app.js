@@ -57,13 +57,13 @@ function Person() {
   this.salary = 5000;
 }
 
-Object.prototype.showInfo = function () {
-  console.log(`
-    İsim: ${this.name}
-    Yaş: ${this.age}
-    Maaş: ${this.salary}
-    `);
-};
+// Object.prototype.showInfo = function () {
+//   console.log(`
+//     İsim: ${this.name}
+//     Yaş: ${this.age}
+//     Maaş: ${this.salary}
+//     `);
+// };
 
 Person.prototype = Object.create(Employee.prototype);
 
@@ -85,7 +85,7 @@ const person2 = new Employee("Bilgehan", 20, 10000);
 console.log(person1);
 // console.log(person2);
 // console.log(person3);
-console.log(person4);
+// console.log(person4);
 
 person4.toString();
 
