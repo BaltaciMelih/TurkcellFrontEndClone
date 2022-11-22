@@ -1,29 +1,7 @@
-function UI() {}
+function UI() {
+  // this.sinem;
+}
 
-UI.prototype.addTodoToUI = function (newtodo) {
-  const todoList = document.getElementById("todo-list");
-  console.log(todoList);
-  todoList.innerHTML += `
-  <li>
-    <p>${newtodo}</p>
-  </li>
-  `;
-};
-
-UI.prototype.clearInput = function (e) {
-  e.value = "";
-};
-
-UI.prototype.displayMessage = function (message, type) {
-  const cardBody = document.querySelector(".card-body");
-  const div = document.createElement("div");
-  div.className = `alert alert-${type}`;
-  div.textContent = message;
-  cardBody.appendChild(div);
-  setTimeout(function () {
-    div.remove();
-  }, 2000);
-};
 
 UI.prototype.clearAllTodos = function(){
   if (confirm("Emin misiniz?")) {
@@ -33,6 +11,21 @@ UI.prototype.clearAllTodos = function(){
     ui.displayMessage("Silme işlemi başarılı", "success");
   }
 }
+
+
+
+UI.prototype.displayMessage = function (message, type) {
+  const cardBody = document.querySelector(".card-body");
+  const div = document.createElement("div");
+  div.className = `alert alert-${type}`;
+  div.textContent = message;
+  cardBody.prepend(div);
+  setTimeout(function () {
+    div.remove();
+  }, 2000);
+};
+
+
 
 UI.prototype.add = function(e){
   e.preventDefault();
@@ -44,8 +37,22 @@ UI.prototype.add = function(e){
   else{
     // ui.addTodoToUI(newtodo);
     // ui.displayMessage("basarılı giriş", "success");
-    this.addTodoToUI(newtodo);
-    this.displayMessage("basarılı", "success");
+    ui.addTodoToUI(newtodo);
+    ui.displayMessage("basarılı", "success");
   }
   
 } 
+
+UI.prototype.clearInput = function (e) {
+  e.value = "";
+};
+
+UI.prototype.addTodoToUI = function (newtodo) {
+  const todoList = document.getElementById("todo-list");
+  console.log(todoList);
+  todoList.innerHTML += `
+  <li>
+    <p>${newtodo}</p>
+  </li>
+  `;
+};
