@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Archive</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card row">
+        <div class="card-header bg-primary">
+          <h1 class="text-white text-center">Film Arşivi</h1>
+        </div>
+        <div class="card-body">
+          <form id="form" name="form">
+            <div class="form-row">
+              <div class="form-group col-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="film-name"
+                  id="film-name"
+                  placeholder="Eklemek İstediğiniz Film ismi"
+                />
+              </div>
+              <div class="form-group col-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="film-director"
+                  id="film-director"
+                  placeholder="Filmin Yönetmeni"
+                />
+              </div>
+              <div class="form-group col-12">
+                <input
+                  type="date"
+                  class="form-control"
+                  name="film-date"
+                  id="film-date"
+                  placeholder="Vizyon Tarihi"
+                />
+              </div>
+              <div class="form-group col-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="film-url"
+                  id="film-url"
+                  placeholder="Filmin Görseli"
+                />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success mb-3">
+              Filmi Arşive Ekle
+            </button>
+          </form>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" id="archive-header">Filmler</h3>
+          <table class="table bg-secondary">
+            <thead>
+              <tr>
+                <th>Film Görseli</th>
+                <th>Film Adı</th>
+                <th>Yönetmen</th>
+                <th>Vizyon Tarihi</th>
+              </tr>
+            </thead>
+            <tbody id="archive"></tbody>
+          </table>
+          <a href="#" class="btn btn-danger" id="clear-archive"
+            >Arşivin Tamamını Sil</a
+          >
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+    <script src="films.js"></script>
+    <script src="project.js"></script>
+  </body>
+</html>
