@@ -12,7 +12,7 @@
     />
     <title>Movie Library</title>
   </head>
-  <body>
+  <body onload="setFilms()">
     <div
       class="container-fluid d-flex flex-column align-items-center justify-content-center"
     >
@@ -37,19 +37,21 @@
         </div>
         <div class="from-element d-flex flex-column mx-2">
           <label for="">Yıl</label>
-          <input id="filmYear" type="text" />
+          <input id="filmYear" type="date" />
         </div>
         <div class="from-element d-flex flex-column mx-2">
           <label for="">Film Afiş</label>
           <input id="filmBanner" type="text" />
         </div>
-        <button class="btn btn-primary m-2">Listeme Ekle</button>
-        <button class="btn btn-outline-dark m-2">Listemden Kaldır</button>
+        <button class="btn btn-primary m-2" id="saveEl">Listeme Ekle</button>
+        <button class="btn btn-outline-dark m-2" id="clear">
+          Listemden Kaldır
+        </button>
       </div>
       <div class="table-container w-75 p-1">
-        <table class="table">
+        <table class="table table-hover table-striped">
           <thead>
-            <tr>
+            <tr class="">
               <th scope="col">Film Afişi</th>
               <th scope="col">Film Adı</th>
               <th scope="col">Yönetmen</th>
@@ -60,7 +62,7 @@
         </table>
       </div>
     </div>
-
+    <script src="uı.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
