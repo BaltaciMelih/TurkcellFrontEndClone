@@ -72,3 +72,34 @@ function clearAllMovies(e) {
   }
   e.preventDefault();
 }
+
+firstTimeStart();
+function firstTimeStart() {
+  if (localStorage.getItem('firstStart') === null) {
+    storage.addMovieToStorage(
+      new Movie(
+        'Sherlock',
+        'Michael Hurst',
+        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg',
+        '2010-07-25'
+      )
+    );
+    storage.addMovieToStorage(
+      new Movie(
+        'Back to the Future',
+        'Robert Zemeckis',
+        'https://tr.web.img4.acsta.net/pictures/bzp/01/448.jpg',
+        '1985-07-03'
+      )
+    );
+    storage.addMovieToStorage(
+      new Movie(
+        'Interstellar',
+        'Christopher Nolan',
+        'https://i.pinimg.com/originals/11/1c/5c/111c5c9ad99661af2d80e38948cf29d8.jpg',
+        '2014-11-07'
+      )
+    );
+  }
+  localStorage.setItem('firstStart', 'firstStart');
+}

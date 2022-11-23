@@ -1,6 +1,8 @@
 // Elemanları Seçme
 const form = document.getElementById("todo-form");
+const detailsInput = document.getElementById("details");
 const todoInput = document.getElementById("todo");
+const movieInput = document.getElementById("movie-image");
 const todoList = document.querySelector(".list-group");
 const clearButton = document.getElementById("clear-todos");
 const firstCardBody = document.querySelectorAll(".card-body")[0];
@@ -20,28 +22,41 @@ function eventListeners() {
 // Todo Ekleme
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
-  if (newTodo === "") {
+  const newDetails = detailsInput.value.trim();
+  const movieUrl = movieInput.value.trim();
+  if ((newTodo, newDetails, movieUrl === "")) {
     showAlert("danger", "Lütfen bir todo giriniz.");
   } else {
-    addTodoToUI(newTodo);
-    addTodoToStorage(newTodo);
+    addTodoToUI(newTodo, newDetails, movieUrl);
+    addTodoToStorage(newTodo, newDetails, movieUrl);
     showAlert("success", "Todo başarılı bir şekilde eklendi.");
   }
   e.preventDefault();
 }
 
 // Todo Ekleme (UI Tarafını Oluşturma)
-function addTodoToUI(newTodo) {
+function addTodoToUI(newTodo, newDetails, movieUrl) {
   const listItem = document.createElement("li");
   const link = document.createElement("a");
+  const moviediv = document.createElement("div");
+  moviediv.className = "card";
+
   link.href = "#";
   link.className = "delete-item";
   link.innerHTML = "<i class='fa fa-remove'></i>";
+  moviediv.innerHTML = `  <img style="width = 100px; height = 100px" src="${movieUrl}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${newTodo}</h5>
+    <p class="card-text">${newDetails}</a>
+  </div>`;
   listItem.className = "list-group-item d-flex justify-content-between";
-  listItem.appendChild(document.createTextNode(newTodo));
+  // listItem.appendChild(document.createElement(newTodo));
+  listItem.appendChild(moviediv);
   listItem.appendChild(link);
   todoList.appendChild(listItem);
   todoInput.value = "";
+  detailsInput.value = "";
+  movieInput.value = "";
 }
 
 // Bütün todoları silme
@@ -62,7 +77,7 @@ function deleteTodo(e) {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
   }
-  deleteItemFromLS(e.target.parentElement.parentElement.textContent);
+  deleteItemFromLS(e.target.parentElement.parentElement);
 }
 
 // Filtreleme
@@ -125,9 +140,9 @@ function getTodosFromStorage() {
 }
 
 // Local Storage'a veri gönderme - Önce storage'daki verileri alıp sonra üzerine ekleme yapıp tekrar gönderdik.
-function addTodoToStorage(newTodo) {
+function addTodoToStorage(newTodo, newDetails, movieUrl) {
   let todos = getTodosFromStorage();
-  todos.push(newTodo);
+  todos.push(newTodo, newDetails, movieUrl);
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
@@ -139,10 +154,10 @@ function loadAllTodosToUI() {
 }
 
 // Tek tek silme tarafı ödev
-function deleteItemFromLS(text) {
+function deleteItemFromLS() {
   let todos = getTodosFromStorage();
   todos.forEach(function (todo, index) {
-    if (todo === text) {
+    if (todo === todo) {
       todos.splice(index, 1);
     }
   });

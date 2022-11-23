@@ -14,3 +14,9 @@ function clearAllTodos() {
     ui.displayMessage("Silme işlemi başarılı", "success");
   }
 }
+
+function filterTodos() {
+  if (confirm("Emin misiniz?")) {
+    ui.filter("Silme işlemi başarılı", "success");
+  }
+}

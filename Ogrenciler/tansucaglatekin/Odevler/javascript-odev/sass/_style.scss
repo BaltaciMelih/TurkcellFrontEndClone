@@ -1,0 +1,17 @@
+body {
+    background-color: $body;
+}
+.h {
+    max-height: 250px;
+}
+.date-color {
+    color: rgba(53, 65, 54, 0.788);
+}
+ul li:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container {
+    border: 5px 0;
+    border-style: none dashed;
+    border-color: $secondary;
+}

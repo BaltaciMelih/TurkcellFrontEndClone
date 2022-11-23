@@ -31,6 +31,7 @@ LStorage.prototype.deleteMovieFromStorage = function (movieName) {
 
 LStorage.prototype.clearAllMoviesFromStorage = function () {
   localStorage.removeItem('movies');
+  localStorage.removeItem('firstStart');
 };
 
 LStorage.prototype.editMovieStorage = function (oldValue, newValue) {
