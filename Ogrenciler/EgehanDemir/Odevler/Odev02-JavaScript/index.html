@@ -6,57 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JavaScriptFilmKutuphanesi</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
+
     <div class="section">
-        <div class="container-fluid mt-5">
-            <div class="row mt-4">
-                <div class="col-6 col-md-3 d-flex flex-column justify-content-around align-items-end">
-                    <p class="fw-semibold">Film Adı: </p>
-                    <p class="fw-semibold">Yonetmen: </p>
-                    <p class="fw-semibold">Cekildigi Tarih: </p>               
-                </div>
-                <div class="col-6 col-md-9">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="name">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="director">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="date">
-                    </div>
-                </div>
+        <div class="container-fluid">
+            <div class="row">
+                <h4 class="fst-italic bg-dark text-white d-flex justify-content-center">Film Kütüphanemize Hoşgeldiniz
+                    !!!</h4>
             </div>
+            <form id="movieAdd-Form">
+                <div class="row">
+                    <div class="col-6 col-md-3 d-flex flex-column justify-content-around align-items-end">
+                        <p class="fw-semibold text-bg-danger">Film Adı: </p>
+                        <p class="fw-semibold text-bg-danger">Yonetmen: </p>
+                        <p class="fw-semibold text-bg-danger">Cekildigi Tarih: </p>
+                        <p class="fw-semibold text-bg-danger">URL: </p>
+                    </div>
+                    <div class="col-6 col-md-9" id="small-form">
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="name" id="name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="director" id="director">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="date" id="date">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="bg-url" id="bg-url">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-6 col-md-12 d-flex justify-content-center">
+                        <button class="btn btn-primary" id="addMovie">Ekle</button>
+                    </div>
+                </div>
+            </form>
             <div class="row mb-4">
                 <div class="col-6 col-md-12 d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary">Ekle</button>
-                    <button type="button" class="btn btn-danger">Sil</button>
+                    <button class="btn btn-danger" id="deleteMovie">Sil</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-12 d-flex justify-content-center">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 d-flex justify-content-center">
+                        <div id="movie-list">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div id="dummy1" class="card mb-2" onClick="setSelectedItem('dummy1')" style="width: 18rem;">
+                                        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lord Of The Rings</h5>
+                                            <p>Peter Jackson</p>
+                                            <p class="card-text">21/12/2001</p>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div id="dummy2" class="card mb-2" onClick="setSelectedItem('dummy2')" style="width: 18rem;">
+                                        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/7/70/Terminator1984movieposter.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Terminator</h5>
+                                            <p>James Cameron</p>
+                                            <p class="card-text">01/01/1988</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div id="dummy3" class="card mb-2" onClick="setSelectedItem('dummy3')" style="width: 18rem;">
+                                        <img class="card-img-top" src="https://cdn.evrimagaci.org/ucLtCniZY5h_xpbQqxEM1wFVdF8=/evrimagaci.org%2Fpublic%2Fmi_media%2F286d10f959124908b9ca38abf204e4fc.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fight Club</h5>
+                                            <p>David Fincher</p>
+                                            <p class="card-text">10/12/1999</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div id="dummy4" class="card mb-2" onClick="setSelectedItem('dummy4')" style="width: 18rem;">
+                                        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Matrix</h5>
+                                            <p>Lana Wachowski, Lilly Wachowski</p>
+                                            <p class="card-text">03/09/1999</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-12 d-flex justify-content-center">
+                            <a id="clearAllMovies" class="btn btn-danger">Clean All Movies
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script type='module' src="./js/main.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+    <script src="./js/storage.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/Movie.js"></script>
+    <!-- <script type='module' src="./js/main.js"></script> -->
 </body>
 
 </html>
