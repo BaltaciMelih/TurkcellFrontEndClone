@@ -5,7 +5,7 @@ const dateinput = document.getElementById("datemovie");
 const urlinput = document.getElementById("urlmovie");
 const pagelistinput = document.getElementById("pagelist");
 const deleteAllButon = document.getElementById("deleteAll");
-const cardBody = document.getElementById("movieid");
+const cardBody = document.getElementById("addmoviepae");
 
 eventListeners();
 function eventListeners() {
@@ -21,15 +21,16 @@ let Movie = function (name, director, date, URL) {
     this.director = director;
     this.date = date;
     this.URL = URL;
+    
 }
 
 function addMovie(e) {
     if ((dateinput.value === "") || (direcinput.value === "") || (dateinput.value === "") || (urlinput.value === "")) {
         ui.showAlert("Eksik bilgi girdiniz!!", "danger");
     } else {
-        const newMovie = new Movie(nameinput.value, direcinput.value, dateinput.value, urlinput.value);
-        ui.addMovieUI(newMovie);
-        ui.addMovieStorage(newMovie);
+        const newmovie = new Movie(nameinput.value, direcinput.value, dateinput.value, urlinput.value);
+        ui.addMovieUI(newmovie);
+        ui.addstorage(newmovie);
         ui.showAlert("Eklendi.", "success")
     }
     e.preventDefault();
@@ -45,15 +46,15 @@ function deleteAllMovie() {
 
 
 function editMovie(e) {
-    if(e.target.className === "btn btn-secondary mb-4 w-100 p-3") {
+    if(e.target.className === "btn btn-secondary w-100") {
         ui.editMovieUI(e);
         ui.showAlert("Düzenlendi", "success");
     }
 }
 function deleteMovie(e) {
-    if(e.target.className === "del btn btn-primary w-100 p-3") {
+    if(e.target.className === "del btn btn-primary w-100") {
         e.target.parentElement.parentElement.remove();
-        ui.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
+        ui.deletemovi(e.target.parentElement.parentElement.children[0].src);
         ui.showAlert("Seçilen Film Silindi", "success");
     }
 }
@@ -61,7 +62,7 @@ function deleteMovie(e) {
 
 
 function AllMovieList() {
-    let movies = ui.getMoviesFromStorage();
+    let movies = ui.getstorage();
     movies.forEach(function (movies) {
         ui.addMovieUI(movies);
     })
