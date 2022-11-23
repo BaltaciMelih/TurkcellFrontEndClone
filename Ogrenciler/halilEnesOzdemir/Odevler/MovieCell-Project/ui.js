@@ -69,10 +69,16 @@ UI.prototype.deleteMovieFromList = function (element) {
   element.remove();
 };
 
-UI.prototype.clearAllMoviesFromList = function () {
-  while (album.firstElementChild !== null) {
-    album.firstElementChild.remove();
+UI.prototype.clearAllMoviesFromList = function (e) {
+  if (localStorage.getItem('movies') === null) {
+    ui.showAlert('Movie collection is empty.', 'warning');
+  } else {
+    while (album.firstChild !== null) {
+      album.removeChild(album.firstChild);
+    }
+    localStorage.removeItem('movies');
   }
+  e.preventDefault();
 };
 
 UI.prototype.removeAddMovieButton = function () {
