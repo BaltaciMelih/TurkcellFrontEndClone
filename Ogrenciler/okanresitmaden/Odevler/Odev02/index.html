@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odev-02</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="text-center text-white display-1 mt-5">Film Ekle</h1>
+    <div class="row rowfirst d-flex flex-row justify-content-center mt-5">
+            <div>
+                <form class="d-flex flex-column justify-content-center align-items-center" id="movie-form">
+                    <div class="col mb-4">
+                        <h5 class="text-center text-secondary">Film Adı</h5>
+                        <input type="text" class="border border-secondary border-4 rounded" id="moviename">
+                    </div>
+    
+                    <div class="col mb-4">
+                        <h5 class="text-center text-secondary">Yönetmeni</h5>
+                        <input type="text" class="border border-secondary border-4 rounded" id="moviedirector">
+                    </div>
+    
+                    <div class="col mb-4">
+                        <h5 class="text-center text-secondary">Vizyon Tarihi</h5>
+                        <input type="text" class="border border-secondary border-4 rounded" id="movieyear">
+                    </div>
+    
+                    <div class="col mb-4">
+                        <h5 class="text-center text-secondary">Film Afişi</h5>
+                        <input type="text" class="border border-secondary border-4 rounded" id="movieposter">
+                    </div>
+    
+                    <button class="btn btn-dark" type="submit" id="add">Koleksiyona Ekle</button>
+                </form>
+            </div>
+    </div>
+    <h1 class="text-center text-white display-1 mt-5">Film Düzenle</h1>
+    <div class="row d-flex flex-row justify-content-center mt-5">
+        <form class="d-flex flex-column justify-content-center align-items-center" id="movie-form">
+            <div class="col mb-4">
+                <h5 class="text-center text-secondary">Film Adı</h5>
+                <input type="text" class="border border-secondary border-4 rounded" id="movienameedit">
+            </div>
+
+            <div class="col mb-4">
+                <h5 class="text-center text-secondary">Yönetmeni</h5>
+                <input type="text" class="border border-secondary border-4 rounded" id="moviedirectoredit">
+            </div>
+
+            <div class="col mb-4">
+                <h5 class="text-center text-secondary">Vizyon Tarihi</h5>
+                <input type="text" class="border border-secondary border-4 rounded" id="movieyearedit">
+            </div>
+
+            <div class="col mb-4">
+                <h5 class="text-center text-secondary">Film Afişi</h5>
+                <input type="text" class="border border-secondary border-4 rounded" id="movieposteredit">
+            </div>
+            <div class="alert alert-secondary" role="alert">
+                Filmi Düzenlemek İçin Bilgiyi/Bilgileri Buraya Giriniz ve Düzenleme Yapmak İstediğiniz Filmdeki Film Bilgilerini Değiştir Butonuna Tıklayın.
+            </div>
+        </form>
+    </div>
+
+    <div class="row d-flex justify-content-center mt-5"><button class="btn btn-dark w-50" type="submit" id="delete">Tümünü Temizle</button></div>
+    
+    <h2 class="text-center text-white display-1 mt-5">Filmlerim</h2>
+    
+    <div class="row rowsecond d-flex flex-row justify-content-center mt-5">
+        
+    </div>
+
+    
+
+    <script src="./oop.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
