@@ -65,12 +65,22 @@ function deletemovie(e) {
 }
 
 function editMovie(e) {
- const elm = e.target;
+  const elm = e.target;
   if (elm.className === "fa fa-edit") {
     elm.parentElement.parentElement.parentElement.remove();
-    storage.deleteMovInStorage(
-      elm.parentElement.parentElement.parentElement.childNodes[1].textContent
-    );
+    let movies = storage._getMovieFromStorage();
+    movies.forEach(function (movie) {
+      if (movie.name === elm.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling) {
+        movieName.value = movie.name;
+        moviePic.value = movie.poster;
+        movieType.value = movie.type;
+        movieVisionDate.value = movie.visiondate;
+        console.log(elm.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling);
+      }
+      })
+    // storage.deleteMovInStorage(
+    //   elm.parentElement.parentElement.parentElement.childNodes[1].textContent
+    // );
 
     ui.showAlert("dark", "Film düzenleme modu aktif!");
   }
