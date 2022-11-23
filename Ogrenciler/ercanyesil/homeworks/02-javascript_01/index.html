@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>Movie Collection</title>
+</head>
+<body>
+
+<div class="container-fluid img-main background">
+
+    <div class="row">
+        <div class="col-3 p-0 d-flex justify-content-start align-self-center">
+            <button class="btn border-light rounded-1 m-5 add-plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+                Add movie</button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Add movies to collection</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="container my-5">
+                        <div class="card-body">
+                            <form id="movieForm" name="form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input
+                                                class="form-control my-3"
+                                                type="text"
+                                                name="name"
+                                                id="name"
+                                                placeholder="Add the movie name"
+                                        />
+                                        <input
+                                                class="form-control my-3"
+                                                type="text"
+                                                name="director"
+                                                id="director"
+                                                placeholder="Add Director Name"
+                                        />
+                                        <input
+                                                class="form-control my-3"
+                                                type="date"
+                                                name="date"
+                                                id="date"
+                                                placeholder="Add Date"
+                                        />
+                                        <input
+                                                class="form-control my-3"
+                                                type="text"
+                                                name="url"
+                                                id="url"
+                                                placeholder="Add URL"
+                                        />
+                                    </div>
+                                </div>
+                                <button id="movie-add" type="submit" class="btn text-light btn-dark mt-3">
+                                    Add
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <h3 class="text-lg-center text-light my-5 baslik">MY MOVIE COLLECTION</h3>
+            <form class="d-flex" role="search">
+                <input
+                        class="form-control me-2 search-web"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                />
+                <button class="btn" type="submit">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-search text-light"
+                            viewBox="0 0 16 16"
+                    >
+                        <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                        />
+                    </svg>
+                </button>
+            </form>
+            <div class="card mb-3 mt-4">
+                <div id="status"></div>
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/thumb/3/3b/YesilYol.jpg/220px-YesilYol.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title">Yeşil Yol</h5>
+                            <p class="card-text">Yeşil Yol, 1999 yılında çekilen ABD yapımı bir dram filmidir. Yönetmeni ve senaristi Frank Darabont'tur. Film, Amerikalı ünlü bilimkurgu yazarı Stephen King'in aynı adlı romanından uyarlanmıştır.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <button type="button" class="btn btn-danger btn-delete">Delete</button>
+                            <button type="button" class="btn btn-warning btn-edit mx-3">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="card">
+                <div id="movieList"></div>
+            </div>
+            <button type="button" id="deleteAll" class="btn btn-danger btn-delete">Delete All</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+></script>
+<script src="dist/bundle.js"></script>
+</body>
+</html>
