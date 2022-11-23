@@ -23,6 +23,9 @@ STORAGE.prototype.addMovieToStorage = function (movie) {
 STORAGE.prototype.deleteItemFromLS = function (movieId) {
   const movies = storagePt.getMoviesFromStorage();
   movies.forEach(function (movie, index) {
+    console.log(movieId);
+    console.log("movie");
+    // console.log(movie);
     if (movie.id == movieId) {
       movies.splice(index, 1);
     }
