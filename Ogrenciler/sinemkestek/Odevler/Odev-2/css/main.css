@@ -8422,10 +8422,10 @@ body {
 .container-lg,
 .container-xl,
 .container-xxl {
-  background-color: rgba(85, 85, 85, 0.199); }
+  background-color: rgba(158, 153, 153, 0.363); }
   .container-fluid .header-container, .container-sm .header-container, .container-md .header-container, .container-lg .header-container, .container-xl .header-container, .container-xxl .header-container {
     width: 100vw;
-    background-color: #080808;
+    background-color: #1d1d1d;
     border-bottom: 3px rgba(231, 187, 65, 0.918) dashed; }
     .container-fluid .header-container h2, .container-sm .header-container h2, .container-md .header-container h2, .container-lg .header-container h2, .container-xl .header-container h2, .container-xxl .header-container h2, .container-fluid .header-container .h2, .container-sm .header-container .h2, .container-md .header-container .h2, .container-lg .header-container .h2, .container-xl .header-container .h2, .container-xxl .header-container .h2 {
       text-shadow: 2px 2px 4px #acac79; }

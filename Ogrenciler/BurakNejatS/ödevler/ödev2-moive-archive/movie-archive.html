@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Film Arşivim</title>
+  </head>
+  <body>
+    <body onload="setFilms()">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container justify-content-center">
+        <a id="logo" class="navbar-brand me-1" href="./movie-archive.html">
+          <img
+            src="./images/film arşivim.png"
+            height="145"
+            loading="lazy"
+            style="margin-top: -1px"
+          />
+        </a>
+      </div>
+
+      <div class="d-flex align-items-flex-end">
+        <button id="giris" type="button" class="btn btn-link px-5 me-2">
+          Giriş Yap
+        </button>
+        <button type="button" class="btn btn-primary px-5 me-3">
+          Kayıt Ol
+        </button>
+
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle hidden-arrow px-3"
+            href="#"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./images/profile.png"
+              class="rounded-circle"
+              height="40"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Profilim</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Ayarlar</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Giriş Yap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form class="form-container">
+      <div class="container col-md-4">
+        <label for="validationTooltip01" class="form-label">Film Adı</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Film Adı"
+          id="filmAdi"
+        />
+      </div>
+      <div class="container col-md-4">
+        <label for="validationTooltip02" class="form-label">Yönetmen</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Film Yönetmeni"
+          id="filmYonetmeni"
+          required
+        />
+      </div>
+      <div class="container col-md-4">
+        <label for="validationTooltipUsername" class="form-label"
+          >İzlenilen Tarih</label
+        >
+
+        <input type="date" class="form-control" id="izlenilenTarih" required />
+      </div>
+
+      
+
+      <div class="container col-md-4 d-flex justify-content-center">
+        <input type="text" class="form-control " id="filmAfis" placeholder="Afiş Url Giriniz">
+        <label for="filmAfis" class="text-white"></label>
+    </div>
+
+        
+      <div class="container col-md-3 d-flex justify-content-end">
+        <a onclick="filmEkle()" class="btn btn-primary">Filmi Ekle</a>
+      </div>
+    </form>
+
+    <div id="movies-list" class="container mt-4">
+      <h5 class="card-title" id="tasks-title">Filmler</h5>
+
+      <hr />
+      <div
+        id="movies-card"
+        class="card-body d-flex justify-content-space-between"
+      >
+        <div id="afis" class="col-md-3">
+          <img
+            src="https://i.pinimg.com/564x/51/72/a4/5172a462c43c6809c422747b2f9013d1.jpg"
+            alt=""
+          />
+        </div>
+
+        <div id="inputs" class="col-md-8 d-flex justify-content-center px-5">
+          <div class="col-md-2 fs-3">Harry Potter-Felsefe Taşı</div>
+          <div class="col-md-2 fs-3">Chris Columbus</div>
+          <div class="col-md-2 fs-3">10.10.2005</div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div
+        id="movies-card"
+        class="card-body d-flex justify-content-space-between"
+      >
+        <div id="afis" class="col-md-3">
+          <img
+            src="https://i.pinimg.com/564x/85/76/cf/8576cf47b20d83342dd9935bf4621e08.jpg"
+            alt=""
+          />
+        </div>
+
+        <div id="inputs" class="col-md-8 d-flex justify-content-center px-5">
+          <div class="col-md-2 fs-3">Eternal Sunshine of the spotless mind</div>
+          <div class="col-md-2 fs-3">Micheal Gondry</div>
+          <div class="col-md-2 fs-3">20.08.2018</div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div
+        id="movies-card"
+        class="card-body d-flex "
+      >
+        <div id="afis" class="col-md-3">
+          <img
+            src="https://i.pinimg.com/564x/42/1d/a9/421da9ec69d8ac1d120c1b995d8c773d.jpg"
+            alt=""
+          />
+        </div>
+
+        <div id="inputs" class="col-md-8 d-flex justify-content-center px-5">
+          <div class="col-md-2 fs-3">Kolpaçino 3.Devre</div>
+          <div class="col-md-2 fs-3">Şafak Sezer</div>
+          <div class="col-md-2 fs-3">10.12.2019</div>
+        </div>
+      </div>
+
+
+
+      <div id="filmListesi" class="d-flex justify-content-between flex-column">
+      
+      </div>
+      <hr />
+      <a id="clear-movies" onclick="filmleriSil()" class="btn btn-dark" href="#"
+        >Tüm Filmleri Kaldırın</a
+      >
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

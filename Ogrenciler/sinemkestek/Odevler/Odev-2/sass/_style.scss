@@ -15,8 +15,10 @@ body {
   background-color: $bg-color-1;
   .header-container {
     width: 100vw;
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(29, 29, 29);
     border-bottom: 3px $add-color dashed;
+    .header {
+    }
     h2 {
       text-shadow: 2px 2px 4px #acac79;
     }
