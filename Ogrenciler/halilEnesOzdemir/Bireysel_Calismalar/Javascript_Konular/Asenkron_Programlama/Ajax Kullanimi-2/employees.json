@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Halil Enes Özdemir",
+    "department": "Bilişim",
+    "salary": 10000
+  },
+  {
+    "name": "Ercan Yeşil",
+    "department": "Bilişim",
+    "salary": 12000
+  },
+  {
+    "name": "Melih Baltacı",
+    "department": "Bilişim",
+    "salary": 12000
+  },
+  {
+    "name": "Hacı Hüsnü Yumrukaya ",
+    "department": "Bilişim",
+    "salary": 12000
+  }
+]
