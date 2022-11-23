@@ -1,8 +1,6 @@
 // Elemanları Seçme
 const form = document.getElementById("todo-form");
-const detailsInput = document.getElementById("details");
 const todoInput = document.getElementById("todo");
-const movieInput = document.getElementById("movie-image");
 const todoList = document.querySelector(".list-group");
 const clearButton = document.getElementById("clear-todos");
 const firstCardBody = document.querySelectorAll(".card-body")[0];
@@ -16,56 +14,40 @@ function eventListeners() {
   clearButton.addEventListener("click", clearAllTodos);
   secondCardBody.addEventListener("click", deleteTodo);
   filter.addEventListener("keyup", filterTodos);
-  document.addEventListener("DOMContentLoaded", loadAllTodosToUI);
 }
 
 // Todo Ekleme
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
-  const newDetails = detailsInput.value.trim();
-  const movieUrl = movieInput.value.trim();
-  if ((newTodo, newDetails, movieUrl === "")) {
+  if (newTodo === "") {
     showAlert("danger", "Lütfen bir todo giriniz.");
   } else {
-    addTodoToUI(newTodo, newDetails, movieUrl);
-    addTodoToStorage(newTodo, newDetails, movieUrl);
+    addTodoToUI(newTodo);
     showAlert("success", "Todo başarılı bir şekilde eklendi.");
   }
   e.preventDefault();
 }
 
 // Todo Ekleme (UI Tarafını Oluşturma)
-function addTodoToUI(newTodo, newDetails, movieUrl) {
+function addTodoToUI(newTodo) {
   const listItem = document.createElement("li");
   const link = document.createElement("a");
-  const moviediv = document.createElement("div");
-  moviediv.className = "card";
-
   link.href = "#";
   link.className = "delete-item";
   link.innerHTML = "<i class='fa fa-remove'></i>";
-  moviediv.innerHTML = `  <img style="width = 100px; height = 100px" src="${movieUrl}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">${newTodo}</h5>
-    <p class="card-text">${newDetails}</a>
-  </div>`;
   listItem.className = "list-group-item d-flex justify-content-between";
-  // listItem.appendChild(document.createElement(newTodo));
-  listItem.appendChild(moviediv);
+  listItem.appendChild(document.createTextNode(newTodo));
   listItem.appendChild(link);
   todoList.appendChild(listItem);
   todoInput.value = "";
-  detailsInput.value = "";
-  movieInput.value = "";
 }
 
-// Bütün todoları silme
+// ütün todoları silme
 function clearAllTodos() {
   // todoList.innerHTML = "";
   while (todoList.firstChild != null) {
     todoList.removeChild(todoList.firstChild); // Daha hızlı çalışacak
   }
-  localStorage.removeItem("todos");
 }
 
 // Delete Todo (tek tek silme işlemi)
@@ -77,7 +59,6 @@ function deleteTodo(e) {
     e.target.parentElement.parentElement.remove();
     console.log("todo başarıyla silindi");
   }
-  deleteItemFromLS(e.target.parentElement.parentElement);
 }
 
 // Filtreleme
@@ -110,56 +91,4 @@ function showAlert(type, message) {
   setTimeout(function () {
     alert.remove();
   }, 2000);
-}
-
-// Local Storage'e String Kaydetme
-// localStorage.setItem("Key", "İçerik");
-// const value = localStorage.getItem("Key");
-// console.log(value);
-// localStorage.clear();
-
-// Local Storage'e Array Kaydetme
-// const todosSample = ["Todo 1", "Todo 2", "Todo 3", "Todo 4"];
-// localStorage.setItem("todolar", JSON.stringify(todosSample)); // "['Todo 1', 'Todo 2', 'Todo 3', 'Todo 4']"
-// const sampleTodos = JSON.parse(localStorage.getItem("todolar")); // ['Todo 1', 'Todo 2', 'Todo 3', 'Todo 4']
-// console.log(sampleTodos);
-
-// getTodosFromStorage
-// addTodoToStorage
-// loadAllTodos
-
-// Local Storage'dan veri alma - Veri varsa o veri gelir yoksa boş array gelir.
-function getTodosFromStorage() {
-  let todos;
-  if (localStorage.getItem("todos") === null) {
-    todos = [];
-  } else {
-    todos = JSON.parse(localStorage.getItem("todos"));
-  }
-  return todos;
-}
-
-// Local Storage'a veri gönderme - Önce storage'daki verileri alıp sonra üzerine ekleme yapıp tekrar gönderdik.
-function addTodoToStorage(newTodo, newDetails, movieUrl) {
-  let todos = getTodosFromStorage();
-  todos.push(newTodo, newDetails, movieUrl);
-  localStorage.setItem("todos", JSON.stringify(todos));
-}
-
-function loadAllTodosToUI() {
-  let todos = getTodosFromStorage();
-  todos.forEach(function (todo) {
-    addTodoToUI(todo);
-  });
-}
-
-// Tek tek silme tarafı ödev
-function deleteItemFromLS() {
-  let todos = getTodosFromStorage();
-  todos.forEach(function (todo, index) {
-    if (todo === todo) {
-      todos.splice(index, 1);
-    }
-  });
-  localStorage.setItem("todos", JSON.stringify(todos));
 }
