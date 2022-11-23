@@ -19,12 +19,20 @@ Movie.prototype.addMovie= function(e) {
     ui.ClearInput();}
   else
   {
+    if(document.getElementById("film-add").innerText == "Filmi Güncelle")
+    {
+      ui.Message("Film Başarıyla Güncellendi.","success");
+    }
+    else
+    {
+      ui.Message("Koleksiyona Film Başarıyla Eklendi.","success");
+    }
     ui.MoviesUI(new Movies(newMovieName,newDirector,newBanner,newDate));
     ui.ClearInput();
     storage.addMovieToStorage(new Movies(newMovieName,newDirector,newBanner,newDate));
     e.preventDefault();
-    ui.Message("Koleksiyona Film Başarıyla Eklendi.","success");
   }
+  document.getElementById("film-add").innerText = "Arşive Film Ekle";
   e.preventDefault();
 }
 
@@ -69,5 +77,6 @@ Movie.prototype.changedMovies= function(e) {
   movieBannerInput.value=RemoveMoviesBanner.src;
   movieDateInput.value=RemoveMoviesDate.textContent;
   storage.RemoveLocalStorage(RemoveMoviesName.textContent,RemoveMoviesDirector.textContent);
+  document.getElementById("film-add").innerText = "Filmi Güncelle";
   }
 }
