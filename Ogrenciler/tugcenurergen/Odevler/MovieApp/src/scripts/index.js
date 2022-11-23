@@ -24,15 +24,14 @@ Main.prototype.eventsListener = function () {
   ); //this is for click the fileInput when clicking the uploadbox
   this.doms.fileInput.addEventListener("change", this.loadFile);
   this.doms.saveButton.addEventListener("click", () => this.addMovie());
-  // this.doms.deleteButton.addEventListener("click", this.deleteMovie);
+  this.doms.deleteButton.addEventListener("click", this.deleteMovieUI);
 };
 
-
-Main.prototype.showMovies= function(){
+Main.prototype.showMovies = function () {
   this.movieObjects.forEach((element) => {
     this.addMovieToUI(element);
-  })
-}
+  });
+};
 
 Main.prototype.addMovieToUI = function ({
   movieName,
@@ -42,7 +41,6 @@ Main.prototype.addMovieToUI = function ({
 }) {
   //addMovieToUI
   const listItem = document.createElement("li");
-  listItem.className = "list-item";
   listItem.innerHTML = `
   <li class="row list-group-item d-flex flex-row justify-content-between border mb-3 mt-3 ">
   <div class="col-2 d-flex justify-content-center">
@@ -55,7 +53,7 @@ Main.prototype.addMovieToUI = function ({
     <p>Movie Date:  ${movieDate}</p>
     </div>
     <div class="d-flex flex-column gap-4 mt-2 ">
-    <button class="delete-btn btn btn-dark ">delete</button>
+    <button class="delete-btn btn btn-dark">delete</button>
     <button class="edit-btn btn btn-dark">edit</button>
     </div>
   </div>
@@ -64,11 +62,12 @@ Main.prototype.addMovieToUI = function ({
   this.doms.list.appendChild(listItem);
 };
 
-Main.prototype.deleteMovieUI = function(e){
-  if(e.target.classList.contains("delete-btn")){
+Main.prototype.deleteMovieUI = function (e) {
+  if (e.target.classList.contains("delete-btn")) {
     e.target.parentElement.parentElement.parentElement.remove();
+    console.log("delete element");
   }
-}
+};
 
 Main.prototype.getDoms = function () {
   return this.doms;
