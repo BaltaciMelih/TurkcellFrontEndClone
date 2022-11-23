@@ -1,5 +1,5 @@
 const Storage = function () {
-  this.data= [];
+  this.data = [];
   console.log(this.data);
 };
 
@@ -7,6 +7,7 @@ Storage.mainProcess = function () {
   this.getFromStorage();
   return this.data;
 };
+
 Storage.getFromStorage = function () {
   if (localStorage.getItem("movies") === null) {
     this.data = [];
@@ -24,7 +25,6 @@ Storage.addToStorage = function (newMovie) {
 };
 
 Storage.setStorage = function () {
-  
   localStorage.setItem("movies", JSON.stringify(this.data));
   console.log("localstorage");
 };
