@@ -6,34 +6,21 @@
 #giris{
     text-decoration: none;
 }
-
 #afis{
-
-    
     width: 20%;
     height: 250px;
-    
 }
 #inputs{
-    
     width: 70%;
     border: solid 2px black;
     border-radius: 5px;
-    
-
 }
 #afis img {
-
     height: 100%;
-    
-   
 }
 #movies-card{
-
     padding: 25px;
 }
-
-
 body{
     background-color: rgb(252, 247, 216);
 }

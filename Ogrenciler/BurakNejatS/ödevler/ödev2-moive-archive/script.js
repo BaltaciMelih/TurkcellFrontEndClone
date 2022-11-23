@@ -7,18 +7,11 @@ let filmKaydet = document.getElementById("filmiEkle");
 let clearFilm = document.getElementById("clear-movies");
 let filmBody = document.getElementById("tableBody");
 
-var sessionKey = {
-  Key1: "filmArsiv",
-};
 
 var filmList = [];
 var singleFilm;
 const filmListesi = document.getElementById("filmListesi");
-
 const childFilm = document.getElementById("childFilm");
-
-
-
 function filmEkle() {
   var film = {
     filmAfisi: document.getElementById("filmAfis").value,
@@ -30,16 +23,12 @@ function filmEkle() {
 
   filmList = [film];
   localStorage.setItem("listFilm", JSON.stringify(filmList));
-  //addItem(sessionKey.Key1,JSON.stringify(filmList));
   filmArsivListele();
-  //}
 }
-
 function filmArsivListele() {
   let allItems = JSON.parse(localStorage.getItem("listFilm"));
   console.log("allItems:", allItems);
   console.log("filmList:", filmList);
-  //filmListesi.innerHTML = '';
   for (let i = 0; i < allItems?.length; i++) {
     const items = document.createElement("div");
     items.className = "d-flex cardContainer align-items-center";
@@ -68,7 +57,6 @@ function filmArsivListele() {
     console.log("filmListesi:", filmListesi);
   }
 }
-
 filmArsivListele();
 
 function filmleriSil() {
@@ -82,10 +70,6 @@ function getItem(key) {
 }
 function addItem(key, value) {
   localStorage.setItem(key, value);
-}
-
-function deleteItem(key) {
-  localStorage.removeItem(key);
 }
 
 function clearItems() {
