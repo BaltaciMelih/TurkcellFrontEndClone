@@ -75,7 +75,7 @@ function clearAllMovies(e) {
 
 firstTimeStart();
 function firstTimeStart() {
-  if (localStorage.getItem('movies') === null) {
+  if (localStorage.getItem('firstStart') === null) {
     storage.addMovieToStorage(
       new Movie(
         'Sherlock',
@@ -101,4 +101,5 @@ function firstTimeStart() {
       )
     );
   }
+  localStorage.setItem('firstStart', 'firstStart');
 }
