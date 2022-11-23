@@ -1,10 +1,10 @@
-UI.prototype.addMovieStorage = function(newMovie) {
-    let movies = ui.getMoviesFromStorage();
-    movies.push(newMovie);
+UI.prototype.addstorage = function(newmovie) {
+    let movies = ui.getstorage();
+    movies.push(newmovie);
     localStorage.setItem("movies", JSON.stringify(movies));
 };
 
-UI.prototype.getMoviesFromStorage = function() {
+UI.prototype.getstorage = function() {
     let movies;
     if(localStorage.getItem("movies") == null) {
         movies = [];
@@ -14,10 +14,10 @@ UI.prototype.getMoviesFromStorage = function() {
     return movies;
 };
 
-UI.prototype.deleteMovieLS = function(text) {
-    let movies = ui.getMoviesFromStorage();
-    movies.forEach(function(newMovie, index) {
-        if(newMovie.URL === text) {
+UI.prototype.deletemovi = function(text) {
+    let movies = ui.getstorage();
+    movies.forEach(function(newmovie, index) {
+        if(newmovie.URL === text) {
             movies.splice(index, 1);
         }
     });
