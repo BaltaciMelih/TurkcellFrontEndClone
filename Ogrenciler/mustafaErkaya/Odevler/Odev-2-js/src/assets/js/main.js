@@ -10,11 +10,18 @@ const Main = function() {
 Main.prototype.init = function() {
   FilmData.init();
   this.movieData = FilmData.getData();
+  console.log(this.movieData);
+
   this.elements = StoreElements.init();
   console.log('this.elements', this.elements);
   this.listenEvents();
   this.appendMovies();
+  
+  
+  //sayfa açıldığında bu kısım çalışıyor.
 };
+
+
 ///
 // Main.prototype.deleteMovie = function(){
 //   this.elements.movieDel.parentElement.parentElement.remove();
@@ -38,33 +45,82 @@ Main.prototype.listenEvents = function() {
   //  FilmData.remove
   // });
    
-  
+  console.log("this.listenevents", this.listenEvents);
 };
+
+/////////////////////
+Main.prototype.deleteIndex = function(film){ // bir yerde çağırmadım
+  this.movieData.forEach(function(item, index){
+    if(item === film){
+      item.splice(index,1);
+    }
+  })
+}
+
 Main.prototype.appendMovies = function(){
   this.movieData.forEach((item) => {
     this.addMovieUI(item);
+    console.log("this.appendMovies", this.appendMovies, item);
   })
   
 }
 
 Main.prototype.getElements = function() {  
+  console.log("this.getElement", this.getElements);
   return this.elements;    
+  
 }
 
 Main.prototype.soundMute = function() {
   this.elements.video.toggleAttribute("muted");
+  console.log("this.soundMute", this.soundMute);
 };
 
 Main.prototype.listHidden = function() {
   this.elements.container.classList.toggle("d-none");
+  console.log("this.listHidden", this.listHidden);
 };
 
 Main.prototype.deleteAllMovie = function() {
-  while (this.elements.movieBottom.firstChild !== null) {
-    this.elements.movieBottom.removeChild(this.elements.movieBottom.firstChild); // Daha hızlı çalışacak
+  if(confirm("are you serious ??")){
+    while (this.elements.movieBottom.firstChild !== null) {
+      this.elements.movieBottom.removeChild(this.elements.movieBottom.firstChild); // Daha hızlı çalışacak
+      
+
+    }
+    this.showAlert("hepsi silindi", "success")
+
+    
+    
+    
+    console.log("this.deleteAllMovie", this.deleteAllMovie);
   }
+ 
 };
 
+// silme
+// Main.prototype.deleteFilmStorage = function (title) {
+//   let films = this.movieData;
+//   let name = new Film(name, director, img, date)
+//   films.forEach(function(film, index){
+//     if(films[film] === title){
+//       films.slice(index,1);
+//     }
+//   });
+//   FilmData.setDataToStorage();
+// }
+
+// (
+//   static deleteFilmFromStorage(filmTitle){
+//     let films = this.getFilmsFromStorage();
+//     films.forEach(function(film,index){
+//       if(film.title === filmTitle){
+//         films.splice(index,1);
+//       }
+//     });
+//     localStorage.setItem("films",JSON.stringify(films));
+//   }
+// )
 Main.prototype.addMovie = function() {
   const name = this.elements.nameInput.value.trim();
   const director = this.elements.directorInput.value.trim();
@@ -79,9 +135,11 @@ Main.prototype.addMovie = function() {
     this.showAlert("Filminiz Eklendi. İyi Seyirler!!", "success");
      // console.log(film);
   FilmData.add(film);
+  
   this.addMovieUI(film);
 
   this.resetForm();
+  console.log("this.addMovie", this.addMovie);
   }
 
   
@@ -90,7 +148,7 @@ Main.prototype.addMovie = function() {
 
 Main.prototype.addMovieUI = function({name, director, img, date}) {
   const row = document.createElement("div");
-    row.className = "row my-3";
+    row.className = "row my-3 movie-container";
     row.innerHTML = `
                     <div class="col-3">
                         <img class="img-fluid" src="${img}" alt="">
@@ -99,7 +157,7 @@ Main.prototype.addMovieUI = function({name, director, img, date}) {
                         <div class="row border-bottom">
         
                             <div class="col-4"><p>NAME</p></div>
-                            <div class="col-8 "> <p>${name}</p> </div>
+                            <div class="col-8 "> <p class="name">${name}</p> </div>
                         </div>
 
                     <div class="row border-bottom">
@@ -134,21 +192,56 @@ Main.prototype.addMovieUI = function({name, director, img, date}) {
                 </div>
 
                 <div class="col-2 d-flex flex-column justify-content-around  ">
-                    <button  class="delete btn btn-outline-secondary w-100">Delete</button>
+                    <button  class="delete btn btn-outline-secondary w-100" id="deleteMovie">Delete</button>
                     <button  class="edit btn btn-outline-success w-100 ">Edit</button>
                 </div>
                 `;
 
   this.elements.movieBottom.prepend(row); // üste ekleme
   this.resetForm();
-
+  console.log("this.addMovieUI", this.addMovieUI);
 };
-/////////
-Main.prototype.delMovie = function (e){
-  if(e.target.classList.contains("delete")){
-        e.target.parentElement.parentElement.remove();
-      }
+///////// uidan 
+Main.prototype.movieTitle = function(e){
  
+  let title = e.target.parentElement.parentElement.children[1].children[0].children[1].textContent; // istediğimiz name geliyor
+  console.log(title);
+  return title;
+}
+
+Main.prototype.delMovieUi = function(e){
+  if(e.target.id === 'deleteMovie'){
+  
+    e.target.parentElement.parentElement.remove();
+    
+   
+    this.showAlert("silme işlemi başarılı.", "success");
+    // let name = e.target.parentElement.parentElement.children[1].children[0].children[1].textContent; // istediğimiz name geliyor
+    // console.log(name);
+    // return name;
+  }
+  
+  e.preventDefault();
+
+}
+
+
+Main.prototype.delMovie = function (e){
+  // let ad = [];
+  // this.elements.id.forEach(function(item){
+  //   console.log(item);
+  // })
+  
+  // console.log(ad);
+  this.delMovieUi(e)
+  let title = this.movieTitle(e)
+  
+  FilmData.remove(title);
+//  this.deleteFilmStorage()
+   
+
+
+ console.log("this.delMovie", this.delMovie);
  }
 
 Main.prototype.resetForm = function() {
@@ -157,7 +250,9 @@ Main.prototype.resetForm = function() {
   this.elements.imgInput.value = "";
   this.elements.dateInput.value = "";
   
+  console.log("this.reserForm", this.resetForm);
 };
+
 // showAlert
 Main.prototype.showAlert = function (message, type) {
   
@@ -167,6 +262,7 @@ Main.prototype.showAlert = function (message, type) {
   // this.elements.container.prepend(div);
   this.elements.container.insertBefore(div, this.elements.container.children[1])
 
+  console.log("this.showAlert", this.showAlert);
   setTimeout(function () {
     div.remove();
   }, 1500);

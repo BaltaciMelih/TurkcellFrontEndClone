@@ -9,7 +9,7 @@ const FilmData = function() {
     this.getDataFromStorage();
     // this.data = FilmData.getDataFromStorage()
     console.log('FilmData', this.data);
-    return this.data;
+    
   };
   
   FilmData.getData = function () {
@@ -22,8 +22,16 @@ const FilmData = function() {
     this.setDataToStorage();
   };
   
-  FilmData.remove = function() {
-    // remove
+  FilmData.remove = function(title) {
+    let films = this.data;
+      console.log("filmsdata", films);
+      films.forEach(function(name, index){
+        if(films[`${name}`] === title){
+          films.slice(index,1);
+        }
+      });
+    console.log("FilmData.remove");
+    this.setDataToStorage();
   };
   
   FilmData.getDataFromStorage = function() {
@@ -38,11 +46,13 @@ const FilmData = function() {
     // console.log('getDataFromStorage');
      // TODO
   };
+
+
   
   FilmData.setDataToStorage = function() {
     // localstorage setItem
     localStorage.setItem("Movies", JSON.stringify(this.data));
-    console.log('setDataToStorage');
+    console.log('setDataToStorage çalıştı');
   };
   
   export {FilmData};

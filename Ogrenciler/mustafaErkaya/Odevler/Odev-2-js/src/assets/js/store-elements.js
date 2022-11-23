@@ -18,6 +18,7 @@ StoreElements.init = function() {
   const dateInput = document.querySelector('#date');
   const movieDel = movieBottom.querySelector('.delete');
   const kaos = document.querySelector('.kaos');
+  const id = movieBottom.querySelectorAll('#deleteMovie');
   return {
     muted,
     hidden,
@@ -32,7 +33,8 @@ StoreElements.init = function() {
     imgInput,
     dateInput,
     movieDel,
-    kaos
+    kaos,
+    id
   };
 };
 
