@@ -14,7 +14,7 @@ UI.prototype.addFormUI = function () {
                 <input class="form-control" type="text" name="url" id="url" placeholder="Poster URL" />
               </div>
               <div class=" col-md-6 mb-3 mb-md-4">
-                <input class="form-control" type="text" name="release" id="release" placeholder="Release Date (YYYY-GG-HH)" />
+                <input class="form-control" type="text" name="release" id="release" placeholder="Release Date (YYYY-AA-GG)" />
               </div>
               <div class="d-flex justify-content-center align-items-center flex-column gap-3">
                 <button type="submit" id="add-movie-submit" class="btn btn-danger px-3 py-1 btn-block ">Add Movie</button> 
