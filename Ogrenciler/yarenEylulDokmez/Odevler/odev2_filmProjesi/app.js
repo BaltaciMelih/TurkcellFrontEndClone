@@ -19,7 +19,6 @@ function eventListeners() {
 
 function defaultFilms() {
   films = storage.defaultMovie();
-  if (films.length < 1) {
     const dFilms = [
       new Film(
         "Avengers 1",
@@ -36,7 +35,7 @@ function defaultFilms() {
     ];
     films = dFilms;
     localStorage.setItem("films", JSON.stringify(dFilms));
-  }
+  
   ui.addTodoToUI(films);
 
 }
@@ -64,7 +63,6 @@ function addMovie() {
 
 function deleteFilm(e) {
     ui.deleteMovie(e.target);
-    storage.deleteMovie(e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling
-      .textContent);
+    storage.deleteMovie(e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent);
      ui.displayMessage("Silme işlemi gerçekleşti", "success");
   };
