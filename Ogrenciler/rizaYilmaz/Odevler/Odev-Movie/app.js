@@ -5,7 +5,9 @@ const moviePosterUrlInput = document.querySelector("#moviePosterUrlInput");
 const releaseDateInput = document.querySelector("#releaseDateInput");
 const genreSelectInput = document.querySelector("#genreSelectInput");
 const unorderList = document.querySelector("#unorder-list");
+
 movieFormInput.addEventListener("submit", submitForm);
+
 function submitForm(e) {
   const movie = new Movie(
     movieNameInput.value.trim(),
@@ -59,13 +61,15 @@ function Movie(name, director, url, date, genre) {
   </div>`;
   filterMovie();
   unorderList.appendChild(newElement);
+  clearTextInput();
+  deleteItem();
+}
+function clearTextInput(){
   movieNameInput.value = "";
   directorInput.value = "";
   moviePosterUrlInput.value = "";
   releaseDateInput.value = "";
   genreSelectInput.value = "";
-  deleteItem();
-  console.log(Movie);
 }
 function filterMovie() {
   let filter = document.getElementById("filter");
