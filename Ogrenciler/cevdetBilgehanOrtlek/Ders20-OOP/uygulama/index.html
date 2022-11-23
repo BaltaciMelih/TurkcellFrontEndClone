@@ -22,11 +22,14 @@
           <form id="film-form" name="form">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label>Movie Nmae</label>
+                <label>Movie Name</label>
+                <input type="hidden" class="form-control" id="id" placeholder="">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                   </div>
                   <input type="text" class="form-control" id="movieName" placeholder="Add Movie Name...">
+
+
                 </div>
                   
                   <label>Writers</label>
@@ -58,25 +61,22 @@
                   </div>
               </div>
             </div>
-            <button id="todo-add" type="submit" class="btn btn-danger mt-3">Add Movie </button>
+            <button id="movie-add" type="submit" class="btn btn-danger mt-3">Add Movie </button>
+            <button id="movie-update" type="submit" class="btn btn-success mt-3">Update Movie </button>
+
           </form>
         </div>
 
         <div class="card-body">
           <hr />
           <h5 class="card-title" id="tasks-title">Movies</h5>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input class="form-control" type="text" name="filter" id="filter" placeholder="Find Movie" />
-            </div>
-          </div>
 
           <hr />
 
-          <ul class="list-group">
+          <ul class="list-group d-flex justify-content-around">
           </ul>
           <hr />
-          <a id="clear-todos" class="btn btn-dark" href="#">Tüm Taskları Temizleyin</a>
+          <a id="clear-movies" class="btn btn-dark" href="#">Delete All Movies</a>
         </div>
       </div>
     </div>
@@ -85,6 +85,9 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="todo.js"></script>
+    <script src="movie.js"></script>
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

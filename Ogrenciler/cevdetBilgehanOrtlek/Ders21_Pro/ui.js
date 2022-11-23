@@ -25,7 +25,7 @@ UI.prototype.displayMessage = function (message, type) {
 };
 
 
-UI.prototype.filterTodos = function (e) {
+UI.prototype.filter = function (e) {
   const filterValue = e.target.value.toLowerCase();
   const listItems = document.querySelectorAll(".list-group-item");
 
