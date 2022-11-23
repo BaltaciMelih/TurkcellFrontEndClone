@@ -35,7 +35,8 @@ document.querySelector("#movie-list").addEventListener("click", function (e) {
   UI.deleteMovie(e.target);
   Store.removeMovie(
     e.target.parentElement.parentElement.previousElementSibling
-      .previousElementSibling.textContent
+      .previousElementSibling.previousElementSibling.previousElementSibling
+      .textContent
   );
 
   UI.showAlert("Movie Removed", "success");
