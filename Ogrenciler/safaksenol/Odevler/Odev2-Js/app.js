@@ -1,4 +1,5 @@
 const form = document.querySelector("#movie-form");
+const submitbutton = document.getElementById("submit");
 const movieName = document.querySelector("#name");
 const moviePic = document.querySelector("#pic");
 const movieType = document.querySelector("#type");
@@ -70,17 +71,18 @@ function editMovie(e) {
     elm.parentElement.parentElement.parentElement.remove();
     let movies = storage._getMovieFromStorage();
     movies.forEach(function (movie) {
-      if (movie.name === elm.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling) {
+      if (movie.name === elm.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.textContent) {
         movieName.value = movie.name;
         moviePic.value = movie.poster;
         movieType.value = movie.type;
         movieVisionDate.value = movie.visiondate;
-        console.log(elm.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling);
+        
+        submitbutton.innerHTML = "Filmi Düzenle";
       }
       })
-    // storage.deleteMovInStorage(
-    //   elm.parentElement.parentElement.parentElement.childNodes[1].textContent
-    // );
+    storage.deleteMovInStorage(
+      elm.parentElement.parentElement.parentElement.childNodes[1].textContent
+    );
 
     ui.showAlert("dark", "Film düzenleme modu aktif!");
   }
@@ -107,7 +109,7 @@ function addMovie(e) {
     clearInputs();
     ui.showAlert("success", "Favori filminiz başarıyla eklenmiştir");
   }
-
+  submitbutton.innerHTML = "Film Ekle";
   e.preventDefault();
 }
 
