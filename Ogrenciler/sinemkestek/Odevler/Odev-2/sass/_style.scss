@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container-fluid {
   background-color: $bg-color-1;
   .header-container {
@@ -25,6 +29,81 @@
       position: relative;
       padding: 15px 0 0;
       margin-top: 10px;
+      .form__field {
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        outline: 2px solid;
+        &:focus + .input__label,
+        &:valid + .input__label {
+          transform: translate(10px, -15px);
+          padding-inline: 5px;
+          background-color: grey;
+        }
+      }
+      .form__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(10px, 10px);
+        transition: transform 0.27s;
+      }
     }
   }
 }
+.alert {
+  position: absolute !important;
+  top: 100px;
+  padding-inline: 50px;
+  right: 50px;
+  animation: animationfaderight 0.5s forwards;
+}
+
+// .from-element {
+//   position: relative;
+//   .form__field {
+//     padding: 10px;
+//     border: none;
+//     border-radius: 6px;
+//     outline: 2px solid #fff;
+//   }
+//   .form__field {
+//     position: absolute;
+//     top: 0;
+//   }
+// }
+
+// .form__label {
+//   position: absolute;
+//   top: 18px;
+//   left: 6px;
+// }
+
+// .form__field {
+//   &:focus {
+//     + label {
+//       top: -8px;
+//       animation: animationfadebottom 0.3s forwards;
+//     }
+//   }
+// }
+
+@keyframes animationfaderight {
+  0% {
+    transform: translateX(200px);
+  }
+  70% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+// @keyframes animationfadebottom {
+//   0% {
+//     top: 18px;
+//   }
+//   100% {
+//     top: -8px;
+//   }
+// }

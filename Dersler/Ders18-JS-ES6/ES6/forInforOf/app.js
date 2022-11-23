@@ -8,9 +8,9 @@ const langs = ["Python", "C++", "Go", "Ruby", "Javascript"];
 
 // for in
 
-// for (let prop in person) {
-//   console.log(prop, person[prop]);
-// }
+//  for (let prop in person) {
+//    console.log(prop, person[prop]);
+//  }
 
 // for (let i in langs) {
 //   console.log(langs[i]);
