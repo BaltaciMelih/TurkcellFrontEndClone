@@ -1,14 +1,44 @@
 const form = document.getElementById("form");
-const nameFilm = document.getElementById("film-name");
-const directorFilm = document.getElementById("film-director");
-const dateFilm = document.getElementById("film-date");
-const urlFilm = document.getElementById("film-url");
+const nameMovie = document.getElementById("movie-name");
+const directorMovie = document.getElementById("movie-director");
+const dateMovie = document.getElementById("movie-date");
+const urlMovie = document.getElementById("movie-url");
 const cardBodyTwo = document.querySelectorAll(".card-body")[1];
-const clearFilms = document.getElementById("clear-archive");
+const clearMovies = document.getElementById("clear-archive");
 
 const ui = new UI();
 
 const storage = new Storage();
+
+firstRun();
+function firstRun() {
+  if (localStorage.getItem("movies") === null) {
+    storage.addItemToStorage(
+      new Movie(
+        "Matrix",
+        "Lana Wachowski-Lilly Wachowski",
+        "1999-11-03",
+        "https://tr.web.img3.acsta.net/c_310_420/pictures/210/201/21020166_20130717110427461.jpg"
+      )
+    );
+    storage.addItemToStorage(
+      new Movie(
+        "Eşkıya",
+        "Yavuz Turgul",
+        "1996-11-29",
+        "https://tr.web.img2.acsta.net/c_310_420/pictures/bzp/01/17646.jpg"
+      )
+    );
+    storage.addItemToStorage(
+      new Movie(
+        "12 Angry Men",
+        "Sidney Lurnet",
+        "1999-04-01",
+        "https://tr.web.img4.acsta.net/c_310_420/pictures/bzp/03/4063.jpg"
+      )
+    );
+  }
+}
 
 eventListeners();
 loadAllItemsFromStorage();
@@ -16,41 +46,41 @@ loadAllItemsFromStorage();
 function eventListeners() {
   form.addEventListener("submit", addItem);
   cardBodyTwo.addEventListener("click", deleteItem);
-  clearFilms.addEventListener("click", clearAllItems);
+  clearMovies.addEventListener("click", clearAllItems);
   cardBodyTwo.addEventListener("click", editItem);
 }
 
 function loadAllItemsFromStorage() {
-  let films = storage.getItemFromStorage();
-  ui.LoadAllItemsToUI(films);
+  let movies = storage.getItemFromStorage();
+  ui.LoadAllItemsToUI(movies);
 }
 
 function addItem(e) {
-  const name = nameFilm.value;
-  const director = directorFilm.value;
-  const date = dateFilm.value;
-  const url = urlFilm.value;
+  const name = nameMovie.value;
+  const director = directorMovie.value;
+  const date = dateMovie.value;
+  const url = urlMovie.value;
 
   if (name === "" || director === "" || date === "" || url === "") {
     ui.displaymessage("Lütfen Tüm Bilgileri Doldurun", "danger");
   } else {
-    const newFilm = new Film(name, director, date, url);
+    const newMovie = new Movie(name, director, date, url);
 
-    ui.addItemToUI(newFilm);
-    storage.addItemToStorage(newFilm);
+    ui.addItemToUI(newMovie);
+    storage.addItemToStorage(newMovie);
     ui.displaymessage("Film Başarıyla Eklendi", "success");
   }
 
-  nameFilm.value = "";
-  directorFilm.value = "";
-  dateFilm.value = "";
-  urlFilm.value = "";
+  nameMovie.value = "";
+  directorMovie.value = "";
+  dateMovie.value = "";
+  urlMovie.value = "";
 
   e.preventDefault();
 }
 
 function deleteItem(e) {
-  if (e.target.id === "delete-film") {
+  if (e.target.id === "delete-movie") {
     e.target.parentElement.parentElement.remove();
     storage.deleteItemFromStorage(
       e.target.parentElement.previousElementSibling.previousElementSibling
@@ -68,20 +98,20 @@ function clearAllItems() {
 }
 
 function editItem(e) {
-  if (e.target.id === "edit-film") {
+  if (e.target.id === "edit-movie") {
     e.target.parentElement.parentElement.remove();
 
-    let films = storage.getItemFromStorage();
-    films.forEach(function (film) {
+    let movies = storage.getItemFromStorage();
+    movies.forEach(function (movie) {
       if (
-        film.name ===
+        movie.name ===
         e.target.parentElement.previousElementSibling.previousElementSibling
           .textContent
       ) {
-        nameFilm.value = film.name;
-        directorFilm.value = film.director;
-        dateFilm.value = film.date;
-        urlFilm.value = film.url;
+        nameMovie.value = movie.name;
+        directorMovie.value = movie.director;
+        dateMovie.value = movie.date;
+        urlMovie.value = movie.url;
       }
     });
 

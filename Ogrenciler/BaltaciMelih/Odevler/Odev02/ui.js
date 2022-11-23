@@ -1,16 +1,16 @@
 function UI() {}
 
-UI.prototype.addItemToUI = function (newFilm) {
+UI.prototype.addItemToUI = function (newMovie) {
   const archive = document.getElementById("archive");
   archive.innerHTML += `
     <tr>
-    <td><img class="img-fluid" src="${newFilm.url}"</td>
-    <td>${newFilm.name}</td>
-    <td>${newFilm.director}</td>
+    <td><img class="img-fluid" src="${newMovie.url}"</td>
+    <td>${newMovie.name}</td>
+    <td>${newMovie.director}</td>
     <td class="d-flex flex-column">
-    ${newFilm.date}
-    <a class="btn btn-warning mt-5" id="edit-film" href="#">Filmi Düzenle</a>
-    <a class="btn btn-danger mt-5" id="delete-film" href="#">Filmi Sil</a>
+    ${newMovie.date}
+    <a class="btn btn-warning mt-5" id="edit-movie" href="#">Filmi Düzenle</a>
+    <a class="btn btn-danger mt-5" id="delete-movie" href="#">Filmi Sil</a>
     </td>
     </tr>
     `;
@@ -28,9 +28,9 @@ UI.prototype.displaymessage = function (message, type) {
   }, 2000);
 };
 
-UI.prototype.LoadAllItemsToUI = function (films) {
-  films.forEach(function (newFilm) {
-    ui.addItemToUI(newFilm);
+UI.prototype.LoadAllItemsToUI = function (movies) {
+  movies.forEach(function (newMovie) {
+    ui.addItemToUI(newMovie);
   });
 };
 

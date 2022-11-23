@@ -1,32 +1,32 @@
 function Storage() {}
 
-Storage.prototype.addItemToStorage = function (newFilm) {
-  let films = this.getItemFromStorage();
-  films.push(newFilm);
+Storage.prototype.addItemToStorage = function (newMovie) {
+  let movies = this.getItemFromStorage();
+  movies.push(newMovie);
 
-  localStorage.setItem("films", JSON.stringify(films));
+  localStorage.setItem("movies", JSON.stringify(movies));
 };
 
 Storage.prototype.getItemFromStorage = function () {
-  let films;
-  if (localStorage.getItem("films") === null) {
-    films = [];
+  let movies;
+  if (localStorage.getItem("movies") === null) {
+    movies = [];
   } else {
-    films = JSON.parse(localStorage.getItem("films"));
+    movies = JSON.parse(localStorage.getItem("movies"));
   }
-  return films;
+  return movies;
 };
 
-Storage.prototype.deleteItemFromStorage = function (filmName) {
-  let films = this.getItemFromStorage();
-  films.forEach(function (film, index) {
-    if (film.name === filmName) {
-      films.splice(index, 1);
+Storage.prototype.deleteItemFromStorage = function (movieName) {
+  let movies = this.getItemFromStorage();
+  movies.forEach(function (movie, index) {
+    if (movie.name === movieName) {
+      movies.splice(index, 1);
     }
   });
-  localStorage.setItem("films", JSON.stringify(films));
+  localStorage.setItem("movies", JSON.stringify(movies));
 };
 
 Storage.prototype.clearAllItemsFromStorage = function () {
-  localStorage.removeItem("films");
+  localStorage.removeItem("movies");
 };
