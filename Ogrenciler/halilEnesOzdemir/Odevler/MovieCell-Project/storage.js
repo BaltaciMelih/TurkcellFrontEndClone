@@ -34,7 +34,6 @@ LStorage.prototype.clearAllMoviesFromStorage = function () {
 };
 
 LStorage.prototype.editMovieStorage = function (oldValue, newValue) {
-  debugger;
   let movies = this.getMoviesFromStorage();
   movies.forEach(function (mov) {
     for (const property in mov) {
