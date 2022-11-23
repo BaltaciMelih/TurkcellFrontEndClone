@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+
+.postersize{
+    width: 400px;
+    height: 400px;
+}
+
+.rowfirst{
+    margin: 0;
+    padding: 0;
+}
+
+.rowsecond{
+    margin: 0;
+    padding: 0;
+}
