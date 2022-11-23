@@ -23,12 +23,9 @@ function eventListeners() {
 }
 
 //Film Ekleme Başlangıçta
-//Sayda ilk açıldığında veya Hepsini sil yapılıp sayfa yenilendiğinde tekrar gelmektedir. 
-//İlk defa açılan bilgisayarda filmler yüklensin diye
 LoadMovieAdd();
-function LoadMovieAdd()
-{
-    if (localStorage.getItem("Movies") === null  ) {
+function LoadMovieAdd(){     
+      if (localStorage.getItem("started")===null) {
         storage.addMovieToStorage(new Movies(
             "A Quiet Place II",
             "John Krasinski",
@@ -42,4 +39,5 @@ function LoadMovieAdd()
             "2018-01-26"
             ));  
      } 
+     localStorage.setItem("started", "started");
 }
