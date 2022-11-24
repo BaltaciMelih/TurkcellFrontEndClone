@@ -50,7 +50,7 @@ function eventListeners() {
   cardBodyTwo.addEventListener("click", deleteItem);
   clearMovies.addEventListener("click", clearAllItems);
   cardBodyTwo.addEventListener("click", editItem);
-  filterMovie.addEventListener("keyup", filterMovies);
+  filterMovie.addEventListener("keyup", filterItems);
 }
 
 function loadAllItemsFromStorage() {
