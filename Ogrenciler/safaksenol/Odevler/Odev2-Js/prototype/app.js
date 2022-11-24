@@ -13,115 +13,19 @@ const secondCardbody = document.querySelectorAll(".card-body")[1];
 
 const ui = new UI();
 const storage = new Storage();
+const add = new Add();
+const delcel = new Delcel();
+
 
 document.addEventListener("DOMContentLoaded", ui.loadDefaultFilmsToUI);
 
 eventListeners();
 function eventListeners() {
-  form.addEventListener("submit", addMovie);
-  moviePic.addEventListener("change", preview);
-  document.addEventListener("DOMContentLoaded", allMovieLoad);
-  moviefilter.addEventListener("keyup", movFilter);
-  secondCardbody.addEventListener("click", deletemovie);
-  secondCardbody.addEventListener("click", editMovie);
-  movieClear.addEventListener("click", clearAllTodos);
-}
-
-function addMovie(e) {
-  const newName = movieName.value.trim();
-  const newPic = moviePic.value.trim();
-  const newType = movieType.value.trim();
-  const newDate = movieVisionDate.value.trim();
-
-  if (newName == "" || newPic == "" || newType == "" || newDate == "") {
-    ui.showAlert("danger", "Lütfen tüm alanları doldurunuz!!!");
-  } else {
-    ui.addMovieToUI(newName, newPic, newType, newDate);
-    storage.addMovieToStorage(newName, newPic, newType, newDate);
-    clearInputs();
-    ui.showAlert("success", "Favori filminiz başarıyla eklenmiştir");
-  }
-  submitbutton.innerHTML = "Film Ekle";
-  e.preventDefault();
-}
-
-function editMovie(e) {
-  const elm = e.target;
-  if (elm.className === "fa fa-edit") {
-    elm.parentElement.parentElement.parentElement.remove();
-    let movies = storage._getMovieFromStorage();
-    movies.forEach(function (movie) {
-      if (movie.name === elm.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.textContent) {
-        movieName.value = movie.name;
-        moviePic.value = movie.poster;
-        movieType.value = movie.type;
-        movieVisionDate.value = movie.visiondate;
-        
-        submitbutton.innerHTML = "Filmi Düzenle";
-      }
-      })
-    storage.deleteMovInStorage(
-      elm.parentElement.parentElement.parentElement.childNodes[1].textContent
-    );
-
-    ui.showAlert("dark", "Film düzenleme modu aktif!");
-  }
-}
-
-function allMovieLoad() {
-  let movies = storage._getMovieFromStorage();
-  movies.forEach((mov) => {
-    const name = mov.name;
-    const poster = mov.poster;
-    const type = mov.type;
-    const visiondate = mov.visiondate;
-    ui.addMovieToUI(name, poster, type, visiondate);
-  });
-}
-
-function deletemovie(e) {
-  const elm = e.target;
-  if (elm.className === "fa fa-remove") {
-    elm.parentElement.parentElement.parentElement.remove();
-    storage.deleteMovInStorage(
-      elm.parentElement.parentElement.parentElement.childNodes[1].textContent
-    );
-    ui.showAlert("warning", "Film Başarıyla Silindi...");
-  }
-}
-
-function clearAllTodos() {
-  while (movielist.firstChild != null) {
-    movielist.removeChild(movielist.firstChild);
-  }
-  localStorage.removeItem("movies");
-}
-
-function clearInputs() {
-  movieName.value = "";
-  moviePic.value = "";
-  movieType.value = "";
-  movieVisionDate.value = "";
-  previewPoster.setAttribute(
-    "src",
-    "https://semantic-ui.com/images/wireframe/square-image.png"
-  );
-}
-
-function movFilter(e) {
-  const filterValue = e.target.value.toLowerCase();
-  const listItems = document.querySelectorAll(".name");
-  listItems.forEach(function (listItem) {
-    const text = listItem.textContent.toLowerCase();
-    if (text.indexOf(filterValue) === -1) {
-      listItem.parentElement.setAttribute("style", "display:none !important");
-    } else {
-      listItem.parentElement.setAttribute("style", "display:table-row");
-    }
-  });
-}
-
-function preview() {
-  const poster = moviePic.value;
-  previewPoster.setAttribute("src", poster);
-}
+  form.addEventListener("submit", add.addMovie);
+  moviePic.addEventListener("change", ui.preview);
+  document.addEventListener("DOMContentLoaded", add.allMovieLoad);
+  moviefilter.addEventListener("keyup", ui.movFilter);
+  secondCardbody.addEventListener("click", delcel.deletemovie);
+  secondCardbody.addEventListener("click", add.editMovie);
+  movieClear.addEventListener("click", delcel.clearAllTodos);
+};

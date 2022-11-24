@@ -36,4 +36,4 @@ static deleteMovInStorage(name) {
 
     localStorage.setItem("movies", JSON.stringify(movies));
     }
-}
+};

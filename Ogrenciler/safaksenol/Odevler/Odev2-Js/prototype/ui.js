@@ -75,3 +75,21 @@ UI.prototype.showAlert=function(type, message) {
     alert.remove();
   }, 2000);
 }
+
+UI.prototype.movFilter=function(e) {
+  const filterValue = e.target.value.toLowerCase();
+  const listItems = document.querySelectorAll(".name");
+  listItems.forEach(function (listItem) {
+    const text = listItem.textContent.toLowerCase();
+    if (text.indexOf(filterValue) === -1) {
+      listItem.parentElement.setAttribute("style", "display:none !important");
+    } else {
+      listItem.parentElement.setAttribute("style", "display:table-row");
+    }
+  });
+}
+
+UI.prototype.preview=function() {
+  const poster = moviePic.value;
+  previewPoster.setAttribute("src", poster);
+}
