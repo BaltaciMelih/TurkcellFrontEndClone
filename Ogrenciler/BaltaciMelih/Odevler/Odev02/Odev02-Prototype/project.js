@@ -69,7 +69,7 @@ function addItem(e) {
 
     ui.addItemToUI(newMovie);
     storage.addItemToStorage(newMovie);
-    ui.displaymessage("Film Başarıyla Eklendi", "success");
+    ui.displaymessage("Film Başarıyla Eklendi/Düzenlendi", "success");
   }
 
   nameMovie.value = "";
@@ -87,7 +87,7 @@ function deleteItem(e) {
   if (e.target.id === "delete-movie") {
     e.target.parentElement.parentElement.remove();
     storage.deleteItemFromStorage(
-      e.target.parentElement.previousElementSibling.previousElementSibling
+      e.target.parentElement.parentElement.firstElementChild.nextElementSibling
         .textContent
     );
     ui.displaymessage("Film Başarıyla Silindi", "success");
@@ -109,8 +109,8 @@ function editItem(e) {
     movies.forEach(function (movie) {
       if (
         movie.name ===
-        e.target.parentElement.previousElementSibling.previousElementSibling
-          .textContent
+        e.target.parentElement.parentElement.firstElementChild
+          .nextElementSibling.textContent
       ) {
         nameMovie.value = movie.name;
         directorMovie.value = movie.director;

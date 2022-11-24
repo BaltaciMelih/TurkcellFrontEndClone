@@ -7,11 +7,9 @@ UI.prototype.addItemToUI = function (newMovie) {
     <td><img class="img-fluid" src="${newMovie.url}"</td>
     <td>${newMovie.name}</td>
     <td>${newMovie.director}</td>
-    <td class="d-flex flex-column">
-    ${newMovie.date}
-    <a class="btn btn-warning mt-5" id="edit-movie" href="#">Filmi Düzenle</a>
-    <a class="btn btn-danger mt-5" id="delete-movie" href="#">Filmi Sil</a>
-    </td>
+    <td>${newMovie.date}</td>
+    <td><a class="btn btn-warning" id="edit-movie" href="#">Filmi Düzenle</a></td>
+    <td><a class="btn btn-danger" id="delete-movie" href="#">Filmi Sil</a></td>
     </tr>
     `;
 };
