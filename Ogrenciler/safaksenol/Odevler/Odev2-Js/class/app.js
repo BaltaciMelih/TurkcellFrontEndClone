@@ -11,10 +11,7 @@ const previewPoster = document.querySelector("#previewPoster");
 const firstCardbody = document.querySelectorAll(".card-body")[0];
 const secondCardbody = document.querySelectorAll(".card-body")[1];
 
-const ui = new UI();
-const storage = new Storage();
-
-document.addEventListener("DOMContentLoaded", ui.loadDefaultFilmsToUI);
+document.addEventListener("DOMContentLoaded", UI.loadDefaultFilmsToUI);
 
 eventListeners();
 function eventListeners() {
@@ -34,12 +31,12 @@ function addMovie(e) {
   const newDate = movieVisionDate.value.trim();
 
   if (newName == "" || newPic == "" || newType == "" || newDate == "") {
-    ui.showAlert("danger", "Lütfen tüm alanları doldurunuz!!!");
+    UI.showAlert("danger", "Lütfen tüm alanları doldurunuz!!!");
   } else {
-    ui.addMovieToUI(newName, newPic, newType, newDate);
-    storage.addMovieToStorage(newName, newPic, newType, newDate);
+    UI.addMovieToUI(newName, newPic, newType, newDate);
+    Storage.addMovieToStorage(newName, newPic, newType, newDate);
     clearInputs();
-    ui.showAlert("success", "Favori filminiz başarıyla eklenmiştir");
+    UI.showAlert("success", "Favori filminiz başarıyla eklenmiştir");
   }
   submitbutton.innerHTML = "Film Ekle";
   e.preventDefault();
@@ -49,33 +46,38 @@ function editMovie(e) {
   const elm = e.target;
   if (elm.className === "fa fa-edit") {
     elm.parentElement.parentElement.parentElement.remove();
-    let movies = storage._getMovieFromStorage();
+    let movies = Storage._getMovieFromStorage();
     movies.forEach(function (movie) {
-      if (movie.name === elm.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.textContent) {
+      if (
+        movie.name ===
+        elm.parentElement.parentElement.previousElementSibling
+          .previousElementSibling.previousElementSibling.previousElementSibling
+          .textContent
+      ) {
         movieName.value = movie.name;
         moviePic.value = movie.poster;
         movieType.value = movie.type;
         movieVisionDate.value = movie.visiondate;
-        
+
         submitbutton.innerHTML = "Filmi Düzenle";
       }
-      })
-    storage.deleteMovInStorage(
+    });
+    Storage.deleteMovInStorage(
       elm.parentElement.parentElement.parentElement.childNodes[1].textContent
     );
 
-    ui.showAlert("dark", "Film düzenleme modu aktif!");
+    UI.showAlert("dark", "Film düzenleme modu aktif!");
   }
 }
 
 function allMovieLoad() {
-  let movies = storage._getMovieFromStorage();
+  let movies = Storage._getMovieFromStorage();
   movies.forEach((mov) => {
     const name = mov.name;
     const poster = mov.poster;
     const type = mov.type;
     const visiondate = mov.visiondate;
-    ui.addMovieToUI(name, poster, type, visiondate);
+    UI.addMovieToUI(name, poster, type, visiondate);
   });
 }
 
@@ -83,10 +85,10 @@ function deletemovie(e) {
   const elm = e.target;
   if (elm.className === "fa fa-remove") {
     elm.parentElement.parentElement.parentElement.remove();
-    storage.deleteMovInStorage(
+    Storage.deleteMovInStorage(
       elm.parentElement.parentElement.parentElement.childNodes[1].textContent
     );
-    ui.showAlert("warning", "Film Başarıyla Silindi...");
+    UI.showAlert("warning", "Film Başarıyla Silindi...");
   }
 }
 

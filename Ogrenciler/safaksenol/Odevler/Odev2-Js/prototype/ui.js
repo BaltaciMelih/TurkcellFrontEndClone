@@ -1,5 +1,27 @@
 function UI() { }
 
+UI.prototype.loadDefaultFilmsToUI=function() {
+  const initialized = localStorage.getItem("initialized");
+  if (!initialized) {
+   const movies = [
+    new Movie(
+        "https://tr.web.img4.acsta.net/pictures/16/08/16/10/53/130303.jpg",
+       "Sully",
+       "Clint Eastwood",
+       "9 Eylül 2016"
+     ),
+       new Movie(
+        "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+       "Matrix",
+        "Lana Wachowski",
+        "3 Eylül 1999"
+     ),
+   ];
+   localStorage.setItem("movies", JSON.stringify(movies));
+    localStorage.setItem("initialized", true);
+ }
+}
+
 UI.prototype.addMovieToUI=function(name, pic, type, visiondate) {
   const listItem = document.createElement("tr");
   const movPoster = document.createElement("td");
