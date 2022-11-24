@@ -11,23 +11,40 @@ Main.prototype.init = function() {
   FilmData.init();
   this.movieData = FilmData.getData();
   console.log(this.movieData);
-
   this.elements = StoreElements.init();
   console.log('this.elements', this.elements);
   this.listenEvents();
+  // this.staticFilmLS();
   this.appendMovies();
   
   
   //sayfa açıldığında bu kısım çalışıyor.
 };
 
+Main.prototype.staticFilmLS = function(){
+ 
+  if(localStorage.getItem("MoviesList")===null){
+    let film1 = new Film(
+      'Platform',
+      'Galder Gaztelu-Urrutia',
+      'https://wallpapercave.com/wp/wp7307694.jpg',
+      '2019-11-08'
+    )
+    let film2 = new Film(
+      'Saving Private Ryan',
+      'Steven Spielberg',
+      'https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg',
+      '1998-09-11'
+    )
+    FilmData.getData.push(film1, film2); 
+     
+  }
 
-///
-// Main.prototype.deleteMovie = function(){
-//   this.elements.movieDel.parentElement.parentElement.remove();
-// }
-
-
+  // staticFilm.forEach((item)=>{
+  //   this.addMovieUI({item});
+  // });
+  
+}
 
 Main.prototype.listenEvents = function() {
   this.elements.muted.addEventListener("click", () => {this.soundMute();});
@@ -35,16 +52,7 @@ Main.prototype.listenEvents = function() {
   this.elements.deleteAll.addEventListener("click", () => {this.deleteAllMovie();});
   this.elements.axe.addEventListener("click", () => {this.addMovie();});
   this.elements.movieBottom.addEventListener("click", (e) => {this.delMovie(e);});
-  //
-  // this.elements.movieBottom.addEventListener("click",  function delMovie(e){
-  //   if(e.target.classList.contains("delete")){
-  //     e.target.parentElement.parentElement.remove();
-  //   }
-  //   // mainin protosuna tanımlamadığım için içine fonksiyon çağıramıyorum
-  //   //savelocal
-  //  FilmData.remove
-  // });
-   
+  this.elements.movieBottom.addEventListener("click", (e) => {this.changeMovie(e);});
   console.log("this.listenevents", this.listenEvents);
 };
 
@@ -57,6 +65,7 @@ Main.prototype.deleteIndex = function(film){ // bir yerde çağırmadım
   })
 }
 
+// UI'a filmleri çekme
 Main.prototype.appendMovies = function(){
   this.movieData.forEach((item) => {
     this.addMovieUI(item);
@@ -85,11 +94,9 @@ Main.prototype.deleteAllMovie = function() {
   if(confirm("are you serious ??")){
     while (this.elements.movieBottom.firstChild !== null) {
       this.elements.movieBottom.removeChild(this.elements.movieBottom.firstChild); // Daha hızlı çalışacak
-      
-
     }
     this.showAlert("hepsi silindi", "success")
-
+    localStorage.removeItem('Movies'); // localden hepsini silme
     
     
     
@@ -98,35 +105,14 @@ Main.prototype.deleteAllMovie = function() {
  
 };
 
-// silme
-// Main.prototype.deleteFilmStorage = function (title) {
-//   let films = this.movieData;
-//   let name = new Film(name, director, img, date)
-//   films.forEach(function(film, index){
-//     if(films[film] === title){
-//       films.slice(index,1);
-//     }
-//   });
-//   FilmData.setDataToStorage();
-// }
 
-// (
-//   static deleteFilmFromStorage(filmTitle){
-//     let films = this.getFilmsFromStorage();
-//     films.forEach(function(film,index){
-//       if(film.title === filmTitle){
-//         films.splice(index,1);
-//       }
-//     });
-//     localStorage.setItem("films",JSON.stringify(films));
-//   }
-// )
 Main.prototype.addMovie = function() {
   const name = this.elements.nameInput.value.trim();
+  console.log(name);
   const director = this.elements.directorInput.value.trim();
   const img = this.elements.imgInput.value.trim();
   const date = this.elements.dateInput.value.trim();
-  const film = new Film({name, director, img, date});
+  const film = new Film(name, director, img, date);
   if(name === '' || director === '' || img === '' || date === ''){
     this.showAlert("Eksik Bilgi Girdiniz!!", "danger")
     this.resetForm();
@@ -151,7 +137,7 @@ Main.prototype.addMovieUI = function({name, director, img, date}) {
     row.className = "row my-3 movie-container";
     row.innerHTML = `
                     <div class="col-3">
-                        <img class="img-fluid" src="${img}" alt="">
+                        <img class="img-fluid img" src="${img}" alt="">
                     </div>
                     <div class="col-7 text-white">
                         <div class="row border-bottom">
@@ -166,7 +152,7 @@ Main.prototype.addMovieUI = function({name, director, img, date}) {
                             <p>DIRECTOR</p> 
                         </div>
                         <div class="col-8">
-                            <p>${director}</p>
+                            <p class="director">${director}</p>
                         </div>
                     </div>
 
@@ -176,7 +162,7 @@ Main.prototype.addMovieUI = function({name, director, img, date}) {
                             <p>RELEASE DATE</p> 
                         </div>
                         <div class="col-8">
-                            <p>${date}</p>
+                            <p class="date">${date}</p>
                         </div>
                     </div>
 
@@ -203,18 +189,15 @@ Main.prototype.addMovieUI = function({name, director, img, date}) {
 };
 ///////// uidan 
 Main.prototype.movieTitle = function(e){
- 
-  let title = e.target.parentElement.parentElement.children[1].children[0].children[1].textContent; // istediğimiz name geliyor
+ // silme işleminde fildata removeda title ı gönderdiğimizcxe bosluklu gönderiyor neder  !!!!!!!!!!!!!!!!!!!!!!!
+  let title = e.target.parentElement.parentElement.children[1].children[0].children[1].textContent.trim(); // istediğimiz name geliyor
   console.log(title);
   return title;
 }
 
 Main.prototype.delMovieUi = function(e){
   if(e.target.id === 'deleteMovie'){
-  
     e.target.parentElement.parentElement.remove();
-    
-   
     this.showAlert("silme işlemi başarılı.", "success");
     // let name = e.target.parentElement.parentElement.children[1].children[0].children[1].textContent; // istediğimiz name geliyor
     // console.log(name);
@@ -227,22 +210,32 @@ Main.prototype.delMovieUi = function(e){
 
 
 Main.prototype.delMovie = function (e){
-  // let ad = [];
-  // this.elements.id.forEach(function(item){
-  //   console.log(item);
-  // })
-  
-  // console.log(ad);
   this.delMovieUi(e)
   let title = this.movieTitle(e)
-  
   FilmData.remove(title);
-//  this.deleteFilmStorage()
-   
-
 
  console.log("this.delMovie", this.delMovie);
  }
+
+Main.prototype.changeMovie = function (e){
+  if(e.target.classList.contains("edit")){
+    e.target.parentElement.parentElement.remove();
+    // AYRICA LOCALDENDE DİREK SİLİYOR 212. SATIRDA DELMOVİE FONKSİYONUN ALTINDA TİTLE BELİRLEDİĞİMİZ İÇİN TİTLE VERİSİNİ DATAYA OTOMATİK GÖNDERİYOR
+    let movie = e.target.parentElement.parentElement;
+    let movieName =movie.querySelector('.name');
+    let movieDirector = movie.querySelector('.director');
+    let movieBanner = movie.querySelector('.img');
+    let movieDate = movie.querySelector('.date');
+   
+
+    this.elements.nameInput.value = movieName.textContent;
+    this.elements.directorInput.value = movieDirector.textContent;
+    this.elements.imgInput.value = movieBanner.src;
+    this.elements.dateInput.value = movieDate.textContent;
+    // console.log( this.elements.nameInput, this.elements.directorInput, this.elements.imgInput,this.elements.dateInput);
+    this.showAlert("Film verileri inputlara gönderildi. ", "warning")
+  }
+}
 
 Main.prototype.resetForm = function() {
   this.elements.nameInput.value = "";
