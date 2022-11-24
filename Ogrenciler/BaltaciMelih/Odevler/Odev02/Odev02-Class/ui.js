@@ -8,8 +8,8 @@ UI.prototype.addItemToUI = function (newMovie) {
     <td class = "filter-name">${newMovie.name}</td>
     <td>${newMovie.director}</td>
     <td>${newMovie.date}</td>
-    <td><a class="btn btn-warning" id="edit-movie" href="#">Düzenle</a>
-    <a class="btn btn-danger" id="delete-movie" href="#">Sil</a></td>
+    <td><a class="btn btn-warning" href="#"><i id="edit-movie" class="bi bi-pencil-fill"></i></a>
+    <a class="btn btn-danger" href="#"><i id="delete-movie" class="bi bi-trash-fill"></i></a></td>
     </tr>
     `;
 };

@@ -87,10 +87,10 @@ function addItem(e) {
 
 function deleteItem(e) {
   if (e.target.id === "delete-movie") {
-    e.target.parentElement.parentElement.remove();
+    e.target.parentElement.parentElement.parentElement.remove();
     storage.deleteItemFromStorage(
-      e.target.parentElement.parentElement.firstElementChild.nextElementSibling
-        .textContent
+      e.target.parentElement.parentElement.parentElement.firstElementChild
+        .nextElementSibling.textContent
     );
     ui.displaymessage("Film Başarıyla Silindi", "success");
   }
@@ -106,13 +106,13 @@ function clearAllItems() {
 
 function editItem(e) {
   if (e.target.id === "edit-movie") {
-    e.target.parentElement.parentElement.remove();
+    e.target.parentElement.parentElement.parentElement.remove();
 
     let movies = storage.getItemFromStorage();
     movies.forEach(function (movie) {
       if (
         movie.name ===
-        e.target.parentElement.parentElement.firstElementChild
+        e.target.parentElement.parentElement.parentElement.firstElementChild
           .nextElementSibling.textContent
       ) {
         nameMovie.value = movie.name;
@@ -125,8 +125,8 @@ function editItem(e) {
     });
 
     storage.deleteItemFromStorage(
-      e.target.parentElement.previousElementSibling.previousElementSibling
-        .textContent
+      e.target.parentElement.parentElement.parentElement.firstElementChild
+        .nextElementSibling.textContent
     );
     ui.displaymessage("Lütfen Filmi Düzenleyin", "warning");
   }
