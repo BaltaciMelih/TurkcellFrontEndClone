@@ -14,7 +14,7 @@ const storage = new Storage();
 
 firstRun();
 function firstRun() {
-  if (localStorage.getItem("movies") === null) {
+  if (localStorage.getItem("archive") === null) {
     storage.addItemToStorage(
       new Movie(
         "Matrix",

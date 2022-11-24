@@ -8,14 +8,10 @@ const clearMovies = document.getElementById("clear-archive");
 const submitButton = document.getElementById("submit-button");
 const filterMovie = document.getElementById("filter");
 
-const ui = new UI();
-
-const storage = new Storage();
-
 firstRun();
 function firstRun() {
-  if (localStorage.getItem("movies") === null) {
-    storage.addItemToStorage(
+  if (localStorage.getItem("archive") === null) {
+    Storage.addItemToStorage(
       new Movie(
         "Matrix",
         "Lana Wachowski",
@@ -23,7 +19,7 @@ function firstRun() {
         "https://tr.web.img3.acsta.net/c_310_420/pictures/210/201/21020166_20130717110427461.jpg"
       )
     );
-    storage.addItemToStorage(
+    Storage.addItemToStorage(
       new Movie(
         "Eşkıya",
         "Yavuz Turgul",
@@ -31,7 +27,7 @@ function firstRun() {
         "https://tr.web.img2.acsta.net/c_310_420/pictures/bzp/01/17646.jpg"
       )
     );
-    storage.addItemToStorage(
+    Storage.addItemToStorage(
       new Movie(
         "12 Angry Men",
         "Sidney Lurnet",
@@ -54,8 +50,8 @@ function eventListeners() {
 }
 
 function loadAllItemsFromStorage() {
-  let movies = storage.getItemFromStorage();
-  ui.LoadAllItemsToUI(movies);
+  let movies = Storage.getItemFromStorage();
+  UI.LoadAllItemsToUI(movies);
 }
 
 function addItem(e) {
@@ -65,13 +61,13 @@ function addItem(e) {
   const url = urlMovie.value;
 
   if (name === "" || director === "" || date === "" || url === "") {
-    ui.displaymessage("Lütfen Tüm Bilgileri Doldurun", "danger");
+    UI.displaymessage("Lütfen Tüm Bilgileri Doldurun", "danger");
   } else {
     const newMovie = new Movie(name, director, date, url);
 
-    ui.addItemToUI(newMovie);
-    storage.addItemToStorage(newMovie);
-    ui.displaymessage("Film Başarıyla Eklendi/Düzenlendi", "success");
+    UI.addItemToUI(newMovie);
+    Storage.addItemToStorage(newMovie);
+    UI.displaymessage("Film Başarıyla Eklendi/Düzenlendi", "success");
   }
 
   nameMovie.value = "";
@@ -88,19 +84,19 @@ function addItem(e) {
 function deleteItem(e) {
   if (e.target.id === "delete-movie") {
     e.target.parentElement.parentElement.parentElement.remove();
-    storage.deleteItemFromStorage(
+    Storage.deleteItemFromStorage(
       e.target.parentElement.parentElement.parentElement.firstElementChild
         .nextElementSibling.textContent
     );
-    ui.displaymessage("Film Başarıyla Silindi", "success");
+    UI.displaymessage("Film Başarıyla Silindi", "success");
   }
 }
 
 function clearAllItems() {
   if (confirm("Tüm Arşivi Silmek İstediğinize Emin Misiniz?")) {
-    ui.clearAllItemsFromUI();
-    storage.clearAllItemsFromStorage();
-    ui.displaymessage("Tüm Arşiv Silindi", "success");
+    UI.clearAllItemsFromUI();
+    Storage.clearAllItemsFromStorage();
+    UI.displaymessage("Tüm Arşiv Silindi", "success");
   }
 }
 
@@ -108,7 +104,7 @@ function editItem(e) {
   if (e.target.id === "edit-movie") {
     e.target.parentElement.parentElement.parentElement.remove();
 
-    let movies = storage.getItemFromStorage();
+    let movies = Storage.getItemFromStorage();
     movies.forEach(function (movie) {
       if (
         movie.name ===
@@ -124,16 +120,16 @@ function editItem(e) {
       submitButton.className = "btn btn-warning mb-3";
     });
 
-    storage.deleteItemFromStorage(
+    Storage.deleteItemFromStorage(
       e.target.parentElement.parentElement.parentElement.firstElementChild
         .nextElementSibling.textContent
     );
-    ui.displaymessage("Lütfen Filmi Düzenleyin", "warning");
+    UI.displaymessage("Lütfen Filmi Düzenleyin", "warning");
   }
 }
 
 function filterItems(e) {
   const filterValue = e.target.value.toLowerCase();
   const filterNames = document.querySelectorAll(".filter-name");
-  ui.filterItemsUI(filterNames, filterValue);
+  UI.filterItemsUI(filterNames, filterValue);
 }

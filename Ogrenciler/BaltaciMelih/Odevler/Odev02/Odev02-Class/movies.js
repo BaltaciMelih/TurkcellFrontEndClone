@@ -1,6 +1,8 @@
-function Movie(name, director, date, url) {
-  this.name = name;
-  this.director = director;
-  this.date = date;
-  this.url = url;
+class Movie {
+  constructor(name, director, date, url) {
+    this.name = name;
+    this.director = director;
+    this.date = date;
+    this.url = url;
+  }
 }
