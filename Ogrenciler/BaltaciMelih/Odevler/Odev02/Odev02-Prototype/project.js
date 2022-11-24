@@ -6,6 +6,7 @@ const urlMovie = document.getElementById("movie-url");
 const cardBodyTwo = document.querySelectorAll(".card-body")[1];
 const clearMovies = document.getElementById("clear-archive");
 const submitButton = document.getElementById("submit-button");
+const filterMovie = document.getElementById("filter");
 
 const ui = new UI();
 
@@ -49,6 +50,7 @@ function eventListeners() {
   cardBodyTwo.addEventListener("click", deleteItem);
   clearMovies.addEventListener("click", clearAllItems);
   cardBodyTwo.addEventListener("click", editItem);
+  filterMovie.addEventListener("keyup", filterMovies);
 }
 
 function loadAllItemsFromStorage() {
@@ -128,4 +130,10 @@ function editItem(e) {
     );
     ui.displaymessage("Lütfen Filmi Düzenleyin", "warning");
   }
+}
+
+function filterItems(e) {
+  const filterValue = e.target.value.toLowerCase();
+  const filterNames = document.querySelectorAll(".filter-name");
+  ui.filterItemsUI(filterNames, filterValue);
 }

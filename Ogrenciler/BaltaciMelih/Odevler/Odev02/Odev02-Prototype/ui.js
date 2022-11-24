@@ -5,7 +5,7 @@ UI.prototype.addItemToUI = function (newMovie) {
   archive.innerHTML += `
     <tr>
     <td><img class="img-fluid" src="${newMovie.url}"</td>
-    <td>${newMovie.name}</td>
+    <td class = "filter-name">${newMovie.name}</td>
     <td>${newMovie.director}</td>
     <td>${newMovie.date}</td>
     <td><a class="btn btn-warning" id="edit-movie" href="#">Filmi Düzenle</a></td>
@@ -35,4 +35,15 @@ UI.prototype.LoadAllItemsToUI = function (movies) {
 UI.prototype.clearAllItemsFromUI = function () {
   const archive = document.getElementById("archive");
   archive.innerHTML = "";
+};
+
+UI.prototype.filterItemsUI = function (filterNames, filterValue) {
+  filterNames.forEach(function (filterName) {
+    const text = filterName.innerHTML.toLowerCase();
+    if (text.indexOf(filterValue) === -1) {
+      filterName.parentElement.setAttribute("style", "display:none !important");
+    } else {
+      filterName.parentElement.setAttribute("style", "display:table-row");
+    }
+  });
 };
