@@ -98,6 +98,7 @@ function clearAllItems() {
   if (confirm("Tüm Arşivi Silmek İstediğinize Emin Misiniz?")) {
     ui.clearAllItemsFromUI();
     storage.clearAllItemsFromStorage();
+    ui.displaymessage("Tüm Arşiv Silindi", "success");
   }
 }
 
