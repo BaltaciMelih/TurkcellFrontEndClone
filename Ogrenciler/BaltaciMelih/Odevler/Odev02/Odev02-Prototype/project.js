@@ -5,6 +5,7 @@ const dateMovie = document.getElementById("movie-date");
 const urlMovie = document.getElementById("movie-url");
 const cardBodyTwo = document.querySelectorAll(".card-body")[1];
 const clearMovies = document.getElementById("clear-archive");
+const submitButton = document.getElementById("submit-button");
 
 const ui = new UI();
 
@@ -76,6 +77,9 @@ function addItem(e) {
   dateMovie.value = "";
   urlMovie.value = "";
 
+  submitButton.innerHTML = "Filmi Arşive Ekle";
+  submitButton.className = "btn btn-success mb-3";
+
   e.preventDefault();
 }
 
@@ -113,6 +117,8 @@ function editItem(e) {
         dateMovie.value = movie.date;
         urlMovie.value = movie.url;
       }
+      submitButton.innerHTML = "Filmi Düzenleyin";
+      submitButton.className = "btn btn-warning mb-3";
     });
 
     storage.deleteItemFromStorage(
