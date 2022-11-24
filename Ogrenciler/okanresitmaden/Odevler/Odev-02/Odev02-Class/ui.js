@@ -8,7 +8,7 @@ class UI{
         const movies = movie;
         movies.forEach(function(movie){
             list.innerHTML += `<div class="col-12 col-lg-4">
-            <div class="card1 d-flex border border-5 border-secondary card bg-dark mb-3">
+            <div class="card d-flex border border-5 border-secondary card bg-dark mb-3" id="movie_${movie.id}">
               <img src="${movie.poster}" class="card-img-top img-fluid postersize" alt="...">
               <div class="card-body">
                 <table class="table">

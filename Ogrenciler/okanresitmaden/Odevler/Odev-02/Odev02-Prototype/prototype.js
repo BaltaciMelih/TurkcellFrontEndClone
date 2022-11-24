@@ -9,6 +9,7 @@ const savebutton = document.getElementById("savebutton");
 const alldeletebutton = document.getElementById("delete");
 const partdeletebutton = document.getElementById("deletepart");
 const firstpart = document.querySelector(".rowfirst");
+const filter = document.getElementById("filter");
 
 function Movie(){
     this.id = '';
@@ -83,6 +84,9 @@ Movie.prototype.EditandSave = function(){
     this.ui.RenderUI(this.movies);
     this.store.addToStorage(this.movies);
 }
+
+
+
 const movie = new Movie();
 
 alldeletebutton.addEventListener("click", function(){
@@ -113,7 +117,8 @@ general.addEventListener("click",function(e){
         movie.Edit();
         savebutton.classList.remove("hide");
         button.classList.add("hide");
-        window.scrollTo(0,0);
+        const startposition = document.getElementById("startposition");
+        startposition.scrollIntoView({behavior:"smooth"});
         console.log(movie.id);
     }
     if (e.target.className === "btn btn-danger mx-2"){
@@ -121,8 +126,11 @@ general.addEventListener("click",function(e){
         button.classList.remove("hide");
         savebutton.classList.add("hide");
         // window.scrollTo(750,750);
-        const element = document.getElementById("963330");
-        element.scrollIntoView({behavior: "smooth"});
+        const movieposition = document.getElementById(`movie_${movie.id}`);
+        movieposition.scrollIntoView({behavior: "smooth"});
     }
 })
+
+
+
 
