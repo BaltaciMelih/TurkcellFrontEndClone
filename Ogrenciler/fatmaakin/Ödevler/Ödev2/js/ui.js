@@ -1,14 +1,14 @@
 function UI() {};
 const ui = new UI();
 
-UI.prototype.addMovieUI = function (newMovie) {
+UI.prototype.addMovieUI = function (newmovie) {
     movieList.innerHTML += `
     <li class="row mt-5 align-items-center border border-2">
-        <img class="col-sm-3 h p-2" src="${newMovie.URL}">
+        <img class="col-sm-3 h p-2" src="${newmovie.URL}">
         <div class="col-sm-7 px-4">
-            <h5>${newMovie.name} </h5><hr>
-            <p>Yönetmen: ${newMovie.director} </p>
-            <p>Tarih: ${newMovie.date} </p>
+            <h5>${newmovie.name} </h5><hr>
+            <p>Yönetmen: ${newmovie.director} </p>
+            <p>Tarih: ${newmovie.date} </p>
         </div>
         <div class="col-sm-2">
             <button class="btn btn-secondary mb-4 w-100 p-3">Edit</button>
@@ -16,10 +16,10 @@ UI.prototype.addMovieUI = function (newMovie) {
         </div>
     </li>
     `;
-    ui.clearInput(movieNameInput);
-    ui.clearInput(directorNameInput);
-    ui.clearInput(movieDateInput);
-    ui.clearInput(movieURLInput);
+    ui.clearInput(nameinput);
+    ui.clearInput(direcinput);
+    ui.clearInput(dateinput);
+    ui.clearInput(urlinput);
 }
 
 UI.prototype.showAlert = function (message, type) {
