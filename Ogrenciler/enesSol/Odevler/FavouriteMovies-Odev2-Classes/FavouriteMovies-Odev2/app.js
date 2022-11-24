@@ -1,6 +1,3 @@
-const actions = new Actions();
-const edit = new Edit();
-
 const form = document.getElementById("movie-details");
 const movieIdInput = document.getElementById("movieId");
 const directorNameInput = document.getElementById("director");
@@ -17,8 +14,8 @@ document.addEventListener("DOMContentLoaded", UI.loadDefaultFilmsToUI);
 
 eventListeners();
 function eventListeners() {
-  form.addEventListener("submit", actions.addMovie);
-  clearButton.addEventListener("click", actions.clearAllMovies);
-  filter.addEventListener("keyup", actions.filterMovies);
+  form.addEventListener("submit", Actions.addMovie);
+  clearButton.addEventListener("click", Actions.clearAllMovies);
+  filter.addEventListener("keyup", Actions.filterMovies);
   document.addEventListener("DOMContentLoaded", UI.loadAllMoviesToUI);
 }

@@ -40,9 +40,9 @@ class UI {
     editButton.className = "edit my-auto mx-lg-5 mx-2";
     editButton.innerHTML = "<i class='fa fa-edit fa-2x'></i>";
 
-    editButton.addEventListener("click", edit.updateMovieInfo);
+    editButton.addEventListener("click", Edit.updateMovieInfo);
 
-    link.addEventListener("click", actions.deleteMovie);
+    link.addEventListener("click", Actions.deleteMovie);
     moviediv.innerHTML = `  <img style = "width: 300px; height: 350px" src="${movie.poster}" class="card-img-top img-fluid alt="...">
     <div class="card-body">
       <h5 class="card-title">${movie.title}</h5>
