@@ -29,12 +29,12 @@ Store.prototype.addMovie = function (movie) {
   localStorage.setItem("movies", JSON.stringify(movies));
 };
 
-Store.prototype.removeMovie = function (year) {
+Store.prototype.removeMovie = function (name) {
   const store = new Store();
   const movies = store.getMovies();
 
   movies.forEach(function (movie, index) {
-    if (movie.year === year) {
+    if (movie.name === name) {
       movies.splice(index, 1);
     }
   });

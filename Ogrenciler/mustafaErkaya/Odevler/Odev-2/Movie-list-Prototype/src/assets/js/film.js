@@ -1,4 +1,4 @@
-var Film = function({name, director, img, date}) {
+let Film = function(name, director, img, date) {
     this.name = name;
     this.director = director;
     this.img = img;

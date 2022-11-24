@@ -27,5 +27,5 @@ export const storage = {
    
     clearAllMoviesFromStorage(){
        localStorage.removeItem('movies');
-   }
+   },
 }

@@ -41,9 +41,18 @@ document.querySelector("#movie-list").addEventListener("click", function (e) {
   ui.deleteMovie(e.target);
   store.removeMovie(
     e.target.parentElement.parentElement.previousElementSibling
-      .previousElementSibling.textContent
+      .previousElementSibling.previousElementSibling.previousElementSibling
+      .textContent
   );
 
   ui.showAlert("Movie Removed", "success");
   e.preventDefault();
+});
+
+document.querySelector("#clear-movies").addEventListener("click", function () {
+  const movieList = document.getElementById("movie-list");
+  while (movieList.firstChild != null) {
+    movieList.removeChild(movieList.firstChild);
+  }
+  localStorage.removeItem("movies");
 });

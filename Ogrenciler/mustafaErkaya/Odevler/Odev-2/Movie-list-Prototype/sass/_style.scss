@@ -20,7 +20,7 @@ body{
             height: 75vh;
             position: absolute;
             z-index: 2;
-            top: 10%;
+            top: 5%;
             
             .row{
                 .movie-box-top{
@@ -28,12 +28,19 @@ body{
                    font-family: $movie-add-font;
                    font-weight: 400;
                    font-size: 12px;
+                   img{
+                    cursor: pointer;
+                   }
 
                    input{
                     color: #fff;
                     font-family: $movie-add-font;
                    }
                    
+                }
+
+                .kaos{
+                    cursor: pointer;
                 }
 
                 .movie-box-bottom{

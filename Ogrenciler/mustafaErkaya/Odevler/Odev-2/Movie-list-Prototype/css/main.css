@@ -8401,15 +8401,19 @@ body {
       height: 75vh;
       position: absolute;
       z-index: 2;
-      top: 10%; }
+      top: 5%; }
       body .film-site-box .container-fluid .row .movie-box-top, body .film-site-box .container-sm .row .movie-box-top, body .film-site-box .container-md .row .movie-box-top, body .film-site-box .container-lg .row .movie-box-top, body .film-site-box .container-xl .row .movie-box-top, body .film-site-box .container-xxl .row .movie-box-top {
         background-color: rgba(0, 0, 0, 0.8);
         font-family: "Roboto Mono", monospace;
         font-weight: 400;
         font-size: 12px; }
+        body .film-site-box .container-fluid .row .movie-box-top img, body .film-site-box .container-sm .row .movie-box-top img, body .film-site-box .container-md .row .movie-box-top img, body .film-site-box .container-lg .row .movie-box-top img, body .film-site-box .container-xl .row .movie-box-top img, body .film-site-box .container-xxl .row .movie-box-top img {
+          cursor: pointer; }
         body .film-site-box .container-fluid .row .movie-box-top input, body .film-site-box .container-sm .row .movie-box-top input, body .film-site-box .container-md .row .movie-box-top input, body .film-site-box .container-lg .row .movie-box-top input, body .film-site-box .container-xl .row .movie-box-top input, body .film-site-box .container-xxl .row .movie-box-top input {
           color: #fff;
           font-family: "Roboto Mono", monospace; }
+      body .film-site-box .container-fluid .row .kaos, body .film-site-box .container-sm .row .kaos, body .film-site-box .container-md .row .kaos, body .film-site-box .container-lg .row .kaos, body .film-site-box .container-xl .row .kaos, body .film-site-box .container-xxl .row .kaos {
+        cursor: pointer; }
       body .film-site-box .container-fluid .row .movie-box-bottom, body .film-site-box .container-sm .row .movie-box-bottom, body .film-site-box .container-md .row .movie-box-bottom, body .film-site-box .container-lg .row .movie-box-bottom, body .film-site-box .container-xl .row .movie-box-bottom, body .film-site-box .container-xxl .row .movie-box-bottom {
         max-height: 47vh;
         background-color: rgba(0, 0, 0, 0.8);
