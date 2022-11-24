@@ -9,7 +9,7 @@ Actions.prototype.addMovie = function (e) {
   const releaseDate = releaseDateInput.value.trim();
 
   if ((title, director, poster, releaseDate === "")) {
-    ui.showAlert("danger", "Please fill all the inputs.");
+    UI.showAlert("danger", "Please fill all the inputs.");
   } else {
     const movie = new Movie(id, title, director, poster, releaseDate);
     if (id !== "") {
@@ -24,9 +24,9 @@ Actions.prototype.addMovie = function (e) {
 
 // Add Movie
 Actions.prototype.createMovie = function (movie) {
-  ui.addMovieToUI(movie);
+  UI.addMovieToUI(movie);
   Storage.addMovieToStorage(movie);
-  ui.showAlert("success", "Movie successfully added.");
+  UI.showAlert("success", "Movie successfully added.");
 };
 
 // Delete
@@ -54,7 +54,7 @@ Actions.prototype.filterMovies = function (e) {
     if (text.indexOf(filterValue) === -1) {
       const alert = document.querySelector(".alert");
       if (!alert) {
-        ui.showAlert("warning", "Could not find what you are looking for :(");
+        UI.showAlert("warning", "Could not find what you are looking for :(");
       }
       listItem.setAttribute("style", "display:none !important");
     } else {

@@ -13,7 +13,7 @@ Edit.prototype.updateMovie = function (movie) {
     localStorage.setItem("movies", JSON.stringify(movies));
   });
   movieIdInput.value = "";
-  ui.loadAllMoviesToUI();
+  UI.loadAllMoviesToUI();
 };
 
 Edit.prototype.updateMovieInfo = function (e) {
@@ -21,7 +21,7 @@ Edit.prototype.updateMovieInfo = function (e) {
   const movie = edit.getMovieById(movieId);
   edit.editForm(movie);
 
-  ui.showAlert("success", "Updating movie...");
+  UI.showAlert("success", "Updating movie...");
 };
 
 Edit.prototype.editForm = function (movie) {

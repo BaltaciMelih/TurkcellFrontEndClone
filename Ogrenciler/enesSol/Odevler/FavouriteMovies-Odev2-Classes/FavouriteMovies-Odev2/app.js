@@ -1,4 +1,3 @@
-const ui = new UI();
 const actions = new Actions();
 const edit = new Edit();
 
@@ -14,12 +13,12 @@ const firstCardBody = document.querySelectorAll(".card-body")[0];
 const secondCardBody = document.querySelector(".card-body")[1];
 const filter = document.getElementById("filter");
 
-document.addEventListener("DOMContentLoaded", ui.loadDefaultFilmsToUI);
+document.addEventListener("DOMContentLoaded", UI.loadDefaultFilmsToUI);
 
 eventListeners();
 function eventListeners() {
   form.addEventListener("submit", actions.addMovie);
   clearButton.addEventListener("click", actions.clearAllMovies);
   filter.addEventListener("keyup", actions.filterMovies);
-  document.addEventListener("DOMContentLoaded", ui.loadAllMoviesToUI);
+  document.addEventListener("DOMContentLoaded", UI.loadAllMoviesToUI);
 }
