@@ -1,6 +1,6 @@
-function STORAGE() {}
+function Storage() {}
 
-STORAGE.prototype.getMoviesFromStorage = function () {
+Storage.prototype.getMoviesFromStorage = function () {
   let movies;
   if (localStorage.getItem("movies") === null) {
     movies = [];
@@ -11,7 +11,7 @@ STORAGE.prototype.getMoviesFromStorage = function () {
 };
 
 // Local Storage'a veri gönderme - Önce storage'daki verileri alıp sonra üzerine ekleme yapıp tekrar gönderdik.
-STORAGE.prototype.addMovieToStorage = function (movie) {
+Storage.prototype.addMovieToStorage = function (movie) {
   let movies = storagePt.getMoviesFromStorage();
 
   movies.push(movie);
@@ -20,7 +20,7 @@ STORAGE.prototype.addMovieToStorage = function (movie) {
 };
 
 // Tek tek silme tarafı ödev
-STORAGE.prototype.deleteItemFromLS = function (movieId) {
+Storage.prototype.deleteItemFromLS = function (movieId) {
   const movies = storagePt.getMoviesFromStorage();
   movies.forEach(function (movie, index) {
     console.log(movieId);
