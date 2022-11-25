@@ -32,5 +32,11 @@ class UI {
     
     static clearInput (e) {
         e.value = "";
-    }    
+    }   
+    
+    static editButton () {
+        let submit = document.getElementById("movie-add");
+        submit.innerText = "Filmi Düzenle";
+        submit.onclick = () => { submit.innerText = "Koleksiyona Ekle"};
+    }
 }

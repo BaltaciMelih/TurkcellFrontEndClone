@@ -58,7 +58,6 @@ function deleteMovie(e) {
 function editMovie(e) {
     if(e.target.className === "btn btn-secondary mb-4 w-100 p-3 mt-3") {
         e.target.parentElement.parentElement.remove();
-
         let movies = Storage.getMoviesFromStorage();
         movies.forEach (function (movie) {
             if (movie.URL == e.target.parentElement.parentElement.children[0].src) {
@@ -67,9 +66,7 @@ function editMovie(e) {
                 movieDateInput.value = movie.date;
                 movieURLInput.value = movie.URL;
             }
-            let submit = document.getElementById("movie-add");
-            submit.innerText = "Filmi Düzenle";
-            submit.onclick = () => { submit.innerText = "Koleksiyona Ekle"};
+            UI.editButton();
         });
         Storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
     };
@@ -88,10 +85,6 @@ function filterMovies(e) {
     listItems.forEach(function(listItems) {
         const text = listItems.textContent.toUpperCase();
         if (text.indexOf(filterValue) === -1) {
-            // const alert = document.querySelector("");
-            // if (!alert) {
-            //     ui.showAlert("Aradığınız film bulunamadı...", "danger");
-            // }
             listItems.setAttribute("style", "display: none");
         } else {
             listItems.setAttribute("style", "display: flex");

@@ -35,3 +35,9 @@ UI.prototype.showAlert = function (message, type) {
 UI.prototype.clearInput = function(e) {
     e.value = "";
 }
+
+UI.prototype.editButton = function() {
+    let submit = document.getElementById("movie-add");
+    submit.innerText = "Filmi Düzenle";
+    submit.onclick = () => { submit.innerText = "Koleksiyona Ekle"};
+}

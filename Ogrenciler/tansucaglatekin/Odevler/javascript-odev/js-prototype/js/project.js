@@ -25,13 +25,6 @@ let Movie = function (name, director, date, URL) {
     this.URL = URL;
 }
 
-function defaultMovies() {
-    if (localStorage.getItem("movies") === null) {
-        storage.addMovieStorage(new Movie("Harry Potter - Felsefe Taşı", "Chris Columbus", "2001-11-04", "https://tr.web.img4.acsta.net/r_1280_720/pictures/bzp/01/29276.jpg"));
-        storage.addMovieStorage(new Movie("Harry Potter - Sırlar Odası", "Chris Columbus", "2002-11-03", "https://tr.web.img3.acsta.net/r_1280_720/pictures/bzp/01/41245.jpg"));
-    }
-}
-
 function addMovie(e) {
     if ((movieDateInput.value === "") || (directorNameInput.value === "") || (movieDateInput.value === "") || (movieURLInput.value === "")) {
         ui.showAlert("Eksik bilgi girdiniz!!", "danger");
@@ -72,9 +65,7 @@ function editMovie(e) {
                 movieDateInput.value = movie.date;
                 movieURLInput.value = movie.URL;
             }
-            let submit = document.getElementById("movie-add");
-            submit.innerText = "Filmi Düzenle";
-            submit.onclick = () => { submit.innerText = "Koleksiyona Ekle"};
+            ui.editButton();
         });
         storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
     };
@@ -93,10 +84,6 @@ function filterMovies(e) {
     listItems.forEach(function(listItems) {
         const text = listItems.textContent.toUpperCase();
         if (text.indexOf(filterValue) === -1) {
-            // const alert = document.querySelector("");
-            // if (!alert) {
-            //     ui.showAlert("Aradığınız film bulunamadı...", "danger");
-            // }
             listItems.setAttribute("style", "display: none");
         } else {
             listItems.setAttribute("style", "display: flex");
