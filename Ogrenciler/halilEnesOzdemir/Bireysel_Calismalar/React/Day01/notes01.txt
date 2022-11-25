@@ -1,0 +1,15 @@
+Single Page Application - SPA
+Netflix -> Favicon'a dikkat... 
+SPA -> SEO mevzusu (Nextjs, Helmet)
+
+Ufacık bir JS hatası SPA'da bütün bütün sitenin çökmesine neden oluyor..
+* MVC yapısında böyle bir şey yok.
+
+MPA - SPA (Important...)
+Kütüphane-Framework(İşleri kolaylaştırıyor...)
+
+React ---> React Native 50% 😉
+
+Angular ---> Typescript ile yazılıyor.
+
+'use strict' !== Typescript...
