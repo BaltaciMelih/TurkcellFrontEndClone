@@ -41,14 +41,14 @@ function setFilms() {
 }
 
 //add movie
-// saveEl.addEventListener("click", ui.addMovie);
+
 saveEl.addEventListener("click", () => {
   let name = filmNameEl.value;
   let director = filmDirectorEl.value;
   let year = filmYearEl.value;
   let bannerUrl = filmBannerEl.value;
   if (name == "" || director == "" || year == "" || bannerUrl == "") {
-    if (name == "" && director == "") {
+    if (name == "" || director == "") {
       ui.displayMessage("Film Adı ve Yönetmen boş bırakılamaz", "secondary");
     }
   } else {
@@ -65,7 +65,6 @@ clearEl.addEventListener("click", ui.clearFilms);
 
 function deletMovie(index) {
   films = JSON.parse(localStorage.getItem("films"));
-
   films.map((el, i) => {
     if (i == index) {
       films.splice(index, 1);

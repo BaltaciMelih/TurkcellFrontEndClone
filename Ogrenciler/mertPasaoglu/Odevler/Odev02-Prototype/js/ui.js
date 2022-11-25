@@ -9,12 +9,13 @@ UI.prototype.addMovieToUi = (newFilm) => {
         <div class="col-md-4 img"><img src="${newFilm.url}" class="img-fluid rounded-start" alt=""></div>
         <div class="col-md-8 ">
           <div class="card-body d-flex flex-column justify-content-center align-items-center">
-            <h5 class="card-title fw-bold fs-2">${newFilm.name}</h5>
-            <p class="card-text director-name fs-5">${newFilm.director}</p>
-            <p class="card-text premiere fs-6">${newFilm.premiere}</p>
+            <h5 class="card-title fw-bold fs-2" contenteditable="true">${newFilm.name}</h5>
+            <p class="card-text director-name fs-5" contenteditable="true">${newFilm.director}</p>
+            <p class="card-text premiere fs-6" contenteditable="true">${newFilm.premiere}</p>
           </div>
-          <div class="action-area mx-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="action-area mx-3 d-flex justify-content-evenly">
           <button class="btn btn-delete btn-danger">Delete</button>
+          <button class="btn btn-edit btn-primary px-4 text-white">Edit</button>
           </div>
         </div>
       </div>
@@ -55,8 +56,9 @@ UI.prototype.loadAllMoviesToUi = (movies) =>{
                 <p class="card-text director-name fs-5">${movie.director}</p>
                 <p class="card-text premiere fs-6">${movie.premiere}</p>
               </div>
-              <div class="action-area mx-3 d-flex flex-column justify-content-center align-items-center">
+              <div class="action-area mx-3 d-flex justify-content-evenly">
               <button class="btn btn-delete btn-danger">Delete</button>
+              <button class="btn btn-edit btn-primary px-4 text-white">Edit</button>
               </div>
             </div>
           </div>
