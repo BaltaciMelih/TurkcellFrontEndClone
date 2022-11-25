@@ -17,5 +17,5 @@ document.getElementById('btn').addEventListener('click', function(){
     }
 
     xhr.open("GET","ornek.txt", true);
-    xhr.send();
+    xhr.send(); //karşıya isteği yollama
 })
