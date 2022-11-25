@@ -45,6 +45,18 @@ UI.prototype.ClearInput = function (){
   movieDateInput.value="";
 }
 
+//Filter
+UI.prototype.filterItemsUI = function (filterName, Value) {
+  filterName.forEach(function (Name) {
+    const text = Name.innerHTML.toLowerCase();
+    if (text.indexOf(Value) === -1) {
+      Name.parentElement.parentElement.setAttribute("style", "display:none !important");
+    } else {
+      Name.parentElement.parentElement.setAttribute("style", "display:table-row");
+    }
+  });
+};
+
 //Mesaj
 UI.prototype.Message = function (message, type) {
   const cardBody = document.querySelector(".card-body");

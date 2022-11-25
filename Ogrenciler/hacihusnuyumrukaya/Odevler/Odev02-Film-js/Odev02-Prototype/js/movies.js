@@ -80,3 +80,10 @@ Movie.prototype.changedMovies= function(e) {
   document.getElementById("film-add").innerText = "Filmi Güncelle";
   }
 }
+
+//Film Adına Göre Filtreleme
+Movie.prototype.filterItems= function(e) {
+  const filterNames = document.querySelectorAll(".movieNames");
+  const filterValue = e.target.value.toLowerCase();
+  ui.filterItemsUI(filterNames, filterValue);
+}

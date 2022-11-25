@@ -8,6 +8,7 @@ const movieDateInput=document.getElementById("movieDate");
 const movieList = document.querySelector(".list-group");
 const clearMovies = document.getElementById("clearMovies");
 const secondCardBody = document.querySelectorAll(".card-body")[1];
+const filterMovies = document.getElementById("filter");
 
 //Events
 eventListeners();
@@ -17,6 +18,7 @@ function eventListeners() {
     secondCardBody.addEventListener("click",Movies.deleteMovies);
     secondCardBody.addEventListener("click",Movies.changedMovies);
     document.addEventListener("DOMContentLoaded",Storage.LoadAllMoviesToUI);
+    filterMovies.addEventListener("keyup", Movies.filterItems);
 }
 
 //Film Ekleme Başlangıçta

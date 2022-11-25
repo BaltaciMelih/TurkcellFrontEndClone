@@ -80,4 +80,11 @@ static changedMovies(e) {
   document.getElementById("film-add").innerText = "Filmi Güncelle";
   }
 }
+
+//Film Adına Göre Filtreleme
+static filterItems(e) {
+  const filterNames = document.querySelectorAll(".movieNames");
+  const filterValue = e.target.value.toLowerCase();
+  UI.filterItemsUI(filterNames, filterValue);
+}
 }
