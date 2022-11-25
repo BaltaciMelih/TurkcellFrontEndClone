@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Movie Library</title>
+  </head>
+  <body onload="setFilms()">
+    <div
+      class="container-fluid d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="header-container p-1">
+        <div class="header d-flex px-2">
+          <h2 class="m-2 text-center">
+            Movie<span class="text-light text-opacity-50">List</span>
+          </h2>
+        </div>
+      </div>
+      <div class="form-container form__group mt-4">
+        <div class="from-element d-flex flex-column mx-2" id="movie-form">
+          <label for="" class="form__label">Film Adı</label>
+          <input id="filmName" class="form__field" type="text" />
+        </div>
+        <div class="from-element d-flex flex-column mx-2">
+          <label for="">Yönetmen</label>
+          <input id="filmDirector" type="text" />
+        </div>
+        <div class="from-element d-flex flex-column mx-2">
+          <label for="">Yıl</label>
+          <input id="filmYear" type="date" />
+        </div>
+        <div class="from-element d-flex flex-column my-2">
+          <label for="">Film Afiş</label>
+          <input id="filmBanner" type="text" />
+        </div>
+        <button class="btn btn-primary m-1" id="saveEl">Listeme Ekle</button>
+        <button class="btn btn-outline-dark" id="clear">
+          Listemden Kaldır
+        </button>
+      </div>
+      <div class="table-container">
+        <table class="table table-hover table-striped">
+          <thead>
+            <tr class="">
+              <th scope="col" class="p-2">Film Afişi</th>
+              <th scope="col" class="p-2">Film Adı</th>
+              <th scope="col" class="p-2">Yönetmen</th>
+              <th scope="col">Yıl</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="uı.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

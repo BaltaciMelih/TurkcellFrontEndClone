@@ -23,7 +23,7 @@ class MovieClass{
 
     addMovie(){
         if(this.name === "" || this.director === "" || this.year === "" || this.poster === ""){
-            this.ui.ShowAlert("dark","Lütfen Tüm Bilgileri Eksiksiz Doldurun");
+            UI.ShowAlert("dark","Lütfen Tüm Bilgileri Eksiksiz Doldurun");
         }else{
             this.movies.push( {
                 "director": this.director,

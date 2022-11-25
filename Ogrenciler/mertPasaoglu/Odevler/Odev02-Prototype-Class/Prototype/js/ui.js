@@ -78,3 +78,9 @@ UI.prototype.clearAllMoviesFromUi =() => {
       movieCards.firstElementChild.remove();
   }
 }
+
+UI.prototype.editButton = function() {
+  let submit = document.getElementById("add-movie");
+  submit.innerText = "Edit Movie";
+  submit.onclick = () => { submit.innerText = "Add Movie"};
+}
