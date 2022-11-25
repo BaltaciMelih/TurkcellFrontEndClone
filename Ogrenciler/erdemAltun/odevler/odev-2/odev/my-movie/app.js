@@ -9,10 +9,10 @@ const movieClear = document.querySelector("#clear-movies");
 const firstCardbody = document.querySelectorAll(".card-body")[0];
 const secondCardbody = document.querySelectorAll(".card-body")[1];
 
-function Movie(poster, name, type, visiondate) {
+function Movie(poster, name, director, visiondate) {
   this.poster = poster;
   this.name = name;
-  this.type = type;
+  this.director = director;
   this.visiondate = visiondate;
 }
 
@@ -138,10 +138,10 @@ function allMovieLoad() {
   movies.forEach((mov) => {
     const name = mov.name;
     const poster = mov.poster;
-    const type = mov.type;
+    const director = mov.director;
     const visiondate = mov.visiondate;
 
-    addMovieToUI(name, poster, type, visiondate);
+    addMovieToUI(name, poster, director, visiondate);
   });
 }
 

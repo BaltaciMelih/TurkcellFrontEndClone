@@ -3,7 +3,7 @@ function Lclstorage() {}
 Lclstorage.prototype.addMovieToStorage = function (
   name,
   poster,
-  type,
+  director,
   visiondate
 ) {
   let movies = _getMovieFromStorage();
@@ -11,7 +11,7 @@ Lclstorage.prototype.addMovieToStorage = function (
   let movie = {
     name: name,
     poster: poster,
-    type: type,
+    director: director,
     visiondate: visiondate,
   };
 
