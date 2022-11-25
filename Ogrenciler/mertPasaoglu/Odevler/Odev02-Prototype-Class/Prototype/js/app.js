@@ -1,6 +1,6 @@
-import { UI } from "../js/ui.js";
-import { storage } from "../js/storage.js";
-import { Movie } from "../js/constructor.js";
+import { UI } from "./ui.js";
+import { storage } from "./storage.js";
+import { Movie } from "./constructor.js";
 
 const ui = new UI();
 const form = document.querySelector('#form');
