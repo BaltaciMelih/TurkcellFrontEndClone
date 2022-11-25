@@ -11,8 +11,8 @@ UI.prototype.addMovieUI = function (newMovie) {
             <p>Tarih: ${newMovie.date} </p>
         </div>
         <div class="col-sm-2">
-            <button class="btn btn-secondary mb-4 w-100 p-3">Düzenle</button>
-            <button class="del btn btn-primary w-100 p-3">Sil</button>
+            <button class="btn btn-secondary mb-4 w-100 p-3 mt-3">Düzenle</button>
+            <button class="del btn btn-primary w-100 p-3 mb-3">Sil</button>
         </div>
     </li>
     `;
@@ -34,8 +34,4 @@ UI.prototype.showAlert = function (message, type) {
 
 UI.prototype.clearInput = function(e) {
     e.value = "";
-}
-
-UI.prototype.editMovieUI = function() {
-    console.log("Düzenlenme yapıldı...")
 }

@@ -8402,3 +8402,15 @@ ul li:hover {
   border: 5px 0;
   border-style: none dashed;
   border-color: #735F32; }
+
+#clear-movies {
+  width: 250px;
+  margin-left: 10px; }
+
+@media only screen and (max-width: 780px) {
+  .movie-search {
+    flex-direction: column; }
+    .movie-search .movie-search-item {
+      margin-bottom: 10px; }
+  #clear-movies {
+    margin-left: 0px; } }
