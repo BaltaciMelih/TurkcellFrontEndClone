@@ -31,6 +31,31 @@ document.querySelector("#movie-form").addEventListener("submit", function (e) {
   e.preventDefault();
 });
 
+document.getElementById("movie-list").addEventListener("click", function (e) {
+  if (e.target.id === "edit") {
+    e.target.parentElement.parentElement.parentElement.remove();
+    UI.showAlert("Movie list can be edited now", "primary");
+    let movies = Store.getMovies();
+    movies.forEach(function (movie) {
+      if (
+        movie.name ===
+        e.target.parentElement.parentElement.parentElement.firstElementChild
+          .textContent
+      ) {
+        document.querySelector("#name").value = movie.name;
+        document.querySelector("#director").value = movie.director;
+        document.querySelector("#year").value = movie.year;
+        document.querySelector("#url").value = movie.url;
+      }
+    });
+    Store.removeMovie(
+      e.target.parentElement.parentElement.parentElement.firstElementChild
+        .textContent
+    );
+  }
+  e.preventDefault();
+});
+
 document.querySelector("#movie-list").addEventListener("click", function (e) {
   UI.deleteMovie(e.target);
   Store.removeMovie(

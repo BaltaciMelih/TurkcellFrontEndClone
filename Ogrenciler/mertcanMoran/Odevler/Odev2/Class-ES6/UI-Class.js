@@ -7,6 +7,7 @@ class UI {
     <td class = "w-25">${movie.director}</td>
     <td class = "w-25">${movie.year}</td>
     <td><img src = "${movie.url}" class = "img-fluid w-25 h-25" ></img></td>
+    <td><a href="#"><i class = "bi bi-pencil" id = "edit"></i></a></td>
     <td><a href="#"><i class = "bi bi-trash3" id = "delete"></i></a></td>
     `;
 
@@ -28,7 +29,7 @@ class UI {
   }
 
   static deleteMovie(target) {
-    if (target.className === "bi bi-trash3") {
+    if (target.id === "delete") {
       target.parentElement.parentElement.parentElement.remove();
     }
   }

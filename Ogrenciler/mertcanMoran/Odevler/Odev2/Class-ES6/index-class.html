@@ -64,11 +64,6 @@
             value="Submit"
             class="btn btn-info text-light rounded-4 w-25 mt-3"
           />
-          <input
-            type="edit"
-            value="Edit"
-            class="btn btn-success text-light rounded-4 w-25 mt-3 mx-2"
-          />
         </div>
       </form>
 
@@ -93,11 +88,14 @@
             />
           </td>
           <td>
-            <a href="#"><i class="bi bi-trash3"></i></a>
+            <a href="#"><i class="bi bi-pencil" id="edit"></i></a>
+          </td>
+          <td>
+            <a href="#"><i class="bi bi-trash3" id="delete"></i></a>
           </td>
         </tbody>
       </table>
-      <a id="clear-movies" class="btn btn-dark" href="#"
+      <a id="clear-movies" class="btn btn-dark mb-2" href="#"
         >Clear All Movies <i class="bi bi-trash2"></i>
       </a>
     </div>
