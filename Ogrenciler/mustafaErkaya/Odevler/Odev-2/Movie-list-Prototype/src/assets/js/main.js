@@ -96,7 +96,7 @@ Main.prototype.deleteAllMovie = function() {
       this.elements.movieBottom.removeChild(this.elements.movieBottom.firstChild); // Daha hızlı çalışacak
     }
     this.showAlert("hepsi silindi", "success")
-    localStorage.removeItem('Movies'); // localden hepsini silme
+    localStorage.removeItem('MoviesList'); // localden hepsini silme
     
     
     
