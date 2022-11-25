@@ -16,6 +16,7 @@ function eventListeners() {
   addFilm.addEventListener("click", addMovie);
   clearAll.addEventListener("click", ui.clearFilms);
   filmList.addEventListener("click", deleteFilm);
+  filmList.addEventListener("click", editFilm);
   filter.addEventListener("keyup", filterFilms);
 }
 
@@ -26,13 +27,13 @@ function defaultFilms() {
       new Film(
         "Avengers 1",
         "Joss Whedon",
-        "04/05/2012",
+        "2012-05-04",
         "https://tr.web.img3.acsta.net/medias/nmedia/18/85/49/05/20085945.jpg"
       ),
       new Film(
         "Avengers 2",
         "Joss Whedon",
-        "01/05/2015",
+        "2015-05-01",
         "https://tr.web.img4.acsta.net/pictures/15/08/06/07/51/269807.jpg"
       ),
     ];
@@ -44,10 +45,10 @@ function defaultFilms() {
 }
 
 function addMovie() {
-  let name = filmName.value;
-  let director = filmDirector.value;
-  let date = filmDate.value;
-  let url = filmUrl.value;
+  let name = filmName.value.trim();
+  let director = filmDirector.value.trim();
+  let date = filmDate.value.trim();
+  let url = filmUrl.value.trim();
   let newFilm = [];
   if (name === "" || director === "" || date == "" || url === "") {
     ui.displayMessage("Tüm alanları doldurunuz", "danger");
@@ -59,6 +60,7 @@ function addMovie() {
   filmDirector.value = "";
   filmDate.value = "";
   filmUrl.value = "";
+  addFilm.innerHTML = "Film Ekle";
   localStorage.setItem("films", JSON.stringify(films));
   ui.displayMessage("Film Başarıyla Yüklendi","success");
 };
@@ -70,16 +72,43 @@ function addMovie() {
      storage.deleteMovie(e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent);
       ui.displayMessage("Silme işlemi gerçekleşti", "success");
    };}
-  
-    function filterFilms(e){   
-    let filterValue = e.target.value.toLowerCase();
-    let listedFilms = document.querySelectorAll(".name");
-    listedFilms.forEach(function (film) {
-    const text = film.textContent.toLowerCase();
-    if (text.indexOf(filterValue) === -1) {
-      film.parentElement.setAttribute("style", "display:none !important");
-    } else {
-      film.parentElement.setAttribute("style", "display:table-row");
-    }
+
+
+
+  function editFilm(e) {
+    if(e.target.id === "editFilm"){
+      ui.deleteMovie(e.target);
+      let films = storage.defaultMovie();
+    films.forEach(function (film) {
+      if (film.name === e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent) {
+        filmName.value = film.name;
+        filmDirector.value = film.director;
+        filmDate.value = film.date;
+        filmUrl.value = film.url;
+      }
+      })
+      addFilm.innerHTML = "Filmi Düzenle";
+      storage.deleteMovie(e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent);
+      ui.displayMessage("Film Bilgilerini Düzenleyiniz", "warning");
+    };}
+
+
+
+
+  function filterFilms(e){   
+  let filterValue = e.target.value.toLowerCase();
+  let listedFilms = document.querySelectorAll(".name");
+  let i =0;
+  listedFilms.forEach(function (film) {
+  const text = film.textContent.toLowerCase();
+  if (text.indexOf(filterValue) === -1) {
+    film.parentElement.setAttribute("style", "display:none !important");
+  } else {
+    film.parentElement.setAttribute("style", "display:table-row");
+    i++;
+  }
   });
-    }
+  if(i==0){
+    ui.displayMessage("Böyle Bir film Listede Bulunmamaktadır", "danger");
+  }
+  }
