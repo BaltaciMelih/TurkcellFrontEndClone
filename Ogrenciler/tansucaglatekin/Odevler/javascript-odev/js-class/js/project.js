@@ -18,28 +18,23 @@ function eventListeners() {
     filter.addEventListener("keyup", filterMovies);
 }
 
-let Movie = function (name, director, date, URL) {
-    this.name = name;
-    this.director = director;
-    this.date = date;
-    this.URL = URL;
-}
-
-function defaultMovies() {
-    if (localStorage.getItem("movies") === null) {
-        storage.addMovieStorage(new Movie("Harry Potter - Felsefe Taşı", "Chris Columbus", "2001-11-04", "https://tr.web.img4.acsta.net/r_1280_720/pictures/bzp/01/29276.jpg"));
-        storage.addMovieStorage(new Movie("Harry Potter - Sırlar Odası", "Chris Columbus", "2002-11-03", "https://tr.web.img3.acsta.net/r_1280_720/pictures/bzp/01/41245.jpg"));
+class Movie {
+    constructor(name, director, date, URL) {
+        this.name = name;
+        this.director = director;
+        this.date = date;
+        this.URL = URL;
     }
 }
 
 function addMovie(e) {
     if ((movieDateInput.value === "") || (directorNameInput.value === "") || (movieDateInput.value === "") || (movieURLInput.value === "")) {
-        ui.showAlert("Eksik bilgi girdiniz!!", "danger");
+        UI.showAlert("Eksik bilgi girdiniz!!", "danger");
     } else {
         const newMovie = new Movie(movieNameInput.value, directorNameInput.value, movieDateInput.value, movieURLInput.value);
-        ui.addMovieUI(newMovie);
-        storage.addMovieStorage(newMovie);
-        ui.showAlert("Eklendi.", "success")
+        UI.addMovieUI(newMovie);
+        Storage.addMovieStorage(newMovie);
+        UI.showAlert("Eklendi.", "success")
     }
     e.preventDefault();
 }
@@ -49,14 +44,14 @@ function clearAllMovies() {
         movieList.removeChild(movieList.firstChild);
         localStorage.removeItem("movies");
     }
-    ui.showAlert("Koleksiyon temizlendi.", "success");
+    UI.showAlert("Koleksiyon temizlendi.", "success");
 }
 
 function deleteMovie(e) {
     if(e.target.className === "del btn btn-primary w-100 p-3 mb-3") {
         e.target.parentElement.parentElement.remove();
-        storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
-        ui.showAlert("Film silindi", "success");
+        Storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
+        UI.showAlert("Film silindi", "success");
     }
 }
 
@@ -64,7 +59,7 @@ function editMovie(e) {
     if(e.target.className === "btn btn-secondary mb-4 w-100 p-3 mt-3") {
         e.target.parentElement.parentElement.remove();
 
-        let movies = storage.getMoviesFromStorage();
+        let movies = Storage.getMoviesFromStorage();
         movies.forEach (function (movie) {
             if (movie.URL == e.target.parentElement.parentElement.children[0].src) {
                 movieNameInput.value = movie.name;
@@ -76,14 +71,14 @@ function editMovie(e) {
             submit.innerText = "Filmi Düzenle";
             submit.onclick = () => { submit.innerText = "Koleksiyona Ekle"};
         });
-        storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
+        Storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
     };
 }
 
 function loadAllMovies() {
-    let movies = storage.getMoviesFromStorage();
+    let movies = Storage.getMoviesFromStorage();
     movies.forEach(function (movies) {
-        ui.addMovieUI(movies);
+        UI.addMovieUI(movies);
     })
 }
 
@@ -101,5 +96,5 @@ function filterMovies(e) {
         } else {
             listItems.setAttribute("style", "display: flex");
         }
-    })
+    });
 }
