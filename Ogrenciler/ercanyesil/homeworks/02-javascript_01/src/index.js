@@ -4,7 +4,6 @@ import {Storage} from "./js/storage";
 const ui = new UI();
 const storage = new Storage();
 const deleteAllBtn = document.querySelector("#deleteAll");
-document.addEventListener("DOMContentLoaded",storage.loadStorage); 
 
 const postForm = () => {
     document.getElementById('movieForm').onsubmit = function(e){
