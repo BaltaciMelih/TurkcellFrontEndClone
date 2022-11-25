@@ -27,10 +27,10 @@ UI.prototype.RenderUI = function(movie){
                   <th scope="row">Vizyon Tarihi</th>
                   <td>${movie.year}</td>
                 </tr>
-                  <button data-id = "${movie.id}" id = "deletepart" class = "bi bi-trash3-fill btn btn-dark text-white border-0 rounded w-25 mb-1 py-2"></button>
+                  <button data-id = "${movie.id}" id = "deletepart" class = "bi bi-trash3-fill btn btn-secondary text-white border-0 rounded w-25 py-2"></button>
                 </tr>
                 <tr>
-                  <button data-id = "${movie.id}" id = "editpart" class = "bi bi-pencil-square btn btn-dark text-white border-0 rounded w-25 py-2"></button>
+                  <button data-id = "${movie.id}" id = "editpart" class = "bi bi-pencil-square btn btn-secondary text-white border-0 rounded mx-1 w-25 py-2"></button>
                 </tr>
                 
               </tbody>

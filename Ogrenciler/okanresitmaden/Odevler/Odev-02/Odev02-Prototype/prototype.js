@@ -85,6 +85,19 @@ Movie.prototype.EditandSave = function(){
     this.store.addToStorage(this.movies);
 }
 
+// Movie.prototype.Filtering = function(a){
+//     this.movies.forEach(movie => {
+//         if(movie.name == a){
+            
+//         }
+//     const meneme= document.getElementById(`movie_${movie.id}`);
+//     console.log(meneme);
+    
+
+//     });
+//     return movie;
+// }
+
 
 
 const movie = new Movie();
@@ -103,7 +116,7 @@ button.addEventListener("click",function(){
 });
 
 list.addEventListener("click", function(e){
-    if(e.target.className === "bi bi-trash3-fill btn btn-dark text-white border-0 rounded w-25 mb-1 py-2"){
+    if(e.target.className === "bi bi-trash3-fill btn btn-secondary text-white border-0 rounded w-25 py-2"){
         const movieiddelete = Number(e.target.getAttribute("data-id"));
         movie.id = movieiddelete;
         movie.delete();
@@ -111,7 +124,7 @@ list.addEventListener("click", function(e){
 });
 
 general.addEventListener("click",function(e){
-    if(e.target.className === "bi bi-pencil-square btn btn-dark text-white border-0 rounded w-25 py-2"){
+    if(e.target.className === "bi bi-pencil-square btn btn-secondary text-white border-0 rounded mx-1 w-25 py-2"){
         const movieidedit = Number(e.target.getAttribute("data-id"));
         movie.id = movieidedit;
         movie.Edit();
@@ -125,12 +138,15 @@ general.addEventListener("click",function(e){
         movie.EditandSave();
         button.classList.remove("hide");
         savebutton.classList.add("hide");
-        // window.scrollTo(750,750);
         const movieposition = document.getElementById(`movie_${movie.id}`);
+        console.log(movieposition);
         movieposition.scrollIntoView({behavior: "smooth"});
     }
 })
 
-
+// filter.addEventListener("keyup",function(e){
+//     const filteredinput = String(e.target.value.toLowerCase());
+//     movie.Filtering(filteredinput);
+// })
 
 

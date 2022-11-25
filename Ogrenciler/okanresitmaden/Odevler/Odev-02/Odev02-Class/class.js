@@ -97,7 +97,7 @@ button.addEventListener("click",function(){
 });
 
 list.addEventListener("click", function(e){
-    if(e.target.className === "bi bi-trash3-fill btn btn-dark text-white border-0 rounded w-25 mb-1 py-2"){
+    if(e.target.className === "bi bi-trash3-fill btn btn-secondary text-white border-0 rounded w-25 py-2"){
         const movieiddelete = Number(e.target.getAttribute("data-id"));
         movie.id = movieiddelete;
         movie.delete();
@@ -105,7 +105,7 @@ list.addEventListener("click", function(e){
 });
 
 general.addEventListener("click",function(e){
-    if(e.target.className === "bi bi-pencil-square btn btn-dark text-white border-0 rounded w-25 py-2"){
+    if(e.target.className === "bi bi-pencil-square btn btn-secondary text-white border-0 rounded mx-1 w-25 py-2"){
         const movieidedit = Number(e.target.getAttribute("data-id"));
         movie.id = movieidedit;
         movie.Edit();
