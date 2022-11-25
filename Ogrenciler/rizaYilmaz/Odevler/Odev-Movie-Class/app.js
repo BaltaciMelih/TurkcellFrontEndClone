@@ -5,8 +5,7 @@ const moviePosterUrlInput = document.querySelector("#moviePosterUrlInput");
 const releaseDateInput = document.querySelector("#releaseDateInput");
 const genreSelectInput = document.querySelector("#genreSelectInput");
 const unorderList = document.querySelector("#unorder-list");
-const di = new DI();
-const filter = new Filter();
+
 movieFormInput.addEventListener("submit", submitForm);
 
 function submitForm(e) {
@@ -74,8 +73,8 @@ function addMovieToUI(name, director, url, date, genre) {
       </div>
     </div>`;
   unorderList.appendChild(newElement);
-  filter.filterMovie();
-  di.deleteItem();
+  Filter.filterMovie();
+  DeleteItem.deleteItem();
 }
 const clearButton = document.getElementById("clearAllButton");
 clearButton.addEventListener("click", clearAllMovie);
