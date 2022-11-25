@@ -42,10 +42,10 @@ const FilmData = function() {
   FilmData.getDataFromStorage = function() {
     // localstorage getItem
     
-    if (localStorage.getItem("MoviesList") === null) {
+    if (localStorage.getItem("MoviesListClass") === null) {
       this.data = [];
     } else {
-      this.data = JSON.parse(localStorage.getItem("MoviesList"));
+      this.data = JSON.parse(localStorage.getItem("MoviesListClass"));
     }
     // return film;
     // console.log('getDataFromStorage');
@@ -56,7 +56,7 @@ const FilmData = function() {
   
   FilmData.setDataToStorage = function() {
     // localstorage setItem
-    localStorage.setItem("MoviesList", JSON.stringify(this.data));
+    localStorage.setItem("MoviesListClass", JSON.stringify(this.data));
     
     console.log('setDataToStorage çalıştı');
   };

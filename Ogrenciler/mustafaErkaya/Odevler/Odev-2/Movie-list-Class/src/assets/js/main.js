@@ -77,7 +77,7 @@ class Main {
         this.elements.movieBottom.removeChild(this.elements.movieBottom.firstChild); // Daha hızlı çalışacak
       }
       this.showAlert("hepsi silindi", "success")
-      localStorage.removeItem('MoviesList'); // localden hepsini silme
+      localStorage.removeItem('MoviesListClass'); // localden hepsini silme
       
       
       
