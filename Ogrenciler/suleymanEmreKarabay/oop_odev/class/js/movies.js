@@ -6,7 +6,7 @@ class Movie {
     this.poster = poster;
     this.filmDate = filmDate;
   }
-  defaultFilms() {
+  static defaultFilms() {
     const film1 = new Movie(
       "Intersteller",
       "Christopher Nolan",

@@ -1,5 +1,5 @@
 class Storage {
-  getFilmsFromStorage(KEY_NAME) {
+  static getFilmsFromStorage(KEY_NAME) {
     if (localStorage.getItem(KEY_NAME) === null) {
       KEY_NAME = [];
     } else {
@@ -8,7 +8,7 @@ class Storage {
     return KEY_NAME;
   }
 
-  deleteItemFromStorage(e) {
+  static deleteItemFromStorage(e) {
     const silinecekID = e.target.parentElement.id;
     let films = JSON.parse(localStorage.getItem(KEY_NAME));
     films.forEach((element) => {
@@ -24,7 +24,7 @@ class Storage {
     localStorage.setItem(KEY_NAME, JSON.stringify(films));
   }
 
-  updateFilmFromStorage() {
+  static updateFilmFromStorage() {
     let films = JSON.parse(localStorage.getItem(KEY_NAME));
     films.forEach((element) => {
       if (element.id == id.value) {

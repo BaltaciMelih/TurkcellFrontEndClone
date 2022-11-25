@@ -1,12 +1,12 @@
 class UI {
-  deleteFilmList() {
+  static deleteFilmList() {
     const ulDiv = document.querySelector(".list-group");
     ulDiv.innerHTML = "";
   }
-  deleteFilmItem(e) {
+  static deleteFilmItem(e) {
     e.target.parentElement.parentElement.parentElement.remove();
   }
-  alert(type, message, time) {
+  static alert(type, message, time) {
     const alert = document.createElement("div");
     const form = document.querySelector("#form");
     alert.className = `mt-3 alert alert-${type}`;
@@ -17,7 +17,7 @@ class UI {
       alert.remove();
     }, time);
   }
-  emptyControl() {
+  static emptyControl() {
     if (
       filmTitle.value != "" &&
       filmDirector.value != "" &&
@@ -30,7 +30,7 @@ class UI {
       return false;
     }
   }
-  editFilmItem(e) {
+  static editFilmItem(e) {
     const editID = e.target.parentElement.id;
     let films = JSON.parse(localStorage.getItem(KEY_NAME));
     films.forEach((element) => {
@@ -43,20 +43,20 @@ class UI {
       }
     });
   }
-  inputDelete() {
+  static inputDelete() {
     filmTitle.value = "";
     filmDirector.value = "";
     posterUrl.value = "";
     filmDate.value = "";
   }
 
-  addNoneButton(button) {
+  static addNoneButton(button) {
     button.classList += " d-none";
   }
-  deleteNoneButton(button) {
+  static deleteNoneButton(button) {
     button.classList.remove("d-none");
   }
-  getUIFilms(film) {
+  static getUIFilms(film) {
     const listItem = document.createElement("div");
     listItem.className = "row my-3 mx-1 align-items-center";
 

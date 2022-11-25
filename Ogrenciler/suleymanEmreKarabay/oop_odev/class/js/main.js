@@ -13,10 +13,6 @@ const updateButton = document.querySelector("#update");
 
 const ulDiv = document.querySelector(".list-group");
 
-const ui = new UI();
-const movies = new Movie();
-const storage = new Storage();
-
 eventListeners();
 function eventListeners() {
   document.addEventListener("DOMContentLoaded", loadFilmsToUI);
@@ -26,24 +22,24 @@ function eventListeners() {
 }
 
 function loadFilmsToUI() {
-  ui.deleteFilmList();
+  UI.deleteFilmList();
 
-  if (storage.getFilmsFromStorage(INIT_KEY_NAME) == "") {
-    const firstFilms = movies.defaultFilms();
+  if (Storage.getFilmsFromStorage(INIT_KEY_NAME) == "") {
+    const firstFilms = Movie.defaultFilms();
     localStorage.setItem(INIT_KEY_NAME, true);
     localStorage.setItem(KEY_NAME, JSON.stringify(firstFilms));
   }
-  const films = storage.getFilmsFromStorage(KEY_NAME);
+  const films = Storage.getFilmsFromStorage(KEY_NAME);
 
   films.forEach((film) => {
-    ui.getUIFilms(film);
+    UI.getUIFilms(film);
   });
 }
 
 function addNewFilm() {
-  if (ui.emptyControl()) {
-    ui.deleteFilmList();
-    const films = storage.getFilmsFromStorage(KEY_NAME);
+  if (UI.emptyControl()) {
+    UI.deleteFilmList();
+    const films = Storage.getFilmsFromStorage(KEY_NAME);
     const newFilm = new Movie(
       filmTitle.value,
       filmDirector.value,
@@ -53,40 +49,40 @@ function addNewFilm() {
     films.push(newFilm);
     localStorage.setItem(KEY_NAME, JSON.stringify(films));
     loadFilmsToUI();
-    ui.inputDelete();
-    ui.alert("success", "movie upload successful", 2000);
+    UI.inputDelete();
+    UI.alert("success", "movie upload successful", 2000);
   }
 }
 
 function clearAll() {
-  ui.deleteFilmList();
+  UI.deleteFilmList();
   localStorage.removeItem(KEY_NAME);
-  storage.getFilmsFromStorage(KEY_NAME);
+  Storage.getFilmsFromStorage(KEY_NAME);
 }
 
 function deleteFilm(e) {
-  ui.deleteFilmItem(e);
-  storage.deleteItemFromStorage(e);
-  ui.alert("success", "Deletion Successful", 2000);
+  UI.deleteFilmItem(e);
+  Storage.deleteItemFromStorage(e);
+  UI.alert("success", "Deletion Successful", 2000);
 }
 
 function editFilm(e) {
-  ui.editFilmItem(e);
-  ui.addNoneButton(addButton);
-  ui.addNoneButton(clearAllButton);
-  ui.deleteNoneButton(updateButton);
+  UI.editFilmItem(e);
+  UI.addNoneButton(addButton);
+  UI.addNoneButton(clearAllButton);
+  UI.deleteNoneButton(updateButton);
 }
 
 function updateFilm(e) {
-  ui.addNoneButton(updateButton);
-  ui.deleteNoneButton(addButton);
-  ui.deleteNoneButton(clearAllButton);
-  storage.updateFilmFromStorage();
-  ui.deleteFilmList();
-  const films = storage.getFilmsFromStorage(KEY_NAME);
+  UI.addNoneButton(updateButton);
+  UI.deleteNoneButton(addButton);
+  UI.deleteNoneButton(clearAllButton);
+  Storage.updateFilmFromStorage();
+  UI.deleteFilmList();
+  const films = Storage.getFilmsFromStorage(KEY_NAME);
   films.forEach((film) => {
-    ui.getUIFilms(film);
+    UI.getUIFilms(film);
   });
-  ui.inputDelete();
-  ui.alert("success", "movie add successful", 2000);
+  UI.inputDelete();
+  UI.alert("success", "movie add successful", 2000);
 }
