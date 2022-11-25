@@ -121,6 +121,27 @@ let h1Elem = document.createElement('h1');
 h1Elem.textContent = 'HEADER';
 document.body.appendChild(h1Elem); */
 
+/* const books = [
+  { name: 'Pinball 1973', author: 'Haruki Murakami' },
+  { name: 'Özgürlük', author: 'Zygmunt Baumann' },
+  { name: "Türkiye'de çağdaşlaşma", author: 'Niyazi Berkes' },
+];
+
+const listBooks = () => {
+  books.map((book, index) => {
+    console.log(book, index);
+  });
+};
+
+const addNewBook = (newBook, callback) => {
+  books.push(newBook);
+  callback();
+};
+addNewBook({ name: 'Berlin Hatıralarım', author: 'Hüsrev Gerede' }, listBooks); */
+
+// -------------------------PROMISE TIME ------------------
+
+/* 
 const books = [
   { name: 'Pinball 1973', author: 'Haruki Murakami' },
   { name: 'Özgürlük', author: 'Zygmunt Baumann' },
@@ -137,4 +158,119 @@ const addNewBook = (newBook, callback) => {
   books.push(newBook);
   callback();
 };
-addNewBook({ name: 'Berlin Hatıralarım', author: 'Hüsrev Gerede' }, listBooks);
+
+addNewBook({ name: 'Berlin Hatıralarım', author: 'Hüsrev Gerede' }, listBooks); */
+
+/* const promise1 = new Promise(function (resolve, reject) {
+  reject('ERROR2');
+  resolve('DATA');
+  resolve('DATA2');
+  reject('ERROR');
+});
+
+console.log(promise1); */
+
+// pending -> (undefined) -fullfilled -rejected => PROMISE STATE...
+
+// Promise'nin state'ini bir kere belirledik mi bir daha değiştiremeyiz...
+
+/* const promise1 = new Promise(function (resolve, reject) {
+  // resolve('DATA');
+  reject('ERROR');
+});
+ */
+// console.log(promise1.value); //undefined
+
+// promise1.then((value) => console.log(value));
+// promise1.catch((reason) => console.log(reason));
+
+/* const promise1 = new Promise((resolve, reject) => {
+  resolve();
+
+  // reject();
+}); */
+
+// promise1.then(() => console.log('Veriler Alındı'));
+// promise1.catch(() => console.log('Veriler Alınmadı'));
+
+/* promise1
+  .then(() => {
+    console.log('Veriler Alındı');
+  })
+  .catch(() => {
+    console.log('Veriler alınmadı');
+  })
+  .finally(() => {
+    console.log('ÇALIŞ KÖLE');
+  }); */
+
+/* const promise1 = new Promise((resolve, reject) => {
+  // resolve();
+
+  reject();
+});
+
+promise1.then(
+  () => {
+    console.log('VERİLER ALINDI');
+  },
+  () => {
+    console.log('Veriler alınmadııııııııııı');
+  }
+); */
+
+// ----------------CALLBACK İLE YAPILAN İŞLEMİ PROMISE'A DÖNDÜRME...---------
+
+/* const books = [
+  { name: 'Pinball 1973', author: 'Haruki Murakami' },
+  { name: 'Özgürlük', author: 'Zygmunt Baumann' },
+  { name: "Türkiye'de çağdaşlaşma", author: 'Niyazi Berkes' },
+];
+
+const listBooks = () => {
+  books.map((book, index) => {
+    console.log(book, index);
+  });
+}; */
+
+/* const addNewBook = (newBook, callback) => {
+  books.push(newBook);
+  callback();
+}; */
+
+/* const addNewBook = (newBook) => {
+  const promise1 = new Promise((resolve, reject) => {
+    books.push(newBook);
+    resolve(books);
+    // reject('HATA');
+  });
+  return promise1;
+};
+
+// addNewBook({ name: 'Berlin Hatıralarım', author: 'Hüsrev Gerede' }, listBooks);
+addNewBook({ name: 'Berlin Hatıralarım', author: 'Hüsrev Gerede' })
+  .then(() => {
+    console.log('Yeni List');
+    listBooks();
+  })
+  .catch((reason) => {
+    console.log(reason);
+  }); */
+
+// ---------------EKSİK VERİ ÖRNEĞİ PROMISE---------------
+
+/* const addTwoNumbers = (num1, num2) => {
+  const promise2 = new Promise((resolve, reject) => {
+    const sum = num1 + num2;
+    typeof num1 !== 'number' || typeof num2 !== 'number' ? reject('2 SAYI GİRMENİZ GEREKİR') : resolve(sum);
+  });
+  return promise2;
+};
+
+addTwoNumbers(4, '8')
+  .then((val) => {
+    console.log('TOPLAM', val);
+  })
+  .catch((err) => {
+    console.log('HATA:', err);
+  }); */
