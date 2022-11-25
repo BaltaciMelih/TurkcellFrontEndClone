@@ -11,9 +11,9 @@ function getAPI() {
   xhr.onload = function () {
     if (this.status) {
       const response = JSON.parse(this.responseText);
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < 12; i++) {
         let cardDiv = document.createElement("div");
-        cardDiv.className = "col-sm-4";
+        cardDiv.className = "col-sm-2";
         cardDiv.innerHTML = `
         <div class="card mb-2">
             <img src="${response[i].thumbnailUrl}" class="card-img-top" alt="thumbnailUrl" id="thumbnailUrl">
