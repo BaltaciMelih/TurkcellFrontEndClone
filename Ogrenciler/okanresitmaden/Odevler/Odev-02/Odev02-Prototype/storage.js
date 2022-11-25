@@ -2,6 +2,7 @@ function Store(){
 
 }
 
+
 Store.prototype.addToStorage = function(movies){
     localStorage.setItem("movies", JSON.stringify(movies));
 }

@@ -9,7 +9,7 @@ const savebutton = document.getElementById("savebutton");
 const alldeletebutton = document.getElementById("delete");
 const partdeletebutton = document.getElementById("deletepart");
 const firstpart = document.querySelector(".rowfirst");
-const filter = document.getElementById("filter");
+
 
 function Movie(){
     this.id = '';
@@ -85,21 +85,6 @@ Movie.prototype.EditandSave = function(){
     this.store.addToStorage(this.movies);
 }
 
-// Movie.prototype.Filtering = function(a){
-//     this.movies.forEach(movie => {
-//         if(movie.name == a){
-            
-//         }
-//     const meneme= document.getElementById(`movie_${movie.id}`);
-//     console.log(meneme);
-    
-
-//     });
-//     return movie;
-// }
-
-
-
 const movie = new Movie();
 
 alldeletebutton.addEventListener("click", function(){
@@ -144,9 +129,6 @@ general.addEventListener("click",function(e){
     }
 })
 
-// filter.addEventListener("keyup",function(e){
-//     const filteredinput = String(e.target.value.toLowerCase());
-//     movie.Filtering(filteredinput);
-// })
+
 
 
