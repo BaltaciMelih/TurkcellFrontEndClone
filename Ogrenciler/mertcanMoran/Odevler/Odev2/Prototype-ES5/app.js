@@ -5,6 +5,14 @@ function Movie(name, director, year, url) {
   this.url = url;
 }
 
+const name = document.getElementById("name");
+const director = document.getElementById("director");
+const year = document.getElementById("year");
+const url = document.getElementById("url");
+
+const ui = new UI();
+document.addEventListener("DOMContentLoaded", ui.DefaultMoviesToUI);
+
 document.addEventListener("DOMContentLoaded", function () {
   const store = new Store();
   store.displayMovies();
@@ -34,6 +42,33 @@ document.querySelector("#movie-form").addEventListener("submit", function (e) {
   e.preventDefault();
 });
 
+document.getElementById("movie-list").addEventListener("click", function (e) {
+  const ui = new UI();
+  const store = new Store();
+  if (e.target.id === "edit") {
+    e.target.parentElement.parentElement.parentElement.remove();
+    ui.showAlert("Movie list can be edited now", "primary");
+    let movies = store.getMovies();
+    movies.forEach(function (movie) {
+      if (
+        movie.name ===
+        e.target.parentElement.parentElement.parentElement.firstElementChild
+          .textContent
+      ) {
+        document.querySelector("#name").value = movie.name;
+        document.querySelector("#director").value = movie.director;
+        document.querySelector("#year").value = movie.year;
+        document.querySelector("#url").value = movie.url;
+      }
+    });
+    store.removeMovie(
+      e.target.parentElement.parentElement.parentElement.firstElementChild
+        .textContent
+    );
+  }
+  e.preventDefault();
+});
+
 document.querySelector("#movie-list").addEventListener("click", function (e) {
   const ui = new UI();
   const store = new Store();
@@ -44,15 +79,16 @@ document.querySelector("#movie-list").addEventListener("click", function (e) {
       .previousElementSibling.previousElementSibling.previousElementSibling
       .textContent
   );
-
   ui.showAlert("Movie Removed", "success");
   e.preventDefault();
 });
 
 document.querySelector("#clear-movies").addEventListener("click", function () {
+  const ui = new UI();
   const movieList = document.getElementById("movie-list");
   while (movieList.firstChild != null) {
     movieList.removeChild(movieList.firstChild);
   }
   localStorage.removeItem("movies");
+  ui.showAlert("All Movies Removed", "success");
 });
