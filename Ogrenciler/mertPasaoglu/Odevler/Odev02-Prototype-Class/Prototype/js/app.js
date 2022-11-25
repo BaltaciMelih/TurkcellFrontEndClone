@@ -13,6 +13,29 @@ const clearAllButton = document.querySelector('.btn-delete-all');
 
 eventListeners();
 
+firstRun();
+function firstRun() {
+  if (localStorage.getItem("movies") === null) {
+    storage.addMovieToStorage(
+      new Movie(
+        "Spider-man",
+        "Marc Webb",
+        "https://cdn.dsmcdn.com/ty9/product/media/images/20200821/14/8543119/82278596/1/1_org_zoom.jpg",
+        "2012-07-03",
+        
+      )
+    );
+    storage.addMovieToStorage(
+      new Movie(
+        "Avatar",
+        "James Cameron",
+        "https://m.media-amazon.com/images/I/81V6WsLjwbL.jpg",
+        "2022-12-16",    
+      )
+    );
+  }
+}
+
 function eventListeners() {
     form.addEventListener('submit', addMovie);
     document.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +43,7 @@ function eventListeners() {
         ui.loadAllMoviesToUi(movies);
     });
     movieCards.addEventListener('click', deleteAll);
+    movieCards.addEventListener("click", editMovie);
     clearAllButton.addEventListener('click', clearAllMovies);
 }
 
@@ -46,6 +70,24 @@ function deleteAll(e) {
         storage.deleteMovieFromStorage(e.target.parentElement.previousElementSibling.children[0].textContent);
         ui.displayMessage('Movie Deleted Successfuly', 'success');
     }
+}
+
+function editMovie(e) {
+    if(e.target.classList.contains("btn-edit")) {
+        e.target.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
+
+        let movies = storage.getMoviesFromStorage();
+        movies.forEach (function (movie) {
+        if (movie.url == e.target.parentElement.parentElement.previousElementSibling.children[0].src) {
+            movieTitleElement.value = movie.name;
+            movieDirectorElement.value = movie.director;
+            premiereElement.value = movie.premiere;
+            posterUrlElement.value = movie.url;
+        }
+        ui.editButton();
+        });
+        storage.deleteMovieFromStorage(e.target.parentElement.previousElementSibling.children[0].textContent);
+    }; 
 }
 
 function clearAllMovies(e) {
