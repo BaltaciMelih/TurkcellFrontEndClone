@@ -12,7 +12,6 @@ body {
 }
 
 .container-fluid {
-  background-color: $bg-color-1;
   .header-container {
     width: 100vw;
     background-color: rgb(29, 29, 29);
@@ -24,6 +23,7 @@ body {
     }
   }
   .table-container {
+    max-width: 700px;
     border-bottom: 2px $add-color dashed;
   }
   .form-container {
@@ -90,6 +90,16 @@ body {
 //   }
 // }
 
+.alert {
+  position: absolute !important;
+  top: 70px;
+  border: 2px solid;
+  border-color: $add-color;
+  padding-inline: 30px;
+  right: 30px;
+  animation: animationfaderight 0.5s forwards;
+}
+
 @keyframes animationfaderight {
   0% {
     transform: translateX(200px);
@@ -101,11 +111,3 @@ body {
     transform: translate(0);
   }
 }
-// @keyframes animationfadebottom {
-//   0% {
-//     top: 18px;
-//   }
-//   100% {
-//     top: -8px;
-//   }
-// }
