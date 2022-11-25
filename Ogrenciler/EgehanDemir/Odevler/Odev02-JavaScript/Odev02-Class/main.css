@@ -5,12 +5,19 @@
 .row .fw-semibold{
     margin-top: 16%;
 }
+
+.container-md{
+    background-color: black;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+    border-radius: 10%;
+}
 .row .btn-primary{
     border-radius: 25%;
     margin-left: 30%; 
     box-shadow: rgb(38, 57, 77) 0px 4px 0px 2px;
 }
-.row .btn-danger{
+#deleteMovie{
     border-radius: 25%;
     margin-left: 30%; 
     box-shadow: rgb(38, 57, 77) 0px 4px 0px 2px;

@@ -1,0 +1,53 @@
+.row .input-group{
+    margin-top: 5%;
+    width: 60%;
+}
+.row .fw-semibold{
+    margin-top: 16%;
+}
+
+.container-md{
+    background-color: black;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+    border-radius: 10%;
+}
+.row .btn-primary{
+    border-radius: 25%;
+    margin-left: 30%; 
+    box-shadow: rgb(38, 57, 77) 0px 4px 0px 2px;
+}
+#deleteMovie{
+    border-radius: 25%;
+    margin-left: 30%; 
+    box-shadow: rgb(38, 57, 77) 0px 4px 0px 2px;
+}
+.row .btn-primary:hover{ 
+    transform: scale(1.1);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+.row .btn-danger:hover{
+    transform: scale(1.1);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+.container-fluid{
+background-image: url('./images/movies2.jpeg');
+}
+#movie-list img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+/* .card:hover{
+    transform: scale(1.1);
+   
+} */
+
+.active-movie{
+    transform: scale(1.1);
+    animation-duration: 1s;
+}
