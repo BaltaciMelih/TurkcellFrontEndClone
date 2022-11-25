@@ -10,7 +10,7 @@ UI.prototype.addMovieUI = function (newMovie) {
             <p>Yönetmen: ${newMovie.director} </p>
             <p>Tarih: ${newMovie.date} </p>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-2">
             <button class="btn btn-secondary mb-4 w-100 p-3 mt-3">Düzenle</button>
             <button class="del btn btn-primary w-100 p-3 mb-3">Sil</button>
         </div>

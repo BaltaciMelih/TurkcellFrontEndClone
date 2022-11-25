@@ -8404,7 +8404,7 @@ ul li:hover {
   border-color: #735F32; }
 
 #clear-movies {
-  width: 250px;
+  width: 30%;
   margin-left: 10px; }
 
 @media only screen and (max-width: 780px) {
@@ -8413,4 +8413,5 @@ ul li:hover {
     .movie-search .movie-search-item {
       margin-bottom: 10px; }
   #clear-movies {
+    width: 100%;
     margin-left: 0px; } }
