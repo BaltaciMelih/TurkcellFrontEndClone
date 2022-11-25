@@ -30,13 +30,30 @@ export default class EventsListener {
 
     DomElements.getDoms().movieList.addEventListener("click", (e) => {
       UI.deleteMovie(e.target); //UI'dan silme
-      Storage.removeMovieFromStorage(e.target.parentElement.parentElement.id);
-      UI.showAlert("Silindi", "success");
     });
 
-    // DomElements.getDoms().editButton.addEventListener("click", (e) => {
-    //   UI.editMovie(e.target); 
-    //   UI.showAlert("Düzenleme", "info");
-    // })
+    DomElements.getDoms().movieList.addEventListener("click", (e) => {
+      //console.log("edit button");
+      console.log(e.target);
+      UI.editMovie(e.target); 
+      UI.showAlert("Düzenleme", "info");
+      
+    })
+
+  DomElements.getDoms().search.addEventListener("keyup", e => {
+    let searchValue = e.target.value.toLowerCase();
+    let movieNames = DomElements.getDoms().movieNameH3;
+    console.log(movieNames);
+    movieNames.forEach((movieName) => {
+      const str = movieName.textContent.toLowerCase();
+      if(str.indexOf(searchValue) === -1) {
+        movieName.parentElement.parentElement.classList.add("d-none");
+      }else{
+        movieName.parentElement.parentElement.classList.remove("d-none");
+      }
+    })
+  })
+
   }
+
 }
