@@ -1,30 +1,30 @@
-class DomElements{
+export default class DomElements{
+   
     static getDoms(){
-        const uploadBox = document.querySelector(".upload-box");
-        const fileInput = uploadBox.querySelector("input");
-        const previewImg = uploadBox.querySelector("img");
-        const urlBox = document.querySelector(".url-box");
-        const enterUrlInput = urlBox.querySelector("#enter-url");
+        const movieForm = document.querySelector('#movie-form');
+        const movieUrl = document.querySelector("#movie-url");
         const movieName = document.querySelector("#movie-name");
         const movieDirector = document.querySelector("#movie-director");
         const movieDate = document.querySelector("#movie-date");
-        const saveButton = document.querySelector(".save-button");
-        const list = document.querySelector(".movies");
+        const saveButton = document.querySelector("#save-button");
+        const movieList = document.querySelector("#movie-list");
         const deleteButton = document.querySelector(".delete-btn");
+        const editButton = document.querySelector(".delete-btn");
+        const alertDiv = document.querySelector("#alert-div");
+        const alert = document.querySelector(".alert");
         return {
-            uploadBox,
-            fileInput,
-            previewImg,
-            urlBox,
-            enterUrlInput,
-            movieName,
-            movieDirector,
-            movieDate,
-            saveButton,
-            list,
-            deleteButton,
+          movieForm,
+          movieName,
+          movieDirector,
+          movieDate,
+          movieUrl,
+          saveButton,
+          movieList,
+          deleteButton,
+          editButton,
+          alertDiv,
+          alert,
         };
 }
 }
 
-export default class {DomElements};
