@@ -7,7 +7,18 @@ h4,
   color: rgba(252, 209, 21, 0.966); }
 
 input {
-  border-bottom: 2px solid grey; }
+  border-style: none;
+  border-bottom: 2px solid rgba(158, 153, 153, 0.363);
+  color: #2c2827;
+  padding: 4px; }
+  input:focus {
+    outline: 0px;
+    -webkit-appearance: none;
+    box-shadow: none;
+    border-bottom: 3px solid rgba(252, 209, 21, 0.966);
+    border-left: 3px solid rgba(252, 209, 21, 0.966);
+    border-radius: 5px;
+    box-shadow: ghostwhite 3px 3px 6px 0px inset, rgba(122, 117, 117, 0.247) -5px -3px 6px 1px inset; }
 
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
@@ -8415,53 +8426,57 @@ textarea.form-control-lg {
 body {
   overflow-x: hidden; }
 
+.container-fluid .header-container, .container-sm .header-container, .container-md .header-container, .container-lg .header-container, .container-xl .header-container, .container-xxl .header-container {
+  width: 100vw;
+  background-color: #1d1d1d;
+  border-bottom: 3px rgba(231, 187, 65, 0.918) dashed; }
+  .container-fluid .header-container h2, .container-sm .header-container h2, .container-md .header-container h2, .container-lg .header-container h2, .container-xl .header-container h2, .container-xxl .header-container h2, .container-fluid .header-container .h2, .container-sm .header-container .h2, .container-md .header-container .h2, .container-lg .header-container .h2, .container-xl .header-container .h2, .container-xxl .header-container .h2 {
+    text-shadow: 2px 2px 4px #acac79; }
 
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl {
-  background-color: rgba(158, 153, 153, 0.363); }
-  .container-fluid .header-container, .container-sm .header-container, .container-md .header-container, .container-lg .header-container, .container-xl .header-container, .container-xxl .header-container {
-    width: 100vw;
-    background-color: #1d1d1d;
-    border-bottom: 3px rgba(231, 187, 65, 0.918) dashed; }
-    .container-fluid .header-container h2, .container-sm .header-container h2, .container-md .header-container h2, .container-lg .header-container h2, .container-xl .header-container h2, .container-xxl .header-container h2, .container-fluid .header-container .h2, .container-sm .header-container .h2, .container-md .header-container .h2, .container-lg .header-container .h2, .container-xl .header-container .h2, .container-xxl .header-container .h2 {
-      text-shadow: 2px 2px 4px #acac79; }
-  .container-fluid .table-container, .container-sm .table-container, .container-md .table-container, .container-lg .table-container, .container-xl .table-container, .container-xxl .table-container {
-    border-bottom: 2px rgba(231, 187, 65, 0.918) dashed; }
-  .container-fluid .form-container .form__group, .container-sm .form-container .form__group, .container-md .form-container .form__group, .container-lg .form-container .form__group, .container-xl .form-container .form__group, .container-xxl .form-container .form__group {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px; }
-    .container-fluid .form-container .form__group .form__field, .container-sm .form-container .form__group .form__field, .container-md .form-container .form__group .form__field, .container-lg .form-container .form__group .form__field, .container-xl .form-container .form__group .form__field, .container-xxl .form-container .form__group .form__field {
-      padding: 10px;
-      border: none;
-      border-radius: 3px;
-      outline: 2px solid; }
-      .container-fluid .form-container .form__group .form__field:focus + .input__label, .container-sm .form-container .form__group .form__field:focus + .input__label, .container-md .form-container .form__group .form__field:focus + .input__label, .container-lg .form-container .form__group .form__field:focus + .input__label, .container-xl .form-container .form__group .form__field:focus + .input__label, .container-xxl .form-container .form__group .form__field:focus + .input__label,
-      .container-fluid .form-container .form__group .form__field:valid + .input__label,
-      .container-sm .form-container .form__group .form__field:valid + .input__label,
-      .container-md .form-container .form__group .form__field:valid + .input__label,
-      .container-lg .form-container .form__group .form__field:valid + .input__label,
-      .container-xl .form-container .form__group .form__field:valid + .input__label,
-      .container-xxl .form-container .form__group .form__field:valid + .input__label {
-        transform: translate(10px, -15px);
-        padding-inline: 5px;
-        background-color: grey; }
-    .container-fluid .form-container .form__group .form__label, .container-sm .form-container .form__group .form__label, .container-md .form-container .form__group .form__label, .container-lg .form-container .form__group .form__label, .container-xl .form-container .form__group .form__label, .container-xxl .form-container .form__group .form__label {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(10px, 10px);
-      transition: transform 0.27s; }
+.container-fluid .table-container, .container-sm .table-container, .container-md .table-container, .container-lg .table-container, .container-xl .table-container, .container-xxl .table-container {
+  max-width: 700px;
+  border-bottom: 2px rgba(231, 187, 65, 0.918) dashed; }
+
+.container-fluid .form-container .form__group, .container-sm .form-container .form__group, .container-md .form-container .form__group, .container-lg .form-container .form__group, .container-xl .form-container .form__group, .container-xxl .form-container .form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px; }
+  .container-fluid .form-container .form__group .form__field, .container-sm .form-container .form__group .form__field, .container-md .form-container .form__group .form__field, .container-lg .form-container .form__group .form__field, .container-xl .form-container .form__group .form__field, .container-xxl .form-container .form__group .form__field {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: 2px solid; }
+    .container-fluid .form-container .form__group .form__field:focus + .input__label, .container-sm .form-container .form__group .form__field:focus + .input__label, .container-md .form-container .form__group .form__field:focus + .input__label, .container-lg .form-container .form__group .form__field:focus + .input__label, .container-xl .form-container .form__group .form__field:focus + .input__label, .container-xxl .form-container .form__group .form__field:focus + .input__label,
+    .container-fluid .form-container .form__group .form__field:valid + .input__label,
+    .container-sm .form-container .form__group .form__field:valid + .input__label,
+    .container-md .form-container .form__group .form__field:valid + .input__label,
+    .container-lg .form-container .form__group .form__field:valid + .input__label,
+    .container-xl .form-container .form__group .form__field:valid + .input__label,
+    .container-xxl .form-container .form__group .form__field:valid + .input__label {
+      transform: translate(10px, -15px);
+      padding-inline: 5px;
+      background-color: grey; }
+  .container-fluid .form-container .form__group .form__label, .container-sm .form-container .form__group .form__label, .container-md .form-container .form__group .form__label, .container-lg .form-container .form__group .form__label, .container-xl .form-container .form__group .form__label, .container-xxl .form-container .form__group .form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition: transform 0.27s; }
 
 .alert {
   position: absolute !important;
   top: 100px;
   padding-inline: 50px;
   right: 50px;
+  animation: animationfaderight 0.5s forwards; }
+
+.alert {
+  position: absolute !important;
+  top: 70px;
+  border: 2px solid;
+  border-color: rgba(231, 187, 65, 0.918);
+  padding-inline: 30px;
+  right: 30px;
   animation: animationfaderight 0.5s forwards; }
 
 @keyframes animationfaderight {
