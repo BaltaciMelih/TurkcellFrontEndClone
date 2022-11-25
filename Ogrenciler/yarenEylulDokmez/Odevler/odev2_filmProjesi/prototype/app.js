@@ -7,6 +7,7 @@ let filmDate = document.getElementById("filmDate");
 let filmUrl = document.getElementById("filmBanner");
 let addFilm = document.getElementById("film-add");
 let clearAll = document.getElementById("delete-all");
+let filter = document.getElementById("filter");
 let films = [];
 
 eventListeners();
@@ -14,11 +15,13 @@ function eventListeners() {
   document.addEventListener("DOMContentLoaded", defaultFilms);
   addFilm.addEventListener("click", addMovie);
   clearAll.addEventListener("click", ui.clearFilms);
-  filmList.addEventListener('click', deleteFilm);
+  filmList.addEventListener("click", deleteFilm);
+  filter.addEventListener("keyup", filterFilms);
 }
 
 function defaultFilms() {
   films = storage.defaultMovie();
+  if (films.length < 1) {
     const dFilms = [
       new Film(
         "Avengers 1",
@@ -35,7 +38,7 @@ function defaultFilms() {
     ];
     films = dFilms;
     localStorage.setItem("films", JSON.stringify(dFilms));
-  
+  }
   ui.addTodoToUI(films);
 
 }
@@ -61,8 +64,22 @@ function addMovie() {
 };
 };
 
-function deleteFilm(e) {
-    ui.deleteMovie(e.target);
-    storage.deleteMovie(e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent);
-     ui.displayMessage("Silme işlemi gerçekleşti", "success");
-  };
+ function deleteFilm(e) {
+  if(e.target.id === "deleteFilm"){
+     ui.deleteMovie(e.target);
+     storage.deleteMovie(e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent);
+      ui.displayMessage("Silme işlemi gerçekleşti", "success");
+   };}
+  
+    function filterFilms(e){   
+    let filterValue = e.target.value.toLowerCase();
+    let listedFilms = document.querySelectorAll(".name");
+    listedFilms.forEach(function (film) {
+    const text = film.textContent.toLowerCase();
+    if (text.indexOf(filterValue) === -1) {
+      film.parentElement.setAttribute("style", "display:none !important");
+    } else {
+      film.parentElement.setAttribute("style", "display:table-row");
+    }
+  });
+    }
