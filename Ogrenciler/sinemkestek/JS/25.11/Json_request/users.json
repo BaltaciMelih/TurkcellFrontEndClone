@@ -1,0 +1,14 @@
+[
+  { "name": "Sinem", "salary": 5000, "department": "Ik" },
+  {
+    "name": "Sinem",
+    "salary": 5000,
+    "department": "Ik"
+  },
+
+  {
+    "name": "Sinem",
+    "salary": 5000,
+    "department": "Ik"
+  }
+]
