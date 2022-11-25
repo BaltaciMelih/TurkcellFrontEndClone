@@ -1,6 +1,7 @@
 let thumbnailUrl = document.getElementById("thumbnailUrl");
 let title = document.getElementById("title");
-let row = document.getElementsByTagName("row");
+let rowDiv = document.getElementById("rowDiv");
+
 document.addEventListener("DOMContentLoaded", getAPI);
 
 function getAPI() {
@@ -10,22 +11,17 @@ function getAPI() {
   xhr.onload = function () {
     if (this.status) {
       const response = JSON.parse(this.responseText);
-      for (response.id = 0; response.id < 30; response.id++) {
-        console.log(response[response.id]);
-        console.log(response.id);
+      for (let i = 0; i < 6; i++) {
         let cardDiv = document.createElement("div");
-        cardDiv.className = "d-flex flex-wrap";
-        cardDiv.innerHTML += `<div class="card" style="width: 18rem;">
-            <img src="${
-              response[response.id].thumbnailUrl
-            }" class="card-img-top" alt="thumbnailUrl" id="thumbnailUrl">
+        cardDiv.className = "col-sm-4";
+        cardDiv.innerHTML = `
+        <div class="card mb-2">
+            <img src="${response[i].thumbnailUrl}" class="card-img-top" alt="thumbnailUrl" id="thumbnailUrl">
             <div class="card-body">
-              <h5 class="card-title" id="title">${
-                response[response.id].title
-              }</h5>
+              <h5 class="card-title" id="title">${response[i].title}</h5>
             </div>
-          </div>`;
-        row.appendChild(cardDiv);
+        </div>`;
+        rowDiv.appendChild(cardDiv);
       }
     }
   };
