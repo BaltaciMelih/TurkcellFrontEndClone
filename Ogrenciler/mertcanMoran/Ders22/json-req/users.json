@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Mertcan",
+    "department": "Frontend",
+    "salary": "10000"
+  },
+  {
+    "name": "Varol",
+    "department": "bilişim",
+    "salary": "20000"
+  }
+]
