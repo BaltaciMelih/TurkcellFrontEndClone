@@ -10,9 +10,6 @@ const director = document.getElementById("director");
 const year = document.getElementById("year");
 const url = document.getElementById("url");
 
-const ui = new UI();
-document.addEventListener("DOMContentLoaded", ui.DefaultMoviesToUI);
-
 document.addEventListener("DOMContentLoaded", function () {
   const store = new Store();
   store.displayMovies();
