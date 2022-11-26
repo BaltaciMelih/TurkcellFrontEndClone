@@ -48,7 +48,7 @@ function clearAllMovies() {
 }
 
 function deleteMovie(e) {
-    if(e.target.className === "del btn btn-primary w-100 p-3 mb-3") {
+    if(e.target.className === "del btn btn-primary w-100 p-2 mb-3") {
         e.target.parentElement.parentElement.remove();
         Storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
         UI.showAlert("Film silindi", "success");
@@ -56,11 +56,11 @@ function deleteMovie(e) {
 }
 
 function editMovie(e) {
-    if(e.target.className === "btn btn-secondary mb-4 w-100 p-3 mt-3") {
-        e.target.parentElement.parentElement.remove();
+    if(e.target.className === "btn btn-secondary mb-4 w-100 p-2 mt-3") {
+        e.target.parentElement.parentElement.parentElement.remove();
         let movies = Storage.getMoviesFromStorage();
         movies.forEach (function (movie) {
-            if (movie.URL == e.target.parentElement.parentElement.children[0].src) {
+            if (movie.URL == e.target.parentElement.parentElement.parentElement.children[0].src) {
                 movieNameInput.value = movie.name;
                 directorNameInput.value = movie.director;
                 movieDateInput.value = movie.date;
@@ -68,7 +68,7 @@ function editMovie(e) {
             }
             UI.editButton();
         });
-        Storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
+        Storage.deleteMovieLS(e.target.parentElement.parentElement.parentElement.children[0].src);
     };
 }
 

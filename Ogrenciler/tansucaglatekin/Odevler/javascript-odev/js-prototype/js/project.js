@@ -46,29 +46,11 @@ function clearAllMovies() {
 }
 
 function deleteMovie(e) {
-    if(e.target.className === "del btn btn-primary w-100 p-3 mb-3") {
+    if(e.target.className === "del btn btn-primary w-100 p-2 mb-3") {
         e.target.parentElement.parentElement.remove();
         storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
         ui.showAlert("Film silindi", "success");
     }
-}
-
-function editMovie(e) {
-    if(e.target.className === "btn btn-secondary mb-4 w-100 p-3 mt-3") {
-        e.target.parentElement.parentElement.remove();
-
-        let movies = storage.getMoviesFromStorage();
-        movies.forEach (function (movie) {
-            if (movie.URL == e.target.parentElement.parentElement.children[0].src) {
-                movieNameInput.value = movie.name;
-                directorNameInput.value = movie.director;
-                movieDateInput.value = movie.date;
-                movieURLInput.value = movie.URL;
-            }
-            ui.editButton();
-        });
-        storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
-    };
 }
 
 function loadAllMovies() {
@@ -76,6 +58,24 @@ function loadAllMovies() {
     movies.forEach(function (movies) {
         ui.addMovieUI(movies);
     })
+}
+
+function editMovie(e) {
+    if(e.target.className === "btn btn-secondary mb-4 w-100 p-2 mt-3") {
+        e.target.parentElement.parentElement.parentElement.remove();
+
+        let movies = storage.getMoviesFromStorage();
+        movies.forEach (function (movie) {
+            if (movie.URL == e.target.parentElement.parentElement.parentElement.children[0].src) {
+                movieNameInput.value = movie.name;
+                directorNameInput.value = movie.director;
+                movieDateInput.value = movie.date;
+                movieURLInput.value = movie.URL;
+            }
+            ui.editButton();
+        });
+        storage.deleteMovieLS(e.target.parentElement.parentElement.parentElement.children[0].src);
+    };
 }
 
 function filterMovies(e) {

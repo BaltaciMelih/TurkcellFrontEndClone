@@ -2,6 +2,7 @@ function UI() {};
 const ui = new UI();
 
 UI.prototype.addMovieUI = function (newMovie) {
+    
     movieList.innerHTML += `
     <li class="row mt-5 align-items-center border border-2">
         <img class="col-sm-3 h p-2" src="${newMovie.URL}">
@@ -10,9 +11,9 @@ UI.prototype.addMovieUI = function (newMovie) {
             <p>Yönetmen: ${newMovie.director} </p>
             <p>Tarih: ${newMovie.date} </p>
         </div>
-        <div class="col-md-2">
-            <button class="btn btn-secondary mb-4 w-100 p-3 mt-3">Düzenle</button>
-            <button class="del btn btn-primary w-100 p-3 mb-3">Sil</button>
+        <div class="col-lg-2">
+            <a href="#card-1"><button class="btn btn-secondary mb-4 w-100 p-2 mt-3">Düzenle</button></a>
+            <button class="del btn btn-primary w-100 p-2 mb-3">Sil</button>
         </div>
     </li>
     `;
