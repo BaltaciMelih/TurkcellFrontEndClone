@@ -1,11 +1,11 @@
-const form = document.getElementById("formmovie");
-const nameinput = document.getElementById("namemovie");
-const direcinput = document.getElementById("director");
-const dateinput = document.getElementById("datemovie");
-const urlinput = document.getElementById("urlmovie");
-const pagelistinput = document.getElementById("pagelist");
-const deleteAllButon = document.getElementById("deleteAll");
-const cardBody = document.getElementById("addmoviepae");
+const form = document.getElementById("movie-form");
+const nameinput = document.getElementById("mov-name");
+const direcinput = document.getElementById("mov-director");
+const dateinput = document.getElementById("mov-date");
+const urlinput = document.getElementById("mov-url");
+const pagelistinput = document.getElementById("movie-list");
+const deleteAllButon = document.getElementById("clear-all");
+
 
 eventListeners();
 function eventListeners() {
