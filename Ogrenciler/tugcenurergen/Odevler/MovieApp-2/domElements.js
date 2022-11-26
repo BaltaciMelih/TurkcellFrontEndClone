@@ -8,10 +8,12 @@ export default class DomElements{
         const movieDate = document.querySelector("#movie-date");
         const saveButton = document.querySelector("#save-button");
         const movieList = document.querySelector("#movie-list");
-        const deleteButton = document.querySelector(".delete-btn");
-        const editButton = document.querySelector(".delete-btn");
+        const deleteButton = document.querySelector("#delete-button");
+        const editButton = document.querySelector("#edit-button");
         const alertDiv = document.querySelector("#alert-div");
         const alert = document.querySelector(".alert");
+        const search = document.querySelector("#search");
+        const movieNameH3 = document.querySelectorAll(".movie-name-h3");
         return {
           movieForm,
           movieName,
@@ -24,6 +26,8 @@ export default class DomElements{
           editButton,
           alertDiv,
           alert,
+          search,
+          movieNameH3,
         };
 }
 }

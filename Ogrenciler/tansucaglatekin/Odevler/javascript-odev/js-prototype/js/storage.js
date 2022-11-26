@@ -1,12 +1,6 @@
 function Storage() {}
 const storage = new Storage();
 
-Storage.prototype.addMovieStorage = function(newMovie) {
-    let movies = storage.getMoviesFromStorage();
-    movies.push(newMovie);
-    localStorage.setItem("movies", JSON.stringify(movies));
-};
-
 Storage.prototype.getMoviesFromStorage = function() {
     let movies;
     if(localStorage.getItem("movies") == null) {
@@ -15,6 +9,12 @@ Storage.prototype.getMoviesFromStorage = function() {
         movies = JSON.parse(localStorage.getItem("movies"));
     }
     return movies;
+};
+
+Storage.prototype.addMovieStorage = function(newMovie) {
+    let movies = storage.getMoviesFromStorage();
+    movies.push(newMovie);
+    localStorage.setItem("movies", JSON.stringify(movies));
 };
 
 Storage.prototype.deleteMovieLS = function(text) {

@@ -1,9 +1,8 @@
 function UI() {}
 
 UI.prototype.addTodoToUI = function (films) {
-  let listHTML = filmList.innerHTML;
   films.map((film, index) => {
-    return (listHTML +=
+    filmList.innerHTML +=
       `<tr class="movie-container">
                 <td><img class="img-thumbnail url" style="width:130px; min-width: 100px;"src="${film.url}" alt="film-${index}"></td>
                 <td class="pt-4 name">${film.name}</td>
@@ -13,10 +12,12 @@ UI.prototype.addTodoToUI = function (films) {
                 <div class="col pt-4 ">
                 <button class="btn btn-primary deleteFilm ps-4 pe-4" id="deleteFilm">Sil</button>
               </div>
+              <div class="col pt-4 ">
+                <button class="btn btn-primary editFilm ps-4 pe-4" id="editFilm">Güncelle</button>
+              </div>
                 </td>
-                </tr> `);
+                </tr> `;
   });
-  return (filmList.innerHTML = listHTML);
 };
 
 
@@ -42,5 +43,5 @@ UI.prototype.clearFilms = function () {
     filmList.removeChild(filmList.firstChild);
   }
   localStorage.removeItem("films");
- displayMessage("Bütün filmler başarıyla silindi", "danger")
+ ui.displayMessage("Bütün filmler başarıyla silindi", "danger")
 };

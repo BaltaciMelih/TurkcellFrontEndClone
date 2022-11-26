@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Mert Pasaoglu",
+        "department": "Bilisim",
+        "salary": 5000
+    },
+    {
+        "name": "Enes Söl",
+        "department": "Bilisim",
+        "salary": 7000
+    },
+    {
+        "name": "Ömür Kasap",
+        "department": "Muhasebe",
+        "salary": 6000
+    },
+    {
+        "name": "Egehan Demir",
+        "department": "İnsan Kaynakları",
+        "salary": 5500
+    }
+]

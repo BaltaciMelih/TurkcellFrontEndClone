@@ -19,6 +19,7 @@ function eventListeners() {
   document.addEventListener("DOMContentLoaded", Lclstorage.allMovieLoad);
   moviefilter.addEventListener("keyup", move.movFilter);
   secondCardbody.addEventListener("click", move.deletemovie);
+  secondCardbody.addEventListener("click", edit.editMovie);
   movieClear.addEventListener("click", move.clearAllMovies);
 }
 

@@ -72,4 +72,9 @@ export class UI {
       movieCards.firstElementChild.remove();
     }
   };
+  static editButton = () => {
+    let submit = document.getElementById("add-movie");
+    submit.innerText = "Edit Movie";
+    submit.onclick = () => { submit.innerText = "Add Movie"};
+  }
 }

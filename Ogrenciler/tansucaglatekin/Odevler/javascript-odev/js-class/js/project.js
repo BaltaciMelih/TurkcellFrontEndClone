@@ -10,6 +10,7 @@ const filter = document.getElementById("filter");
 
 eventListeners();
 function eventListeners() {
+    document.addEventListener("DOMContentLoaded", defaultMovies);
     form.addEventListener("submit", addMovie);
     clearButton.addEventListener("click", clearAllMovies);
     cardBody.addEventListener("click", deleteMovie);
@@ -24,6 +25,27 @@ class Movie {
         this.director = director;
         this.date = date;
         this.URL = URL;
+    }
+}
+
+function defaultMovies() {
+    if(localStorage.getItem("movies") == null) {
+        Storage.addMovieStorage(
+            new Movie(
+                "Harry Potter - Felsefe Taşı",
+                "Chris Columbus",
+                "2001-11-04",
+                "https://tr.web.img4.acsta.net/r_1280_720/pictures/bzp/01/29276.jpg"
+            )
+        );
+        Storage.addMovieStorage(
+            new Movie(
+                "Harry Potter - Sırlar Odası",
+                "Chris Columbus",
+                "2002-11-03",
+                "https://tr.web.img3.acsta.net/r_1280_720/pictures/bzp/01/41245.jpg"
+            )
+        );
     }
 }
 
@@ -48,7 +70,7 @@ function clearAllMovies() {
 }
 
 function deleteMovie(e) {
-    if(e.target.className === "del btn btn-primary w-100 p-3 mb-3") {
+    if(e.target.className === "del btn btn-primary w-100 p-2 mb-3") {
         e.target.parentElement.parentElement.remove();
         Storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
         UI.showAlert("Film silindi", "success");
@@ -56,11 +78,11 @@ function deleteMovie(e) {
 }
 
 function editMovie(e) {
-    if(e.target.className === "btn btn-secondary mb-4 w-100 p-3 mt-3") {
-        e.target.parentElement.parentElement.remove();
+    if(e.target.className === "btn btn-secondary mb-4 w-100 p-2 mt-3") {
+        e.target.parentElement.parentElement.parentElement.remove();
         let movies = Storage.getMoviesFromStorage();
         movies.forEach (function (movie) {
-            if (movie.URL == e.target.parentElement.parentElement.children[0].src) {
+            if (movie.URL == e.target.parentElement.parentElement.parentElement.children[0].src) {
                 movieNameInput.value = movie.name;
                 directorNameInput.value = movie.director;
                 movieDateInput.value = movie.date;
@@ -68,7 +90,7 @@ function editMovie(e) {
             }
             UI.editButton();
         });
-        Storage.deleteMovieLS(e.target.parentElement.parentElement.children[0].src);
+        Storage.deleteMovieLS(e.target.parentElement.parentElement.parentElement.children[0].src);
     };
 }
 

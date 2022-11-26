@@ -30,6 +30,8 @@ class Ui {
     const movVisionDate = document.createElement("td");
     const linkTd = document.createElement("td");
     const link = document.createElement("a");
+    const edit = document.createElement("a");
+
 
     movPoster.innerHTML = `<img src="${pic}" width="100">`;
     movName.textContent = name;
@@ -43,9 +45,14 @@ class Ui {
 
     link.href = "#";
     link.classList = "delete-item";
-    link.innerHTML = '<i class = "fa fa-remove"></i>';
+    link.innerHTML = '<i class = "fa fa-edit"></i>';
+
+    edit.href = "#";
+    edit.classList = "edit-item";
+    edit.innerHTML = '<i class = "fa fa-remove"></i>';
 
     linkTd.appendChild(link);
+    linkTd.appendChild(edit);
     listItem.appendChild(movPoster);
     listItem.appendChild(movName);
     listItem.appendChild(movType);

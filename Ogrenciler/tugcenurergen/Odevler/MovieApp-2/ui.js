@@ -10,6 +10,8 @@ export default class UI {
   }
 
   static addMovie(movie) {
+    //editleme işlemi sonrası kaydetmeden kalan Edit butonunu tekrardan save butonuna çevirdim.
+    DomElements.getDoms().saveButton.innerHTML = "Save";
     const list = DomElements.getDoms().movieList;
     const liItem = document.createElement("li");
     liItem.classList.add("row");
@@ -26,14 +28,14 @@ export default class UI {
             </div>
             <div
               class="col col-6 bg-secondary bg-gradient text-light d-flex flex-column justify-content-evenly align-items-start">
-              <h3>Movie Name: ${movie.name}</h3>
+              <h3 class="movie-name-h3">Movie Name: ${movie.name}</h3>
               <h3>Movie Director:  ${movie.director}</h3>
               <h3>Movie Date:  ${movie.date}</h3>
             </div>
             <div
               class="col col-2 bg-secondary bg-gradient buttons d-flex justify-content-evenly align-items-center rounded-end">
-              <button   class="btn btn-dark bg-gradient h-25 edit-button">edit</button>
-              <button  class="btn btn-danger h-25 delete-button">delete</button>
+              <button id="edit-button"  class="btn btn-dark bg-gradient h-25 edit-button ">edit</button>
+              <button  id="delete-button" class="btn btn-danger h-25 delete-button">delete</button>
             </div>
         `;
 
@@ -51,6 +53,18 @@ export default class UI {
     if (htmlElement.classList.contains("delete-button")) {
       console.log(htmlElement.id);
       htmlElement.parentElement.parentElement.remove();
+      Storage.removeMovieFromStorage(
+        htmlElement.parentElement.parentElement.id
+      );
+        //eğer editleme sırasındaki silme işlemi ise silindi alerti göstermesin
+      if (
+        !DomElements.getDoms().saveButton.classList.contains("editing-submit")
+      ) {
+        UI.showAlert("silindi", "success");
+      }
+      //sonraki silmeler için classList'i eski haline getirdim
+      DomElements.getDoms().saveButton.classList.remove("editing-submit");
+      
     }
   }
 
@@ -62,9 +76,39 @@ export default class UI {
     const movieList = DomElements.getDoms().movieList;
     alertDiv.insertBefore(div, movieList); //movieListten önce div i alertDiv'e ekle
 
-    setTimeout(() => DomElements.getDoms().alert.remove(), 3000); //3 saniye sonra sil
+    setTimeout(() => DomElements.getDoms().alert.remove(), 1500); //3 saniye sonra sil
+  }
+
+  static editMovie(htmlElement) {
+    if (htmlElement.classList.contains("edit-button")) {
+      const allMovies = Storage.getMoviesFromStorage();
+      const editingMovie = htmlElement.parentElement.parentElement;
+
+      allMovies.forEach((movieObject) => {
+        if (movieObject.id === editingMovie.id) {
+          //editlenecek filme ulaşıldı
+          const editingName = movieObject.name;
+          const editingDirector = movieObject.director;
+          const editingDate = movieObject.date;
+          const editingUrl = movieObject.url;
+
+          DomElements.getDoms().movieName.value = editingName;
+          DomElements.getDoms().movieDirector.value = editingDirector;
+          DomElements.getDoms().movieDate.value = editingDate;
+          DomElements.getDoms().movieUrl.value = editingUrl;
+
+          DomElements.getDoms().saveButton.classList.add("editing-submit");
+          DomElements.getDoms().saveButton.innerHTML = "Edit";
+
+          htmlElement.classList.add("delete-button"); //silinebilmesi için editlenecek filmin butonuna da delete-button verdim
+          htmlElement.parentElement.parentElement.remove();
+          UI.deleteMovie(htmlElement);
+
+        }
+      });
+    }
+
   }
 
 
-  static editMovie(){};
 }
