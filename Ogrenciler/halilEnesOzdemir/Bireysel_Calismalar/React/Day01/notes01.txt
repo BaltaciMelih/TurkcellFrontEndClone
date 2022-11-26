@@ -12,4 +12,4 @@ React ---> React Native 50% 😉
 
 Angular ---> Typescript ile yazılıyor.
 
-'use strict' !== Typescript...
+'use strict', sloppy mode.

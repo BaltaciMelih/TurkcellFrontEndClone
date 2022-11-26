@@ -1,0 +1,11 @@
+DAY01
+
+node_modules --> npm paketlerinin olduğu klasör.
+public --> Tarayıcının page source üzerinde görebileceği dosyalarımız. (JS vasıtasıyla render olmayan HTML Blokları...)
+src ---> react app(Components,hooks) her şeyin olduğu klasör...
+---> 1 TANE HTML DOSYASI OLDUĞU İÇİN Single Page :)
+
+DAY02
+
+Component isimlerini BÜYÜK HARFLE VER. Küçük harf kullanma.
+Export etmediğini Import edemezsin...
