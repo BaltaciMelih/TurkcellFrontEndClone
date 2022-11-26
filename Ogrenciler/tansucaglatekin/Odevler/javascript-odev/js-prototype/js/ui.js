@@ -2,7 +2,6 @@ function UI() {};
 const ui = new UI();
 
 UI.prototype.addMovieUI = function (newMovie) {
-    
     movieList.innerHTML += `
     <li class="row mt-5 align-items-center border border-2">
         <img class="col-sm-3 h p-2" src="${newMovie.URL}">

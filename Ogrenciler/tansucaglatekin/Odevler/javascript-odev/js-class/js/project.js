@@ -10,6 +10,7 @@ const filter = document.getElementById("filter");
 
 eventListeners();
 function eventListeners() {
+    document.addEventListener("DOMContentLoaded", defaultMovies);
     form.addEventListener("submit", addMovie);
     clearButton.addEventListener("click", clearAllMovies);
     cardBody.addEventListener("click", deleteMovie);
@@ -24,6 +25,27 @@ class Movie {
         this.director = director;
         this.date = date;
         this.URL = URL;
+    }
+}
+
+function defaultMovies() {
+    if(localStorage.getItem("movies") == null) {
+        Storage.addMovieStorage(
+            new Movie(
+                "Harry Potter - Felsefe Taşı",
+                "Chris Columbus",
+                "2001-11-04",
+                "https://tr.web.img4.acsta.net/r_1280_720/pictures/bzp/01/29276.jpg"
+            )
+        );
+        Storage.addMovieStorage(
+            new Movie(
+                "Harry Potter - Sırlar Odası",
+                "Chris Columbus",
+                "2002-11-03",
+                "https://tr.web.img3.acsta.net/r_1280_720/pictures/bzp/01/41245.jpg"
+            )
+        );
     }
 }
 

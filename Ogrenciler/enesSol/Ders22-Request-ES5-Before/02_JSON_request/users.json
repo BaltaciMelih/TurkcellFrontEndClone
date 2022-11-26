@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Varol Hoca",
+    "department": "Bilişim",
+    "salary": 5000
+  },
+  {
+    "name": "Enes",
+    "department": "Bilişim",
+    "salary": 7000
+  },
+  {
+    "name": "Employee",
+    "department": "Bilişim",
+    "salary": 500
+  },
+  {
+    "name": "Employee",
+    "department": "Bilişim",
+    "salary": 500
+  }
+]

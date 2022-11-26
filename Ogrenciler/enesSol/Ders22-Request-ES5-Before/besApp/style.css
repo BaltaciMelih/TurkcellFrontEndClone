@@ -12,12 +12,11 @@ body {
     rgba(158, 4, 33, 1) 35%,
     rgba(25, 23, 25, 1) 100%
   );
-  background-repeat: no-repeat;
 }
 
-.container {
+/* .container {
   min-height: 100vh;
-}
+} */
 
 .container .image-container {
   flex-wrap: wrap;
