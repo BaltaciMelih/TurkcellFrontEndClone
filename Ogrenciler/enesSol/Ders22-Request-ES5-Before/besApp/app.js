@@ -16,7 +16,6 @@ function photogallery() {
           alt=""
         />
       </div>`;
-          console.log(object.Images);
           document.querySelectorAll(".image-container img").forEach((image) => {
             image.onclick = () => {
               document.querySelector(".popup-image").style.display = "block";
