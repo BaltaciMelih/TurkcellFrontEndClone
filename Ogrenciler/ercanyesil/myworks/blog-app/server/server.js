@@ -1,5 +1,8 @@
 const {ApolloServer, gql} = require('apollo-server');
 const qgl = require('graphql-tag');
+const { default: mongoose } = require('mongoose');
+
+const DB_URL='mongodb+srv://yesil:1258@blogcluster.uec9snt.mongodb.net/?retryWrites=true&w=majority'
 
 const typeDefs=gql`
     type Article{
@@ -30,6 +33,9 @@ const server = new ApolloServer({
     resolvers
 });
 
-server.listen({port:5000}).then((res)=>{
+mongoose.connect(DB_URL,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>{
+    console.log('mongodb bağlantısını başarılı');
+    return server.listen({port:5000})
+}).then((res)=>{
     console.log(`server ${res.url} çalışıyor`);
-}); 
+})
