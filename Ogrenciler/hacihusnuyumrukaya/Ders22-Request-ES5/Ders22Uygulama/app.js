@@ -9,12 +9,11 @@ function galery(){
             const response = JSON.parse(this.responseText);
             response.forEach(function(object){
                 if(object.id <= Adet){
-                    row.innerHTML += `<div class="col">
-                    <div class="card">
+                    row.innerHTML += `<div class="col p-2">
+                    <div class="card " style="height: 450px;">
                       <img src="${object.thumbnailUrl}" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">${object.title}"</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       </div>
                     </div>
                   </div>
