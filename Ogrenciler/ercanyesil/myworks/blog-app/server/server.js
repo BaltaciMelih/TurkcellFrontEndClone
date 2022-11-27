@@ -2,7 +2,9 @@ const {ApolloServer, gql} = require('apollo-server');
 const qgl = require('graphql-tag');
 const { default: mongoose } = require('mongoose');
 
-const DB_URL='mongodb+srv://yesil:1258@blogcluster.uec9snt.mongodb.net/?retryWrites=true&w=majority'
+const articleModel = require('./models/articleModel');
+
+const DB_URL='mongodb+srv://yesil:1258@blogcluster.uec9snt.mongodb.net/blogDB?retryWrites=true&w=majority'
 
 const typeDefs=gql`
     type Article{
@@ -17,12 +19,8 @@ const typeDefs=gql`
 
 const resolvers ={
     Query:{
-        articlesBring(){
-            const articles =[
-                {id:1,title:'title 1',contents:'contents 1'},
-                {id:2,title:'title 2',contents:'contents 2'},
-                {id:3,title:'title 3',contents:'contents 3'},
-            ];
+        async articlesBring(){
+            const articles = await articleModel.find();
             return articles;
         }
     }
