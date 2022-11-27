@@ -20,9 +20,10 @@ function calculate(){
         
     })
 }
-
+let toplam = 0;
 function char(val){
     let number ;
+    
     switch(val) {
         case "a":
         case "j":
@@ -32,6 +33,7 @@ function char(val){
         case "S":
            
           number = 1;
+          toplam += number;
           console.log("number", number);
           break;
         case "b":
@@ -41,7 +43,10 @@ function char(val){
         case "K":
         case "T":
             number = 2;
+            toplam += number;
             console.log("number", number);
+            console.log("number",typeof number);
+
           break;
         case "c":
         case "l":
@@ -50,6 +55,7 @@ function char(val){
         case "L":
         case "U":
             number = 3;
+            toplam += number;
             console.log("number", number);
           break;
         case "d":
@@ -59,6 +65,7 @@ function char(val){
         case "M":
         case "V":
             number = 4;
+            toplam += number;
             console.log("number", number);
             console.log(typeof number);
           break;c
@@ -69,6 +76,7 @@ function char(val){
         case "N":
         case "W":
             number = 5;
+            toplam += number;
             console.log("number", number);
           break;
         case "f":
@@ -78,6 +86,7 @@ function char(val){
         case "O":
         case "X":
             number = 6;
+            toplam += number;
             console.log("number", number);
           break;
         case "g":
@@ -87,6 +96,7 @@ function char(val){
         case "P":
         case "Y":
             number = 7;
+            toplam += number;
             console.log("number", number);
           break;
         case "h":
@@ -96,6 +106,7 @@ function char(val){
         case "Q":
         case "Z":
             number = 8;
+            toplam += number;
             console.log("number", number);
           break;
         case "i":
@@ -103,14 +114,16 @@ function char(val){
         case "I":
         case "R":
             number = 9;
+            toplam += number;
             console.log("number", number);
           break;
         default:
             number = 0;
+            toplam += number;
             console.log("number", number);
         }
-      
-        
+        console.log(toplam);
+        numberout.value = toplam;
         return number;
     }
 
