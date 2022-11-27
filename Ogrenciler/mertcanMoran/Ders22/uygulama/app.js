@@ -5,17 +5,23 @@ function getAlbum() {
   xhr.onload = function () {
     if (this.status == 200) {
       const response = JSON.parse(this.responseText);
-      const row = document.createElement("tr");
-      row.innerHTML = `
-    <td class = "w-25">${response[0].albumId}</td>
-    <td class = "w-25">${response[0].id}</td>
-    <td><img src = "${response[0].thumbnailUrl}" class = "img-fluid w-25 h-25" ></img></td>
-    <td class = "w-25">${response[0].title}</td>
-    <td><img src = "${response[0].url}" class = "img-fluid w-25 h-25" ></img></td>
-    
-    `;
-      document.getElementById("foto").appendChild(row);
-      console.log(response[0]);
+      const tr = document.createElement("div");
+      tr.className = "row";
+      response.forEach(function (object) {
+        if (object.albumId == 1) {
+          tr.innerHTML += `
+          <tr class="col-3 d-flex flex-column"><td>${object.albumId}</td>
+        <td>${object.id}</td>
+        <td>${object.title}</td>
+        <td><img src = "${object.url}" class = "img-fluid" ></img></td>
+        <td><img src = "${object.thumbnailUrl}" class = "img-fluid" ></img></td></tr>`;
+
+          console.log(object.id);
+        }
+      });
+
+      document.getElementById("foto").appendChild(tr);
+      //console.log(response);
     }
   };
 
