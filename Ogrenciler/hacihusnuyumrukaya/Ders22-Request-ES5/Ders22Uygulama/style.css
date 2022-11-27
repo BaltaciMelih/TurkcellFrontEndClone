@@ -1,0 +1,9 @@
+
+.bg-color{
+    background-color: #45494c;
+}
+@media screen and (max-width: 768px) {
+    img{
+        height: 300px;
+    }
+}
