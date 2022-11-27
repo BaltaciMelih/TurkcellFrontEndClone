@@ -125,7 +125,7 @@ document.querySelector('#book-list').addEventListener('click', (e) =>
 {
     // remove book from UI
     UI.deleteBook(e.target)
-    UI.showAlert("delete succes ", "success")
+    UI.showAlert("delete succes ", "success") 
 
     //remove book grom store
     Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
