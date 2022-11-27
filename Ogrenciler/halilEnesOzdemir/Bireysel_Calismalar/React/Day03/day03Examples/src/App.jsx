@@ -1,11 +1,9 @@
-import JsxElement from './jsxSample/JsxElement';
-import JsxElementEvents from './jsxSample/JsxElementEvents';
+import StateSample2 from './stateSample/StateSample2';
 
 function App() {
   return (
     <>
-      <JsxElementEvents></JsxElementEvents>
-      <JsxElement></JsxElement>
+      <StateSample2></StateSample2>
     </>
   );
 }
