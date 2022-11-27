@@ -13,7 +13,8 @@ const typeDefs=gql`
         contents:String!
     }
     type Query{
-        articlesBring:[Article]!
+        articlesBring:[Article]!,
+        articleBring(id:ID!):Article!
     }
 
     type Mutation{
@@ -26,6 +27,15 @@ const resolvers ={
         async articlesBring(){
             const articles = await articleModel.find();
             return articles;
+        },
+        async articleBring(parent,args){
+            try {
+                const {id}=args;
+                
+                return await articleModel.findById(id);
+            } catch (error) {
+                throw new error
+            }
         }
     },
     Mutation:{
