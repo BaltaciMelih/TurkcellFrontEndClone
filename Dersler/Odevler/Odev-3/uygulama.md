@@ -1,0 +1,9 @@
+# Blog Sayfası
+
+- Blogları get ile server dan alıp listeleyecek (başlık, yazı, yazarım adı, tarih ve saat, kategori, görsel)
+- herhangi bir yazıya tıklandığında o yazı modal olarak açılacak
+- kategoriye göre filtreleme yapılabilecek
+- arama inputu olacak, listede filtreleme yapacak
+- Yeni blog yazısı oluşturabilecek
+- var olan bir yazıyı güncelleyebilecek
+- seçtiği yazıyı silebilecek
