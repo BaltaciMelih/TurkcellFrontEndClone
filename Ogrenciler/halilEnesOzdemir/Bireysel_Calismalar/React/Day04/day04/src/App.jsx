@@ -1,9 +1,9 @@
-import InputStateSample from './StateSample/InputStateSample';
+import Fruits from './StateSample/Fruits';
 
 function App() {
   return (
     <>
-      <InputStateSample></InputStateSample>
+      <Fruits></Fruits>
     </>
   );
 }
