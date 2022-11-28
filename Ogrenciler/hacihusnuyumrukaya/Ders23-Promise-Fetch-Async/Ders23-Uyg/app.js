@@ -2,14 +2,12 @@ const row = document.querySelector(".row");
 FetchUygulama();
 // const Adet = Number(prompt("Albüme eklenecek fotoğraf sayısı?"));
 function FetchUygulama(){
+    return new Promise((resolve,reject)=>{
     fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(
-            response =>{
-             return   response.json()
-            }
-    ).then(responseJson=>{
-                responseJson.forEach(function(object){
-                    if(object.id <= 10){
+    .then((response) => response.json())
+    .then(responseJson=>{
+               resolve( responseJson.forEach(function(object){
+                    if(object.id <= 12){
                         row.innerHTML += `<div class="col">
                         <div class="card">
                           <div class="card-body" style="height:250px;">
@@ -19,10 +17,11 @@ function FetchUygulama(){
                           </div>
                         </div>
                       </div>
-                  
                       `;
                     }
-                })
+                }))
              }
         )
+    .catch((err)=>reject(err));
+    });
 }
