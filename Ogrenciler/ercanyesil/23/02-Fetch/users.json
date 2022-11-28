@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Ercan Yeşil",
+        "depertment": "Bilişim",
+        "salary": 5000
+    },
+    {
+        "name": "Sercan Yeşil",
+        "depertment": "Bilişim",
+        "salary": 5000
+    },
+    {
+        "name": "Oğuzhan Yeşil",
+        "depertment": "Bilişim",
+        "salary": 5000
+    },
+    {
+        "name": "İsmail Yeşil",
+        "depertment": "Bilişim",
+        "salary": 5000
+    }
+]
