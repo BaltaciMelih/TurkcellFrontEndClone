@@ -1,6 +1,6 @@
 const row = document.querySelector(".row");
 galery();
-const Adet = Number(prompt("Albüme eklenecek fotoğraf sayısı?"));
+// const Adet = Number(prompt("Albüme eklenecek fotoğraf sayısı?"));
 function galery(){
     const xhr = new XMLHttpRequest();
     xhr.open("GET","https://jsonplaceholder.typicode.com/photos");
@@ -8,13 +8,34 @@ function galery(){
         if(this.status == 200){
             const response = JSON.parse(this.responseText);
             response.forEach(function(object){
-                if(object.id <= Adet){
-                    row.innerHTML += `<div class="col">
-                    <div class="card">
+                if(object.id <= 16){
+                    row.innerHTML += `<div class="col p-2">
+                    <div class="card" style="height: 450px;">
                       <img src="${object.thumbnailUrl}" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">${object.title}"</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Resim Önizleme
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">Resim Galerisi</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <img src="${object.url}" class="card-img-top" alt="...">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

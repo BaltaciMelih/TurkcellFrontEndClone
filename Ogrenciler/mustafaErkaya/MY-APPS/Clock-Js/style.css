@@ -48,4 +48,7 @@ body{
     /* absolute ile 3 div de aynı hizada */
     top: 50%;
     transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.1s;
+    transition-timing-function: cubic-bezier(0.1, 2.5, 0.45, 1);
 }
