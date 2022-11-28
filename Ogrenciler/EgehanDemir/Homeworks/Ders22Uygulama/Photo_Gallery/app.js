@@ -1,19 +1,19 @@
 document.getElementById("get").addEventListener("click", addData);
 
 function addData() {
-    const request = new XMLHttpRequest();
-    request.open("GET", "https://jsonplaceholder.typicode.com/photos");
-    
-    request.onload = function () {
-        if (this.status == 200) {
-            const response = JSON.parse(this.responseText);
-            // console.log(response);
-            // console.log(response[0].id); 
+  const request = new XMLHttpRequest();
+  request.open("GET", "https://jsonplaceholder.typicode.com/photos");
 
-            response.forEach(function (el) {
-                if (el.id <= 20) {
-                let photo2 = document.getElementById("photos"); 
-                    photo2.innerHTML += `
+  request.onload = function () {
+    if (this.status == 200) {
+      const response = JSON.parse(this.responseText);
+      // console.log(response);
+      // console.log(response[0].id); 
+
+      response.forEach(function (el) {
+        if (el.id <= 20) {
+          let photo2 = document.getElementById("photos");
+          photo2.innerHTML += `
           <hr >
           <div class="row">
             <div class="col-12 col-md-12">
@@ -28,12 +28,12 @@ function addData() {
             </div>
           </div>
           `
-                }
-            });
-            response.forEach( function (e){
-                if(e.id <= 20){
-                let photo = document.getElementById("photos"); 
-                photo.innerHTML += `<!-- Modal -->
+        }
+      });
+      response.forEach(function (e) {
+        if (e.id <= 20) {
+          let photo = document.getElementById("photos");
+          photo.innerHTML += `<!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -49,13 +49,12 @@ function addData() {
                   </div>
                   </div>
                   </div>`
-                }
-            });
-            
         }
+      });
+    }
 
-    };
-    request.send();
+  };
+  request.send();
 
 };
 // {
