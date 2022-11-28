@@ -1,3 +1,5 @@
+// GRUP ÜYELERİ: ENES SÖL, BURAK GÜL, ŞAFAK ŞENOl
+
 const bes = document.querySelector(".image-container");
 const testModal = Number(prompt("kaç tane resim istersiniz ?"));
 photogallery();
