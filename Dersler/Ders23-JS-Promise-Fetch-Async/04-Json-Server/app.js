@@ -15,7 +15,9 @@ class Request {
     //   fetch(this.url, {
     //     method: "POST",
     //     body: JSON.stringify(data),
-    //     headers: { "Content-Type": "application/json;" },
+    //     headers: {
+    //        "Content-type": "application/json; charset=UTF-8",
+    //     },
     //   })
     //     .then((response) => response.json())
     //     .then((data) => resolve(data))
