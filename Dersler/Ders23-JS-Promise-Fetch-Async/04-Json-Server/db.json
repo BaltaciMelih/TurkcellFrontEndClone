@@ -1,19 +1,24 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "sfsdf",
+      "nick": "typicode"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "deneme",
+      "nick": "typicode1"
+    },
+    {
+      "id": 3,
+      "name": "json-server",
+      "nick": "typicode2"
+    },
+    {
+      "id": 4,
+      "name": "postDeneme",
+      "nick": "Merhaba"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
