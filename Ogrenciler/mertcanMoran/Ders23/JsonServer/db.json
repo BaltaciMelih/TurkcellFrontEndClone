@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "sfsdf",
+      "nick": "typicode"
+    },
+    {
+      "id": 2,
+      "name": "deneme",
+      "nick": "typicode1"
+    },
+    {
+      "id": 3,
+      "name": "json-server",
+      "nick": "typicode2"
+    },
+    {
+      "id": 4,
+      "name": "postDeneme",
+      "nick": "Merhaba"
+    }
+  ]
+}
