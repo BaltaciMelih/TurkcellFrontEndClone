@@ -1,12 +1,12 @@
 document.getElementById("change").addEventListener("click", change);
 function change(){
-    const xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
     xhr.open(
       "GET",
       "http://api.exchangeratesapi.io/v1/latest?access_key=a48afb973259b17c029cee604aa88987"
     );
 
-    xhr.onload = funciton(){
+    xhr.onload = function(){
         if(this.status){
             const response = JSON.parse(this.responseText);
             console.log(response);
