@@ -1,3 +1,6 @@
+
+//Süleyman Emre Karabay, Sinem Kestek, Yaren Eylül Dökmez
+
 let thumbnailUrl = document.getElementById("thumbnailUrl");
 let title = document.getElementById("title");
 let rowDiv = document.getElementById("rowDiv");
@@ -13,9 +16,9 @@ function getAPI() {
       const response = JSON.parse(this.responseText);
       for (let i = 0; i < 12; i++) {
         let cardDiv = document.createElement("div");
-        cardDiv.className = "col-sm-3";
+        cardDiv.className = "col-md-3";
         cardDiv.innerHTML = `
-        <div class="card mb-2">
+        <div class="card mb-2 mt-2">
             <img src="${response[i].thumbnailUrl}" class="card-img-top" alt="thumbnailUrl" id="thumbnailUrl">
             <div class="card-body">
               <h5 class="card-title" id="title">${response[i].title}</h5>
