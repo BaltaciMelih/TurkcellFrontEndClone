@@ -16,3 +16,4 @@ https://www.cssmatic.com - border, shadow gibi özellikler için
 https://nodejs.org/en/ - nodejs
 https://getbootstrap.com/docs/5.2 - Bootstrap Dökümantasyon
 https://www.btkakademi.gov.tr/portal/course/versiyon-kontrolleri-git-ve-github-19439 - Git ve github Eğitimi
+https://github.com/typicode/json-server - Json Server
