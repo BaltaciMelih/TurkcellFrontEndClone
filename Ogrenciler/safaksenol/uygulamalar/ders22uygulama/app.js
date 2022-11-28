@@ -1,3 +1,8 @@
+// Uygulamayı yapan grup üyeleri
+// Enes Söl
+// Şafak Şenol
+// Burak Gül
+
 const bes = document.querySelector(".image-container");
 const testModal = Number(prompt("Kaç tane film posteri istersiniz?"));
 photogallery();
