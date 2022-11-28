@@ -16,9 +16,14 @@
       "nick": "typicode2"
     },
     {
-      "id": 4,
-      "name": "postDeneme",
-      "nick": "Merhaba"
+      "name": "deneme",
+      "nick": "hahahaha",
+      "id": 4
+    },
+    {
+      "name": "deneme",
+      "nick": "hahahaha",
+      "id": 5
     }
   ]
 }
