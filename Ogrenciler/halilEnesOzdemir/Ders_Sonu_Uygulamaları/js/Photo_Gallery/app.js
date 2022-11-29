@@ -1,3 +1,9 @@
+// Ders - 22 Uygulaması Grup üyeleri
+
+// Erdem Altun
+// Halil Enes Özdemir
+// Egehan Demir
+
 document.getElementById('get').addEventListener('click', addData);
 
 function addData() {
@@ -32,7 +38,7 @@ function addData() {
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-                              <img class="card-img-top" src="${el.url}">
+        <img class="card-img-top" src="${el.url}">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
