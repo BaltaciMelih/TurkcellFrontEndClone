@@ -3,6 +3,20 @@ class UI {
     const form = document.getElementById('movie-form');
     form.innerHTML += `
 
+    <div class="row">
+              <div class=" col-md-6  mb-3 mb-md-3">
+                <input class="form-control" type="text" name="name" id="name" placeholder="Movie Name" />
+                </div>
+              <div class=" col-md-6  mb-3 mb-md-3">
+                <input class="form-control" type="text" name="director" id="director" placeholder="Director" />
+              </div>
+              <div class="col-md-6 mb-3 mb-md-4">
+                <input class="form-control" type="text" name="url" id="url" placeholder="Poster URL" />
+              </div>
+              <div class=" col-md-6 mb-3 mb-md-4">
+                <input class="form-control" type="text" name="release" id="release" placeholder="Release Date (YYYY-AA-GG)" />
+              </div>
+
               <div class="d-flex justify-content-center align-items-center flex-column gap-3">
                 <button type="submit" id="add-movie-submit" class="btn btn-danger px-3 py-1 btn-block ">Add Movie</button> 
                 <button type="submit" id="clear-all" class="btn btn-dark px-3 py-1">Clear All</button> 
