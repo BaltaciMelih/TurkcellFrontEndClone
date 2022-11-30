@@ -103,8 +103,6 @@ function addMovieToStorage(newMovie) {
 function loadAllMoviesToUI() {
   let movies = getMoviesFromStorage();
   movies.forEach(function (movie) {
-    console.log(movie);
-    console.log(typeof movie);
     addMovieToUI(
       movie.name,
       movie.director,
