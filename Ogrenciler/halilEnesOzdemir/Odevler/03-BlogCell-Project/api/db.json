@@ -1,30 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/tr/d/da/Sagopa-Kajmer-Kalp-Hastasi.jpg",
-      "category": "Müzik",
-      "author": "Sagopa Kajmer",
-      "title": "Kalp Hastası",
-      "textContent": "İlk pişmanlık büyük derstir, almayan çok pişman olur\nBu arada çok pişman olan, hiç pişman olmamıştır."
-    },
-    {
-      "id": 2,
-      "imageUrl": "https://is3-ssl.mzstatic.com/image/thumb/Music113/v4/e0/02/aa/e002aa4e-7408-bc39-7a56-84fe43465013/rls00097049.jpg/600x600bf-60.jpg",
-      "category": "Müzik",
-      "author": "Defkhan",
-      "title": "Rap Seven",
-      "textContent": "Peki Def, hayat sana nedir diye sorsalar.\nHayat dediğin bi çift bacak ve gidebildiğin yol kadar"
-    },
-    {
-      "id": 3,
-      "imageUrl": "https://images.genius.com/d8ef8b20f05577a83de9c909ab714189.1000x1000x1.png",
-      "category": "Müzik",
-      "author": "Mozole Mirach",
-      "title": "Hack",
-      "textContent": "Ben zaten zenginim çünkü bu kalbim ekmeğim\nYolum ve emeğimle sistemi hackleyeceğim"
-    },
-    {
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
       "category": "Film",
       "title": "3 Idiots",
