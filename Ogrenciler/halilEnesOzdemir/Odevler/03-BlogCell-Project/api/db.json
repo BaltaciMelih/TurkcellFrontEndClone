@@ -2,18 +2,67 @@
   "posts": [
     {
       "id": 1,
-      "title": "Post One",
-      "body": "This is post one"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/tr/d/da/Sagopa-Kajmer-Kalp-Hastasi.jpg",
+      "category": "Müzik",
+      "author": "Sagopa Kajmer",
+      "title": "Kalp Hastası",
+      "textContent": "İlk pişmanlık büyük derstir, almayan çok pişman olur\nBu arada çok pişman olan, hiç pişman olmamıştır."
     },
     {
       "id": 2,
-      "title": "Post Two",
-      "body": "This is post two"
+      "imageUrl": "https://is3-ssl.mzstatic.com/image/thumb/Music113/v4/e0/02/aa/e002aa4e-7408-bc39-7a56-84fe43465013/rls00097049.jpg/600x600bf-60.jpg",
+      "category": "Müzik",
+      "author": "Defkhan",
+      "title": "Rap Seven",
+      "textContent": "Peki Def, hayat sana nedir diye sorsalar./nHayat dediğin bi çift bacak ve gidebildiğin yol kadar"
     },
     {
-      "id": 3,
-      "title": "Post Three",
-      "body": "This is post three"
+      "id": 1,
+      "imageUrl": "https://images.genius.com/d8ef8b20f05577a83de9c909ab714189.1000x1000x1.png",
+      "category": "Müzik",
+      "author": "Mozole Mirach",
+      "title": "Hack",
+      "textContent": "Ben zaten zenginim çünkü bu kalbim ekmeğim/nYolum ve emeğimle sistemi hackleyeceğim"
+    },
+    {
+      "imageUrl": "a",
+      "category": "a",
+      "title": "a",
+      "author": "a",
+      "textContent": "a",
+      "id": 3
+    },
+    {
+      "imageUrl": "a",
+      "category": "a",
+      "title": "a",
+      "author": "a",
+      "textContent": "a",
+      "id": 4
+    },
+    {
+      "imageUrl": "a",
+      "category": "a",
+      "title": "a",
+      "author": "a",
+      "textContent": "a",
+      "id": 5
+    },
+    {
+      "imageUrl": "www.sgdasdg",
+      "category": "aasdgasd",
+      "title": "adsga",
+      "author": "dgasdggad",
+      "textContent": "sdsagsdgasdggdsa",
+      "id": 6
+    },
+    {
+      "imageUrl": "asdfa",
+      "category": "adsg",
+      "title": "sdgasdg",
+      "author": "asdgadsga",
+      "textContent": "sdgasgdgas",
+      "id": 7
     }
   ]
 }
