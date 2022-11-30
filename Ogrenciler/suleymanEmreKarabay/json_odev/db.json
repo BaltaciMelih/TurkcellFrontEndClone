@@ -1,0 +1,31 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "baslik": "json-server",
+      "yazi": "typicode",
+      "yazarin_adi": "emre",
+      "tarih_ve_saat": "19-10-1999 23:18",
+      "kategori": "araba",
+      "gorsel_url": "https://www.cumhuriyet.com.tr/Archive/2021/11/29/1888598/kapak_112247.jpg"
+    },
+    {
+      "id": 2,
+      "baslik": "json-server2",
+      "yazi": "typicode2",
+      "yazarin_adi": "emre2",
+      "tarih_ve_saat": "19-10-1999 23:19",
+      "kategori": "araba2",
+      "gorsel_url": "https://www.cumhuriyet.com.tr/Archive/2021/11/29/1888598/kapak_112247.jpg"
+    },
+    {
+      "baslik": "fsdafas",
+      "yazi": "",
+      "yazarin_adi": "",
+      "tarih_ve_saat": "",
+      "kategori": "",
+      "gorsel_url": "",
+      "id": 4
+    }
+  ]
+}
