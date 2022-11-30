@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hoşgeldin {name}</h1>
-      <Template/>
+      <Template name = {name}/>
     </div>
   );
 }
