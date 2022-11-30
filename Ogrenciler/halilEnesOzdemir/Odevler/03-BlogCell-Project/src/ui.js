@@ -7,6 +7,7 @@ class UI {
     this.authorInput = document.querySelector('#author');
     this.textContentArea = document.querySelector('#textContent');
     this.idInput = document.querySelector('#id');
+    this.addPostSubmit = document.querySelector('.addSubmit');
     this.state = 'add';
   }
 
@@ -73,27 +74,43 @@ class UI {
   }
 
   fillForm(data) {
-    /* this.post = document.querySelector('#blogposts');
-    this.imageUrlInput = document.querySelector('#imgUrl');
-    this.categoryInput = document.querySelector('#category');
-    this.titleInput = document.querySelector('#title');
-    this.authorInput = document.querySelector('#author');
-    this.textContentArea = document.querySelector('#textContent'); */
-
-    /* 
-          id,
-      imageUrl,
-      category,
-      title,
-      author,
-      textContent,
-    */
     this.imageUrlInput.value = data.imageUrl;
     this.categoryInput.value = data.category;
     this.titleInput.value = data.title;
     this.authorInput.value = data.author;
     this.textContentArea.value = data.textContent;
     this.idInput.value = data.id;
+
+    this.changeState('edit');
+  }
+
+  clearIdInput() {
+    this.idInput.value = '';
+  }
+
+  changeState(type) {
+    if (type === 'edit') {
+      this.addPostSubmit.textContent = 'Update Post';
+      this.addPostSubmit.className = 'addSubmit btn btn-warning btn-block';
+
+      const button = document.createElement('button');
+      button.className = 'post-cancel btn btn-light btn-block';
+      button.appendChild(document.createTextNode('Cancel Edit'));
+
+      const cardForm = document.querySelector('.card-form');
+      const formEnd = document.querySelector('.form-end');
+      cardForm.insertBefore(button, formEnd);
+    } else {
+      this.addPostSubmit.textContent = 'Yolla Gelsin';
+      this.addPostSubmit.className = 'addSubmit btn btn-primary btn-block';
+
+      if (document.querySelector('.post-cancel')) {
+        document.querySelector('.post-cancel').remove();
+      }
+
+      this.clearIdInput();
+      this.clearFields();
+    }
   }
 }
 

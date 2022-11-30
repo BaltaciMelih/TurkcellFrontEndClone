@@ -19,7 +19,6 @@ function getPosts() {
 }
 
 function submitPost() {
-  debugger;
   const imageUrl = document.getElementById('imgUrl').value;
   const category = document.getElementById('category').value;
   const title = document.getElementById('title').value;
