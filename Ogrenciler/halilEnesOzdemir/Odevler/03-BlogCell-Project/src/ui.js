@@ -10,6 +10,12 @@ class UI {
 
   showPosts(blogposts) {
     let blogs = document.querySelector('#blogposts');
+    const now = new Date();
+    const day = `${now.getDate()}`.padStart(2, 0);
+    const month = `${now.getMonth() + 1}`.padStart(2, 0);
+    const year = now.getFullYear();
+    const hour = `${now.getHours()}`.padStart(2, 0);
+    const min = `${now.getMinutes()}`.padStart(2, 0);
     blogposts.forEach((post) => {
       blogs.innerHTML += `
 
@@ -29,7 +35,8 @@ class UI {
         </div>
         </div>
         <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
-          <div class="views">Oct 20, 12:45PM
+          <div class="views">
+              ${day}/${month}/${year}, ${hour}:${min}
           </div>
           <div class="stats">
            	<i class="far fa-eye"></i> 1347
