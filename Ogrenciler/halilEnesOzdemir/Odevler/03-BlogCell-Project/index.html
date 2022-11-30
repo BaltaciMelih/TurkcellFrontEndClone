@@ -19,28 +19,35 @@
         <a href="" class="navbar-brand">{Bi'logcell}</a>
       </div>
     </nav>
-
+    <section id="section">
     <div class="container mainContainer">
       <div class="card card-body">
         <h2 class>Yazmadığın gün karanlıktasın</h2>
         <p class="lead">Karala bi'şeyler...</p>
         <div class="form-group">
-          <input type="text" id="title" class="form-control mb-2" placeholder="Bi'görsel (Url)" />
-          <input type="text" id="title" class="form-control mb-2" placeholder="Bi'kategori (Select mantığı)" />
+          <input type="text" id="imgUrl" class="form-control mb-2" placeholder="Bi'görsel (Url)" />
+          <input type="text" id="category" class="form-control mb-2" placeholder="Bi'kategori (Select mantığı)" />
           <input type="text" id="title" class="form-control mb-2" placeholder="Bi'başlık " />
-          <input type="text" id="title" class="form-control mb-2" placeholder="Bi'ad-soyad (TC istemiyoruz ha) " />
+          <input type="text" id="author" class="form-control mb-2" placeholder="Bi'ad-soyad (TC istemiyoruz ha) " />
         </div>
         <div class="form-group mb-2">
-          <textarea id="body" class="form-control" placeholder="Bi'içerik"></textarea>
+          <textarea id="textContent" class="form-control" placeholder="Bi'içerik"></textarea>
         </div>
         <input type="hidden" id="id" value="" />
-        <button class="post-submit btn btn-primary btn-block">Yolla gelsin 😉</button>
+        <button class="addSubmit btn btn-primary btn-block">Yolla gelsin 😉</button>
         <span class="form-end"></span>
+        <div class="py-2 mt-3" id="alerts"></div>
+                </section>
         <br />
-        <div class="blogposts"></div>
+
+        <div class="album pt-5">
+          <div class="container">
+            <div id="blogposts" class="row"></div>
+          </div>
+        </div>
       </div>
     </div>
-    <footer class="mt-5 p-3 text-center bg-light bg-dark text-light fixed-bottom">© 2022 Bi'logcell</footer>
+    <!-- <footer class="mt-5 p-3 text-center bg-light bg-dark text-light fixed-bottom">© 2022 Bi'logcell</footer> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
