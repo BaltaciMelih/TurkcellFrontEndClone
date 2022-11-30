@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>ShoPet</title>
+  </head>
+  <body>
+    <nav
+      class="navbar bg-secondary d-flex flex-row justify-content-center align-center">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand">BRAND</a>
+      </div>
+    </nav>
+    <hr />
+    <nav class="navbar bg-light ms-2 me-2">
+      <div class="container-fluid d-flex justify-content-end">
+        <div>
+          <form class="d-flex me-5" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+
+        <div class="icons d-flex flex-row justify-content-between">
+          <i class="fa-regular fa-user text-secondary me-4"></i>
+          <i class="fa-regular fa-heart text-secondary me-4"></i>
+          <i class="fa-solid fa-bag-shopping text-secondary"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col position-relative img-col">
+          <img
+            class="homepage-img"
+            src="https://storage.googleapis.com/gen-atmedia/2/2018/08/774a2edb3be25a4c9099142f222d09b46c3bf99d.jpeg"
+            alt="" />
+          <p class="homepage-text bg-light bg-opacity-75 text-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam omnis
+            sit dolore possimus fuga repudiandae nihil nisi ut praesentium
+            fugiat.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12  col-md-4 col-lg-2   bg-secondary">
+          <h4>Category</h4>
+          <div class="list-group list-group-flush">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true">
+              <i class="fa-solid fa-plus"></i>
+              The current link item
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-solid fa-plus"></i>A second link item</a
+            >
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-solid fa-plus"></i>A third link item
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fa-solid fa-plus"></i>A fourth link item
+            </a>
+            <a class="list-group-item list-group-item-action disabled">
+              <i class="fa-solid fa-plus"></i>A disabled link item</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-10  bg-primary display-flex flex-row">
+            <div class="row"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
