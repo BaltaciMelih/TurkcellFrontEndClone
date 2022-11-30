@@ -13,13 +13,13 @@ function getApi(){
     .then(response => response.json())
     .then(data => {
        vari = data;
-       console.log(vari);
+       console.log({vari});
        vari.forEach((item) => {
         blog(item.userId, item.id, item.title, item.body)
        })
     })
 
-    .catch((err) => console.log((err)));
+    .catch((err) => reject(err));
     
     
 })
@@ -31,7 +31,7 @@ function getApi(){
 function blog(userid, id, title, body){
     const col = document.createElement('div');
     col.className = "card col-3 text-center ";
-    col.innerHTML += `
+    col.innerHTML = `
     
         <div class="card-body">
             <h5 class="card-title">${userid}</h5>

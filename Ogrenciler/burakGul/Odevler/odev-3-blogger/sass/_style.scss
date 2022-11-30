@@ -1,0 +1,25 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body{
+
+    background-color: lightblue;
+
+    .img{
+        overflow: hidden;
+        padding: 0 !important;
+        
+
+        img{
+            transition: all 0.5s;
+            object-fit: cover;
+            
+        }
+        img:hover{
+            scale: 1.2;
+        }
+    }
+    
+}
