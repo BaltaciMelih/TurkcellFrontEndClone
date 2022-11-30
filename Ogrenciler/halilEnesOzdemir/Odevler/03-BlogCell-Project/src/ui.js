@@ -6,6 +6,8 @@ class UI {
     this.titleInput = document.querySelector('#title');
     this.authorInput = document.querySelector('#author');
     this.textContentArea = document.querySelector('#textContent');
+    this.idInput = document.querySelector('#id');
+    this.state = 'add';
   }
 
   showPosts(blogposts) {
@@ -22,13 +24,13 @@ class UI {
           <div class="col-12 col-sm-8 col-md-6 col-lg-4 d-flex">
       <div class="card">
       <div class=" position-relative">
-        <img class="card-img " src="${post.imageUrl}" alt="Music">
+        <img class="card-img post-img" src="${post.imageUrl}" alt="Music">
         <a href="#" class="btn btn-light btn-sm mx-auto d-block p-1">${post.category}</a>
         </div>
         <div class="card-body">
-          <h4 class="card-title">${post.title}</h4>
-          <h2 class= "card-text">${post.author}</h2>
-          <p class="card-text">${post.textContent}</p>
+          <h4 class="card-title post-title">${post.title}</h4>
+          <h2 class= "card-text post-author">${post.author}</h2>
+          <p class="card-text post-content">${post.textContent}</p>
       <div class="d-flex space-between  justify-content-between mt-2">
     <button type="button" class="btn btn-sm btn-outline-primary fs-6 py-1 px-4" data-id="${post.id}" id="edit-post">Edit</button>
     <button type="button" class="btn btn-sm btn-outline-danger fs-6 py-1 px-4" id="delete-post" data-id="${post.id}">Delete</button>
@@ -68,6 +70,30 @@ class UI {
     field3.value = '';
     field4.value = '';
     field5.value = '';
+  }
+
+  fillForm(data) {
+    /* this.post = document.querySelector('#blogposts');
+    this.imageUrlInput = document.querySelector('#imgUrl');
+    this.categoryInput = document.querySelector('#category');
+    this.titleInput = document.querySelector('#title');
+    this.authorInput = document.querySelector('#author');
+    this.textContentArea = document.querySelector('#textContent'); */
+
+    /* 
+          id,
+      imageUrl,
+      category,
+      title,
+      author,
+      textContent,
+    */
+    this.imageUrlInput.value = data.imageUrl;
+    this.categoryInput.value = data.category;
+    this.titleInput.value = data.title;
+    this.authorInput.value = data.author;
+    this.textContentArea.value = data.textContent;
+    this.idInput.value = data.id;
   }
 }
 
