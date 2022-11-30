@@ -1,0 +1,9 @@
+{
+    "movie": [
+     
+        { "id": 1, "title": "Ucuz Roman", "director": "Quentin Tarantino", "banner":"https://images.justwatch.com/poster/264351699/s718/ucuz-roman.%7Bformat%7D", "kategori": "Suç", "summurry":" Quentin Tarantino yönetmenliğindeki Roger Avary ile birlikte yazılmış, 1994 yapımı, kült kabul edilen bir filmdir. Ucuz Roman, En İyi Film dahil 7 dalda Oscar'a aday gösterilmiş ve En İyi Orijinal Senaryo Oscarı'nı almıştır. Aynı zamanda 1994 Cannes Film Festivali'nde en iyi film ödülü olan Altın Palmiye Ödülü'nün sahibidir. IMDB tüm zamanların en iyi filmleri sıralamasında 1,2 milyon oylama sonucu 8.9 puanla 8. sıradadır." , "date":"14-04-1995" },
+        { "id": 2, "title": "Ucuz Roman", "director": "Quentin Tarantino", "banner":"https://images.justwatch.com/poster/264351699/s718/ucuz-roman.%7Bformat%7D", "kategori": "Suç", "summurry":" Quentin Tarantino yönetmenliğindeki Roger Avary ile birlikte yazılmış, 1994 yapımı, kült kabul edilen bir filmdir. Ucuz Roman, En İyi Film dahil 7 dalda Oscar'a aday gösterilmiş ve En İyi Orijinal Senaryo Oscarı'nı almıştır. Aynı zamanda 1994 Cannes Film Festivali'nde en iyi film ödülü olan Altın Palmiye Ödülü'nün sahibidir. IMDB tüm zamanların en iyi filmleri sıralamasında 1,2 milyon oylama sonucu 8.9 puanla 8. sıradadır." , "date":"14-04-1995" }
+    ]
+  
+    
+  }
