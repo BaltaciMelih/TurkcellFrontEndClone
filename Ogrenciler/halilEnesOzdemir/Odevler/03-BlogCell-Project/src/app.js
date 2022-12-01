@@ -3,12 +3,14 @@ import { ui } from './ui';
 
 const addPostSubmit = document.querySelector('.addSubmit');
 const blogposts = document.querySelector('#blogposts');
+const cardForm = document.querySelector('.card-form');
 eventListeners();
 function eventListeners() {
   document.addEventListener('DOMContentLoaded', getPosts);
   addPostSubmit.addEventListener('click', submitPost);
   blogposts.addEventListener('click', deletePost);
   blogposts.addEventListener('click', enableEdit);
+  cardForm.addEventListener('click', cancelEdit);
 }
 
 function getPosts() {
@@ -90,6 +92,13 @@ function enableEdit(e) {
     };
 
     ui.fillForm(data);
+  }
+  e.preventDefault();
+}
+
+function cancelEdit(e) {
+  if (e.target.classList.contains('post-cancel')) {
+    ui.changeState('add');
   }
   e.preventDefault();
 }

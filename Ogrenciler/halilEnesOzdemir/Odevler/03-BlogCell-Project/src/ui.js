@@ -25,7 +25,7 @@ class UI {
           <div class="col-12 col-sm-8 col-md-6 col-lg-4 d-flex">
       <div class="card">
       <div class=" position-relative">
-        <img class="card-img post-img" src="${post.imageUrl}" alt="Music">
+        <img class="card-img post-img" src="${post.imageUrl}" alt="image">
         <a href="#" class="btn btn-light btn-sm mx-auto d-block p-1">${post.category}</a>
         </div>
         <div class="card-body">
@@ -62,15 +62,15 @@ class UI {
 
     setTimeout(() => {
       alert.remove();
-    }, 2000);
+    }, 3000);
   }
 
-  clearFields(field1, field2, field3, field4, field5) {
-    field1.value = '';
-    field2.value = '';
-    field3.value = '';
-    field4.value = '';
-    field5.value = '';
+  clearFields() {
+    this.imageUrlInput.value = '';
+    this.categoryInput.value = '';
+    this.titleInput.value = '';
+    this.authorInput.value = '';
+    this.textContentArea.value = '';
   }
 
   fillForm(data) {
