@@ -5,6 +5,8 @@ const addPostSubmit = document.querySelector('.addSubmit');
 const blogposts = document.querySelector('#blogposts');
 const cardForm = document.querySelector('.card-form');
 const filterBlog = document.getElementById('filter');
+const filterButtons = Array.from(document.querySelectorAll('.filters-container button'));
+
 eventListeners();
 function eventListeners() {
   document.addEventListener('DOMContentLoaded', getPosts);
@@ -13,6 +15,9 @@ function eventListeners() {
   blogposts.addEventListener('click', enableEdit);
   cardForm.addEventListener('click', cancelEdit);
   filterBlog.addEventListener('keyup', filterPosts);
+  filterButtons.forEach((elem) => {
+    elem.addEventListener('click', filterItemsByCategory);
+  });
 }
 
 function getPosts() {
@@ -28,7 +33,7 @@ function submitPost() {
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
   const textContent = document.getElementById('textContent').value;
-  const id = document.querySelector('#id').value;
+  const id = document.getElementById('id').value;
 
   const data = { imageUrl, category, title, author, textContent };
 
@@ -78,7 +83,8 @@ function deletePost(e) {
 function enableEdit(e) {
   if (e.target.id === 'edit-post') {
     const id = e.target.dataset.id;
-    const imageUrl = e.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.src;
+    const imageUrl =
+      e.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.firstElementChild.src;
     const category = e.target.parentElement.parentElement.parentElement.firstElementChild.lastElementChild.textContent;
     const title = e.target.parentElement.parentElement.firstElementChild.textContent;
     const author = e.target.parentElement.parentElement.firstElementChild.nextElementSibling.textContent;
@@ -99,6 +105,7 @@ function enableEdit(e) {
 }
 
 function cancelEdit(e) {
+  debugger;
   if (e.target.classList.contains('post-cancel')) {
     ui.changeState('add');
   }
@@ -106,7 +113,26 @@ function cancelEdit(e) {
 }
 
 function filterPosts(e) {
-  const filterValue = e.target.value.toLowerCase();
+  const filterValue = e.target.value.toLowerCase().trim();
   const filterByAuthor = document.querySelectorAll('.filter-author');
   ui.filterAuthorUI(filterByAuthor, filterValue);
+}
+
+function filterItemsByCategory(e) {
+  const clickedButton = e.target.id;
+  let category =
+    e.target.parentElement.parentElement.lastElementChild.firstElementChild.firstElementChild.firstElementChild
+      .lastElementChild.innerHTML;
+  console.log(category);
+
+  for (const category of blogposts) {
+    if (category.className === clickedButton || category.className === clickedButton + 'hidden') {
+      category.classList.remove('hidden');
+      continue;
+    } else if (e.target.id === 'showAll') {
+      category.classList.remove('hidden');
+      continue;
+    }
+    category.classList.add('hidden');
+  }
 }
