@@ -25,7 +25,7 @@ class Request {
     // });
     const response = await fetch(this.url, {
       method: "POST",
-      mode: "cors",
+      // mode: "cors",
       body: JSON.stringify(data),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -62,7 +62,7 @@ class Request {
 const request = new Request("http://localhost:3000/users/");
 
 request
-  .get("http://localhost:3000/users")
+  .get()
   .then((data) => console.log(data))
   .catch((err) => console.log(err));
 
@@ -93,6 +93,6 @@ document.querySelector(".form").addEventListener("submit", function (e) {
 //   .catch((err) => console.log(err));
 
 // request
-//   .delete(1)
+//   .delete(3)
 //   .then((msg) => console.log(msg))
 //   .catch((err) => console.log(err));

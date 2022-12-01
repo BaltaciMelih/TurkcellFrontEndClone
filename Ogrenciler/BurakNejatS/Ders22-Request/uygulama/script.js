@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", getAllPhotos);
 
 function getAllPhotos() {
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://jsonplaceholder.typicode.com/photos", true);
+  xhr.open("GET", "https://jsonplaceholder.typicode.com/photos/", true);
   xhr.onload = function () {
     // let list = document.getElementById("list");
     if (this.status == 200) {

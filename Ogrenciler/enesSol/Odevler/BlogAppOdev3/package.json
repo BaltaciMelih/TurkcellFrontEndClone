@@ -1,0 +1,17 @@
+{
+  "name": "blogappodev3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve-json": "json-server --watch db.json",
+    "sass": "node-sass -w sass -o css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.1",
+    "node-sass": "^8.0.0"
+  }
+}
