@@ -4,6 +4,7 @@ import { ui } from './ui';
 const addPostSubmit = document.querySelector('.addSubmit');
 const blogposts = document.querySelector('#blogposts');
 const cardForm = document.querySelector('.card-form');
+const filterBlog = document.getElementById('filter');
 eventListeners();
 function eventListeners() {
   document.addEventListener('DOMContentLoaded', getPosts);
@@ -11,6 +12,7 @@ function eventListeners() {
   blogposts.addEventListener('click', deletePost);
   blogposts.addEventListener('click', enableEdit);
   cardForm.addEventListener('click', cancelEdit);
+  filterBlog.addEventListener('keyup', filterPosts);
 }
 
 function getPosts() {
@@ -101,4 +103,10 @@ function cancelEdit(e) {
     ui.changeState('add');
   }
   e.preventDefault();
+}
+
+function filterPosts(e) {
+  const filterValue = e.target.value.toLowerCase();
+  const filterByAuthor = document.querySelectorAll('.filter-author');
+  ui.filterAuthorUI(filterByAuthor, filterValue);
 }

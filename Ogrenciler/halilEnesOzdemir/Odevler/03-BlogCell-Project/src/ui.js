@@ -30,7 +30,7 @@ class UI {
         </div>
         <div class="card-body">
           <h4 class="card-title post-title">${post.title}</h4>
-          <h2 class= "card-text post-author">${post.author}</h2>
+          <h2 class= "card-text post-author filter-author">${post.author}</h2>
           <p class="card-text post-content">${post.textContent}</p>
       <div class="d-flex space-between  justify-content-between mt-2">
     <button type="button" class="btn btn-sm btn-outline-primary fs-6 py-1 px-4" data-id="${post.id}" id="edit-post">Edit</button>
@@ -93,24 +93,37 @@ class UI {
       this.addPostSubmit.textContent = 'Update Post';
       this.addPostSubmit.className = 'addSubmit btn btn-warning btn-block';
 
-      const button = document.createElement('button');
-      button.className = 'post-cancel btn btn-light btn-block';
-      button.appendChild(document.createTextNode('Cancel Edit'));
+      if (!document.querySelector('.post-cancel')) {
+        const button = document.createElement('button');
+        button.className = 'post-cancel btn btn-light btn-block';
+        button.appendChild(document.createTextNode('Cancel Edit'));
 
-      const cardForm = document.querySelector('.card-form');
-      const formEnd = document.querySelector('.form-end');
-      cardForm.insertBefore(button, formEnd);
-    } else {
-      this.addPostSubmit.textContent = 'Yolla Gelsin';
-      this.addPostSubmit.className = 'addSubmit btn btn-primary btn-block';
+        const cardForm = document.querySelector('.card-form');
+        const formEnd = document.querySelector('.form-end');
+        cardForm.insertBefore(button, formEnd);
+      } else {
+        this.addPostSubmit.textContent = 'Yolla Gelsin';
+        this.addPostSubmit.className = 'addSubmit btn btn-primary btn-block';
 
-      if (document.querySelector('.post-cancel')) {
-        document.querySelector('.post-cancel').remove();
+        if (document.querySelector('.post-cancel')) {
+          document.querySelector('.post-cancel').remove();
+        }
+
+        this.clearIdInput();
+        this.clearFields();
       }
-
-      this.clearIdInput();
-      this.clearFields();
     }
+  }
+
+  filterAuthorUI(filterByAuthor, filterValue) {
+    filterByAuthor.forEach(function (author) {
+      const text = author.innerHTML.toLowerCase();
+      if (text.indexOf(filterValue) === -1) {
+        author.parentElement.parentElement.setAttribute('style', 'display:none !important');
+      } else {
+        author.parentElement.parentElement.setAttribute('style', 'display:block');
+      }
+    });
   }
 }
 
