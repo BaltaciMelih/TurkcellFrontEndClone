@@ -52,8 +52,8 @@
 <br>
 
 
-    <div class="row">
-        <div class="container col-md-4 col-sm-6 d-flex justify-content-center">
+    <div id="rows" class="row">
+        <!-- <div class="container col-md-4 col-sm-6 d-flex justify-content-center">
             
       <div class="card" >
 
@@ -66,6 +66,8 @@
           <h5 class="card-title">İzmir</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
+        <p id="yazar">Burak Nejat Songüler</p>
+
         <a href="#" class="delete-item">
             <i class="fa fa-remove d-flex justify-content-end ">kaldır</i>
           </a>
@@ -81,6 +83,8 @@
             <h5 class="card-title">istanbul</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
+          <p id="yazar">Burak Nejat Songüler</p>
+
           <a href="#" class="delete-item">
             <i class="fa fa-remove d-flex justify-content-end ">kaldır</i>
           </a>
@@ -97,17 +101,18 @@
             <h5 class="card-title">istanbul</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
+          <p id="yazar">Burak Nejat Songüler</p>
           <a href="#" class="delete-item">
             <i class="fa fa-remove d-flex justify-content-end ">kaldır</i>
           </a>
         </div>
   
-      </div>
+      </div> -->
 
     </div> 
     <br><br><br>
 
-    <button class="btn btn-danger d-flex justify-content-center container col-md-8 ">Tümünü kaldır</button>
+    <button id ="clear-items"class="btn btn-danger d-flex justify-content-center container col-md-8 ">Tümünü kaldır</button>
 
 <br><br> <hr> 
 
@@ -117,32 +122,38 @@
 
     <div class="row mb-3">
         <form class="col was-validated">
-          <input type="text" class="form-control" placeholder="Yazar Adı" aria-label="Yazar Adı">
-          <div class="invalid-feedback">
-            Please enter a message in the textarea.
+          <input id="yazarAdı" type="text" class="form-control" placeholder="Yazar Adı" aria-label="Yazar Adı" required>
+          <!-- <div class="invalid-feedback">
+            Lütfen Adınızı ve Soyanızı Giriniz.</div> -->
           </form>
-        </div> <br>
-        <div class="col was-validated">
-          <input type="text" class="form-control" placeholder="Şehir Adı" aria-label="Şehir Adı">
-          <div class="invalid-feedback">
-            Please enter a message in the textarea.
-          </div>
-        </div>
-      </div>
+     </div> 
 
-      
-    <form class="was-validated">
-        <div class="mb-3">
-          <textarea class="form-control" id="validationTextarea" placeholder="Gezi-Yorumunuz" required></textarea>
-          <div class="invalid-feedback">
-            Lütfen Gezi-Yorum'unuzu Yazınız.
-          </div>
+
+        <br>
+
+
+        <div class="col was-validated">
+          <input id="sehirAdı" type="text" class="form-control" placeholder="Şehir Adı" aria-label="Şehir Adı" required>
+          <!-- <div class="invalid-feedback">
+            Lütfen Şehir Adı Giriniz.
+          </div> -->
         </div>
       
+<br>
+      
+    <form class="col was-validated">
+        <div class="mb-3">
+          <textarea class="form-control" id="geziYorum" placeholder="Gezi-Yorumunuz" ></textarea>
+          <!-- <div class="invalid-feedback">
+            Lütfen Gezi-Yorum'unuzu Yazınız.
+          </div> -->
+        </div>
+    </form>
+
     
       
-        <div class="mb-3">
-          <select class="form-select" required aria-label="select example">
+        <!-- <div class="mb-3">
+          <select id="bolge" class="form-select" required aria-label="select example">
             <option value="">Bölge Seçiniz</option>
             <option value="1">Ege</option>
             <option value="2">Marmara</option>
@@ -153,17 +164,34 @@
             <option value="7">Güneydoğu Anadolu</option>
 
           </select>
-          <div class="invalid-feedback">Lütfen Bir Bölge Seçiniz</div>
+          
+        </div> -->
+         <!-- <div class="invalid-feedback">Lütfen Bir Bölge Seçiniz</div>
+          <label for="validationTooltipUsername" class="form-label"></label> -->
+
+        <div class="mb-3">
+          <input type="date" class="form-control" id="dateItem" required />
+          <div class="invalid-feedback">Lütfen Bir Tarih Giriniz</div>
+        </div> 
+
+
+        <div class=" col mb-3">
+
+          <input type="text" class="form-control " id="url" placeholder="Blog Görsel URL'ini Ekleyiniz">
+          <!-- <div class="invalid-feedback">Lütfen Bir URL Giriniz</div> -->
+
         </div>
       
+      </div>
+        <div class="container col-md-6 col-sm-3">
         <div class="mb-3">
-          <input type="file" class="form-control" aria-label="file example" required>
-          <div class="invalid-feedback">Lütfen Bir Görsel Url'si Giriniz</div>
+          <button class="btn btn-primary d-flex justify-content-center" type="submit" onclick="createPost()" >Ekle</button>
         </div>
-      
+
         <div class="mb-3">
-          <button class="btn btn-primary" type="submit" disabled>Ekle</button>
+          <button id="duzenle" >Düzenle</button>
         </div>
+      </div>
       </form>
     
 

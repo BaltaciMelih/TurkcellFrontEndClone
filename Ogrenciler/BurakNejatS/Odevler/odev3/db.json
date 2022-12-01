@@ -1,0 +1,80 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "yazarAdı": "Burak Nejat Songüler",
+      "sehirAdı": "İzmir",
+      "geziYorum": "çok güzeldi",
+      "bolge": "Ege",
+      "dateItem": "15.10.2022",
+      "url": "https://i.lezzet.com.tr/images-xxlarge-secondary/izmirde-ne-yenir-nerede-yenir-c6197604-5036-4c5a-abbb-0ded2b578640"
+    },
+    {
+      "id": 2,
+      "yazarAdı": "Varol Maksutoğlu",
+      "sehirAdı": "İstabul",
+      "geziYorum": "çok güzeldi",
+      "bolge": "Marmara",
+      "dateItem": "15.09.2022",
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f6/60/caption.jpg?w=700&h=500&s=1"
+    },
+    {
+      "id": 3,
+      "yazarAdı": "Burak Nejat Songüler",
+      "sehirAdı": "Ankara",
+      "geziYorum": "çok güzeldi",
+      "bolge": "İç Anadolu",
+      "dateItem": "15.08.2022",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-s/1d/45/d4/96/anitkabirden-panoramik.jpg"
+    },
+    {
+      "yazarAdı": "",
+      "sehirAdı": "fefef",
+      "geziYorum": "efefe",
+      "url": "https://i4.hurimg.com/i/hurriyet/75/1110x740/5e3bed1467b0a9192800642b.jpeg",
+      "id": 4
+    },
+    {
+      "yazarAdı": "nejat",
+      "sehirAdı": "izmir",
+      "geziYorum": "yorum",
+      "url": "https://i4.hurimg.com/i/hurriyet/75/1110x740/5e3bed1467b0a9192800642b.jpeg",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "yazarAdı": "fefef",
+      "sehirAdı": "fefe",
+      "geziYorum": "efefef",
+      "dateItem": "2022-11-04",
+      "url": "https://i4.hurimg.com/i/hurriyet/75/1110x740/5e3bed1467b0a9192800642b.jpeg",
+      "id": 7
+    },
+    {
+      "yazarAdı": "aaa",
+      "sehirAdı": "manisa",
+      "geziYorum": "xxxx",
+      "dateItem": "2022-11-06",
+      "url": "https://i4.hurimg.com/i/hurriyet/75/1110x740/5e3bed1467b0a9192800642b.jpeg",
+      "id": 8
+    },
+    {
+      "yazarAdı": "nejat",
+      "sehirAdı": "çanakkale",
+      "geziYorum": "güzeldi",
+      "dateItem": "2022-11-30",
+      "url": "https://im.haberturk.com/2021/06/15/ver1623768003/3105119_810x458.jpg",
+      "id": 9
+    },
+    {
+      "yazarAdı": "mustafa Kardaş",
+      "sehirAdı": "izmir",
+      "geziYorum": "Ödemiş çok güzel.",
+      "dateItem": "2022-11-30",
+      "url": "https://i.cnnturk.com/i/cnnturk/75/740x416/60c8b37b5cf3b00220415e77.jpg",
+      "id": 10
+    }
+  ]
+}
