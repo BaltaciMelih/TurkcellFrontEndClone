@@ -14,14 +14,14 @@ class UI {
             />
             <div class="card-body row">
               <h4 class="card-title">
-                ${article.title}<span class="badge bg-danger">${article.category}</span>
+                ${article.title}<span class="badge bg-danger ms-2">${article.category}</span>
               </h4>
 
               <p class="card-text text-truncate">
                 ${article.body}
               </p>
               <div class="card-footer">
-                    <p class="text-muted">Makale Numarası: <span>${article.id}</span></p>
+                    <small class="text-muted">Makale Numarası: <span>${article.id}</span></small>
                     <p class="card-text">
                     <small class="text-muted">Yazar: ${article.author}</small>
                     </p>
@@ -113,7 +113,7 @@ class UI {
                             <div class="modal-content">
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5">
-                                            ${article.title}<span class="badge bg-danger">${article.category}</span>
+                                            ${article.title}<span class="badge bg-danger ms-2">${article.category}</span>
                                             </h1>
                                             <button
                                             type="button"
@@ -165,14 +165,14 @@ class UI {
             />
             <div class="card-body row">
               <h4 class="card-title">
-                ${newArticle.title}<span class="badge bg-danger">${newArticle.category}</span>
+                ${newArticle.title}<span class="badge bg-danger ms-2">${newArticle.category}</span>
               </h4>
 
               <p class="card-text text-truncate">
                 ${newArticle.body}
               </p>
               <div class="card-footer">
-                    <p class="text-muted">Makale Numarası: <span>${newArticle.id}</span></p>
+                    <small class="text-muted">Makale Numarası: <span>${newArticle.id}</span></small>
                     <p class="card-text">
                     <small class="text-muted">Yazar: ${newArticle.author}</small>
                     </p>
@@ -263,7 +263,7 @@ class UI {
                             <div class="modal-content">
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5">
-                                            ${newArticle.title}<span class="badge bg-danger">${newArticle.category}</span>
+                                            ${newArticle.title}<span class="badge bg-danger ms-2">${newArticle.category}</span>
                                             </h1>
                                             <button
                                             type="button"

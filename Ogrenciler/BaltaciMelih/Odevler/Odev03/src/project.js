@@ -35,7 +35,7 @@ function addItem(e) {
   const articleSelect = selectInput.value;
   const articleImg = imgInput.value.trim();
   const articleBody = articleInput.value.trim();
-  const time = new Date();
+  const time = Date();
 
   if (
     articleTitle === "" ||
@@ -79,7 +79,9 @@ function deleteItem(e) {
       .then((message) => {
         ui.deleteItemFromUI(e.target.parentElement.parentElement);
       })
-      .catch((err) => {});
+      .catch((err) => {
+        console.log(err);
+      });
   }
 }
 
@@ -95,6 +97,7 @@ function editItem(e) {
     const card = e.target.parentElement.parentElement;
     const id =
       e.target.parentElement.firstElementChild.firstElementChild.textContent;
+    const time = Date();
 
     request
       .get()
@@ -121,6 +124,7 @@ function editItem(e) {
           body: editArticle.value,
           author: editAuthor.value,
           category: editSelect.value,
+          date: time,
         })
         .then((newArticle) => {
           ui.editItemOnUI(newArticle, card);
