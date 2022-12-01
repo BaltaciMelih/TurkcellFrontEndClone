@@ -1,0 +1,30 @@
+{
+  "blogs": [
+    {
+      "id": 2,
+      "yazarAdı": "Varol Maksutoğlu",
+      "sehirAdı": "İstabul",
+      "geziYorum": "çok güzeldi",
+      "bolge": "Marmara",
+      "dateItem": "15.09.2022",
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f6/60/caption.jpg?w=700&h=500&s=1"
+    },
+    {
+      "id": 3,
+      "yazarAdı": "Burak Nejat Songüler",
+      "sehirAdı": "Ankara",
+      "geziYorum": "çok güzeldi",
+      "bolge": "İç Anadolu",
+      "dateItem": "15.08.2022",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-s/1d/45/d4/96/anitkabirden-panoramik.jpg"
+    },
+    {
+      "yazarAdı": "Nejat",
+      "sehirAdı": "Manisa",
+      "geziYorum": "Harikaydı.",
+      "dateItem": "2022-12-01",
+      "url": "https://i2.milimaj.com/i/milliyet/75/1200x675/5f6d9a1555428012ec5d7b40.jpg",
+      "id": 4
+    }
+  ]
+}
