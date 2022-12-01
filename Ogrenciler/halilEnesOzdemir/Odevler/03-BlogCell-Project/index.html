@@ -17,7 +17,9 @@
     <nav class="navbar navbar-dark bg-danger mb-3">
       <div class="container">
         <a href="" class="navbar-brand">{Bi'logcell}</a>
+
       </div>
+
     </nav>
     <section id="section">
     <div class="container mainContainer">
@@ -26,9 +28,9 @@
         <p class="lead">Karala bi'şeyler...</p>
         <div class="form-group">
           <input type="text" id="imgUrl" class="form-control mb-2" placeholder="Bi'görsel (Url)" />
-          <input type="text" id="category" class="form-control mb-2" placeholder="Bi'kategori (Select mantığı)" />
+          <input type="text" id="category" class="form-control mb-2" placeholder="Bi'kategori" />
           <input type="text" id="title" class="form-control mb-2" placeholder="Bi'başlık " />
-          <input type="text" id="author" class="form-control mb-2" placeholder="Bi'ad-soyad (TC istemiyoruz ha) " />
+          <input type="text" id="author" class="form-control mb-2" placeholder="Bi'ad soyad (TC istemiyoruz ha) " />
         </div>
         <div class="form-group mb-2">
           <textarea id="textContent" class="form-control" placeholder="Bi'içerik"></textarea>
@@ -40,11 +42,25 @@
                 </section>
         <br />
 
-        <div class="album pt-5">
+        <div class="album pt-4 mb-3">
           <div class="container">
+                     <input
+            class="form-control mb-4"
+            type="text"
+            name="filter"
+            id="filter"
+            placeholder="Yazara göre sıralayabilirsin dostum."
+          />
+            <div class="container pb-5 text-center d-flex justify-content-center gap-4 filters-container">
+        <button class="btn btn-secondary" id="showAll">Hepsini Göster </button>
+        <button class="btn btn-primary" id="Music">Müzik</button>
+        <button class="btn btn-warning" id="Film">Film </button>
+        <button class="btn btn-danger" id="Game">Game</button>
+            </div>
             <div id="blogposts" class="row"></div>
           </div>
         </div>
+
       </div>
     </div>
     <!-- <footer class="mt-5 p-3 text-center bg-light bg-dark text-light fixed-bottom">© 2022 Bi'logcell</footer> -->

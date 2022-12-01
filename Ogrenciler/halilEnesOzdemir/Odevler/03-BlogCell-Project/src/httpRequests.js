@@ -9,7 +9,7 @@ class HttpReq {
     const response = await fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-type': 'application/json',
       },
       body: JSON.stringify(data),
     });
@@ -21,9 +21,9 @@ class HttpReq {
     const response = await fetch(url, {
       method: 'PUT',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-type': 'application/json',
       },
-      body: JSON.stringify(response),
+      body: JSON.stringify(data),
     });
     const resData = await response.json();
     return resData;
@@ -33,10 +33,10 @@ class HttpReq {
     const response = await fetch(url, {
       method: 'DELETE',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-type': 'application/json',
       },
     });
-    const resData = 'Blog Deleted.';
+    const resData = await 'Blog Deleted.';
     return resData;
   }
 }
