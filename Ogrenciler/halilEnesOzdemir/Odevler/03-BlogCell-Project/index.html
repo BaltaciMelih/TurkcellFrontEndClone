@@ -17,7 +17,9 @@
     <nav class="navbar navbar-dark bg-danger mb-3">
       <div class="container">
         <a href="" class="navbar-brand">{Bi'logcell}</a>
+
       </div>
+
     </nav>
     <section id="section">
     <div class="container mainContainer">
@@ -40,11 +42,27 @@
                 </section>
         <br />
 
-        <div class="album pt-5">
+        <div class="album pt-4">
           <div class="container">
+                     <input
+            class="form-control mb-3"
+            type="text"
+            name="filter"
+            id="filter"
+            placeholder="Filter anything"
+          />
+            <div class="container pb-5 text-center d-flex justify-content-center gap-4 filters-container">
+        <button class="btn btn-secondary">Hepsini Göster </button>
+        <button class="btn btn-primary">Müzik</button>
+        <button class="btn btn-warning">Film </button>
+        <button class="btn btn-danger">Girişimcilik</button>
+            </div>
+
+        
             <div id="blogposts" class="row"></div>
           </div>
         </div>
+
       </div>
     </div>
     <!-- <footer class="mt-5 p-3 text-center bg-light bg-dark text-light fixed-bottom">© 2022 Bi'logcell</footer> -->
