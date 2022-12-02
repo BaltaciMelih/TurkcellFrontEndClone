@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "title": "3221341",
+      "author": "Batuhan Sevinç",
+      "img": "https://kriterdergi.com/images/news/2020/11/02/kitaplik1.jpg",
+      "date": "22/22/11",
+      "content": "aaaaa",
+      "id": 1
+    },
+    {
+      "title": "123123",
+      "author": "12312312312",
+      "img": "https://kriterdergi.com/images/news/2020/11/02/kitaplik1.jpg",
+      "date": "02/11/11",
+      "content": "asdsdaads",
+      "id": 2
+    },
+    {
+      "title": "batuhan sevinç",
+      "author": "sdlkşfklsfd",
+      "img": "sdfkjlkjsldf",
+      "date": "sdfgkljkljdfsg",
+      "content": "kjldfsgjlkdfgşk",
+      "id": 3
+    }
+  ]
+}
