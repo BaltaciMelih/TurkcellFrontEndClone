@@ -6,6 +6,7 @@ const blogposts = document.querySelector('#blogposts');
 const cardForm = document.querySelector('.card-form');
 const filterBlog = document.getElementById('filter');
 const filterButtons = Array.from(document.querySelectorAll('.filters-container button'));
+const mainContainer = document.querySelector('.mainContainer');
 
 eventListeners();
 function eventListeners() {
@@ -34,8 +35,15 @@ function submitPost() {
   const author = document.getElementById('author').value;
   const textContent = document.getElementById('textContent').value;
   const id = document.getElementById('id').value;
+  // Date Part
+  const now = new Date();
+  const day = `${now.getDate()}`.padStart(2, 0);
+  const month = `${now.getMonth() + 1}`.padStart(2, 0);
+  const year = now.getFullYear();
+  const hour = `${now.getHours()}`.padStart(2, 0);
+  const min = `${now.getMinutes()}`.padStart(2, 0);
 
-  const data = { imageUrl, category, title, author, textContent };
+  const data = { imageUrl, category, title, author, textContent, date: `${day}/${month}/${year}, ${hour}:${min}` };
 
   // Input Doğrulama...
   if (imageUrl === '' || category === '' || title === '' || author === '' || textContent === '') {
@@ -89,6 +97,12 @@ function enableEdit(e) {
     const title = e.target.parentElement.parentElement.firstElementChild.textContent;
     const author = e.target.parentElement.parentElement.firstElementChild.nextElementSibling.textContent;
     const textContent = e.target.parentElement.parentElement.children[2].textContent;
+    const now = new Date();
+    const day = `${now.getDate()}`.padStart(2, 0);
+    const month = `${now.getMonth() + 1}`.padStart(2, 0);
+    const year = now.getFullYear();
+    const hour = `${now.getHours()}`.padStart(2, 0);
+    const min = `${now.getMinutes()}`.padStart(2, 0);
 
     const data = {
       id,
@@ -97,15 +111,16 @@ function enableEdit(e) {
       title,
       author,
       textContent,
+      date: `${day}/${month}/${year}, ${hour}:${min}`,
     };
 
     ui.fillForm(data);
+    mainContainer.scrollIntoView();
   }
   e.preventDefault();
 }
 
 function cancelEdit(e) {
-  debugger;
   if (e.target.classList.contains('post-cancel')) {
     ui.changeState('add');
   }
@@ -119,20 +134,8 @@ function filterPosts(e) {
 }
 
 function filterItemsByCategory(e) {
-  const clickedButton = e.target.id;
-  let category =
-    e.target.parentElement.parentElement.lastElementChild.firstElementChild.firstElementChild.firstElementChild
-      .lastElementChild.innerHTML;
-  console.log(category);
-
-  for (const category of blogposts) {
-    if (category.className === clickedButton || category.className === clickedButton + 'hidden') {
-      category.classList.remove('hidden');
-      continue;
-    } else if (e.target.id === 'showAll') {
-      category.classList.remove('hidden');
-      continue;
-    }
-    category.classList.add('hidden');
-  }
+  const filterByCategory = document.querySelectorAll('.ctg');
+  const categoryName = e.target.innerText;
+  console.log(categoryName);
+  ui.filterCategoryUI(filterByCategory, categoryName);
 }

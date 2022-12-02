@@ -13,12 +13,6 @@ class UI {
 
   showPosts(blogposts) {
     let blogs = document.querySelector('#blogposts');
-    const now = new Date();
-    const day = `${now.getDate()}`.padStart(2, 0);
-    const month = `${now.getMonth() + 1}`.padStart(2, 0);
-    const year = now.getFullYear();
-    const hour = `${now.getHours()}`.padStart(2, 0);
-    const min = `${now.getMinutes()}`.padStart(2, 0);
     blogposts.forEach((post) => {
       blogs.innerHTML += `
 
@@ -27,7 +21,7 @@ class UI {
       <div class=" position-relative">
       <a data-bs-toggle="modal" data-bs-target="#a${post.id}">
               <img class="card-img post-img" width="100%" height="400" src="${post.imageUrl}" alt="image" >
-        <a href="#" class="btn btn-light btn-sm mx-auto d-block p-1 fs-6">${post.category}</a>
+        <a href="#" class="btn btn-light btn-sm mx-auto d-block p-1 fs-6 ctg">${post.category}</a>
       </a>
 
         </div>
@@ -42,7 +36,7 @@ class UI {
         </div>
         <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
           <div class="views">
-              ${day}/${month}/${year}, ${hour}:${min}
+              ${post.date}
           </div>
           <div class="stats">
            	<i class="far fa-eye"></i> 1347
@@ -111,7 +105,6 @@ class UI {
   }
 
   changeState(type) {
-    debugger;
     if (type === 'edit') {
       this.addPostSubmit.textContent = 'Update Post';
       this.addPostSubmit.className = 'addSubmit btn btn-warning btn-block';
@@ -145,6 +138,17 @@ class UI {
         author.parentElement.parentElement.setAttribute('style', 'display:none !important');
       } else {
         author.parentElement.parentElement.setAttribute('style', 'display:block');
+      }
+    });
+  }
+
+  filterCategoryUI(filterByCategory, categoryName) {
+    filterByCategory.forEach(function (ctg) {
+      const text = ctg.innerText;
+      if (text.indexOf(categoryName) === -1 && categoryName != 'Show All') {
+        ctg.parentElement.parentElement.setAttribute('style', 'display:none !important');
+      } else {
+        ctg.parentElement.parentElement.setAttribute('style', 'display:block');
       }
     });
   }
