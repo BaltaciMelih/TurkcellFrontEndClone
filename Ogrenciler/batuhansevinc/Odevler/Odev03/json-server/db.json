@@ -1,28 +1,20 @@
 {
   "posts": [
     {
-      "title": "3221341",
-      "author": "Batuhan Sevinç",
-      "img": "https://kriterdergi.com/images/news/2020/11/02/kitaplik1.jpg",
-      "date": "22/22/11",
-      "content": "aaaaa",
+      "title": "Kürk Mantolu Madonna",
+      "author": "Sabahattin Ali",
+      "img": "https://www.alfayayinlari.com/upload/9786051853611.jpg",
+      "date": "20/14/2018",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusamus maiores aut quae amet quam nesciunt repellat iste aspernatur fuga. Porro praesentium consequatur soluta sunt quaerat voluptatum delectus, expedita asperiores?",
       "id": 1
     },
     {
-      "title": "123123",
-      "author": "12312312312",
-      "img": "https://kriterdergi.com/images/news/2020/11/02/kitaplik1.jpg",
-      "date": "02/11/11",
-      "content": "asdsdaads",
+      "title": "Araba Sevdası",
+      "author": "Recaizade Mahmud Ekrem",
+      "img": "https://cdn.dsmcdn.com/ty138/product/media/images/20210629/16/105562200/17868225/1/1_org_zoom.jpg",
+      "date": "18/07/2019",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusamus maiores aut quae amet quam nesciunt repellat iste aspernatur fuga. Porro praesentium consequatur soluta sunt quaerat voluptatum delectus, expedita asperiores?",
       "id": 2
-    },
-    {
-      "title": "batuhan sevinç",
-      "author": "sdlkşfklsfd",
-      "img": "sdfkjlkjsldf",
-      "date": "sdfgkljkljdfsg",
-      "content": "kjldfsgjlkdfgşk",
-      "id": 3
     }
   ]
 }
