@@ -31,7 +31,7 @@ class UI{
                               </div>
                             </div>
                           </div>
-                            <button type="button" class="btn btn-primary bi bi-pencil" data-bs-toggle="modal" data-bs-target="#Modal_${info.id}">
+                            <button type="button" class="btn btn-primary bi bi-book" data-bs-toggle="modal" data-bs-target="#Modal_${info.id}">
                               Devamını Oku
                             </button>
                             <div class="modal fade" id="Modal_${info.id}" tabindex="-1" aria-labelledby="Modal_${info.id}Label" aria-hidden="true">
