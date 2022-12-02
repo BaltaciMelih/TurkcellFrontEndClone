@@ -16,7 +16,6 @@ class UI {
               <h4 class="card-title">
                 ${article.title}<span class="badge bg-danger ms-2">${article.category}</span>
               </h4>
-
               <p class="card-text text-truncate">
                 ${article.body}
               </p>
@@ -165,7 +164,6 @@ class UI {
               <h4 class="card-title">
                 ${article.title}<span class="badge bg-danger ms-2">${article.category}</span>
               </h4>
-
               <p class="card-text text-truncate">
                 ${article.body}
               </p>
@@ -187,7 +185,6 @@ class UI {
                         </button>
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editModal" id="edit-article">Düzenle</button>
                         <button type="button" class="btn btn-danger" id="delete-article">Sil</button>
-                        
                             <div class="modal fade modal-lg" id="editModal" tabindex="-1" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -250,7 +247,6 @@ class UI {
                                 </div>
                             </div>
                             </div>
-
                         <div
                             class="modal fade modal-lg"
                             id="A${article.id}"

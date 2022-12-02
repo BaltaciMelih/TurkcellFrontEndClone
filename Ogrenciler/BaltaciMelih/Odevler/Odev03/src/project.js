@@ -7,13 +7,10 @@ const articleInput = document.getElementById("article");
 const articleList = document.getElementById("articles");
 const filter = document.getElementById("filter");
 const categories = document.getElementById("categories");
-
 const request = new Request("http://localhost:3000/articles");
 const ui = new UI();
-
 eventListeners();
 getAllItems();
-
 function eventListeners() {
   form.addEventListener("submit", addItem);
   articleList.addEventListener("click", deleteItem);
@@ -22,7 +19,6 @@ function eventListeners() {
   filter.addEventListener("keyup", filterItems);
   categories.addEventListener("click", filterCategory);
 }
-
 function getAllItems() {
   request
     .get()
@@ -33,7 +29,6 @@ function getAllItems() {
       console.log(err);
     });
 }
-
 function addItem(e) {
   const articleTitle = titleInput.value.trim();
   const articleAuthor = authorInput.value.trim();
@@ -41,7 +36,6 @@ function addItem(e) {
   const articleImg = imgInput.value.trim();
   const articleBody = articleInput.value.trim();
   const time = Date();
-
   if (
     articleTitle === "" ||
     articleAuthor === "" ||
@@ -74,7 +68,6 @@ function addItem(e) {
   articleInput.value = "";
   e.preventDefault();
 }
-
 function deleteItem(e) {
   if (e.target.id === "delete-article") {
     const id =
@@ -89,7 +82,6 @@ function deleteItem(e) {
       });
   }
 }
-
 function editItem(e) {
   if (e.target.id === "edit-article") {
     const editForm = document.getElementById("edit-blog-form");
@@ -98,12 +90,10 @@ function editItem(e) {
     const editSelect = document.getElementById("edit-category-select");
     const editImg = document.getElementById("edit-article-image");
     const editArticle = document.getElementById("edit-article-text");
-
     const card = e.target.parentElement.parentElement;
     const id =
       e.target.parentElement.firstElementChild.firstElementChild.textContent;
     const time = Date();
-
     request
       .get()
       .then((articles) => {
@@ -120,7 +110,6 @@ function editItem(e) {
       .catch((err) => {
         console.log(err);
       });
-
     editForm.addEventListener("submit", function (e) {
       request
         .put(id, {
