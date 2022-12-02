@@ -1,0 +1,12 @@
+{
+  "product": [
+    {
+      "id": 8,
+      "name": "ads",
+      "description": "asd",
+      "url1": "https://res.cloudinary.com/castlery/image/private/w_900,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1642126670/crusader/variants/50440761-MC4002/Hamilton-Left-Sectional-Sofa-Brilliant-White-Square-Set_4.jpg",
+      "url2": "https://res.cloudinary.com/castlery/image/private/w_900,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1642126670/crusader/variants/50440761-MC4002/Hamilton-Left-Sectional-Sofa-Brilliant-White-Square-Set_4.jpg",
+      "date": "2-11-2022  1.9"
+    }
+  ]
+}
