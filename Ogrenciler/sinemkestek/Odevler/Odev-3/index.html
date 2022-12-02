@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/style.css" />
+ 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lato&family=Manrope:wght@200;400&family=Merriweather:ital,wght@0,900;1,300&family=Montserrat:ital@1&family=Noto+Serif:ital@0;1&family=Playfair+Display&family=Quicksand:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Animal Rescue</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="brand-nav d-flex">
+      <div
+        class="logo d-flex justify-content-center border-2 border-bottom w-100"
+      >
+        <img class="img-fluid" src="logo2.jpg" alt="" />
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md px-2 mx-2">
+      <button
+        class="navbar-toggler justify-content-end bg-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active mx-4">
+            <a class="nav-link fw-bolder" href="#">Home </a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link fw-bolder" href="#">About Us</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link fw-bolder" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link fw-bolder" href="#">New Add Pet</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-ıcons flex-column">
+        <form class="d-flex">
+          <button
+            class="nav-icon d-flex align-items-center btn m-1"
+            type="button"
+          >
+            <input
+              class="btn btn-light form-control d-lg-block me-1 d-none"
+              type="text"
+              id="searchBox"
+              placeholder="Search by Location!"
+            />
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <div
+      class="header container-fluid p-4 d-flex flex-column justify-content-center align-items-center"
+    >
+      <h3 class="fs-1">Adopt a new friend</h3>
+      <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio similique ab doloremque.
+      </p>
+    </div>
+
+    <!-- content -->
+
+    <div class="pet-container row justify-content-around">
+      <div class="filter-pet col-md-2 col-sm-1 m-3">
+        <div class="filter-container">
+          <div class="filter-header">
+            <h3 class="fs-2">Filtered Your Choose</h3>
+            <div class="filter-type mt-3">
+              <input type="radio" id="dog" name="pet-type-1" value="Dog" />
+              <label for="dog">Dog</label><br />
+              <input type="radio" id="cat" name="pet-type-1" value="Cat" />
+              <label for="cat">Cat</label><br />
+            </div>
+            <hr />
+            <div class="filter-type2 mt-3">
+              <input type="radio" id="yavru" name="pet-type-2" value="Young" />
+              <label for="yavru">Young</label><br />
+
+              <input type="radio" id="Adult" name="pet-type-2" value="Adult" />
+              <label for="adult">Adult</label><br />
+            </div>
+            
+          </div>
+          <a href="" class="btn btn-secondary m-3 clear-filter">Clear Filter</a>
+        </div>
+        <!-- <div class="donate-container my-3">
+          <button class="donate-btn">Donate For Food!</button>
+        </div> -->
+        <form
+          id="formNewPet"
+          class="new-pet form__group d-flex flex-column justify-content-center mt-5"
+        >
+          <h3>Share with us do you know need friends pet?</h3>
+          <div class="form-element d-flex flex-column mx-2" id="pet-form">
+            <label for="pet-name" class="form__label fs-5">Pet Name</label>
+            <input
+              id="pet-name"
+              placeholder=" "
+              class="form__field"
+              type="text"
+            />
+          </div>
+          <div class="form-element d-flex flex-column mx-2">
+            <label for="pet-type-1" class="fs-5">Pet type</label>
+            <input id="pet-type-1" type="text" />
+          </div>
+          <div class="form-element d-flex flex-column m-2 my-3">
+            <select class="form-select" name="" id="pet-type-2">
+              <option value="Adult">Adult</option>
+              <option value="Young">Young</option>
+            </select>
+          </div>
+          <div class="form-element d-flex flex-column mx-2">
+            <label for="pet-location" class="fs-5">Location</label>
+            <input id="pet-location" type="text" />
+          </div>
+          <div class="form-element d-flex flex-column mx-2 mb-2">
+            <label for="pet-img" class="fs-5">Pet Image</label>
+            <input id="pet-img" type="url" />
+          </div>
+
+          <button type="submit" class="btn mt-1" id="saveEl">
+            Share The Post
+          </button>
+        </form>
+      </div>
+
+      <div class="pet-box d-flex flex-wrap col-md-8 col-sm-1">
+        <!-- <div class="pet-content">
+          <img
+            class="img-responsive"
+            id="pet-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsCfqrJq5PIMMpqyv5oEuG4yn-OJ1LxNUGw&usqp=CAU"
+          />
+          <h5 class="pet-name">Adı:Şanslı</h5>
+          <p class="pet-type-1">
+            Türü:Köpek,<span class="pet-type-2">Yetişkin</span>
+          </p>
+          <p class="pet-location">Konum:İzmir</p>
+          <p class="advert-time ">İlan Tarihi:<small>11.10.2021</small></p>
+        </div> -->
+        <div class="modal">
+          <form>
+           
+            <label>Name</label>
+            <input type="text" placeholder="ornek" />
+            <label>E-mail</label>
+            <input type="email" placeholder="ornek@gmail.com" />
+            <label>Number</label>
+            <input type="tel" placeholder="5xx-xxx-xxxx" />
+            <button id="form-buton " class="my-3">Sign In</button>
+             <button id="form-close" >Close</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="adopted-container d-flex flex-column align-items-center >
+      <h3 class="fs-2 p-3">
+        This year adopted pets <br />
+        <span class="text-muted">and friends</span>
+      </h3>
+      <div class="adopted-container">
+        <div class="adopted-pet d-flex flex-wrap align-items-center">
+          <div class="pet-1">
+            <img
+              class="img-fluid"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7lZu2Cql7NBk_2TjRPgncGV4mI1GwHb-B3Q&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="pet-2">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-NJGkUhYNCUKWwLibMGJj4OUu6z_MTn6zw&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="pet-3">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgIbvRrc8HFL68fuYRrb-nOZHtLyOIERf0Q&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="pet-3">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-yVJH3_3rP4y6fA64eyDWNR6Npuotqlj1RA&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="pet-3">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNqODEF1P7K0wAFkikw2XbkCLtp2tbyMulrg&usqp=CAU"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer >
+     
+     <div class="text-center text-light p-3" style="background-color: rgba(61, 56, 63, 0.89)">
+        All rights reserved & 2020 ©Copyright:
+     </div>
+   </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
