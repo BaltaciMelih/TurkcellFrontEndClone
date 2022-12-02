@@ -27,6 +27,7 @@ const addBlog = (blog) => {
           ${blog.body}
         </p>
         <div class="flex-group">
+        <a href="./edit.html?id=${blog.id}">Edit..</a>
           <a href="./details.html?id=${blog.id}">Read More...</a>
           <h5 class="card-date">${blog.datetime}</h5>
         </div>

@@ -19,7 +19,7 @@ editBtn.addEventListener("click", async() => {
         method: "PUT",
     });
     if (!res.ok) {
-        deleteBtn.innerText = "Something went wrong";
+        editBtn.innerText = "Something went wrong";
         return;
     }
     window.location.replace("./index.html");
