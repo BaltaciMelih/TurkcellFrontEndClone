@@ -7,7 +7,7 @@ class UI {
   addItemToUI(article) {
     const articleList = document.getElementById("articles");
     articleList.innerHTML += `
-     <div class="card p-0 mb-4 col-lg-6 col-sm-12">
+          <div class="card p-0 mb-4 col-lg-6 col-sm-12">
             <img
               class="card-img-top img-fluid"
               src="${article.image}"
@@ -29,17 +29,17 @@ class UI {
                     <small class="text-muted">${article.date}</small>
                     </p>
                         <button
+                        id="readButton"
                         type="button"
                         class="btn btn-primary"
                         data-bs-toggle="modal"
-                        data-bs-target="#article-modal"
+                        data-bs-target="#${article.title}"
                         >
                         Devamını Görüntüle
                         </button>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" id="edit-article">Düzenle</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editModal" id="edit-article">Düzenle</button>
                         <button type="button" class="btn btn-danger" id="delete-article">Sil</button>
-                        
-                            <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade modal-lg" id="editModal" tabindex="-1" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 <div class="modal-header">
@@ -96,16 +96,14 @@ class UI {
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>  
                                 </div>
                                 </div>
                             </div>
-                            </div>
-
+                        </div>
                         <div
                             class="modal fade modal-lg"
-                            id="article-modal"
+                            id="${article.title}"
                             tabindex="-1"
                             aria-hidden="true"
                             >
@@ -151,46 +149,46 @@ class UI {
                     </div>
                 </div>
             </div>
-        </div> 
+          </div> 
     `;
   }
   deleteItemFromUI(e) {
     e.remove();
   }
-  editItemOnUI(newArticle, card) {
+  editItemOnUI(article, card) {
     card.innerHTML = `
         <img
               class="card-img-top img-fluid"
-              src="${newArticle.image}"
+              src="${article.image}"
             />
             <div class="card-body row">
               <h4 class="card-title">
-                ${newArticle.title}<span class="badge bg-danger ms-2">${newArticle.category}</span>
+                ${article.title}<span class="badge bg-danger ms-2">${article.category}</span>
               </h4>
 
               <p class="card-text text-truncate">
-                ${newArticle.body}
+                ${article.body}
               </p>
               <div class="card-footer">
-                    <small class="text-muted">Makale Numarası: <span>${newArticle.id}</span></small>
+                    <small class="text-muted">Makale Numarası: <span>${article.id}</span></small>
                     <p class="card-text">
-                    <small class="text-muted">Yazar: ${newArticle.author}</small>
+                    <small class="text-muted">Yazar: ${article.author}</small>
                     </p>
                     <p class="card-text">
-                    <small class="text-muted">${newArticle.date}</small>
+                    <small class="text-muted">${article.date}</small>
                     </p>
                         <button
                         type="button"
                         class="btn btn-primary"
                         data-bs-toggle="modal"
-                        data-bs-target="#article-modal"
+                        data-bs-target="#${article.title}"
                         >
                         Devamını Görüntüle
                         </button>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" id="edit-article">Düzenle</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editModal" id="edit-article">Düzenle</button>
                         <button type="button" class="btn btn-danger" id="delete-article">Sil</button>
                         
-                            <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade modal-lg" id="editModal" tabindex="-1" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 <div class="modal-header">
@@ -255,7 +253,7 @@ class UI {
 
                         <div
                             class="modal fade modal-lg"
-                            id="article-modal"
+                            id="${article.title}"
                             tabindex="-1"
                             aria-hidden="true"
                             >
@@ -263,7 +261,7 @@ class UI {
                             <div class="modal-content">
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5">
-                                            ${newArticle.title}<span class="badge bg-danger ms-2">${newArticle.category}</span>
+                                            ${article.title}<span class="badge bg-danger ms-2">${article.category}</span>
                                             </h1>
                                             <button
                                             type="button"
@@ -274,18 +272,18 @@ class UI {
                                         </div>
                                         <img
                                         class="card-img-top img-fluid"
-                                        src="${newArticle.image}"
+                                        src="${article.image}"
                                         />
                                         <div class="card-body row">
                                         <p class="card-text">
-                                            ${newArticle.body}
+                                            ${article.body}
                                         </p>
                                 <div class="card-footer">
                                     <p class="card-text">
-                                    <small class="text-muted">Yazar: ${newArticle.author}</small>
+                                    <small class="text-muted">Yazar: ${article.author}</small>
                                     </p>
                                     <p class="card-text">
-                                    <small class="text-muted">${newArticle.date}</small>
+                                    <small class="text-muted">${article.date}</small>
                                     </p>
                                     <div class="modal-footer">
                                     <button
