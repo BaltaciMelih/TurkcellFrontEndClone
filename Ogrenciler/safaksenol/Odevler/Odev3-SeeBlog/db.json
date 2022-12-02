@@ -29,21 +29,30 @@
     },
     {
       "title": "Xiaomi 13 serisinin işlemcisi resmen açıklandı!",
-      "date": "2022-11-25",
       "url": "https://shiftdelete.net/wp-content/uploads/2022/11/Xiaomi-13-iPhone-14-Pro-Maxi-geride-birakti-Iste-pil-omurleri-1-640x360.webp",
+      "date": "2022-11-25",
       "category": "Telefon",
       "writer": "Xiaomi Türkiye",
       "body": "Xiaomi 13 serisinin hangi işlemci ile geleceği kısa bir süre önce belli oldu. Peki cihazların güç alacağı yonga hangisi?2022‘nin en çok beklenen akıllı telefonlarından birisi de Xiaomi 13 demek mümkün. Modellerle ilgili bugüne dek sayısız sızıntı ortaya çıktı. Bu sayede performans ve tasarım gibi konularda akıllarda soru işareti kalmadı. Çinli üretici dün cihazların tanıtım tarihini doğrularken, kısa süre önce de işlemcilerini netleştirdi.Xiaomi 13 serisi 1 Aralık’ta kullanıcıların beğenisine sunulacak. Çinli şirket, bir süre önce Weibo’dan paylaştığı görsellerle akıllı telefonların güç alacağı işlemcileri de açıkladı. Buna göre cihazlar önceki sızıntılarla doğru orantlı olarak Qualcomm Snapdragon 8 Gen 2’den güç alacaklar.4 nm teknolojisiyle üretilecek yonga setinde 1 adet 3.19 GHz ARM Cortex-X3, 2 adet 2.8 GHz ARM Cortex-A715, 2 adet 2.8 GHz ARM Cortex-A710 ve 3 adet 2.0 GHz ARM Cortex-A510 çekirdek kullanıyor. Qualcomm, yonga setinde Ray Tracing teknolojisini destekleyen Adreno 740 grafik arabirimine yer veriyor.Yeni işlemci, selefine oranla yüzde 30 performans artışı sağlayacak. Enerji verimliliğinde ise yeni modelin yüzde 40 daha iyi performans göstereceği açıklandı. Qualcomm, yeni işlemcisinde yapay zeka yeteneklerinin bir üst seviyeye çıkarıldığının altını çizdi. Doğal dil işleme (NLP) işlemlerinde anlık veri akışı sağlanabilecek. Bir başka deyişle kullanıcıların konuşmaları anlık olarak diğer dillere çevrilebilecek.",
       "id": 4
     },
     {
-      "title": "Epic Games Store’dan yılbaşı oyun sürprizi!",
-      "date": "2022-11-02",
-      "category": "Oyun",
-      "writer": "Mert Can Aka",
-      "body": "Epic Games Store uzun bir süredir kullanıcılarına ücretsiz oyun veriyor. Hatta bazen bu yapımlar AAA kalitede olabiliyor. Yani oldukça pahalı oyunları kütüphanenize bedelsiz eklemenize olanak sağlıyor. Genelde bu yapımları haftalık olarak yeniliyor. Fakat yılbaşı nedeniyle Epic Games Store’un her gün bir oyun vereceği ortaya çıktı.Bugün ortaya çıkan sızıntıya göre Epic Games Store yılbaşı özel kampanyalarıyla birlikte her gün bir adet ücretsiz oyun verecek. Henüz şirket tarafından resmi bir açıklama yapılmamış olsa da 15 Aralık ila 10 Ocak tarihleri arasında toplam 25 yapımın dağıtılması bekleniyor.",
-      "url": "https://shiftdelete.net/wp-content/uploads/2022/11/epic-games-yilbasi-oyun-surprizi-1.jpg",
+      "title": "GitHub Nedir ve Nasıl Kullanılır?",
+      "url": "https://www.hostinger.web.tr/rehberler/wp-content/uploads/sites/6/2019/04/github-nedir-768x480.jpg",
+      "date": "2022-12-03",
+      "category": "Yazılım",
+      "writer": "hostinger.web",
+      "body": "Hiç GitHub nedir merak ettiniz mi? \nBu makalede size GitHub’ın ne olduğunu ve ne için kullanıldığını öğreteceğiz.\nGitHub, yazılım mühendisleri için önemli bir araç olarak kabul edilir ve popülaritesi rakipsizdir. \nŞu anda 25 milyondan fazla kullanıcıyı barındırmaktadır. \nBu, iş akışı ve işbirliği iyileştirmeleri için GitHub’a yönelen çok sayıda profesyonel anlamına gelir.\nKısacası GitHub, Git adlı bir sürüm kontrol sistemini (VCS) barındıran bulut tabanlı bir hizmettir. \nGeliştiricilerin, ilerlemelerini ayrıntılı olarak takip ederken ortak projelerde işbirliği yapmasına ve değişiklikler yapmasına olanak tanır.\nGitHub’ın ne olduğunu ve nasıl çalıştığını daha iyi anlamak için daha derine inmemiz gerekiyor. Önce sürüm kontrolü nedir bunu öğrenmeliyiz.",
       "id": 5
+    },
+    {
+      "title": "Microsoft’u kıskandıran Windows 12 konsepti!",
+      "url": "https://shiftdelete.net/wp-content/uploads/2022/12/microsoftu-kiskandiran-windows-12-konsepti.jpg",
+      "date": "2022-12-02",
+      "category": "Windows",
+      "writer": "ShiftDelete.com",
+      "body": "Microsoft’un büyük umutlar beslediği ve Windows tarihinde revizyon yapacağına inandığı en yeni işletim sistemi Windows 11, karışık yorumlar alıyor. Bu Windows 12 konsepti ise Microsoft’un yapamadığı bazı değişikliklere dikkat çekiyor.Windows 12’nin tasarımsal olarak nasıl olması gerektiğini gösteren son çalışma merak uyandırdı. Mevcut özellikleri çok daha kullanışlı hale getiren konsept, MacOS’tan da ilham almış gibi duruyor. Örneğin medya oynatıcısı, takvim programı ve hava durumunu içeren daha dinamik bir pencere bizleri karşılıyor.",
+      "id": 6
     }
   ]
 }
