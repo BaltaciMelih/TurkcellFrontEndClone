@@ -14,17 +14,39 @@ fetch(url)
  .then(data => {
     data.forEach(post => {
       output +=`
-      <div class="posts-list row col-5 me-2">
+      <div class="posts-list row col-5 me-2 text-center d-flex">
       <div class="card bg-light mt-4 >
           <div class="card-body" data-id=${post.id}>
               <h5 class="card-title pt-3 px-2">${post.title}</h5>   
               <h6 class="card-subtitle mb-2 text-muted px-2">Yazar: ${post.author}</h6>
               <img src="${post.img}" class="card-img-top img-fluid rounded my-3" alt="..." />
-              <p class="card-text px-2">${post.content}</p>
+              <p class="card-text px-2 align-self-center">${post.content}</p>
               <div><small class="card-date float-end">${post.date}</small></div>
-              <div class="footer-edits px-2">
+              <div class="footer-edits px-2 my-5">
               <a href="#" class="card-link text-decoration-none" id="edit-post">DÜZENLE</a>
               <a href="#" class="card-link text-decoration-none" id="delete-post">SİL</a>
+<div>
+<button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  İçeriği Görüntüle
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">${post.title}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="${post.img}" class="card-img-top img-fluid rounded my-3" alt="..." />
+      <p class="card-text px-2 align-self-center">${post.content}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
               </div>
           </div>
         </div>
