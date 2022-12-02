@@ -15,9 +15,8 @@ const renderPosts = async (term) => {
     template += `
            
        <div class="card" style="width: 400px; margin:30; background-color: transparent">
-       <img src="${
-         post.image
-       }" class="card-img-top" style="width:375" alt="...">
+       <img src="${post.image
+      }" class="card-img-top" style="width:375" alt="...">
        <div class="card-body">
          <h5 class="card-title">${post.title}</h5>
          <p class="card-text">${post.body.slice(0, 200)}</p>
@@ -28,12 +27,10 @@ const renderPosts = async (term) => {
          <li class="list-group-item">${post.date}</li>
        </ul>
        <div class="card-body">
-       <button type="button" class="btn btn-danger delete-btn card-btn button-delete" id="${
-         post.id
-       }">Delete</button>
-       <button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#id${
-         post.id
-       } ">
+       <button type="button" class="btn btn-danger delete-btn card-btn button-delete" id="${post.id
+      }">Delete</button>
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#id${post.id
+      } ">
        İncele...
      </button>
      <button type="button"  class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit-dialog-${post.id}">
@@ -57,20 +54,20 @@ const renderPosts = async (term) => {
       <input type="date" value="${post.date}" name="date" required placeholder="Blog date" />
       <input type="text" value="${post.category}" name="category" required placeholder="Blog category" />
       <textarea  type="text" name="body" "required placeholder="Blog body">${post.body}</textarea>
-      <button type="submit" id="a${post.id}" class="btn btn-primary">Değişiklikleri Kaydet</button>
-    </form>
-      </div>
       <div class="modal-footer">
         
-        
+      <button type="sumbit" class="btn btn-primary">Kaydet</button>
+    </div>
+    
+    </form>
       </div>
+     
     </div>
   </div>
 </div>
      
-     <div class="modal fade" id="id${
-       post.id
-     }" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+     <div class="modal fade" id="id${post.id
+      }" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
        <div class="modal-dialog">
          <div class="modal-content p-5">
          <img src="${post.image}"  >
@@ -97,37 +94,29 @@ const renderPosts = async (term) => {
   container.innerHTML = template;
 
   const updateForms = container.querySelectorAll('.update_form');
-  container.addEventListener("submit", async (e) => {
-    if (e.target.id = `a${post.id}`) {
-     
-      await fetch(`http://localhost:3000/posts/${post.id}`, {
-        method: "PUT",
-      });
-      
-    }
-    e.preventDefault();
-  });
-  
-
+  updateForms.forEach((item) => item.addEventListener('submit', updatePost));
 };
 
 
-// const updatePost = async (e) => {
-//   e.preventDefault();
-//   const doc = {
-//       title: form.title.value,
-//       image: form.image.value,
-//       date: form.date.value,
-//       category: form.category.value,
-//       writer:form.writer.value,
-//       body: form.body.value,
-//   }
-//   await fetch('http://localhost:3000/posts/', {
-//       method: 'PUT',
-//       body: JSON.stringify(doc),
-//       headers: { 'Content-Type': 'application/json' }
-//   });
-// }
+const updatePost = async (e) => {
+  e.preventDefault();
+  const id = e.target[0].value
+  const updateForms = container.querySelectorAll('.update_form');
+
+  const doc = {
+    title: updateForms[(id - 1)].title.value,
+    image: updateForms[(id - 1)].image.value,
+    date: updateForms[(id - 1)].date.value,
+    category: updateForms[(id - 1)].category.value,
+    writer: updateForms[(id - 1)].writer.value,
+    body: updateForms[(id - 1)].body.value,
+  }
+  await fetch(`http://localhost:3000/posts/${id}`, {
+    method: 'PUT',
+    body: JSON.stringify(doc),
+    headers: { 'Content-Type': 'application/json' }
+  });
+}
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -137,13 +126,10 @@ searchForm.addEventListener("submit", (e) => {
 window.addEventListener("DOMContentLoaded", () => renderPosts());
 
 container.addEventListener("click", async (e) => {
-  if(e.target.className === "btn btn-danger delete-btn card-btn button-delete"){
-    await fetch(`http://localhost:3000/posts/${e.target.id}`, {
-      method: "DELETE",
-    });
-  }
   
+  await fetch(`http://localhost:3000/posts/${e.target.id}`, {
+    method: "DELETE",
+  });
 
   e.preventDefault();
 });
-
