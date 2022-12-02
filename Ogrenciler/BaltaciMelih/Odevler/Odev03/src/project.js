@@ -150,24 +150,3 @@ function filterCategory(e) {
   const categoryName = e.target.innerText;
   ui.filterCategoryOnUI(categoryName, filterCategory);
 }
-
-// function showModal(e) {
-//   if (e.target.id === "readButton") {
-//     const card = e.target.parentElement.parentElement;
-//     const id =
-//       e.target.parentElement.firstElementChild.firstElementChild.textContent;
-//     console.log(id);
-//     request
-//       .get()
-//       .then((articles) => {
-//         articles.forEach(function (article) {
-//           if (article.id == id) {
-//             ui.showModalOnUI(article, card);
-//           }
-//         });
-//       })
-//       .catch((err) => {
-//         console.log(err);
-//       });
-//   }
-// }

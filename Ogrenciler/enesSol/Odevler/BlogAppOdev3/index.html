@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nslog</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -24,14 +24,36 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon//site.webmanifest" />
   </head>
   <body>
     <div class="row">
       <div class="col text-center my-5">
-        <h1 class="display-3">Welcome to Enes Blog!</h1>
-        <p class="lead">
-          Lorem ipsum dolor sit amet at enim hac integer volutpat maecenas
-          pulvinar.
+        <img
+          src="./assets/nslog2.webp"
+          class="img-fluid mb-lg-5"
+          alt="nsblog-logo"
+        />
+        <h1 class="display-1 fw-semibold">Bilgi Paylaştıkça Çoğalır</h1>
+        <p class="lead mt-3">
+          Sen de deneyimlerini paylaşmak istiyorsan hemen bir blog oluştur
         </p>
       </div>
     </div>
@@ -57,114 +79,71 @@
             type="text"
             name="title"
             required
-            placeholder="Blog title"
-            class="form-control"
+            placeholder="Başlık"
+            class="form-control text-black-50"
           />
           <input
             type="text"
             name="writer"
             required
-            placeholder="Blog writer"
-            class="form-control"
+            placeholder="Yazar"
+            class="form-control text-black-50"
           />
           <input
             type="text"
             name="pp"
             required
-            placeholder="Profile Picture"
-            class="form-control"
+            placeholder="Profil Fotoğrafı"
+            class="form-control text-black-50"
           />
           <input
             type="date"
             name="date"
             required
-            placeholder="Blog date"
-            class="form-control"
+            placeholder="Oluşturma Tarihi"
+            class="form-control text-black-50"
           />
           <input
             type="text"
             name="image"
             required
-            placeholder="Image"
-            class="form-control"
+            placeholder="Görsel"
+            class="form-control text-black-50"
           />
-          <input
-            type="text"
-            name="category"
-            required
-            placeholder="Blog category"
-            class="form-control"
-          />
+          <select
+            id="chooseFrom"
+            class="form-select form-select-md text-black-50"
+            aria-label=".form-select-sm example"
+          >
+            <option selected>Kategori Seçiniz</option>
+            <option value="1">Front-End</option>
+            <option value="2">Javascript</option>
+            <option value="3">HTML, CSS</option>
+            <option value="4">İş ve Mülakat</option>
+            <option value="5">Teknoloji Haberleri</option>
+            <option value="6">Bootcamp Programları</option>
+            <option value="7">React</option>
+          </select>
           <input
             type="text"
             name="occupation"
             required
-            placeholder="Job Title"
-            class="form-control"
+            placeholder="Meslek"
+            class="form-control text-black-50"
           />
           <textarea
             name="body"
             required
-            placeholder="Blog body"
-            class="form-control text-area"
+            placeholder="Blog İçeriği"
+            class="form-control text-area text-black-50"
           ></textarea>
           <button class="btn btn-primary btn-large">Paylaş</button>
         </form>
       </div>
     </div>
-
-    <!-- <div class="container">
-      <div class="text-center my-5">
-        <h1>My Own Blog</h1>
-        <hr />
-      </div> -->
-
-    <!-- Row Start -->
-    <!-- <div class="row"></div>
-    </div> -->
     <section class="wrapper">
       <div class="container">
-        <div class="row blogs">
-          <!-- <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div
-              class="card text-white card-has-bg click-col"
-              style="
-                background-image: url('https://source.unsplash.com/600x900/?tech,street');
-              "
-            >
-              <img
-                class="card-img d-none"
-                src="https://source.unsplash.com/600x900/?tech,street"
-                alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?"
-              />
-              <div class="card-img-overlay d-flex flex-column">
-                <div class="card-body">
-                  <small class="card-meta mb-2">Thought Leadership</small>
-                  <h4 class="card-title mt-0">
-                    <a class="text-white" herf="#"
-                      >Goverment Lorem Ipsum Sit Amet Consectetur dipisi?</a
-                    >
-                  </h4>
-                  <small><i class="far fa-clock"></i> October 15, 2020</small>
-                </div>
-                <div class="card-footer">
-                  <div class="media">
-                    <img
-                      class="mr-3 rounded-circle"
-                      src="https://assets.codepen.io/460692/internal/avatars/users/default.png"
-                      alt="Generic placeholder image"
-                      style="max-width: 50px"
-                    />
-                    <div class="media-body">
-                      <h6 class="my-0 text-white d-block">Oz Coruhlu</h6>
-                      <small>Director of UI/UX</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
+        <div class="row blogs"></div>
       </div>
     </section>
 
