@@ -34,6 +34,6 @@ class Request {
     const response = await fetch(this.url + "/" + id, {
       method: "DELETE",
     });
-    return "veri silindi";
+    return "Silme İşlemi";
   }
 }
