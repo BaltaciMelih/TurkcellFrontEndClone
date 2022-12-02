@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container-md m-5">
+      <div class="row mb-5">
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Add Blog
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="input-group input-group-sm mb-3">
+
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="URL" id="url">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Title" id="title">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Text" id="text">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Category" id="category">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Author" id="author">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="datetime-local" placeholder="Date And Time" id="PublishTime" name="PublishTime">
+                </div>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a id="AddButton" class="btn btn-primary" href="#">Add</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Update Blog
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Id" id="updateId">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="URL" id="updateurl">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Title" id="updatetitle">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Text" id="updatetext">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Category" id="updatecategory">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Author" id="updateauthor">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">DateAndTime</span>
+                  <input type="datetime-local" id="updatePublishTime" name="PublishTime" placeholder="Date And Time">
+                </div>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a id="UpdateButton" class="btn btn-primary" href="#">Update</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Delete Blog
+            </button>
+            <ul class="dropdown-menu">
+              <div class="input-group input-group-sm mb-3">
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm" placeholder="Id" id="deleteId">
+              </div>
+              <li><a id="DeleteButton" class="btn btn-primary" href="#">Delete</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex">
+          <button id="filterButton">
+            Ara
+          </button>
+          <input id="filterInput" type="text" class="form-control" aria-label="Sizing example input" placeholder="Search by Category"/>
+        </div>
+      </div>
+    </div>
+    <div class="container-md m-5 bg-primary">
+      <h1 class="fst-italic d-flex justify-content-center">Bloglar</h1>
+      <div class="row" id="blogRows">
+        <!-- <div class="col-12 col-md-4">
+                    <div class="card m-5" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item">A second item</li>
+                          <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                YazıyıGoster
+                              </button>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                  </ul>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div> -->
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <script src="js/request.js"></script>
+</body>
+
+</html>
