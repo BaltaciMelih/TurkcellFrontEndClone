@@ -13,9 +13,14 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid bg-danger p-3">
+      <h1 class="text-center text-white">Coin Haber</h1>
+    </div>
+    <div class="container mt-3">
       <div class="card row">
-        <div class="card-header">Bir Makale Ekleyin</div>
+        <div class="card-header bg-success text-center text-white">
+          <h2>Bir Makale Ekleyin</h2>
+        </div>
         <div class="card-body">
           <form id="blog-form" name="form">
             <div class="form-inputs row">
@@ -70,16 +75,16 @@
       </div>
       <div>
         <input
-          class="form-control mt-3"
+          class="form-control mt-3 mb-5"
           type="text"
           name="filter"
           id="filter"
           placeholder="Makale Başlığı Ara"
         />
-        <h2 class="text-center mt-3">Kategoriler</h2>
+        <h2 class="text-center mt-3 fw-bold">KATEGORİLER</h2>
         <div class="d-flex flex-wrap mt-3">
           <div
-            class="justify-content-center m-auto d-flex flex-wrap gap-4"
+            class="justify-content-center m-auto d-flex flex-wrap gap-4 mb-5"
             id="categories"
           >
             <button class="btn btn-danger">Tüm Kategoriler</button>
@@ -93,7 +98,7 @@
       </div>
 
       <div class="row">
-        <h2 class="my-4">Yayınlanan Makaleler</h2>
+        <h2 class="my-4 fw-bold text-center">YAYINLANAN MAKALELER</h2>
         <div class="row m-auto" id="articles"></div>
       </div>
     </div>

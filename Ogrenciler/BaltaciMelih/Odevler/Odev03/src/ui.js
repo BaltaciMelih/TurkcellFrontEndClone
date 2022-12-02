@@ -33,7 +33,7 @@ class UI {
                         type="button"
                         class="btn btn-primary"
                         data-bs-toggle="modal"
-                        data-bs-target="#${article.title}"
+                        data-bs-target="#A${article.id}"
                         >
                         Devamını Görüntüle
                         </button>
@@ -103,7 +103,7 @@ class UI {
                         </div>
                         <div
                             class="modal fade modal-lg"
-                            id="${article.title}"
+                            id="A${article.id}"
                             tabindex="-1"
                             aria-hidden="true"
                             >
@@ -181,7 +181,7 @@ class UI {
                         type="button"
                         class="btn btn-primary"
                         data-bs-toggle="modal"
-                        data-bs-target="#${article.title}"
+                        data-bs-target="#A${article.id}"
                         >
                         Devamını Görüntüle
                         </button>
@@ -253,7 +253,7 @@ class UI {
 
                         <div
                             class="modal fade modal-lg"
-                            id="${article.title}"
+                            id="A${article.id}"
                             tabindex="-1"
                             aria-hidden="true"
                             >
