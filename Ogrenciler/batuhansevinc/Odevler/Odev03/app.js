@@ -14,7 +14,7 @@ fetch(url)
  .then(data => {
     data.forEach(post => {
       output +=`
-      <div class="posts-list row col-5 me-2 text-center d-flex">
+      <div class="posts-list row col-lg-5 me-2 text-center d-flex col-sm-12">
       <div class="card bg-light mt-4 >
           <div class="card-body" data-id=${post.id}>
               <h5 class="card-title pt-3 px-2">${post.title}</h5>   
