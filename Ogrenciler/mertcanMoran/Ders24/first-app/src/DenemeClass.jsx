@@ -10,8 +10,8 @@ class DenemeClass extends Component {
   render() {
     return (
       <div>
-        <p>DenemeClass</p>
-        <p>{this.props.name}</p>
+        <p>Merhaba {this.props.name}</p>
+        <p>Yaşın {this.props.age}</p>
       </div>
     );
   }

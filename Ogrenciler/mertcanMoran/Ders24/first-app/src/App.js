@@ -4,11 +4,14 @@ import DenemeClass from "./DenemeClass";
 
 function App() {
   let name = "Mertcan";
+  let age = 25;
   return (
     <div className="App">
-      <h1>Hoşgeldin {name}</h1>
-      <Deneme name={name} />
-      <DenemeClass name={name} />
+      <h1>
+        Hoşgeldin {name}, yaşın: {age}
+      </h1>
+      <Deneme name={name} age={age} />
+      <DenemeClass name={name} age={age} />
     </div>
   );
 }
