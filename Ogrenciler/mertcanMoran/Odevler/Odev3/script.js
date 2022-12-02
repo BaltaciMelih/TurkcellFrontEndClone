@@ -5,7 +5,6 @@ const categoryValue = document.querySelector("#category-value");
 const postValue = document.querySelector("#post-value");
 const thumbnailValue = document.querySelector("#thumbnail-value");
 const dateValue = document.querySelector("#date-value");
-const titleValue = document.querySelector("#title-value");
 
 const url = "http://localhost:3000/posts";
 //class Request{
@@ -23,7 +22,6 @@ fetch(url)
           <img src="${post.thumbnail}" class="card-img-top img-fluid rounded" alt="..." />
             <h5 class="card-title my-2">${post.author}</h5>
             <h6 class="card-subtitle mb-2 text-muted">${post.category}</h6>
-            <h6 class="crdtitle>${post.title}</h6>
             <p class="card-text">
               ${post.post}
             </p>
@@ -44,7 +42,6 @@ AddPostForm.addEventListener("submit", (e) => {
     body: JSON.stringify({
       author: authorValue.value,
       category: categoryValue.value,
-      title: titleValue.value,
       post: postValue.value,
       thumbnail: thumbnailValue.value,
       date: dateValue.value,
@@ -58,7 +55,6 @@ AddPostForm.addEventListener("submit", (e) => {
 
   authorValue.value = "";
   categoryValue.value = "";
-  titleValue.value = "";
   postValue.value = "";
   thumbnailValue.value = "";
   dateValue.value = "";
@@ -78,14 +74,12 @@ postList.addEventListener("click", (e) => {
     const parent = e.target.parentElement;
     let authorContent = parent.querySelector(".card-title").textContent;
     let categoryContent = parent.querySelector(".card-subtitle").textContent;
-    let titleContent = parent.querySelector(".crd-title").textContent;
     let postContent = parent.querySelector(".card-text").textContent;
     let thumbnailContent = parent.querySelector(".card-img-top").textContent;
     let dateContent = parent.querySelector(".card-date").textContent;
 
     authorValue.value = authorContent;
     categoryValue.value = categoryContent;
-    titleValue.value = titleContent;
     postValue.value = postContent;
     thumbnailValue.value = thumbnailContent;
     dateValue.value = dateContent;
@@ -98,7 +92,6 @@ postList.addEventListener("click", (e) => {
       body: JSON.stringify({
         author: authorValue.value,
         category: categoryValue.value,
-        title: titleValue.value,
         post: postValue.value,
         thumbnail: thumbnailValue.value,
         date: dateValue.value,

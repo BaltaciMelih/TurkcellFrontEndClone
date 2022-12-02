@@ -18,27 +18,20 @@
     },
     {
       "author": "Mertcan Moran",
-      "category": "Futbol",
-      "post": "\n              \n              \n            \n            ",
+      "category": "Basketbol",
+      "post": "\n              \n              \n              \n            \n            \n            ",
       "thumbnail": "",
       "date": "",
       "id": 3
     },
     {
-      "author": "Mertcan Moran",
-      "category": "Genel",
-      "post": "lorem ipsum        \n            \n            ",
-      "thumbnail": "https://duckduckgo.com/i/7afafeac.png",
-      "date": "2 Aralık 2022 12:07",
+      "author": "",
+      "category": "Felsefe",
+      "title": "Felsefe",
+      "post": "",
+      "thumbnail": "",
+      "date": "",
       "id": 4
-    },
-    {
-      "author": "Mertcan Moran",
-      "category": "Futbol",
-      "post": "dyjtgykfkgk\n              \n            ",
-      "thumbnail": "https://duckduckgo.com/i/7afafeac.png",
-      "date": "1 Aralık 2022",
-      "id": 5
     }
   ]
 }
