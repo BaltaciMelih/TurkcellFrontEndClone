@@ -1,30 +1,31 @@
 {
   "blogs": [
     {
-      "id": 2,
-      "yazarAdı": "Varol Maksutoğlu",
-      "sehirAdı": "İstabul",
-      "geziYorum": "çok güzeldi",
+      "yazarAdı": "Biz Evde Yokuz",
+      "sehirAdı": "İstanbul-Galata Kulesi",
+      "geziYorum": "İstanbullular için Galata Kulesi gökteki kutup yıldızı gibi birşey: Her vapura bindiğimizde gözlerimizin aradığı, Tünel ve Karaköy taraflarındayken pusula görevi gören, İstanbul’un çöplüğe dönen silüetinde yüzyıllardır kendini ezdirmeden varolmasını, şahsi hayat mücadelemize benzettiğimiz İstanbul’un daim bekçisidir Galata Kulesi.\n\nGölgesinde nice kez okul kırılmış, bira içilmiştir ama itiraf etmeliyiz ki; Galata Kulesi’ne çıkmış İstanbullu’dan çok turist vardır. Yerli yabancı turistlerin İstanbul’da gezilecek yerler listesinde en üst sıralarda yer alırken, biz İstanbullular hep ona karışık çerez tabağında talep görmeyen sarı leblebi muamelesi yaptık, ayıp ettik. Halbuki ne enteresandır Galata Kulesi. Anka kuşu gibi yanıp, yıkılıp tekrar tekrar dirilmesi, hakkındaki efsaneler, çılgın mucit Hezarfen Ahmet Çelebi’nin İstanbul üzerinde uçması… Şam fıstıklarının şovu çaldığı yeter, sahneyi Galata Kulesi’ne bırakıyoruz. 🙂",
+      "dateItem": "2022-12-02",
       "bolge": "Marmara",
-      "dateItem": "15.09.2022",
-      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f6/60/caption.jpg?w=700&h=500&s=1"
+      "url": "https://www.bizevdeyokuz.com/wp-content/uploads/galata-kulesi-1-1155x675.jpg",
+      "id": 6
     },
     {
-      "id": 3,
-      "yazarAdı": "Burak Nejat Songüler",
-      "sehirAdı": "Ankara",
-      "geziYorum": "çok güzeldi",
-      "bolge": "İç Anadolu",
-      "dateItem": "15.08.2022",
-      "url": "https://media-cdn.tripadvisor.com/media/photo-s/1d/45/d4/96/anitkabirden-panoramik.jpg"
+      "yazarAdı": "Kemal Kaya",
+      "sehirAdı": "Manisa-Sardes",
+      "geziYorum": "Sardes Antik Kenti, Manisa‘nın Salihli ilçesine bağlı Sart Mahallesi sınırlarında yer alan, Lidya Krallığına başkentlik yapan görkemli bir şehir. Lidyalıların dünya tarihinin akışının değişmesine neden olduğu sikke adı verilen ilk madeni parayı bastığı kent, İran’dan başlayan 2 bin 400 km uzunluğundaki Kral Yolu’nun da Anadolu topraklarındaki son durağı.\n\nAntik Çağın ünlü matematikçisi Thales’in MÖ 660’lı yıllarda imza attığı mükemmel kanalizasyon sistemine sahip olan Sardes, aynı zamanda bölgede Mezopotamya dışındaki en büyük savunma duvarı ile çevrili yerleşim yeri özelliğini taşıyordu. Kentte, 1900’lü yılların başında Amerikalılar tarafından başlatılan kazılarda hamam, Artemis Tapınağı, sinagog ve agora ortaya çıkarılmış.",
+      "dateItem": "2022-12-16",
+      "bolge": "Ege",
+      "url": "https://yoldaolmak.com/wp-content/uploads/2020/10/sardes-antik-kenti.jpg.webp",
+      "id": 7
     },
     {
-      "yazarAdı": "Nejat",
-      "sehirAdı": "Manisa",
-      "geziYorum": "Harikaydı.",
-      "dateItem": "2022-12-01",
-      "url": "https://i2.milimaj.com/i/milliyet/75/1200x675/5f6d9a1555428012ec5d7b40.jpg",
-      "id": 4
+      "yazarAdı": "Kemal Kaya",
+      "sehirAdı": "İzmir",
+      "geziYorum": "İzmir, Türkiye’nin en büyük üçüncü kenti. İzmir, modern yaşam biçimi, farklı inanç ve düşünceden insanların bir arada yaşadığı hoşgörü kültürü, deniz kokan coğrafyasında huzurlu atmosfere sahip bir kent.\n\nİzmir adının nereden geldiği konusunda kanıtlanmış herhangi bir bilgi bulunmuyor. Ancak tarihçiler ve araştırmacılar tarafından yaygın olarak kabul edilen görüşe göre bir dönem bugünkü İzmir yöresinde yaşamış olan Erektidlerin Amazonlarla savaşıp galip geldiği; onların önderi olan These’nin de Amazon kadını Smyrna ile evlenip yöresine onun adını verdiği ve İzmir’in adının da Smyrna’dan geldiği biliniyor.\n\n➡ Instagram hesabım @yoldaolmak ✔️\n\nEski İzmir (Smyrna) kenti, İzmir Körfezinin kuzeydoğusunda yer alan, yüzölçümü yaklaşık 100 dönüm olan bir yarımada üzerine kurulmuştu. Sonraki dönemlerde Meles Çayı ve Yamanlar Dağından gelen millerle Bornova Ovası oluştu. İzmir’deki ilk yerleşim izleri Bayraklı Tepekule Höyüğü ve çevresinde görülüyor.",
+      "dateItem": "2022-12-02",
+      "bolge": "Ege",
+      "url": "https://yoldaolmak.com/wp-content/uploads/2019/10/izmir-nerede.jpg",
+      "id": 8
     }
   ]
 }

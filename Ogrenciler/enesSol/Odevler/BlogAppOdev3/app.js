@@ -4,6 +4,7 @@ const container = document.querySelector(".blogs");
 const blogs = document.querySelector(".blogs");
 const searchForm = document.querySelector(".search");
 const blogIdInput = document.getElementById("movieId");
+const categoryParent = document.getElementById("chooseFrom");
 
 // Render All Blogs
 const renderPosts = async (term) => {
@@ -43,7 +44,7 @@ const renderPosts = async (term) => {
             <img
               class="mr-3 rounded-circle"
               src="${info.pp}"
-              alt="Generic placeholder image"
+              alt="user profile picture"
               style="max-width: 50px"
             />
             <div class="media-body">
@@ -53,9 +54,9 @@ const renderPosts = async (term) => {
           </div>
         </div>
         <div class="btn-group col-12" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-danger delete-btn card-btn button-delete" id="${info.id}">Delete</button>
-        <button type="button" class="btn btn-success edit-btn card-btn button-edit" id="">Edit</button>
-        <button type="button" class="btn btn-primary float-end card-btn button-read" data-bs-toggle="modal" data-bs-target="#id${info.id}">Read More</button>
+        <button type="button" class="btn btn-danger delete-btn card-btn button-delete" id="${info.id}">Sil</button>
+        <button type="button" class="btn btn-success edit-btn card-btn button-edit" data-bs-toggle="modal" data-bs-target="#edit-dialog-${info.id}" id="">Düzenle</button>
+        <button type="button" class="btn btn-primary float-end card-btn button-read" data-bs-toggle="modal" data-bs-target="#id${info.id}">Daha fazla...</button>
       </div>
       </div>
     </div>
@@ -81,13 +82,13 @@ const renderPosts = async (term) => {
                   ></button>
                 </div>
                 <div class="modal-body mx-2 px-3">
-                <img src="${info.image}" class="w-100 my-3"></img>
+                <img src="${info.image}" class="w-100 my-3" alt="blog image"></img>
                 ${info.body}<hr>
                 <div class="media">
                 <img
                   class="mr-3 rounded-circle"
                   src="${info.pp}"
-                  alt="Generic placeholder image"
+                  alt="user profile picture"
                   style="max-width: 50px"
                 />
                 <div class="media-body">
@@ -99,18 +100,56 @@ const renderPosts = async (term) => {
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-danger"
                     data-bs-dismiss="modal"
                   >
-                    Close
+                    Geri Dön
                   </button>
+                  <button type="button" class="btn btn-primary">
+                  ${info.category}
+                </button>
                   <button type="button" class="btn btn-primary">
                     ${info.date}
                   </button>
                 </div>
               </div>
             </div>
-          </div>`;
+          </div>
+          
+          <!-- Modal -->
+<div class="modal fade" id="edit-dialog-${info.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Geri Dön"></button>
+      </div>
+      <div class="modal-body ">
+      <form class="update_form">
+      <input type="hidden" value="${info.id}" name="id" />
+      <input type="text" value="${info.title}" name="title" required placeholder="Blog title" />
+      <input type="text" value="${info.writer}" name="writer" required placeholder="Blog writer" />
+      <input type="text" value="${info.pp}" name="pp" required placeholder="Profile Picture" />
+      <input type="date" value="${info.date}" name="date" required placeholder="Blog date" />
+      <input type="text" value="${info.image}" name="image" required placeholder="Blog image" />
+    <input type="text" value="${info.occupation}" name="occupation" required placeholder="Occupation" />
+    <textarea  type="text" name="body" "required placeholder="Blog body">${info.body}</textarea>
+    </form>
+      </div>
+      <div class="modal-footer">
+               <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+        <button type="button" class="btn btn-primary">Değişiklikleri Kaydet</button>
+      </div>
+
+    </div>
+  </div>
+</div>`;
   });
 
   container.innerHTML = template;
@@ -126,7 +165,7 @@ const createPost = async (e) => {
     body: form.body.value,
     image: form.image.value,
     date: form.date.value,
-    category: form.category.value,
+    category: categoryParent.options[categoryParent.selectedIndex].text,
     occupation: form.occupation.value,
   };
   await fetch("http://localhost:3000/posts", {
@@ -148,13 +187,14 @@ searchForm.addEventListener("submit", (e) => {
 
 // Delete Function
 container.addEventListener("click", async (e) => {
-  if (e.target.textContent != "Read More") {
-    // console.log(e.target.id);
+  if (
+    e.target.className === "btn btn-danger delete-btn card-btn button-delete"
+  ) {
     await fetch(`http://localhost:3000/posts/${e.target.id}`, {
       method: "DELETE",
     });
-    // window.location.replace("index.html");
   }
+
   e.preventDefault();
 });
 

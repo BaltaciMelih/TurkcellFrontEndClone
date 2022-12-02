@@ -3,15 +3,14 @@
 
 form {
   max-width: 800px; }
-
-.text-area {
-  height: 100px; }
-
-.searchBox {
-  width: 40%; }
-
-form input {
-  width: 100%; }
+  form .text-area {
+    height: 100px; }
+  form .searchBox {
+    width: 40%; }
+  form input {
+    width: 100%; }
+  form textarea {
+    min-height: 200px; }
 
 input,
 textarea {
@@ -20,9 +19,6 @@ textarea {
   padding: 6px 10px;
   width: 100%;
   border: 1px solid #ddd; }
-
-textarea {
-  min-height: 200px; }
 
 .card-body {
   min-width: fit-content;
@@ -34,28 +30,10 @@ textarea {
   -moz-box-shadow: 7px 10px 41px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 10px 41px -4px rgba(0, 0, 0, 0.75); }
 
-/* post list */
-.post {
-  padding: 16px;
-  background: white;
-  border-radius: 10px;
-  margin: 20px 0; }
-
-.post h2 {
-  margin: 0; }
-
-.post p {
-  margin-top: 0; }
-
-.post a {
-  color: #36cca2; }
-
 body {
-  /* Created with https://www.css-gradient.com */
-  background: #23ec55;
-  background: -webkit-radial-gradient(top right, #23ec55, #2d51c1);
-  background: -moz-radial-gradient(top right, #23ec55, #2d51c1);
-  background: radial-gradient(to bottom left, #23ec55, #2d51c1);
+  background: -webkit-radial-gradient(top right, #7ee8fa, #eec0c6);
+  background: -moz-radial-gradient(top right, #7ee8fa, #eec0c6);
+  background: radial-gradient(to bottom left, #7ee8fa, #eec0c6);
   background-repeat: no-repeat; }
 
 a {

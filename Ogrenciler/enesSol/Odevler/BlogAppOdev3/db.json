@@ -6,7 +6,7 @@
       "pp": "https://media-exp1.licdn.com/dms/image/C5603AQHCWgje3plcOA/profile-displayphoto-shrink_800_800/0/1648121863770?e=2147483647&v=beta&t=Hju3RUUaRa6LDJjEagMZEqLFrWJmvxHOgobp9CSxVz4",
       "body": "Çevremden duyuyorum hangi teknolojiyi öğreneyim, daha birisini öğrenmeden diğeri çıkıyor. Gerçekten günümüzde zaman oldukça kıymetli çok gibi gözüksede üretilen içeriği (makale, video, webinar, eğitim vs..) takip etmeye ve analiz etmeye yetmiyor. O zaman ne yapacağız ? Öncelikle kavramları, standartları, temel bilgileri ve teknolojileri, geliştirme araçlarını birbirinden ayırıp ne anlama geldiğini iyi kavramak gerekiyor. Örneğin aşağıdaki resim. Javascript Tarihçesinde EcmaScript(ES6 → ESNext) ile dile gelen değişimleri yenilikleri anlatmaya çalıştım. Sol kısımda yazılar sağ kısımda ise bu yazılar içerisinde geçen Kişiler, Kavramlar ve Kütüphaneler bulunuyor. Okuyucu bir yazı grubuna, bunun içerisindeki yazılara ve bunun içerisindeki micro seviyede kavramlara dahi erişebiliyor.",
       "image": "https://miro.medium.com/max/768/1*Ud7UCqByTRozSYlCRhNTxg.png",
-      "date": "2022-11-25",
+      "date": "2022-11-24",
       "category": "Front-End",
       "occupation": "Front-End Developer",
       "id": 1
@@ -18,7 +18,7 @@
       "body": "React, kullanıcı arayüzleri oluşturmak için Facebook tarafından geliştirilen deklaratif ve bileşen tabanlı bir JavaScript kütüphanesidir. Web ve mobil gibi bir çok platform için arayüz oluşturmayı sağlar. React açık kaynak bir projedir ve MIT lisanslıdır. Basit bir öğrenim eğrisine sahip. Bu sayede sıfırdan bir proje çıkarmanız daha kolay olacaktır. VDOM(Sanal DOM) gibi kullandığı tekniklerle performanslı bir uygulama geliştirmenizi sağlıyor. Bileşen tabanlı olduğu için bileşenlerinizi tekrar tekrar kullanabiliyorsunuz. React mimarisinde bileşenler arası veri tek yönde aktığı için bileşenlerinizin bağımlılığını azaltır. React DevTool sayesinde kodunuzu debug edebiliyor, bileşenlerinizin hiyerarşini görüyor ve performans analizi yapabiliyorsunuz. Web uygulaması geliştirirken mobil uygulamada geliştirebilir oluyorsunuz React Native sayesinde. Bu da sizin için ekstra bir avantaj sağlar. Sektörde kullanımı da daha yaygındır.",
       "image": "https://www.freecodecamp.org/news/content/images/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png",
       "date": "2022-11-25",
-      "category": "API",
+      "category": "React",
       "occupation": "Front-End Developer",
       "id": 2
     },
@@ -28,7 +28,7 @@
       "pp": "https://media-exp1.licdn.com/dms/image/C4D35AQG6FX45oMyJyg/profile-framedphoto-shrink_800_800/0/1619430050000?e=1670508000&v=beta&t=ZYt7G7pt-H5WkBRRyZkGpDDhBbvXkBkHe_wGN_ghAio",
       "body": "Web sayfalarımızda kullanıcı deneyimini arttırma yollarını her zaman düşünürüz. Kullanıcıların dinamik, işlevsel ve görsel bakımdan zengin web sayfalarından hoşlanacağını, sürekli olarak etkileşime girmek isteyeceğini biliriz. Peki bu üç önemli özelliği en pratik, en kolay şekilde kullanıcılarla nasıl buluştururuz? Aklımızdaki tüm bu soru işaretlerinin cevaplarını öğrenmek için başvurduğumuz en pratik çözüm, CSS animasyonlar! CSS’te tanımlanmış olan kuralları istediğimiz şekilde değiştirmemizi sağlayan CSS özelliğidir. Bu sayede bir web sayfasında yer alan öğelerimizin değişikliklerini, hareketlerini, yapacağı eylemleri belirleyebiliriz. CSS Animasyonlar ile web sayfamızı daha canlı hale getirerek kullanıcıların beğeneceği bir yapı ortaya çıkartırız. Daha önce animasyon için başvurduğumuz Flash, jQuery, JavaScript üçlüsüne göre daha performanslı, daha basit kod bloğuna sahip ve daha efektif sonuçlar almamıza olanak sağlamakta. Elementimizin CSS özelliklerinin, animasyonun hangi aşamasında hangi eylemleri yapacağını belirlediğimiz alan. @keyframes etiketi ile kullanıyoruz. Animasyonun her bir aşamasını keyframes içerisinde rahatlıkla düzenleyebiliriz. Bu aşamalar genelde 0% ila 100% arasında değer almaktadır. Dilerseniz bu değerleri from (başlangıç) — to (bitiş) ikilisi ile değiştirebilirsiniz.",
       "image": "https://www.codeur.com/blog/wp-content/uploads/2014/01/animations-css.jpg",
-      "date": "2022-11-25",
+      "date": "2022-11-26",
       "category": "HTML, CSS",
       "occupation": "Front-End Developer",
       "id": 3

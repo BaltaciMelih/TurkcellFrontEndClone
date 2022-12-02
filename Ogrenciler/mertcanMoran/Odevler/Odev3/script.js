@@ -4,7 +4,7 @@ const authorValue = document.querySelector("#author-value");
 const categoryValue = document.querySelector("#category-value");
 const postValue = document.querySelector("#post-value");
 const thumbnailValue = document.querySelector("#thumbnail-value");
-const dateValue = new Date();
+const dateValue = document.querySelector("#date-value");
 
 const url = "http://localhost:3000/posts";
 //class Request{
@@ -28,24 +28,6 @@ fetch(url)
             <h6 class="text-muted card-date">${post.date}</h6>
             <a href="#" class="card-link btn btn-info" id="edit">Edit</a>
             <a href="#" class="card-link btn btn-danger mx-2" id="delete">Delete</a>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-   See Full Screen
- </button> <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
- <div class="modal-dialog">
-   <div class="modal-content">
-     <div class="modal-header">
-       <h1 class="modal-title fs-5" id="exampleModalLabel">Yazar</h1>
-       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-     </div>
-     <div class="modal-body">
-    İçerik
-     </div>
-     <div class="modal-footer">
-       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-     </div>
-   </div>
- </div>
-</div>
           </div>
         </div>
         `;
@@ -62,7 +44,7 @@ AddPostForm.addEventListener("submit", (e) => {
       category: categoryValue.value,
       post: postValue.value,
       thumbnail: thumbnailValue.value,
-      date: dateValue,
+      date: dateValue.value,
     }),
     headers: {
       "Content-type": "application/json; charset=UTF-8",
@@ -75,7 +57,7 @@ AddPostForm.addEventListener("submit", (e) => {
   categoryValue.value = "";
   postValue.value = "";
   thumbnailValue.value = "";
-  //dateValue.value = "";
+  dateValue.value = "";
 });
 
 postList.addEventListener("click", (e) => {
@@ -94,13 +76,13 @@ postList.addEventListener("click", (e) => {
     let categoryContent = parent.querySelector(".card-subtitle").textContent;
     let postContent = parent.querySelector(".card-text").textContent;
     let thumbnailContent = parent.querySelector(".card-img-top").textContent;
-    //let dateContent = parent.querySelector(".card-date").textContent;
+    let dateContent = parent.querySelector(".card-date").textContent;
 
     authorValue.value = authorContent;
     categoryValue.value = categoryContent;
     postValue.value = postContent;
     thumbnailValue.value = thumbnailContent;
-    //dateValue.value = dateContent;
+    dateValue.value = dateContent;
   }
 
   document.getElementById("add-post-btn").addEventListener("click", (e) => {
@@ -112,6 +94,7 @@ postList.addEventListener("click", (e) => {
         category: categoryValue.value,
         post: postValue.value,
         thumbnail: thumbnailValue.value,
+        date: dateValue.value,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -120,14 +103,14 @@ postList.addEventListener("click", (e) => {
       .then((res) => res.json())
       .then(() => location.reload());
 
-    authorValue.value = "";
-    categoryValue.value = "";
-    postValue.value = "";
-    thumbnailValue.value = "";
+    // authorValue.value = "";
+    // categoryValue.value = "";
+    // postValue.value = "";
+    // thumbnailValue.value = "";
+    // dateValue.value = "";
   });
 });
 
-//}
 //const request = new Request("http://localhost:3000/posts");
 
 document.querySelector("#filter").addEventListener("keyup", filterPosts);

@@ -1,25 +1,8 @@
-// .card img {
-//   height: 280px;
-// }
-
-// .blog-description {
-//   position: relative;
-//   max-height: 65px;
-//   text-align: justify;
-//   line-height: 22px;
-//   overflow: hidden;
-//   transition: max-height 0.2s;
-// }
-
-// .blog-description::before {
-//   content: "";
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   height: 40px;
-//   background: linear-gradient(transparent, #fff);
-//   transition: opacity 0.2s;
-// }
+// Variables
+$gradient1: #7ee8fa;
+$gradient2: #eec0c6;
+$img-gradient1: rgba(4, 69, 114, 0.5) 0%;
+$img-gradient2: rgba(4, 69, 114, 1) 100%;
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -27,19 +10,20 @@
 
 form {
   max-width: 800px;
+  .text-area {
+    height: 100px;
+  }
+  .searchBox {
+    width: 40%;
+  }
+  input {
+    width: 100%;
+  }
+  textarea {
+    min-height: 200px;
+  }
 }
 
-.text-area {
-  height: 100px;
-}
-
-.searchBox {
-  width: 40%;
-}
-
-form input {
-  width: 100%;
-}
 input,
 textarea {
   display: block;
@@ -47,10 +31,6 @@ textarea {
   padding: 6px 10px;
   width: 100%;
   border: 1px solid #ddd;
-  // font-family: "Roboto";
-}
-textarea {
-  min-height: 200px;
 }
 
 .card-body {
@@ -63,41 +43,13 @@ textarea {
   -webkit-box-shadow: 7px 10px 41px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 10px 41px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 10px 41px -4px rgba(0, 0, 0, 0.75);
-  // border-radius: 20px;
-}
-
-// .card {
-//   overflow: hidden;
-// }
-
-// .card-title {
-//   font-size: 4vh;
-// }
-
-/* post list */
-.post {
-  padding: 16px;
-  background: white;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-.post h2 {
-  margin: 0;
-}
-.post p {
-  margin-top: 0;
-}
-.post a {
-  color: #36cca2;
 }
 
 // UI
 body {
-  /* Created with https://www.css-gradient.com */
-  background: #23ec55;
-  background: -webkit-radial-gradient(top right, #23ec55, #2d51c1);
-  background: -moz-radial-gradient(top right, #23ec55, #2d51c1);
-  background: radial-gradient(to bottom left, #23ec55, #2d51c1);
+  background: -webkit-radial-gradient(top right, $gradient1, $gradient2);
+  background: -moz-radial-gradient(top right, $gradient1, $gradient2);
+  background: radial-gradient(to bottom left, $gradient1, $gradient2);
   background-repeat: no-repeat;
 }
 
@@ -108,7 +60,6 @@ a {
 .wrapper {
   margin: 10vh;
 }
-//post card styles
 
 .card {
   border: none;
@@ -155,11 +106,7 @@ a {
       .card-img-overlay {
         transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
         background: rgb(35, 79, 109);
-        background: linear-gradient(
-          0deg,
-          rgba(4, 69, 114, 0.5) 0%,
-          rgba(4, 69, 114, 1) 100%
-        );
+        background: linear-gradient(0deg, $img-gradient1, $img-gradient2);
       }
     }
   }
@@ -195,6 +142,4 @@ a {
       rgba(69, 95, 113, 1) 100%
     );
   }
-}
-@media (max-width: 767px) {
 }

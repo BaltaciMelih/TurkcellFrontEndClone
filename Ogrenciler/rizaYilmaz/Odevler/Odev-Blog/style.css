@@ -1,0 +1,44 @@
+/*
+biyaz F0F7EE
+yeşil 679436
+sarı FFF07C
+grimsi 5D737E
+siyah 000000
+*/
+.white-color{
+    color: #F0F7EE;
+}
+.green{
+    color: #679436;
+}
+.yellow{
+    color: #FFF07C;
+}
+.gray{
+    background-color: #5D737E;
+}
+.black{
+    color: #000000;
+}
+.bg-img{
+    background: url(./img/img1.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+.icon-style{
+    font-size: 25px;
+    color: #F0F7EE;
+}
+.icon-style:hover{
+    color: #679436;
+}
+.elementHover:hover{
+    color: #679436;
+}
+.bg-login-img{
+    background: url(./img/img2.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+.bg-ourwriter-blog-img{
+    background: url(./img/img3.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
