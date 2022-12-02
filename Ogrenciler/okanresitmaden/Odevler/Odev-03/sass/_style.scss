@@ -7,8 +7,7 @@
     margin-left: 32%;
 }
 .imgsizecard{
-    width: 575px;
-    height: 375px;
+    @include wh(575px,375px);
 }
 .textfont{
     font-family:cursive;
