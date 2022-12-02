@@ -1,5 +1,6 @@
 const container = document.querySelector(".blogs");
 const searchForm = document.querySelector(".search");
+const form = document.querySelector(".new-blog");
 
 const renderPosts = async (term) => {
   let uri = "http://localhost:3000/posts?_sort=likes&_order=desc";
@@ -69,13 +70,13 @@ const renderPosts = async (term) => {
    <div class="modal-body ">
    <form class="update_form">
    <input type="hidden" value="${info.id}" name="id" />
-   <input type="text" value="${info.title}" name="title" required placeholder="Blog title" />
-   <input type="text" value="${info.writer}" name="writer" required placeholder="Blog writer" />
-   <input type="text" value="${info.pp}" name="pp" required placeholder="Profile Picture" />
-   <input type="date" value="${info.date}" name="date" required placeholder="Blog date" />
-   <input type="text" value="${info.image}" name="image" required placeholder="Blog image" />
-   <input type="text" value="${info.category}" name="category" required placeholder="Blog category" />
-   <input type="text" value="${info.occupation}" name="occupation" required placeholder="Occupation" />
+   <input type="text" value="${info.title}" name="title" required placeholder="Başlık" />
+   <input type="text" value="${info.writer}" name="writer" required placeholder="Yazar" />
+   <input type="text" value="${info.pp}" name="pp" required placeholder="Profil Fotoğrafı" />
+   <input type="date" value="${info.date}" name="date" required placeholder="Blog Tarihi" />
+   <input type="text" value="${info.image}" name="image" required placeholder="Görsel" />
+   <input type="text" value="${info.category}" name="category" required placeholder="Kategori" />
+   <input type="text" value="${info.occupation}" name="occupation" required placeholder="Meslek" />
    <textarea  type="text" name="body" "required placeholder="Blog body">${info.body}</textarea>
    <div class="modal-footer">
      
@@ -172,6 +173,30 @@ const updatePost = async (e) => {
     headers: { "Content-Type": "application/json" },
   });
 };
+
+// Create Blog
+const createPost = async (e) => {
+  e.preventDefault();
+  const doc = {
+    title: form.title.value,
+    writer: form.writer.value,
+    pp: form.pp.value,
+    body: form.body.value,
+    image: form.image.value,
+    date: form.date.value,
+    category: form.category.value,
+    occupation: form.occupation.value,
+  };
+  await fetch("http://localhost:3000/posts", {
+    method: "POST",
+    body: JSON.stringify(doc),
+    headers: { "Content-Type": "application/json" },
+  });
+  window.location.replace("index.html");
+  console.log(doc);
+};
+
+form.addEventListener("submit", createPost);
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
