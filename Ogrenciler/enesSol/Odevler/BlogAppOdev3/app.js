@@ -132,6 +132,7 @@ const renderPosts = async (term) => {
       <input type="text" value="${info.pp}" name="pp" required placeholder="Profile Picture" />
       <input type="date" value="${info.date}" name="date" required placeholder="Blog date" />
       <input type="text" value="${info.image}" name="image" required placeholder="Blog image" />
+      <input type="text" value="${info.category}" name="category" required placeholder="Occupation" />
     <input type="text" value="${info.occupation}" name="occupation" required placeholder="Occupation" />
     <textarea  type="text" name="body" "required placeholder="Blog body">${info.body}</textarea>
     </form>

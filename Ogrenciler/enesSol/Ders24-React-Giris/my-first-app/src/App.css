@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+#text {
+  color: red;
+  margin-top: 50px;
+  font-size: 250px;
+}
+
+.btn {
+  padding: 20px 50px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  font-size: 30px;
+}
+
+.buttonWrapper {
+  margin: 0 auto;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.increaseBtn {
+  background-color: green;
+}
+
+.decreaseBtn {
+  background-color: red;
+}

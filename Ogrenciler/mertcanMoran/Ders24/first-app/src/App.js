@@ -1,17 +1,14 @@
 import "./App.css";
-import Deneme from "./Deneme";
-import DenemeClass from "./DenemeClass";
+// import Deneme from "./Deneme";
+// import DenemeClass from "./DenemeClass";
+import StateCount from "./StateCount";
 
 function App() {
-  let name = "Mertcan";
-  let age = 25;
+  // let name = "Mertcan";
+  // let age = 25;
   return (
     <div className="App">
-      <h1>
-        Hoşgeldin {name}, yaşın: {age}
-      </h1>
-      <Deneme name={name} age={age} />
-      <DenemeClass name={name} age={age} />
+      <StateCount />
     </div>
   );
 }
