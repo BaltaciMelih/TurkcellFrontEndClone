@@ -74,7 +74,6 @@ function addBlogUI(newBlog) {
                 <p>${newBlog.content}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center gap-3">
-                        <button class="btn btn-primary">Kategori</button>
                         <span>${newBlog.author}</span>
                     </div>
                     <div class="d-flex gap-3">
