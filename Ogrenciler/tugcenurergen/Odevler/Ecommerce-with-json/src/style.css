@@ -1,3 +1,7 @@
+.logo{
+  width: 7rem;
+}
+
 .img-col {
   height: 25rem;
   align-items: center;
@@ -26,17 +30,28 @@
     cursor: pointer;
 }
 
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .product-img-col {
-  height: 25rem;
+  height: 50%;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.product-img {
+.product-img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-img-top {
   display: block;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
 }
 
 .product-header-div {
@@ -94,8 +109,9 @@
 }
 
 .img-container{
-    
   position: relative;
+  height: 100%;
+  background-color: rgb(204, 204, 204);
 }
 .img-container:hover .overlay {
   height: 100%;
@@ -126,3 +142,4 @@
   -ms-transform: translate(-50%, -50%);
 
 }
+
