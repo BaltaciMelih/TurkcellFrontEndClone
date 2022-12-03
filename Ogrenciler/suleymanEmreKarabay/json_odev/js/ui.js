@@ -28,7 +28,7 @@ class UI {
 
           const cardKategori = document.createElement("div");
           cardKategori.className = "row mb-3";
-          cardKategori.innerHTML = `<div class="col-6 text-center fs-6 fw-semibold bg-light text-white rounded">Kategori: ${blog.kategori}</div><div class="col-6 text-center fs-6 fw-semibold bg-warning rounded">Yazar: ${blog.yazarin_adi}</div>`;
+          cardKategori.innerHTML = `<div class="col-6 text-center fs-6 fw-semibold bg-light text-white rounded">Kategori: ${blog.kategori}</div><div class="col-6 text-center fs-6 text-white fw-semibold bg-dark rounded">Yazar: ${blog.yazarin_adi}</div>`;
 
           const tarih = document.createElement("div");
           tarih.className = "row text-center mb-3";
