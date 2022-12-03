@@ -3,51 +3,73 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>json odev</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
   </head>
   <body>
     
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
+    <header class="container-fluid bg-primary">
+      <div class="container py-2 text-center fw-bold">
+        BLOG
+      </div>
+        
+    </header>
+    <main class="container-fluid bg-primary">
+      <div class="container">
+        <div class="pt-5" id="eklemeBolumu">
+          <input type="hidden" class="form-control border-0" id="id" placeholder="id">
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control border-0 bg-secondary text-white" id="baslik" placeholder="baslik">
+                <label for="baslik" class="text-white">Başlık</label>
               </div>
             </div>
-          </nav>
-    </header>
-    <main >
-        <div class="row" id="mainSection"></div>
+            <div class="col-sm-4">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control border-0 bg-secondary text-white" id="yazarin_adi" placeholder="url">
+                <label for="yazarin_adi" class="text-white">Yazarın adı</label>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control border-0 bg-secondary text-white" id="kategori" placeholder="url">
+                <label for="kategori" class="text-white">Kategori</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control border-0 bg-secondary text-white" id="yazi" placeholder="director">
+            <label for="yazi" class="text-white">yazi</label>
+          </div>
+            
+            
+            
+            
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control border-0 bg-secondary text-white" id="gorsel_url" placeholder="url">
+            <label for="gorsel_url" class="text-white">Görsel url</label>
+        </div>
+            <div class="d-flex justify-content-center mb-5">
+              <button type="button" id="ekleButton" class="btn btn-dark">Ekle</button>
+              <button type="button" class="btn btn-light me-1 d-none" id="guncelle">Güncelle</button>
+            </div>
+        </div>
+        <div class="row gap-2 pt-2" id="mainSection">
+
+        </div>
+      </div>
+        
+
     </main>
 
-    <input type="text" id="baslik">
-    <input type="text" id="yazi">
-    <input type="text" id="yazarin_adi">
-    <input type="text" id="tarih_ve_saat">
-    <input type="text" id="kategori">
-    <input type="text" id="gorsel_url">
-    <button type="button" id="ekleButton" class="btn btn-primary">Ekle</button>
-    <button type="button" id="sil" class="btn btn-primary">Sil</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/ui.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

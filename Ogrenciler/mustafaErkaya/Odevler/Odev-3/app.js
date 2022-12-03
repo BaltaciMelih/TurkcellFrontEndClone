@@ -169,13 +169,7 @@ class UI {
           UI.showAlert("Film Ekleme Başarılı", 'success')
         } )
         .catch((err) => console.log(err));
-        
-          // başarılı olursa getMovies hepsini çek
-          //Get Movies()
-        
       }
-      
-     
     }
     
     static getMovies() {
@@ -203,10 +197,6 @@ class UI {
       
     }
 
-    //getMovie() tek film çekmek için
-
-    
-
     static deleteMovie(id){
      
       request.delete(id)
@@ -216,7 +206,7 @@ class UI {
         // UI.getMovies(); // buraya bak
       })
       .catch((err) => console.log(err));
-        //GetMovies()
+      
    }
 
    static updateMovie(id){
@@ -241,7 +231,7 @@ class UI {
 
    }
 
-    //UpdateMovie()
+   
 
    static addMovieUi(mtitle, msummary, mdirector, mreleaseDate, mdate, mcategory, mbanner, mid) {
      
@@ -296,7 +286,7 @@ class UI {
           `;
           
           row.appendChild(col);
-          // this.element.row.appendChild(col);  //bunu okumuyor
+          
           
     }
 
@@ -328,7 +318,7 @@ class UI {
     // filter
     static filter(e) {
       const filtercategory = row.querySelectorAll('.category');
-      // console.log(e.target.value);
+   
       const filterValue = e.target.value.toLowerCase();
 
       UI.filterCategoryUI(filtercategory, filterValue)
@@ -368,12 +358,12 @@ function deleteMov(e){
 
 function updateMov(e){
   if(e.target.classList.contains('edit')){
-    // e.target.parentElement.parentElement.parentElement.remove();
+  
     updateBtn.classList.remove('d-none')
     addBtn.classList.add('d-none')
   
     id = e.target.id;
-    // UI.updateMovie(id);
+   
     let movie = e.target.parentElement.parentElement.parentElement;
     let movieTitle = movie.querySelector('.title');
     let movieDirector = movie.querySelector('.director');

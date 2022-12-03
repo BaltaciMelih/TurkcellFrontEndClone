@@ -19,17 +19,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>ShoPet</title>
+    <title>Homepage</title>
   </head>
   <body>
     <nav
-      class="navbar bg-secondary d-flex flex-row justify-content-center align-center">
+      class="navbar d-flex flex-row justify-content-center align-center">
       <div class="container-fluid d-flex justify-content-center">
-        <a class="navbar-brand">BRAND</a>
+        <a href="index.html" class="navbar-brand d-flex justify-content-center">
+          <img class="logo"src="../images/logo.jpg" alt="">
+        </a>
       </div>
     </nav>
     <hr />
-    <nav class="navbar bg-light ms-2 me-2">
+    <nav class="navbar bg-light ms-2 me-2 mb-3">
       <div class="container-fluid d-flex justify-content-end">
         <div>
           <form class="d-flex me-5" role="search">
@@ -45,7 +47,7 @@
         </div>
 
         <div class="icons d-flex flex-row justify-content-between">
-          <i class="fa-regular fa-user text-secondary me-4"></i>
+          <a href="admin.html"><i class="fa-regular fa-user text-secondary me-4"> Admin</i></a>
           <i class="fa-regular fa-heart text-secondary me-4"></i>
           <i class="fa-solid fa-bag-shopping text-secondary"></i>
         </div>
@@ -66,12 +68,12 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12  col-md-4 col-lg-2   bg-secondary">
+        <div class="col-12 col-md-4 col-lg-2 bg-light mt-3">
           <h4>Category</h4>
           <div class="list-group list-group-flush">
             <a
               href="#"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action "
               aria-current="true">
               <i class="fa-solid fa-plus"></i>
               The current link item
@@ -90,11 +92,79 @@
             >
           </div>
         </div>
-        <div class="col-12 col-md-8 col-lg-10  bg-primary display-flex flex-row">
-            <div class="row"></div>
+        <div class="col-12 col-md-8 col-lg-10 display-flex mt-3">
+          <div class="row display-flex gap-5 justify-content-evenly mt-5 card-container">
+            <!-- <div
+              class="col-12 col-md-6 col-lg-4 card float-start"
+              style="width: 18rem">
+              <div class="img-container">
+                <img
+                src="https://res.cloudinary.com/castlery/image/private/w_900,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1634799411/crusader/variants/50440761-MC4002/Hamilton-Chaise-Sectional-Sofa-Left-Facing-Brilliant-White-Front-SG.jpg"
+                class="card-img-top"
+                alt="..." />
+                <div class="overlay">
+                  <img class="overlay-img" src="https://res.cloudinary.com/castlery/image/private/w_900,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1634799683/crusader/variants/50440761-MC4002/Hamilton-Chaise-Sectional-Sofa-Left-Facing-Brilliant-White-Lifestyle-Crop.jpg" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-product-header">Sofa</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 card float-start"
+              style="width: 18rem">
+              <div class="img-container">
+                <img
+                src="https://res.cloudinary.com/castlery/image/private/w_900,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1650451618/crusader/variants/PB-DR0163/Brighton-Oval-Dining-Table-With-4-Carrie-Chairs.jpg"
+                class="card-img-top"
+                alt="..." />
+                <div class="overlay">
+                  <img class="overlay-img" src="https://res.cloudinary.com/castlery/image/private/w_900,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1638151220/crusader/variants/52460074/Brighton-Oval-Dining-Table-Lifestyle-Crop.jpg" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-product-header">Sofa</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div> -->
+            <!--  <div class="col-12 col-md-6 col-lg-4 float-start d-flex justify-content-center">
+              <div
+              class="card"
+              style="width: 18rem">
+              <div class="img-container">
+                <img
+                src="https://res.cloudinary.com/castlery/image/private/w_900,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1663668478/crusader/variants/40550199/Emery-Queen-Size-Bed-Front__1-1663668475.jpg"
+                class="card-img-top"
+                alt="..." />
+                <div class="overlay">
+                  <img class="overlay-img" src="https://res.cloudinary.com/castlery/image/private/w_900,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1663669003/crusader/variants/40550199/Emery-Bed-Square-Set_5-1663669000.jpg" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-product-header">Sofa</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div> -->
+            </div>
+            </div> 
+
+
+            
+
+
+          </div>
         </div>
       </div>
     </div>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

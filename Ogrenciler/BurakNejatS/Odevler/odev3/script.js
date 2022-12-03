@@ -32,15 +32,15 @@ function getBlog() {
                   
 
                  <div class="container d-flex justify-content-center ">
-                 <button id="devamınıOku" type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#exampleModal" >Devamını Oku</button><div>
+                 <button id="devamınıOku" type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#a${json.id}" >Devamını Oku</button><div>
                  <div class="row ">
                  <a href="#" class="text-decoration-none  ">
                      <button class="btn btn-outline-danger  " onclick="deletePost(${json.id})">Kaldır</button>
                    </a>
                    </div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+<div class="modal fade" id="a${json.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
  
-<div class="modal-dialog"   "a${json.id}">
+<div class="modal-dialog"   >
     <div class="modal-content ">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">${json.sehirAdı}</h5>
