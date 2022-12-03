@@ -10,6 +10,7 @@ const searchBox = document.querySelector("#searchBox");
 const formNewPet = document.querySelector("#formNewPet");
 const deleteBtn = document.querySelector("#delete-btn");
 const clearFilterButton = document.querySelector(".clear-filter");
+const saveEl = document.querySelector("#saveEl");
 
 //Event Listeners
 formNewPet.addEventListener("submit", formValue);
@@ -125,7 +126,7 @@ const createPetUı = (pet) => {
     <button class="btn adopt-btn" onClick="modal()">Adopt</button>
    <div class="row">
    <button class="btn col-5 ${petId} " id="delete-btn" onClick="deletePet(${petId})">Remove</button>
-   <button class="btn col-5 edit-btn" id="edit-btn">Edit</button></div>
+   <button class="btn col-5 edit-btn" id="edit-btn" onClick="editPet(${petId})">Edit</button></div>
 
  </div>   
     `;
@@ -175,12 +176,38 @@ function clearView() {
   });
 }
 
-//Editleme
-// function editPet() {
-//   if (btn.className.contain("edit-btn")) {
-//     console.log("editbutonu");
-//   }
-// }
+//edit
+let editPets;
+function editPet(editId) {
+  request
+    .getPet("http://localhost:3000/pets")
+    .then((responseJson) => {
+      responseJson.forEach(function (pet) {
+        if (editId == pet.id) {
+          editPets = pet.id;
+          document.querySelector("#pet-name").value = pet.name;
+          document.querySelector("#pet-type-1").value = pet.type1;
+          document.querySelector("#pet-type-2").value = pet.type2;
+          document.querySelector("#pet-location").value = pet.location;
+          document.querySelector("#pet-img").value = pet.img;
+        }
+      });
+    })
+    .catch((err) => console.log(err));
+  console.log(editPets);
+  saveEl.style.innerHTML = "Edit";
+  request
+    .put(editPets, {
+      name: `${document.querySelector("#pet-name").value}`,
+      type1: `${document.querySelector("#pet-type-1").value}`,
+      type2: `${document.querySelector("#pet-type-2").value}`,
+      location: `${document.querySelector("#pet-location").value}`,
+      img: `${document.querySelector("#pet-img").value}`,
+      advert: `${publishedTime()}`,
+    })
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
+}
 
 //Kategoriye göre filtre
 let filterPet = () => {
