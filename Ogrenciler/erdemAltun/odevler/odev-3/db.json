@@ -1,22 +1,22 @@
 {
   "posts": [
     {
-      "id": 1,
       "title": "Honda'dan 2024'te hidrojen yakıt hücreli bir EV gelecek",
-      "writer": "Honda.com",
       "image": "https://cdn.motor1.com/images/mgl/g44jP4/s3/2023-honda-cr-v.webp",
-      "body": "Bataryalı elektrikli araçlar her ne kadar otomobil endüstrisine hakim olmaya çalışsa da Honda hidrojen yakıt hücreli EV'lerden (FCEV) vazgeçmiş değil. Öyle ki otomobil üreticisi, 2024'te tamamen yeni CR-V crossover'ı temel alan yeni bir FCEV'yi piyasaya süreceği bilgisini paylaştı. Marka, şimdilik bu yeni otomobil hakkında pek fazla bilgi vermekten kaçındı. Şu anda elimizdeki tek bilgi, kendisinin Ohio'daki Performans Üretim Merkezinde üretileceği. Hatırlatmak isteriz ki bu merkez; Acura NSX supercar, Acura PMC Edition modelleri ve Honda Performance Development yarış otomobillerinin üretildiği yerdir. Bu tesis, yeni FCEV gibi düşük hacimli özel modeller üretmek adına tasarlanarak 2016 yılında açıldı.",
       "date": "2022-11-25",
-      "category": "Araba"
+      "category": "Arabalar",
+      "writer": "Honda.com",
+      "body": "Bataryalı elektrikli araçlar her ne kadar otomobil endüstrisine hakim olmaya çalışsa da Honda hidrojen yakıt hücreli EV'lerden (FCEV) vazgeçmiş değil. Öyle ki otomobil üreticisi, 2024'te tamamen yeni CR-V crossover'ı temel alan yeni bir FCEV'yi piyasaya süreceği bilgisini paylaştı. Marka, şimdilik bu yeni otomobil hakkında pek fazla bilgi vermekten kaçındı. Şu anda elimizdeki tek bilgi, kendisinin Ohio'daki Performans Üretim Merkezinde üretileceği. Hatırlatmak isteriz ki bu merkez; Acura NSX supercar, Acura PMC Edition modelleri ve Honda Performance Development yarış otomobillerinin üretildiği yerdir. Bu tesis, yeni FCEV gibi düşük hacimli özel modeller üretmek adına tasarlanarak 2016 yılında açıldı.",
+      "id": 1
     },
     {
-      "id": 2,
       "title": "RTX 2060 ve GTX 1660 Serisinin Üretimi Durabilir",
-      "writer": "Teknopat.com",
       "image": "https://www.technopat.net/wp-content/uploads/2019/01/rtx-2060-1-1-640x376.jpg",
-      "body": "Çin’in Bobantang teknoloji forumlarında paylaşılan söylentilere göre, NVIDIA artık Turing mimarili bazı ekran kartlarını üretmeyi bırakıyor. Eğer söylentiler doğruysa GeForce RTX 2060, RTX 2060 Super, GTX 1660 ve 1660 Super’in üretimi duracak. Bu modeller uzun süre boyunca alt-orta segmentte tercih edilmişti, fiyat-performans olarak da oldukça başarılı kartlardı.      Aslında son dönemde tedarik zinciri kaynaklarından GeForce RTX 2060 ve RTX 2060 Super’in artık üretimden kalkacağına dair haberler geliyordu. Yeni söylentilere bakılırsa her şey doğru, ayrıca daha fazla modelin ismi geçiyor.",
       "date": "2022-11-25",
-      "category": "Teknoloji"
+      "category": "Teknoloji",
+      "writer": "Teknopat.com",
+      "body": "Çin’in Bobantang teknoloji forumlarında paylaşılan söylentilere göre, NVIDIA artık Turing mimarili bazı ekran kartlarını üretmeyi bırakıyor. Eğer söylentiler doğruysa GeForce RTX 2060, RTX 2060 Super, GTX 1660 ve 1660 Super’in üretimi duracak. Bu modeller uzun süre boyunca alt-orta segmentte tercih edilmişti, fiyat-performans olarak da oldukça başarılı kartlardı.      Aslında son dönemde tedarik zinciri kaynaklarından GeForce RTX 2060 ve RTX 2060 Super’in artık üretimden kalkacağına dair haberler geliyordu. Yeni söylentilere bakılırsa her şey doğru, ayrıca daha fazla modelin ismi geçiyor.",
+      "id": 2
     },
     {
       "title": "Audi A6 E-Tron'un resmi olmayan render'larına bakıyoruz",

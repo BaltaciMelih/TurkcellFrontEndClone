@@ -13,7 +13,7 @@ function getApi(){
     .then(response => response.json())
     .then(data => {
        vari = data;
-       console.log({vari});
+       console.log(vari);
        vari.forEach((item) => {
         blog(item.userId, item.id, item.title, item.body)
        })

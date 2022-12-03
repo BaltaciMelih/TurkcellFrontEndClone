@@ -1,14 +1,15 @@
 import './App.css';
-import Deneme from './Deneme';
-import DenemeClass from './DenemeClass';
+import React, { useState } from 'react';
 
 function App() {
-  let name = "Mert"
+  const [count, setCount] = useState(0);
   return (
-    <div className="App">
-      <h1>Deneme Basligi</h1>
-      <Deneme isim={name}/>
-      <DenemeClass isim={name}></DenemeClass>
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+      <button onClick={() => setCount(count - 1)}>Decrease</button>
     </div>
   );
 }
