@@ -9,7 +9,7 @@ function Clock() {
       setClockState(date.toLocaleTimeString());
     }, 1000);
   }, []);
-  return <div>{clockState}</div>;
+  return <div className="digital-clock">{clockState}</div>;
 }
 
 export default Clock;

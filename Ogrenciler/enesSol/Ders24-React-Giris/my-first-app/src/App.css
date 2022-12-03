@@ -1,3 +1,12 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+}
+
 .App {
   text-align: center;
 }
@@ -38,7 +47,7 @@
 }
 
 #text {
-  color: red;
+  color: white;
   margin-top: 50px;
   font-size: 250px;
 }
@@ -68,5 +77,13 @@
 }
 
 .decreaseBtn {
-  background-color: red;
+  background-color: orangered;
+}
+
+.digital-clock {
+  font-size: 250px;
+  color: white;
+  border: 2px solid red;
+  width: 50%;
+  margin: 100px auto;
 }
