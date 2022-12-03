@@ -22,32 +22,30 @@ class Request {
     const data = await response.json()
       .then(veri => {
         veri.forEach(function (e) {
-          row.innerHTML += `<div class="col-12 col-md-4">
-                <div class="card m-5" style="width: 18rem;">
+          row.innerHTML += `<div class="col-12 col-md-6 col-lg-4">
+                <div class="card m-5" style="width: 16rem;">
                     <img src="${e.image}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">${e.title}</h5>
+                      <h5 class="card-title">${e.id}-${e.title}</h5>
                       <p class="card-text">${e.text}</p>
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush">        
                       <li class="list-group-item text-danger">Category: ${e.category}</li>
                       <li class="list-group-item text-danger">Author: ${e.author}</li>
                       <li class="list-group-item text-danger">Publish Date: ${e.DateAndTime}</li>
                     </ul>
                     <div class="card-body">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" id="yaziyiGoster">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#b${e.id}" id="yaziyiGoster">
                             Look Into
                           </button>
                     </div>
                   </div>
-                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  </div>
+                  <div class="modal fade" id="b${e.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-                          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                        </div>
                         <div class="modal-body">
+                          <p>${e.text}</p>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">${e.category}</li>
                                 <li class="list-group-item">${e.author}</li>
@@ -60,7 +58,7 @@ class Request {
                       </div>
                     </div>
                   </div>
-            </div>`
+            `
         });
       })
       .catch(err => console.log(err));
@@ -104,13 +102,13 @@ const req = new Request("http://localhost:3000/posts");
 req.get('')
   .catch(err => console.log(`Hata: ${err.message}`));
 
-filterButton.addEventListener('click',()=>{
+filterButton.addEventListener('click',(e)=>{
+  e.preventDefault();
   if(filterInput.value!==''){
     req.get(`?category=${filterInput.value}`)
   }else{
     req.get('')
   }
- 
 })
 
 addButton.addEventListener("click", () => {
@@ -127,7 +125,8 @@ addButton.addEventListener("click", () => {
     .catch(err => console.log(err));
 });
 
-updateButton.addEventListener("click", () => {
+updateButton.addEventListener("click", (e) => {
+  e.preventDefault();
   req.put(dataIdInput.value, {
     image: `${document.getElementById("updateurl").value}`,
     title: `${document.getElementById("updatetitle").value}`,

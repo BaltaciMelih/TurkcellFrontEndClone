@@ -10,169 +10,180 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="container-md m-5">
-      <div class="row mb-5">
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <!-- Example single danger button -->
-          <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Add Blog
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <div class="input-group input-group-sm mb-3">
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href=""></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="me-2">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Add Blog
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="input-group input-group-sm mb-3">
 
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="URL" id="url">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Title" id="title">
-                </div>
-                <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="URL" id="url">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Title" id="title">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
 
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Text" id="text">
-                </div>
-                <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Text" id="text">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
 
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Category" id="category">
-                </div>
-                <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Category" id="category">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
 
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Author" id="author">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="datetime-local" placeholder="Date And Time" id="PublishTime" name="PublishTime">
-                </div>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a id="AddButton" class="btn btn-primary" href="#">Add</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <!-- Example single danger button -->
-          <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Update Blog
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Id" id="updateId">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="URL" id="updateurl">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Title" id="updatetitle">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Text" id="updatetext">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Category" id="updatecategory">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm" placeholder="Author" id="updateauthor">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                  <span class="input-group-text" id="inputGroup-sizing-sm">DateAndTime</span>
-                  <input type="datetime-local" id="updatePublishTime" name="PublishTime" placeholder="Date And Time">
-                </div>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a id="UpdateButton" class="btn btn-primary" href="#">Update</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <!-- Example single danger button -->
-          <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Delete Blog
-            </button>
-            <ul class="dropdown-menu">
-              <div class="input-group input-group-sm mb-3">
-                <input type="text" class="form-control" aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm" placeholder="Id" id="deleteId">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Author" id="author">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="datetime-local" placeholder="Date And Time" id="PublishTime" name="PublishTime">
+                    </div>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a id="AddButton" class="btn btn-primary" href="#">Add</a></li>
+                </ul>
               </div>
-              <li><a id="DeleteButton" class="btn btn-primary" href="#">Delete</a></li>
-            </ul>
-          </div>
+            </li>
+            <li class="me-2">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Update Blog
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Id" id="updateId">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="URL" id="updateurl">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Title" id="updatetitle">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Text" id="updatetext">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Category" id="updatecategory">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Author" id="updateauthor">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">DateAndTime</span>
+                      <input type="datetime-local" id="updatePublishTime" name="PublishTime"
+                        placeholder="Date And Time">
+                    </div>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a id="UpdateButton" class="btn btn-primary" href="">Update</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Delete Blog
+                </button>
+                <ul class="dropdown-menu">
+                  <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-sm" placeholder="Id" id="deleteId">
+                  </div>
+                  <li><a id="DeleteButton" class="btn btn-primary" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </li>
+            <img src="data:image/jpeg;base64,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" alt="">
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search by Category" aria-label="Search" id="filterInput">
+            <button class="btn btn-outline-dark" type="submit" id="filterButton">Search</button>
+          </form>
         </div>
       </div>
+    </nav>
+    <div class="container-fluid" id="blogContainer">
       <div class="row">
-        <div class="col-12 col-md-6 d-flex">
-          <button id="filterButton">
-            Ara
-          </button>
-          <input id="filterInput" type="text" class="form-control" aria-label="Sizing example input" placeholder="Search by Category"/>
+        <div class="col-12 col-md-12 d-flex justify-content-center">
+          <h4 class="fst-italic" id="carText" >Find Your <span>Own Car</span> </h4>
         </div>
       </div>
-    </div>
-    <div class="container-md m-5 bg-primary">
-      <h1 class="fst-italic d-flex justify-content-center">Bloglar</h1>
       <div class="row" id="blogRows">
-        <!-- <div class="col-12 col-md-4">
-                    <div class="card m-5" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                                YazıyıGoster
-                              </button>
-                        </div>
-                      </div>
-                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-                              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                  </ul>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div> -->
+        <!-- <div class="col-12 col-md-6 col-lg-4">
+          <div class="card m-5 d-flex align-items-center" style="width: 16rem; height: 30rem;">
+            <img
+              src="https://www.bmw.com.tr/content/dam/bmw/common/all-models/m-series/m8-coupe/2022/onepager/bmw-m8-coupe-onepager-sp-desktop.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">sdafdsaf: An item</li>
+              <li class="list-group-item">sdafdffffff: A second item</li>
+              <li class="list-group-item">aaaaaaaaaaaaaaaaaaaaaaa: A third item</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                YazıyıGoster
+              </button>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+
       </div>
     </div>
-  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
