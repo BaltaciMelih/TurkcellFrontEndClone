@@ -48,27 +48,22 @@ class Request {
     .get("http://localhost:3000/posts")
     .then((data) =>
     
-      data.forEach((item) =>{addUI(item) } )
+      data.forEach((item) =>{
+        
+        addUI(item) 
+      
+      })
     )
     .catch((err) => console.log(err));
     function addUI(item){
       row.innerHTML += `
       <div class="col-12 col-md-4 mt-5">
-            <div class="card h-100">
-              <img src="${
-                item.imgurl
-              }" class="card-img-top" style="height:38%;" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-start fw-bold">${item.title}</h5>
-                 
-                <p class="text-warning text-start fw-semibold category">${
-                  item.category
-                }</p>
-                
-                <p class="card-text text-start mt-2">${item.description.slice(
-                  0,
-                  250
-                )} </p>
+        <div class="card h-100">
+          <img src="${item.imgurl}" class="card-img-top" style="height:38%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-start fw-bold">${item.title}</h5>
+                <p class="text-warning text-start fw-semibold category">${item.category}</p>
+                <p class="card-text text-start mt-2">${item.description.slice(0,250)} </p>
                 <hr>
                 <div class="d-flex justify-content-between">
                 <p class="card-text text-start text-danger">${item.author}</p>
@@ -81,41 +76,38 @@ class Request {
                 <button type="button" class="btn btn-primary readMore" data-bs-toggle="modal" data-bs-target="#myModal-${item.id}">Read More ...</button>
                 </div>
                 <div class="modal" id="myModal-${item.id}">
-  <div class="modal-dialog">
-    <div class="modal-content">
-    
-      <div class="modal-header">
-        <h4 class="modal-title text-start">${item.title}</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-      <div class="d-flex justify-content-between">
-      <p class="text-danger">${item.author}</p>
-      <p class="text-muted">${item.date}</p>
-      </div>
-      <img src="${
-        item.imgurl
-      }" class="card-img-top" style="height:38%;" alt="...">
-      <p class="text-warning text-start mt-1">${item.category}</p>
-        <p class="text-start mt-2"> ${item.description} </p>
-      </div>
-  
-    </div>
-  </div>
-  </div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    <h4 class="modal-title text-start">${item.title}</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="d-flex justify-content-between">
+                    <p class="text-danger">${item.author}</p>
+                    <p class="text-muted">${item.date}</p>
+                    </div>
+                    <img src="${item.imgurl}" class="card-img-top" style="height:38%;" alt="...">
+                    <p class="text-warning text-start mt-1">${item.category}</p>
+                    <p class="text-start mt-2"> ${item.description} </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-      `;
-    }
+          </div>`;
+}
     
   function sil(id){
     request
     .delete(id)
     .then((msg) => console.log(msg))
     .catch((err) => console.log(err));
-  } 
-  function editPost(id,title,description,author,date,imgurl,category){
+  }
+
+
+  function editPost(id){
     let editForm = document.querySelector("#edit-form");
     let inputTitle = document.querySelector("#exampleInputTitle");
     let inputAuthor = document.querySelector("#exampleInputAuthor");
@@ -127,7 +119,6 @@ class Request {
     request
     .get("http://localhost:3000/posts")
     .then((data) =>
-    
       data.forEach((item) => {
       if(id==item.id){
         console.log("eşit");
@@ -145,8 +136,7 @@ class Request {
             date: inputDate.value.trim(),
             category: inputCategory.value.trim(),
             imgurl: inputUrl.value.trim(),
-            description: inputDescription.value.trim(),
-            
+            description: inputDescription.value.trim(), 
           })
             .then((data) => console.log(data))
             .catch((err) => console.log(err));
@@ -157,3 +147,4 @@ class Request {
     )
     .catch((err) => console.log(err));
   }
+  

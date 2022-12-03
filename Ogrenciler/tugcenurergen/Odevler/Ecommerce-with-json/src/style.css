@@ -1,25 +1,145 @@
-.img-col{
-    height: 25rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.logo{
+  width: 7rem;
 }
 
-.homepage-img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: .8;
+.img-col {
+  height: 25rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.homepage-text {
+  position: absolute;
+  top: 65%;
+  width: 90%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.product-img-col {
+  height: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.product-img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-img-top {
+  display: block;
+  height: 100%;
+  object-fit:cover;
+}
+
+.product-header-div {
+  width: 55%;
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.product-text-div {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  text-align: justify;
+}
+
+.product-text {
+  display: block;
+  width: 55%;
+  height: 100%;
+}
+
+.color1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f2b4b4;
+}
+.color2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #b7657b;
+}
+.color3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #8f4f4f;
+}
+.color4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #78c4d4;
+}
+.color5 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #62959c;
+}
+
+.img-container{
+  position: relative;
+  height: 100%;
+  background-color: rgb(204, 204, 204);
+}
+.img-container:hover .overlay {
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(231, 231, 231);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .4s ease;
+}
+
+.overlay-img {
+  object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: .7;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 
 }
 
-.homepage-text{
-    position: absolute;
-    top: 55%;
-    width: 90%;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-    
-}

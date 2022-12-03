@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hoşgeldin {name}</h1>
-      <Template name = {name}/>
+      <Template name = {name} baslik={"deneme baslik"} id={5}/>
       <TemplateClass name = {name}/>
     </div>
   );

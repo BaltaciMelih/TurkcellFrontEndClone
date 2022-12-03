@@ -1,0 +1,27 @@
+.navitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.navbar {
+    display: block;
+    margin: auto;
+    padding: auto;
+    background-color: rgb(13, 33, 33);
+    height: 50px;
+    color: white;
+}
+
+.ara {
+    display:flex;
+    justify-content: center, center;
+    
+
+}
+
+.maing {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
