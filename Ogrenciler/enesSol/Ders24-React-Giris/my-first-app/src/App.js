@@ -1,4 +1,5 @@
 import "./App.css";
+import Clock from "./Clock";
 import Deneme from "./Deneme";
 import DenemeClass from "./DenemeClass";
 import StateComponent from "./StateComponent";
@@ -12,6 +13,7 @@ function App() {
       {/* <Deneme isim={name} surname={surname} /> */}
       {/* <DenemeClass isim={name} /> */}
       <StateComponent />
+      <Clock></Clock>
     </div>
   );
 }
