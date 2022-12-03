@@ -7,7 +7,7 @@ class UI {
   addItemToUI(article) {
     const articleList = document.getElementById("articles");
     articleList.innerHTML += `
-          <div class="card p-0 mb-4 col-lg-6 col-sm-12">
+          <div class="card p-0 mb-4 col-lg-5 col-sm-12 mx-2">
             <img
               class="card-img-top img-fluid"
               src="${article.image}"

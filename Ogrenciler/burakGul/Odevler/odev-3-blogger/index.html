@@ -8,33 +8,72 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>| Gezelim Görelim |</title>
 </head>
-<body>
-    <div class="container">
-        <h3 class="text-center mt-3 mb-4">Türkiye'de Gezilecek Yerler</h3>
-        <div class="row">
-            <div class="col-md-6 my-2">
-                <div class="row">
-                    <div class="col-lg-7 img rounded-4">
-                        <img src="https://cdn2.enuygun.com/media/lib/825x620/uploads/image/aspendos-33995.webp" class="img-fluid image" alt="..." style="height:100% ;
-                        width: 100%;">
-                    </div>
-                    <div class="card-body col-5 d-flex flex-column px-2 bg-success">
-                        <h6 class="card-title my-2 city">Antalya Serik</h6>
-                        <h5 class="card-title my-2 place">Aspendos Antik Tiyatrosu</h5>
-                      <p class="card-text">Serik’e yaklaşık 8 kilometre uzaklıkta bulunan Aspendos Antik Tiyatrosu, Romalılar tarafından M.S. 2. yüzyılda inşa edilmiş.</p>
-                      <span class="card-text my-2 region">Bölge : <span>Akdeniz</span></span>
-                      <small class="date">Tarih ve Saat : <small>12:00</small></small>
-                      <div class="row p-3">
-                        <button class="btn btn-primary col-5">Düzenle</button>
-                        <button class="btn btn-danger col-5 ms-auto">Sil</button>
-                    </div>
-                    </div>
+<body>  
+    <div class="form">
+        <div class="w-90 mx-2">
+            <h3 class="text-center mt-3 mb-4">Sen de Ekle</h3>
+            <div class="form-group">
+                <label for="city">Şehir :</label>
+                <input type="text" id="city" class="form-control" placeholder="Şehir Adı">
+            </div>
+            <div class="form-group my-3">
+                <label for="place">Yer :</label>
+                <input type="text" id="place" class="form-control" placeholder="Yer Adı">
+            </div>
+            <div class="form-group">
+                <label for="image">Resim Url :</label>
+                <input type="text" id="image" class="form-control" placeholder="Resim Url Gir">
+            </div>
+            <div class="select my-3">
+                <label for="region">Bölge :</label>
+                <select name="region" id="region">
+                <option value="0">Akdeniz</option>
+                <option value="1">İç Anadolu</option>
+                <option value="2">Marmara</option>
+                <option value="3">Ege</option>
+                <option value="4">Karadeniz</option>
+                <option value="5">Güneydoğu Anadolu</option>
+                <option value="6">Doğu Anadolu</option>
+                </select>
+                <label for="category">Kategori :</label>
+                <select name="category" id="category">
+                <option value="0">Antik Kent</option>
+                <option value="1">Doğal Güzellik</option>
+                <option value="2">Müze</option>
+                <option value="3">Şehir ve Kültür Mirası</option>
+                </select>
+                <div class="summary my-3">
+                    <label for="message">Özet</label>
+                <textarea name="summary" id="summary" rows="2" class="form-control" placeholder="Özetini Yaz"></textarea>
                 </div>
+                <div>
+                    <label for="">Tarih</label>
+                    <input id="date" type="date" />
+                  </div>
+                  <div class="d-sm-flex justify-content-sm-center d-lg-block">
+                    <button
+                      type="submit"
+                      class="btn btn-primary my-3"
+                      id="add-post-btn">
+                      Ekle
+                    </button>
+                  </div>
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="row-container">
+        <h3 class="text-center mt-3 mb-4">Türkiye'de Gezilecek Yerler</h3>
+            <div class="form-group m-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="filter"
+                  id="filter"
+                  placeholder="Ara"/>
+              </div>
+        <div class="pushList"></div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>

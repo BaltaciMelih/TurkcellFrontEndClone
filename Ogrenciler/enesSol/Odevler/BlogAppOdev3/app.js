@@ -1,23 +1,20 @@
-const id = new URLSearchParams(window.location.search).get("id");
-const form = document.querySelector(".new-blog");
 const container = document.querySelector(".blogs");
-const blogs = document.querySelector(".blogs");
 const searchForm = document.querySelector(".search");
-const blogIdInput = document.getElementById("movieId");
-const categoryParent = document.getElementById("chooseFrom");
+const form = document.querySelector(".new-blog");
 
-// Render All Blogs
 const renderPosts = async (term) => {
-  let url = "http://localhost:3000/posts?_sort=likes&_order=desc";
+  let uri = "http://localhost:3000/posts?_sort=likes&_order=desc";
   if (term) {
-    url += `&q=${term}`;
+    uri += `&q=${term}`;
   }
-  const res = await fetch(url);
+  const res = await fetch(uri);
   const posts = await res.json();
 
   let template = "";
   posts.forEach((info) => {
-    template += `          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+    template += `
+           
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
     <div
       class="card text-white card-has-bg click-col"
       style="
@@ -61,14 +58,40 @@ const renderPosts = async (term) => {
       </div>
     </div>
   </div>
-  <div
-            class="modal fade"
-            id="id${info.id}"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
+
+<!-- Modal -->
+<div class="modal fade" id="edit-dialog-${info.id}" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+ <div class="modal-content">
+   <div class="modal-header">
+     <h2 class="modal-title fs-5" id="ModalLabel">Blogu Düzenle</h2>
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+   </div>
+   <div class="modal-body ">
+   <form class="update_form">
+   <input type="hidden" value="${info.id}" name="id" />
+   <input type="text" value="${info.title}" name="title" required placeholder="Başlık" />
+   <input type="text" value="${info.writer}" name="writer" required placeholder="Yazar" />
+   <input type="text" value="${info.pp}" name="pp" required placeholder="Profil Fotoğrafı" />
+   <input type="date" value="${info.date}" name="date" required placeholder="Blog Tarihi" />
+   <input type="text" value="${info.image}" name="image" required placeholder="Görsel" />
+   <input type="text" value="${info.category}" name="category" required placeholder="Kategori" />
+   <input type="text" value="${info.occupation}" name="occupation" required placeholder="Meslek" />
+   <textarea  type="text" name="body" "required placeholder="Blog body">${info.body}</textarea>
+   <div class="modal-footer">
+     
+   <button type="sumbit" class="btn btn-primary">Değişiklikleri Kaydet</button>
+ </div>
+ 
+ </form>
+   </div>
+  
+ </div>
+</div>
+</div>
+  
+  <div class="modal fade" id="id${info.id}" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">
@@ -95,8 +118,7 @@ const renderPosts = async (term) => {
                   <h6 class="my-0 text-dark d-block">${info.writer}</h6>
                   <small>${info.occupation}</small>
                 </div>
-                
-              </div></div>
+                </div></div>
                 <div class="modal-footer">
                   <button
                     type="button"
@@ -112,48 +134,44 @@ const renderPosts = async (term) => {
                     ${info.date}
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Modal -->
-<div class="modal fade" id="edit-dialog-${info.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Geri Dön"></button>
+                </div>
+                
       </div>
-      <div class="modal-body ">
-      <form class="update_form">
-      <input type="hidden" value="${info.id}" name="id" />
-      <input type="text" value="${info.title}" name="title" required placeholder="Blog title" />
-      <input type="text" value="${info.writer}" name="writer" required placeholder="Blog writer" />
-      <input type="text" value="${info.pp}" name="pp" required placeholder="Profile Picture" />
-      <input type="date" value="${info.date}" name="date" required placeholder="Blog date" />
-      <input type="text" value="${info.image}" name="image" required placeholder="Blog image" />
-      <input type="text" value="${info.category}" name="category" required placeholder="Occupation" />
-    <input type="text" value="${info.occupation}" name="occupation" required placeholder="Occupation" />
-    <textarea  type="text" name="body" "required placeholder="Blog body">${info.body}</textarea>
-    </form>
-      </div>
-      <div class="modal-footer">
-               <button
-                    type="button"
-                    class="btn btn-danger"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-        <button type="button" class="btn btn-primary">Değişiklikleri Kaydet</button>
-      </div>
-
     </div>
   </div>
-</div>`;
+    </div>
+  </div>
+  
+ 
+     `;
   });
 
   container.innerHTML = template;
+
+  const updateForms = container.querySelectorAll(".update_form");
+  updateForms.forEach((item) => item.addEventListener("submit", updatePost));
+};
+
+const updatePost = async (e) => {
+  e.preventDefault();
+  const id = e.target[0].value;
+  const updateForms = container.querySelectorAll(".update_form");
+
+  const doc = {
+    pp: updateForms[id - 1].pp.value,
+    occupation: updateForms[id - 1].occupation.value,
+    title: updateForms[id - 1].title.value,
+    image: updateForms[id - 1].image.value,
+    date: updateForms[id - 1].date.value,
+    category: updateForms[id - 1].category.value,
+    writer: updateForms[id - 1].writer.value,
+    body: updateForms[id - 1].body.value,
+  };
+  await fetch(`http://localhost:3000/posts/${id}`, {
+    method: "PUT",
+    body: JSON.stringify(doc),
+    headers: { "Content-Type": "application/json" },
+  });
 };
 
 // Create Blog
@@ -166,7 +184,7 @@ const createPost = async (e) => {
     body: form.body.value,
     image: form.image.value,
     date: form.date.value,
-    category: categoryParent.options[categoryParent.selectedIndex].text,
+    category: form.category.value,
     occupation: form.occupation.value,
   };
   await fetch("http://localhost:3000/posts", {
@@ -178,7 +196,6 @@ const createPost = async (e) => {
   console.log(doc);
 };
 
-// Search Function
 form.addEventListener("submit", createPost);
 
 searchForm.addEventListener("submit", (e) => {
@@ -186,17 +203,12 @@ searchForm.addEventListener("submit", (e) => {
   renderPosts(searchForm.term.value.trim());
 });
 
-// Delete Function
+window.addEventListener("DOMContentLoaded", () => renderPosts());
+
 container.addEventListener("click", async (e) => {
-  if (
-    e.target.className === "btn btn-danger delete-btn card-btn button-delete"
-  ) {
+  if (e.target.className.includes("delete-btn")) {
     await fetch(`http://localhost:3000/posts/${e.target.id}`, {
       method: "DELETE",
     });
   }
-
-  e.preventDefault();
 });
-
-window.addEventListener("DOMContentLoaded", () => renderPosts());
