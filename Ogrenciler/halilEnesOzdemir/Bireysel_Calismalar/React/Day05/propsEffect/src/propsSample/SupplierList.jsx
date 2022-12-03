@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { suppliers } from '../../../data/supplier';
+import SupplierItem from './SupplierItem';
 
 function SupplierList() {
+  const [supplierList, setSupplierList] = useState(suppliers);
+
+  const deleteItem = (id) => {
+    let newSuppliers = supplierList.filter((q) => q.id !== id);
+    setSupplierList(newSuppliers);
+  };
   return (
     <>
-      {suppliers &&
-        suppliers.map((item, key) => {
-          return (
-            <div>
-              <p>${item.companyName}</p>
-              <p>${item.contactName}</p>
-              <p>${item.contactTitle}</p>
-              <button>Remove</button>
-            </div>
-          );
+      {supplierList &&
+        supplierList.map((item, key) => {
+          return <SupplierItem supplier={item} deleteItem={deleteItem}></SupplierItem>;
         })}
     </>
   );

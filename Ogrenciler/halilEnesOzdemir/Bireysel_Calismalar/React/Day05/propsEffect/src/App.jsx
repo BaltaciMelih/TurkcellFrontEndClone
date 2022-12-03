@@ -1,9 +1,9 @@
-import EffectSample1 from './effectSample/EffectSample1';
+import UserList from './fetchSample/UserList';
 
 function App() {
   return (
     <>
-      <EffectSample1></EffectSample1>
+      <UserList></UserList>
     </>
   );
 }
