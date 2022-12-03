@@ -1,0 +1,21 @@
+ul li.checked {
+    background: rgba(107, 101, 101, 0.369);
+    color: #fff;
+
+}
+.close {
+position: absolute;
+right: 0;
+top: 0;
+padding: 12px 16px 12px 16px;
+color: rgb(203, 7, 7);
+font-size: 18px;
+}
+
+#deleteAll {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+
