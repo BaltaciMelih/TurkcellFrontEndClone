@@ -5,6 +5,9 @@ import AutoComplete from './materialSample/AutoComplete';
 import DataDisplay from './materialSample/DataDisplay';
 import ProductTable from './materialSample/ProductTable';
 import SupplyTable from './materialSample/SupplyTable';
+import IdHooksSample from './otherHooks/IdHooksSample';
+import LayoutHookSample from './otherHooks/LayoutHookSample';
+import RefHookSample from './otherHooks/RefHookSample';
 import About from './RouterSample/About';
 import CartPage from './RouterSample/CartPage';
 import Contact from './RouterSample/Contact';
@@ -54,7 +57,16 @@ function App() {
           <Link to='/supplytable'>Supply Table</Link>
         </li>
         <li>
-          <Link to='cart'>Cart</Link>
+          <Link to='/cart'>Cart</Link>
+        </li>
+        <li>
+          <Link to='/refsample'>useRef</Link>
+        </li>
+        <li>
+          <Link to='/layouthook'>layoutHook</Link>
+        </li>
+        <li>
+          <Link to='/idhook'>idHook</Link>
         </li>
       </ul>
       <Routes>
@@ -68,6 +80,9 @@ function App() {
         <Route path='/autocomplete' element={<AutoComplete />}></Route>
         <Route path='/supplytable' element={<SupplyTable />}></Route>
         <Route path='/cart' element={<CartPage />}></Route>
+        <Route path='/refsample' element={<RefHookSample />}></Route>
+        <Route path='/layouthook' element={<LayoutHookSample />}></Route>
+        <Route path='/idhook' element={<IdHooksSample />}></Route>
         <Route path='*' element={<NoMatch />}></Route>
       </Routes>
       <h1>Site Footer</h1>
