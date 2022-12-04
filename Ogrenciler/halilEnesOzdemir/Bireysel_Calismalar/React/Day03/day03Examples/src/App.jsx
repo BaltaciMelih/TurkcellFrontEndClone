@@ -1,9 +1,9 @@
-import StateSample2 from './stateSample/StateSample2';
+import IfElseSample from './jsxSample/IfElseSample';
 
 function App() {
   return (
     <>
-      <StateSample2></StateSample2>
+      <IfElseSample></IfElseSample>
     </>
   );
 }

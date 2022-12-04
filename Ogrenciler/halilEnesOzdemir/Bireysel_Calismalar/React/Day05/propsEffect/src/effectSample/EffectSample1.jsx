@@ -7,7 +7,7 @@ function EffectSample1() {
   const [sayac2, setSayac2] = useState(0);
 
   useEffect(() => {
-    console.log('Bu kod satırı sadece component yüklendiğinde çalışır.');
+    console.log('Bu başlangıçta çalşışır');
   }, []);
 
   useEffect(() => {
