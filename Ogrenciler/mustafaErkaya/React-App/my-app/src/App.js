@@ -1,6 +1,14 @@
 // import logo from "./logo.svg"
 import './style.css'
 import Test from './test'
+// import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'; //genele import et
+import Button from './components/Button';
+
+function Btn(props){
+  return <button>{props.text}</button>
+}
+
 
 function App() {
   const todos = ["todo1", "todo2", "todo3"]
@@ -20,6 +28,13 @@ function App() {
             </li>
           ))}
         </ul>
+        <Btn text='sıkıntı butonu' />
+        <div>
+        <Button val='buton örneği' variant="success"/>
+        <Button val='buton örneği' variant="danger"/>
+        <Button val='buton örneği' variant="info"/>
+        </div>
+        
       </main>
      {/* <img src="/logo192.png" alt="" /> */}
      {/* <img src={logo} alt="" /> */}
