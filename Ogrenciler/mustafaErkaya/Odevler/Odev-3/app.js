@@ -124,17 +124,18 @@ ${a.getHours()}:${a.getMinutes()}
 
 class UI {
     constructor(){
-      this.movies = [];
+      this.movies ;
       this.element;
     }
 
-    static init(){ // başlangıçta çalıştırıyorum
+     static async init(){ // başlangıçta çalıştırıyorum
       
-      UI.getMovies();
+      
       // this.element = StoreElement.init();
+      await console.log( UI.getMovies());
+    
       
-      // UI.listenEvents();
-      // console.log(this.element.bannerInput);
+      
     }
 
     
@@ -179,16 +180,16 @@ class UI {
       .get()
       .then((data) => {
         data.forEach((item) => {
-          // films.push(item);
-          // console.log('films', films);
-          // this.movies = films
-          // console.log('thismovies',typeof this.movies);
+          films.push(item);
+          console.log('films', films);
+          
          
-          UI.addMovieUi(item.title, item.summary,  item.director, item.releaseDate ,item.date, item.category, item.banner, item.id);
-          // return this.movies;
+         
+          // UI.addMovieUi(item.title, item.summary,  item.director, item.releaseDate ,item.date, item.category, item.banner, item.id);
+          
         })
         
-
+        return films;
       })
       .catch((err) => console.log(err));
 
