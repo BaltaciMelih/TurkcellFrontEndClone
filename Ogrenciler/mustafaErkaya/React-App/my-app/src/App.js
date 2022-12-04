@@ -4,6 +4,7 @@ import Test from './test'
 // import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; //genele import et
 import Button from './components/Button';
+import Tab from './components/Tab';
 
 function Btn(props){
   return <button>{props.text}</button>
@@ -15,6 +16,10 @@ function App() {
 
   return (
     <div className="App">
+      <div style={{padding: 20}}>
+        <Tab/>
+      </div>
+
       <h3>{process.env.NODE_ENV}</h3>
       <Test/>
       <main id='main' className='test'>
