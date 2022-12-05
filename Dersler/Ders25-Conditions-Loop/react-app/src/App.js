@@ -11,6 +11,30 @@ function App() {
   //   <li key={4}>Deneme 4</li>,
   // ];
 
+  const data = [
+    {
+      id: 1,
+      name: "Beşiktaş",
+      color1: "Black",
+      color2: "White",
+      w: 300,
+    },
+    {
+      id: 2,
+      name: "Galatasaray",
+      color1: "Red",
+      color2: "Yellow",
+      w: 300,
+    },
+    {
+      id: 3,
+      name: "Fenerbahçe",
+      color1: "Blue",
+      color2: "Yellow",
+      w: 300,
+    },
+  ];
+
   return (
     <div className="App">
       {/* <ul>
@@ -37,6 +61,22 @@ function App() {
           }
         })}
       </ul> */}
+      <ul>
+        {data.map((item, index) => {
+          return (
+            <li
+              key={index}
+              style={{
+                background: item.color1,
+                color: item.color2,
+                width: `${item.w}px`,
+              }}
+            >
+              {item.name}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
