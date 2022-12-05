@@ -2,9 +2,9 @@ import React from 'react';
 const DenemeClass =(props)=> {
  
 
-     function handleClick(e) {
-       e.target.parentElement.parentElement.remove();
-     }
+    //  function handleClick(e) {
+    //    e.target.parentElement.parentElement.remove();
+    //  }
     return (
       <div className="container-fluid ">
         <div className="container-xxl foodCard d-flex  flex-wrap"> 
@@ -17,7 +17,7 @@ const DenemeClass =(props)=> {
            <p className="foodContent" >{object.foodContent}.....</p>
            <div className="authorName text-end">{object.authorName}</div>
            <div className="date text-end">{object.date}</div>
-          <button type='button' onClick={handleClick}  className='bg-dark text-light '>Delete</button>
+          <button type='button' onClick={(e)=>props.deleteFoodsProp(object)}  className='bg-dark text-light '>Delete</button>
          </div>
        </div>   
         ))}
