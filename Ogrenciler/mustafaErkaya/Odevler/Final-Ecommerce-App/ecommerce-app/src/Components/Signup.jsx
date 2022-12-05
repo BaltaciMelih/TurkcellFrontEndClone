@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
+import {auth} from '../Config/Config'
 import {Link} from 'react-router-dom'
+
+
 
 export const Signup = () => {
 
@@ -14,6 +17,14 @@ export const Signup = () => {
     const handleSignup =(e) => {
         e.preventDefault();
         // console.log(fullName, email, password, phone);
+        // firebaseden gelen email ve pasword ile kullanıcı oluşturma metodu
+        auth.createUserWithEmailAndPassword(email, password)
+        .then((credential) => {
+            console.log(credential)
+        })
+        .catch((error) => {
+            setErrorMsg(error.message)
+        })
     }
 
   return (
