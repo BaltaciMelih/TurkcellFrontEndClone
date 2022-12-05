@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* düzenleme yapabilirim */
+
+.container {
+  height: 100vh;
+}
+
+.link{
+  text-decoration: none;
+}
