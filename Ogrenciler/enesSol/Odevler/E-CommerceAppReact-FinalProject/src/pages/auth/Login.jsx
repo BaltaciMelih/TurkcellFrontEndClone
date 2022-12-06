@@ -29,7 +29,7 @@ const Login = () => {
             Login With Google
           </button>
           <span className={styles.register}>
-            <p>Don't have an account</p>
+            <p>Don't have an account?</p>
             <Link to="/register">Register</Link>
           </span>
         </div>
