@@ -6,6 +6,7 @@ import { NotFound } from './Components/NotFound';
 import { Signup } from './Components/Signup';
 import Cart from './Components/Cart'
 import Profile from './Components/Profile';
+import Carousel from './Components/Carousel';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/login' element = {<Login/>}/>
         <Route path='/cart' element = {<Cart/>}/>
         <Route path='/userprofile' element = {<Profile/>}/>
+        <Route path='/home' element = {<Carousel/>}/>
         <Route path='/*' element = {<NotFound/>}/> 
 
       </Routes>

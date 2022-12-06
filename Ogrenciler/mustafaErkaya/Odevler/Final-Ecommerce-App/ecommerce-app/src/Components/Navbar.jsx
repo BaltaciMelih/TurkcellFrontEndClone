@@ -12,7 +12,7 @@ const Navbar = () => {
 
         <nav className="navbar navbar-expand-lg bg-info">
   <div className="container-fluid">
-    <NavLink className="navbar-brand" href="#"> <img src={logo} alt="" style={{width: 50}}/></NavLink>
+    <NavLink className="navbar-brand" to="/home"> <img src={logo} alt="" style={{width: 50}}/></NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -29,7 +29,7 @@ const Navbar = () => {
         
       </ul>
       
-      <Link to="/signup"><button className='btn btn-danger'>Sing Up</button> </Link>
+      <Link to="/signup"><button className='btn btn-danger'>Sign Up</button> </Link>
           <Link to="/login"><button className='btn btn-success'>Login </button></Link>
        
        <Link to="/cart">

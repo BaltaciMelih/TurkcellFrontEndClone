@@ -129,7 +129,7 @@ export const Signup = () => {
                     <div className='d-flex flex-column flex-md-row justify-content-between align-items-center mt-4'>
                     <span>Already have an account Login
                     <Link to="/login" className='link'> Here</Link></span>
-                    <button type='submit' className='btn btn-success btn-md'>SING UP</button>
+                    <button type='submit' className='btn btn-success btn-md'>SIGN UP</button>
                     </div>
                 </form>
             </div>
