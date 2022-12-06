@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import "./App.css";
 import DenemeClass from "./DenemeClass";
 import SearchBar from "./SearchBar";
+import StateComponentUyg from "./StateComponentUyg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
+import Footer from './Footer';
 class App extends Component {
+
+
   state={
     foods:[],
 
@@ -90,6 +94,8 @@ class App extends Component {
         foods={filteredFoods}
         deleteFoodsProp={this.deleteFoods}
         />
+        <StateComponentUyg/>
+        <Footer/>
       </div>
     );
     }
