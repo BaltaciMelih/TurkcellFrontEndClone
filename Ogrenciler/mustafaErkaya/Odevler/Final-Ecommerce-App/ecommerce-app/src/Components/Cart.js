@@ -1,14 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar'
-import  Products  from './Products'
 
-
-export const Home = () => {
+const Cart = () => {
   return (
     <>
         <Navbar/>
-      {/* carosel */}
-        <Products/>
+        <div>your cart is empty</div>
     </>
   )
 }
+
+export default Cart
