@@ -10,23 +10,91 @@ const summary = document.querySelector('#summary');
 const date = document.querySelector('#date');
 
 
-        fetch('http://localhost:3000/travel')
-        .then(response => response.json())
-        .then(data => {
+class Request {
+  constructor(url) {
+    this.url = url;
+  }
+
+    get() {
+      return new Promise((resolve, reject) => {
+        fetch(this.url)
+          .then((response) => response.json())
+          .then((data) => resolve(data))
+          .catch((err) => reject(err));
+      });
+    }
+    post(data) {
+      return new Promise((resolve, reject) => {
+        fetch(this.url, {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: { "Content-Type": "application/json" },
+        })
+          .then((response) => response.json())
+          .then((data) => resolve(data))
+          .catch((err) => reject(err));
+      });
+    }
+    put(id,data) {
+      this.url=`${this.url}${id}`;
+      return new Promise((resolve, reject) => {
+        fetch(this.url, {
+          method: "PUT",
+          body: JSON.stringify(data),
+          headers: { "Content-Type": "application/json" },
+        })
+          .then((response) => response.json())
+          .then((data) => resolve(data))
+          .catch((err) => reject(err));
+          
+      });
+    }
+    delete(id) {
+       this.url = `${this.url}${id}`
+      return new Promise((resolve, reject) => {
+        fetch(this.url, {
+          method: "DELETE",
+
+        })
+          .then((response) => resolve("Veri Silme Başarılı", response))
+          .then(() => {
+            this.url= "http://localhost:3000/travel/";
+          })
+          
+          .catch((err) => reject(err));
+      });
+    }
+}
+  const request= new Request('http://localhost:3000/travel/')
+
+  
+      
+  // fetch('http://localhost:3000/travel/')
+  //       .then(response => response.json())
+  //       .then(data => {
             
-            data.forEach((item) => {
-                
-             sendUi(item.id,item.city, item.place, item.image,item.region,item.category,item.summary,item.date,)
-            });
-         })
+  //           data.forEach((item) => {
+  //               console.log(item);
+  //            sendUi(item.id,item.city, item.place, item.image,item.region,item.category,item.summary,item.date,)
+  //           });
+  //        })
+         
+request.get()
+.then((data) => {
+  data.forEach((item) => 
+  {
+    sendUi(item.city,item.place,item.image,item.summary,item.region,item.date,item.id);
+  })
+})
 
 
-function sendUi(tcity,tplace,timage,tsummary,tregion,tdate){
+function sendUi(tcity,tplace,timage,tsummary,tregion,tdate,tid){
     let col = document.createElement("div");
-    col.className = "col-md-6";
-    col.innerHTML = `<img src="${timage}" class="img-fluid image" alt="..." style="height:100% ;
-    width: 100%;">
-</div>
+    col.className = "col-md-6 my-3";
+    col.innerHTML = `<div class="row">
+    <div class="col-7">
+    <img src="${timage}" class="img-fluid image" alt="...">
+    </div>
 <div class="card-body col-5 d-flex flex-column px-2 bg-success">
     <h6 class="card-title my-2 city">"${tcity}"</h6>
     <h5 class="card-title my-2 place">"${tplace}"</h5>
@@ -35,8 +103,11 @@ function sendUi(tcity,tplace,timage,tsummary,tregion,tdate){
   <span class="card-text my-2 category">Kategori : <span>"${tregion}"</span></span>
   <small class="date">Tarih ve Saat : <small>"${tdate}"</small></small>
   <div class="row p-3">
-    <button class="btn btn-primary col-5">Düzenle</button>
-    <button class="btn btn-danger col-5 ms-auto">Sil</button>`;
+    <button class="btn btn-primary col-5" id=${tid}>Düzenle</button>
+    <button class="btn btn-danger col-5 ms-auto" id=${tid}>Sil</button>
+    </div></div></div>`;
+
+pushList.appendChild(col);
 }
 
 addPost.addEventListener("submit", (e) => {
@@ -131,7 +202,7 @@ addPost.addEventListener("submit", (e) => {
   document.querySelector("#filter").addEventListener("keyup", filterPosts);
 function filterPosts(e) {
   const filterValue = e.target.value.toLowerCase();
-  let postItems = document.querySelectorAll(".card-subtitle");
+  let postItems = document.querySelectorAll(".region");
   postItems.forEach((postItems) => {
     let text = postItems.textContent.toLowerCase();
     if (text.indexOf(filterValue) === -1) {
