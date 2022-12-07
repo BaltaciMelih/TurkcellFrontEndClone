@@ -5,8 +5,12 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'; //genele import et
 // import Button from './components/Button';
 // import Tab from './components/Tab';
-
-import HelloWorld from "./components/HelloWorld";
+// import HelloWorld from "./components/HelloWorld";
+import ReactCC from "./components/ReactCC";
+import ReactFC from "./components/ReactFC";
+import { useState } from "react";
+import { useEffect } from "react";
+import UserInfo from './components/UserInfo'
 
 
 
@@ -21,15 +25,33 @@ import HelloWorld from "./components/HelloWorld";
 function App() {
   // const todos = ["todo1", "todo2", "todo3"]
 
+  const [data, setData] = useState({})
+
+  useEffect(() => {
+    setData({
+      name: "Mustafa",
+      age: 25,
+      job: "Frontend Dev."
+    })
+  }, [])
+
+  console.log(data)
+
   return (
     <div className="App">
 
-   
+        <UserInfo data={data} setData={setData}/>
+
         <p>selamun aleyküm</p>
-        <HelloWorld/>
-
-
-
+        <ReactFC status={'iyi bir şekilde'} style={{background: "red" , color: "white"}}/>
+        <ReactCC status={'çöp bu'} />
+        <ReactFC/>
+        <ReactCC/>
+       
+    
+      
+    
+        {/* <HelloWorld/> */}
 
 
       {/* <div style={{padding: 20}}>
