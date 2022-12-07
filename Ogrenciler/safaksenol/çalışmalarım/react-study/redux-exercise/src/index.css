@@ -5,39 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-/* düzenleme yapabilirim */
-
-.container {
-  height: 100vh;
-
-}
-
-.link{
-  text-decoration: none;
-}
-
-/* navbar */
-.navbar .cart {
-  position: relative;
-} 
-.navbar .cart .count {
-  position: absolute;
-  top: -5px;
-  right: 0;
-  color: white;
-} 
-
-/* sign up */
-
-.signup input:focus  {
-  background-color: black!important;
-  color: white;
-  opacity: 0.8;
 }
