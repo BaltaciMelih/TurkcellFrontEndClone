@@ -25,7 +25,9 @@ function App() {
     },
   ]);
 
-  const sorted = data.sort((a, b) => (a.grade < b.grade ? -1 : 1));
+  const a = [...data];
+  const sorted = data.sort((a, b) => a.grade - b.grade);
+  const sorted2 = a.sort((a, b) => b.grade - a.grade);
 
   // console.log(sorted);
   const getGrades = (item) => {
@@ -45,6 +47,17 @@ function App() {
   return (
     <div className="App">
       {sorted.map((item, index) => {
+        return (
+          <div key={index} className={`gradeStatus ${getGrades(item)}`}>
+            <p>
+              Sınav sonucuna göre harf notu: {getGrades(item)} - Name:
+              {item.name} - Grade: {item.grade}
+            </p>
+          </div>
+        );
+      })}
+      <br />
+      {sorted2.map((item, index) => {
         return (
           <div key={index} className={`gradeStatus ${getGrades(item)}`}>
             <p>
