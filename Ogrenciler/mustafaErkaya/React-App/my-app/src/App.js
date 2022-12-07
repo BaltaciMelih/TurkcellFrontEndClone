@@ -1,22 +1,31 @@
 // import logo from "./logo.svg"
-import './style.css'
-import Test from './test'
+// import './style.css'
+// import Test from './test'
 // import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; //genele import et
-import Button from './components/Button';
-import Tab from './components/Tab';
+// import 'bootstrap/dist/css/bootstrap.min.css'; //genele import et
+// import Button from './components/Button';
+// import Tab from './components/Tab';
 
-function Btn(props){
-  return <button>{props.text}</button>
-}
+// function Btn(props){
+//   return <button>{props.text}</button>
+// }
 
 
 function App() {
-  const todos = ["todo1", "todo2", "todo3"]
+  // const todos = ["todo1", "todo2", "todo3"]
 
   return (
     <div className="App">
-      <div style={{padding: 20}}>
+
+
+        <p>selamun aleyküm</p>
+
+
+
+
+
+
+      {/* <div style={{padding: 20}}>
         <Tab/>
       </div>
 
@@ -38,12 +47,12 @@ function App() {
         <Button val='buton örneği' variant="success"/>
         <Button val='buton örneği' variant="danger"/>
         <Button val='buton örneği' variant="info"/>
-        </div>
+        </div> */}
         
-      </main>
-     {/* <img src="/logo192.png" alt="" /> */}
-     {/* <img src={logo} alt="" /> */}
-    </div>
+      {/* </main> */}
+      {/* <img src="/logo192.png" alt="" /> */}
+      {/* <img src={logo} alt="" /> */}
+     </div>
   );
 }
 
