@@ -6,6 +6,13 @@
 // import Button from './components/Button';
 // import Tab from './components/Tab';
 
+import HelloWorld from "./components/HelloWorld";
+
+
+
+
+
+
 // function Btn(props){
 //   return <button>{props.text}</button>
 // }
@@ -17,9 +24,9 @@ function App() {
   return (
     <div className="App">
 
-
+   
         <p>selamun aleyküm</p>
-
+        <HelloWorld/>
 
 
 
