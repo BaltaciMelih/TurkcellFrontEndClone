@@ -1,10 +1,16 @@
-import './App.css';
-import Deneme from './Deneme';
+import "./App.css";
+import Deneme from "./Deneme";
+import DenemeClass from "./DenemeClass";
+import StateComponent from "./StateComponent";
+
 function App() {
+  let name = "Varol";
   return (
     <div className="App">
-        <h1>Deneme Başlığı {console.log("Deneme")}</h1>
-        <Deneme />
+      <h1>Hoşgeldin {name} </h1>
+      <Deneme isim={name} id={5} />
+      <DenemeClass isim={name}></DenemeClass>
+      <StateComponent />
     </div>
   );
 }
