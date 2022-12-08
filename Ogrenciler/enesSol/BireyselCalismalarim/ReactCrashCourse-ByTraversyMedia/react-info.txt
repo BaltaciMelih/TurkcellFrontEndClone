@@ -1,0 +1,21 @@
+React is a library for building user interfaces which runs on the client as a SPA (Single Page Application).
+And can be used to build full stack apps by communicating with a server/API (such as MERN).
+
+PROS of Using React
+Structures the "view" layer of your apps
+Reuseable components with their own state
+JSX
+Interactive UIs with Virtual DOM
+
+Components 
+Components render/return JSX (Javascript Syntax Extension)
+Components can also take in "props" : <Header title="My Title" />
+Components can have "state" which is an object that determines how a component renders and behaves.
+"App" or "global" state refers to state that is available to the entire UI.
+
+React Hooks
+React Hooks are functions that let us hook into the React state and lifecycle features from function components.
+
+useState - Returns a stateful value and function to update it.
+useEffect - Perform side effects in function components.
+
