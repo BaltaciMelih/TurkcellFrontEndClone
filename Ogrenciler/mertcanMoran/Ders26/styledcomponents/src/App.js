@@ -19,8 +19,8 @@ function App() {
     },
     {
       id: 3,
-      name: "berat",
-      status: "success",
+      name: "nejat",
+      status: "secondary",
       grade: 90,
     },
     {
@@ -60,6 +60,7 @@ function App() {
   `;
   const PrimaryButton = styled(Button)`
     color: #fff;
+    margin: 10px;
     background-color: #1901a1;
     font-size: ${(props) => (props.size ? `${props.size}px` : "16px")};
   `;
@@ -77,7 +78,7 @@ function App() {
       <hr />
       <button className="customButton">Custom Button</button>
       <Button>Styled Button</Button>
-      <PrimaryButton size="30">Primary Button</PrimaryButton>
+      <PrimaryButton size="20">Primary Button</PrimaryButton>
       <hr />
       <div className={styles.moduleCss}>Merhaba</div>
       <button className={styles.customButton}>Selam</button>
