@@ -11,14 +11,12 @@ const App = () => {
         cardTime="1 Minute ago"
         image="https://picsum.photos/id/1/200/300"
       />
-
       <CardComp
         cardTitle="Card 2"
         cardText="lorem ipsum 2"
         cardTime="2 Minute ago"
         image="https://picsum.photos/id/10/200/300"
       />
-
       <CardComp
         cardTitle="Card 3"
         cardText="lorem ipsum 3"

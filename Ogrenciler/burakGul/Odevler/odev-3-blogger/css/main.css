@@ -8391,6 +8391,9 @@ textarea.form-control-lg {
 
 body {
   background-color: lightblue; }
+  body .row-container .pushList .summary {
+    max-height: 200px;
+    overflow-y: scroll; }
   body .img {
     overflow: hidden;
     padding: 0 !important; }

@@ -1,75 +1,258 @@
 {
   "travel": [
-   
-      { "id": 1, 
-        "city": "Serik Antalya", 
-        "place": "Aspendos Antik Tiyatrosu", 
-        "image":"https://cdn2.enuygun.com/media/lib/825x620/uploads/image/aspendos-33995.webp", 
-        "region": "Akdeniz",
-        "category":"Antik Kent", 
-        "summary":" Serik’e yaklaşık 8 kilometre uzaklıkta bulunan Aspendos Antik Tiyatrosu, Romalılar tarafından M.S. 2. yüzyılda inşa edilmiş. Anadolu’da Romalılar tarafından inşa edilen tiyatrolar arasında sahnesini günümüze kadar koruyan en eski tiyatro. Bu yüzden de Antalya’da en çok ziyaretçi alan yerler arasında. 12 bin kişiyi ağırlama kapasitesine sahip tiyatroda günümüzde hala Uluslararası Aspendos Opera ve Bale Festivali gibi önemli etkinliklere ev sahipliği yapıyor.", 
-        "date":"06-08-1995" },
-
-      { "id": 2, 
-        "city": "Kepez Antalya", 
-        "place": "Düden Şelalesi", 
-        "image":"https://cdn2.enuygun.com/media/lib/825x620/uploads/image/duden-selalesi-9540.webp", 
-        "region": "Akdeniz",
-        "category":"Doğal Güzellik", 
-        "summary":"Antalya Antalya’nın ilçesi Kepez’in sınırlarında konumlanan Düden Şelalesi, Antalya’nın en çok ziyaretçi alan noktalarından biri. Yaklaşık 40 kilometre yükseklikten akan suyun sesini dinlemek ve Antalya’nın sıcağında biraz olsun serinlemek için tercih edebileceğin şelale çevresinde piknik yapabileceğin alanlar bulunuyor. Piknik hazırlığı yapmadan gittiysen de üzülme şelalenin çevresinde yemek yiyebileceğin restoranlar var." , "date":"06-08-1995" },
-
-      { "id": 3, 
-        "city": "Kaş Antalya",
-        "place": "Kaputaş Plajı", 
-        "image":"https://cdn2.enuygun.com/media/lib/825x620/uploads/image/kaputas-33876.webp", 
-        "region": "Akdeniz",
-        "category":"Doğal Güzellik", 
-        "summary":"Kaputaş Plajı, Türkiye’nin en güzel plajı desem abartmış olmam çünkü dünya basınının hazırladığı listelerde bile kendine yer buluyor. 186 basamaktan inerek plaja ulaşmak biraz zorlayıcı olsa da gittiğine değeceğine yüzde yüz emin olabilirsin. Turkuaz rengin belki de daha önce hiç görmediğin bir tonunu görebileceğin plajın suyu yeraltı sularının süzülerek gelmesiyle oluşuyor. Bu yüzden de Antalya’nın diğer plajlarına göre daha serin. Serin suların kollarına kendini bırakmak için Antalya uçak bileti almaya ne dersin?" , 
-        "date":"06-08-1995" },
-      
-      { "id": 4, 
-        "city": "Kaş Antalya", 
-        "place": "Patara Plajı", 
-        "image":"https://cdn2.enuygun.com/media/lib/825x620/uploads/image/patara-plaji-33872.webp", 
-        "region": "Akdeniz", 
-        "category":"Doğal Güzellik", 
-        "summary":"12 kilometre uzunluğundaki Patara Plajı’na Patara Antik Kenti’nin içinden bir yolculuk yapılarak ulaşılıyor. Hem böylece bir taşla iki kuş vurup antik kenti de gezmiş oluyorsun. Sonrasında plajın incecik kumlarına uzanarak güneşin tadını çıkarıyorsun. Patara Plajı’nın en önemli özelliği caretta carettaların yumurtalarını bıraktıkları plaj olması. Bu nedenle de koruma altına alınmış ve saat 20.00’a kadar plaj halkın kullanımına açık. Sonrasında plajın sahibi caretta carettalar plajın keyfini çıkarıyorlar." ,
-        "date":"06-08-1995" },
-
-      { "id": 5, 
-        "city": "Silifke Mersin", 
-        "place": "Cennet Cehennem Mağaraları", 
-        "image":"https://cdn2.enuygun.com/media/lib/825x620/uploads/image/cennet-cehennem-mersin-33996.webp", 
-        "region": "Akdeniz",
-        "category":"Doğal Güzellik",  
-        "summary":"Silifke’ye 25 kilometre uzakta olan Cennet Cehennem Mağaraları, yeraltı sularının kireç taşlarını eritmesiyle çöken iki büyük çukur aslında. Cennet çöküğüne inmek için 452 tane basamağı olan bir merdiven kullanılıyor. 300. basamakta Meryem Ana Kilisesi’ni görebilirsin. Çöküğün güney ucunda ise Zeus Tapınağı bulunuyor. O kadar basamağı inmişken tapınağı da mutlaka görmelisin. Cennet Çöküğünden çıkıp 75 metre kuzeye gittiğinde seni Cehennem Çöküğü karşılıyor. Çöküğün içine inmek mümkün değil ancak yukardan görebileceğin bir teras var." , 
-        "date":"06-08-1995" },
-
-      { "id": 6, 
-        "city": "Erdemli Mersin", 
-        "place": "Kız Kalesi", 
-        "image":"https://cdn2.enuygun.com/media/lib/825x620/uploads/image/kiz-kalesi-34371.webp", 
-        "region": "Akdeniz",
-        "category":"Antik Kent", 
-        "summary":"Kıyıdan yaklaşık 600 metre uzaklıkta bir adada inşa edilmiş olan Kız Kalesi, birçok efsaneye konu oluyor. 8 tane burçla korunan kalenin avlusunda kilise ve sarnıç bulunuyor. Karayla bağlantısı zaman içerisinde kesilmiş olsa da bulunduğu mahalleye ve plaja da adını veriyor. Kız Kalesi Plajı’nda denizin keyfini çıkardıktan sonra kıyıdaki balıkçı tekneleriyle kaleyi gezmeye gidebilirsin. “Ben kendime güveniyorum kaleye kadar yüzerim” dersen orası sana kalmış." , 
-        "date":"06-08-1995" },
-
-      { "id": 7, 
-      "city": "Eğirdir Isparta", 
-      "place": "Eğirdir Gölü", 
-      "image":"https://cdn2.enuygun.com/media/lib/825x620/uploads/image/egirdir-golu-33997.webp", 
+    {
+      "id": 1,
+      "city": "Serik Antalya",
+      "place": "Aspendos Antik Tiyatrosu",
+      "image": "https://cdn2.enuygun.com/media/lib/825x620/uploads/image/aspendos-33995.webp",
       "region": "Akdeniz",
-      "category":"Doğal Güzellik", 
-      "summary":"Türkiye’nin en büyük ikinci tatlı su gölü olan Eğirdir Gölü, ortalama 12 metre derinliğe sahip. Günün farklı saatlerinde değişik manzaralara sahne olan gölün çevresinde elma ve şeftali bahçeleri ve plajlar bulunuyor. Gölün kuzeybatı kısmında yer alan Bedre Plajı ve İstasyon mahallesinde konumlanan Altınkum Plajı, göl çevresinde yüzebileceğin en güzel iki plaj. Ayrıca gölde iki küçük ada da var. Can Ada ve Yeşilada son yıllarda göl suları azaldığı için kıyıya ve birbirlerine bağlı durumdalar." , 
-      "date":"06-08-1995" },
-
-      { "id": 8, 
-      "city": "Kuyucak Isparta", 
-      "place": "Kuyucak Köyü", 
-      "image":"https://cdn2.enuygun.com/media/lib/825x620/uploads/image/kuyucak-14734.webp", 
-      "region": "Akdeniz", 
-      "category":"Şehir ve Kültür Mirası", 
-      "summary":"Isparta şehir merkezinden yaklaşık 50 kilometre uzakta olan Kuyucak Köyü için Türkiye’nin lavanta cenneti diyebiliriz. Fransa’da bulunan Provence bölgesine benzetilen köy, Turizm ve Kültür Bakanlığı’nın Gelecek Turizm’de projesinin bir ürünü aslında. Lavanta kokulu köy olarak bilinen köyde bulunan lavanta tarlalarını mosmor görmek istersen Haziran ayının sonlarında ya da en geç Temmuz ayının başlarında gitmelisin. En iyi lavanta tarlalarını görmek için ara sokaklara girmeni öneririm." ,
-      "date":"06-08-1995" }
+      "category": "Antik Kent",
+      "summary": " Serik’e yaklaşık 8 kilometre uzaklıkta bulunan Aspendos Antik Tiyatrosu, Romalılar tarafından M.S. 2. yüzyılda inşa edilmiş. Anadolu’da Romalılar tarafından inşa edilen tiyatrolar arasında sahnesini günümüze kadar koruyan en eski tiyatro. Bu yüzden de Antalya’da en çok ziyaretçi alan yerler arasında. 12 bin kişiyi ağırlama kapasitesine sahip tiyatroda günümüzde hala Uluslararası Aspendos Opera ve Bale Festivali gibi önemli etkinliklere ev sahipliği yapıyor.",
+      "date": "06-08-1995"
+    },
+    {
+      "id": 2,
+      "city": "Kepez Antalya",
+      "place": "Düden Şelalesi",
+      "image": "https://cdn2.enuygun.com/media/lib/825x620/uploads/image/duden-selalesi-9540.webp",
+      "region": "Akdeniz",
+      "category": "Doğal Güzellik",
+      "summary": "Antalya Antalya’nın ilçesi Kepez’in sınırlarında konumlanan Düden Şelalesi, Antalya’nın en çok ziyaretçi alan noktalarından biri. Yaklaşık 40 kilometre yükseklikten akan suyun sesini dinlemek ve Antalya’nın sıcağında biraz olsun serinlemek için tercih edebileceğin şelale çevresinde piknik yapabileceğin alanlar bulunuyor. Piknik hazırlığı yapmadan gittiysen de üzülme şelalenin çevresinde yemek yiyebileceğin restoranlar var.",
+      "date": "06-08-1995"
+    },
+    {
+      "id": 3,
+      "city": "Kaş Antalya",
+      "place": "Kaputaş Plajı",
+      "image": "https://cdn2.enuygun.com/media/lib/825x620/uploads/image/kaputas-33876.webp",
+      "region": "Akdeniz",
+      "category": "Doğal Güzellik",
+      "summary": "Kaputaş Plajı, Türkiye’nin en güzel plajı desem abartmış olmam çünkü dünya basınının hazırladığı listelerde bile kendine yer buluyor. 186 basamaktan inerek plaja ulaşmak biraz zorlayıcı olsa da gittiğine değeceğine yüzde yüz emin olabilirsin. Turkuaz rengin belki de daha önce hiç görmediğin bir tonunu görebileceğin plajın suyu yeraltı sularının süzülerek gelmesiyle oluşuyor. Bu yüzden de Antalya’nın diğer plajlarına göre daha serin. Serin suların kollarına kendini bırakmak için Antalya uçak bileti almaya ne dersin?",
+      "date": "06-08-1995"
+    },
+    {
+      "id": 4,
+      "city": "Kaş Antalya",
+      "place": "Patara Plajı",
+      "image": "https://cdn2.enuygun.com/media/lib/825x620/uploads/image/patara-plaji-33872.webp",
+      "region": "Akdeniz",
+      "category": "Doğal Güzellik",
+      "summary": "12 kilometre uzunluğundaki Patara Plajı’na Patara Antik Kenti’nin içinden bir yolculuk yapılarak ulaşılıyor. Hem böylece bir taşla iki kuş vurup antik kenti de gezmiş oluyorsun. Sonrasında plajın incecik kumlarına uzanarak güneşin tadını çıkarıyorsun. Patara Plajı’nın en önemli özelliği caretta carettaların yumurtalarını bıraktıkları plaj olması. Bu nedenle de koruma altına alınmış ve saat 20.00’a kadar plaj halkın kullanımına açık. Sonrasında plajın sahibi caretta carettalar plajın keyfini çıkarıyorlar.",
+      "date": "06-08-1995"
+    },
+    {
+      "id": 5,
+      "city": "Silifke Mersin",
+      "place": "Cennet Cehennem Mağaraları",
+      "image": "https://cdn2.enuygun.com/media/lib/825x620/uploads/image/cennet-cehennem-mersin-33996.webp",
+      "region": "Akdeniz",
+      "category": "Doğal Güzellik",
+      "summary": "Silifke’ye 25 kilometre uzakta olan Cennet Cehennem Mağaraları, yeraltı sularının kireç taşlarını eritmesiyle çöken iki büyük çukur aslında. Cennet çöküğüne inmek için 452 tane basamağı olan bir merdiven kullanılıyor. 300. basamakta Meryem Ana Kilisesi’ni görebilirsin. Çöküğün güney ucunda ise Zeus Tapınağı bulunuyor. O kadar basamağı inmişken tapınağı da mutlaka görmelisin. Cennet Çöküğünden çıkıp 75 metre kuzeye gittiğinde seni Cehennem Çöküğü karşılıyor. Çöküğün içine inmek mümkün değil ancak yukardan görebileceğin bir teras var.",
+      "date": "06-08-1995"
+    },
+    {
+      "id": 6,
+      "city": "Erdemli Mersin",
+      "place": "Kız Kalesi",
+      "image": "https://cdn2.enuygun.com/media/lib/825x620/uploads/image/kiz-kalesi-34371.webp",
+      "region": "Akdeniz",
+      "category": "Antik Kent",
+      "summary": "Kıyıdan yaklaşık 600 metre uzaklıkta bir adada inşa edilmiş olan Kız Kalesi, birçok efsaneye konu oluyor. 8 tane burçla korunan kalenin avlusunda kilise ve sarnıç bulunuyor. Karayla bağlantısı zaman içerisinde kesilmiş olsa da bulunduğu mahalleye ve plaja da adını veriyor. Kız Kalesi Plajı’nda denizin keyfini çıkardıktan sonra kıyıdaki balıkçı tekneleriyle kaleyi gezmeye gidebilirsin. “Ben kendime güveniyorum kaleye kadar yüzerim” dersen orası sana kalmış.",
+      "date": "06-08-1995"
+    },
+    {
+      "id": 7,
+      "city": "Eğirdir Isparta",
+      "place": "Eğirdir Gölü",
+      "image": "https://cdn2.enuygun.com/media/lib/825x620/uploads/image/egirdir-golu-33997.webp",
+      "region": "Akdeniz",
+      "category": "Doğal Güzellik",
+      "summary": "Türkiye’nin en büyük ikinci tatlı su gölü olan Eğirdir Gölü, ortalama 12 metre derinliğe sahip. Günün farklı saatlerinde değişik manzaralara sahne olan gölün çevresinde elma ve şeftali bahçeleri ve plajlar bulunuyor. Gölün kuzeybatı kısmında yer alan Bedre Plajı ve İstasyon mahallesinde konumlanan Altınkum Plajı, göl çevresinde yüzebileceğin en güzel iki plaj. Ayrıca gölde iki küçük ada da var. Can Ada ve Yeşilada son yıllarda göl suları azaldığı için kıyıya ve birbirlerine bağlı durumdalar.",
+      "date": "06-08-1995"
+    },
+    {
+      "id": 8,
+      "city": "Kuyucak Isparta",
+      "place": "Kuyucak Köyü",
+      "image": "https://cdn2.enuygun.com/media/lib/825x620/uploads/image/kuyucak-14734.webp",
+      "region": "Akdeniz",
+      "category": "Şehir ve Kültür Mirası",
+      "summary": "Isparta şehir merkezinden yaklaşık 50 kilometre uzakta olan Kuyucak Köyü için Türkiye’nin lavanta cenneti diyebiliriz. Fransa’da bulunan Provence bölgesine benzetilen köy, Turizm ve Kültür Bakanlığı’nın Gelecek Turizm’de projesinin bir ürünü aslında. Lavanta kokulu köy olarak bilinen köyde bulunan lavanta tarlalarını mosmor görmek istersen Haziran ayının sonlarında ya da en geç Temmuz ayının başlarında gitmelisin. En iyi lavanta tarlalarını görmek için ara sokaklara girmeni öneririm.",
+      "date": "06-08-1995"
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42
+    },
+    {
+      "id": 43
+    },
+    {
+      "id": 44
+    },
+    {
+      "id": 45
+    },
+    {
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "id": 49
+    },
+    {
+      "id": 50
+    },
+    {
+      "id": 51
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
+    },
+    {
+      "id": 54
+    },
+    {
+      "id": 55
+    },
+    {
+      "id": 56
+    },
+    {
+      "id": 57
+    },
+    {
+      "id": 58
+    },
+    {
+      "id": 59
+    },
+    {
+      "id": 60
+    },
+    {
+      "id": 61
+    },
+    {
+      "id": 62
+    },
+    {
+      "id": 63
+    },
+    {
+      "id": 64
+    },
+    {
+      "id": 65
+    },
+    {
+      "id": 66
+    }
   ]
 }
