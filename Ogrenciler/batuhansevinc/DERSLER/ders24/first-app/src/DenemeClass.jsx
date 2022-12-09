@@ -1,15 +1,17 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
-class DenemeClass extends Component{
-    constructor(){
-
-
+export default class DenemeClass extends Component {
+  constructor(props) {
+    super(props);
+    state: {
     }
-    render(){
-        return(
-            <div>
-                <p>Deneme Class</p>
-            </div>
-        )
-    }
+  }
+  render() {
+    return (
+      <div>
+        <p>Deneme Class</p>
+        <p>{this.props.isim}</p>
+      </div>
+    );
+  }
 }
