@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
        </Link>
 
-      <Link to="userprofile">
+      <Link to="/userprofile">
         <img src={user} alt="" style={{width: 50}}/>
       </Link>
     </div>

@@ -1,0 +1,45 @@
+@mixin bordering($border_size, $border_type, $border_color, $border_radius){
+    border: $border_size $border_type $border_color;
+    border-radius: $border_radius;
+}
+@mixin flex($display:flex, $flex-direction:row,$justify:center, $top:0){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    margin-top: $top;
+}
+@mixin size($w,$h,$color:white) {
+    width: $w;
+    height: $h;
+    background-color: $color;
+}
+.container{
+    @include flex(flex, row, space-evenly, 25px);
+    align-items: center;
+    .lights__button1{
+        @include size(100px, 50px, yellow);
+        @include bordering(1px,solid ,gray ,10px);
+        color: white;
+    }
+    .lights__button2{
+        @extend .lights__button1;
+        background-color: green;
+    }
+    .lights__button3{
+        @extend .lights__button1;
+        background-color: red;
+    }
+}
+.lights{
+    @include flex(flex,column,center,);
+    @include size(350px,800px,orange);
+    @include bordering(2px,solid ,black ,20px);
+    align-items: center;
+    .lights__red {
+        @include size(250px,250px);
+        @include bordering(2px,solid ,black ,50%);
+        margin-top:25px;
+    }
+}
+
+
