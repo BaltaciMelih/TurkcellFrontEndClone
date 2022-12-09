@@ -47,6 +47,8 @@ Games List Service:
 
 <https://ddei5-0-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fgameplus.com.tr%2fgaming%2dapi%2fgames%2flist&umid=3D26EEE2-EF4E-EE05-AFC7-A1CF55F87CD7&auth=8302603cedbbae3f545329cfe68966411c3ae50d-ea9d79049db5d67e7cc7f60ee05d9e86ac9ed3c7>
 
+api: <https://gameplus.com.tr/gaming-api/games/list>
+
 Teşekkürler,
 
 Ümit
