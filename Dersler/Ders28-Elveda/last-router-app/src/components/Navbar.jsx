@@ -12,6 +12,15 @@ const Navbar = () => {
       <NavLink to="/user" style={linkStyle}>
         Kullanıcı
       </NavLink>
+      <NavLink to="/portal" style={linkStyle}>
+        Portal
+      </NavLink>
+      <NavLink to="/parametre/5" style={linkStyle}>
+        Parametre
+      </NavLink>
+      <NavLink to="/haberler" style={linkStyle}>
+        Haberler
+      </NavLink>
     </div>
   );
 };

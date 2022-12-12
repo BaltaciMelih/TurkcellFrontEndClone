@@ -18,3 +18,4 @@ https://getbootstrap.com/docs/5.2 - Bootstrap Dökümantasyon
 https://www.btkakademi.gov.tr/portal/course/versiyon-kontrolleri-git-ve-github-19439 - Git ve github Eğitimi
 https://github.com/typicode/json-server - Json Server
 https://tr.reactjs.org/docs/getting-started.html - React Döküman
+https://medium.com/software-development-turkey/reactta-redux-nas%C4%B1l-ve-neden-kullan%C4%B1l%C4%B1r-f8e14ff1fdbc - Redux
