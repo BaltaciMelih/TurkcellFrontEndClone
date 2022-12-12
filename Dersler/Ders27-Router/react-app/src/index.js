@@ -1,9 +1,7 @@
-import React, { Fragment, StrictMode } from "react";
+import React, { Fragment } from "react";
 import ReactDOM from "react-dom/client";
 import {
-  BrowserRouter,
   Route,
-  Routes,
   RouterProvider,
   createRoutesFromElements,
   createBrowserRouter,
