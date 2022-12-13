@@ -13,13 +13,13 @@ const Navbar = () => {
         Kullanıcı
       </NavLink>
       <NavLink to="/portal" style={linkStyle}>
-        Kullanıcı
+        Portal
       </NavLink>
       <NavLink to="/parametre/5" style={linkStyle}>
-        Kullanıcı
+        Parametre
       </NavLink>
       <NavLink to="/haberler" style={linkStyle}>
-        Kullanıcı
+        Haberler
       </NavLink>
     </div>
   );
