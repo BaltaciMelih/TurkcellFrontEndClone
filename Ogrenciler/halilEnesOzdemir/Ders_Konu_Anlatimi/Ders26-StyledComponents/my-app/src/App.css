@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.riskStatus {
+  color: #fff;
+  font-size: 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.riskStatus.minimal{
+  background-color: rgb(244, 108, 108);
+}
+.riskStatus.medium{
+  background-color: rgb(231, 55, 55);
+}
+.riskStatus.high{
+  background-color: rgb(122, 14, 14);
+}
+
+.customButton{
+  background-color: rgb(237, 102, 6);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
