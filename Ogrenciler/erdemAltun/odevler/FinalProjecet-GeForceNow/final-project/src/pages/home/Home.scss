@@ -1,0 +1,269 @@
+.dark-grey {
+  background-color: rgb(24, 24, 24);
+}
+h5 {
+  color: #fff;
+  font-size: 3vw;
+  font-weight: bold;
+}
+.carousel-item {
+  position: relative;
+  .carousel-caption {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    top: 2%;
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    color: #fff;
+    overflow: hidden;
+  }
+}
+.features-title {
+  max-width: 997px;
+  min-height: 250px;
+  border: 2px solid rgba(0, 0, 0, 0.308);
+  z-index: 100000;
+  position: absolute;
+  background-color: rgb(24, 24, 24);
+  bottom: -160px;
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  .row-item {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container-empty {
+  background-color: rgb(24, 24, 24);
+  height: 235px;
+}
+.devices-info {
+  font-size: 2rem;
+  color: #fff;
+}
+.container-devices {
+  background-color: rgb(24, 24, 24);
+}
+.gamepic-info {
+  color: #76b900;
+  font-size: 2rem;
+}
+.picgames {
+  width: 220px;
+  height: 220px;
+}
+@mixin gamepad {
+  color: #afafaf;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.date {
+  @include gamepad;
+  font-size: 20px;
+  font-weight: normal;
+}
+.gamepad-lorem {
+  @include gamepad;
+  font-size: 28px;
+  font-weight: bold;
+}
+.gamepad-lorem-text {
+  @include gamepad;
+  font-size: 24px;
+  line-height: 1.4;
+}
+.devices {
+  width: 368px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  background-image: linear-gradient(
+    to bottom,
+    (rgb(4, 4, 4)),
+    (rgb(70, 71, 70))
+  );
+}
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .part2 {
+    display: none;
+  }
+  .devices {
+    width: 288px;
+  }
+  .picgames {
+    width: 50%;
+    height: 50%;
+    margin-top: 15px !important;
+  }
+  .hexagone {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  img.Logolar1 {
+    width: 50px !important;
+    height: 75px !important;
+    object-fit: contain;
+  }
+  img.Logolar2 {
+    width: 90px !important;
+    height: 120px !important;
+    object-fit: contain;
+  }
+}
+.membership-card {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  .payment-title {
+    h3 {
+      font-weight: bold !important;
+    }
+  }
+  .active-card {
+    border: 5px solid #76b900 !important;
+    box-sizing: border-box;
+  }
+  .active-card {
+    .payment-title {
+      background: #76b900 !important;
+      border: 0 !important;
+      margin: -1px;
+    }
+  }
+  .member-card {
+    width: 386px;
+    background: #292929;
+    margin: 0 10px 16px;
+    position: relative;
+    z-index: 1;
+    .payment-title {
+      padding: 33px 0;
+      text-align: center;
+      background: #191919;
+      color: #fff;
+      border: 5px solid #191919;
+      border-bottom: 0;
+    }
+    .mem-price {
+      border-bottom: 1px solid #666;
+      padding: 30px 0;
+      margin: 0 30px;
+      text-align: center;
+      display: block;
+      font-size: 28px;
+      color: #fff;
+      font-weight: 350;
+    }
+    .mem-details {
+      padding: 12px 30px 35px;
+      margin-bottom: 70px;
+      .rights {
+        display: block;
+        padding: 16px 0 0 30px;
+        font-size: 24px;
+        color: #b2b2b2;
+        position: relative;
+        max-width: 235px;
+        margin: 0 auto;
+        font-weight: 400;
+      }
+    }
+    .notselected::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      top: 23px;
+      font-size: 16px;
+      font-family: "gameplus";
+    }
+    .selected::before {
+      content: "\2713";
+      color: #76b900;
+      position: absolute;
+      left: 0;
+      top: 23px;
+      font-size: 16px;
+      font-family: "gameplus";
+    }
+    .green-btn {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      box-sizing: border-box;
+      width: calc(100% - 50px);
+      max-width: 326px;
+      margin: 0 auto;
+      background: #76b900 !important;
+      color: #fff;
+      border: none;
+      border-radius: 0;
+      padding: 8px 30px !important;
+    }
+
+    .membership {
+      .title {
+        font-size: 1.75rem !important;
+      }
+      .member-price {
+        font-size: 1.75rem !important;
+      }
+    }
+  }
+}
+
+.myButton {
+  background: #76b900 !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+.gamepad-container {
+  background-color: #1e1e1e;
+  .gamepad-shadow {
+    background-color: #292929;
+  }
+}
+.logitech {
+  height: 350px;
+  img.Logolar1 {
+    width: 71px;
+    height: 100px;
+    object-fit: contain;
+  }
+  img.Logolar2 {
+    width: 100px;
+    height: 141px;
+    object-fit: contain;
+  }
+}
+.partner-info {
+  background-image: url("../../assets/homepage/gfn-motif-background-hero-2560-x-300-d-2-x@3x.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+.hexagone {
+  height: 150px;
+  width: 150px;
+  background: black;
+  -webkit-clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  );
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  img {
+    width: 95px;
+    height: 27px;
+  }
+}
