@@ -1,0 +1,27 @@
+{
+    "posts": [
+      { "id": 1, 
+      "baslik": "json-server", 
+      "yazi": "typicode",
+      "yazarinAdi": "bilgehan",
+      "tarih_ve_saat": "22-10-2022",
+      "kategori": "telefon",
+      "görsel": "https://cdn.cimri.io/image/1200x1200/appleiphoneceptelefonlarfiyatlariphonemodelleri_178954745.jpg"
+    },
+
+    { "id": 1, 
+    "baslik": "json-server", 
+    "yazi": "typicode",
+    "yazarinAdi": "cevdet",
+    "tarih_ve_saat": "10-09-2021",
+    "kategori": "telefon",
+    "görsel": "https://cdn.cimri.io/image/1200x1200/appleiphoneceptelefonlarfiyatlariphonemodelleri_178954745.jpg"
+  },
+
+
+  }
+
+
+
+
+  //başlık, yazı, yazarım adı, tarih ve saat, kategori, görsel

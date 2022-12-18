@@ -1,0 +1,181 @@
+@mixin text-style-register(
+  $fontFamily,
+  $fontSize,
+  $fontWeight,
+  $fontStrech,
+  $fontStyle,
+  $lineHeight,
+  $letterSpacing
+) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-stretch: $fontStrech;
+  font-style: $fontStyle;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+.register-dis-div {
+  display: flex;
+  height: auto;
+}
+
+.register-ic-div-left {
+  padding: 104px 138px;
+  background-color: #000000;
+}
+
+.register-div {
+  padding: 40px 30px;
+  background-color: #fff;
+}
+
+.register-title {
+  @include text-style-register(
+    GreycliffCF,
+    28px,
+    bold,
+    normal,
+    normal,
+    normal,
+    normal
+  );
+  text-align: center;
+  color: #1e1e1e;
+  margin-bottom: 30px;
+}
+
+.register-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-inputs input {
+  width: -webkit-fill-available;
+  height: 56px;
+  padding: 16px 0px 16px 16px;
+  border: solid 1px #dee3ed;
+}
+
+input::placeholder {
+  @include text-style-register(
+    GreycliffCF,
+    16px,
+    500,
+    normal,
+    normal,
+    1.5,
+    normal
+  );
+  color: #b2b2b2;
+}
+.register-password-rules a {
+  @include text-style-register(
+    GreycliffCF,
+    12px,
+    500,
+    normal,
+    normal,
+    2,
+    normal
+  );
+  color: #8e9fad;
+  margin-left: 16px;
+  padding: 0;
+}
+
+.register-checkbox {
+  display: flex;
+  gap: 14px;
+}
+.marginClassiTop {
+  margin-top: 18px;
+}
+.marginClassi {
+  margin-top: 10px;
+  margin-bottom: 38px;
+}
+.register-checkbox input {
+  margin: 0;
+}
+.checkbox-title {
+  @include text-style-register(
+    GreycliffCF,
+    12px,
+    500,
+    normal,
+    normal,
+    2,
+    normal
+  );
+  color: #b2b2b2;
+}
+.checkbox-title a {
+  color: #b2b2b2;
+}
+
+.bottom-div {
+  margin-top: 15px;
+
+  a {
+    color: #666666;
+    font-weight: bold;
+  }
+}
+
+.register-ic-div-right {
+  width: 60%;
+  background-image: url("https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/D9A77919-0660-4616-BE99-56225BC581C7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .register-ic-div-right {
+    display: none;
+  }
+  .register-ic-div-left {
+    padding: 0;
+  }
+  .register-div {
+    width: 390px;
+    padding: 30px 20px 45px;
+    background-color: #000;
+  }
+
+  .register-title {
+    @include text-style-register(
+      GreycliffCF,
+      21px,
+      bold,
+      normal,
+      normal,
+      normal,
+      normal
+    );
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  .register-inputs input {
+    padding: 9px 16px 10px;
+  }
+
+  .checkbox-title {
+    line-height: 1.5;
+    color: rgba(178, 178, 178, 0.75);
+  }
+  .checkbox-title a {
+    color: rgba(178, 178, 178, 0.75);
+  }
+
+  .bottom-div {
+    margin-top: 15px;
+    color: #666666;
+    a {
+      color: #666666;
+      font-weight: bold;
+    }
+  }
+}
