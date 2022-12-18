@@ -1,6 +1,7 @@
 # About project
 
 There are two screen size option in this project, which are 320px and 1440px. Get and post requests work well. User's informations can be seen on the db2.json as well when user clicks submit. Games are sorted according to their first letter.
+You can run json server with this url: "json-server --watch db.json --port 3004" and visit http://localhost:3004/data and game informations can be accessed in db.json file and run "json-server --watch db2.json --port 3006" and visit http://localhost:3006/posts to see user's sign up informations in db2.json.
 
 # Getting Started with Create React App
 
