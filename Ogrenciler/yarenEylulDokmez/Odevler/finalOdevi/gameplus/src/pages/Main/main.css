@@ -1,0 +1,19 @@
+.comp{
+    display: inline;
+}
+.compK{
+    display: none;
+}
+@media screen and (max-width: 320px){
+    .comp{
+        display: none;
+    }
+    .compK{
+        display:inline;
+        
+    }
+    .compK img{
+        width: 320px;
+        height: 237px;
+    }
+  }

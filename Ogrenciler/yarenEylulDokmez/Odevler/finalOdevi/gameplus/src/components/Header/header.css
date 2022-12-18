@@ -1,0 +1,40 @@
+.header{
+    padding: 14px 119px 13px 120px;
+    background-color: #fff;
+}
+.logo{
+  margin: 0 145px 0 0;
+  object-fit: contain;
+}
+.navbarText{
+    list-style: none;
+    text-decoration: none;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    color: #000000;
+    margin: 31px 40px 30px 0;
+}
+.navbarText.last{
+    margin:  31px 0 30px 0;
+}
+@media screen and (max-width: 960px){
+    .header{
+        padding: 13px 15px 13px 16px;
+    }
+    img{
+        height: 34px;
+        width: 184px;
+    }
+    .logo{
+        margin: 0 61px 0 0;
+    }
+    .navbarText, .navbarText.last{
+        text-align: center;
+        margin: 30px 40px 0 0;
+    }
+  }
