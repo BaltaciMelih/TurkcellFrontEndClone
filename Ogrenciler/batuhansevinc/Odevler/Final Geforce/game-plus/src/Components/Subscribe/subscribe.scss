@@ -1,0 +1,78 @@
+.sub-cards{
+    width: 386px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    &-info{
+        padding: 0 74px;
+        &-standard{
+            border: 5px solid #76b900;
+        }
+        &-img{
+            width: 16px;
+            height: 12px;
+        }
+        &-text{
+            padding-left: 24px;
+            font-size: 24px;
+            color: #b2b2b2;
+        }
+    }
+    &-button{
+        width: 326px;
+        height: 40px;
+        border: none;
+        margin-bottom: 40px;
+        margin-left: 30px;
+    }
+}
+.card-title{
+    padding: 33px 0;
+    background-color: #191919 ;
+    &-standard{
+        padding: 30px 0;
+        background-color: #76b900 ;
+    }
+    &-seconder{
+        padding: 30px 0;
+        margin: 0;
+    }
+}
+.text-mute-color{
+    color: #666666 !important;
+}
+.mr-20{
+    margin-right: 20px;
+}
+
+@media screen and (max-width:320px) {
+    .subs-h2{
+        font-size: 21px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .sub-cards{
+        width: 280px;
+        height: 354px;
+        margin-left: 20px;
+        margin-bottom: 260px;
+        &-info{
+            padding: 0 0;
+            padding-left: 21px;
+        }
+        &-line{
+            width: 236px;
+        }
+        &-button{
+            width: 236px;
+            height: 48px;
+            margin-left: 22px;
+        }
+    }
+    .mr-20{
+        margin-right: 20px;
+    }
+    .mb-230{
+        margin-bottom: 230px;
+    }
+}

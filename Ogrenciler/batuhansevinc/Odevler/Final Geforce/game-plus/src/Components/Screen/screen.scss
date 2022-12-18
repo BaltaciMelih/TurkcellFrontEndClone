@@ -1,0 +1,56 @@
+.single-card{
+    border: 1px solid #1e1e1e;
+    display: flex;
+    justify-content: space-around;
+    width: 386px;
+    background-image: linear-gradient(to bottom, #1e1e1e,#000000 );
+}
+.cards{
+    height: 120px;
+    width: 386px;
+    &-mb{
+        margin-bottom: 60px;
+    }
+}
+.screen{
+    &-paragraph{
+    padding-top: 48px;
+    padding-bottom: 62px;
+    }
+    &-img{
+        
+        margin: auto 30px;
+    }}
+
+.py-35{
+    padding: 35px 0;
+}
+
+
+@media screen and (max-width: 320px) {
+    .cards{
+        height: 60px;
+        width: 280px;
+        &-mb{
+            margin-bottom: 15px;
+        }
+    }
+    .screen{
+        &-paragraph{
+            padding: 30px 20px;
+        }
+        &-img{
+        width: 2rem;
+        margin: 15px 0;
+    }}
+    .div{
+        &-img{
+        width: 60px;
+        height: 60px;
+        }
+        &-paragraph{
+            width: 163px;
+        }
+}
+
+}

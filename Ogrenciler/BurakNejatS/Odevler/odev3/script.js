@@ -21,13 +21,9 @@ function getBlog() {
                <div class="container">
                <p id="yazar">Yazar:${json.yazarAdı}</p>
                <p id="tarih" class=" d-flex justify-content-end">Tarih:${json.dateItem}</p>
-
-
                <div class="container">
                  <p >Bölge:${json.bolge}</p><div>
                  <div class="container d-flex justify-content-center">
-
-                 
                    </div>
                   
 
@@ -68,27 +64,14 @@ function getBlog() {
         
       </div>
     </div>
-    
   </div>
-
-  
-</div>
-
-                 
-        
-              
-              
-
-
-                 
+</div>       
              </div> 
              
              <br>
         `;
       }
-    });
-}
-
+    });}
 getBlog();
 
 function createPost() {
@@ -144,22 +127,3 @@ function filterPost() {
   });
 }
 filterPost();
-
-
-// function category(bolge){
-
-//   const categoryPost=document.querySelector("ul .dropdown-menu").forEach(bolge=>{
-//     bolge.addEventListener("click",(e)=>{
-      
-//       let deger=e.target.getAttribute("data-value");
-//       blogs.forEach(bolge=>{
-//         if(bolge.category==deger){
-//           document.getElementById("bolge")
-
-//         }
-//       })
-//     })
-//   })
-// }
-// category()
-

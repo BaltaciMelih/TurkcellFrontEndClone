@@ -10,7 +10,6 @@
     <title>Geziyorum</title>
 </head>
 <body>
-    
     <nav class="navbar navbar-expand-lg bg-light ">
         <div class="container-fluid">
           <img class="navbar-brand" src="./photos/gezi-yorum.png" style="height: 80px;"></img>
@@ -37,10 +36,7 @@
                   <li><a data-value="Karadeniz" href="#">Karadeniz</a></li>
                 </ul>
               </li>
-              
             </ul>
-
-            
             <form class="d-flex col-md-6" role="search">
               <input  class="form-control  me-2" type="search" placeholder="Bir Blog Ara" aria-label="Search">
               <!-- <button class="btn btn-outline-success" type="submit">Ara</button> -->
@@ -50,23 +46,13 @@
       </nav>
 <br>
 <br>
-
-
-    <div id="rows" class="row">
-       
-
+    <div id="rows" class="row">   
     </div> 
     <br><br><br>
-
-
 <br><br> <hr> 
-
-
 <div class="container col-md-6">
   
   <h2 class="text-center bg-info text-light rounded">Blog Ekle</h2>
-
-
     <div class="row mb-3">
         <form class="col was-validated">
           <input id="yazarAdı" type="text" class="form-control" placeholder="Yazar Adı" aria-label="Yazar Adı" required>
@@ -74,31 +60,16 @@
             Lütfen Adınızı ve Soyanızı Giriniz.</div> -->
           </form>
      </div> 
-
-
         <br>
-
-
         <div class="col was-validated">
           <input id="sehirAdı" type="text" class="form-control" placeholder="Başlık" aria-label="Başlık" required>
-          <!-- <div class="invalid-feedback">
-            Lütfen Şehir Adı Giriniz.
-          </div> -->
-        </div>
-      
-<br>
-      
+        </div>     
+<br>     
     <form class="col was-validated">
         <div class="mb-3">
           <textarea class="form-control" id="geziYorum" placeholder="Gezi-Yorumunuz" ></textarea>
-          <!-- <div class="invalid-feedback">
-            Lütfen Gezi-Yorum'unuzu Yazınız.
-          </div> -->
         </div>
     </form>
-
-    
-      
         <div class="mb-3">
           <select id="bolge" class="form-select" required aria-label="select example">
             <option value="">Bölge Seçiniz</option>
@@ -109,9 +80,7 @@
             <option value="Akdeniz">Akdeniz</option>
             <option value="Doğu Anadolu">Doğu Anadolu</option>
             <option value="Güneydoğu Anadolu">Güneydoğu Anadolu</option>
-
           </select>
-          
         </div> 
          <div  class="invalid-feedback">Lütfen Bir Bölge Seçiniz</div>
           <label for="validationTooltipUsername" class="form-label"></label> 
@@ -120,32 +89,18 @@
           <input type="date" class="form-control" id="dateItem" required />
           <div class="invalid-feedback">Lütfen Bir Tarih Giriniz</div>
         </div> 
-
-
         <div class=" col mb-3">
-
           <input type="text" class="form-control " id="url" placeholder="Blog Görsel URL'ini Ekleyiniz">
-          <!-- <div class="invalid-feedback">Lütfen Bir URL Giriniz</div> -->
-
-        </div>
-      
+        </div>""
       </div>
         <div class="container col-md-6 col-sm-3">
         <div class=" d-flex justify-content-center mb-3">
           <button class="btn btn-primary " type="submit" onclick="createPost()" >Ekle</button>
         </div>
-
-        
       </div>
       </form>
-    
-
     </div>
    
-
-    
-    
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
     "></script>    <script src="./script.js"></script>
    

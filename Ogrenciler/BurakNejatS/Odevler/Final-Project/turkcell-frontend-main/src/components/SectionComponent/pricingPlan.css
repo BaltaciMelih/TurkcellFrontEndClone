@@ -1,0 +1,26 @@
+.pricing-table-title{
+    background-color: #000000;
+    font-family: GreycliffCF-Bold;
+    text-align: center;
+}
+
+.pricing-container
+{
+
+    
+    background-color: #76B900;
+    width: 100%;
+   
+}
+
+.pricing-container2{
+    background-color: #191919;
+}
+.pricingButton{
+
+    background-color: #76B900;
+    width: 326px;
+    border-radius: 0%;
+    height: 40px;
+
+}
