@@ -1,0 +1,103 @@
+.footertab{
+  background-color: white;
+  width: 100%;
+  height: 114px;
+  padding: 24px 195px 24px 121px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footerbottom{
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 41px;
+  padding: 1px 120px 0 121px;
+  color: #fff;
+  line-height:41px;
+}
+.Terms {
+  width: 8%;
+  height: 40px;
+  margin: 0 20px 0 0;
+  font-family: GreycliffCF;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: #fff;
+}
+.Privacy {@extend .Terms; margin: 0 20px;}
+.Cookies {@extend .Terms;
+  margin: 0 0 0 20px;
+  margin-right: 59%;
+}
+.Copyright { @extend .Terms;
+  width: 28%;
+  margin: 0 0 0 80px;
+  text-align: right;
+}
+.Games{
+  width: 7%;
+  height: 66px;
+  margin: 0 60px 0 0;
+  font-family: GreycliffCF;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #1e1e1e;
+}
+.Contact {@extend .Games;
+  width: 80px;
+  margin: 0 0 22px;
+}
+.Service {@extend .Games;
+  width: 103px;
+  margin: 0 0 22px 60px;
+}
+.FollowUs {@extend .Games;
+  width: 15%;
+  height:  66px;
+  margin: 0 13px 16px 0;
+  margin-left: 60%;
+  .FollowUsIn{
+    margin-bottom: -10px;
+    font-weight: bold;
+  }
+}
+.Language {
+  @extend .Games;
+  width: 10%;
+  height: 22px;
+  margin: 0 0 14px;
+  .LanguageIn{
+    margin-bottom: -10px;
+    font-weight: bold;
+  }
+}
+.mobile{display: none;}
+@media screen and (max-width: 768px) {
+  .desktop{display: none;}
+  .mobile{display: block;}
+  .footertab{
+    height: auto;
+     text-align: center; 
+     margin-left: 0px;
+     padding: 24px 0 24px 0;
+     flex-direction: column;
+     font-size: 16px;
+    }
+  .footerbottom{
+    height: auto;
+    text-align: center; 
+    padding: 15px 0 24px 0;
+    flex-direction: column;
+    font-size: 12px;
+    line-height:16px;
+  }
+  .copy{ margin-top: 20px; font-size: 10px;}
+}
