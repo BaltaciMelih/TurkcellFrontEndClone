@@ -10,7 +10,7 @@ function Header() {
   return (
     <>
       <nav className='navbar navbar-expand-md py-3  '>
-        <div className='container-md px-lg-3 px-2 ms-2 '>
+        <div className='container-md px-lg-3 px-1   ms-lg-2 '>
           <Link className='navbar-brand ms-lg-5' to='/'>
             <img
               className='logo-img ms-lg-5'
@@ -18,7 +18,11 @@ function Header() {
               alt=''
             />
           </Link>
-          <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#gameplusNavbar'>
+          <button
+            className='navbar-toggler rounded-0 shadow-0 border-0'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#gameplusNavbar'>
             <span>
               <img
                 src='https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/10D39C65-7309-4B26-A9CD-F37EC7EA5FE2.svg'
