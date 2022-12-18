@@ -21,7 +21,7 @@ $grey-paragraf: #afafaf;
   letter-spacing: $letterSpacing;
 }
 
-.blogModuleDisDiv {
+.blog-module-dis-div {
   background-color: $black-two;
   padding: 107px 30px 106px 30px;
   display: flex;
@@ -97,7 +97,7 @@ $grey-paragraf: #afafaf;
 }
 
 @media (max-width: 768px) {
-  .blogModuleDisDiv {
+  .blog-module-dis-div {
     padding: 0;
 
     background-color: $grey-two;

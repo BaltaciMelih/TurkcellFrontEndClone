@@ -1,0 +1,79 @@
+.carousel-content{
+    background-color: #1e1e1e;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4%;
+
+}
+.carousel-content img{
+    width: 387px;
+    height: 387px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #292929;
+    padding-left: 2%;
+    color: white;
+    height: 387px;
+    width: 813px;
+}
+.content-header{
+text-align: left;
+}
+.carousel-indicators{
+    
+}
+.img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media screen and (max-width: 900px){
+    .carousel-content{
+        height: 638px;
+        display: flex;
+        flex-direction: column;
+        background-color:#292929;
+        
+    }
+    .content{
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        padding-top: 3%;
+        width: 280px;
+    }
+    .img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 280px;
+    }
+    .col-4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    .col-8{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .gaming{
+        font-size: 16px;
+    }
+    .content-header{
+        font-size: 21px;
+    }
+    .content-para{
+        font-size: 16px;
+    }
+}

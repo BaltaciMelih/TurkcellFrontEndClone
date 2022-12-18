@@ -5,7 +5,7 @@ import { BsFillCircleFill } from "react-icons/bs";
 
 function BlogModule() {
   return (
-    <div className="blogModuleDisDiv">
+    <div className="blog-module-dis-div">
       <a
         className="leftArrow-blog d-none d-lg-block"
         data-bs-target="#carouselBlog"
@@ -25,7 +25,7 @@ function BlogModule() {
               <img
                 alt="blog"
                 className="blog-image"
-                src="https://img.freepik.com/free-vector/joystick-game-sport-technology_138676-2045.jpg?w=2000"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
               ></img>
               <div className="BlogModuleRight">
                 <div className="blogModuleDate">GAMING - AUGUST 11, 2020 </div>
@@ -51,7 +51,7 @@ function BlogModule() {
               <img
                 alt="blog"
                 className="blog-image"
-                src="https://img.freepik.com/free-vector/joystick-game-sport-technology_138676-2045.jpg?w=2000"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
               ></img>
               <div className="BlogModuleRight">
                 <div className="blogModuleDate">GAMING - AUGUST 11, 2020 </div>
@@ -77,7 +77,7 @@ function BlogModule() {
               <img
                 alt="blog"
                 className="blog-image"
-                src="https://img.freepik.com/free-vector/joystick-game-sport-technology_138676-2045.jpg?w=2000"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
               ></img>
               <div className="BlogModuleRight">
                 <div className="blogModuleDate">GAMING - AUGUST 11, 2020 </div>
