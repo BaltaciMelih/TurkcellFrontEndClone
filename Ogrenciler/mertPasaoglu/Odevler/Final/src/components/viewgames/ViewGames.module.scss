@@ -1,0 +1,40 @@
+.gamesCard{
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+}
+.polygonContainer {
+    padding-bottom: 20px;  
+}
+.alphabet {
+    color: black;
+    font-size: 24px;
+    background: url('../../assets/icons/polygon.png');
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+.letter{
+    display: flex;
+    padding: 7px 0 0 21px; 
+}
+.gamesCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.listItem{
+    width: 350px;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+span {
+    color: black;
+}
+.gamesCard{
+    background-color: #1e1e1e;
+    color: white;
+}
+}
