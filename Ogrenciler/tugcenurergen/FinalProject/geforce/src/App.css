@@ -1,0 +1,12 @@
+body{
+  margin-top: 80px;
+  padding: 0;
+}
+
+@media only screen and (max-width: 390px) {
+  body{
+    margin-top: 60px;
+    padding: 0;
+  }
+}
+

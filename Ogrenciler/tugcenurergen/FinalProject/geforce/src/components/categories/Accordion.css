@@ -1,0 +1,28 @@
+.accordion {
+  height: 1142px;
+}
+
+.accordion-button {
+  background-color: #1e1e1e;
+  color: #afafaf;
+  font-size: 24px;
+}
+
+.accordion-header {
+  font-size: 24px;
+}
+
+.form-check:active{
+  background-color:#76b900;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .accordion{
+    height: auto;
+  }
+
+  .state{
+    display: none;
+  }
+}
