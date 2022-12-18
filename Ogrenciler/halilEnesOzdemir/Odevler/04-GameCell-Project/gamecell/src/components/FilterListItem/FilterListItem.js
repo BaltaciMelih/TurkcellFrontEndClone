@@ -7,7 +7,6 @@ import { removeCheckboxFilter, setCheckboxFilter, setCheckboxList, removeCheckbo
 const FilterListItem = () => {
   const { games } = useSelector((state) => state.gameReducer);
   const checkedList = useSelector((state) => state.filters.checked);
-  console.log(checkedList);
   const allGenres = games.map((game) => game.genres);
   const correctGenres = [...new Set(allGenres.flat(1))];
   const filteredGenres = correctGenres.filter((game) => game != null);
@@ -30,11 +29,11 @@ const FilterListItem = () => {
 
   return (
     <Fragment>
-      <div class=' accordion-bg ' id='accordionExample'>
-        <div class='accordion-item'>
-          <h2 class='accordion-header' id='headingOne'>
+      <div className=' accordion-bg ' id='accordionExample'>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='headingOne'>
             <button
-              class='accordion-button'
+              className='accordion-button'
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#collapseOne'
@@ -52,10 +51,10 @@ const FilterListItem = () => {
           </h2>
           <div
             id='collapseOne'
-            class='accordion-collapse collapse show'
+            className='accordion-collapse collapse show'
             aria-labelledby='headingOne'
             data-bs-parent='#accordionExample'>
-            <div class='accordion-body'>
+            <div className='accordion-body'>
               <div className='d-flex flex-column '>
                 <div className='d-flex '>
                   <input type='checkbox' />
@@ -79,10 +78,10 @@ const FilterListItem = () => {
             </div>
           </div>
         </div>
-        <div class='accordion-item'>
-          <h2 class='accordion-header' id='headingTwo'>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='headingTwo'>
             <button
-              class='accordion-button'
+              className='accordion-button'
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#collapseTwo'
@@ -100,23 +99,23 @@ const FilterListItem = () => {
           </h2>
           <div
             id='collapseTwo'
-            class='accordion-collapse collapse show'
+            className='accordion-collapse collapse show'
             aria-labelledby='headingTwo'
             data-bs-parent='#accordionExample'>
-            <div class='accordion-body'>
-              {sortedGenres.map((game, i) => {
+            <div className='accordion-body'>
+              {sortedGenres.map((genre, i) => {
                 return (
                   <div className='filter-list' key={i}>
                     <input
                       type='checkbox'
-                      name={game}
-                      id={game}
-                      value={game}
+                      name={genre}
+                      id={genre}
+                      value={genre}
                       onChange={handleFilterGenre}
-                      checked={checkedList.find((x) => x == game)}
+                      checked={checkedList.find((x) => x == genre)}
                     />
-                    <label className='genres-text-color' htmlFor={game}>
-                      {game}
+                    <label className='genres-text-color' htmlFor={genre}>
+                      {genre}
                     </label>
                   </div>
                 );

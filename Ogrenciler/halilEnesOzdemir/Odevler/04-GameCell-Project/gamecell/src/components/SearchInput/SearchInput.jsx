@@ -12,7 +12,6 @@ function SearchInput() {
   const searchGame = (e) => {
     const value = e.target.value;
     dispatch(setTextFilter(value));
-    console.log(value);
   };
   return (
     <>
@@ -21,10 +20,10 @@ function SearchInput() {
           type='text'
           list='datalistOptions'
           id='exampleDataList'
-          className='form-control py-2'
+          className='form-control py-2 rounded-0'
           value={inputValue || ''}
           onChange={searchGame}
-          placeholder='Search...'
+          placeholder='Search Games'
           style={{ paddingLeft: '40px' }}
           alt=''
         />
@@ -32,11 +31,11 @@ function SearchInput() {
           src='https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/A66690CB-EE5E-42C1-8E82-87DBAE4A8486.svg'
           className='search-icon'
         />
-        {/* *** */}
+
         <datalist id='datalistOptions'>
           {games &&
-            games.map((data) => {
-              return <option value={data.title} key={data.id}></option>;
+            games.map((data, index) => {
+              return <option value={data.title} key={index}></option>;
             })}
         </datalist>
       </div>
