@@ -1,0 +1,11 @@
+.polygon-col{
+    position: relative;
+}
+
+.polygon-letter{
+    position: absolute;
+    left: 6.5%;
+    top: 27%;
+    font-size: 28px;
+    color: black;
+}
