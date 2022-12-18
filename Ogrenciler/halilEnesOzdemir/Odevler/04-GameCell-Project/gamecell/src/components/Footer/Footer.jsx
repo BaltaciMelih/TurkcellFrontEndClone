@@ -6,8 +6,8 @@ function Footer() {
     <>
       <footer className='bg-white py-2 py-lg-3'>
         <div className='row d-flex flex-column align-items-center  flex-sm-row text-center m-0 '>
-          <div className='col-5 d-flex flex-column  flex-sm-row   justify-content-start align-items-center p-0 offset-md-1'>
-            <div className='col-3 '>
+          <div className='col-5 d-flex flex-column  flex-sm-row   justify-content-start align-items-start p-0 offset-md-1'>
+            <div className='col-2 '>
               <ul className='list-unstyled  d-flex flex-column m-0'>
                 <a href='#'>Games </a>
                 <a href='#'>Membership</a>
@@ -15,7 +15,7 @@ function Footer() {
               </ul>
             </div>
             <div className='col-3'>
-              <ul className='list-unstyled  d-flex flex-column  m-0 '>
+              <ul className='list-unstyled  d-flex flex-column  m-0 ms-lg-5 '>
                 <a href='#'>Contact Us</a>
                 <a href='#'>Blog</a>
               </ul>
@@ -27,10 +27,10 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className='col-4 flex-column d-flex  flex-sm-row  justify-content-center align-items-center offset-md-2'>
+          <div className='col-4 flex-column d-flex  flex-sm-row  justify-content-center align-items-center offset-lg-1'>
             <div className='col'>
-              <ul className='list-unstyled  d-flex flex-column'>
-                <a href='#' className='fw-bold'>
+              <ul className='d-flex flex-column '>
+                <a href='#' className='fw-bold '>
                   Follow Us!
                 </a>
                 <div className='d-flex mx-auto gap-2 '>
@@ -50,7 +50,7 @@ function Footer() {
               </ul>
             </div>
             <div className='col '>
-              <p className='m-0'>Site Language</p>
+              <p className='m-0 fw-bold'>Site Language</p>
               <div className='dropdown '>
                 <a
                   className='btn dropdown-toggle'
@@ -74,15 +74,15 @@ function Footer() {
         </div>
       </footer>
       {/* FOOTER 2 */}
-      <div className='container-fluid bg-black px-lg-5 py-3 '>
-        <div className='row d-flex flex-column flex-sm-row justify-content-center align-items-center text-center  '>
-          <div className='col d-flex flex-column flex-sm-row gap-lg-3 mb-2 align-items-center    '>
-            <p className='text-white m-0'>Terms of Use</p>
-            <p className='text-white m-0'>Privacy Policy</p>
-            <p className='text-white m-0'>Cookies</p>
+      <div className='container-fluid bg-black px-lg-5 py-2 '>
+        <div className=' row d-flex flex-column flex-sm-row justify-content-center align-items-center text-center px-lg-5   '>
+          <div className='col d-flex flex-column flex-sm-row gap-lg-5 mb-2 align-items-center mb-lg-0 ms-lg-3    '>
+            <p className='text-white m-0 footer-2-text'>Terms of Use</p>
+            <p className='text-white m-0 footer-2-text'>Privacy Policy</p>
+            <p className='text-white m-0 footer-2-text'>Cookies</p>
           </div>
           <div className='col  d-flex flex-column flex-sm-row justify-content-end align-items-star'>
-            <p className='text-white text-muted m-0'>Tüm Hakları Saklıdır.</p>
+            <p className='text-white text-muted m-0 footer-2-text'>Tüm Hakları Saklıdır.</p>
           </div>
         </div>
       </div>
