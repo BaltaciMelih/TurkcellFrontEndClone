@@ -1,0 +1,174 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fullName": "json-server",
+      "userName": "typicode",
+      "phoneNumber": "typicode",
+      "email": "typicode",
+      "password": "typicode"
+    },
+    {
+      "fullName": "asdasdassad",
+      "userName": "asdasdasd",
+      "phoneNumber": "5355",
+      "password": "12132312",
+      "email": "asdasd@sadas.com",
+      "id": 2
+    },
+    {
+      "fullName": "asdasdassad",
+      "userName": "asdasdasd",
+      "phoneNumber": "5355",
+      "password": "12132312",
+      "email": "asdasd@sadas.com",
+      "id": 3
+    },
+    {
+      "fullName": "asdasdassad",
+      "userName": "asdasdasd",
+      "phoneNumber": "5355",
+      "password": "12132312",
+      "email": "asdasd@sadas.com",
+      "id": 4
+    },
+    {
+      "fullName": "asdasdassad",
+      "userName": "asdasdasd",
+      "phoneNumber": "5355",
+      "password": "12132312",
+      "email": "asdasd@sadas.com",
+      "id": 5
+    },
+    {
+      "fullName": "asdasdassad",
+      "userName": "asdasdasd",
+      "phoneNumber": "5355",
+      "password": "12132312",
+      "email": "asdasd@sadas.com",
+      "id": 6
+    },
+    {
+      "fullName": "asdasdassad",
+      "userName": "asdasdasd",
+      "phoneNumber": "5355",
+      "password": "12132312",
+      "email": "asdasd@sadas.com",
+      "id": 7
+    },
+    {
+      "fullName": "asdasdassad",
+      "userName": "asdasdasd",
+      "phoneNumber": "5355",
+      "password": "12132312",
+      "email": "asdasd@sadas.com",
+      "id": 8
+    },
+    {
+      "fullName": "1111111111",
+      "userName": "11111111",
+      "phoneNumber": "1111111111111",
+      "password": "111111111111111111",
+      "email": "asdads@saddsa.com",
+      "id": 9
+    },
+    {
+      "fullName": "1111111111",
+      "userName": "11111111",
+      "phoneNumber": "1111111111111",
+      "password": "111111111111111111",
+      "email": "asdads@saddsa.com",
+      "id": 10
+    },
+    {
+      "fullName": "1111111111",
+      "userName": "11111111",
+      "phoneNumber": "1111111111111",
+      "password": "111111111111111111",
+      "email": "asdads@saddsa.com",
+      "id": 11
+    },
+    {
+      "fullName": "1111111111",
+      "userName": "11111111",
+      "phoneNumber": "1111111111111",
+      "password": "111111111111111111",
+      "email": "asdads@saddsa.com",
+      "id": 12
+    },
+    {
+      "fullName": "1111111111",
+      "userName": "11111111",
+      "phoneNumber": "1111111111111",
+      "password": "111111111111111111",
+      "email": "asdads@saddsa.com",
+      "id": 13
+    },
+    {
+      "fullName": "AAAAAAAA",
+      "userName": "AAAAAAAAAA",
+      "phoneNumber": "11111111",
+      "password": "AAAAAAA",
+      "email": "AAA@AAAA.COM",
+      "id": 14
+    },
+    {
+      "fullName": "AAAAAAAA",
+      "userName": "AAAAAAAAAA",
+      "phoneNumber": "11111111",
+      "password": "AAAAAAA",
+      "email": "AAA@AAAA.COM",
+      "id": 15
+    },
+    {
+      "fullName": "999999999",
+      "userName": "99999999",
+      "phoneNumber": "9899999",
+      "password": "555555555",
+      "email": "qqqq@qqqqq.com",
+      "id": 16
+    },
+    {
+      "fullName": "999999999",
+      "userName": "99999999",
+      "phoneNumber": "9899999",
+      "password": "555555555",
+      "email": "qqqq@qqqqq.com",
+      "id": 17
+    },
+    {
+      "fullName": "999999999",
+      "userName": "99999999",
+      "phoneNumber": "9899999",
+      "password": "555555555",
+      "email": "qqqq@qqqqq.com",
+      "id": 18
+    },
+    {
+      "fullName": "sss",
+      "userName": "sss",
+      "phoneNumber": "22",
+      "password": "sssss",
+      "email": "sss@ss.com",
+      "id": 19
+    },
+    {
+      "fullName": "111",
+      "userName": "2222",
+      "phoneNumber": "33333",
+      "email": "asdads@saddsa.com",
+      "date": "2022-12-08",
+      "password": "99999",
+      "id": 20
+    },
+    {
+      "fullName": "a11",
+      "userName": "a11",
+      "phoneNumber": "1111",
+      "email": "a11@a11.coma",
+      "date": "2022-12-18",
+      "password": "a11a11",
+      "id": 21
+    }
+  ]
+}

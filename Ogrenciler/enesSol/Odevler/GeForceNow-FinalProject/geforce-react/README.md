@@ -20,11 +20,12 @@ React tarafını ayağa kaldırmak için ise yukarıdaki kodu kullanın.
 
 1. HTML
 2. CSS
-3. Bootstrap
-4. Javascript
-5. React
-6. React Icons
-7. React Router
-8. Formik
-9. Yup
-10. Axios
+3. SASS / SCSS
+4. Bootstrap
+5. Javascript
+6. React
+7. React Icons
+8. React Router
+9. Formik
+10. Yup
+11. Axios

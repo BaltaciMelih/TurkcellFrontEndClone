@@ -1,0 +1,82 @@
+.gamesBanner{
+    background-image: url('https://gameplus.com.tr/static/media/foot-banner.46c1fc4c.png');
+    height: auto;
+    background-size: cover;
+    &-paragraph{
+        font-size: 20px;
+    }
+}
+.search{
+    &-icon{
+    background-color: white;
+    border: none;
+    width: 56px;
+        &-img{
+        width: 22px;
+        height: 22px;
+             }
+    }
+    &-container{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    }
+    &-dropdown{
+    background-color: white;
+    display: flex;
+    max-height: 300px;
+    flex-direction: column;
+    border: 1px solid gray;
+    }
+    &-dropdown:empty{
+    border: none;
+    }
+    &-dropdown-row{
+    cursor: pointer;
+    text-align: start;
+    margin: 2px 0;
+
+}
+
+&-inner{
+    display: flex;
+    width: 793px;
+    height: 56px;
+}
+&-button{
+    width: 793px;
+    height: 56px;
+    border: none;
+}
+}
+
+
+@media screen and (max-width:320px) {
+    .gamesBanner{
+        background-position: center;
+        &-title{
+            font-size: 24px;
+        }
+        &-paragraph{
+            font-size:16px;
+            padding-top: 8px;
+            line-height: 1.5rem;
+        }
+
+    }
+    .search-inner{
+        display: flex;
+        width: 793px;
+        height: 56px;
+    }
+    .search-button{
+        width: 223px;
+        height: 56px;
+        border: none;
+    }
+    .my-90{
+        margin: 0px !important;
+        margin-top: 35px !important;
+        margin-bottom: 45px !important;
+}
+}

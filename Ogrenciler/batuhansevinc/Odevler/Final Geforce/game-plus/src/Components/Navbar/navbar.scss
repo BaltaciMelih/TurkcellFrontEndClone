@@ -1,0 +1,56 @@
+.px-20{
+    padding: 0px 20px;
+}
+.pt-26{
+    padding-top: 26px;
+}
+.ps-60{
+    padding-left: 60px;
+}
+.pe-60{
+    padding-right: 60px;
+}
+.Navbar-link{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.57px;
+    &:hover{
+        color: #76b900;
+    }
+}
+.carousel-active{
+    margin-top: 30px ;
+    width: 10px;
+    height: 10px;
+}
+.carousel-none-active{
+    @extend .carousel-active;
+    background-color: #666666;
+} 
+.navbar-toggler{
+    border: none !important;
+    &-icon{
+        height: 24px !important;
+    }
+}  
+@media only screen and (max-width: 320px) {
+    .navbar{
+        &-image{
+            width: 204px;
+            padding: 5px 0;
+        }
+        &-toggler &-toggler-icon{
+            width: 24px;
+            padding: 0 ;
+            margin: 0;
+        }}
+    .ps-60{
+        padding-left: 4px;
+    }
+    .pe-60{
+        padding-right: 4px;
+    }
+
+    }

@@ -1,0 +1,104 @@
+.form{
+    &-title{
+        font-family: GreycliffCF;
+        font-size: 28px;
+        font-weight: bold;
+        color: #1e1e1e;
+    }
+    &-group{
+        width: 384px;
+        height: 56px;
+        margin-bottom: 15px;
+        &-text{
+            font-family: GreycliffCF;
+            font-size: 12px;
+            font-weight: 500;
+            color: #b2b2b2;
+        }
+    }
+
+    &-button{
+        background-color: #b2b2b2 !important;
+        border-color: #b2b2b2 !important;
+        width: 100%;
+        height: 40px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        letter-spacing: 0.57px;
+        border-style:none;
+        &:hover{
+            background-color: #76b900 !important;
+        }
+    }
+    &-checkbox{
+        margin-bottom: 10px;
+    }
+}
+.forms{
+
+    width: 444px;
+    height: 803px;
+    padding: 40px 30px;
+    background-color: #fff;
+}
+.pl-14{
+    padding-left: 14px;
+}
+.py-9{
+    padding: 15px 0;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.sign-in{
+    font-family: GreycliffCF;
+    font-size: 14px;
+    color: #666666;
+}
+.form-height{
+    height: 1011px;
+}
+.pt-104{
+    padding-top: 104px;
+}
+.register-bg-img{
+    background-image: url('../../Images/register-bg-img.png');
+    background-position: 90%;
+    width: 790px;
+    height: 1011px;
+}
+.error-text{
+    color: red;
+}
+@media screen and (max-width: 320px) {
+    .form{
+    &-height{
+        height: 821px;
+    }
+    &-title{
+        font-family: GreycliffCF;
+        font-size: 21px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 30px;
+    }
+    &-group{
+        width: 260px;
+        
+    }
+    &-button{
+        height: 48px;
+    }
+    }
+    .forms{
+        background: black;
+        height: 821px;
+        width: 320px;
+    }
+    .pt-104{
+        padding-top: 0px;
+    }
+    .py-9{
+        padding: 15px 0 !important;
+    }
+}

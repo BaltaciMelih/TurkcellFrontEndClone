@@ -1,0 +1,62 @@
+.carousel-active{
+    margin-top: 30px ;
+    width: 10px;
+    height: 10px;
+}
+.carousel-none-active{
+    @extend .carousel-active;
+    background-color: #666666;
+}  
+.mx-14{
+margin: 30px 14px;
+}
+.gaming-carousel{
+    height: 600px;
+    
+    &-inner{
+        margin: 107px 0;
+        &-img{
+            width: 387px;
+            height: 387px;
+        }
+        &-text{
+            width: 813px;
+            height: 387px;
+            background-color: #292929;
+            padding: 75px ;
+            &-color{
+                color: #afafaf;
+            }
+        }
+    &-button{
+        width: 185px;
+        height: 40px;
+        border: 1px ;
+    }
+    }
+}
+@media screen and (width:320px) {
+    .gaming-carousel{
+        padding-top: 0p;
+        height: 738px;
+        background-color: #292929;
+        &-inner{
+            margin: 20px auto;
+            &-img{
+                margin: auto auto;
+                width: 280px;
+                height: 280px;
+            }
+            &-text{
+                padding: 20px;
+                width: 320px;
+
+                background-color: #292929;
+                &-color{
+                    color: #afafaf;
+                }
+            }
+        }
+
+}
+}
