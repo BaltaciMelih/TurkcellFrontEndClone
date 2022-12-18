@@ -68,11 +68,12 @@ function BottomSliderData({ data }) {
           <div className='col col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0  '>
             <img src={data.src} className='img-fluid w-100 px-lg-2 ' alt='' />
           </div>
-          <div className='col col-md-8 d-flex flex-column justify-content-center align-items-start px-lg-5 px-4 bg-bottom-slider-content  '>
+          <div className='col col-md-8 d-flex flex-column justify-content-center align-items-start px-lg-5 px-4 bg-bottom-slider-content py-3   '>
             <div className='carousel-content d-flex flex-column mb-3 text-white'>
               <p className='fs-6'>{data.date}</p>
-              <p className='fs-5'>{data.title}</p>
-              <p className='fs-5'>{data.desc}</p>
+              <p className='fs-5 bottom-slider-text fw-bold'>{data.title}</p>
+              <p className='fs-5 d-none d-md-block bottom-slider-text '>{data.desc}</p>
+              <p className='fs-6 d-block d-md-none bottom-slider-text m-0 mb-3 '>{data.descMobile}</p>
               {data.button}
             </div>
           </div>

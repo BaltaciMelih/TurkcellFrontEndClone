@@ -32,18 +32,18 @@ $bottom-slider-content-bg: #292929;
   }
 
   &-control-prev-2 {
-    left: -40px !important;
+    left: -45px !important;
   }
   &-control-next-2 {
-    right: -40px !important;
+    right: -45px !important;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .carousel-indicators-2 {
     position: absolute;
-    bottom: 1% !important;
-    left: 1% !important;
+    bottom: 3% !important;
+    left: 40% !important;
     z-index: 2 !important;
 
     .active {
@@ -62,4 +62,8 @@ $bottom-slider-content-bg: #292929;
   .h6 {
     font-size: 14px;
   }
+}
+
+.bottom-slider-text {
+  color: #afafaf;
 }
