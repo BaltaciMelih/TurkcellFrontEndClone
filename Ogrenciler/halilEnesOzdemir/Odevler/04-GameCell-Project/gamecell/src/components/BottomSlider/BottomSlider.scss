@@ -1,0 +1,30 @@
+$bottom-slider-bg: #1e1e1e;
+
+.bg-bottom {
+  background-color: $bottom-slider-bg;
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel-indicators-2 {
+    position: absolute;
+    bottom: 1%;
+    left: 15%;
+    z-index: 2;
+
+    .active {
+      background-color: green !important;
+    }
+
+    button {
+      border-radius: 50% !important;
+      height: 15px !important;
+      width: 15px !important;
+    }
+  }
+  .h3 {
+    font-size: 20px;
+  }
+  .h6 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,25 @@
+$pricing-header-color: #191919;
+$pricing-body-color: #292929;
+.pricing {
+  &-header {
+    background-color: $pricing-header-color;
+  }
+  &-body {
+    background-color: $pricing-body-color;
+  }
+  &-features {
+    font-size: 24px;
+  }
+}
+
+.hr {
+  width: 80%;
+}
+
+@media only screen and (max-width: 792px) {
+  .pricing {
+    &-features {
+      font-size: 16px;
+    }
+  }
+}
