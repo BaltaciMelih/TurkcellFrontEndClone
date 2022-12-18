@@ -5,11 +5,14 @@ import './RegisterForm.scss';
 import registerImg from '../../assets/register.png';
 
 function RegisterForm() {
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
   return (
     <>
       <div className='container-fluid '>
-        <div className='row d-flex flex-col justify-content-center align-items-center bg-black '>
-          <div className='col col-sm-10 col-lg-5 mx-auto   d-flex flex-column align-items-center justify-content-center px-lg-5  '>
+        <div className='row d-flex flex-col justify-content-center align-items-center bg-black py-xl-0 py-2 py-sm-5 '>
+          <div className='col col-sm-10 col-md-7 col-lg-5 mx-auto d-flex flex-column align-items-center justify-content-center px-lg-5    '>
             <Formik
               initialValues={{
                 name: '',
@@ -24,14 +27,18 @@ function RegisterForm() {
               validationSchema={Yup.object({
                 name: Yup.string().required('İsim boş bırakılamaz.'),
                 userName: Yup.string().required('Kullanıcı adınızı giriniz'),
-                phoneNumber: Yup.number().required('Telefon numaranızı giriniz.'),
+                phoneNumber: Yup.string()
+                  .min(10, 'Too short')
+                  .max(11, 'Too Long!')
+                  .matches(phoneRegExp, 'Telefon numaranızı giriniz')
+                  .required('Telefon numaranızı giriniz.'),
                 email: Yup.string().email().required('Email boş bırakılamaz'),
                 dateOfBirth: Yup.date()
                   .max(new Date(Date.now() - 567648000000), 'You must be at least 18 years')
-                  .required('Required'),
-                password: Yup.string().min(4, 'Too short').max(50, 'Too Long!').required('Required'),
-                agree1: Yup.boolean().required('Koşulları kabul etmelisin'),
-                agree2: Yup.boolean().required('Koşulları kabul etmelisin')
+                  .required('Doğum tarihinizi giriniz.'),
+                password: Yup.string().min(4, 'Too short').max(50, 'Too Long!').required('Lütfen şifrenizi giriniz'),
+                agree1: Yup.boolean().oneOf([true], 'Koşulları kabul etmelisin').required('Koşulları kabul etmelisin'),
+                agree2: Yup.boolean().oneOf([true], 'Koşulları kabul etmelisin').required('Koşulları kabul etmelisin')
               })}
               onSubmit={(values, { resetForm, setSubmitting }) => {
                 console.log(values);
@@ -42,9 +49,9 @@ function RegisterForm() {
               }}>
               {({ values, errors, handleChange, handleSubmit, handleReset, dirty, isSubmitting, touched }) => (
                 <form onSubmit={handleSubmit}>
-                  <div className='container bg-black py-lg-3 px-2 px-lg-2 bg-white '>
-                    <div className='px-lg-5  '>
-                      <h3 className='text-center text-black fw-bold mx-auto mb-4'>
+                  <div className='container  py-lg-5 px-2 px-lg-2 py-3 '>
+                    <div className='px-lg-3 py-lg-3 bg-form-mobile '>
+                      <h3 className='text-center  register-text fw-bold mx-auto mb-4 py-sm-2 '>
                         Register to play with Game+ Lorem Ipsum
                       </h3>
                       <div className='form-label mb-3'>
@@ -98,6 +105,7 @@ function RegisterForm() {
                         <input
                           placeholder='Date of Birth'
                           type='date'
+                          max='2999-12-31'
                           className='form-control py-3 rounded-0'
                           name='dateOfBirth'
                           value={values.dateOfBirth}
@@ -131,7 +139,7 @@ function RegisterForm() {
                           onChange={handleChange}
                         />
                         {errors.agree1 && touched.agree1 && <div className='text-danger'>{errors.agree1}</div>}
-                        <label className='form-check-label text-muted mb-2 ' htmlFor='agree'>
+                        <label className='form-check-label text-muted mb-2 ' htmlFor='agree1'>
                           <span className='text-decoration-underline'> Sözleşmeyi</span> ve
                           <span className='text-decoration-underline'> Gizlilik Şartları </span>’nı okudum ve kabul
                           ediyorum.
@@ -168,7 +176,7 @@ function RegisterForm() {
               )}
             </Formik>
           </div>
-          <div className='d-none d-lg-block col-md-8 col-lg-6 p-0'>
+          <div className='d-none d-xl-block col-md-8 col-lg-6 p-0'>
             <img src={registerImg} className='img-fluid w-100 ' style={{ objectFit: 'cover' }} alt='' />
           </div>
         </div>
