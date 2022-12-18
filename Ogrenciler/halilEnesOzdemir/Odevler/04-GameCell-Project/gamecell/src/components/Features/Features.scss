@@ -19,10 +19,16 @@ $bg-color: #1e1e1e;
 }
 
 @media only screen and (max-width: 576px) {
-  .features-main {
-    transform: translateY(0);
-    width: 100%;
-    z-index: 0;
-    box-shadow: none;
+  .features {
+    &-main {
+      transform: translateY(0);
+      width: 100%;
+      z-index: 0;
+      box-shadow: none;
+    }
+    &-icons {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

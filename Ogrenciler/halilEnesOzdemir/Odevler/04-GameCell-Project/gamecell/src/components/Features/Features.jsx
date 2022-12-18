@@ -13,18 +13,19 @@ function Features() {
                 Lorem ipsum dolor sit amet, <p className='m-0'>consectetur adipiscing elit.</p>
               </span>
             </div>
-            <div className='row row-cols-1 row-cols-sm-2 g-3 g-sm-3 py-2 mb-2 me-2 '>
+            <div className='row row-cols-1 row-cols-sm-2 g-2  g-sm-3 py-2 mb-2 gap-2 gap-sm-0  '>
               <div className='d-flex align-items-center justify-content-center flex-row gap-2'>
                 <img
-                  className='d-inline'
+                  className='d-inline features-icons'
                   src='https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/F25D4AEE-2A07-43CE-BD1C-9D71B8010C50.svg'
                   alt=''
                 />
-                <span className='text-white '>Lorem ipsum dolor sit amet</span>
+                <span className='text-white  '>Lorem ipsum dolor sit amet</span>
               </div>
 
               <div className='d-flex align-items-center justify-content-center flex-row gap-2'>
                 <img
+                  className='features-icons'
                   src='https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/AB8B1F2A-57CD-4015-BB22-8526E4F2329F.svg'
                   alt=''
                 />
@@ -33,6 +34,7 @@ function Features() {
 
               <div className='d-flex align-items-center justify-content-center flex-row gap-2'>
                 <img
+                  className='features-icons'
                   src='https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/CF5B0337-5AD2-4DED-93F7-1D0D4F1F431B.svg'
                   alt=''
                 />
@@ -41,6 +43,7 @@ function Features() {
 
               <div className='d-flex align-items-center justify-content-center flex-row gap-2'>
                 <img
+                  className='features-icons'
                   src='https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/B7FE2104-BA05-4ECD-9E70-8A65C9FDB158.svg'
                   alt=''
                 />
