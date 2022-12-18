@@ -29,7 +29,7 @@ const FilterListItem = () => {
 
   return (
     <Fragment>
-      <div className=' accordion-bg ' id='accordionExample'>
+      <div className=' accordion-bg  ' id='accordionExample'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingOne'>
             <button
@@ -49,26 +49,22 @@ const FilterListItem = () => {
               </div>
             </button>
           </h2>
-          <div
-            id='collapseOne'
-            className='accordion-collapse collapse show'
-            aria-labelledby='headingOne'
-            data-bs-parent='#accordionExample'>
+          <div id='collapseOne' className='accordion-collapse collapse show' aria-labelledby='headingOne'>
             <div className='accordion-body'>
-              <div className='d-flex flex-column '>
-                <div className='d-flex '>
+              <div className='d-flex flex-column gap-1 '>
+                <div className='d-flex gap-2'>
                   <input type='checkbox' />
                   <label htmlFor className='genres-text-color '>
                     Available
                   </label>
                 </div>
-                <div>
+                <div className='d-flex gap-2'>
                   <input type='checkbox' className='check_box' />
                   <label htmlFor className='genres-text-color '>
                     Patching
                   </label>
                 </div>
-                <div>
+                <div className='d-flex gap-2'>
                   <input type='checkbox' />
                   <label htmlFor className='genres-text-color '>
                     Maintenance
@@ -81,7 +77,7 @@ const FilterListItem = () => {
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingTwo'>
             <button
-              className='accordion-button'
+              className='accordion-button collapsed'
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#collapseTwo'
@@ -97,15 +93,11 @@ const FilterListItem = () => {
               </div>
             </button>
           </h2>
-          <div
-            id='collapseTwo'
-            className='accordion-collapse collapse show'
-            aria-labelledby='headingTwo'
-            data-bs-parent='#accordionExample'>
+          <div id='collapseTwo' className='accordion-collapse collapse show ' aria-labelledby='headingTwo'>
             <div className='accordion-body'>
               {sortedGenres.map((genre, i) => {
                 return (
-                  <div className='filter-list' key={i}>
+                  <div className='filter-list d-flex gap-2' key={i}>
                     <input
                       type='checkbox'
                       name={genre}
