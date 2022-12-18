@@ -1,5 +1,6 @@
 $pricing-header-color: #191919;
 $pricing-body-color: #292929;
+$pricing-green: #76b900;
 .pricing {
   &-header {
     background-color: $pricing-header-color;
@@ -23,3 +24,16 @@ $pricing-body-color: #292929;
     }
   }
 }
+
+.border-standart {
+  border: 5px solid $pricing-green;
+}
+
+.standart-text {
+  background-color: #76b900;
+}
+
+/* .tick-green {
+  fill: #76b900;
+  stroke: #76b900;
+} */

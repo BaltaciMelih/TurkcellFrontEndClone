@@ -8,7 +8,7 @@ const pricingMock = [
     src: tick,
     opt1: 'Standart Access',
     opt2: '1-hr session length',
-    button: <Button children={'JOIN NOW'} width='11.56rem' height='2.5rem' />
+    button: <Button children={'JOIN NOW'} width='220px' height='2.5rem' />
   },
   {
     title: 'STANDARD',
@@ -16,8 +16,8 @@ const pricingMock = [
     src: tick,
     opt1: 'Standart Access',
     opt2: '1-hr session length',
-    button: <Button children={'JOIN NOW'} width='11.56rem' height='2.5rem' />,
-    className: `border border-success`
+    button: <Button children={'JOIN NOW'} width='220px' height='2.5rem' />,
+    className: `border-standart tick-green`
   },
   {
     title: 'PREMIUM',
@@ -25,7 +25,7 @@ const pricingMock = [
     src: tick,
     opt1: 'Standart Access',
     opt2: '1-hr session length',
-    button: <Button children={'JOIN NOW'} width='11.56rem' height='2.5rem' />
+    button: <Button children={'JOIN NOW'} width='220px' height='2.5rem' />
   }
 ];
 
