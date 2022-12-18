@@ -1,0 +1,152 @@
+$black: #000;
+$black-two: #1e1e1e;
+@mixin text-style-game-list(
+  $fontFamily,
+  $fontSize,
+  $fontWeight,
+  $fontStrech,
+  $fontStyle,
+  $lineHeight,
+  $letterSpacing,
+  $color
+) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-stretch: $fontStrech;
+  font-style: $fontStyle;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+  color: $color;
+}
+
+.game-list-section-dis-div {
+  background-color: $black;
+  padding: 51px 120px 0 120px;
+
+  .game-list-section-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .game-list-section-top-title {
+      @include text-style-game-list(
+        GreycliffCF,
+        28px,
+        bold,
+        normal,
+        normal,
+        normal,
+        normal,
+        #fff
+      );
+    }
+    .game-list-section-top-sort {
+      display: flex;
+      justify-content: space-between;
+      .mobil-filter {
+        height: 55px;
+        padding: 14px 16px 14px 17px;
+        background-color: #1e1e1e;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 47px;
+        margin-right: 10px;
+
+        .mobil-filter-title {
+          font-family: GreycliffCF;
+          font-size: 16px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #afafaf;
+        }
+        .mobil-filter-icon {
+          color: #afafaf;
+        }
+      }
+      .modal custom {
+        padding: 30px 20px 29px;
+        .modal-header {
+          background-color: #000 !important;
+        }
+      }
+      #sorting {
+        background-color: #1e1e1e;
+        border: none;
+        padding: 16px 16px 15px;
+        text-align: center;
+        font-family: GreycliffCF;
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #afafaf;
+        option {
+          border: none;
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .game-list-section-bottom {
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    .game-list-section-left {
+      height: fit-content;
+      background-color: $black-two;
+      width: 27%;
+      padding: 40px 32px 5px 30px;
+    }
+    .game-list-section-right {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      // background-color: $black-two;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .game-list-section-dis-div {
+    padding: 30px 20px 66px 20px;
+    .game-list-section-top {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+      .game-list-section-top-title {
+        @include text-style-game-list(
+          GreycliffCF,
+          21px,
+          bold,
+          normal,
+          normal,
+          normal,
+          normal,
+          #fff
+        );
+      }
+      .game-list-section-top-sort {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .game-list-section-bottom {
+      margin-top: 15px;
+      justify-content: space-between;
+      .game-list-section-right {
+        width: 100%;
+        gap: 15px;
+      }
+    }
+  }
+}

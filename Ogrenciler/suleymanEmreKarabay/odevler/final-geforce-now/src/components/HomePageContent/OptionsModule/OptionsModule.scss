@@ -1,0 +1,14 @@
+$primaryColor: #76b900;
+
+.options-module {
+  background-color: #000;
+  padding-top: 68px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .options-module {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+}

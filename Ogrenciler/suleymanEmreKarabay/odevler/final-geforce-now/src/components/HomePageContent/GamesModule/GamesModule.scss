@@ -1,0 +1,14 @@
+$primaryColor: #76b900;
+
+.games-module{
+    background-color: #000;
+    padding-top: 68px;
+    padding-bottom: 60px
+}
+
+@media (max-width:768px) {
+    .games-module{
+        padding-top: 30px;
+        padding-bottom: 61px
+    }
+}
