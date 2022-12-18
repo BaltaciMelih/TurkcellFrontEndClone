@@ -9,11 +9,11 @@ function Header() {
 
   return (
     <>
-      <nav className='navbar navbar-expand-md bg-white py-3  '>
+      <nav className='navbar navbar-expand-md py-3  '>
         <div className='container-md px-lg-3 px-2 ms-2 '>
-          <Link className='navbar-brand ms-lg-3' to='/'>
+          <Link className='navbar-brand ms-lg-5' to='/'>
             <img
-              className='logo-img '
+              className='logo-img ms-lg-5'
               src='https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/05D02D0F-C436-4842-9A6E-56C4D0D077D8.png'
               alt=''
             />
@@ -27,7 +27,7 @@ function Header() {
             </span>
           </button>
           <div className='collapse navbar-collapse' id='gameplusNavbar'>
-            <div className='navbar-nav ms-auto d-flex flex-flex-sm-column justify-content-center align-items-center gap-4  '>
+            <div className='navbar-nav ms-auto d-flex flex-flex-sm-column justify-content-center align-items-center gap-sm-2  '>
               <Link className='nav-item nav-link text-black fw-semibold' to='/games'>
                 Games
               </Link>
@@ -44,7 +44,7 @@ function Header() {
                 Support
               </Link>
               {location.pathname.match('/register') ? null : (
-                <Link to='/register'>
+                <Link to='/register' className='ms-lg-3'>
                   <Button width='185px' height='40px' children={"LET'S PLAY"} />
                 </Link>
               )}
