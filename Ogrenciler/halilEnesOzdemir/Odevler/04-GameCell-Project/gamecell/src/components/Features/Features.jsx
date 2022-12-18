@@ -8,10 +8,12 @@ function Features() {
         <div className='py-2 py-md-3 py-lg-5 container-md mx-auto features-main  '>
           <div className='row row-cols-1 row-cols-lg-2 py-md-0  justify-content-center align-items-sm-center  px-2 py-2 '>
             <div className='d-flex flex-column align-items-center justify-content-center text-white '>
-              <h3 className='fw-bold '>Features</h3>
-              <p className='text-center m-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 className='fw-bold mt-lg-4 '>Features</h3>
+              <span className='text-center m-0'>
+                Lorem ipsum dolor sit amet, <p className='m-0'>consectetur adipiscing elit.</p>
+              </span>
             </div>
-            <div className='row row-cols-1 row-cols-sm-2 g-3 g-sm-3 py-2 mb-2  '>
+            <div className='row row-cols-1 row-cols-sm-2 g-3 g-sm-3 py-2 mb-2 me-2 '>
               <div className='d-flex align-items-center justify-content-center flex-row gap-2'>
                 <img
                   className='d-inline'
