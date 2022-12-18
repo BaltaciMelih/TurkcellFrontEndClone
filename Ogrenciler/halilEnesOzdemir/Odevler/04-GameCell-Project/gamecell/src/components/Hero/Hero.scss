@@ -1,8 +1,14 @@
 .carousel {
   &-indicators {
-    position: absolute;
-    bottom: 25%;
-    right: 62%;
+    bottom: 30%;
+    left: 13%;
+    z-index: 2;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+    right: 0 !important;
+    gap: 5px;
+    justify-content: start !important;
 
     .active {
       background-color: green !important;
@@ -33,22 +39,45 @@
     }
   }
 }
+@media only screen and (max-width: 991px) {
+  .carousel {
+    &-indicators {
+      bottom: 28%;
+      left: 14%;
+    }
+  }
+}
+
+@media only screen and (max-width: 792px) {
+  .carousel {
+    &-indicators {
+      bottom: 27%;
+    }
+  }
+  .h3 {
+    font-size: 20px;
+  }
+  .h6 {
+    font-size: 14px;
+  }
+}
 
 @media only screen and (max-width: 576px) {
   .carousel {
-    &-indicators {
-      position: absolute;
-      bottom: 23%;
-      right: 55%;
-    }
-
     &-img {
       height: 30vh;
       object-fit: cover;
     }
+    .carousel {
+      &-indicators {
+        bottom: 2%;
+        left: 5%;
+      }
+    }
     &-contents {
       .carousel-content {
         background-color: black;
+        z-index: 1;
         position: relative;
         left: 0;
       }
@@ -60,37 +89,5 @@
       font-size: 18px;
       font-weight: normal;
     }
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .carousel {
-    &-indicators {
-      position: absolute;
-      bottom: 23%;
-      right: 55%;
-    }
-  }
-  .h3 {
-    font-size: 20px;
-  }
-  .h6 {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 792px) {
-  .carousel {
-    &-indicators {
-      position: absolute;
-      bottom: 20%;
-      right: 48%;
-    }
-  }
-  .h3 {
-    font-size: 20px;
-  }
-  .h6 {
-    font-size: 14px;
   }
 }
