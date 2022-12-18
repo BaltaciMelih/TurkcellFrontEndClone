@@ -1,0 +1,42 @@
+.button1{
+    background-color:#76b900;
+    width:185px;
+    height:40px;
+    font-size:16px;
+    color:white;
+    border:none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button2{
+    background-color:#76b900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:326px;
+    height:40px;
+    font-size:16px;
+    color:white;
+    border:none;
+    margin-right:12px;
+}
+.button3{
+    background-color:#292929;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:185px;
+    height:40px;
+    font-size:16px;
+    color:#76b900;
+    border:2px solid #76b900;
+    margin-right:12px;
+}
+
+@media screen and (max-width:768px) {
+    .button1{
+        width: 140px;
+        height: 48px;
+    }
+    .button2{
+        width: 236px;
+        height: 48px;
+    }
+    
+}

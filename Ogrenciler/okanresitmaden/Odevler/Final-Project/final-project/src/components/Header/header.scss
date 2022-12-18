@@ -1,0 +1,34 @@
+@mixin flex($display,$direction){
+    display: $display;
+    flex-direction: $direction;
+}
+
+.navbar{
+    z-index: 1;
+    @include flex(flex, row);
+    height: 80px;
+    background-color: white;
+    .imglogo{
+        width: 317px;
+        height: 53px;
+        margin-left: 120px;
+        
+    }
+    ul{
+        li{
+            margin-right: 32px;
+            font-weight: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            }
+    }
+}
+@media screen and (max-width:768px){
+    .navbar{
+        .imglogo{
+            width: 204px;
+            height: 34px;
+            margin-left: 0px;
+        }
+}
+}

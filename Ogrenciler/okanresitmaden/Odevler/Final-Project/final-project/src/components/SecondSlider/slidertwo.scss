@@ -1,0 +1,43 @@
+.slidertext{
+    color: #afafaf;
+    h2{
+        font-size: 24px;
+    }
+}
+.banner{
+    .banner__pc{
+        width: 100%;
+    }
+}
+.banner__mobile{
+    display: none;
+    width: 100%;
+}
+.carousel__border{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.displayfeature{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .col-9{
+        flex-direction: column !important;
+    }
+    .displayfeature{
+        display: block;
+    }
+    .displayarrow{
+        display: none;
+    }
+    .banner__pc{
+        display: none;
+    }
+    .banner__mobile{
+        display: block;
+    }
+    .bannermobile__size{
+            width: 100%;
+    }
+}
+
