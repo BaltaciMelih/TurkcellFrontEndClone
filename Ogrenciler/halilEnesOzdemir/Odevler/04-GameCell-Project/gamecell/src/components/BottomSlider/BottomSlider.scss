@@ -1,15 +1,50 @@
 $bottom-slider-bg: #1e1e1e;
-
+$bottom-slider-content-bg: #292929;
 .bg-bottom {
   background-color: $bottom-slider-bg;
+
+  &-slider-content {
+    background-color: $bottom-slider-content-bg;
+  }
+}
+
+.carousel {
+  &-indicators {
+    bottom: 30%;
+    left: 13%;
+    z-index: 2;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+    right: 0 !important;
+    gap: 5px;
+    justify-content: start !important;
+
+    .active {
+      background-color: green !important;
+    }
+
+    button {
+      border-radius: 50% !important;
+      height: 10px !important;
+      width: 10px !important;
+    }
+  }
+
+  &-control-prev-2 {
+    left: -40px !important;
+  }
+  &-control-next-2 {
+    right: -40px !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   .carousel-indicators-2 {
     position: absolute;
-    bottom: 1%;
-    left: 15%;
-    z-index: 2;
+    bottom: 1% !important;
+    left: 1% !important;
+    z-index: 2 !important;
 
     .active {
       background-color: green !important;

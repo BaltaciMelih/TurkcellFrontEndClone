@@ -4,7 +4,7 @@ import './Pricing.scss';
 function Pricing({ pricingMock }) {
   return (
     <>
-      <div className='container-fluid py-3 px-lg-5 bg-black'>
+      <div className='container-fluid py-3 px-lg-5 px-sm-5 bg-black'>
         <h2 className='text-center mb-lg-5 text-white mb-4 py-3 px-2 lh-base '>
           Lorem ipsum dolor sit amet consectetur
         </h2>
