@@ -1,0 +1,28 @@
+$bg-color: #1e1e1e;
+
+.features-bg {
+  background-color: $bg-color;
+}
+.features-main {
+  width: 80%;
+  left: 15%;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+  transform: translateY(-30%);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 792px) {
+  .features-main {
+    transform: translateY(-20%);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .features-main {
+    transform: translateY(0);
+    width: 100%;
+    z-index: 0;
+    box-shadow: none;
+  }
+}

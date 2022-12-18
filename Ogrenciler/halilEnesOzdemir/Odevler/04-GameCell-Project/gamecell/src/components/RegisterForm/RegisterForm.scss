@@ -1,0 +1,23 @@
+.register-login-text {
+  font-size: 14px;
+}
+
+.form-check-input {
+  width: 25px;
+}
+
+.bg-form-mobile {
+  background-color: #fff;
+}
+.register-text {
+  color: #000;
+}
+
+@media screen and (max-width: 576px) {
+  .bg-form-mobile {
+    background-color: #000;
+  }
+  .register-text {
+    color: #fff;
+  }
+}
