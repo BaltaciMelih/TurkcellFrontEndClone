@@ -1,0 +1,28 @@
+$primaryColor: #76b900;
+
+.option-item {
+  width: max-content;
+}
+
+.normal {
+  .card-body {
+    background-color: #212529;
+    color: #fff;
+  }
+  .card-title {
+    background-color: #191919;
+    color: #fff;
+  }
+}
+
+.green {
+  border: 4px solid $primaryColor;
+  .card-body {
+    background-color: #212529;
+    color: #fff;
+  }
+  .card-title {
+    background-color: $primaryColor;
+    color: #fff;
+  }
+}

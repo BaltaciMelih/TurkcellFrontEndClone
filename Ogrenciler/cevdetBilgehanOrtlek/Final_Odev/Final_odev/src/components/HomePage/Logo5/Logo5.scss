@@ -1,0 +1,27 @@
+.Logo5 {
+  background-image: url("https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/409F2B8A-ED0F-4A58-8551-A30507016D33.png");
+  background-repeat: no-repeat;
+  padding-top: 49px;
+  padding-bottom: 48px;
+  object-fit: contain;
+  background-size: cover;
+}
+.Logo5Row {
+  margin-right: 305px;
+  margin-left: 305px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .Logo5 {
+    padding-top: 35px;
+    padding-bottom: 34px;
+  }
+  .Logo5Row {
+    margin-right: 38px;
+    margin-left: 38px;
+    display: flex;
+    flex-direction: row;
+  }
+}
