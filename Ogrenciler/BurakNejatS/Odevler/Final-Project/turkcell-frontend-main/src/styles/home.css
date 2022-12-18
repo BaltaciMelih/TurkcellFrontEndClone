@@ -1,0 +1,105 @@
+.bannerLogo {
+  background-image: url(../images/hero-banner.png);
+}
+.Gameplus {
+  font-size: 40px;
+  font-family: GreycliffCF;
+  font-weight: bold;
+  color: #fff;
+}
+.Lorem {
+  font-family: GreycliffCF;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #fff;
+}
+.arrow-left {
+  margin-top: 286px;
+  margin-left: 30px;
+  position: absolute;
+  width: 48px;
+}
+.arrow-right {
+  position: absolute;
+  margin-left: 1362px;
+  margin-right: 30px;
+  margin-top: 286px;
+  width: 48px;
+}
+.module {
+  background-image: url("../images/module-banner/module.web.png");
+}
+.features {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+  width: 997px;
+}
+.lorem-box {
+  width: 225px;
+  height: 48px;
+  font-family: GreycliffCF;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #fff;
+  margin-left: 60px;
+  margin-top: 125px;
+  margin-bottom: 77px;
+}
+.box-2 {
+  background-color: #1e1e1e;
+  height: 250px;
+  width: 997px;
+  color: #fff;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+}
+.box-1 {
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+  width: 1440px;
+}
+.box-screen {
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to bottom, #656565, #2a2a2a);
+  border-image-slice: 1;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+}
+
+#lorem0 {
+  font-size: 16px;
+  position: relative;
+  bottom: 70px;
+}
+#games-box {
+  background-color: #000000;
+}
+@media screen and (max-width: 990px) {
+  #lorem0 {
+    bottom: 0;
+  }
+  .game-image {
+    display: none;
+  }
+  .features {
+    display: none;
+  }
+  .module {
+    background-image: url("../images/module-banner/module-mobil.png");
+  }
+}
+.carousel-2 {
+  background-color: #292929;
+}
+.choose {
+  color: #76b900;
+}

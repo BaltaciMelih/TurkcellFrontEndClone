@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "namesurname": "burak",
+      "username": "nejat",
+      "phonenumber": "5325235",
+      "email": "nejat@hotmail.com",
+      "birthday": "12.12.1998",
+      "password": "1231231"
+    },
+    {
+      "namesurname": "BurakNejat Songüler",
+      "username": "ddad",
+      "phonenumber": "05547782007",
+      "email": "nejat.980@hotmail.com",
+      "birthday": "2022-12-02",
+      "password": "12121",
+      "id": 2
+    },
+    {
+      "namesurname": "BurakNejat Songüler",
+      "username": "Songuleer",
+      "phonenumber": "05547782007",
+      "email": "nejat.980@hotmail.com",
+      "birthday": "1998-04-24",
+      "password": "123456",
+      "id": 3
+    }
+  ]
+}

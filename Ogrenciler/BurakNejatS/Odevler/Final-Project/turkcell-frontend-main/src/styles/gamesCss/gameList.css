@@ -1,0 +1,16 @@
+.character{
+    background-image: url("../../images/polygon.png");
+    
+}
+
+.character-bg{
+    background-color: #1E1E1E;
+    padding: 30px;
+    
+}
+
+.gameTitle{
+    background-color: #1E1E1E;
+    padding: 5px;
+    padding-left: 30px;
+}

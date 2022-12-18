@@ -1,0 +1,22 @@
+.footer-text {
+  font-family: GreycliffCF;
+  color: #1e1e1e;
+}
+
+.footer2-text {
+  font-family: GreycliffCF;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 990px) {
+  .footer-faqs {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
