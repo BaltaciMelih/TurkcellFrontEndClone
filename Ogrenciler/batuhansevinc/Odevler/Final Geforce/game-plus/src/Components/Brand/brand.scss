@@ -1,0 +1,12 @@
+.brand{
+    width: auto;
+    height: 310px;
+    background-image: url("../../Images/banner2.png");
+    background-size: 100% 100%; 
+}
+@media screen and (max-width:320px) {
+    .brand{
+        height: 237px;
+        background-image: url("../../Images/banner2responsive.png");
+    }
+}

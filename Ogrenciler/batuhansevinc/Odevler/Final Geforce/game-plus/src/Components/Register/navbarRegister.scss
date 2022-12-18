@@ -1,0 +1,10 @@
+@media only screen and (max-width: 320px) {
+    .navbar{
+        &-image{
+            width: 204px;
+        }
+        &-toggler &-toggler-icon{
+            width: 24px;
+            padding: 0 ;
+            margin: 0;
+        }}}

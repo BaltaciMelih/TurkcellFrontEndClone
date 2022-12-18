@@ -1,0 +1,24 @@
+h2{
+    padding-top: 68px;
+    padding-bottom: 32px;
+}
+.card-padding{
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.p-20{
+    padding-left: 20px;
+}
+.p-button{
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+@media screen and (max-width: 320px) {
+    .games-img{
+        width: 134px;
+        height: 134px;
+    }
+    .p-20{
+        padding-left: 0px;
+    }
+}

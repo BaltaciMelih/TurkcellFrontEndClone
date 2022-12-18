@@ -1,0 +1,95 @@
+.browseGames{
+    &-title{
+        padding-top: 64px;
+        padding-bottom: 33px;
+    }
+    &-filters{
+        width: 386px;
+        &-state{
+            margin-left: 30px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            color: #afafaf;
+            
+        }
+    }
+    &-games{
+        margin-bottom: 30px;
+        width: 794px;
+        &-name{
+            height: 414px;
+            margin-bottom: 50px;
+        }
+    }
+    &-paragraph{
+        padding-left: 30px;
+        color: #afafaf;
+        &:hover{
+            cursor: pointer;
+            color: white;
+        }
+    }
+}
+.plygon{
+    &-img{
+    background-image: url("https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/6E265F85-28D3-45A0-9275-9619B406BE7A.svg");
+    background-repeat: no-repeat;
+    height: 60px;
+}
+    &-text{
+        color: #1e1e1e;
+    }
+}
+.form-check{
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 24px !important;
+    color: #afafaf;
+    font-size: 20px;
+    &-input{
+        margin-top: 0px !important;
+    }
+}
+@media screen and (max-width:320px) {
+    .browseGames{
+        &-title{
+            padding-top: 64px;
+            padding-bottom: 33px;
+        }
+        &-filters{
+            display: none;
+            
+        }
+        &-games{
+            margin-bottom: 30px;
+            width: 280px;
+            &-name{
+                height: 414px;
+                margin-bottom: 50px;
+            }
+        }
+}
+.plygon{
+
+    &-img{
+    background-image: url("https://cdn.zeplin.io/5f91645bc7d3b352a5fe0ebd/assets/6E265F85-28D3-45A0-9275-9619B406BE7A.svg");
+    background-repeat: no-repeat;
+    height: 60px;
+}
+    &-text{
+        color: #1e1e1e;
+        padding-top: 10px;
+        margin-left: 5px;
+    }
+}
+.dropdown-filter , .dropdown-title{
+    width: 135px;
+    height: 48px;
+    background-color: #1e1e1e;
+    &-text{
+        padding-top: 14px;
+        padding-left: 17px;
+        color: #afafaf;
+    }
+}
+}
