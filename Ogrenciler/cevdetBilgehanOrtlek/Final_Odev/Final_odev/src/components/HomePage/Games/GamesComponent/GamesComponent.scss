@@ -1,0 +1,19 @@
+.games-module-image{
+    width: 183px;
+    height: 183px;
+    margin: 0 20px 20px 0;
+  object-fit: contain;
+}
+
+.col{
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:768px) {
+  .games-module-image{
+    width: 134px;
+    height: 134px;
+    margin: 0 12px 12px 0;
+}
+}

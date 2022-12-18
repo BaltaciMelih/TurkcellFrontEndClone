@@ -1,0 +1,182 @@
+@mixin text-style-features(
+  $fontFamily,
+  $fontSize,
+  $fontWeight,
+  $fontStrech,
+  $fontStyle,
+  $lineHeight,
+  $letterSpacing
+) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-stretch: $fontStrech;
+  font-style: $fontStyle;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+.FeaturesDisDiv {
+  background-color: #1e1e1e;
+  position: relative;
+  height: 220px;
+}
+.FeaturesIcDivMobil {
+  display: none;
+}
+.FeaturesIcDiv {
+  width: 997px;
+  height: 250px;
+  padding: 65px 60px 62px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+  background-color: #1e1e1e;
+
+  position: absolute;
+  right: 180px;
+  bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 86px;
+
+  .FeaturesIcDivleftTitle {
+    width: 225px;
+    height: 33px;
+    margin: 0 0 15px;
+    @include text-style-features(
+      GreycliffCF,
+      28px,
+      bold,
+      normal,
+      normal,
+      normal,
+      normal
+    );
+    color: #fff;
+  }
+  .FeaturesIcDivleftContent {
+    width: 225px;
+    height: 48px;
+    margin: 15px 0 0;
+    @include text-style-features(
+      GreycliffCF,
+      16px,
+      normal,
+      normal,
+      normal,
+      1.5,
+      normal
+    );
+    color: #fff;
+  }
+
+  .FeaturesIcDivRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    .FeaturesIcDivRightFirst {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 43px;
+    }
+    .FeaturesIcDivRightFirstItem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      .FeaturesIcDivRightFirstItemTitle {
+        @include text-style-features(
+          GreycliffCF,
+          16px,
+          normal,
+          normal,
+          normal,
+          1.63,
+          normal
+        );
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .FeaturesDisDiv {
+    display: none;
+  }
+  .FeaturesIcDivMobil {
+    display: block;
+    background-color: #1e1e1e;
+    padding: 30px 20px 30px;
+    color: #fff;
+    .FeaturesIcDivleft {
+      text-align: center;
+    }
+
+    .FeaturesIcDivleftTitle {
+      height: 25px;
+      margin: 0 2px 15px 0;
+      @include text-style-features(
+        GreycliffCF,
+        21px,
+        bold,
+        normal,
+        normal,
+        normal,
+        normal
+      );
+      text-align: center;
+      color: #fff;
+    }
+    .FeaturesIcDivleftContent {
+      height: 48px;
+      margin: 15px 0 30px 2px;
+      @include text-style-features(
+        GreycliffCF,
+        16px,
+        normal,
+        normal,
+        normal,
+        1.5,
+        normal
+      );
+      text-align: center;
+    }
+    .FeaturesIcDivRight {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      .FeaturesIcDivRightFirst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        .FeaturesIcDivRightFirstItem {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+
+          .FeaturesIcDivRightFirstItemTitle {
+            width: 198px;
+            height: 26px;
+            margin: 3px 0 3px 10px;
+            @include text-style-features(
+              GreycliffCF,
+              16px,
+              normal,
+              normal,
+              normal,
+              1.63,
+              normal
+            );
+          }
+        }
+      }
+    }
+  }
+}
