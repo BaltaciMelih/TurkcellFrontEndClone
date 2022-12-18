@@ -4,32 +4,32 @@ import './Footer.scss';
 function Footer() {
   return (
     <>
-      <footer className='bg-white py-2 py-lg-3'>
+      <footer className='bg-white py-3 py-lg-3'>
         <div className='row d-flex flex-column align-items-center  flex-sm-row text-center m-0 '>
-          <div className='col-5 d-flex flex-column  flex-sm-row   justify-content-start align-items-start p-0 offset-md-1'>
-            <div className='col-2 '>
+          <div className='col-5 d-flex flex-column   flex-sm-row justify-content-center align-items-center   justify-content-md-start align-items-start p-0 offset-sm-1 gap-sm-5 mb-2'>
+            <div className='col col-sm-2 '>
               <ul className='list-unstyled  d-flex flex-column m-0'>
                 <a href='#'>Games </a>
                 <a href='#'>Membership</a>
                 <a href='#'>Download</a>
               </ul>
             </div>
-            <div className='col-3'>
+            <div className='col col-sm-3'>
               <ul className='list-unstyled  d-flex flex-column  m-0 ms-lg-5 '>
                 <a href='#'>Contact Us</a>
                 <a href='#'>Blog</a>
               </ul>
             </div>
-            <div className='col-3'>
+            <div className='col col-sm-3'>
               <ul className='list-unstyled  d-flex flex-column mb-2'>
                 <a href='#'>FAQs</a>
                 <a href='#'>Service Status</a>
               </ul>
             </div>
           </div>
-          <div className='col-4 flex-column d-flex  flex-sm-row  justify-content-center align-items-center offset-lg-1'>
+          <div className='col-4 flex-column d-flex  flex-sm-row  justify-content-center align-items-center offset-sm-1'>
             <div className='col'>
-              <ul className='d-flex flex-column '>
+              <ul className='d-flex flex-column p-0 '>
                 <a href='#' className='fw-bold '>
                   Follow Us!
                 </a>
