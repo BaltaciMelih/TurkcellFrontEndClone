@@ -27,7 +27,7 @@ function GamesMain({ reversed }) {
     <>
       {/* <SortComponent /> */}
       {(reversed ? chars.reverse() : chars).map((char, index) => (
-        <div className='polygon-container polygon-bg'>
+        <div className='polygon-container polygon-bg mb-4'>
           <div key={index} className='polygon mb-4  '>
             <img className='img-fluid ' src={polygon} alt='' />
             <span className='char'>{char}</span>

@@ -1,6 +1,8 @@
 .polygon {
   position: relative;
   width: 60px;
+  top: 15px;
+  left: 15px;
 
   &-bg {
     background-color: #1e1e1e;
@@ -18,4 +20,7 @@
 
 .game-color {
   color: #afafaf;
+  :hover {
+    cursor: pointer;
+  }
 }
