@@ -1,0 +1,18 @@
+header{
+
+  .headerH{
+    height: 80px;
+  }
+  .rightHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  
+}
+
