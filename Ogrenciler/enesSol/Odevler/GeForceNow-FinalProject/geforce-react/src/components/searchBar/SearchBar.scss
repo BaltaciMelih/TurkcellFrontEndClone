@@ -1,0 +1,70 @@
+.searchbar {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 793px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  input {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 300px;
+  }
+  input:focus {
+    outline: none;
+  }
+  .searchbarInput-wrapper {
+    margin-top: 105px;
+    display: flex;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative;
+    box-sizing: border-box;
+    .searchbarInput {
+      border-radius: 0 !important;
+      height: 56px !important;
+      width: 100% !important;
+    }
+    .icons-wrapper {
+      height: 56px;
+      width: 50px;
+      background-color: #fff;
+      display: grid;
+      place-items: center;
+      #searchIcons {
+        cursor: pointer;
+      }
+    }
+  }
+  .resultsReveal {
+    margin-top: 5px;
+    max-width: 49.7rem;
+    max-height: 30%;
+    background-color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 3 !important;
+    position: relative;
+  }
+  .resultItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    p {
+      margin-left: 10px;
+    }
+  }
+}
+.resultsReveal::-webkit-scrollbar {
+  display: none;
+}
