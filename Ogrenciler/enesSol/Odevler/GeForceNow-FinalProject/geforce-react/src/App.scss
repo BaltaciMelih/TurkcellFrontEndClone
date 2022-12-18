@@ -1,3 +1,8 @@
-h1 {
-  color: blue;
+@font-face {
+  font-family: greycliff;
+  src: url("./assets//fonts/GreycliffCF-Regular.woff2");
+}
+
+body {
+  font-family: greycliff !important;
 }

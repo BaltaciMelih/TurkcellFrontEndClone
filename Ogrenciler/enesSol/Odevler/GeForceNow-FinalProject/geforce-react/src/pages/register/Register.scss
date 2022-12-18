@@ -1,0 +1,72 @@
+$main-color: #76b900;
+body {
+  background-color: black;
+}
+.form-bg {
+  background-color: #fff;
+  width: 100%;
+  max-width: 444px;
+}
+form {
+  input {
+    height: 56px;
+    width: 384px;
+    border-radius: 0 !important;
+  }
+  button {
+    border-radius: 0 !important;
+  }
+  .form-check-label {
+    inline-size: 90%;
+    overflow: hidden;
+  }
+  .register-main-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .btn-register {
+    background-color: $main-color;
+    border-radius: 0;
+    width: 11.5rem;
+    height: 2.5rem;
+    padding: 0 0.5px;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    text-align: center;
+    color: #fff;
+  }
+}
+.right-content {
+  background-image: url("../../assets/register/registerheaderimg.webp");
+  background-size: cover;
+  background-position: 50%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 991px) {
+  .right-content {
+    display: none;
+  }
+  .form-bg {
+    background: none;
+  }
+  .form-check-label {
+    color: rgba(178, 178, 178, 0.75);
+  }
+  form p {
+    color: rgba(178, 178, 178, 0.75);
+  }
+  .sign {
+    color: #666666 !important;
+  }
+  .register-main-title {
+    color: #fff;
+  }
+}
