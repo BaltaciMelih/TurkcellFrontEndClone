@@ -1,0 +1,26 @@
+.card2 {
+    width: 997px;
+    height: 250px;
+    margin: 0 222px 60px 221px;
+    padding: 65px 60px 62px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+    background-color: #1e1e1e;
+    color: white;
+}
+.card4 {
+    width: 1440px;
+    height: 328px;
+    padding: 48px 121px 60px 123px;
+    background-color: #1e1e1e;
+}
+.rectangle {
+    width: 386px;
+    height: 120px;
+    margin: 0 19px 0 0;
+    padding: 35px 61px 35px 62px;
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to bottom, #656565, #2a2a2a);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom, var(--black-two), var(--black));
+}
