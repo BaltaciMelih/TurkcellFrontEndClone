@@ -1,0 +1,68 @@
+@import "../../node_modules/bootstrap/scss/functions"; 
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@font-face {
+  font-family: Greycliffcf;
+  src: url(../fonts/GreycliffCF-Regular.woff2);
+  font-weight: regular;
+}
+@font-face {
+  font-family: Greycliffcf;
+  src: url(../fonts/GreycliffCF-Medium.woff2);
+  font-weight: medium;
+}
+@font-face {
+  font-family: Greycliffcf;
+  src: url(../fonts/GreycliffCF-Bold.woff2);
+  font-weight: bold;
+}
+$theme-colors: (
+  "primary": #76b900,
+  "secondary": #000000,
+  "third": #666666,
+  "fourth": #b2b2b2,
+  "fifth": #ff2525,
+  "sixth": #1e1e1e,
+  "seventh": #8e9fad,
+  "eighth": #ffffff,
+  "ninth": #191919,
+  "tenth": #292929,
+);
+$font-sizes: (
+  1: 40px,
+  2: 32px,
+  3: 28px,
+  4: 24px,
+  5: 20px,
+  6: 16px,
+  7: 12px,
+  8: 14px,
+);
+
+$position-values: (
+  n-40: -40%,
+  0: 0,
+  10:10%,
+  25: 25%,
+  28: 28%,
+  35: 35%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  110: 110%,
+);
+.carousel .carousel-control-prev-icon{
+  background-image: url('../img/icon-arrow-left.png');
+  width: 48px;
+  height: 48px;
+}
+.carousel .carousel-control-next-icon{
+  background-image: url('../img/icon-arrow-right.png');
+  width: 48px;
+  height: 48px;
+  opacity: 1;
+}
+#root{
+  font-family: Greycliffcf;
+}
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
