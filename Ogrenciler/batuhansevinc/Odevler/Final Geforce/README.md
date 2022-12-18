@@ -1,4 +1,4 @@
 - 2 Ekran seçeneği üzerinde çalışıldı. (1440px ve 320px)
-- Oyunlar db.json dosyasından alınarak sıralanıyor.
-- Kayıt olan kullanıcı verileri users.json dosyasına kaydediliyor.
-- Tüm dosyalar game-plus klasörü altında toplandı.
+- Oyunlar db.json dosyasından alınarak sıralanıyor. (http://localhost:3004/data)
+- Kayıt olan kullanıcı verileri users.json dosyasına kaydediliyor. (http://localhost:3007/posts)
+- Tüm dosyalar game-plus klasörü altında toplandı. 
