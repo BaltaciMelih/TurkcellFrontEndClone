@@ -1,0 +1,80 @@
+.baseRead{
+    background-color: #1e1e1e;
+    padding: 107px 120px 106px ;
+}
+.readCard{
+    display: flex;
+    flex-direction: row;
+    background-color: #292929;
+}
+.img img{
+    width: 387px;
+    height: 387px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 30px ;
+}
+.date{
+  margin: 0 555px 15px 0;
+  font-family: GreycliffCF;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #afafaf;
+}
+.info h3{
+    margin: 0;
+  font-family: GreycliffCF;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #afafaf;
+}
+.story{
+    margin: 15px 12px 0 0;
+  font-family: GreycliffCF;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #afafaf;
+}
+@media screen and (max-width: 320px){
+    .baseRead{
+        padding: 0;
+    }
+    .readCard{
+        flex-wrap: wrap;
+        padding: 20px ;
+    }
+    .img img{
+        width: 280px;
+        height: 280;
+        margin:0;
+    }
+    .info{
+        margin: 20px 22px 54px 0;
+    }
+    .date{
+      margin: 0 80px 8px 0;
+      font-size: 16px;
+    }
+    .info h3{
+        margin: 0;
+        font-size: 21px;
+    }
+    .story{
+        margin: 12px 0 24px 0;
+        font-size: 16px;
+    }
+  }

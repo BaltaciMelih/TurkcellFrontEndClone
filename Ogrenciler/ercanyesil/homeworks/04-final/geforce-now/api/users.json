@@ -1,0 +1,13 @@
+{
+    "Blogs": [
+      {
+        "id": 1,
+        "name": "React 101",
+        "username": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "phone-number": "Varol Maksutoğlu",
+        "e-mail": "2022-12-13T20:52",
+        "date-of-birth": "Personal Blog",
+        "password": "Personal Blog"
+      }
+    ]
+  }

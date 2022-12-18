@@ -1,0 +1,137 @@
+a{
+  list-style: none;
+  text-decoration: none;
+}
+
+.footerTop{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 24px 105px 24px 121px;
+  background-color: #fff;
+}
+.col1{
+  margin: 0 60px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.col2{
+  margin: 0 60px 60px 0;
+  display: flex;
+  flex-direction: column;
+}
+.colText{
+  font-family: GreycliffCF;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #1e1e1e;
+}
+.follow{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 59px 0 319px;
+}
+.follow p{
+  margin: 0 0 16px;
+  font-family: GreycliffCF;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #1e1e1e;
+}
+.icons{
+  margin: 0 16px 0 0;
+  width: 20px;
+  height: 16px;
+}
+.icons .end{
+  margin: 0;
+}
+.lang{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.lang p{
+  margin: 0 0 14px;
+  font-family: GreycliffCF;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #1e1e1e;
+}
+
+.footerBottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1px 120px 0 121px;
+    background-color: #1e1e1e;
+}
+.bottomLink{
+  margin: 0 20px 0 0;
+  color: #fff;
+  font-family: GreycliffCF;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: #fff;
+}
+.bottomEnd{
+  margin: 0 0 0 773px;
+  width: 183px;
+  font-family: GreycliffCF;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: right;
+  color: #fff;
+  justify-self: end;
+}
+@media screen and (max-width: 960px){
+.footerTop{
+  padding: 14px 108px 0 107px;
+  align-items: center;
+  text-align: center;
+}
+.col2{
+  margin:0;
+}
+.footerBottom{
+    padding: 15px 110px 15px 109px;
+    align-items: center;
+    text-align: center;
+}
+.bottomLink{
+  margin: 0;
+  align-self: center;
+}
+.bottomEnd{
+  margin: 9px 0 0;
+  font-size: 10px;
+  justify-self: unset;
+}
+.follow, .lang{
+  margin: 30px 0 1px;
+}
+.lang p{
+  margin: 0 0 4px;
+}
+}

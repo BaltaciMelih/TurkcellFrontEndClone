@@ -1,0 +1,51 @@
+.hero {
+    background-color: black;
+}
+.nav-buton {
+    background-color: #76b900;
+    color: #fff;
+    width: 184px;
+    height: 40px;
+    border: 0;
+    font-weight: bold;
+}
+.nav-list {
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+}
+.nav-triangle {
+    width: 24px;
+    height: 20px;
+    margin-left: 25px;
+    object-fit: contain;
+}
+nav {
+    padding-left: 0;
+    padding-right: 0;
+    height: 80px;
+}
+.card-1 {
+    position: relative;
+    margin: -250px 0px 0px 323px;
+    color: #fff;
+    width: 793px;
+    text-align: center;
+}
+.search {
+    width: 750px;
+    border: none;
+    height: 54px;
+}
+.search-bar {
+    width: 793px;
+    background-color: #fff;
+}
+.card-2 {
+    margin-top: 150px;
+}
+.filter-list {
+    height: 600px;
+}
