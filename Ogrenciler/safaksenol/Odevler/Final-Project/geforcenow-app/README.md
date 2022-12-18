@@ -2,7 +2,7 @@
 
 ## Github
 
-Github hesabıma ulaşmak için: [safaksenol](https://github.com/safaksenoleem).
+Github hesabıma ulaşmak için: [Şafak Şenol](https://github.com/safaksenoleem).
 
 ## Projeyi Ayağa Kaldırmak İçin Kullanılacak Scriptlerimiz
 
@@ -19,11 +19,13 @@ Bu şekilde yaptığınızda projemiz [http://localhost:3000](http://localhost:3
 ## Kullandığım Teknolojiler
 
 1. HTML
-2. SCSS
-3. Bootstrap
-4. React
-5. React Icons
-6. React Router
-7. Formik
-8. Yup
-9. Axios
+2. SCSS-SASS
+3. CSS
+4. Javascript
+5. Bootstrap
+6. React
+7. React Icons
+8. React Router
+9. Formik
+10. Yup
+11. Axios

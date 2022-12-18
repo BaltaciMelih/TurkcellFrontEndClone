@@ -1,0 +1,60 @@
+.bgheader {
+    height: 80px;
+    padding: 14px 119px 13px 120px;
+    background-color: white;
+    z-index: 2;
+    img.logo {
+      width: 100%;
+      height: 53px;
+      margin: 0 100px 0 0;
+      object-fit: contain;
+    }
+    .Games {
+      width: 56px;
+      height: 19px;
+      margin: 0 40px 0 0;
+      font-family: GreycliffCF;
+      margin-left: 80px;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.57px;
+      color: black
+    }
+    .Membership{
+      @extend .Games;
+      width: 98px;
+      margin: 0 40px 0 0;
+      text-align: center;
+    }
+    .Download{@extend .Membership; width: 81px;}
+    .Blog{@extend .Membership; width: 35px;}
+    .Support{@extend .Membership; width: 63px; margin-right: -20px;}
+    .Rectangle {
+      width: 184px;
+      height: 40px;
+      color: white;
+      background-color: #76b900;
+    }
+  }
+  
+
+  @media screen and (max-width: 992px) {
+    .bgheader {
+      height: 60px;
+      padding: 13px 15px 13px 16px;
+      background-color: white;
+      .Games{ margin: 0 0 0 0;}
+      .Games,.Membership,.Download,.Support,.Blog{text-align: left;  }
+      .Support{margin-bottom: 20px;}
+      img.logo {
+        width: 204px;
+        height: 34px;
+        margin: 0 0 0 0;
+        object-fit: contain;
+      }
+  }  
+
+  }
