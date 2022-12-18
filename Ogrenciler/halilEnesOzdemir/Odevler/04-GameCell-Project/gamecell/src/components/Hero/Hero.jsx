@@ -71,9 +71,9 @@ function Card({ data }) {
           <img src={heroSrc} alt='' className='img-fluid w-100' />
         </picture>
         <div className='carousel-contents'>
-          <div className='carousel-content col-sm-7 col-md-6 col-lg-5 d-flex flex-column justify-content-lg-start gap-2  px-3 py-sm-2 py-5'>
-            <h3 className='h3'>{data.title}</h3>
-            <p className='h6 fw-lighter lh-sm'>{data.content}</p>
+          <div className='carousel-content col-sm-7 col-md-6 col-lg-5 d-flex flex-column justify-content-lg-start gap-2  px-3 py-sm-2 py-4'>
+            <h2>{data.title}</h2>
+            <p className='h6 fw-lighter lh-sm '>{data.content}</p>
             {data.button}
           </div>
         </div>
