@@ -1,0 +1,149 @@
+$bg-dark: #000000 !important;
+.games {
+  width: 1440px;
+  height: 654px;
+  padding: 68px 121px 60px 120px;
+  background-color: black !important;
+  & .game-p {
+    height: 38px;
+    font-family: GreycliffCF !important;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center !important;
+    color: #76b900 !important;
+  }
+  div img {
+    width: 183px;
+    height: 183px;
+    margin: 0 20px 20px 0;
+  }
+  & .games-btn {
+    width: 185px;
+    height: 40px;
+    margin: 30px 506px 0 508px;
+    padding: 0 0.5px;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.57px;
+    text-align: center;
+    color: #fff;
+    background-color: #76b900;
+    border: none;
+  }
+}
+.subs {
+  background-color: #000000;
+}
+.card-bg-title {
+  background-color: #292929;
+}
+.sub-cards {
+  width: 386px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  margin-right: 20px;
+  background-color: #292929;
+  &-info {
+    padding: 0 74px;
+    &-standard {
+      border: 5px solid #76b900;
+      background-color: #292929;
+    }
+    &-img {
+      width: 16px;
+      height: 12px;
+    }
+    &-text {
+      padding-left: 24px;
+      font-size: 24px;
+      color: #b2b2b2;
+    }
+  }
+  &-button {
+    width: 326px;
+    height: 40px;
+    border: none;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #76b900;
+  }
+}
+.card-title {
+  padding: 33px 0;
+  background-color: #191919;
+  &-standard {
+    padding: 30px 0;
+    background-color: #76b900;
+  }
+  &-seconder {
+    padding: 30px 0;
+    margin: 0;
+  }
+}
+.text-mute-color {
+  color: #666666 !important;
+}
+
+@media screen and (max-width: 320px) {
+  .games {
+    width: 320px;
+    height: 1160px;
+    padding: 30px 19px 40px 20px;
+    & .game-p {
+      width: 280px !important;
+      height: 50px !important;
+      margin: 0 1px 30px 0;
+      font-size: 21px !important;
+      text-align: center !important;
+      font-family: GreycliffCF !important;
+      font-weight: bold !important;
+    }
+    div img {
+      width: 134px;
+      height: 134px;
+      margin: 0 0 12px 12px;
+    }
+    div .games-btn {
+      width: 159px;
+      height: 48px;
+      margin: 40px 0.5px 0.4px 50px;
+      font-family: GreycliffCF;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.57px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .subs-h2 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .sub-cards {
+    width: 280px !important;
+    height: 354px;
+    margin-left: 20px;
+    margin-bottom: 260px;
+    margin-right: 20px;
+    &-info {
+      padding: 0 0;
+      padding-left: 21px;
+      &-standart {
+        background-color: #292929 !important;
+      }
+    }
+
+    &-line {
+      width: 236px;
+    }
+    &-button {
+      width: 236px;
+      height: 48px;
+      margin-left: 3px;
+      margin-top: 20px;
+    }
+  }
+}

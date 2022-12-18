@@ -1,0 +1,43 @@
+$secondary: rgb(175, 175, 175);
+$dark: #1e1e1e;
+$color: #fff;
+
+@mixin flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  @include flex;
+}
+.bottom-footer {
+  background-color: $dark;
+  color: $color;
+  @include flex;
+  & p {
+    margin-top: 1rem;
+  }
+  & .all-right {
+    margin-left: 20%;
+  }
+}
+.followus {
+  @include flex;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .bottom-footer {
+    margin-bottom: 0px !important;
+    & p {
+      text-align: center;
+    }
+    & .all-right {
+      margin-left: 0 !important;
+      color: $secondary;
+    }
+  }
+  .container {
+    text-align: center;
+  }
+}

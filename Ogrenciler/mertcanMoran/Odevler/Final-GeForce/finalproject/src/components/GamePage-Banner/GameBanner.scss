@@ -1,0 +1,132 @@
+.searchInputs {
+  margin-top: 105px;
+  display: flex;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 300px;
+}
+
+.searchIcon {
+  height: 60px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 35px;
+}
+
+.dataResult {
+  margin-top: 5px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataItem p {
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
+.gamepage-banner {
+  background: url("../assets/gamepage-banner.png");
+  height: 400px;
+  //   margin: 80px 0 0;
+  padding: 90px 323px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  background-position: top;
+  & span:nth-child(1) {
+    width: 793px;
+    height: 48px;
+    margin: 0 1px 15px 0;
+    font-family: GreycliffCF !important;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+  & span:nth-child(2) {
+    width: 793px;
+    height: 52px;
+    margin: 15px 1px 49px 0;
+    font-family: GreycliffCF !important;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #fff;
+  }
+  & input {
+    width: 634px;
+    height: 56px;
+    margin: 0 0 0 17px;
+    padding: 17px;
+    font-family: GreycliffCF;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gamepage-banner {
+    width: 320px;
+    height: 336px;
+    padding: 34px 20px 45px;
+    & span:nth-child(1) {
+      width: 280px;
+      height: 58px;
+      margin: 0 0 16px;
+      font-family: GreycliffCF;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    & span:nth-child(2) {
+      width: 280px;
+      height: 96px;
+      margin: 16px 0 30px;
+      font-family: GreycliffCF;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    & input {
+      width: 280px;
+      height: 56px;
+      margin: 0 0 1px;
+      padding: 17px;
+      background-color: #fff;
+    }
+  }
+}

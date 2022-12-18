@@ -1,4 +1,3 @@
-
 Selamlar,
 
 Tüm arkadaşlara (toplamda 26 kişi) davetiye gönderdim, bazıları accept etti bile. Aşağıda toplantıda konuştuğumuz sayfalara ait zeplin linklerini ve oyun listesini çekebilecekleri servis adresini paylaşıyorum.

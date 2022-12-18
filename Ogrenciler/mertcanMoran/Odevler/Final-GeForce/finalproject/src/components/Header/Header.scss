@@ -1,0 +1,60 @@
+$bg-color: #76b900;
+$color: #fff;
+$ff: GreycliffCF !important;
+
+.nav-collapse-width {
+  max-width: 1040px;
+}
+.nav-link {
+  margin: 0 10px;
+  font-family: $ff !important;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.57px;
+  text-align: center;
+  color: #000000;
+  &:hover {
+    color: $bg-color;
+    background-color: #fff;
+  }
+}
+
+.logo {
+  width: 317px;
+  height: 53px;
+  margin: 10px 0px 0 70px;
+  object-fit: contain;
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.playbtn {
+  width: 185px !important;
+  height: 40px;
+  padding: 0 5px;
+  font-family: $ff !important;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.57px;
+  text-align: center;
+  background-color: $bg-color !important;
+  color: $color !important;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .nav-link {
+    margin-left: 20px;
+  }
+  .logo {
+    width: 204px;
+    margin: 0;
+  }
+  .navbar-toggler {
+    width: 50px;
+  }
+}

@@ -1,0 +1,305 @@
+$ff: GreycliffCF !important;
+$bg-color: #76b900;
+$color: white;
+$dark: #000000;
+$black: #1e1e1e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-modules {
+  background-color: #1e1e1e;
+}
+img {
+  .hero-banner {
+    width: 1440px !important;
+    height: 620px;
+    margin: 80px 0 234px;
+    padding: 175px 30px 176px;
+    object-fit: contain;
+  }
+}
+.register {
+  width: 185px;
+  height: 40px;
+  margin: 15px 506px 30px 0;
+  padding: 0 0.5px;
+  font-family: $ff !important;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.57px;
+  text-align: center;
+  background-color: $bg-color !important;
+  color: $color;
+  border-radius: 0;
+  a {
+    color: #fff;
+  }
+}
+.privelege {
+  width: 691px;
+  height: 96px;
+  margin: 0 0 15px;
+  font-family: $ff !important;
+  font-size: 40px;
+  font-weight: bold;
+  color: $color;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.lorem {
+  width: 488px;
+  height: 48px;
+  margin: 15px 203px 30px 0;
+  font-family: $ff !important;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  left: 10% !important;
+  top: 25% !important;
+}
+.features {
+  width: 997px;
+  height: 250px;
+  margin: 0 222px 60px 221px;
+  padding: 65px 60px 62px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+  background-color: #1e1e1e;
+  transform: translate(0%, -30%);
+
+  & p {
+    width: 225px;
+    height: 33px;
+    margin: 0 0 15px;
+    font-size: 28px;
+    font-family: $ff !important;
+    font-weight: bold;
+  }
+  & .Lorem-ipsum {
+    width: 225px;
+    height: 48px;
+    margin: 15px 0 0;
+    font-family: $ff !important;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  & .feature-img-div {
+    & p {
+      font-size: 16px;
+    }
+    & img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      margin-left: 50px;
+    }
+  }
+}
+
+.screen {
+  width: 1440px;
+  height: 328px;
+  padding: 48px 121px 60px 123px;
+  background-color: #1e1e1e;
+  & .all-screens {
+    width: 645px;
+    height: 38px;
+    margin: 0 276px 62px 275px;
+    font-family: GreycliffCF;
+    font-size: 32px !important;
+    font-weight: bold;
+    color: #fff;
+  }
+  & div .icon-mac,
+  .icon-pc,
+  .icon-android {
+    width: 386px;
+    height: 120px;
+    padding: 35px 61px 35px 62px;
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to bottom, #656565, #2a2a2a);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom, #1e1e1e, #000000);
+  }
+  & div .icon-mac {
+    & img {
+      width: 71px;
+      height: 50px;
+      margin: 0 29px 0 0;
+      object-fit: contain;
+    }
+    & p {
+      width: 163px;
+      height: 24px;
+      margin: 13px auto;
+      font-family: GreycliffCF;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+  & div .icon-pc {
+    & img {
+      width: 78px;
+      height: 50px;
+      margin: 0 30px 0 0;
+      object-fit: contain;
+    }
+    & p {
+      width: 125px;
+      height: 24px;
+      margin: 13px 0 13px 30px;
+      font-family: GreycliffCF;
+      font-size: 16px;
+    }
+  }
+  & div .icon-android {
+    & img {
+      width: 32px;
+      height: 50px;
+      margin: 0 30px 0 0;
+      object-fit: contain;
+    }
+    & p {
+      width: 150px;
+      height: 24px;
+      margin: 14px 0 12px 30px;
+      font-family: GreycliffCF;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-banner {
+    width: 320px;
+  }
+  h5 {
+    color: #fff !important;
+    margin: 0 0 15px;
+    width: 280px !important;
+    height: 87px !important;
+    font-size: 24px !important;
+    font-family: $ff !important;
+    font-weight: bold;
+  }
+
+  .register {
+    width: 120px;
+    height: 48px;
+    margin: 0 15px 90px 0;
+    font-family: $ff !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff !important;
+    a {
+      color: #fff;
+    }
+  }
+  .lorem {
+    width: 280px;
+    height: 72px;
+  }
+  .features {
+    width: 320px;
+    height: 264px;
+    margin: 0 0 0;
+    padding: 30px 18px 30px 20px;
+    background-color: #1e1e1e;
+    box-shadow: none;
+    & p {
+      text-align: center;
+    }
+    & .Lorem-ipsum {
+      line-height: 1.5 !important;
+      margin-bottom: 30px;
+      margin-left: 30px;
+    }
+    & .feature-img-div {
+      & img {
+        width: 32px;
+        height: 32px;
+        margin: 0 10px 0 0;
+      }
+      & p {
+        height: 26px !important;
+        font-family: $ff !important;
+        font-size: 1rem !important;
+      }
+    }
+  }
+  .screen {
+    width: 320px;
+    height: 350px;
+    padding: 30px 20px;
+    background-color: #1e1e1e;
+    & .all-screens {
+      width: 280px;
+      height: 50px;
+      margin: 0 0 30px;
+      font-family: GreycliffCF;
+      font-size: 21px !important;
+      font-weight: bold;
+      color: #fff;
+    }
+    & div .icon-mac {
+      width: 280px;
+      height: 60px;
+      padding: 0 30px 0 10px;
+      & img {
+        width: 35px;
+      }
+      & p {
+        width: 163px;
+        height: 24px;
+        margin: 18px 0 18px 0px;
+        font-family: GreycliffCF;
+        font-size: 16px;
+      }
+    }
+    & div .icon-pc {
+      width: 280px;
+      height: 60px;
+      padding: 0 68px 0 10px;
+      & img {
+        width: 60px;
+        height: 60px;
+        margin: 0 17px 0 0;
+        padding: 18px 11px 17px 0px;
+      }
+      & p {
+        width: 125px;
+        height: 24px;
+        margin: 18px 0 18px 0px;
+        font-family: GreycliffCF;
+        font-size: 16px;
+      }
+    }
+    & div .icon-android {
+      width: 280px;
+      height: 60px;
+      padding: 0 43px 0 10px;
+      & img {
+        width: 60px;
+        height: 60px;
+        margin: 0 17px 0 0;
+        padding: 18px 22px 17px 0px;
+      }
+      & p {
+        width: 150px;
+        height: 24px;
+        margin: 18px 0 18px 0px;
+        font-family: GreycliffCF;
+        font-size: 16px;
+      }
+    }
+  }
+}
