@@ -35,5 +35,9 @@
         margin: 0 65px 30px 66px;
         width: 149px;
         font-size: 21px;
-      } 
+    } 
+    .gameBottom{
+    flex-direction: column;
+    width: 320px;
+    }
   }

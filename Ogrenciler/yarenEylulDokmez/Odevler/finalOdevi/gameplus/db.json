@@ -10,33 +10,6 @@
       "password": "typiczdxsode"
     },
     {
-      "name": "sdfg",
-      "userName": "sdfg",
-      "number": "2345",
-      "email": "eyluldokmez@gmail.com",
-      "date": "0006-05-31",
-      "password": "sdfx",
-      "id": 9
-    },
-    {
-      "name": "sdfg",
-      "userName": "sdfg",
-      "number": "2345",
-      "email": "eyluldokmez@gmail.com",
-      "date": "0006-05-31",
-      "password": "sdfx",
-      "id": 10
-    },
-    {
-      "name": "",
-      "userName": "",
-      "number": "",
-      "email": "",
-      "date": "",
-      "password": "",
-      "id": 11
-    },
-    {
       "name": "yaren eylül dökmez",
       "userName": "eylul",
       "number": "05313225272",
@@ -44,15 +17,6 @@
       "date": "2000-02-13",
       "password": "sdzfxgtchv",
       "id": 12
-    },
-    {
-      "name": "",
-      "userName": "",
-      "number": "",
-      "email": "",
-      "date": "",
-      "password": "",
-      "id": 13
     },
     {
       "name": "ghjk",
@@ -64,60 +28,6 @@
       "id": 14
     },
     {
-      "name": "",
-      "userName": "",
-      "number": "",
-      "email": "",
-      "date": "",
-      "password": "",
-      "id": 15
-    },
-    {
-      "name": "sdzfexg",
-      "userName": "sdfxg",
-      "number": "23456",
-      "email": "eyluldokmez@gmail.com",
-      "date": "0567-04-23",
-      "password": "xfcyg",
-      "id": 16
-    },
-    {
-      "name": "",
-      "userName": "",
-      "number": "",
-      "email": "",
-      "date": "",
-      "password": "",
-      "id": 17
-    },
-    {
-      "name": "mnbv",
-      "userName": "vbhjn",
-      "number": "23456",
-      "email": "eyluldokmez@gmail.com",
-      "date": "6789-05-31",
-      "password": "2345678",
-      "id": 18
-    },
-    {
-      "name": "mnbv",
-      "userName": "vbhjn",
-      "number": "23456",
-      "email": "eyluldokmez@gmail.com",
-      "date": "6789-05-31",
-      "password": "2345678",
-      "id": 19
-    },
-    {
-      "name": "",
-      "userName": "",
-      "number": "",
-      "email": "",
-      "date": "",
-      "password": "",
-      "id": 20
-    },
-    {
       "name": "yaren eylül dökmez",
       "userName": "lulu",
       "number": "05313225272",
@@ -125,78 +35,9 @@
       "date": "3445-03-12",
       "password": "dsfghjklş",
       "id": 21
-    },
-    {
-      "name": "fdvbgn",
-      "userName": "fvghbjn",
-      "number": "345678",
-      "email": "3456@gmail.com",
-      "date": "0567-04-23",
-      "password": "345678",
-      "id": 22
-    },
-    {
-      "name": "fdvbgn",
-      "userName": "fvghbjn",
-      "number": "345678",
-      "email": "3456@gmail.com",
-      "date": "0567-04-23",
-      "password": "345678",
-      "id": 23
-    },
-    {
-      "name": "fdvbgn",
-      "userName": "fvghbjn",
-      "number": "345678",
-      "email": "3456@gmail.com",
-      "date": "0567-04-23",
-      "password": "345678",
-      "id": 24
-    },
-    {
-      "name": "",
-      "userName": "",
-      "number": "",
-      "email": "",
-      "date": "",
-      "password": "",
-      "id": 25
-    },
-    {
-      "name": "fghjbn",
-      "userName": "fdxgchj",
-      "number": "34567",
-      "email": "456@gmail.com",
-      "date": "0678-05-31",
-      "password": "gxfdgchjb",
-      "id": 26
-    },
-    {
-      "name": "",
-      "userName": "",
-      "number": "",
-      "email": "",
-      "date": "",
-      "password": "",
-      "id": 27
-    },
-    {
-      "name": "gfchbj",
-      "userName": "xdfcghbjn",
-      "number": "4567",
-      "email": "eyluldokmez@gmail.com",
-      "date": "0567-04-23",
-      "password": "dfgchjb",
-      "id": 28
     }
   ],
   "games": [
-    {
-      "meta": {
-        "return_code": "0",
-        "message": "success"
-      },
-      "data": [
         {
           "id": "d8eb7470-9d43-472c-aa49-125f5c3111d4",
           "title": "Wolcen: Lords of Mayhem (Steam)",
@@ -30531,5 +30372,3 @@
         }
       ]
     }
-  ]
-}

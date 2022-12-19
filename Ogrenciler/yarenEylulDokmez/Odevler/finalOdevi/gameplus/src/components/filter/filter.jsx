@@ -6,7 +6,7 @@ import Button from '../../components/button';
 
 export default function Filter(props) {
    const states =[ "Available","Patching", "Maintenance"]
-   const genres=["Shooters", "Action","RPG", "Racing","MOBA/MMO","Simulation","Strategy","Sports","Kids/Family","Casual","Demo","Horror", "Platformer","Battle Royale","Adventure","Open World"]
+   const genres=["Kahramanın gözünden oynanan ateş etme oyunu", "Aksiyon","Oynaması Ücretsiz", "Yarış","Devasa Çok Oyunculu Çevrimiçi","Simulasyon","Strateji","Spor","Aile Dostu","Bağımsız","Demo","Canlandırma", "Dövüş oyunu","Çok Oyunculu Çevrimiçi Çarpışma Arenası","Macera","Canlandırma"]
    const [checked, setChecked] = useState([]);
    const [show, setShow] = useState(false);
    const handleClose = () => setShow(false);
@@ -23,6 +23,9 @@ export default function Filter(props) {
     };
      console.log(checked);
     useEffect(() => {
+      if(checked===[]){
+        checked=genres;
+      }
       props.setOption(checked);
     });
   return (

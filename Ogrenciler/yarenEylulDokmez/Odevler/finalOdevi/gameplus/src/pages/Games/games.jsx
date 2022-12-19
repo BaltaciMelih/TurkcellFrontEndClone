@@ -11,6 +11,12 @@ import { useEffect,useState } from 'react';
 
 
 export default function Games() {
+    //   const [sort, setSort] = useState("none");
+  //   const sortMethods = {
+  //   none: { method: (a, b) => null },
+  //   ascending: { method: (a, b) => (a > b ? 1 : -1) },
+  //   descending: { method: (a, b) => (a > b ? -1 : 1) },
+  // };
   const [allData, setAllData]=useState([]);
   const [option, setOption]= useState("");
   const [search, setSearch]= useState("");
@@ -22,7 +28,12 @@ export default function Games() {
     .then((res)=> res.json())
     .then((data)=> setAllData(data))
   },[]);
-
+  const filt =option.toString();
+  const searched=allData.filter((games) =>games.title.includes(search));
+  const lastData= searched.filter((search) =>search.genres.includes(filt));
+  console.log(searched)
+  console.log(lastData)
+  console.log(filt)
   return (
     <div>
         <Header/>
@@ -33,8 +44,8 @@ export default function Games() {
             <Sort/>
           </div>
           <div className="gameBottom">
-            <Filter setOption={setOption}/>
-            <CardList/>
+            <Filter setOption={setOption} />
+            <CardList lastData={searched}/>
           </div>
         </div>
         <Footer/>

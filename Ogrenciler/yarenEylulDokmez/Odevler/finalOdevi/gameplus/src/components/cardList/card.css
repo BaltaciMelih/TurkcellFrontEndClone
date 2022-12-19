@@ -1,8 +1,54 @@
 .cardBox{
-  width: 794px;
-  height: 414px;
   margin: 0 0 30px;
   padding: 30px;
   background: color #1e1e1e;
   color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.polygon{
+  background-image: url("../../pics/polygon.png");
+  object-fit: contain;
+  width: 60px;
+  height: 60px;
+  margin: 0 317px 30px 0;
+  padding: 12px 19px 12px 20px;
+  object-fit: contain;
+}
+.polygonText{
+  width: 21px;
+  height: 36px;
+  font-family: GreycliffCF;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1e1e1e;
+}
+.gamesText{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 95px 16px 0;
+  font-family: GreycliffCF;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #afafaf;
+}
+@media screen and (max-width: 960px){
+  .cardBox{ margin: 15px 0;
+    padding: 28px 20px 30px 0;
+  flex-direction: column;
+}
+.gamesText{
+  flex-direction: column;
+}
 }
