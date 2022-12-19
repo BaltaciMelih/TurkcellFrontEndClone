@@ -13,7 +13,7 @@ const Games = () => {
   useEffect(() => {
     dispatch(getGames())
   }, []);
-
+  
   return (
     <React.Fragment>
       <section>

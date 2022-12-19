@@ -20,6 +20,7 @@ export const gameSlice = createSlice({
         filtered: [],
         gourupedGames: [],
         loading: false,
+        msg: "",
         error: null
     },
     reducers: {
@@ -27,7 +28,7 @@ export const gameSlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(getGames.fulfilled, (state, action) => {
             let arr = []
-            let arr2 = []
+            
             action.payload.map(element => {
 
                 let firstLatter = element.title[0];
@@ -47,29 +48,37 @@ export const gameSlice = createSlice({
 
 
             });
-            // builder.addCase(getFilter.fulfilled, (state, action) => {
-            //     action.payload.map(el => {
-
-            //         state.filtered = state.games.map((game) => {
-            //             if (game.title == el.title) {
-            //                 arr2.push(game.title.toLowerCase())
-            //             }
-
-            //         })
-
-            //     });
-             
-
-            // })
-
-
-
             state.games = action.payload
             state.gourupedGames = arr
-            // state.filtered = arr2
+            
 
         })
-
+        builder.addCase(getFilter.fulfilled, (state,{action: {error,msg}}) => {
+            state.loading = false;
+            if(error){
+                state.error = error
+            }else{
+                state.msg = msg
+            }
+        //     let arr2 = []
+        //     action.payload.map(element => {
+        //             state.filtered = state.games.map((game) => {
+        //                 if (game.title == element.title) {
+        //                     arr2.push(game.title.toLowerCase())
+        //                 }
+        //             })
+          
+        //     });
+        //  state.filtered = arr2  
+        });
+        builder.addCase(getFilter.pending, (state,action) => {
+            state.loading=true;
+            state.error = "";
+        })
+        builder.addCase(getFilter.rejected,(state,action) => {
+            state.loading = false;
+            state.error = "Error fetching user data"
+        }) 
     }
 });
 

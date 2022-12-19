@@ -12,7 +12,8 @@ const RegisterComponent = () => {
     const [datetime, setDateTime] = useState("");
     const [password, setPassword] = useState("");
     const dispatch = useDispatch();
-    const registerHandler = () => {
+    const registerHandler = (e) => {
+        e.preventDefault();
         dispatch(registerUser({name,username,phonenumber,email,datetime,password}))
     }
 
@@ -27,19 +28,19 @@ const RegisterComponent = () => {
                         <input type="name" className="form-control" value={name} onChange={(e) => setName(e.target.value)} placeholder='Name Surname' id="NameSurname"  />
                     </div>
                     <div className="row mb-3">
-                        <input type="username" className="form-control" value={username} placeholder='Username' id="UserName" />
+                        <input type="username" className="form-control" value={username} onChange={(e) => setUsername(e.target.value)} placeholder='Username' id="UserName" />
                     </div>
                     <div className="row mb-3">
-                        <input type="phonenumber" className="form-control" value={phonenumber} placeholder='Phone Number' id="PhoneNumber" />
+                        <input type="phonenumber" className="form-control" value={phonenumber} onChange={(e) => setPhonenumber(e.target.value)} placeholder='Phone Number' id="PhoneNumber" />
                     </div>
                     <div className="row mb-3">
-                        <input type="email" className="form-control" value={email} placeholder='E-mail' id="Email" />
+                        <input type="email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='E-mail' id="Email" />
                     </div>
                     <div className="row mb-3">
-                        <input type="datetime-local" className="form-control" value={datetime} placeholder='Date of Birth' id="DateOfBirth" />
+                        <input type="datetime-local" className="form-control" value={datetime} onChange={(e) => setDateTime(e.target.value)} placeholder='Date of Birth' id="DateOfBirth" />
                     </div>
                     <div className="row mb-3">
-                        <input type="password" className="form-control" value={password} placeholder='Password' id="Password" />
+                        <input type="password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' id="Password" />
                         <div id="emailHelp" class="form-text d-flex justify-content-start ms-3"><NavLink rel="stylesheet" href="" >Password Rules</NavLink></div>
                     </div>
                     <div className="row mb-3">
