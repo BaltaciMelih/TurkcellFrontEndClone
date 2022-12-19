@@ -1,0 +1,43 @@
+
+
+.cards{
+    border-radius: 0%;
+   border: none;
+   background-color: #191919;
+}
+.cards .card-body{
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+ 
+}
+.cards .card-subtitle{
+    text-align: center;
+}
+.cards ul{
+    list-style: none;
+  
+}
+
+.cards li{
+    padding: 18px;
+}
+.cards .card-header{
+    border-radius: 0%;
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+.card-header:hover{
+    background-color: #76b900;
+}
+.card:hover{
+    border: 2px solid;
+    border-color: #76b900;
+}
+.cards .card-footer{
+    background-color: #191919;
+    text-align: center;
+}

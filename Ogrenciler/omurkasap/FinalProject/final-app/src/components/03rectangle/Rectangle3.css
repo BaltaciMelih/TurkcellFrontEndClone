@@ -1,0 +1,36 @@
+.footer .container{
+    background-color: #292929;
+}
+
+.footer .container-fluid{
+    background-color: #1e1e1e;
+}
+
+.footer .row{
+    background-color: #1e1e1e;
+}
+.footer .paragraph{
+   transform: translateX(-30%);
+}
+.footer .gaming{
+    font-size: 16px;
+    color: #afafaf;
+}
+.footer .loremip{
+    font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #afafaf;
+}
+#under {
+    font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #afafaf;
+}
