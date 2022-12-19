@@ -1,0 +1,13 @@
+.navbar {
+  z-index: 100;
+  height: 80px;
+  position: relative;
+  .collapse-navbar {
+    margin: 0;
+    padding-top: 90px;
+  }
+  img {
+    max-width: 270px;
+    height: auto;
+  }
+}

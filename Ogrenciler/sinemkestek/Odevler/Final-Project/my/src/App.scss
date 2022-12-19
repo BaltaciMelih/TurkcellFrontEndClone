@@ -1,0 +1,207 @@
+$darkGrey: #1e1e1e;
+$baseGreen: #76b900;
+$textColor: white;
+$grey-Light: #b2b2b2;
+$grey: #afafaf;
+@import "./components/Cards/Card.scss";
+$success: $baseGreen;
+
+* {
+  list-style: none;
+  @font-face {
+    font-family: "GreycliffCF-Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+      url("./assets/fonts/fontStyle/GreycliffCF-Bold.woff") format("woff"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  }
+}
+
+body {
+  input[type="checkbox"] {
+    margin-top: 2px;
+    border: #a7a8aa9a 1px solid;
+    height: 16px;
+    width: 16px;
+    appearance: none;
+    &:checked {
+      background-image: url("./assets/icons/accept.svg");
+      background-size: cover;
+    }
+  }
+  a {
+    color: #1e1e1eb9;
+    &:hover {
+      color: rgb(26, 20, 20);
+    }
+  }
+  input {
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+    color: $textColor;
+    font-family: "GreycliffCF-Bold";
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+  label {
+    display: block;
+  }
+}
+.row {
+  margin-right: 0;
+}
+.registerContainer {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  justify-content: space-around;
+
+  .registerContent {
+    background-color: #fff;
+    width: 476px;
+    padding: 30px 20px;
+    margin: 3rem 0;
+    h2 {
+      color: black;
+    }
+    .SıgnUp {
+      font-size: 12px;
+      margin-top: 1rem;
+    }
+    // .registerForm {
+    // }
+  }
+
+  .form {
+    .error {
+      margin-top: 2px;
+      color: red;
+    }
+    .form-group {
+      .label-top {
+        .input__label {
+          transition: all 0.3s ease-in-out;
+          top: -15px !important;
+        }
+      }
+
+      .input {
+        background-color: #fff;
+        width: 384px;
+        height: 56px;
+        margin: 24px 0 15px 24px;
+        border: solid 1px #dee3ed;
+        input {
+          width: 100%;
+          display: block;
+          box-sizing: border-box;
+          border: none;
+          background: none;
+          padding: 3px 6px;
+          font-size: 16px;
+          font-weight: 500;
+          color: #242831;
+          &:focus + .input__label {
+            margin-top: 3px;
+            font-size: 12px;
+            top: -15px;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .input__area {
+        padding-top: 20px;
+        padding-bottom: 4px;
+        width: 100%;
+        position: relative;
+        text-align: left;
+        //background: #fff;
+        border-radius: 0;
+        .input__label {
+          padding: 12px 8px;
+          top: 6px;
+          position: absolute;
+          border-radius: 0;
+          font-family: GreycliffCF;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.5;
+          color: #4b4c4dc9;
+          height: auto;
+          margin: 0;
+          -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+          -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+        }
+      }
+    }
+
+    .input-check {
+      display: flex;
+      align-items: center;
+      div {
+        .input__label {
+          margin-top: 1rem;
+          font-size: 12px;
+          line-height: 2;
+        }
+      }
+    }
+    .check-box {
+      input[type="checkbox"] {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .registerSection {
+    .registerRight {
+      display: none;
+    }
+
+    .registerContainer {
+      .registerContent {
+        width: 320px;
+        background-color: black;
+        padding: 18px 10px;
+        h2 {
+          color: #fff;
+        }
+        // .registerForm {
+        // }
+      }
+    }
+    .form {
+      .form-group {
+        .input {
+          width: 312px;
+          margin: 24px 0 20px 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .non-show-mobil {
+    background-color: #76b900;
+    display: none;
+  }
+}
