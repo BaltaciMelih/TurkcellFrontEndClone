@@ -4,25 +4,29 @@ import { bindActionCreators } from "redux";
 import * as gameActions from "../../redux/actions/gameActions";
 import { Row, Col } from "react-bootstrap";
 import polygon from "../../assets/polygon.svg";
+import ReactDOM from "react-dom";
 import "./GameList.css";
 
 class GameList extends Component {
   componentDidMount() { //componentler yüklendikten sonra oyunları çeker
     this.props.actions.getGames();
   }
-  alphabet =[];
-   
   
-
+  alphabet =[];
+ 
   render() { //games'i gameCard componentine gönderir ve oyunların ekrana yazdırılmasını sağlar
     return (
-      <div >
+      <div className="mt-2">
         {this.props.games.map((game) => {
           this.alphabet.push(game.title[0]);
         })}
-        <div className="d-none">{(this.alphabet = [...new Set(this.alphabet.sort())])}</div>
+        <div className="d-none">
+          {this.props.order === "az"
+            ? (this.alphabet = [...new Set(this.alphabet.sort())])
+            : (this.alphabet = [...new Set(this.alphabet.sort().reverse())])}
+        </div>
         {this.alphabet.map((letter, index) => (
-          <div className="bg-primary m-auto mb-5 p-4 pt-3 ps-1">
+          <div className="cont bg-primary m-auto mb-5 p-4 pt-3 ps-1">
             <Row className="w-100 m-auto" key={index}>
               <Col className="p-4 ps-4 polygon-col ">
                 <img src={polygon} alt="polygon" className="polygon" />
@@ -40,13 +44,11 @@ class GameList extends Component {
                     </Col>
                   );
                 }
-                else{
-                  
-                }
               })}
             </Row>
           </div>
         ))}
+        <div className="d-none">{(this.alphabet = [])}</div>
       </div>
     );
   }
