@@ -1,0 +1,19 @@
+$success:#76b900; 
+$dark:#1e1e1e;
+$info:#292929; // bg color açık
+$warning: #afafaf;  // font color
+
+
+$headings-margin-bottom:  0px  ;
+$btn-border-radius:0px
+
+// @mixin make-container($gutter: $container-padding-x) {
+//     --#{$prefix}gutter-x: #{$gutter};
+//     --#{$prefix}gutter-y: 0;
+//     width: 100%;
+//     padding-right: 0 !important; // stylelint-disable-line function-disallowed-list
+//     padding-left: 0 !important; // stylelint-disable-line function-disallowed-list
+//     margin-right: auto;
+//     margin-left: auto;
+//   }
+// $danger:#D11518;

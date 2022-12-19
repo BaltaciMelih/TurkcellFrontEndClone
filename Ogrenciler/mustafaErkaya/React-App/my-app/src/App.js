@@ -8,13 +8,15 @@
 // import HelloWorld from "./components/HelloWorld";
 // import ReactCC from "./components/ReactCC";
 // import ReactFC from "./components/ReactFC";
-// import { useState } from "react";
-// import { useEffect } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 // import UserInfo from './components/UserInfo'
 // import { Button } from 'react-bootstrap';
-import {InputGroup, Form} from 'react-bootstrap'
-
-
+import { Button, Form} from 'react-bootstrap'
+import { ReactComponent as DeleteIcon} from './assets/delete.svg'
+import {ReactComponent as SaveIcon} from './assets/save.svg'
+import { ReactComponent as EditIcon} from './assets/edit.svg'
+import { v4 as uuidv4 } from 'uuid';
 
 
 // function Btn(props){
@@ -48,26 +50,72 @@ function App() {
   //  },[counter])
 
   // ********* TodoList 
+ const arr = ["A", "B", "C", "D", "E", "F", "G", "H","I", "J","K"];
+ console.log(arr);
+  const [todoList, setTodoList] = useState([])
 
+  const [todo, setTodo] = useState('')
 
+  const addTodo = () => {
+    setTodoList(prevTodoList => [...prevTodoList, {id: uuidv4() , todo: todo, isEditable: false, isCompleted: false}])
+    setTodo('')  // inputa bastıktan sonra içini temizledik
+  }
 
-
-
-
+  const completeTodo = () => {
+    setTodoList();
+  }
+  
+  useEffect(() => {
+    console.log(todoList)
+  },[todoList])
 
   return (
-    <div className="App d-flex flex-column justify-content-center align-items-center mt-5">
+    <div className="App d-flex flex-column justify-content-center align-items-center mt-5" >
       
       <h1>Todo List</h1>
 
-      <InputGroup className="mb-3">
-        <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
+      <div className='d-flex w-50'>
         <Form.Control
-          placeholder="Username"
-          aria-label="Username"
-          aria-describedby="basic-addon1"
+        className='w-75 me-4'
+          placeholder="Todo Input"
+          value={todo}
+          onChange={(e) => setTodo(e.target.value)}
         />
-       </InputGroup>
+        <Button onClick={() => addTodo()}>Add Todo</Button>
+      </div>
+
+      <div className="mt-5 w-50">
+          {
+            todoList.map((todoitem, x) => {
+              return <div key={x} className="d-flex justify-content-between "> 
+                  <div className="d-flex ">
+                    <Form.Check 
+                    type="checkbox"
+                    className="mx-3"
+                    value={todoitem.isCompleted}
+                    onChange={() => completeTodo(todoitem.id) }
+                    />
+                    <label>{todoitem.todo} </label>
+             
+                  </div>
+                  <div className="">
+                    
+                     <EditIcon width={25} height={25} style={{cursor: "pointer"}} className="me-2"/>
+                     <SaveIcon width={25} height={25} style={{cursor: "pointer"}} className="me-2"/>
+                     <DeleteIcon width={25} height={25} style={{cursor: "pointer"}}/>
+                  </div>
+
+                 
+              </div>
+            } )
+          }
+           <div>
+                    {arr.map((item) => {
+                      return <p className="w-50 m-3 bg-info text-center display-3">{item}</p>
+                     
+                    })}
+                  </div>
+      </div>
    
 
    {/* <div style={{fontSize: 50}}>{counter}</div>
