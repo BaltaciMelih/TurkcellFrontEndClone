@@ -1,0 +1,1 @@
+Teknik problemlerle karşılaştığım için sass ve fetch yapısını kullanamadım. Datalarımı json dosyasından js dosyasına import ederek kullandım.

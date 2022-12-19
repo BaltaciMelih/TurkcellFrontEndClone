@@ -1,0 +1,44 @@
+.GamesPage .gamesbanner{
+    background-image: url(../../assets/img/gamespage/gamesbanner.png);
+    object-fit: cover;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    
+  
+}
+.dataContainer{
+    height: 200px;
+    overflow-y: scroll;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    /* position: absolute; */
+    top: 35px;
+    display: none;
+}
+
+.GamesPage .searchbar{
+    
+}
+.search{
+    width: 100%;
+    height: 35px;
+}
+.search:focus~.dataContainer{
+    display: block;
+}
+
+
+
+.GamesPage .allsearch{
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+.GamesPage .search-container{
+    position: relative;
+}

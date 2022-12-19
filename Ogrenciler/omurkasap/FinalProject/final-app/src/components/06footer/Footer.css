@@ -1,0 +1,23 @@
+.All-Footer .container{
+    max-width: 1170px;
+    margin: auto;
+
+}
+
+.All-Footer ul{
+    list-style: none;
+}
+
+.All-Footer .footer{
+    padding: 30px 0;
+}
+
+.All-Footer .row{
+    display: flex;
+  
+}
+.All-Footer a{
+    color: black;
+    text-decoration: none;
+    
+}
