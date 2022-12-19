@@ -20,7 +20,7 @@ class GameList extends Component {
           this.alphabet.push(game.title[0]);
         })}
         <div className="d-none">
-          {this.props.order === "az"
+          {this.props.order === "A-Z"
             ? (this.alphabet = [...new Set(this.alphabet.sort())])
             : (this.alphabet = [...new Set(this.alphabet.sort().reverse())])}
         </div>

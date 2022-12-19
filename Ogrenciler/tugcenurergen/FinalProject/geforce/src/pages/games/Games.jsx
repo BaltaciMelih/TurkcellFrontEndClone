@@ -5,7 +5,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { Row, Col, Container } from "react-bootstrap";
 
 function Games() {
-  const [order, setOrder] = useState("az");
+  const [order, setOrder] = useState("A-Z");
 
   return (
     <Container className="pt-5" style={{ width: "90%" }}>
@@ -16,14 +16,14 @@ function Games() {
         <Col className="col-12 col-md-7">
           <Dropdown className=" text-end">
             <Dropdown.Toggle variant="dark" id="dropdown-basic">
-              Dropdown Button
+              {order}
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item onClick={(e) => setOrder("az")} href="#">
+              <Dropdown.Item onClick={(e) => setOrder("A-Z")} href="#">
                 A-Z
               </Dropdown.Item>
-              <Dropdown.Item onClick={(e) => setOrder("za")} href="#">
+              <Dropdown.Item onClick={(e) => setOrder("Z-A")} href="#">
                 Z-A
               </Dropdown.Item>
             </Dropdown.Menu>
