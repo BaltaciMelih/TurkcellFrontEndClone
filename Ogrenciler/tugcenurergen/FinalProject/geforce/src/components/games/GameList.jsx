@@ -4,7 +4,6 @@ import { bindActionCreators } from "redux";
 import * as gameActions from "../../redux/actions/gameActions";
 import { Row, Col } from "react-bootstrap";
 import polygon from "../../assets/polygon.svg";
-import ReactDOM from "react-dom";
 import "./GameList.css";
 
 class GameList extends Component {
