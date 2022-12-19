@@ -1,0 +1,33 @@
+footer {
+  width: 100%;
+
+  justify-content: center;
+  .footerItem {
+    .social-container {
+      margin: 0.1rem 1rem;
+      .social-icon {
+        img {
+          height: 16px;
+          margin: 0.2rem;
+        }
+      }
+    }
+  }
+  .bottom-container {
+    .bottom-footer {
+      background-color: #1e1e1e;
+      color: #fff;
+
+      .list-item {
+        p {
+          margin-right: 9px;
+        }
+      }
+    }
+  }
+  .footer-2 {
+    margin: 12px;
+    color: #fff;
+    font-size: 11px;
+  }
+}
