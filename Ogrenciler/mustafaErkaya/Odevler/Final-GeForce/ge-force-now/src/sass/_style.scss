@@ -1,0 +1,65 @@
+// @import '../assets/Fonts/GreycliffCF-Bold.woff';
+// @import '../assets/Fonts/GreycliffCF-DemiBold.woff';
+// @import '../assets/Fonts/GreycliffCF-Medium.woff';
+// @import '../assets/Fonts/GreycliffCF-Regular.woff';
+
+
+@font-face {
+  font-family: 'GreycliffCF-Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../assets/Fonts/GreycliffCF-Bold.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+   
+}
+
+@font-face {
+  font-family: 'GreycliffCF-DemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../assets/Fonts/GreycliffCF-DemiBold.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+   
+}
+
+@font-face {
+  font-family: 'GreycliffCF-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../assets/Fonts/GreycliffCF-Regular.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+   
+}
+
+
+
+@font-face {
+  font-family: 'GreycliffCF-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../assets/Fonts/GreycliffCF-Medium.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+   
+}
+
+body {
+
+  font-family: 'GreycliffCF-Regular';;
+
+  .container{
+    max-width: 1200px;
+
+    
+  
+  }
+
+  h1, h2, h3, h4, h5{
+    font-family: 'GreycliffCF-Bold';
+  }
+
+  .btn-component {
+    font-family: 'GreycliffCF-Bold';
+  }
+}
+
+

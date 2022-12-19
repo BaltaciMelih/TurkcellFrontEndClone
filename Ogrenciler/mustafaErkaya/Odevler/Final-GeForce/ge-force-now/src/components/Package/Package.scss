@@ -1,0 +1,36 @@
+$card-font-color:#b2b2b2;
+.package{
+    .grey{
+        li{
+            color:$card-font-color;
+        }
+    }
+    li{
+        color: #fff;
+        background-color: #292929;
+        padding: 15px 30px;
+
+        
+    }
+    .title {
+        background-color: #292929; 
+        font-family: 'GreycliffCF-Regular';
+    }
+
+    .standart{
+        // border: 2px solid #76b900;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 768px) {
+    .package{
+        ul{
+            li{
+                padding: 15px;
+            }
+        }
+    }
+  }

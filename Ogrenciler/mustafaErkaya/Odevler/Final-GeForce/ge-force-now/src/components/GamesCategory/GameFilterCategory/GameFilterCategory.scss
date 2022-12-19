@@ -1,0 +1,110 @@
+
+.game-filter-category{
+
+    ul{
+        padding: 0;
+    }
+    button{
+        font-size: 24px;
+        border: none; //smash
+        border-bottom: 1px solid #afafaf;
+        padding-left: 0;
+        .arrow-down{
+            font-size: 1rem;
+            color: #afafaf;
+            
+           
+            
+        }
+    }
+    .show{
+        
+    }
+    .dropdown-menu{
+        inset: 0px auto auto 0px!important ;
+        transform: translate(0px, 52px)!important;
+        
+        border: none;
+        // ezmeyi güzel başardık
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: max-content auto;
+        align-items: center;
+        margin: 1.5rem 0;
+
+        input[type='checkbox']{
+            appearance: none;
+            // -webkit-appearance: none;
+            width: 22px;
+            height: 22px;
+            border: 1px solid #AFAFAF;
+            cursor: pointer;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label{
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]::after{
+            font-family:"Font Awesome 5 Free" ;
+            content: "\f00c";
+            font-weight: 600;
+            color: #fff;
+            font-size: 1rem;
+            display: none;
+        }
+
+        input[type="checkbox"]:hover{
+            background-color: #000;
+        }
+
+        input[type="checkbox"]:checked{
+            background-color: #76b900;
+            border-color: #76b900;
+        }
+
+        input[type="checkbox"]:checked::after{
+            display: block;
+        }
+    }
+
+    .accordion{
+        --bs-accordion-bg: transparent;
+        
+       button::after{
+        // background-color: #fff;
+        // border-radius: 50%;
+        font-family:"Font Awesome 5 Free" ;
+        content: "\f078";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #afafaf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       h2{
+        border-bottom: 1px solid #afafaf;
+       }
+       .accordion-button:not(.collapsed){
+        background-color: transparent;
+       }
+       .accordion-button:not(.collapsed)::after{
+        background-image: none;
+       }
+       .accordion-button:focus{
+        border-color: transparent;
+        box-shadow: none;
+       }
+       .accordion-item{
+        border-bottom: none;
+       }
+    }
+   
+}

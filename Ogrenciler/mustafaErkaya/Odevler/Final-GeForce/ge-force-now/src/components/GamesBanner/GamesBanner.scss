@@ -1,0 +1,70 @@
+.games-banner{
+    background-image: url('../../assets/images/gamesBanner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    .form-container{
+        
+        position: relative;
+        .form{
+            position: relative;
+            
+           label{
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 2%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                }
+            }
+            input{
+                padding: 1rem 1rem 1rem 3rem;
+                outline: none;
+                &:focus ~ .games-filter{
+                    display: block;
+                    
+                }
+            }
+    
+            .games-filter{
+                display: none;
+                position: absolute;
+                width: 100%;
+                
+                top: 59px;
+                max-height: 175px;
+                overflow-y: scroll;
+                a{
+                    text-decoration: none;
+                    color: #1e1e1e;
+                    font-size: 20px;
+                    
+                }
+            }
+            .games-filter::-webkit-scrollbar {
+                width: 1rem;
+                background-color: rgba($color: #1e1e1e, $alpha: 0.5)
+                // background-color: transparent; 
+                
+               
+            
+            }
+            .games-filter::-webkit-scrollbar-track{
+                background-color: transparent;
+            }
+            .games-filter::-webkit-scrollbar-thumb {
+                border-radius: 1rem;
+                height: 2rem;
+                background-color:rgb(14, 14, 14);
+                
+            
+            }
+        }
+       
+    }
+    
+   
+   
+}
